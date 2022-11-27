@@ -1,0 +1,100 @@
+import fs from "fs";
+
+import fetch from "node-fetch";
+import * as cheerio from "cheerio";
+
+import importedGamesList from "./freeGamesList.json" assert { type: "json" };
+
+function cleanGameName(gameName) {
+  return gameName.replace(/\W+/g, " ").replace(/\s+/g, "-").toLowerCase();
+}
+
+// class PromiseQueue {
+// 	queue = Promise.resolve(true);
+
+// 	add(operation) {
+// 	  return new Promise((resolve, reject) => {
+// 		this.queue = this.queue.then(operation).then(resolve).catch(reject);
+// 	  });
+// 	}
+//   }
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function x(refreshAll = false) {
+  const gameList = { ...importedGamesList };
+
+  const gameReviewRequests = [];
+
+  // for (const [key, value] of Object.entries(importedGamesList)) {
+  //   console.warn("32", key);
+  // }
+
+  //   .slice( 0,180)
+  for (const [gameName, scores] of Object.entries(importedGamesList)) {
+    if (refreshAll === true || !scores.metaScore || !scores.userScore) {
+      console.warn("Fetching:", gameName);
+      gameReviewRequests.push(updateGameFields(gameList, gameName));
+      await sleep(Math.floor(Math.random() * 300) + 60);
+    }
+  }
+
+  await Promise.all(gameReviewRequests);
+
+  //   console.warn("21", gameList);
+  //   writeGameList(gameList);
+}
+
+async function updateGameFields(gameList, gameName) {
+  const scores = await getGameReview(gameName);
+  gameList[gameName] = scores;
+  console.warn(gameName, scores);
+  writeGameList(gameList);
+}
+
+async function getGameReview(gameName) {
+  const url = `http://www.metacritic.com/game/pc/${gameName}`;
+  const html = await fetch(url)
+    .then((response) => response.text())
+    //   .then((x) => console.warn("15", x))
+    .catch((error) => {
+      console.log("request failed", error);
+    });
+
+  const $ = cheerio.load(html);
+
+  let metaScore = "N/A";
+  const metaScoreSelector = $("span[itemprop=ratingValue]");
+
+  if (metaScoreSelector[0]) {
+    metaScore = metaScoreSelector[0].children[0].data;
+  }
+
+  let userScore = "N/A";
+  const userScoreSelector = $("div .metascore_w.user.game");
+
+  if (userScoreSelector[0]) {
+    userScore = userScoreSelector[0].children[0].data;
+  }
+
+  if (userScore == "tbd") {
+    userScore = "N/A";
+  }
+
+  //   console.warn("17", metaScore);
+  //   console.warn("22", userScore);
+  return { metaScore, userScore };
+}
+
+function writeGameList(gameList, file = "./src/freeGamesList.json") {
+  fs.writeFile(file, JSON.stringify(gameList, null, 4), (err) => {
+    if (err) {
+      console.error(err);
+    }
+    // file written successfully
+  });
+}
+
+x();
