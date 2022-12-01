@@ -48,7 +48,7 @@
         "userScore": "4.1"
     },
     "alba-a-wildlife-adventure": {
-        "name": "Alba – A Wildlife Adventure",
+        "name": "Alba: A Wildlife Adventure",
         "cleanName": "alba-a-wildlife-adventure",
         "startDates": [
             "Thu Nov 10 2022"
@@ -470,7 +470,7 @@
         "userScore": "5.4"
     },
     "redout-2016": {
-        "name": "Redout 2016",
+        "name": "Redout",
         "cleanName": "redout-2016",
         "startDates": [
             "Thu May 12 2022"
@@ -723,7 +723,7 @@
         "userScore": "7.9"
     },
     "brothers-a-tale-of-two-sons": {
-        "name": "Brothers – A Tale of Two Sons",
+        "name": "Brothers: A Tale of Two Sons",
         "cleanName": "brothers-a-tale-of-two-sons",
         "startDates": [
             "Thu Feb 17 2022"
@@ -760,7 +760,7 @@
         "userScore": "6.3"
     },
     "daemon-x-machina": {
-        "name": "DAEMON X MACHINA",
+        "name": "Daemon X Machina",
         "cleanName": "daemon-x-machina",
         "startDates": [
             "Thu Jan 27 2022"
@@ -1019,7 +1019,7 @@
         "userScore": "6"
     },
     "while-true-learn": {
-        "name": "While True: learn",
+        "name": "While True: Learn()",
         "cleanName": "while-true-learn",
         "startDates": [
             "Thu Dec 02 2021"
@@ -1103,7 +1103,7 @@
         "userScore": "8.5"
     },
     "borderlands-2-tiny-tinas-assault-on-dragon-keep": {
-        "name": "Borderlands 2 Tiny Tina's Assault On Dragon Keep",
+        "name": "Borderlands 2: Tiny Tina's Assault On Dragon Keep",
         "cleanName": "borderlands-2-tiny-tinas-assault-on-dragon-keep",
         "startDates": [
             "Thu Nov 11 2021"
@@ -1563,7 +1563,7 @@
         "userScore": "7.4"
     },
     "deponia-the-complete-journey": {
-        "name": "Deponia The Complete Journey",
+        "name": "Deponia: The Complete Journey",
         "cleanName": "deponia-the-complete-journey",
         "startDates": [
             "Thu Apr 15 2021"
@@ -1575,7 +1575,7 @@
         "userScore": "7.5"
     },
     "3-out-of-10-season-two": {
-        "name": "3 out of 10: Season Two",
+        "name": "3 Out Of 10: Season Two",
         "cleanName": "3-out-of-10-season-two",
         "startDates": [
             "Thu Apr 08 2021"
@@ -1734,7 +1734,7 @@
         "userScore": "7.9"
     },
     "star-wars-battlefront-ii": {
-        "name": "Star Wars Battlefront ii",
+        "name": "Star Wars Battlefront II",
         "cleanName": "star-wars-battlefront-ii",
         "startDates": [
             "Thu Jan 14 2021"
@@ -1906,7 +1906,7 @@
         "userScore": "6.7"
     },
     "oddworld-abes-oddysee---new-n-tasty": {
-        "name": "Oddworld Abes Oddysee-New N Tasty",
+        "name": "Oddworld: New 'n' Tasty!",
         "cleanName": "oddworld-abes-oddysee---new-n-tasty",
         "startDates": [
             "Fri Dec 18 2020"
@@ -1954,7 +1954,7 @@
         "userScore": "8.3"
     },
     "spintires-mudrunner": {
-        "name": "Spintires Mudrunner",
+        "name": "MudRunner",
         "cleanName": "spintires-mudrunner",
         "startDates": [
             "Thu Nov 26 2020"
@@ -1990,7 +1990,7 @@
         "userScore": "6.6"
     },
     "the-textorcist-the-story-of-ray-bibbia": {
-        "name": "The Textorcist The Story Of Ray Bibbia",
+        "name": "The Textorcist: The Story of Ray Bibbia",
         "cleanName": "the-textorcist-the-story-of-ray-bibbia",
         "startDates": [
             "Thu Nov 12 2020"
@@ -2014,7 +2014,7 @@
         "userScore": "7.6"
     },
     "ghostbusters-the-video-game-remastered": {
-        "name": "Ghostbusters The Video Game Remastered",
+        "name": "Ghostbusters: The Video Game Remastered",
         "cleanName": "ghostbusters-the-video-game-remastered",
         "startDates": [
             "Thu Oct 29 2020"
@@ -2208,7 +2208,7 @@
         "userScore": "7.4"
     },
     "shadowrun-hong-kong": {
-        "name": "shadowrun Hong Kong",
+        "name": "Shadowrun: Hong Kong",
         "cleanName": "shadowrun-hong-kong",
         "startDates": [
             "Thu Aug 27 2020"
@@ -2220,7 +2220,7 @@
         "userScore": "7.8"
     },
     "shadowrun-dragonfall": {
-        "name": "Shadowrun Dragonfall",
+        "name": "Shadowrun: Dragonfall",
         "cleanName": "shadowrun-dragonfall",
         "startDates": [
             "Thu Aug 27 2020"
@@ -2280,7 +2280,7 @@
         "userScore": "8.0"
     },
     "3-out-of-10-season-one": {
-        "name": "3 Out Of 10 Season One",
+        "name": "3 Out Of 10, EP 1: Welcome To Shovelworks",
         "cleanName": "3-out-of-10-season-one",
         "startDates": [
             "Thu Aug 06 2020"
@@ -2412,7 +2412,7 @@
         "userScore": "4.9"
     },
     "aer-memories-of-old": {
-        "name": "AER Memories of Old",
+        "name": "AER: Memories of Old",
         "cleanName": "aer-memories-of-old",
         "startDates": [
             "Thu Jun 25 2020"
@@ -2448,7 +2448,7 @@
         "userScore": "5.6"
     },
     "overcooked!-2": {
-        "name": "overcooked! 2",
+        "name": "Overcooked! 2",
         "cleanName": "overcooked!-2",
         "startDates": [
             "Thu Jun 04 2020"
@@ -2472,7 +2472,7 @@
         "userScore": "8.2"
     },
     "sid-meiers-civilization-vi": {
-        "name": "Sid Meiers Civilization VI",
+        "name": "Sid Meier's Civilization VI",
         "cleanName": "sid-meiers-civilization-vi",
         "startDates": [
             "Thu May 21 2020"
@@ -2556,7 +2556,7 @@
         "userScore": "4.5"
     },
     "sherlock-holmes-crimes-punishments": {
-        "name": "Sherlock Holmes Crimes & Punishments",
+        "name": "Sherlock Holmes: Crimes & Punishments",
         "cleanName": "sherlock-holmes-crimes-punishments",
         "startDates": [
             "Thu Apr 09 2020"
@@ -2760,7 +2760,7 @@
         "userScore": "5.4"
     },
     "kingdom-come-deliverance": {
-        "name": "Kingdom Come Deliverance",
+        "name": "Kingdom Come:   Deliverance",
         "cleanName": "kingdom-come-deliverance",
         "startDates": [
             "Thu Feb 13 2020"
@@ -3198,7 +3198,7 @@
         "userScore": "8.1"
     },
     "lego-batman-2-dc-super-heroes": {
-        "name": "Lego Batman 2 DC Super Heroes",
+        "name": "Lego Batman 2: DC Super Heroes",
         "cleanName": "lego-batman-2-dc-super-heroes",
         "startDates": [
             "Thu Sep 19 2019"
@@ -3210,7 +3210,7 @@
         "userScore": "7.2"
     },
     "lego-batman-the-videogame": {
-        "name": "Lego Batman The Videogame",
+        "name": "Lego Batman: The Videogame",
         "cleanName": "lego-batman-the-videogame",
         "startDates": [
             "Thu Sep 19 2019"
@@ -3222,7 +3222,7 @@
         "userScore": "7.0"
     },
     "lego-batman-3-beyond-gotham": {
-        "name": "Lego Batman 3 Beyond Gotham",
+        "name": "Lego Batman 3: Beyond Gotham",
         "cleanName": "lego-batman-3-beyond-gotham",
         "startDates": [
             "Thu Sep 19 2019"
@@ -3234,7 +3234,7 @@
         "userScore": "6.7"
     },
     "batman-arkham-asylum": {
-        "name": "Batman Arkham Asylum",
+        "name": "Batman: Arkham Asylum",
         "cleanName": "batman-arkham-asylum",
         "startDates": [
             "Thu Sep 19 2019"
@@ -3246,7 +3246,7 @@
         "userScore": "8.6"
     },
     "batman-arkham-city": {
-        "name": "Batman Arkham City",
+        "name": "Batman: Arkham City",
         "cleanName": "batman-arkham-city",
         "startDates": [
             "Thu Sep 19 2019"
@@ -3258,7 +3258,7 @@
         "userScore": "8.7"
     },
     "batman-arkham-knight": {
-        "name": "Batman Arkham Knight",
+        "name": "Batman: Arkham Knight",
         "cleanName": "batman-arkham-knight",
         "startDates": [
             "Thu Sep 19 2019"
