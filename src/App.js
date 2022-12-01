@@ -31,6 +31,12 @@ function App() {
       type: "number",
       minWidth: 180,
     },
+    {
+      field: "date",
+      headerName: "Date",
+      type: "string",
+      minWidth: 360,
+    },
   ];
 
   // freeGames.map((game) => {
@@ -38,7 +44,7 @@ function App() {
   // });
 
   const rows = Object.entries(freeGames).map(
-    ([id, { metaScore, userScore }]) => {
+    ([id, { name, metaScore, userScore, startDates }]) => {
       // console.warn("35", id, fields);
 
       const multipliedScore = metaScore * userScore;
@@ -46,12 +52,13 @@ function App() {
       const href = `http://www.metacritic.com/game/pc/${id}`;
 
       return {
-        id,
+        id: name,
         metaScore: metaScore == "N/A" ? "" : metaScore,
         userScore: userScore == "N/A" ? "" : userScore,
         multipliedScore: isNaN(multipliedScore)
           ? ""
           : Math.round(multipliedScore),
+        date: startDates.join(", "),
       };
     }
   );
@@ -68,7 +75,7 @@ function App() {
           // height: "90vh",
         }}
       >
-        <div style={{ height: "90vh", minWidth: 1000 }}>
+        <div style={{ height: "90vh", minWidth: 1800 }}>
           <DataGrid rows={rows} columns={columns} pageSize={100} />
         </div>
       </div>

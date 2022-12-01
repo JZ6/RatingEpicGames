@@ -7,9 +7,7 @@
         ],
         "endDates": [
             "Thu Dec 01 2022"
-        ],
-        "metaScore": "79",
-        "userScore": "5.8"
+        ]
     },
     "evil-dead-the-game": {
         "name": "Evil Dead: The Game",
@@ -19,9 +17,7 @@
         ],
         "endDates": [
             "Thu Nov 24 2022"
-        ],
-        "metaScore": "76",
-        "userScore": "5.2"
+        ]
     },
     "dark-deity": {
         "name": "Dark Deity",
@@ -31,9 +27,7 @@
         ],
         "endDates": [
             "Thu Nov 24 2022"
-        ],
-        "metaScore": "80",
-        "userScore": "5.5"
+        ]
     },
     "rumbleverse": {
         "name": "Rumbleverse",
@@ -43,21 +37,27 @@
         ],
         "endDates": [
             "Thu Aug 25 2022"
+        ]
+    },
+    "shadow-tactics": {
+        "name": "Shadow Tactics",
+        "cleanName": "shadow-tactics",
+        "startDates": [
+            "Thu Nov 10 2022"
         ],
-        "metaScore": "N/A",
-        "userScore": "4.1"
+        "endDates": [
+            "Thu Nov 17 2022"
+        ]
     },
     "alba-a-wildlife-adventure": {
-        "name": "Alba: A Wildlife Adventure",
+        "name": "Alba – A Wildlife Adventure",
         "cleanName": "alba-a-wildlife-adventure",
         "startDates": [
             "Thu Nov 10 2022"
         ],
         "endDates": [
             "Thu Nov 17 2022"
-        ],
-        "metaScore": "79",
-        "userScore": "8.1"
+        ]
     },
     "rising-storm-2-vietnam": {
         "name": "Rising Storm 2: Vietnam",
@@ -67,9 +67,7 @@
         ],
         "endDates": [
             "Thu Oct 15 2020"
-        ],
-        "metaScore": "81",
-        "userScore": "7.4"
+        ]
     },
     "filament": {
         "name": "Filament",
@@ -79,9 +77,7 @@
         ],
         "endDates": [
             "Thu Nov 10 2022"
-        ],
-        "metaScore": "82",
-        "userScore": "6.1"
+        ]
     },
     "slain-back-from-hell": {
         "name": "Slain: Back from Hell",
@@ -91,9 +87,7 @@
         ],
         "endDates": [
             "Thu Oct 13 2022"
-        ],
-        "metaScore": "74",
-        "userScore": "7.9"
+        ]
     },
     "rising-hell": {
         "name": "Rising Hell",
@@ -103,9 +97,7 @@
         ],
         "endDates": [
             "Thu Oct 13 2022"
-        ],
-        "metaScore": "N/A",
-        "userScore": "N/A"
+        ]
     },
     "the-drone-racing-league-simulator": {
         "name": "The Drone Racing League Simulator",
@@ -115,9 +107,7 @@
         ],
         "endDates": [
             "Thu Oct 06 2022"
-        ],
-        "metaScore": "N/A",
-        "userScore": "N/A"
+        ]
     },
     "runbow": {
         "name": "Runbow",
@@ -127,9 +117,7 @@
         ],
         "endDates": [
             "Thu Oct 06 2022"
-        ],
-        "metaScore": "75",
-        "userScore": "7.7"
+        ]
     },
     "ark-survival-evolved": {
         "name": "ARK: Survival Evolved",
@@ -140,9 +128,7 @@
         ],
         "endDates": [
             "Thu Sep 29 2022"
-        ],
-        "metaScore": "70",
-        "userScore": "6.5"
+        ]
     },
     "gloomhaven": {
         "name": "Gloomhaven",
@@ -152,9 +138,7 @@
         ],
         "endDates": [
             "Thu Sep 29 2022"
-        ],
-        "metaScore": "82",
-        "userScore": "7.0"
+        ]
     },
     "ring-of-pain": {
         "name": "Ring of Pain",
@@ -164,9 +148,7 @@
         ],
         "endDates": [
             "Thu Sep 08 2022"
-        ],
-        "metaScore": "74",
-        "userScore": "7.2"
+        ]
     },
     "knockout-city": {
         "name": "Knockout City",
@@ -176,9 +158,17 @@
         ],
         "endDates": [
             "Thu Sep 08 2022"
+        ]
+    },
+    "shadow-of-the-tomb-raider-definitive-edition": {
+        "name": "Shadow of the Tomb Raider: Definitive Edition",
+        "cleanName": "shadow-of-the-tomb-raider-definitive-edition",
+        "startDates": [
+            "Thu Sep 01 2022"
         ],
-        "metaScore": "80",
-        "userScore": "6.6"
+        "endDates": [
+            "Thu Sep 08 2022"
+        ]
     },
     "submerged-hidden-depths": {
         "name": "Submerged: Hidden Depths",
@@ -188,9 +178,7 @@
         ],
         "endDates": [
             "Thu Sep 08 2022"
-        ],
-        "metaScore": "66",
-        "userScore": "4.7"
+        ]
     },
     "doom-64": {
         "name": "Doom 64",
@@ -200,9 +188,7 @@
         ],
         "endDates": [
             "Thu Aug 25 2022"
-        ],
-        "metaScore": "75",
-        "userScore": "7.3"
+        ]
     },
     "cook-serve-delicious!-3!": {
         "name": "Cook, Serve, Delicious! 3?!",
@@ -212,9 +198,7 @@
         ],
         "endDates": [
             "Thu Aug 18 2022"
-        ],
-        "metaScore": "79",
-        "userScore": "8.6"
+        ]
     },
     "unrailed!": {
         "name": "Unrailed!",
@@ -224,9 +208,7 @@
         ],
         "endDates": [
             "Thu Aug 11 2022"
-        ],
-        "metaScore": "77",
-        "userScore": "7.9"
+        ]
     },
     "lawn-mowing-simulator": {
         "name": "Lawn Mowing Simulator",
@@ -236,9 +218,7 @@
         ],
         "endDates": [
             "Thu Aug 04 2022"
-        ],
-        "metaScore": "69",
-        "userScore": "4.9"
+        ]
     },
     "shop-titans": {
         "name": "Shop Titans",
@@ -248,9 +228,7 @@
         ],
         "endDates": [
             "Thu Jul 28 2022"
-        ],
-        "metaScore": "42",
-        "userScore": "3.9"
+        ]
     },
     "tannenberg": {
         "name": "Tannenberg",
@@ -260,9 +238,7 @@
         ],
         "endDates": [
             "Thu Jul 28 2022"
-        ],
-        "metaScore": "69",
-        "userScore": "7.8"
+        ]
     },
     "idle-champions-of-the-forgotten-realms": {
         "name": "Idle Champions of the Forgotten Realms",
@@ -272,9 +248,7 @@
         ],
         "endDates": [
             "Thu May 06 2021"
-        ],
-        "metaScore": "N/A",
-        "userScore": "5.1"
+        ]
     },
     "wonder-boy-the-dragons-trap": {
         "name": "Wonder Boy: The Dragon's Trap",
@@ -284,9 +258,7 @@
         ],
         "endDates": [
             "Thu Jul 21 2022"
-        ],
-        "metaScore": "79",
-        "userScore": "7.8"
+        ]
     },
     "killing-floor-2": {
         "name": "Killing Floor 2",
@@ -297,9 +269,7 @@
         ],
         "endDates": [
             "Thu Jul 14 2022"
-        ],
-        "metaScore": "75",
-        "userScore": "7.3"
+        ]
     },
     "ancient-enemy": {
         "name": "Ancient Enemy",
@@ -309,9 +279,7 @@
         ],
         "endDates": [
             "Thu Jul 14 2022"
-        ],
-        "metaScore": "73",
-        "userScore": "N/A"
+        ]
     },
     "iratus-lord-of-the-dead": {
         "name": "Iratus: Lord of the Dead",
@@ -321,9 +289,7 @@
         ],
         "endDates": [
             "Thu Jul 07 2022"
-        ],
-        "metaScore": "78",
-        "userScore": "7.4"
+        ]
     },
     "hood-outlaws-legends": {
         "name": "Hood: Outlaws & Legends",
@@ -333,9 +299,7 @@
         ],
         "endDates": [
             "Thu Jul 07 2022"
-        ],
-        "metaScore": "62",
-        "userScore": "3.4"
+        ]
     },
     "geneforge-1---mutagen": {
         "name": "Geneforge 1 – Mutagen",
@@ -345,9 +309,7 @@
         ],
         "endDates": [
             "Thu Jul 07 2022"
-        ],
-        "metaScore": "N/A",
-        "userScore": "N/A"
+        ]
     },
     "car-mechanic-simulator-2018": {
         "name": "Car Mechanic Simulator 2018",
@@ -357,9 +319,7 @@
         ],
         "endDates": [
             "Thu Jun 30 2022"
-        ],
-        "metaScore": "N/A",
-        "userScore": "6.5"
+        ]
     },
     "a-game-of-thrones-the-board-game-digital-edition": {
         "name": "A Game of Thrones: The Board Game Digital Edition",
@@ -369,9 +329,7 @@
         ],
         "endDates": [
             "Thu Jun 30 2022"
-        ],
-        "metaScore": "N/A",
-        "userScore": "N/A"
+        ]
     },
     "supraland": {
         "name": "Supraland",
@@ -381,9 +339,7 @@
         ],
         "endDates": [
             "Thu Jun 23 2022"
-        ],
-        "metaScore": "85",
-        "userScore": "8.6"
+        ]
     },
     "maneater": {
         "name": "Maneater",
@@ -393,9 +349,7 @@
         ],
         "endDates": [
             "Thu Jun 16 2022"
-        ],
-        "metaScore": "70",
-        "userScore": "6.4"
+        ]
     },
     "wolfenstein-the-new-order": {
         "name": "Wolfenstein: The New Order",
@@ -405,9 +359,7 @@
         ],
         "endDates": [
             "Thu Jun 09 2022"
-        ],
-        "metaScore": "81",
-        "userScore": "8.2"
+        ]
     },
     "bioshock": {
         "name": "Bioshock",
@@ -417,9 +369,7 @@
         ],
         "endDates": [
             "Thu Jun 02 2022"
-        ],
-        "metaScore": "96",
-        "userScore": "8.6"
+        ]
     },
     "bioshock-2": {
         "name": "Bioshock 2",
@@ -429,9 +379,7 @@
         ],
         "endDates": [
             "Thu Jun 02 2022"
-        ],
-        "metaScore": "88",
-        "userScore": "8.1"
+        ]
     },
     "bioshock-infinite": {
         "name": "Bioshock Infinite",
@@ -441,9 +389,7 @@
         ],
         "endDates": [
             "Thu Jun 02 2022"
-        ],
-        "metaScore": "94",
-        "userScore": "8.6"
+        ]
     },
     "bioshock-the-collection": {
         "name": "Bioshock: The Collection",
@@ -453,9 +399,7 @@
         ],
         "endDates": [
             "Thu Jun 02 2022"
-        ],
-        "metaScore": "80",
-        "userScore": "7.7"
+        ]
     },
     "borderlands-3": {
         "name": "Borderlands 3",
@@ -465,21 +409,17 @@
         ],
         "endDates": [
             "Thu May 26 2022"
-        ],
-        "metaScore": "81",
-        "userScore": "5.4"
+        ]
     },
     "redout-2016": {
-        "name": "Redout",
+        "name": "Redout 2016",
         "cleanName": "redout-2016",
         "startDates": [
             "Thu May 12 2022"
         ],
         "endDates": [
             "Thu May 19 2022"
-        ],
-        "metaScore": "81",
-        "userScore": "7.8"
+        ]
     },
     "prey": {
         "name": "Prey",
@@ -489,9 +429,7 @@
         ],
         "endDates": [
             "Sun Dec 26 2021"
-        ],
-        "metaScore": "82",
-        "userScore": "8.2"
+        ]
     },
     "jotun": {
         "name": "Jotun",
@@ -501,9 +439,7 @@
         ],
         "endDates": [
             "Thu May 19 2022"
-        ],
-        "metaScore": "79",
-        "userScore": "7.0"
+        ]
     },
     "terraforming-mars": {
         "name": "Terraforming Mars",
@@ -513,9 +449,7 @@
         ],
         "endDates": [
             "Thu May 12 2022"
-        ],
-        "metaScore": "N/A",
-        "userScore": "5.6"
+        ]
     },
     "paradigm": {
         "name": "Paradigm",
@@ -525,9 +459,7 @@
         ],
         "endDates": [
             "Thu May 05 2022"
-        ],
-        "metaScore": "85",
-        "userScore": "7.7"
+        ]
     },
     "just-die-already": {
         "name": "Just Die Already",
@@ -537,9 +469,7 @@
         ],
         "endDates": [
             "Thu May 05 2022"
-        ],
-        "metaScore": "63",
-        "userScore": "5.8"
+        ]
     },
     "amnesia-rebirth": {
         "name": "Amnesia Rebirth",
@@ -549,9 +479,7 @@
         ],
         "endDates": [
             "Thu Apr 28 2022"
-        ],
-        "metaScore": "80",
-        "userScore": "6.3"
+        ]
     },
     "riverbond": {
         "name": "Riverbond",
@@ -561,9 +489,7 @@
         ],
         "endDates": [
             "Thu Apr 28 2022"
-        ],
-        "metaScore": "60",
-        "userScore": "6.2"
+        ]
     },
     "xcom-2": {
         "name": "XCOM 2",
@@ -573,9 +499,7 @@
         ],
         "endDates": [
             "Thu Apr 21 2022"
-        ],
-        "metaScore": "88",
-        "userScore": "7.3"
+        ]
     },
     "insurmountable": {
         "name": "Insurmountable",
@@ -585,9 +509,7 @@
         ],
         "endDates": [
             "Thu Apr 21 2022"
-        ],
-        "metaScore": "74",
-        "userScore": "5.9"
+        ]
     },
     "rogue-legacy": {
         "name": "Rogue Legacy",
@@ -597,9 +519,7 @@
         ],
         "endDates": [
             "Thu Apr 14 2022"
-        ],
-        "metaScore": "85",
-        "userScore": "7.9"
+        ]
     },
     "the-vanishing-of-ethan-carter": {
         "name": "The Vanishing of Ethan Carter",
@@ -609,9 +529,7 @@
         ],
         "endDates": [
             "Mon Dec 20 2021"
-        ],
-        "metaScore": "82",
-        "userScore": "7.9"
+        ]
     },
     "total-war-warhammer": {
         "name": "Total War: Warhammer",
@@ -621,9 +539,7 @@
         ],
         "endDates": [
             "Thu Apr 07 2022"
-        ],
-        "metaScore": "86",
-        "userScore": "7.4"
+        ]
     },
     "city-of-brass": {
         "name": "City of Brass",
@@ -634,9 +550,7 @@
         ],
         "endDates": [
             "Thu Apr 07 2022"
-        ],
-        "metaScore": "69",
-        "userScore": "4.0"
+        ]
     },
     "demons-tilt": {
         "name": "Demon's Tilt",
@@ -646,9 +560,7 @@
         ],
         "endDates": [
             "Thu Mar 31 2022"
-        ],
-        "metaScore": "N/A",
-        "userScore": "N/A"
+        ]
     },
     "in-sound-mind": {
         "name": "In Sound Mind",
@@ -658,9 +570,7 @@
         ],
         "endDates": [
             "Thu Mar 24 2022"
-        ],
-        "metaScore": "75",
-        "userScore": "8.2"
+        ]
     },
     "cities-skylines": {
         "name": "Cities: Skylines",
@@ -670,9 +580,7 @@
         ],
         "endDates": [
             "Fri Dec 18 2020"
-        ],
-        "metaScore": "85",
-        "userScore": "8.8"
+        ]
     },
     "black-widow-recharged": {
         "name": "Black Widow: Recharged",
@@ -682,9 +590,7 @@
         ],
         "endDates": [
             "Thu Mar 10 2022"
-        ],
-        "metaScore": "N/A",
-        "userScore": "N/A"
+        ]
     },
     "centipede-recharged": {
         "name": "Centipede: Recharged",
@@ -694,9 +600,7 @@
         ],
         "endDates": [
             "Thu Mar 10 2022"
-        ],
-        "metaScore": "N/A",
-        "userScore": "N/A"
+        ]
     },
     "dauntless": {
         "name": "Dauntless",
@@ -706,9 +610,7 @@
         ],
         "endDates": [
             "Thu Mar 10 2022"
-        ],
-        "metaScore": "78",
-        "userScore": "5.3"
+        ]
     },
     "cris-tales": {
         "name": "Cris Tales",
@@ -718,21 +620,17 @@
         ],
         "endDates": [
             "Thu Mar 03 2022"
-        ],
-        "metaScore": "74",
-        "userScore": "7.9"
+        ]
     },
     "brothers-a-tale-of-two-sons": {
-        "name": "Brothers: A Tale of Two Sons",
+        "name": "Brothers – A Tale of Two Sons",
         "cleanName": "brothers-a-tale-of-two-sons",
         "startDates": [
             "Thu Feb 17 2022"
         ],
         "endDates": [
             "Thu Feb 24 2022"
-        ],
-        "metaScore": "90",
-        "userScore": "8.5"
+        ]
     },
     "windbound": {
         "name": "Windbound",
@@ -742,9 +640,7 @@
         ],
         "endDates": [
             "Thu Feb 17 2022"
-        ],
-        "metaScore": "60",
-        "userScore": "5.5"
+        ]
     },
     "yooka-laylee-and-the-impossible-lair": {
         "name": "Yooka-Laylee and the Impossible Lair",
@@ -755,21 +651,17 @@
         ],
         "endDates": [
             "Thu Feb 10 2022"
-        ],
-        "metaScore": "81",
-        "userScore": "6.3"
+        ]
     },
     "daemon-x-machina": {
-        "name": "Daemon X Machina",
+        "name": "DAEMON X MACHINA",
         "cleanName": "daemon-x-machina",
         "startDates": [
             "Thu Jan 27 2022"
         ],
         "endDates": [
             "Thu Feb 03 2022"
-        ],
-        "metaScore": "72",
-        "userScore": "6.9"
+        ]
     },
     "relicta": {
         "name": "Relicta",
@@ -779,23 +671,17 @@
         ],
         "endDates": [
             "Thu Jan 27 2022"
-        ],
-        "metaScore": "74",
-        "userScore": "5.8"
+        ]
     },
     "galactic-civilizations-iii": {
         "name": "Galactic Civilizations III",
         "cleanName": "galactic-civilizations-iii",
         "startDates": [
-            "Thu Jan 13 2022",
-            "Thu Jan 21 2021"
+            "Thu Jan 13 2022"
         ],
         "endDates": [
-            "Thu Jan 20 2022",
-            "Thu Jan 28 2021"
-        ],
-        "metaScore": "81",
-        "userScore": "7.0"
+            "Thu Jan 20 2022"
+        ]
     },
     "gods-will-fall": {
         "name": "Gods Will Fall",
@@ -805,9 +691,7 @@
         ],
         "endDates": [
             "Thu Jan 13 2022"
-        ],
-        "metaScore": "70",
-        "userScore": "4.4"
+        ]
     },
     "tomb-raider": {
         "name": "Tomb Raider",
@@ -817,23 +701,17 @@
         ],
         "endDates": [
             "Thu Jan 06 2022"
-        ],
-        "metaScore": "86",
-        "userScore": "8.4"
+        ]
     },
     "shadow-of-the-tomb-raider": {
         "name": "Shadow of the Tomb Raider",
         "cleanName": "shadow-of-the-tomb-raider",
         "startDates": [
-            "Fri Dec 31 2021",
-            "Thu Sep 01 2022"
+            "Fri Dec 31 2021"
         ],
         "endDates": [
-            "Thu Jan 06 2022",
-            "Thu Sep 08 2022"
-        ],
-        "metaScore": "77",
-        "userScore": "7.0"
+            "Thu Jan 06 2022"
+        ]
     },
     "rise-of-the-tomb-raider": {
         "name": "Rise of the Tomb Raider",
@@ -843,9 +721,7 @@
         ],
         "endDates": [
             "Thu Jan 06 2022"
-        ],
-        "metaScore": "86",
-        "userScore": "7.9"
+        ]
     },
     "salt-and-sanctuary": {
         "name": "Salt and Sanctuary",
@@ -855,9 +731,7 @@
         ],
         "endDates": [
             "Thu Dec 30 2021"
-        ],
-        "metaScore": "84",
-        "userScore": "7.6"
+        ]
     },
     "moving-out": {
         "name": "Moving Out",
@@ -867,9 +741,7 @@
         ],
         "endDates": [
             "Wed Dec 29 2021"
-        ],
-        "metaScore": "79",
-        "userScore": "7.2"
+        ]
     },
     "mages-of-mystralia": {
         "name": "Mages of Mystralia",
@@ -879,9 +751,7 @@
         ],
         "endDates": [
             "Tue Dec 28 2021"
-        ],
-        "metaScore": "74",
-        "userScore": "7.5"
+        ]
     },
     "control": {
         "name": "Control",
@@ -891,9 +761,7 @@
         ],
         "endDates": [
             "Thu Jun 17 2021"
-        ],
-        "metaScore": "85",
-        "userScore": "7.4"
+        ]
     },
     "pathfinder-kingmaker": {
         "name": "Pathfinder: Kingmaker",
@@ -903,9 +771,7 @@
         ],
         "endDates": [
             "Sat Dec 25 2021"
-        ],
-        "metaScore": "73",
-        "userScore": "7.4"
+        ]
     },
     "vampyr": {
         "name": "Vampyr",
@@ -915,23 +781,17 @@
         ],
         "endDates": [
             "Fri Dec 24 2021"
-        ],
-        "metaScore": "72",
-        "userScore": "7.0"
+        ]
     },
     "mutant-year-zero-road-to-eden": {
         "name": "Mutant Year Zero: Road to Eden",
         "cleanName": "mutant-year-zero-road-to-eden",
         "startDates": [
-            "Wed Dec 22 2021",
-            "Thu Aug 15 2019"
+            "Wed Dec 22 2021"
         ],
         "endDates": [
-            "Thu Dec 23 2021",
-            "Thu Aug 22 2019"
-        ],
-        "metaScore": "78",
-        "userScore": "7.8"
+            "Thu Dec 23 2021"
+        ]
     },
     "second-extinction": {
         "name": "Second Extinction",
@@ -941,9 +801,7 @@
         ],
         "endDates": [
             "Wed Dec 22 2021"
-        ],
-        "metaScore": "N/A",
-        "userScore": "N/A"
+        ]
     },
     "loop-hero": {
         "name": "Loop Hero",
@@ -953,9 +811,7 @@
         ],
         "endDates": [
             "Tue Dec 21 2021"
-        ],
-        "metaScore": "82",
-        "userScore": "7.9"
+        ]
     },
     "remnant-from-the-ashes": {
         "name": "Remnant: From the Ashes",
@@ -966,9 +822,7 @@
         ],
         "endDates": [
             "Sun Dec 19 2021"
-        ],
-        "metaScore": "78",
-        "userScore": "6.7"
+        ]
     },
     "neon-abyss": {
         "name": "Neon Abyss",
@@ -978,9 +832,7 @@
         ],
         "endDates": [
             "Sat Dec 18 2021"
-        ],
-        "metaScore": "74",
-        "userScore": "6.3"
+        ]
     },
     "shenmue-iii": {
         "name": "Shenmue III",
@@ -990,9 +842,7 @@
         ],
         "endDates": [
             "Fri Dec 17 2021"
-        ],
-        "metaScore": "69",
-        "userScore": "6.1"
+        ]
     },
     "godfall": {
         "name": "Godfall",
@@ -1002,9 +852,7 @@
         ],
         "endDates": [
             "Thu Dec 16 2021"
-        ],
-        "metaScore": "59",
-        "userScore": "3.8"
+        ]
     },
     "prison-architect": {
         "name": "Prison Architect",
@@ -1014,21 +862,17 @@
         ],
         "endDates": [
             "Thu Dec 16 2021"
-        ],
-        "metaScore": "83",
-        "userScore": "6"
+        ]
     },
     "while-true-learn": {
-        "name": "While True: Learn()",
+        "name": "While True: learn",
         "cleanName": "while-true-learn",
         "startDates": [
             "Thu Dec 02 2021"
         ],
         "endDates": [
             "Thu Dec 09 2021"
-        ],
-        "metaScore": "73",
-        "userScore": "6.3"
+        ]
     },
     "dead-by-daylight": {
         "name": "Dead by Daylight",
@@ -1038,9 +882,7 @@
         ],
         "endDates": [
             "Thu Dec 09 2021"
-        ],
-        "metaScore": "71",
-        "userScore": "5.7"
+        ]
     },
     "thehunter-call-of-the-wild": {
         "name": "theHunter: Call of the Wild",
@@ -1050,21 +892,17 @@
         ],
         "endDates": [
             "Thu Dec 02 2021"
-        ],
-        "metaScore": "64",
-        "userScore": "6.7"
+        ]
     },
-    "antstream-arcade": {
-        "name": "Antstream Arcade",
-        "cleanName": "antstream-arcade",
+    "austream-arcade": {
+        "name": "AuStream Arcade",
+        "cleanName": "austream-arcade",
         "startDates": [
             "Thu Nov 25 2021"
         ],
         "endDates": [
             "Thu Dec 02 2021"
-        ],
-        "metaScore": "N/A",
-        "userScore": "N/A"
+        ]
     },
     "never-alone": {
         "name": "Never Alone",
@@ -1074,9 +912,7 @@
         ],
         "endDates": [
             "Thu Nov 25 2021"
-        ],
-        "metaScore": "72",
-        "userScore": "6.2"
+        ]
     },
     "guild-of-dungeoneering": {
         "name": "Guild of Dungeoneering",
@@ -1086,9 +922,7 @@
         ],
         "endDates": [
             "Thu Nov 25 2021"
-        ],
-        "metaScore": "72",
-        "userScore": "5.0"
+        ]
     },
     "kid-a-mnesia-exhibition": {
         "name": "Kid A Mnesia Exhibition",
@@ -1098,21 +932,17 @@
         ],
         "endDates": [
             "Thu Nov 25 2021"
-        ],
-        "metaScore": "N/A",
-        "userScore": "8.5"
+        ]
     },
     "borderlands-2-tiny-tinas-assault-on-dragon-keep": {
-        "name": "Borderlands 2: Tiny Tina's Assault On Dragon Keep",
+        "name": "Borderlands 2 Tiny Tina's Assault On Dragon Keep",
         "cleanName": "borderlands-2-tiny-tinas-assault-on-dragon-keep",
         "startDates": [
             "Thu Nov 11 2021"
         ],
         "endDates": [
             "Thu Nov 18 2021"
-        ],
-        "metaScore": "87",
-        "userScore": "8.5"
+        ]
     },
     "rogue-company": {
         "name": "Rogue Company",
@@ -1122,9 +952,7 @@
         ],
         "endDates": [
             "Thu Nov 18 2021"
-        ],
-        "metaScore": "75",
-        "userScore": "4.9"
+        ]
     },
     "aven-colony": {
         "name": "Aven Colony",
@@ -1134,9 +962,7 @@
         ],
         "endDates": [
             "Thu Nov 11 2021"
-        ],
-        "metaScore": "65",
-        "userScore": "8.0"
+        ]
     },
     "darq": {
         "name": "DARQ",
@@ -1146,9 +972,7 @@
         ],
         "endDates": [
             "Thu Nov 04 2021"
-        ],
-        "metaScore": "70",
-        "userScore": "7.8"
+        ]
     },
     "among-the-sleep": {
         "name": "Among the Sleep",
@@ -1158,9 +982,7 @@
         ],
         "endDates": [
             "Thu Oct 28 2021"
-        ],
-        "metaScore": "66",
-        "userScore": "7.4"
+        ]
     },
     "stubbs-the-zombie-in-rebel-without-a-pulse": {
         "name": "Stubbs the Zombie in Rebel Without a Pulse",
@@ -1170,9 +992,7 @@
         ],
         "endDates": [
             "Thu Oct 21 2021"
-        ],
-        "metaScore": "72",
-        "userScore": "7.8"
+        ]
     },
     "pc-building-simulator": {
         "name": "PC Building Simulator",
@@ -1182,9 +1002,7 @@
         ],
         "endDates": [
             "Thu Oct 14 2021"
-        ],
-        "metaScore": "N/A",
-        "userScore": "7.0"
+        ]
     },
     "europa-universalis-iv": {
         "name": "Europa Universalis IV",
@@ -1194,9 +1012,7 @@
         ],
         "endDates": [
             "Thu Oct 07 2021"
-        ],
-        "metaScore": "87",
-        "userScore": "8.7"
+        ]
     },
     "the-escapists": {
         "name": "The Escapists",
@@ -1207,9 +1023,7 @@
         ],
         "endDates": [
             "Thu Sep 30 2021"
-        ],
-        "metaScore": "71",
-        "userScore": "6.9"
+        ]
     },
     "speed-brawl": {
         "name": "Speed Brawl",
@@ -1219,9 +1033,7 @@
         ],
         "endDates": [
             "Thu Sep 23 2021"
-        ],
-        "metaScore": "N/A",
-        "userScore": "N/A"
+        ]
     },
     "tharsis": {
         "name": "Tharsis",
@@ -1231,9 +1043,7 @@
         ],
         "endDates": [
             "Thu Sep 23 2021"
-        ],
-        "metaScore": "61",
-        "userScore": "4.8"
+        ]
     },
     "nioh-complete-edition": {
         "name": "Nioh: Complete Edition",
@@ -1243,9 +1053,7 @@
         ],
         "endDates": [
             "Thu Sep 16 2021"
-        ],
-        "metaScore": "84",
-        "userScore": "7.1"
+        ]
     },
     "sheltered": {
         "name": "Sheltered",
@@ -1255,9 +1063,7 @@
         ],
         "endDates": [
             "Thu Sep 16 2021"
-        ],
-        "metaScore": "62",
-        "userScore": "5.1"
+        ]
     },
     "yokus-island-express": {
         "name": "Yoku's Island Express",
@@ -1267,9 +1073,7 @@
         ],
         "endDates": [
             "Thu Sep 09 2021"
-        ],
-        "metaScore": "84",
-        "userScore": "7.9"
+        ]
     },
     "automachef": {
         "name": "Automachef",
@@ -1279,9 +1083,7 @@
         ],
         "endDates": [
             "Thu Sep 02 2021"
-        ],
-        "metaScore": "71",
-        "userScore": "5.1"
+        ]
     },
     "void-bastards": {
         "name": "Void Bastards",
@@ -1291,9 +1093,7 @@
         ],
         "endDates": [
             "Thu Aug 26 2021"
-        ],
-        "metaScore": "81",
-        "userScore": "7.5"
+        ]
     },
     "yooka-laylee": {
         "name": "Yooka-Laylee",
@@ -1303,9 +1103,7 @@
         ],
         "endDates": [
             "Thu Aug 26 2021"
-        ],
-        "metaScore": "73",
-        "userScore": "6.5"
+        ]
     },
     "rebel-galaxy": {
         "name": "Rebel Galaxy",
@@ -1316,9 +1114,7 @@
         ],
         "endDates": [
             "Thu Aug 19 2021"
-        ],
-        "metaScore": "75",
-        "userScore": "7.5"
+        ]
     },
     "minit": {
         "name": "Minit",
@@ -1329,9 +1125,7 @@
         ],
         "endDates": [
             "Thu Aug 12 2021"
-        ],
-        "metaScore": "79",
-        "userScore": "6.6"
+        ]
     },
     "a-plague-tale-innocence": {
         "name": "A Plague Tale: Innocence",
@@ -1341,9 +1135,7 @@
         ],
         "endDates": [
             "Thu Aug 12 2021"
-        ],
-        "metaScore": "81",
-        "userScore": "8.5"
+        ]
     },
     "mothergunship": {
         "name": "Mothergunship",
@@ -1353,9 +1145,7 @@
         ],
         "endDates": [
             "Thu Aug 05 2021"
-        ],
-        "metaScore": "72",
-        "userScore": "6.8"
+        ]
     },
     "train-sim-world": {
         "name": "Train Sim World",
@@ -1365,9 +1155,7 @@
         ],
         "endDates": [
             "Thu Aug 05 2021"
-        ],
-        "metaScore": "N/A",
-        "userScore": "6.6"
+        ]
     },
     "defense-grid-the-awakening": {
         "name": "Defense Grid: The Awakening",
@@ -1377,9 +1165,7 @@
         ],
         "endDates": [
             "Mon Dec 21 2020"
-        ],
-        "metaScore": "81",
-        "userScore": "8.6"
+        ]
     },
     "verdun": {
         "name": "Verdun",
@@ -1389,9 +1175,7 @@
         ],
         "endDates": [
             "Thu Jul 29 2021"
-        ],
-        "metaScore": "70",
-        "userScore": "7.7"
+        ]
     },
     "obduction": {
         "name": "Obduction",
@@ -1401,9 +1185,7 @@
         ],
         "endDates": [
             "Thu Jul 22 2021"
-        ],
-        "metaScore": "76",
-        "userScore": "7.6"
+        ]
     },
     "offworld-trading-company": {
         "name": "Offworld Trading Company",
@@ -1414,9 +1196,7 @@
         ],
         "endDates": [
             "Thu Jul 22 2021"
-        ],
-        "metaScore": "78",
-        "userScore": "7.6"
+        ]
     },
     "bridge-constructor-the-walking-dead": {
         "name": "Bridge Constructor: The Walking Dead",
@@ -1426,9 +1206,7 @@
         ],
         "endDates": [
             "Thu Jul 15 2021"
-        ],
-        "metaScore": "72",
-        "userScore": "4.3"
+        ]
     },
     "ironcast": {
         "name": "Ironcast",
@@ -1438,9 +1216,7 @@
         ],
         "endDates": [
             "Thu Jul 15 2021"
-        ],
-        "metaScore": "75",
-        "userScore": "7.2"
+        ]
     },
     "the-spectrum-retreat": {
         "name": "The Spectrum Retreat",
@@ -1450,9 +1226,7 @@
         ],
         "endDates": [
             "Thu Jul 08 2021"
-        ],
-        "metaScore": "68",
-        "userScore": "6.1"
+        ]
     },
     "horizon-chase-turbo": {
         "name": "Horizon Chase Turbo",
@@ -1462,9 +1236,7 @@
         ],
         "endDates": [
             "Thu Jul 01 2021"
-        ],
-        "metaScore": "76",
-        "userScore": "7.6"
+        ]
     },
     "sonic-mania": {
         "name": "Sonic Mania",
@@ -1474,9 +1246,7 @@
         ],
         "endDates": [
             "Thu Jul 01 2021"
-        ],
-        "metaScore": "84",
-        "userScore": "7.8"
+        ]
     },
     "hell-is-other-demons": {
         "name": "Hell is Other Demons",
@@ -1486,9 +1256,7 @@
         ],
         "endDates": [
             "Thu Jun 24 2021"
-        ],
-        "metaScore": "85",
-        "userScore": "8.2"
+        ]
     },
     "frostpunk": {
         "name": "Frostpunk",
@@ -1498,9 +1266,7 @@
         ],
         "endDates": [
             "Thu Jun 10 2021"
-        ],
-        "metaScore": "84",
-        "userScore": "8.4"
+        ]
     },
     "among-us": {
         "name": "Among Us",
@@ -1510,9 +1276,7 @@
         ],
         "endDates": [
             "Thu Jun 03 2021"
-        ],
-        "metaScore": "85",
-        "userScore": "6.8"
+        ]
     },
     "nba-2k21": {
         "name": "NBA 2K21",
@@ -1522,9 +1286,7 @@
         ],
         "endDates": [
             "Thu May 27 2021"
-        ],
-        "metaScore": "67",
-        "userScore": "1.2"
+        ]
     },
     "the-lions-song": {
         "name": "The Lion's Song",
@@ -1534,9 +1296,7 @@
         ],
         "endDates": [
             "Thu May 20 2021"
-        ],
-        "metaScore": "77",
-        "userScore": "7.5"
+        ]
     },
     "pine": {
         "name": "Pine",
@@ -1546,9 +1306,7 @@
         ],
         "endDates": [
             "Thu May 13 2021"
-        ],
-        "metaScore": "48",
-        "userScore": "6.8"
+        ]
     },
     "hand-of-fate-2": {
         "name": "Hand of Fate 2",
@@ -1558,33 +1316,27 @@
         ],
         "endDates": [
             "Thu Apr 29 2021"
-        ],
-        "metaScore": "80",
-        "userScore": "7.4"
+        ]
     },
     "deponia-the-complete-journey": {
-        "name": "Deponia: The Complete Journey",
+        "name": "Deponia The Complete Journey",
         "cleanName": "deponia-the-complete-journey",
         "startDates": [
             "Thu Apr 15 2021"
         ],
         "endDates": [
             "Thu Apr 22 2021"
-        ],
-        "metaScore": "74",
-        "userScore": "7.5"
+        ]
     },
     "3-out-of-10-season-two": {
-        "name": "3 Out Of 10: Season Two",
+        "name": "3 out of 10: Season Two",
         "cleanName": "3-out-of-10-season-two",
         "startDates": [
             "Thu Apr 08 2021"
         ],
         "endDates": [
             "Thu Apr 15 2021"
-        ],
-        "metaScore": "79",
-        "userScore": "8.4"
+        ]
     },
     "tales-of-the-neon-sea": {
         "name": "Tales of the Neon Sea",
@@ -1594,9 +1346,7 @@
         ],
         "endDates": [
             "Thu Apr 08 2021"
-        ],
-        "metaScore": "62",
-        "userScore": "7.5"
+        ]
     },
     "creature-in-the-well": {
         "name": "Creature in the Well",
@@ -1606,9 +1356,7 @@
         ],
         "endDates": [
             "Thu Apr 01 2021"
-        ],
-        "metaScore": "82",
-        "userScore": "5.4"
+        ]
     },
     "the-fall": {
         "name": "The Fall",
@@ -1618,23 +1366,17 @@
         ],
         "endDates": [
             "Thu Mar 25 2021"
-        ],
-        "metaScore": "76",
-        "userScore": "7.4"
+        ]
     },
     "surviving-mars": {
         "name": "Surviving Mars",
         "cleanName": "surviving-mars",
         "startDates": [
-            "Thu Mar 11 2021",
-            "Thu Oct 10 2019"
+            "Thu Mar 11 2021"
         ],
         "endDates": [
-            "Thu Mar 18 2021",
-            "Thu Oct 17 2019"
-        ],
-        "metaScore": "76",
-        "userScore": "7.1"
+            "Thu Mar 18 2021"
+        ]
     },
     "wargame-red-dragon": {
         "name": "Wargame: Red Dragon",
@@ -1644,9 +1386,7 @@
         ],
         "endDates": [
             "Thu Mar 11 2021"
-        ],
-        "metaScore": "78",
-        "userScore": "7.9"
+        ]
     },
     "sunless-sea": {
         "name": "Sunless Sea",
@@ -1656,9 +1396,7 @@
         ],
         "endDates": [
             "Thu Mar 04 2021"
-        ],
-        "metaScore": "81",
-        "userScore": "7.5"
+        ]
     },
     "rage-2": {
         "name": "Rage 2",
@@ -1668,9 +1406,7 @@
         ],
         "endDates": [
             "Thu Feb 25 2021"
-        ],
-        "metaScore": "73",
-        "userScore": "5.5"
+        ]
     },
     "absolute-drift": {
         "name": "Absolute Drift",
@@ -1680,9 +1416,7 @@
         ],
         "endDates": [
             "Thu Feb 25 2021"
-        ],
-        "metaScore": "66",
-        "userScore": "5.8"
+        ]
     },
     "halcyon-6-lightspeed-edition": {
         "name": "Halcyon 6: Lightspeed Edition",
@@ -1692,9 +1426,7 @@
         ],
         "endDates": [
             "Thu Feb 11 2021"
-        ],
-        "metaScore": "73",
-        "userScore": "7.0"
+        ]
     },
     "for-the-king": {
         "name": "For the King",
@@ -1705,9 +1437,7 @@
         ],
         "endDates": [
             "Thu Feb 11 2021"
-        ],
-        "metaScore": "79",
-        "userScore": "7.1"
+        ]
     },
     "metro-last-light-redux": {
         "name": "Metro: Last Light Redux",
@@ -1717,9 +1447,7 @@
         ],
         "endDates": [
             "Thu Feb 11 2021"
-        ],
-        "metaScore": "76",
-        "userScore": "7.8"
+        ]
     },
     "dandara": {
         "name": "Dandara",
@@ -1729,21 +1457,27 @@
         ],
         "endDates": [
             "Thu Feb 04 2021"
+        ]
+    },
+    "galactic-civilizations-3": {
+        "name": "Galactic Civilizations 3",
+        "cleanName": "galactic-civilizations-3",
+        "startDates": [
+            "Thu Jan 21 2021"
         ],
-        "metaScore": "70",
-        "userScore": "7.9"
+        "endDates": [
+            "Thu Jan 28 2021"
+        ]
     },
     "star-wars-battlefront-ii": {
-        "name": "Star Wars Battlefront II",
+        "name": "Star Wars Battlefront ii",
         "cleanName": "star-wars-battlefront-ii",
         "startDates": [
             "Thu Jan 14 2021"
         ],
         "endDates": [
             "Thu Jan 21 2021"
-        ],
-        "metaScore": "78",
-        "userScore": "8.6"
+        ]
     },
     "crying-suns": {
         "name": "Crying Suns",
@@ -1753,9 +1487,7 @@
         ],
         "endDates": [
             "Thu Jan 14 2021"
-        ],
-        "metaScore": "75",
-        "userScore": "7.6"
+        ]
     },
     "jurassic-world-evolution": {
         "name": "Jurassic World Evolution",
@@ -1765,23 +1497,17 @@
         ],
         "endDates": [
             "Thu Jan 07 2021"
-        ],
-        "metaScore": "69",
-        "userScore": "7.3"
+        ]
     },
     "torchlight-ii": {
         "name": "Torchlight II",
         "cleanName": "torchlight-ii",
         "startDates": [
-            "Wed Dec 30 2020",
-            "Thu Jul 16 2020"
+            "Wed Dec 30 2020"
         ],
         "endDates": [
-            "Thu Dec 31 2020",
-            "Thu Jul 23 2020"
-        ],
-        "metaScore": "88",
-        "userScore": "8.5"
+            "Thu Dec 31 2020"
+        ]
     },
     "solitairica": {
         "name": "Solitairica",
@@ -1791,9 +1517,7 @@
         ],
         "endDates": [
             "Wed Dec 30 2020"
-        ],
-        "metaScore": "82",
-        "userScore": "6.6"
+        ]
     },
     "stranded-deep": {
         "name": "Stranded Deep",
@@ -1803,9 +1527,7 @@
         ],
         "endDates": [
             "Tue Dec 29 2020"
-        ],
-        "metaScore": "65",
-        "userScore": "7.0"
+        ]
     },
     "night-in-the-woods": {
         "name": "Night in the Woods",
@@ -1815,9 +1537,7 @@
         ],
         "endDates": [
             "Mon Dec 28 2020"
-        ],
-        "metaScore": "88",
-        "userScore": "7.7"
+        ]
     },
     "my-time-at-portia": {
         "name": "My Time at Portia",
@@ -1827,9 +1547,7 @@
         ],
         "endDates": [
             "Sun Dec 27 2020"
-        ],
-        "metaScore": "73",
-        "userScore": "6.9"
+        ]
     },
     "darkest-dungeon": {
         "name": "Darkest Dungeon",
@@ -1839,23 +1557,17 @@
         ],
         "endDates": [
             "Sat Dec 26 2020"
-        ],
-        "metaScore": "84",
-        "userScore": "7.9"
+        ]
     },
     "inside": {
         "name": "Inside",
         "cleanName": "inside",
         "startDates": [
-            "Thu Dec 24 2020",
-            "Thu Aug 29 2019"
+            "Thu Dec 24 2020"
         ],
         "endDates": [
-            "Fri Dec 25 2020",
-            "Thu Sep 05 2019"
-        ],
-        "metaScore": "87",
-        "userScore": "8.6"
+            "Fri Dec 25 2020"
+        ]
     },
     "tropico-5": {
         "name": "Tropico 5",
@@ -1865,9 +1577,7 @@
         ],
         "endDates": [
             "Thu Dec 24 2020"
-        ],
-        "metaScore": "75",
-        "userScore": "6.9"
+        ]
     },
     "metro-2033": {
         "name": "Metro: 2033",
@@ -1877,9 +1587,7 @@
         ],
         "endDates": [
             "Wed Dec 23 2020"
-        ],
-        "metaScore": "81",
-        "userScore": "8.1"
+        ]
     },
     "alien-isolation": {
         "name": "Alien: Isolation",
@@ -1889,9 +1597,7 @@
         ],
         "endDates": [
             "Tue Dec 22 2020"
-        ],
-        "metaScore": "81",
-        "userScore": "8.5"
+        ]
     },
     "the-long-dark": {
         "name": "The Long Dark",
@@ -1901,21 +1607,17 @@
         ],
         "endDates": [
             "Sun Dec 20 2020"
-        ],
-        "metaScore": "77",
-        "userScore": "6.7"
+        ]
     },
     "oddworld-abes-oddysee---new-n-tasty": {
-        "name": "Oddworld: New 'n' Tasty!",
+        "name": "Oddworld Abes Oddysee-New N Tasty",
         "cleanName": "oddworld-abes-oddysee---new-n-tasty",
         "startDates": [
             "Fri Dec 18 2020"
         ],
         "endDates": [
             "Sat Dec 19 2020"
-        ],
-        "metaScore": "86",
-        "userScore": "7.6"
+        ]
     },
     "pillars-of-eternity": {
         "name": "Pillars of Eternity",
@@ -1925,9 +1627,7 @@
         ],
         "endDates": [
             "Thu Dec 17 2020"
-        ],
-        "metaScore": "89",
-        "userScore": "8.3"
+        ]
     },
     "tyranny": {
         "name": "Tyranny",
@@ -1937,9 +1637,7 @@
         ],
         "endDates": [
             "Thu Dec 17 2020"
-        ],
-        "metaScore": "80",
-        "userScore": "7.8"
+        ]
     },
     "cave-story-plus": {
         "name": "Cave Story Plus",
@@ -1949,21 +1647,17 @@
         ],
         "endDates": [
             "Thu Dec 10 2020"
-        ],
-        "metaScore": "83",
-        "userScore": "8.3"
+        ]
     },
     "spintires-mudrunner": {
-        "name": "MudRunner",
+        "name": "Spintires Mudrunner",
         "cleanName": "spintires-mudrunner",
         "startDates": [
             "Thu Nov 26 2020"
         ],
         "endDates": [
             "Thu Dec 03 2020"
-        ],
-        "metaScore": "77",
-        "userScore": "6.7"
+        ]
     },
     "elite-dangerous": {
         "name": "Elite Dangerous",
@@ -1973,9 +1667,7 @@
         ],
         "endDates": [
             "Thu Nov 26 2020"
-        ],
-        "metaScore": "80",
-        "userScore": "6.7"
+        ]
     },
     "the-world-next-door": {
         "name": "The World Next Door",
@@ -1985,21 +1677,17 @@
         ],
         "endDates": [
             "Thu Nov 26 2020"
-        ],
-        "metaScore": "N/A",
-        "userScore": "6.6"
+        ]
     },
     "the-textorcist-the-story-of-ray-bibbia": {
-        "name": "The Textorcist: The Story of Ray Bibbia",
+        "name": "The Textorcist The Story Of Ray Bibbia",
         "cleanName": "the-textorcist-the-story-of-ray-bibbia",
         "startDates": [
             "Thu Nov 12 2020"
         ],
         "endDates": [
             "Thu Nov 19 2020"
-        ],
-        "metaScore": "78",
-        "userScore": "6.5"
+        ]
     },
     "dungeons-3": {
         "name": "Dungeons 3",
@@ -2009,21 +1697,17 @@
         ],
         "endDates": [
             "Thu Nov 12 2020"
-        ],
-        "metaScore": "75",
-        "userScore": "7.6"
+        ]
     },
     "ghostbusters-the-video-game-remastered": {
-        "name": "Ghostbusters: The Video Game Remastered",
+        "name": "Ghostbusters The Video Game Remastered",
         "cleanName": "ghostbusters-the-video-game-remastered",
         "startDates": [
             "Thu Oct 29 2020"
         ],
         "endDates": [
             "Thu Nov 05 2020"
-        ],
-        "metaScore": "67",
-        "userScore": "4.1"
+        ]
     },
     "blair-witch": {
         "name": "Blair Witch",
@@ -2033,9 +1717,7 @@
         ],
         "endDates": [
             "Thu Nov 05 2020"
-        ],
-        "metaScore": "69",
-        "userScore": "6.3"
+        ]
     },
     "layers-of-fear-2": {
         "name": "Layers of Fear 2",
@@ -2045,9 +1727,7 @@
         ],
         "endDates": [
             "Thu Oct 29 2020"
-        ],
-        "metaScore": "70",
-        "userScore": "6.2"
+        ]
     },
     "costume-quest-2": {
         "name": "Costume Quest 2",
@@ -2057,9 +1737,7 @@
         ],
         "endDates": [
             "Thu Oct 29 2020"
-        ],
-        "metaScore": "68",
-        "userScore": "7.3"
+        ]
     },
     "amnesia-a-machine-for-pigs": {
         "name": "Amnesia: A Machine for Pigs",
@@ -2069,9 +1747,7 @@
         ],
         "endDates": [
             "Thu Oct 22 2020"
-        ],
-        "metaScore": "72",
-        "userScore": "5.9"
+        ]
     },
     "kingdom-new-lands": {
         "name": "Kingdom: New Lands",
@@ -2082,9 +1758,7 @@
         ],
         "endDates": [
             "Thu Oct 22 2020"
-        ],
-        "metaScore": "74",
-        "userScore": "7.7"
+        ]
     },
     "abzu": {
         "name": "Abzu",
@@ -2095,9 +1769,7 @@
         ],
         "endDates": [
             "Thu Oct 15 2020"
-        ],
-        "metaScore": "83",
-        "userScore": "7.3"
+        ]
     },
     "pikuniku": {
         "name": "Pikuniku",
@@ -2107,9 +1779,7 @@
         ],
         "endDates": [
             "Thu Oct 08 2020"
-        ],
-        "metaScore": "74",
-        "userScore": "7.2"
+        ]
     },
     "rollercoaster-tycoon-3": {
         "name": "Rollercoaster Tycoon 3",
@@ -2119,9 +1789,7 @@
         ],
         "endDates": [
             "Thu Oct 01 2020"
-        ],
-        "metaScore": "81",
-        "userScore": "5.4"
+        ]
     },
     "football-manager-2022": {
         "name": "Football Manager 2022",
@@ -2131,9 +1799,7 @@
         ],
         "endDates": [
             "Thu Sep 24 2020"
-        ],
-        "metaScore": "85",
-        "userScore": "7.1"
+        ]
     },
     "stick-it-to-the-man!": {
         "name": "Stick It To The Man!",
@@ -2143,9 +1809,7 @@
         ],
         "endDates": [
             "Thu Sep 24 2020"
-        ],
-        "metaScore": "79",
-        "userScore": "7.3"
+        ]
     },
     "railway-empire": {
         "name": "Railway Empire",
@@ -2155,9 +1819,7 @@
         ],
         "endDates": [
             "Thu Sep 17 2020"
-        ],
-        "metaScore": "74",
-        "userScore": "6.8"
+        ]
     },
     "where-the-water-tastes-like-wine": {
         "name": "Where the Water Tastes Like Wine",
@@ -2167,9 +1829,7 @@
         ],
         "endDates": [
             "Thu Sep 17 2020"
-        ],
-        "metaScore": "74",
-        "userScore": "5.2"
+        ]
     },
     "into-the-breach": {
         "name": "Into The Breach",
@@ -2179,9 +1839,7 @@
         ],
         "endDates": [
             "Fri Dec 20 2019"
-        ],
-        "metaScore": "90",
-        "userScore": "7.8"
+        ]
     },
     "hitman": {
         "name": "Hitman",
@@ -2191,9 +1849,7 @@
         ],
         "endDates": [
             "Thu Sep 03 2020"
-        ],
-        "metaScore": "83",
-        "userScore": "7.5"
+        ]
     },
     "shadowrun-returns": {
         "name": "Shadowrun Returns",
@@ -2203,33 +1859,27 @@
         ],
         "endDates": [
             "Thu Sep 03 2020"
-        ],
-        "metaScore": "76",
-        "userScore": "7.4"
+        ]
     },
     "shadowrun-hong-kong": {
-        "name": "Shadowrun: Hong Kong",
+        "name": "shadowrun Hong Kong",
         "cleanName": "shadowrun-hong-kong",
         "startDates": [
             "Thu Aug 27 2020"
         ],
         "endDates": [
             "Thu Sep 03 2020"
-        ],
-        "metaScore": "81",
-        "userScore": "7.8"
+        ]
     },
     "shadowrun-dragonfall": {
-        "name": "Shadowrun: Dragonfall",
+        "name": "Shadowrun Dragonfall",
         "cleanName": "shadowrun-dragonfall",
         "startDates": [
             "Thu Aug 27 2020"
         ],
         "endDates": [
             "Thu Sep 03 2020"
-        ],
-        "metaScore": "81",
-        "userScore": "8.3"
+        ]
     },
     "enter-the-gungeon": {
         "name": "Enter The Gungeon",
@@ -2239,9 +1889,7 @@
         ],
         "endDates": [
             "Thu Jun 20 2019"
-        ],
-        "metaScore": "84",
-        "userScore": "8.1"
+        ]
     },
     "gods-trigger": {
         "name": "God's Trigger",
@@ -2251,9 +1899,7 @@
         ],
         "endDates": [
             "Thu Aug 27 2020"
-        ],
-        "metaScore": "75",
-        "userScore": "8.0"
+        ]
     },
     "the-alto-collection": {
         "name": "The Alto Collection",
@@ -2263,9 +1909,7 @@
         ],
         "endDates": [
             "Thu Aug 20 2020"
-        ],
-        "metaScore": "75",
-        "userScore": "7.6"
+        ]
     },
     "wilmots-warehouse": {
         "name": "Wilmot's Warehouse",
@@ -2275,21 +1919,17 @@
         ],
         "endDates": [
             "Thu Aug 13 2020"
-        ],
-        "metaScore": "85",
-        "userScore": "8.0"
+        ]
     },
     "3-out-of-10-season-one": {
-        "name": "3 Out Of 10, EP 1: Welcome To Shovelworks",
+        "name": "3 Out Of 10 Season One",
         "cleanName": "3-out-of-10-season-one",
         "startDates": [
             "Thu Aug 06 2020"
         ],
         "endDates": [
             "Thu Aug 13 2020"
-        ],
-        "metaScore": "85",
-        "userScore": "7.4"
+        ]
     },
     "superbrothers-sword-sworcery-ep": {
         "name": "Superbrothers: Sword Sworcery Ep",
@@ -2299,9 +1939,7 @@
         ],
         "endDates": [
             "Thu Aug 06 2020"
-        ],
-        "metaScore": "83",
-        "userScore": "6.4"
+        ]
     },
     "barony": {
         "name": "Barony",
@@ -2311,9 +1949,7 @@
         ],
         "endDates": [
             "Thu Aug 06 2020"
-        ],
-        "metaScore": "N/A",
-        "userScore": "6.7"
+        ]
     },
     "20xx": {
         "name": "20XX",
@@ -2323,9 +1959,7 @@
         ],
         "endDates": [
             "Thu Aug 06 2020"
-        ],
-        "metaScore": "77",
-        "userScore": "6.3"
+        ]
     },
     "tacoma": {
         "name": "Tacoma",
@@ -2335,9 +1969,7 @@
         ],
         "endDates": [
             "Thu Jul 30 2020"
-        ],
-        "metaScore": "76",
-        "userScore": "6.4"
+        ]
     },
     "next-up-hero": {
         "name": "Next Up Hero",
@@ -2347,9 +1979,17 @@
         ],
         "endDates": [
             "Thu Jul 30 2020"
+        ]
+    },
+    "torchlight-2": {
+        "name": "Torchlight 2",
+        "cleanName": "torchlight-2",
+        "startDates": [
+            "Thu Jul 16 2020"
         ],
-        "metaScore": "N/A",
-        "userScore": "5.7"
+        "endDates": [
+            "Thu Jul 23 2020"
+        ]
     },
     "lifeless-planet": {
         "name": "Lifeless Planet",
@@ -2359,9 +1999,7 @@
         ],
         "endDates": [
             "Thu Jul 16 2020"
-        ],
-        "metaScore": "59",
-        "userScore": "6.4"
+        ]
     },
     "the-escapists-2": {
         "name": "The Escapists 2",
@@ -2371,9 +2009,7 @@
         ],
         "endDates": [
             "Thu Jul 16 2020"
-        ],
-        "metaScore": "75",
-        "userScore": "7.6"
+        ]
     },
     "conan-exiles": {
         "name": "Conan Exiles",
@@ -2383,9 +2019,7 @@
         ],
         "endDates": [
             "Thu Jul 09 2020"
-        ],
-        "metaScore": "68",
-        "userScore": "6.5"
+        ]
     },
     "hue": {
         "name": "Hue",
@@ -2395,9 +2029,7 @@
         ],
         "endDates": [
             "Thu Jul 09 2020"
-        ],
-        "metaScore": "79",
-        "userScore": "7.5"
+        ]
     },
     "stranger-things-3-the-game": {
         "name": "Stranger Things 3: The Game",
@@ -2407,21 +2039,17 @@
         ],
         "endDates": [
             "Thu Jul 02 2020"
-        ],
-        "metaScore": "62",
-        "userScore": "4.9"
+        ]
     },
     "aer-memories-of-old": {
-        "name": "AER: Memories of Old",
+        "name": "AER Memories of Old",
         "cleanName": "aer-memories-of-old",
         "startDates": [
             "Thu Jun 25 2020"
         ],
         "endDates": [
             "Thu Jul 02 2020"
-        ],
-        "metaScore": "69",
-        "userScore": "6.5"
+        ]
     },
     "pathway": {
         "name": "Pathway",
@@ -2431,9 +2059,7 @@
         ],
         "endDates": [
             "Thu Jun 25 2020"
-        ],
-        "metaScore": "68",
-        "userScore": "6.7"
+        ]
     },
     "samurai-shodown": {
         "name": "Samurai Shodown",
@@ -2443,21 +2069,17 @@
         ],
         "endDates": [
             "Thu Jun 18 2020"
-        ],
-        "metaScore": "76",
-        "userScore": "5.6"
+        ]
     },
     "overcooked!-2": {
-        "name": "Overcooked! 2",
+        "name": "overcooked! 2",
         "cleanName": "overcooked!-2",
         "startDates": [
             "Thu Jun 04 2020"
         ],
         "endDates": [
             "Thu Jun 11 2020"
-        ],
-        "metaScore": "81",
-        "userScore": "7.7"
+        ]
     },
     "borderlands-the-handsome-collection": {
         "name": "Borderlands: The Handsome Collection",
@@ -2467,21 +2089,17 @@
         ],
         "endDates": [
             "Thu Jun 04 2020"
-        ],
-        "metaScore": "82",
-        "userScore": "8.2"
+        ]
     },
     "sid-meiers-civilization-vi": {
-        "name": "Sid Meier's Civilization VI",
+        "name": "Sid Meiers Civilization VI",
         "cleanName": "sid-meiers-civilization-vi",
         "startDates": [
             "Thu May 21 2020"
         ],
         "endDates": [
             "Thu May 28 2020"
-        ],
-        "metaScore": "88",
-        "userScore": "7.0"
+        ]
     },
     "grand-theft-auto-v": {
         "name": "Grand Theft Auto V",
@@ -2491,9 +2109,7 @@
         ],
         "endDates": [
             "Thu May 21 2020"
-        ],
-        "metaScore": "96",
-        "userScore": "7.8"
+        ]
     },
     "death-coming": {
         "name": "Death Coming",
@@ -2503,9 +2119,7 @@
         ],
         "endDates": [
             "Thu May 14 2020"
-        ],
-        "metaScore": "70",
-        "userScore": "5.0"
+        ]
     },
     "amnesia-the-dark-descent": {
         "name": "Amnesia: The Dark Descent",
@@ -2515,9 +2129,7 @@
         ],
         "endDates": [
             "Thu May 07 2020"
-        ],
-        "metaScore": "85",
-        "userScore": "8.6"
+        ]
     },
     "crashlands": {
         "name": "Crashlands",
@@ -2527,9 +2139,7 @@
         ],
         "endDates": [
             "Thu May 07 2020"
-        ],
-        "metaScore": "78",
-        "userScore": "7.5"
+        ]
     },
     "just-cause-4": {
         "name": "Just Cause 4",
@@ -2539,9 +2149,7 @@
         ],
         "endDates": [
             "Thu Apr 23 2020"
-        ],
-        "metaScore": "68",
-        "userScore": "4.7"
+        ]
     },
     "wheels-of-aurelia": {
         "name": "Wheels of Aurelia",
@@ -2551,21 +2159,17 @@
         ],
         "endDates": [
             "Thu Apr 23 2020"
-        ],
-        "metaScore": "63",
-        "userScore": "4.5"
+        ]
     },
     "sherlock-holmes-crimes-punishments": {
-        "name": "Sherlock Holmes: Crimes & Punishments",
+        "name": "Sherlock Holmes Crimes & Punishments",
         "cleanName": "sherlock-holmes-crimes-punishments",
         "startDates": [
             "Thu Apr 09 2020"
         ],
         "endDates": [
             "Thu Apr 16 2020"
-        ],
-        "metaScore": "77",
-        "userScore": "7.7"
+        ]
     },
     "close-to-the-sun": {
         "name": "Close to the Sun",
@@ -2575,9 +2179,7 @@
         ],
         "endDates": [
             "Thu Apr 16 2020"
-        ],
-        "metaScore": "66",
-        "userScore": "5.1"
+        ]
     },
     "gone-home": {
         "name": "Gone Home",
@@ -2587,9 +2189,7 @@
         ],
         "endDates": [
             "Thu Apr 09 2020"
-        ],
-        "metaScore": "86",
-        "userScore": "5.5"
+        ]
     },
     "hob": {
         "name": "Hob",
@@ -2599,9 +2199,7 @@
         ],
         "endDates": [
             "Thu Apr 09 2020"
-        ],
-        "metaScore": "76",
-        "userScore": "7.5"
+        ]
     },
     "figment": {
         "name": "Figment",
@@ -2611,9 +2209,7 @@
         ],
         "endDates": [
             "Thu Apr 02 2020"
-        ],
-        "metaScore": "77",
-        "userScore": "7.1"
+        ]
     },
     "tormentor-x-punisher": {
         "name": "Tormentor x Punisher",
@@ -2623,9 +2219,7 @@
         ],
         "endDates": [
             "Thu Apr 02 2020"
-        ],
-        "metaScore": "N/A",
-        "userScore": "6.3"
+        ]
     },
     "drawful-2": {
         "name": "Drawful 2",
@@ -2635,9 +2229,7 @@
         ],
         "endDates": [
             "Thu Apr 02 2020"
-        ],
-        "metaScore": "72",
-        "userScore": "5.6"
+        ]
     },
     "world-war-z": {
         "name": "World War Z",
@@ -2647,9 +2239,7 @@
         ],
         "endDates": [
             "Thu Apr 02 2020"
-        ],
-        "metaScore": "70",
-        "userScore": "5.9"
+        ]
     },
     "the-stanley-parable": {
         "name": "The Stanley Parable",
@@ -2659,9 +2249,7 @@
         ],
         "endDates": [
             "Thu Mar 26 2020"
-        ],
-        "metaScore": "88",
-        "userScore": "8.1"
+        ]
     },
     "watch-dogs": {
         "name": "Watch Dogs",
@@ -2671,9 +2259,7 @@
         ],
         "endDates": [
             "Thu Mar 26 2020"
-        ],
-        "metaScore": "77",
-        "userScore": "6.1"
+        ]
     },
     "anodyne-2-return-to-dust": {
         "name": "Anodyne 2: Return to Dust",
@@ -2683,9 +2269,7 @@
         ],
         "endDates": [
             "Thu Mar 19 2020"
-        ],
-        "metaScore": "75",
-        "userScore": "8.0"
+        ]
     },
     "a-short-hike": {
         "name": "A Short Hike",
@@ -2695,9 +2279,7 @@
         ],
         "endDates": [
             "Thu Mar 19 2020"
-        ],
-        "metaScore": "82",
-        "userScore": "8.5"
+        ]
     },
     "mutazione": {
         "name": "Mutazione",
@@ -2707,9 +2289,7 @@
         ],
         "endDates": [
             "Thu Mar 19 2020"
-        ],
-        "metaScore": "80",
-        "userScore": "7.5"
+        ]
     },
     "gonner": {
         "name": "GoNNER",
@@ -2719,9 +2299,7 @@
         ],
         "endDates": [
             "Thu Mar 12 2020"
-        ],
-        "metaScore": "81",
-        "userScore": "6.6"
+        ]
     },
     "innerspace": {
         "name": "InnerSpace",
@@ -2731,9 +2309,7 @@
         ],
         "endDates": [
             "Thu Mar 05 2020"
-        ],
-        "metaScore": "65",
-        "userScore": "5.6"
+        ]
     },
     "faeria": {
         "name": "Faeria",
@@ -2743,9 +2319,7 @@
         ],
         "endDates": [
             "Thu Feb 27 2020"
-        ],
-        "metaScore": "81",
-        "userScore": "7.8"
+        ]
     },
     "aztez": {
         "name": "Aztez",
@@ -2755,21 +2329,17 @@
         ],
         "endDates": [
             "Thu Feb 20 2020"
-        ],
-        "metaScore": "81",
-        "userScore": "5.4"
+        ]
     },
     "kingdom-come-deliverance": {
-        "name": "Kingdom Come:   Deliverance",
+        "name": "Kingdom Come Deliverance",
         "cleanName": "kingdom-come-deliverance",
         "startDates": [
             "Thu Feb 13 2020"
         ],
         "endDates": [
             "Thu Feb 20 2020"
-        ],
-        "metaScore": "76",
-        "userScore": "8.0"
+        ]
     },
     "carcassonne": {
         "name": "Carcassonne",
@@ -2779,9 +2349,7 @@
         ],
         "endDates": [
             "Thu Feb 13 2020"
-        ],
-        "metaScore": "69",
-        "userScore": "6.0"
+        ]
     },
     "ticket-to-ride": {
         "name": "Ticket to Ride",
@@ -2791,9 +2359,17 @@
         ],
         "endDates": [
             "Thu Feb 13 2020"
+        ]
+    },
+    "pandemic": {
+        "name": "Pandemic",
+        "cleanName": "pandemic",
+        "startDates": [
+            "Thu Feb 06 2020"
         ],
-        "metaScore": "70",
-        "userScore": "7.2"
+        "endDates": [
+            "Thu Feb 13 2020"
+        ]
     },
     "farming-simulator-19": {
         "name": "Farming Simulator 19",
@@ -2803,9 +2379,7 @@
         ],
         "endDates": [
             "Thu Feb 06 2020"
-        ],
-        "metaScore": "73",
-        "userScore": "6.5"
+        ]
     },
     "the-bridge-2013": {
         "name": "The Bridge 2013",
@@ -2815,9 +2389,7 @@
         ],
         "endDates": [
             "Thu Jan 30 2020"
-        ],
-        "metaScore": "74",
-        "userScore": "7.4"
+        ]
     },
     "horace": {
         "name": "Horace",
@@ -2827,9 +2399,7 @@
         ],
         "endDates": [
             "Thu Jan 23 2020"
-        ],
-        "metaScore": "81",
-        "userScore": "7.3"
+        ]
     },
     "sundered": {
         "name": "Sundered",
@@ -2839,9 +2409,7 @@
         ],
         "endDates": [
             "Thu Jan 16 2020"
-        ],
-        "metaScore": "74",
-        "userScore": "7.4"
+        ]
     },
     "steep": {
         "name": "Steep",
@@ -2851,9 +2419,7 @@
         ],
         "endDates": [
             "Thu Jan 09 2020"
-        ],
-        "metaScore": "72",
-        "userScore": "6.8"
+        ]
     },
     "darksiders": {
         "name": "Darksiders",
@@ -2863,9 +2429,7 @@
         ],
         "endDates": [
             "Thu Jan 09 2020"
-        ],
-        "metaScore": "83",
-        "userScore": "7.7"
+        ]
     },
     "darksiders-ii": {
         "name": "Darksiders II",
@@ -2875,9 +2439,7 @@
         ],
         "endDates": [
             "Thu Jan 09 2020"
-        ],
-        "metaScore": "81",
-        "userScore": "8.0"
+        ]
     },
     "hello-neighbor": {
         "name": "Hello Neighbor",
@@ -2887,9 +2449,7 @@
         ],
         "endDates": [
             "Tue Dec 31 2019"
-        ],
-        "metaScore": "38",
-        "userScore": "4.9"
+        ]
     },
     "the-talos-principle": {
         "name": "The Talos Principle",
@@ -2899,37 +2459,27 @@
         ],
         "endDates": [
             "Mon Dec 30 2019"
-        ],
-        "metaScore": "85",
-        "userScore": "8.6"
+        ]
     },
     "shadow-tactics-blades-of-the-shogun": {
         "name": "Shadow Tactics: Blades of the Shogun",
         "cleanName": "shadow-tactics-blades-of-the-shogun",
         "startDates": [
-            "Sat Dec 28 2019",
-            "Thu Nov 10 2022"
+            "Sat Dec 28 2019"
         ],
         "endDates": [
-            "Sun Dec 29 2019",
-            "Thu Nov 17 2022"
-        ],
-        "metaScore": "85",
-        "userScore": "8.5"
+            "Sun Dec 29 2019"
+        ]
     },
     "hyper-light-drifter": {
         "name": "Hyper Light Drifter",
         "cleanName": "hyper-light-drifter",
         "startDates": [
-            "Fri Dec 27 2019",
-            "Thu Aug 15 2019"
+            "Fri Dec 27 2019"
         ],
         "endDates": [
-            "Sat Dec 28 2019",
-            "Thu Aug 22 2019"
-        ],
-        "metaScore": "84",
-        "userScore": "8.2"
+            "Sat Dec 28 2019"
+        ]
     },
     "ftl-faster-than-light": {
         "name": "FTL: Faster Than Light",
@@ -2939,9 +2489,7 @@
         ],
         "endDates": [
             "Fri Dec 27 2019"
-        ],
-        "metaScore": "84",
-        "userScore": "8.3"
+        ]
     },
     "totally-accurate-battle-simulator": {
         "name": "Totally Accurate Battle Simulator",
@@ -2951,23 +2499,17 @@
         ],
         "endDates": [
             "Thu Dec 26 2019"
-        ],
-        "metaScore": "N/A",
-        "userScore": "7.7"
+        ]
     },
     "celeste": {
         "name": "Celeste",
         "cleanName": "celeste",
         "startDates": [
-            "Tue Dec 24 2019",
-            "Thu Aug 29 2019"
+            "Tue Dec 24 2019"
         ],
         "endDates": [
-            "Wed Dec 25 2019",
-            "Thu Sep 05 2019"
-        ],
-        "metaScore": "88",
-        "userScore": "8.4"
+            "Wed Dec 25 2019"
+        ]
     },
     "ape-out": {
         "name": "Ape Out",
@@ -2977,9 +2519,7 @@
         ],
         "endDates": [
             "Tue Dec 24 2019"
-        ],
-        "metaScore": "83",
-        "userScore": "6.8"
+        ]
     },
     "little-inferno": {
         "name": "Little Inferno",
@@ -2989,9 +2529,7 @@
         ],
         "endDates": [
             "Mon Dec 23 2019"
-        ],
-        "metaScore": "68",
-        "userScore": "7.5"
+        ]
     },
     "superhot": {
         "name": "Superhot",
@@ -3001,9 +2539,7 @@
         ],
         "endDates": [
             "Sun Dec 22 2019"
-        ],
-        "metaScore": "82",
-        "userScore": "7.6"
+        ]
     },
     "towerfall-ascension": {
         "name": "TowerFall Ascension",
@@ -3013,9 +2549,7 @@
         ],
         "endDates": [
             "Sat Dec 21 2019"
-        ],
-        "metaScore": "87",
-        "userScore": "6.9"
+        ]
     },
     "the-wolf-among-us": {
         "name": "The Wolf Among Us",
@@ -3025,9 +2559,7 @@
         ],
         "endDates": [
             "Thu Dec 19 2019"
-        ],
-        "metaScore": "80",
-        "userScore": "8.8"
+        ]
     },
     "jotun-valhalla-edition": {
         "name": "Jotun: Valhalla Edition",
@@ -3037,9 +2569,7 @@
         ],
         "endDates": [
             "Thu Dec 12 2019"
-        ],
-        "metaScore": "79",
-        "userScore": "6.9"
+        ]
     },
     "rayman-legends": {
         "name": "Rayman Legends",
@@ -3049,9 +2579,7 @@
         ],
         "endDates": [
             "Fri Dec 06 2019"
-        ],
-        "metaScore": "89",
-        "userScore": "8.5"
+        ]
     },
     "bad-north": {
         "name": "Bad North",
@@ -3061,9 +2589,7 @@
         ],
         "endDates": [
             "Fri Nov 29 2019"
-        ],
-        "metaScore": "74",
-        "userScore": "7.0"
+        ]
     },
     "the-messenger": {
         "name": "The Messenger",
@@ -3073,9 +2599,7 @@
         ],
         "endDates": [
             "Thu Nov 21 2019"
-        ],
-        "metaScore": "83",
-        "userScore": "7.9"
+        ]
     },
     "nuclear-throne": {
         "name": "Nuclear Throne",
@@ -3085,9 +2609,7 @@
         ],
         "endDates": [
             "Thu Nov 14 2019"
-        ],
-        "metaScore": "89",
-        "userScore": "7.8"
+        ]
     },
     "ruiner": {
         "name": "Ruiner",
@@ -3097,9 +2619,7 @@
         ],
         "endDates": [
             "Thu Nov 14 2019"
-        ],
-        "metaScore": "75",
-        "userScore": "7.6"
+        ]
     },
     "soma": {
         "name": "SOMA",
@@ -3109,9 +2629,7 @@
         ],
         "endDates": [
             "Thu Nov 07 2019"
-        ],
-        "metaScore": "84",
-        "userScore": "8.5"
+        ]
     },
     "costume-quest": {
         "name": "Costume Quest",
@@ -3121,9 +2639,7 @@
         ],
         "endDates": [
             "Thu Nov 07 2019"
-        ],
-        "metaScore": "69",
-        "userScore": "7.6"
+        ]
     },
     "layers-of-fear": {
         "name": "Layers of Fear",
@@ -3133,9 +2649,7 @@
         ],
         "endDates": [
             "Thu Oct 31 2019"
-        ],
-        "metaScore": "72",
-        "userScore": "7.3"
+        ]
     },
     "qube-2": {
         "name": "QUBE 2",
@@ -3145,9 +2659,7 @@
         ],
         "endDates": [
             "Thu Oct 31 2019"
-        ],
-        "metaScore": "76",
-        "userScore": "7.8"
+        ]
     },
     "alan-wakes-american-nightmare": {
         "name": "Alan Wake's American Nightmare",
@@ -3157,9 +2669,7 @@
         ],
         "endDates": [
             "Thu Oct 24 2019"
-        ],
-        "metaScore": "73",
-        "userScore": "6.6"
+        ]
     },
     "observer": {
         "name": "Observer",
@@ -3169,9 +2679,17 @@
         ],
         "endDates": [
             "Thu Oct 24 2019"
+        ]
+    },
+    "surviving-mars-and-dlcs": {
+        "name": "Surviving Mars and DLCs",
+        "cleanName": "surviving-mars-and-dlcs",
+        "startDates": [
+            "Thu Oct 10 2019"
         ],
-        "metaScore": "78",
-        "userScore": "7.6"
+        "endDates": [
+            "Thu Oct 17 2019"
+        ]
     },
     "everything": {
         "name": "Everything",
@@ -3181,9 +2699,7 @@
         ],
         "endDates": [
             "Thu Oct 03 2019"
-        ],
-        "metaScore": "78",
-        "userScore": "5.6"
+        ]
     },
     "metro-2033-redux": {
         "name": "Metro 2033: Redux",
@@ -3193,81 +2709,67 @@
         ],
         "endDates": [
             "Thu Oct 03 2019"
-        ],
-        "metaScore": "90",
-        "userScore": "8.1"
+        ]
     },
     "lego-batman-2-dc-super-heroes": {
-        "name": "Lego Batman 2: DC Super Heroes",
+        "name": "Lego Batman 2 DC Super Heroes",
         "cleanName": "lego-batman-2-dc-super-heroes",
         "startDates": [
             "Thu Sep 19 2019"
         ],
         "endDates": [
             "Thu Sep 26 2019"
-        ],
-        "metaScore": "81",
-        "userScore": "7.2"
+        ]
     },
     "lego-batman-the-videogame": {
-        "name": "Lego Batman: The Videogame",
+        "name": "Lego Batman The Videogame",
         "cleanName": "lego-batman-the-videogame",
         "startDates": [
             "Thu Sep 19 2019"
         ],
         "endDates": [
             "Thu Sep 26 2019"
-        ],
-        "metaScore": "80",
-        "userScore": "7.0"
+        ]
     },
     "lego-batman-3-beyond-gotham": {
-        "name": "Lego Batman 3: Beyond Gotham",
+        "name": "Lego Batman 3 Beyond Gotham",
         "cleanName": "lego-batman-3-beyond-gotham",
         "startDates": [
             "Thu Sep 19 2019"
         ],
         "endDates": [
             "Thu Sep 26 2019"
-        ],
-        "metaScore": "73",
-        "userScore": "6.7"
+        ]
     },
     "batman-arkham-asylum": {
-        "name": "Batman: Arkham Asylum",
+        "name": "Batman Arkham Asylum",
         "cleanName": "batman-arkham-asylum",
         "startDates": [
             "Thu Sep 19 2019"
         ],
         "endDates": [
             "Thu Sep 26 2019"
-        ],
-        "metaScore": "91",
-        "userScore": "8.6"
+        ]
     },
     "batman-arkham-city": {
-        "name": "Batman: Arkham City",
+        "name": "Batman Arkham City",
         "cleanName": "batman-arkham-city",
         "startDates": [
             "Thu Sep 19 2019"
         ],
         "endDates": [
             "Thu Sep 26 2019"
-        ],
-        "metaScore": "91",
-        "userScore": "8.7"
+        ]
     },
     "batman-arkham-knight": {
-        "name": "Batman: Arkham Knight",
+        "name": "Batman Arkham Knight",
         "cleanName": "batman-arkham-knight",
         "startDates": [
             "Thu Sep 19 2019"
         ],
         "endDates": [
             "Thu Sep 26 2019"
-        ],
-        "metaScore": "70",
-        "userScore": "4.0"
+        ]
     },
     "conarium": {
         "name": "Conarium",
@@ -3277,9 +2779,7 @@
         ],
         "endDates": [
             "Thu Sep 19 2019"
-        ],
-        "metaScore": "71",
-        "userScore": "6.3"
+        ]
     },
     "the-end-is-nigh": {
         "name": "The End is Nigh",
@@ -3289,9 +2789,17 @@
         ],
         "endDates": [
             "Thu Sep 12 2019"
+        ]
+    },
+    "celeste-and-inside": {
+        "name": "Celeste and Inside",
+        "cleanName": "celeste-and-inside",
+        "startDates": [
+            "Thu Aug 29 2019"
         ],
-        "metaScore": "84",
-        "userScore": "7.4"
+        "endDates": [
+            "Thu Sep 05 2019"
+        ]
     },
     "fez": {
         "name": "Fez",
@@ -3301,9 +2809,17 @@
         ],
         "endDates": [
             "Thu Aug 29 2019"
+        ]
+    },
+    "hyper-light-drifter-and-mutant-year-zero": {
+        "name": "Hyper Light Drifter and Mutant Year Zero",
+        "cleanName": "hyper-light-drifter-and-mutant-year-zero",
+        "startDates": [
+            "Thu Aug 15 2019"
         ],
-        "metaScore": "91",
-        "userScore": "6.7"
+        "endDates": [
+            "Thu Aug 22 2019"
+        ]
     },
     "gnog": {
         "name": "GNOG",
@@ -3313,9 +2829,7 @@
         ],
         "endDates": [
             "Thu Aug 15 2019"
-        ],
-        "metaScore": "77",
-        "userScore": "6.4"
+        ]
     },
     "for-honor": {
         "name": "For Honor",
@@ -3325,9 +2839,7 @@
         ],
         "endDates": [
             "Fri Aug 09 2019"
-        ],
-        "metaScore": "76",
-        "userScore": "5.2"
+        ]
     },
     "alan-wake": {
         "name": "Alan Wake",
@@ -3337,9 +2849,7 @@
         ],
         "endDates": [
             "Fri Aug 09 2019"
-        ],
-        "metaScore": "83",
-        "userScore": "8.0"
+        ]
     },
     "moonlighter": {
         "name": "Moonlighter",
@@ -3349,9 +2859,7 @@
         ],
         "endDates": [
             "Fri Aug 02 2019"
-        ],
-        "metaScore": "74",
-        "userScore": "7.3"
+        ]
     },
     "this-war-of-mine": {
         "name": "This War of Mine",
@@ -3361,9 +2869,7 @@
         ],
         "endDates": [
             "Fri Aug 02 2019"
-        ],
-        "metaScore": "83",
-        "userScore": "8.3"
+        ]
     },
     "limbo": {
         "name": "LIMBO",
@@ -3373,9 +2879,7 @@
         ],
         "endDates": [
             "Thu Jul 25 2019"
-        ],
-        "metaScore": "88",
-        "userScore": "8.1"
+        ]
     },
     "torchlight": {
         "name": "Torchlight",
@@ -3385,9 +2889,7 @@
         ],
         "endDates": [
             "Thu Jul 18 2019"
-        ],
-        "metaScore": "83",
-        "userScore": "7.9"
+        ]
     },
     "overcooked": {
         "name": "Overcooked",
@@ -3397,9 +2899,7 @@
         ],
         "endDates": [
             "Thu Jul 11 2019"
-        ],
-        "metaScore": "81",
-        "userScore": "7.8"
+        ]
     },
     "last-day-of-june": {
         "name": "Last Day of June",
@@ -3409,9 +2909,7 @@
         ],
         "endDates": [
             "Thu Jul 04 2019"
-        ],
-        "metaScore": "75",
-        "userScore": "7.2"
+        ]
     },
     "rime": {
         "name": "RiME",
@@ -3421,9 +2919,7 @@
         ],
         "endDates": [
             "Thu May 30 2019"
-        ],
-        "metaScore": "78",
-        "userScore": "7.3"
+        ]
     },
     "stories-untold": {
         "name": "Stories Untold",
@@ -3433,9 +2929,7 @@
         ],
         "endDates": [
             "Thu May 30 2019"
-        ],
-        "metaScore": "81",
-        "userScore": "7.0"
+        ]
     },
     "world-of-goo": {
         "name": "World of Goo",
@@ -3445,9 +2939,7 @@
         ],
         "endDates": [
             "Thu May 16 2019"
-        ],
-        "metaScore": "90",
-        "userScore": "8.4"
+        ]
     },
     "transistor": {
         "name": "Transistor",
@@ -3457,9 +2949,7 @@
         ],
         "endDates": [
             "Thu May 02 2019"
-        ],
-        "metaScore": "83",
-        "userScore": "8.4"
+        ]
     },
     "the-witness": {
         "name": "The Witness",
@@ -3469,9 +2959,7 @@
         ],
         "endDates": [
             "Thu Apr 18 2019"
-        ],
-        "metaScore": "87",
-        "userScore": "7.3"
+        ]
     },
     "oxenfree": {
         "name": "Oxenfree",
@@ -3481,9 +2969,7 @@
         ],
         "endDates": [
             "Thu Apr 04 2019"
-        ],
-        "metaScore": "80",
-        "userScore": "7.7"
+        ]
     },
     "slime-rancher": {
         "name": "Slime Rancher",
@@ -3493,9 +2979,7 @@
         ],
         "endDates": [
             "Thu Mar 21 2019"
-        ],
-        "metaScore": "81",
-        "userScore": "8.1"
+        ]
     },
     "thimbleweed-park": {
         "name": "Thimbleweed Park",
@@ -3505,9 +2989,7 @@
         ],
         "endDates": [
             "Thu Mar 07 2019"
-        ],
-        "metaScore": "84",
-        "userScore": "8.1"
+        ]
     },
     "axiom-verge": {
         "name": "Axiom Verge",
@@ -3517,9 +2999,7 @@
         ],
         "endDates": [
             "Fri Feb 22 2019"
-        ],
-        "metaScore": "80",
-        "userScore": "7.7"
+        ]
     },
     "the-jackbox-party-pack": {
         "name": "The Jackbox Party Pack",
@@ -3529,9 +3009,7 @@
         ],
         "endDates": [
             "Thu Feb 07 2019"
-        ],
-        "metaScore": "76",
-        "userScore": "7.3"
+        ]
     },
     "what-remains-of-edith-finch": {
         "name": "What Remains of Edith Finch",
@@ -3541,9 +3019,7 @@
         ],
         "endDates": [
             "Thu Jan 24 2019"
-        ],
-        "metaScore": "89",
-        "userScore": "8.4"
+        ]
     },
     "super-meat-boy": {
         "name": "Super Meat Boy",
@@ -3553,9 +3029,7 @@
         ],
         "endDates": [
             "Thu Jan 10 2019"
-        ],
-        "metaScore": "87",
-        "userScore": "8.2"
+        ]
     },
     "subnautica": {
         "name": "Subnautica",
@@ -3565,8 +3039,6 @@
         ],
         "endDates": [
             "Thu Dec 27 2018"
-        ],
-        "metaScore": "87",
-        "userScore": "8.6"
+        ]
     }
 }
