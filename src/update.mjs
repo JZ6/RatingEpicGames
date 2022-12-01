@@ -3,27 +3,12 @@ import fs from "fs";
 import fetch from "node-fetch";
 import * as cheerio from "cheerio";
 
+import { sleep, writeGameList } from "./utils/index.mjs";
+
 import importedGamesList from "./freeGamesList.json" assert { type: "json" };
+import gameDates from "./gamedates.json" assert { type: "json" };
 
-function cleanGameName(gameName) {
-  return gameName.replace(/\W+/g, " ").replace(/\s+/g, "-").toLowerCase();
-}
-
-// class PromiseQueue {
-// 	queue = Promise.resolve(true);
-
-// 	add(operation) {
-// 	  return new Promise((resolve, reject) => {
-// 		this.queue = this.queue.then(operation).then(resolve).catch(reject);
-// 	  });
-// 	}
-//   }
-
-function sleep(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
-async function x(refreshAll = false) {
+async function update(refreshAll = false) {
   const gameList = { ...importedGamesList };
 
   const gameReviewRequests = [];
@@ -88,13 +73,13 @@ async function getGameReview(gameName) {
   return { metaScore, userScore };
 }
 
-function writeGameList(gameList, file = "./src/freeGamesList.json") {
-  fs.writeFile(file, JSON.stringify(gameList, null, 4), (err) => {
-    if (err) {
-      console.error(err);
-    }
-    // file written successfully
-  });
-}
-
-x();
+// update();
+console.warn("77", gameDates);
+// for (const [key, value] of Object.entries(importedGamesList)) {
+//   if (key in gameDates) {
+//     // console.warn("124", finalgamedict[key]);
+//   } else {
+//     // console.log(`${key}: ${value}`);
+//     console.warn("124", key);
+//   }
+// }
