@@ -71,9 +71,7 @@ const finalgamedict = { ...dateCommaDict };
 
 for (const [gameKey, gameValue] of Object.entries(dateSlashDict)) {
   if (gameKey in dateCommaDict) {
-    console.warn("82",gameKey);
-
-
+    // console.warn("82",gameKey);
     finalgamedict[gameKey].startDates = [...finalgamedict[gameKey].startDates, ...gameValue.startDates];
 
   } else {
@@ -81,7 +79,6 @@ for (const [gameKey, gameValue] of Object.entries(dateSlashDict)) {
   }
 }
 
-// writeGameList(finalgamedict, "./src/gamedates.json");
 
 for (const [key, value] of Object.entries(importedGamesList)) {
   if (key in finalgamedict) {
@@ -94,6 +91,7 @@ for (const [key, value] of Object.entries(importedGamesList)) {
 }
 
 
+writeGameList(finalgamedict, "./src/gamedates.json");
 
 // console.warn("163", result);
 

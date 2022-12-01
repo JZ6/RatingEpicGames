@@ -29,14 +29,14 @@
             "Thu Nov 24 2022"
         ]
     },
-    "rumbleverse-epic-cheerleaders-pack": {
-        "name": "Rumbleverse Epic Cheerleaders Pack",
-        "cleanName": "rumbleverse-epic-cheerleaders-pack",
+    "rumbleverse": {
+        "name": "Rumbleverse",
+        "cleanName": "rumbleverse",
         "startDates": [
-            "Thu Nov 17 2022"
+            "Thu Aug 18 2022"
         ],
         "endDates": [
-            "Thu Nov 24 2022"
+            "Thu Aug 25 2022"
         ]
     },
     "shadow-tactics": {
@@ -190,19 +190,9 @@
             "Thu Aug 25 2022"
         ]
     },
-    "rumbleverse-boom-boxer-content-pack": {
-        "name": "Rumbleverse™ – Boom Boxer Content Pack",
-        "cleanName": "rumbleverse-boom-boxer-content-pack",
-        "startDates": [
-            "Thu Aug 18 2022"
-        ],
-        "endDates": [
-            "Thu Aug 25 2022"
-        ]
-    },
-    "-cook-serve-delicious-3-": {
-        "name": "\"Cook, Serve, Delicious! 3?!\"",
-        "cleanName": "-cook-serve-delicious-3-",
+    "cook-serve-delicious-3-": {
+        "name": "Cook, Serve, Delicious! 3?!",
+        "cleanName": "cook-serve-delicious-3-",
         "startDates": [
             "Thu Aug 11 2022"
         ],
@@ -260,9 +250,9 @@
             "Thu May 06 2021"
         ]
     },
-    "wonder-boy-the-dragon-s-trap": {
-        "name": "Wonder Boy: The Dragon’s Trap",
-        "cleanName": "wonder-boy-the-dragon-s-trap",
+    "wonder-boy-the-dragons-trap": {
+        "name": "Wonder Boy: The Dragon's Trap",
+        "cleanName": "wonder-boy-the-dragons-trap",
         "startDates": [
             "Thu Jul 14 2022"
         ],
@@ -371,6 +361,36 @@
             "Thu Jun 09 2022"
         ]
     },
+    "bioshock": {
+        "name": "Bioshock",
+        "cleanName": "bioshock",
+        "startDates": [
+            "Thu May 26 2022"
+        ],
+        "endDates": [
+            "Thu Jun 02 2022"
+        ]
+    },
+    "bioshock-2": {
+        "name": "Bioshock 2",
+        "cleanName": "bioshock-2",
+        "startDates": [
+            "Thu May 26 2022"
+        ],
+        "endDates": [
+            "Thu Jun 02 2022"
+        ]
+    },
+    "bioshock-infinite": {
+        "name": "Bioshock Infinite",
+        "cleanName": "bioshock-infinite",
+        "startDates": [
+            "Thu May 26 2022"
+        ],
+        "endDates": [
+            "Thu Jun 02 2022"
+        ]
+    },
     "bioshock-the-collection": {
         "name": "Bioshock: The Collection",
         "cleanName": "bioshock-the-collection",
@@ -391,9 +411,9 @@
             "Thu May 26 2022"
         ]
     },
-    "redout-enhanced-edition": {
-        "name": "Redout: Enhanced Edition",
-        "cleanName": "redout-enhanced-edition",
+    "redout-2016": {
+        "name": "Redout 2016",
+        "cleanName": "redout-2016",
         "startDates": [
             "Thu May 12 2022"
         ],
@@ -411,12 +431,11 @@
             "Sun Dec 26 2021"
         ]
     },
-    "jotun-valhalla-edition": {
-        "name": "Jotun: Valhalla Edition",
-        "cleanName": "jotun-valhalla-edition",
+    "jotun": {
+        "name": "Jotun",
+        "cleanName": "jotun",
         "startDates": [
-            "Thu May 12 2022",
-            "Fri Dec 06 2019"
+            "Thu May 12 2022"
         ],
         "endDates": [
             "Thu May 19 2022"
@@ -533,9 +552,9 @@
             "Thu Apr 07 2022"
         ]
     },
-    "demon-s-tilt": {
-        "name": "Demon’s Tilt",
-        "cleanName": "demon-s-tilt",
+    "demons-tilt": {
+        "name": "Demon's Tilt",
+        "cleanName": "demons-tilt",
         "startDates": [
             "Thu Mar 24 2022"
         ],
@@ -583,9 +602,9 @@
             "Thu Mar 10 2022"
         ]
     },
-    "dauntless-epic-slayer-kit": {
-        "name": "Dauntless Epic Slayer Kit",
-        "cleanName": "dauntless-epic-slayer-kit",
+    "dauntless": {
+        "name": "Dauntless",
+        "cleanName": "dauntless",
         "startDates": [
             "Thu Mar 03 2022"
         ],
@@ -674,9 +693,9 @@
             "Thu Jan 13 2022"
         ]
     },
-    "tomb-raider-goty": {
-        "name": "Tomb Raider GOTY",
-        "cleanName": "tomb-raider-goty",
+    "tomb-raider": {
+        "name": "Tomb Raider",
+        "cleanName": "tomb-raider",
         "startDates": [
             "Fri Dec 31 2021"
         ],
@@ -825,9 +844,9 @@
             "Fri Dec 17 2021"
         ]
     },
-    "godfall-challenge-edition": {
-        "name": "Godfall Challenge Edition",
-        "cleanName": "godfall-challenge-edition",
+    "godfall": {
+        "name": "Godfall",
+        "cleanName": "godfall",
         "startDates": [
             "Thu Dec 09 2021"
         ],
@@ -845,9 +864,9 @@
             "Thu Dec 16 2021"
         ]
     },
-    "while-true-learn-": {
-        "name": "While True: learn()",
-        "cleanName": "while-true-learn-",
+    "while-true-learn": {
+        "name": "While True: learn",
+        "cleanName": "while-true-learn",
         "startDates": [
             "Thu Dec 02 2021"
         ],
@@ -885,9 +904,9 @@
             "Thu Dec 02 2021"
         ]
     },
-    "never-alone-kisima-ingitchuna-": {
-        "name": "Never Alone (Kisima Ingitchuna)",
-        "cleanName": "never-alone-kisima-ingitchuna-",
+    "never-alone": {
+        "name": "Never Alone",
+        "cleanName": "never-alone",
         "startDates": [
             "Thu Nov 18 2021"
         ],
@@ -905,9 +924,9 @@
             "Thu Nov 25 2021"
         ]
     },
-    "kid-a-mnesia": {
-        "name": "Kid A Mnesia",
-        "cleanName": "kid-a-mnesia",
+    "kid-a-mnesia-exhibition": {
+        "name": "Kid A Mnesia Exhibition",
+        "cleanName": "kid-a-mnesia-exhibition",
         "startDates": [
             "Thu Nov 18 2021"
         ],
@@ -915,9 +934,9 @@
             "Thu Nov 25 2021"
         ]
     },
-    "tiny-tina-s-assault-on-dragon-keep": {
-        "name": "Tiny Tina’s Assault on Dragon Keep",
-        "cleanName": "tiny-tina-s-assault-on-dragon-keep",
+    "borderlands-2-tiny-tinas-assault-on-dragon-keep": {
+        "name": "Borderlands 2 Tiny Tina's Assault On Dragon Keep",
+        "cleanName": "borderlands-2-tiny-tinas-assault-on-dragon-keep",
         "startDates": [
             "Thu Nov 11 2021"
         ],
@@ -925,9 +944,9 @@
             "Thu Nov 18 2021"
         ]
     },
-    "rogue-company-season-four-epic-pack": {
-        "name": "Rogue Company Season Four Epic Pack",
-        "cleanName": "rogue-company-season-four-epic-pack",
+    "rogue-company": {
+        "name": "Rogue Company",
+        "cleanName": "rogue-company",
         "startDates": [
             "Thu Nov 11 2021"
         ],
@@ -945,9 +964,9 @@
             "Thu Nov 11 2021"
         ]
     },
-    "darq-complete-edition": {
-        "name": "DARQ: Complete Edition",
-        "cleanName": "darq-complete-edition",
+    "darq": {
+        "name": "DARQ",
+        "cleanName": "darq",
         "startDates": [
             "Thu Oct 28 2021"
         ],
@@ -955,9 +974,9 @@
             "Thu Nov 04 2021"
         ]
     },
-    "among-the-sleep-enhanced-edition": {
-        "name": "Among the Sleep Enhanced Edition",
-        "cleanName": "among-the-sleep-enhanced-edition",
+    "among-the-sleep": {
+        "name": "Among the Sleep",
+        "cleanName": "among-the-sleep",
         "startDates": [
             "Thu Oct 21 2021"
         ],
@@ -999,7 +1018,8 @@
         "name": "The Escapists",
         "cleanName": "the-escapists",
         "startDates": [
-            "Thu Sep 23 2021"
+            "Thu Sep 23 2021",
+            "Thu Dec 12 2019"
         ],
         "endDates": [
             "Thu Sep 30 2021"
@@ -1025,9 +1045,9 @@
             "Thu Sep 23 2021"
         ]
     },
-    "nioh-the-complete-edition": {
-        "name": "Nioh: The Complete Edition",
-        "cleanName": "nioh-the-complete-edition",
+    "nioh-complete-edition": {
+        "name": "Nioh: Complete Edition",
+        "cleanName": "nioh-complete-edition",
         "startDates": [
             "Thu Sep 09 2021"
         ],
@@ -1045,9 +1065,9 @@
             "Thu Sep 16 2021"
         ]
     },
-    "yooku-s-island-express": {
-        "name": "Yooku’s Island Express",
-        "cleanName": "yooku-s-island-express",
+    "yokus-island-express": {
+        "name": "Yoku's Island Express",
+        "cleanName": "yokus-island-express",
         "startDates": [
             "Thu Sep 02 2021"
         ],
@@ -1268,9 +1288,9 @@
             "Thu May 27 2021"
         ]
     },
-    "the-lion-s-song": {
-        "name": "The Lion’s Song",
-        "cleanName": "the-lion-s-song",
+    "the-lions-song": {
+        "name": "The Lion's Song",
+        "cleanName": "the-lions-song",
         "startDates": [
             "Thu May 13 2021"
         ],
@@ -1298,9 +1318,9 @@
             "Thu Apr 29 2021"
         ]
     },
-    "deponia-complete-journey": {
-        "name": "Deponia: Complete Journey",
-        "cleanName": "deponia-complete-journey",
+    "deponia-the-complete-journey": {
+        "name": "Deponia The Complete Journey",
+        "cleanName": "deponia-the-complete-journey",
         "startDates": [
             "Thu Apr 15 2021"
         ],
@@ -1388,9 +1408,9 @@
             "Thu Feb 25 2021"
         ]
     },
-    "absolute-drift-zen-edition": {
-        "name": "Absolute Drift: Zen Edition",
-        "cleanName": "absolute-drift-zen-edition",
+    "absolute-drift": {
+        "name": "Absolute Drift",
+        "cleanName": "absolute-drift",
         "startDates": [
             "Thu Feb 18 2021"
         ],
@@ -1429,9 +1449,9 @@
             "Thu Feb 11 2021"
         ]
     },
-    "dandara-trials-of-fear-edition": {
-        "name": "Dandara: Trials of Fear Edition",
-        "cleanName": "dandara-trials-of-fear-edition",
+    "dandara": {
+        "name": "Dandara",
+        "cleanName": "dandara",
         "startDates": [
             "Thu Jan 28 2021"
         ],
@@ -1449,9 +1469,9 @@
             "Thu Jan 28 2021"
         ]
     },
-    "star-wars-battlefront-2": {
-        "name": "Star Wars Battlefront 2",
-        "cleanName": "star-wars-battlefront-2",
+    "star-wars-battlefront-ii": {
+        "name": "Star Wars Battlefront ii",
+        "cleanName": "star-wars-battlefront-ii",
         "startDates": [
             "Thu Jan 14 2021"
         ],
@@ -1589,9 +1609,9 @@
             "Sun Dec 20 2020"
         ]
     },
-    "oddworld-new-n-tasty": {
-        "name": "Oddworld: New ‘n Tasty",
-        "cleanName": "oddworld-new-n-tasty",
+    "oddworld-abes-oddysee-new-n-tasty": {
+        "name": "Oddworld Abes Oddysee-New N Tasty",
+        "cleanName": "oddworld-abes-oddysee-new-n-tasty",
         "startDates": [
             "Fri Dec 18 2020"
         ],
@@ -1599,9 +1619,9 @@
             "Sat Dec 19 2020"
         ]
     },
-    "pillars-of-eternity-gold-edition-": {
-        "name": "Pillars of Eternity (Gold Edition)",
-        "cleanName": "pillars-of-eternity-gold-edition-",
+    "pillars-of-eternity": {
+        "name": "Pillars of Eternity",
+        "cleanName": "pillars-of-eternity",
         "startDates": [
             "Thu Dec 10 2020"
         ],
@@ -1609,9 +1629,9 @@
             "Thu Dec 17 2020"
         ]
     },
-    "tyranny-gold-edition-": {
-        "name": "Tyranny (Gold Edition)",
-        "cleanName": "tyranny-gold-edition-",
+    "tyranny": {
+        "name": "Tyranny",
+        "cleanName": "tyranny",
         "startDates": [
             "Thu Dec 10 2020"
         ],
@@ -1619,9 +1639,9 @@
             "Thu Dec 17 2020"
         ]
     },
-    "cave-story-": {
-        "name": "Cave Story+",
-        "cleanName": "cave-story-",
+    "cave-story-plus": {
+        "name": "Cave Story Plus",
+        "cleanName": "cave-story-plus",
         "startDates": [
             "Thu Dec 03 2020"
         ],
@@ -1629,9 +1649,9 @@
             "Thu Dec 10 2020"
         ]
     },
-    "mud-runner": {
-        "name": "Mud Runner",
-        "cleanName": "mud-runner",
+    "spintires-mudrunner": {
+        "name": "Spintires Mudrunner",
+        "cleanName": "spintires-mudrunner",
         "startDates": [
             "Thu Nov 26 2020"
         ],
@@ -1659,9 +1679,9 @@
             "Thu Nov 26 2020"
         ]
     },
-    "the-textorcist": {
-        "name": "The Textorcist",
-        "cleanName": "the-textorcist",
+    "the-textorcist-the-story-of-ray-bibbia": {
+        "name": "The Textorcist The Story Of Ray Bibbia",
+        "cleanName": "the-textorcist-the-story-of-ray-bibbia",
         "startDates": [
             "Thu Nov 12 2020"
         ],
@@ -1679,9 +1699,9 @@
             "Thu Nov 12 2020"
         ]
     },
-    "ghostbuster-the-video-game-remastered": {
-        "name": "Ghostbuster: The Video Game Remastered",
-        "cleanName": "ghostbuster-the-video-game-remastered",
+    "ghostbusters-the-video-game-remastered": {
+        "name": "Ghostbusters The Video Game Remastered",
+        "cleanName": "ghostbusters-the-video-game-remastered",
         "startDates": [
             "Thu Oct 29 2020"
         ],
@@ -1709,9 +1729,9 @@
             "Thu Oct 29 2020"
         ]
     },
-    "costumer-quest-2": {
-        "name": "Costumer Quest 2",
-        "cleanName": "costumer-quest-2",
+    "costume-quest-2": {
+        "name": "Costume Quest 2",
+        "cleanName": "costume-quest-2",
         "startDates": [
             "Thu Oct 22 2020"
         ],
@@ -1744,7 +1764,8 @@
         "name": "Abzu",
         "cleanName": "abzu",
         "startDates": [
-            "Thu Oct 08 2020"
+            "Thu Oct 08 2020",
+            "Thu Sep 05 2019"
         ],
         "endDates": [
             "Thu Oct 15 2020"
@@ -1760,9 +1781,9 @@
             "Thu Oct 08 2020"
         ]
     },
-    "roller-coaster-tycoon-3": {
-        "name": "Roller Coaster Tycoon 3",
-        "cleanName": "roller-coaster-tycoon-3",
+    "rollercoaster-tycoon-3": {
+        "name": "Rollercoaster Tycoon 3",
+        "cleanName": "rollercoaster-tycoon-3",
         "startDates": [
             "Thu Sep 24 2020"
         ],
@@ -1770,9 +1791,9 @@
             "Thu Oct 01 2020"
         ]
     },
-    "football-manager": {
-        "name": "Football Manager",
-        "cleanName": "football-manager",
+    "football-manager-2022": {
+        "name": "Football Manager 2022",
+        "cleanName": "football-manager-2022",
         "startDates": [
             "Thu Sep 17 2020"
         ],
@@ -1820,9 +1841,9 @@
             "Fri Dec 20 2019"
         ]
     },
-    "hitman-2016-": {
-        "name": "Hitman (2016)",
-        "cleanName": "hitman-2016-",
+    "hitman": {
+        "name": "Hitman",
+        "cleanName": "hitman",
         "startDates": [
             "Thu Aug 27 2020"
         ],
@@ -1830,9 +1851,29 @@
             "Thu Sep 03 2020"
         ]
     },
-    "shadowrun-collection": {
-        "name": "Shadowrun Collection",
-        "cleanName": "shadowrun-collection",
+    "shadowrun-returns": {
+        "name": "Shadowrun Returns",
+        "cleanName": "shadowrun-returns",
+        "startDates": [
+            "Thu Aug 27 2020"
+        ],
+        "endDates": [
+            "Thu Sep 03 2020"
+        ]
+    },
+    "shadowrun-hong-kong": {
+        "name": "shadowrun Hong Kong",
+        "cleanName": "shadowrun-hong-kong",
+        "startDates": [
+            "Thu Aug 27 2020"
+        ],
+        "endDates": [
+            "Thu Sep 03 2020"
+        ]
+    },
+    "shadowrun-dragonfall": {
+        "name": "Shadowrun Dragonfall",
+        "cleanName": "shadowrun-dragonfall",
         "startDates": [
             "Thu Aug 27 2020"
         ],
@@ -1850,9 +1891,9 @@
             "Thu Jun 20 2019"
         ]
     },
-    "god-s-trigger": {
-        "name": "God’s Trigger",
-        "cleanName": "god-s-trigger",
+    "gods-trigger": {
+        "name": "God's Trigger",
+        "cleanName": "gods-trigger",
         "startDates": [
             "Thu Aug 20 2020"
         ],
@@ -1870,9 +1911,9 @@
             "Thu Aug 20 2020"
         ]
     },
-    "wilmot-s-warehouse": {
-        "name": "Wilmot’s Warehouse",
-        "cleanName": "wilmot-s-warehouse",
+    "wilmots-warehouse": {
+        "name": "Wilmot's Warehouse",
+        "cleanName": "wilmots-warehouse",
         "startDates": [
             "Thu Aug 06 2020"
         ],
@@ -1880,9 +1921,9 @@
             "Thu Aug 13 2020"
         ]
     },
-    "3-out-of-10-ep-1-welcome-to-shovelworks": {
-        "name": "3 Out of 10 Ep 1 Welcome to Shovelworks",
-        "cleanName": "3-out-of-10-ep-1-welcome-to-shovelworks",
+    "3-out-of-10-season-one": {
+        "name": "3 Out Of 10 Season One",
+        "cleanName": "3-out-of-10-season-one",
         "startDates": [
             "Thu Aug 06 2020"
         ],
@@ -1890,9 +1931,9 @@
             "Thu Aug 13 2020"
         ]
     },
-    "stepbrothers-sword-sworcery-ep": {
-        "name": "Stepbrothers: Sword & Sworcery EP",
-        "cleanName": "stepbrothers-sword-sworcery-ep",
+    "superbrothers-sword-sworcery-ep": {
+        "name": "Superbrothers: Sword Sworcery Ep",
+        "cleanName": "superbrothers-sword-sworcery-ep",
         "startDates": [
             "Thu Jul 30 2020"
         ],
@@ -1950,9 +1991,9 @@
             "Thu Jul 23 2020"
         ]
     },
-    "lifeless-planet-premier-edition": {
-        "name": "Lifeless Planet: Premier Edition",
-        "cleanName": "lifeless-planet-premier-edition",
+    "lifeless-planet": {
+        "name": "Lifeless Planet",
+        "cleanName": "lifeless-planet",
         "startDates": [
             "Thu Jul 09 2020"
         ],
@@ -2020,9 +2061,9 @@
             "Thu Jun 25 2020"
         ]
     },
-    "samurai-showdown-neogeo-collection": {
-        "name": "Samurai Showdown Neogeo Collection",
-        "cleanName": "samurai-showdown-neogeo-collection",
+    "samurai-shodown": {
+        "name": "Samurai Shodown",
+        "cleanName": "samurai-shodown",
         "startDates": [
             "Thu Jun 11 2020"
         ],
@@ -2031,7 +2072,7 @@
         ]
     },
     "overcooked-2": {
-        "name": "Overcooked 2",
+        "name": "overcooked! 2",
         "cleanName": "overcooked-2",
         "startDates": [
             "Thu Jun 04 2020"
@@ -2050,9 +2091,9 @@
             "Thu Jun 04 2020"
         ]
     },
-    "civilization-6": {
-        "name": "Civilization 6",
-        "cleanName": "civilization-6",
+    "sid-meiers-civilization-vi": {
+        "name": "Sid Meiers Civilization VI",
+        "cleanName": "sid-meiers-civilization-vi",
         "startDates": [
             "Thu May 21 2020"
         ],
@@ -2060,9 +2101,9 @@
             "Thu May 28 2020"
         ]
     },
-    "grand-theft-auto-5": {
-        "name": "Grand Theft Auto 5",
-        "cleanName": "grand-theft-auto-5",
+    "grand-theft-auto-v": {
+        "name": "Grand Theft Auto V",
+        "cleanName": "grand-theft-auto-v",
         "startDates": [
             "Thu May 14 2020"
         ],
@@ -2260,9 +2301,9 @@
             "Thu Mar 12 2020"
         ]
     },
-    "inner-space": {
-        "name": "Inner Space",
-        "cleanName": "inner-space",
+    "innerspace": {
+        "name": "InnerSpace",
+        "cleanName": "innerspace",
         "startDates": [
             "Thu Feb 27 2020"
         ],
@@ -2270,9 +2311,9 @@
             "Thu Mar 05 2020"
         ]
     },
-    "faria": {
-        "name": "Faria",
-        "cleanName": "faria",
+    "faeria": {
+        "name": "Faeria",
+        "cleanName": "faeria",
         "startDates": [
             "Thu Feb 20 2020"
         ],
@@ -2340,9 +2381,9 @@
             "Thu Feb 06 2020"
         ]
     },
-    "the-bridge": {
-        "name": "The Bridge",
-        "cleanName": "the-bridge",
+    "the-bridge-2013": {
+        "name": "The Bridge 2013",
+        "cleanName": "the-bridge-2013",
         "startDates": [
             "Thu Jan 23 2020"
         ],
@@ -2360,9 +2401,9 @@
             "Thu Jan 23 2020"
         ]
     },
-    "sundered-eldritch-edition": {
-        "name": "Sundered Eldritch Edition",
-        "cleanName": "sundered-eldritch-edition",
+    "sundered": {
+        "name": "Sundered",
+        "cleanName": "sundered",
         "startDates": [
             "Thu Jan 09 2020"
         ],
@@ -2370,14 +2411,34 @@
             "Thu Jan 16 2020"
         ]
     },
-    "-steep": {
-        "name": "\"Steep",
-        "cleanName": "-steep",
+    "steep": {
+        "name": "Steep",
+        "cleanName": "steep",
         "startDates": [
-            "Invalid Date"
+            "Wed Jan 01 2020"
         ],
         "endDates": [
+            "Thu Jan 09 2020"
+        ]
+    },
+    "darksiders": {
+        "name": "Darksiders",
+        "cleanName": "darksiders",
+        "startDates": [
             "Wed Jan 01 2020"
+        ],
+        "endDates": [
+            "Thu Jan 09 2020"
+        ]
+    },
+    "darksiders-ii": {
+        "name": "Darksiders II",
+        "cleanName": "darksiders-ii",
+        "startDates": [
+            "Wed Jan 01 2020"
+        ],
+        "endDates": [
+            "Thu Jan 09 2020"
         ]
     },
     "hello-neighbor": {
@@ -2420,9 +2481,9 @@
             "Sat Dec 28 2019"
         ]
     },
-    "faster-than-light": {
-        "name": "Faster Than Light",
-        "cleanName": "faster-than-light",
+    "ftl-faster-than-light": {
+        "name": "FTL: Faster Than Light",
+        "cleanName": "ftl-faster-than-light",
         "startDates": [
             "Thu Dec 26 2019"
         ],
@@ -2490,14 +2551,24 @@
             "Sat Dec 21 2019"
         ]
     },
-    "the-escapists-and-the-wolf-among-us": {
-        "name": "The Escapists and The Wolf Among Us",
-        "cleanName": "the-escapists-and-the-wolf-among-us",
+    "the-wolf-among-us": {
+        "name": "The Wolf Among Us",
+        "cleanName": "the-wolf-among-us",
         "startDates": [
             "Thu Dec 12 2019"
         ],
         "endDates": [
             "Thu Dec 19 2019"
+        ]
+    },
+    "jotun-valhalla-edition": {
+        "name": "Jotun: Valhalla Edition",
+        "cleanName": "jotun-valhalla-edition",
+        "startDates": [
+            "Fri Dec 06 2019"
+        ],
+        "endDates": [
+            "Thu Dec 12 2019"
         ]
     },
     "rayman-legends": {
@@ -2550,9 +2621,9 @@
             "Thu Nov 14 2019"
         ]
     },
-    "soma-and-costume-quest": {
-        "name": "SOMA and Costume Quest",
-        "cleanName": "soma-and-costume-quest",
+    "soma": {
+        "name": "SOMA",
+        "cleanName": "soma",
         "startDates": [
             "Thu Oct 31 2019"
         ],
@@ -2560,9 +2631,19 @@
             "Thu Nov 07 2019"
         ]
     },
-    "layers-of-fear-and-q-u-b-e-2": {
-        "name": "Layers of Fear and Q.U.B.E. 2",
-        "cleanName": "layers-of-fear-and-q-u-b-e-2",
+    "costume-quest": {
+        "name": "Costume Quest",
+        "cleanName": "costume-quest",
+        "startDates": [
+            "Thu Oct 31 2019"
+        ],
+        "endDates": [
+            "Thu Nov 07 2019"
+        ]
+    },
+    "layers-of-fear": {
+        "name": "Layers of Fear",
+        "cleanName": "layers-of-fear",
         "startDates": [
             "Thu Oct 24 2019"
         ],
@@ -2570,9 +2651,29 @@
             "Thu Oct 31 2019"
         ]
     },
-    "observer-and-alan-wake-s-american-nightmare": {
-        "name": "Observer and Alan Wake’s American Nightmare",
-        "cleanName": "observer-and-alan-wake-s-american-nightmare",
+    "qube-2": {
+        "name": "QUBE 2",
+        "cleanName": "qube-2",
+        "startDates": [
+            "Thu Oct 24 2019"
+        ],
+        "endDates": [
+            "Thu Oct 31 2019"
+        ]
+    },
+    "alan-wakes-american-nightmare": {
+        "name": "Alan Wake's American Nightmare",
+        "cleanName": "alan-wakes-american-nightmare",
+        "startDates": [
+            "Thu Oct 17 2019"
+        ],
+        "endDates": [
+            "Thu Oct 24 2019"
+        ]
+    },
+    "observer": {
+        "name": "Observer",
+        "cleanName": "observer",
         "startDates": [
             "Thu Oct 17 2019"
         ],
@@ -2590,9 +2691,9 @@
             "Thu Oct 17 2019"
         ]
     },
-    "everything-and-metro-2033-redux": {
-        "name": "Everything and Metro 2033: Redux",
-        "cleanName": "everything-and-metro-2033-redux",
+    "everything": {
+        "name": "Everything",
+        "cleanName": "everything",
         "startDates": [
             "Thu Sep 26 2019"
         ],
@@ -2600,9 +2701,69 @@
             "Thu Oct 03 2019"
         ]
     },
-    "batman-arkham-collection-three-games-and-lego-batman-trilogy": {
-        "name": "Batman Arkham Collection (three games) and Lego Batman Trilogy",
-        "cleanName": "batman-arkham-collection-three-games-and-lego-batman-trilogy",
+    "metro-2033-redux": {
+        "name": "Metro 2033: Redux",
+        "cleanName": "metro-2033-redux",
+        "startDates": [
+            "Thu Sep 26 2019"
+        ],
+        "endDates": [
+            "Thu Oct 03 2019"
+        ]
+    },
+    "lego-batman-2-dc-super-heroes": {
+        "name": "Lego Batman 2 DC Super Heroes",
+        "cleanName": "lego-batman-2-dc-super-heroes",
+        "startDates": [
+            "Thu Sep 19 2019"
+        ],
+        "endDates": [
+            "Thu Sep 26 2019"
+        ]
+    },
+    "lego-batman-the-videogame": {
+        "name": "Lego Batman The Videogame",
+        "cleanName": "lego-batman-the-videogame",
+        "startDates": [
+            "Thu Sep 19 2019"
+        ],
+        "endDates": [
+            "Thu Sep 26 2019"
+        ]
+    },
+    "lego-batman-3-beyond-gotham": {
+        "name": "Lego Batman 3 Beyond Gotham",
+        "cleanName": "lego-batman-3-beyond-gotham",
+        "startDates": [
+            "Thu Sep 19 2019"
+        ],
+        "endDates": [
+            "Thu Sep 26 2019"
+        ]
+    },
+    "batman-arkham-asylum": {
+        "name": "Batman Arkham Asylum",
+        "cleanName": "batman-arkham-asylum",
+        "startDates": [
+            "Thu Sep 19 2019"
+        ],
+        "endDates": [
+            "Thu Sep 26 2019"
+        ]
+    },
+    "batman-arkham-city": {
+        "name": "Batman Arkham City",
+        "cleanName": "batman-arkham-city",
+        "startDates": [
+            "Thu Sep 19 2019"
+        ],
+        "endDates": [
+            "Thu Sep 26 2019"
+        ]
+    },
+    "batman-arkham-knight": {
+        "name": "Batman Arkham Knight",
+        "cleanName": "batman-arkham-knight",
         "startDates": [
             "Thu Sep 19 2019"
         ],
@@ -2620,9 +2781,9 @@
             "Thu Sep 19 2019"
         ]
     },
-    "the-end-is-nigh-and-abzu": {
-        "name": "The End is Nigh and Abzu",
-        "cleanName": "the-end-is-nigh-and-abzu",
+    "the-end-is-nigh": {
+        "name": "The End is Nigh",
+        "cleanName": "the-end-is-nigh",
         "startDates": [
             "Thu Sep 05 2019"
         ],
@@ -2670,9 +2831,9 @@
             "Thu Aug 15 2019"
         ]
     },
-    "for-honor-and-alan-wake": {
-        "name": "For Honor and Alan Wake",
-        "cleanName": "for-honor-and-alan-wake",
+    "for-honor": {
+        "name": "For Honor",
+        "cleanName": "for-honor",
         "startDates": [
             "Fri Aug 02 2019"
         ],
@@ -2680,9 +2841,29 @@
             "Fri Aug 09 2019"
         ]
     },
-    "moonlighter-and-this-war-of-mine": {
-        "name": "Moonlighter and This War of Mine",
-        "cleanName": "moonlighter-and-this-war-of-mine",
+    "alan-wake": {
+        "name": "Alan Wake",
+        "cleanName": "alan-wake",
+        "startDates": [
+            "Fri Aug 02 2019"
+        ],
+        "endDates": [
+            "Fri Aug 09 2019"
+        ]
+    },
+    "moonlighter": {
+        "name": "Moonlighter",
+        "cleanName": "moonlighter",
+        "startDates": [
+            "Thu Jul 25 2019"
+        ],
+        "endDates": [
+            "Fri Aug 02 2019"
+        ]
+    },
+    "this-war-of-mine": {
+        "name": "This War of Mine",
+        "cleanName": "this-war-of-mine",
         "startDates": [
             "Thu Jul 25 2019"
         ],
@@ -2710,9 +2891,9 @@
             "Thu Jul 18 2019"
         ]
     },
-    "overcooked-": {
-        "name": "Overcooked!",
-        "cleanName": "overcooked-",
+    "overcooked": {
+        "name": "Overcooked",
+        "cleanName": "overcooked",
         "startDates": [
             "Thu Jul 04 2019"
         ],
@@ -2820,9 +3001,9 @@
             "Fri Feb 22 2019"
         ]
     },
-    "jackbox-party-pack": {
-        "name": "Jackbox Party Pack",
-        "cleanName": "jackbox-party-pack",
+    "the-jackbox-party-pack": {
+        "name": "The Jackbox Party Pack",
+        "cleanName": "the-jackbox-party-pack",
         "startDates": [
             "Thu Jan 24 2019"
         ],

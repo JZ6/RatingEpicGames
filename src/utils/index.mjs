@@ -4,7 +4,7 @@ export function sleep(ms) {
 }
 
 export function cleanGameName(gameName) {
-  return gameName.replace(/\W+/g, " ").replace(/\s+/g, "-").toLowerCase();
+  return gameName.replace("'", '').replace(/\W+/g, " ").replace(/\s+/g, "-").toLowerCase();
 }
 
 export function writeGameList(gameList, file = "./src/freeGamesList.json") {
