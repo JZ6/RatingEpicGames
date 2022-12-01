@@ -13,10 +13,6 @@ async function update(refreshAll = false) {
 
   const gameReviewRequests = [];
 
-  // for (const [key, value] of Object.entries(importedGamesList)) {
-  //   console.warn("32", key);
-  // }
-
   //   .slice( 0,180)
   for (const [gameName, scores] of Object.entries(importedGamesList)) {
     if (refreshAll === true || !scores.metaScore || !scores.userScore) {
@@ -27,14 +23,11 @@ async function update(refreshAll = false) {
   }
 
   await Promise.all(gameReviewRequests);
-
-  //   console.warn("21", gameList);
-  //   writeGameList(gameList);
 }
 
 async function updateGameFields(gameList, gameName) {
   const scores = await getGameReview(gameName);
-  gameList[gameName] = scores;
+  gameList[gameName] = { ...gameList[gameName], ...scores };
   console.warn(gameName, scores);
   writeGameList(gameList);
 }
@@ -73,13 +66,20 @@ async function getGameReview(gameName) {
   return { metaScore, userScore };
 }
 
-// update();
+update();
 // console.warn("77", gameDates);
-for (const [key, value] of Object.entries(importedGamesList)) {
-  if (key in gameDates) {
-    // console.warn("124", finalgamedict[key]);
-  } else {
-    // console.log(`${key}: ${value}`);
-    console.warn("124", key);
-  }
-}
+
+// const result = { ...gameDates };
+// for (const [key, value] of Object.entries(importedGamesList)) {
+//   if (key in gameDates) {
+//     // console.warn("124", value, gameDates[key]);
+//     result[key] = { ...gameDates[key], ...value };
+//   } else {
+//     // console.log(`${key}: ${value}`);
+//     // console.warn("124", key);
+//     result[key] = value;
+//   }
+// }
+
+// console.warn("91", result);
+// writeGameList(result);
