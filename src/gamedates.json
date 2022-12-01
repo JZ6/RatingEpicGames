@@ -2530,9 +2530,19 @@
             "Thu Nov 21 2019"
         ]
     },
-    "nuclear-throne-and-ruiner": {
-        "name": "Nuclear Throne and Ruiner",
-        "cleanName": "nuclear-throne-and-ruiner",
+    "nuclear-throne": {
+        "name": "Nuclear Throne",
+        "cleanName": "nuclear-throne",
+        "startDates": [
+            "Thu Nov 07 2019"
+        ],
+        "endDates": [
+            "Thu Nov 14 2019"
+        ]
+    },
+    "ruiner": {
+        "name": "Ruiner",
+        "cleanName": "ruiner",
         "startDates": [
             "Thu Nov 07 2019"
         ],

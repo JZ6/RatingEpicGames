@@ -81,12 +81,22 @@ for (const [gameKey, gameValue] of Object.entries(dateSlashDict)) {
   }
 }
 
-writeGameList(finalgamedict, "./src/gamedates.json");
+// writeGameList(finalgamedict, "./src/gamedates.json");
+
+for (const [key, value] of Object.entries(importedGamesList)) {
+  if (key in finalgamedict) {
+    // console.warn("124", finalgamedict[key]);
+  } else {
+    // console.log(`${key}: ${value}`);
+    if ( !['overcooked!-2','stick-it-to-the-man!','oddworld-abes-oddysee---new-n-tasty','cook-serve-delicious!-3!','unrailed!','geneforge-1---mutagen'].includes(key))
+    console.warn( key);
+  }
+}
+
 
 
 // console.warn("163", result);
 
-// const finalgamedict = Object.assign(x, y);
 
 // console.warn("165", finalgamedict);
 
@@ -103,13 +113,5 @@ writeGameList(finalgamedict, "./src/gamedates.json");
 
 // fs.writeFileSync("./src/test.json", text, "utf8");
 
-// for (const [key, value] of Object.entries(importedGamesList)) {
-//   if (key in finalgamedict) {
-//     // console.warn("124", finalgamedict[key]);
-//   } else {
-//     // console.log(`${key}: ${value}`);
-//     console.warn("124", key);
-//   }
-// }
 
 // writeGameList(finalgamedict, "./src/gamedates.json");

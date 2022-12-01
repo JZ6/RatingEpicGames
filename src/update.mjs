@@ -74,12 +74,12 @@ async function getGameReview(gameName) {
 }
 
 // update();
-console.warn("77", gameDates);
-// for (const [key, value] of Object.entries(importedGamesList)) {
-//   if (key in gameDates) {
-//     // console.warn("124", finalgamedict[key]);
-//   } else {
-//     // console.log(`${key}: ${value}`);
-//     console.warn("124", key);
-//   }
-// }
+// console.warn("77", gameDates);
+for (const [key, value] of Object.entries(importedGamesList)) {
+  if (key in gameDates) {
+    // console.warn("124", finalgamedict[key]);
+  } else {
+    // console.log(`${key}: ${value}`);
+    console.warn("124", key);
+  }
+}
