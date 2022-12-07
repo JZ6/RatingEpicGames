@@ -3568,5 +3568,29 @@
         ],
         "metaScore": "87",
         "userScore": "8.6"
+    },
+    "fort-triumph": {
+        "name": "Fort Triumph",
+        "cleanName": "fort-triumph",
+        "startDates": [
+            "Thu Dec 01 2022"
+        ],
+        "endDates": [
+            "Thu Dec 08 2022"
+        ],
+        "metaScore": "74",
+        "userScore": "7.3"
+    },
+    "rpg-in-a-box": {
+        "name": "RPG In A Box",
+        "cleanName": "rpg-in-a-box",
+        "startDates": [
+            "Thu Dec 01 2022"
+        ],
+        "endDates": [
+            "Thu Dec 08 2022"
+        ],
+        "metaScore": "N/A",
+        "userScore": "N/A"
     }
 }
