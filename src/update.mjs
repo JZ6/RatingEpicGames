@@ -3,7 +3,7 @@ import fs from "fs";
 import fetch from "node-fetch";
 import * as cheerio from "cheerio";
 
-import { sleep, writeGameList } from "./utils/index.mjs";
+import { sleep, writeGameList, cleanGameName } from "./utils/index.mjs";
 
 import importedGamesList from "./freeGamesList.json" assert { type: "json" };
 import gameDates from "./gamedates.json" assert { type: "json" };
@@ -66,20 +66,33 @@ async function getGameReview(gameName) {
   return { metaScore, userScore };
 }
 
+function addGame(name, dateString) {
+
+  const startDate = new Date(dateString)
+  const endDate = new Date(startDate.getTime());
+  endDate.setDate(endDate.getDate() + 7);
+
+  const startDateString = startDate.toDateString()
+  const endDateString = endDate.toDateString()
+
+  const gameList = { ...importedGamesList };
+  const cleanName = cleanGameName(name)
+
+  if (!(cleanName in gameList)) {
+    gameList[cleanName] = {
+      name,
+      cleanName,
+      "startDates": [],
+      "endDates": []
+    }
+  }
+
+  gameList[cleanName].startDates.push(startDateString)
+  gameList[cleanName].endDates.push(endDateString)
+
+  writeGameList(gameList);
+}
+
+// addGame('RPG In A Box', 'Tue Dec 01 2022')
 update();
-// console.warn("77", gameDates);
 
-// const result = { ...gameDates };
-// for (const [key, value] of Object.entries(importedGamesList)) {
-//   if (key in gameDates) {
-//     // console.warn("124", value, gameDates[key]);
-//     result[key] = { ...gameDates[key], ...value };
-//   } else {
-//     // console.log(`${key}: ${value}`);
-//     // console.warn("124", key);
-//     result[key] = value;
-//   }
-// }
-
-// console.warn("91", result);
-// writeGameList(result);
