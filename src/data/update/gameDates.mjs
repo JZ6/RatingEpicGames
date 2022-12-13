@@ -1,5 +1,5 @@
 import fs from "fs";
-import { cleanGameName, writeGameList } from "../utils/index.mjs";
+import { cleanGameName, writeGameList } from "../../utils/index.mjs";
 
 import importedGamesList from "../freeGamesList.json" assert { type: "json" };
 
@@ -19,7 +19,7 @@ function readDateComma() {
     return {
       name: y[0],
       cleanName: cleanGameName(y[0]),
-      startDates:  [startDate.toDateString()],
+      startDates: [startDate.toDateString()],
       endDates: [endDate.toDateString()],
     };
   });
@@ -30,7 +30,7 @@ function readDateComma() {
 
   return gameDict;
 
- 
+
 }
 
 function readDataSlash() {
@@ -44,7 +44,7 @@ function readDataSlash() {
 
     const startDate = new Date(start.replace(/"/g, ""));
     const endDate = new Date(end.replace(/"/g, ""));
-    
+
     return {
       name: gameName,
       cleanName: cleanGameName(gameName),
@@ -85,8 +85,8 @@ for (const [key, value] of Object.entries(importedGamesList)) {
     // console.warn("124", finalgamedict[key]);
   } else {
     // console.log(`${key}: ${value}`);
-    if ( !['overcooked!-2','stick-it-to-the-man!','oddworld-abes-oddysee---new-n-tasty','cook-serve-delicious!-3!','unrailed!','geneforge-1---mutagen'].includes(key))
-    console.warn( key);
+    if (!['overcooked!-2', 'stick-it-to-the-man!', 'oddworld-abes-oddysee---new-n-tasty', 'cook-serve-delicious!-3!', 'unrailed!', 'geneforge-1---mutagen'].includes(key))
+      console.warn(key);
   }
 }
 
