@@ -29,3 +29,9 @@ export function createRows(freeGames) {
         }
     );
 }
+
+function dateToYMDFormat(startDates) {
+    return startDates.map(startDate =>
+        new Date(startDate).toISOString().split('T')[0].replaceAll('-', '/')
+    ).join(", ")
+}
