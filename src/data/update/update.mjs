@@ -1,12 +1,9 @@
-import fs from "fs";
-
 import fetch from "node-fetch";
 import * as cheerio from "cheerio";
 
-import { sleep, writeGameList, cleanGameName } from "./utils/index.mjs";
+import { sleep, writeGameList, cleanGameName } from "../../utils/index.mjs";
 
-import importedGamesList from "./freeGamesList.json" assert { type: "json" };
-import gameDates from "./gamedates.json" assert { type: "json" };
+import importedGamesList from "../freeGamesList.json" assert { type: "json" };
 
 async function update(refreshAll = false) {
   const gameList = { ...importedGamesList };
@@ -93,6 +90,6 @@ function addGame(name, dateString) {
   writeGameList(gameList);
 }
 
-// addGame('RPG In A Box', 'Tue Dec 01 2022')
+// addGame('Saints Row IV', 'Thu Dec 08 2022')
 update();
 
