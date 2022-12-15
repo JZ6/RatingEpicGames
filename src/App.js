@@ -6,17 +6,10 @@ import {
   createRows
 } from './data/processing/rows';
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { DataGrid } from "@mui/x-data-grid";
 
 function App() {
-  // const [gameReviews, setGameReviews] = useState(initGameReviews);
-
-  // console.warn("17", freeGames);
-  // fetch('https://raw.githubusercontent.com/JZ6/RatingEpicGames/main/src/freeGamesList.json').then(data =>
-  //   data.json()).then(json => console.warn('13', json))
-
-
   const columns = [
     {
       field: "name",
@@ -61,10 +54,24 @@ function App() {
     },
   ];
 
+  const [rows, setRows] = useState(createRows(freeGames));
 
-  const rows = createRows(freeGames)
+  useEffect(() => {
 
-  // console.warn("45", rows);
+    if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+      return console.warn('DEV mode using local game list')
+
+    }
+
+    fetch('https://raw.githubusercontent.com/JZ6/RatingEpicGames/main/src/data/freeGamesList.json')
+      .then(data => data.json())
+      .then(json => setRows(createRows(json)))
+      .catch(console.error);
+
+  }, [])
+
+  // console.warn("17", freeGames);
+
 
   return (
     <div className="App">
