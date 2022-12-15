@@ -1,67 +1,68 @@
-import logo from "./logo.svg";
 import "./App.css";
 
-import freeGames from "./freeGamesList.json";
+import freeGames from "./data/freeGamesList.json";
 
-import React, { useState, useEffect } from "react";
-import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
+import {
+  createRows
+} from './data/processing/rows';
+
+import React from "react";
+import { DataGrid } from "@mui/x-data-grid";
 
 function App() {
   // const [gameReviews, setGameReviews] = useState(initGameReviews);
 
   // console.warn("17", freeGames);
+  // fetch('https://raw.githubusercontent.com/JZ6/RatingEpicGames/main/src/freeGamesList.json').then(data =>
+  //   data.json()).then(json => console.warn('13', json))
+
 
   const columns = [
-    { field: "id", headerName: "Name", minWidth: 360 },
+    {
+      field: "name",
+      headerName: "Name",
+      minWidth: 180,
+      flex: 3,
+      type: "string",
+
+      renderCell: (params) => {
+        // console.warn('25', params)
+        return <a href={params.row.name.href}>{params.row.name.name}</a>
+      },
+
+    },
     {
       field: "metaScore",
       headerName: "Meta Score",
-      type: "number",
-      minWidth: 120,
+      type: "string",
+      minWidth: 90,
+      flex: 1,
     },
     {
       field: "userScore",
       headerName: "User Score",
-      type: "number",
-      minWidth: 120,
+      type: "string",
+      minWidth: 90,
+      flex: 1,
     },
     {
       field: "multipliedScore",
       headerName: "Multiplied Score",
-      type: "number",
-      minWidth: 180,
+      type: "string",
+      minWidth: 120,
+      flex: 2,
     },
     {
       field: "date",
       headerName: "Date",
       type: "string",
-      minWidth: 360,
+      flex: 3,
+      minWidth: 120,
     },
   ];
 
-  // freeGames.map((game) => {
-  //   console.warn("30", game);
-  // });
 
-  const rows = Object.entries(freeGames).map(
-    ([id, { name, metaScore, userScore, startDates }]) => {
-      // console.warn("35", id, fields);
-
-      const multipliedScore = metaScore * userScore;
-
-      const href = `http://www.metacritic.com/game/pc/${id}`;
-
-      return {
-        id: name,
-        metaScore: metaScore == "N/A" ? "" : metaScore,
-        userScore: userScore == "N/A" ? "" : userScore,
-        multipliedScore: isNaN(multipliedScore)
-          ? ""
-          : Math.round(multipliedScore),
-        date: startDates.join(", "),
-      };
-    }
-  );
+  const rows = createRows(freeGames)
 
   // console.warn("45", rows);
 
@@ -75,8 +76,13 @@ function App() {
           // height: "90vh",
         }}
       >
-        <div style={{ height: "90vh", minWidth: 1800 }}>
-          <DataGrid rows={rows} columns={columns} pageSize={100} />
+        <div style={{ height: "90vh", minWidth: '80vw' }}>
+          <DataGrid rows={rows} columns={columns} pageSize={100}
+            initialState={{
+              sorting: {
+                sortModel: [{ field: 'date', sort: 'desc' }],
+              },
+            }} />
         </div>
       </div>
     </div>
