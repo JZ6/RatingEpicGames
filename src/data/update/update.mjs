@@ -63,7 +63,7 @@ async function getGameReview(gameName) {
   return { metaScore, userScore };
 }
 
-function addGame(name, dateString) {
+function addGame(name, dateString = new Date()) {
 
   const startDate = new Date(dateString)
   const endDate = new Date(startDate.getTime());
@@ -91,5 +91,6 @@ function addGame(name, dateString) {
 }
 
 // addGame('Saints Row IV', 'Thu Dec 08 2022')
+addGame('Bloons TD 6')
 update();
 

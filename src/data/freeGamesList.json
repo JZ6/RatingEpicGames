@@ -3616,5 +3616,17 @@
         ],
         "metaScore": "86",
         "userScore": "7.4"
+    },
+    "bloons-td-6": {
+        "name": "Bloons TD 6",
+        "cleanName": "bloons-td-6",
+        "startDates": [
+            "Thu Dec 15 2022"
+        ],
+        "endDates": [
+            "Thu Dec 22 2022"
+        ],
+        "metaScore": "N/A",
+        "userScore": "8.2"
     }
 }
