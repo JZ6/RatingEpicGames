@@ -1458,9 +1458,11 @@
         "name": "Horizon Chase Turbo",
         "cleanName": "horizon-chase-turbo",
         "startDates": [
+            "Fri Dec 16 2022",
             "Thu Jun 24 2021"
         ],
         "endDates": [
+            "Sat Dec 17 2022",
             "Thu Jul 01 2021"
         ],
         "metaScore": "76",

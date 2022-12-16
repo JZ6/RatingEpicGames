@@ -63,11 +63,11 @@ async function getGameReview(gameName) {
   return { metaScore, userScore };
 }
 
-function addGame(name, dateString = new Date()) {
+function addGame(name, dateString = new Date(), period = 7) {
 
   const startDate = new Date(dateString)
   const endDate = new Date(startDate.getTime());
-  endDate.setDate(endDate.getDate() + 7);
+  endDate.setDate(endDate.getDate() + period);
 
   const startDateString = startDate.toDateString()
   const endDateString = endDate.toDateString()
@@ -83,14 +83,17 @@ function addGame(name, dateString = new Date()) {
       "endDates": []
     }
   }
+  if (!gameList[cleanName].startDates.includes(startDateString)) {
 
-  gameList[cleanName].startDates.push(startDateString)
-  gameList[cleanName].endDates.push(endDateString)
+    gameList[cleanName].startDates.unshift(startDateString)
+    gameList[cleanName].endDates.unshift(endDateString)
 
-  writeGameList(gameList);
+    writeGameList(gameList);
+  }
+
 }
 
 // addGame('Saints Row IV', 'Thu Dec 08 2022')
-addGame('Bloons TD 6')
-update();
+addGame('Horizon Chase Turbo', new Date(), 1)
+// update();
 
