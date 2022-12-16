@@ -63,12 +63,12 @@ function App() {
 
     if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
       return console.warn('DEV mode using local game list')
-
     }
 
     fetch('https://raw.githubusercontent.com/JZ6/RatingEpicGames/main/src/data/freeGamesList.json')
       .then(data => data.json())
       .then(json => setRows(createRows(json)))
+      .then(() => console.log('Fetched game list from Github 1.1.0'))
       .catch(console.error);
 
   }, [])
