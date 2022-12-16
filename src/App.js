@@ -7,7 +7,7 @@ import {
 } from './data/processing/rows';
 
 import React, { useState, useEffect } from "react";
-import { DataGrid } from "@mui/x-data-grid";
+import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 
 function App() {
   const columns = [
@@ -84,12 +84,23 @@ function App() {
         }}
       >
         <div style={{ height: "90vh", minWidth: '80vw' }}>
-          <DataGrid rows={rows} columns={columns} pageSize={100}
+          <DataGrid
+            rows={rows}
+            columns={columns}
+            pageSize={100}
             initialState={{
               sorting: {
                 sortModel: [{ field: 'date', sort: 'desc' }],
               },
-            }} />
+            }}
+          // components={{ Toolbar: GridToolbar }}
+          // componentsProps={{
+          //   toolbar: {
+          //     showQuickFilter: true,
+          //     quickFilterProps: { debounceMs: 500 },
+          //   },
+          // }}
+          />
         </div>
       </div>
     </div>
