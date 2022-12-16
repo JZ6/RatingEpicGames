@@ -1,5 +1,5 @@
 import fs from "fs";
-import { cleanGameName, writeGameList } from "../../utils/index.mjs";
+import { cleanGameName, writeGameList } from "../../utils/index.js";
 
 import importedGamesList from "../freeGamesList.json" assert { type: "json" };
 

@@ -1,6 +1,24 @@
-import steamGameAppIDs from "../steamGameAppIDs.jsonn"
+// import { sleep, writeGameList, cleanGameName } from "../../utils/index.js";
 
-// console.warn('4', steamGamesList.applist.apps)
+import importedGamesList from "../freeGamesList.json" assert { type: "json" };
+import steamGameAppIDs from "../steamGameAppIDs.json" assert { type: "json" };
+
+const resultList = { ...importedGamesList };
+
+for (const gameData of Object.values(resultList)) {
+
+    const { name } = gameData
+
+    if (!gameData.steam && name in steamGameAppIDs) {
+        const steamGameData = steamGameAppIDs[name]
+        console.warn('24', steamGameData)
+        gameData['steam'] = {
+            ...steamGameData
+        }
+    }
+}
+
+console.warn('4', resultList)
 
 
 // const gamekey = {}
@@ -51,20 +69,3 @@ function getSteamReviews() {
 
 // console.warn('25', gamekey)
 
-function download(data, filename, type) {
-    var file = new Blob([data], { type: type });
-    if (window.navigator.msSaveOrOpenBlob) // IE10+
-        window.navigator.msSaveOrOpenBlob(file, filename);
-    else { // Others
-        var a = document.createElement("a"),
-            url = URL.createObjectURL(file);
-        a.href = url;
-        a.download = filename;
-        document.body.appendChild(a);
-        a.click();
-        setTimeout(function () {
-            document.body.removeChild(a);
-            window.URL.revokeObjectURL(url);
-        }, 0);
-    }
-}

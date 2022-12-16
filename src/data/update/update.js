@@ -1,7 +1,7 @@
 import fetch from "node-fetch";
 import * as cheerio from "cheerio";
 
-import { sleep, writeGameList, cleanGameName } from "../../utils/index.mjs";
+import { sleep, writeGameList, cleanGameName } from "../../utils/index.js";
 
 import importedGamesList from "../freeGamesList.json" assert { type: "json" };
 
