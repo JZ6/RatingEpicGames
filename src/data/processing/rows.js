@@ -1,4 +1,5 @@
 export function createRows(freeGames) {
+    // console.warn('2', freeGames)
     return Object.entries(freeGames).map(
         ([id, { name, metaScore, userScore, startDates }]) => {
             // console.warn("35", id, fields);
@@ -30,8 +31,8 @@ export function createRows(freeGames) {
     );
 }
 
-function dateToYMDFormat(startDates) {
-    return startDates.map(startDate =>
-        new Date(startDate).toISOString().split('T')[0].replaceAll('-', '/')
-    ).join(", ")
-}
+// function dateToYMDFormat(startDates) {
+//     return startDates.map(startDate =>
+//         new Date(startDate).toISOString().split('T')[0].replaceAll('-', '/')
+//     ).join(", ")
+// }
