@@ -9,7 +9,11 @@
             "Thu Dec 01 2022"
         ],
         "metaScore": "79",
-        "userScore": "5.8"
+        "userScore": "5.8",
+        "steam": {
+            "appid": 1222730,
+            "name": "STAR WARS™: Squadrons"
+        }
     },
     "evil-dead-the-game": {
         "name": "Evil Dead: The Game",
@@ -21,7 +25,8 @@
             "Thu Nov 24 2022"
         ],
         "metaScore": "76",
-        "userScore": "5.2"
+        "userScore": "5.2",
+        "steam": {}
     },
     "dark-deity": {
         "name": "Dark Deity",
@@ -33,7 +38,11 @@
             "Thu Nov 24 2022"
         ],
         "metaScore": "80",
-        "userScore": "5.5"
+        "userScore": "5.5",
+        "steam": {
+            "appid": 1374840,
+            "name": "Dark Deity"
+        }
     },
     "rumbleverse": {
         "name": "Rumbleverse",
@@ -45,7 +54,8 @@
             "Thu Aug 25 2022"
         ],
         "metaScore": "N/A",
-        "userScore": "4.1"
+        "userScore": "4.1",
+        "steam": {}
     },
     "alba-a-wildlife-adventure": {
         "name": "Alba: A Wildlife Adventure",
@@ -57,7 +67,11 @@
             "Thu Nov 17 2022"
         ],
         "metaScore": "79",
-        "userScore": "8.1"
+        "userScore": "8.1",
+        "steam": {
+            "appid": 1337010,
+            "name": "Alba: A Wildlife Adventure"
+        }
     },
     "rising-storm-2-vietnam": {
         "name": "Rising Storm 2: Vietnam",
@@ -69,7 +83,11 @@
             "Thu Oct 15 2020"
         ],
         "metaScore": "81",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {
+            "appid": 418460,
+            "name": "Rising Storm 2: Vietnam"
+        }
     },
     "filament": {
         "name": "Filament",
@@ -81,7 +99,11 @@
             "Thu Nov 10 2022"
         ],
         "metaScore": "82",
-        "userScore": "6.1"
+        "userScore": "6.1",
+        "steam": {
+            "appid": 1137350,
+            "name": "Filament"
+        }
     },
     "slain-back-from-hell": {
         "name": "Slain: Back from Hell",
@@ -93,7 +115,11 @@
             "Thu Oct 13 2022"
         ],
         "metaScore": "74",
-        "userScore": "7.9"
+        "userScore": "7.9",
+        "steam": {
+            "appid": 369070,
+            "name": "Slain: Back from Hell"
+        }
     },
     "rising-hell": {
         "name": "Rising Hell",
@@ -105,7 +131,11 @@
             "Thu Oct 13 2022"
         ],
         "metaScore": "N/A",
-        "userScore": "N/A"
+        "userScore": "N/A",
+        "steam": {
+            "appid": 657000,
+            "name": "Rising Hell"
+        }
     },
     "the-drone-racing-league-simulator": {
         "name": "The Drone Racing League Simulator",
@@ -117,7 +147,11 @@
             "Thu Oct 06 2022"
         ],
         "metaScore": "N/A",
-        "userScore": "N/A"
+        "userScore": "N/A",
+        "steam": {
+            "appid": 641780,
+            "name": "The Drone Racing League Simulator"
+        }
     },
     "runbow": {
         "name": "Runbow",
@@ -129,7 +163,11 @@
             "Thu Oct 06 2022"
         ],
         "metaScore": "75",
-        "userScore": "7.7"
+        "userScore": "7.7",
+        "steam": {
+            "appid": 464650,
+            "name": "Runbow"
+        }
     },
     "ark-survival-evolved": {
         "name": "ARK: Survival Evolved",
@@ -142,7 +180,11 @@
             "Thu Sep 29 2022"
         ],
         "metaScore": "70",
-        "userScore": "6.5"
+        "userScore": "6.5",
+        "steam": {
+            "appid": 346110,
+            "name": "ARK: Survival Evolved"
+        }
     },
     "gloomhaven": {
         "name": "Gloomhaven",
@@ -154,7 +196,11 @@
             "Thu Sep 29 2022"
         ],
         "metaScore": "82",
-        "userScore": "7.0"
+        "userScore": "7.0",
+        "steam": {
+            "appid": 780290,
+            "name": "Gloomhaven"
+        }
     },
     "ring-of-pain": {
         "name": "Ring of Pain",
@@ -166,10 +212,14 @@
             "Thu Sep 08 2022"
         ],
         "metaScore": "74",
-        "userScore": "7.2"
+        "userScore": "7.2",
+        "steam": {
+            "appid": 998740,
+            "name": "Ring of Pain"
+        }
     },
     "knockout-city": {
-        "name": "Knockout City",
+        "name": "Knockout City™",
         "cleanName": "knockout-city",
         "startDates": [
             "Thu Sep 01 2022"
@@ -178,7 +228,11 @@
             "Thu Sep 08 2022"
         ],
         "metaScore": "80",
-        "userScore": "6.6"
+        "userScore": "6.6",
+        "steam": {
+            "appid": 1301210,
+            "name": "Knockout City™"
+        }
     },
     "submerged-hidden-depths": {
         "name": "Submerged: Hidden Depths",
@@ -190,10 +244,14 @@
             "Thu Sep 08 2022"
         ],
         "metaScore": "66",
-        "userScore": "4.7"
+        "userScore": "4.7",
+        "steam": {
+            "appid": 1614270,
+            "name": "Submerged: Hidden Depths"
+        }
     },
     "doom-64": {
-        "name": "Doom 64",
+        "name": "DOOM 64",
         "cleanName": "doom-64",
         "startDates": [
             "Thu Aug 18 2022"
@@ -202,7 +260,11 @@
             "Thu Aug 25 2022"
         ],
         "metaScore": "75",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 1148590,
+            "name": "DOOM 64"
+        }
     },
     "cook-serve-delicious!-3!": {
         "name": "Cook, Serve, Delicious! 3?!",
@@ -214,7 +276,11 @@
             "Thu Aug 18 2022"
         ],
         "metaScore": "79",
-        "userScore": "8.6"
+        "userScore": "8.6",
+        "steam": {
+            "appid": 1000030,
+            "name": "Cook, Serve, Delicious! 3?!"
+        }
     },
     "unrailed!": {
         "name": "Unrailed!",
@@ -226,7 +292,11 @@
             "Thu Aug 11 2022"
         ],
         "metaScore": "77",
-        "userScore": "7.9"
+        "userScore": "7.9",
+        "steam": {
+            "appid": 1016920,
+            "name": "Unrailed!"
+        }
     },
     "lawn-mowing-simulator": {
         "name": "Lawn Mowing Simulator",
@@ -238,7 +308,11 @@
             "Thu Aug 04 2022"
         ],
         "metaScore": "69",
-        "userScore": "4.9"
+        "userScore": "4.9",
+        "steam": {
+            "appid": 1480560,
+            "name": "Lawn Mowing Simulator"
+        }
     },
     "shop-titans": {
         "name": "Shop Titans",
@@ -250,7 +324,11 @@
             "Thu Jul 28 2022"
         ],
         "metaScore": "42",
-        "userScore": "3.9"
+        "userScore": "3.9",
+        "steam": {
+            "appid": 1258080,
+            "name": "Shop Titans"
+        }
     },
     "tannenberg": {
         "name": "Tannenberg",
@@ -262,7 +340,11 @@
             "Thu Jul 28 2022"
         ],
         "metaScore": "69",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 633460,
+            "name": "Tannenberg"
+        }
     },
     "idle-champions-of-the-forgotten-realms": {
         "name": "Idle Champions of the Forgotten Realms",
@@ -274,7 +356,11 @@
             "Thu May 06 2021"
         ],
         "metaScore": "N/A",
-        "userScore": "5.1"
+        "userScore": "5.1",
+        "steam": {
+            "appid": 627690,
+            "name": "Idle Champions of the Forgotten Realms"
+        }
     },
     "wonder-boy-the-dragons-trap": {
         "name": "Wonder Boy: The Dragon's Trap",
@@ -286,7 +372,11 @@
             "Thu Jul 21 2022"
         ],
         "metaScore": "79",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 543260,
+            "name": "Wonder Boy: The Dragon's Trap"
+        }
     },
     "killing-floor-2": {
         "name": "Killing Floor 2",
@@ -299,7 +389,11 @@
             "Thu Jul 14 2022"
         ],
         "metaScore": "75",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 232090,
+            "name": "Killing Floor 2"
+        }
     },
     "ancient-enemy": {
         "name": "Ancient Enemy",
@@ -311,7 +405,11 @@
             "Thu Jul 14 2022"
         ],
         "metaScore": "73",
-        "userScore": "N/A"
+        "userScore": "N/A",
+        "steam": {
+            "appid": 993790,
+            "name": "Ancient Enemy"
+        }
     },
     "iratus-lord-of-the-dead": {
         "name": "Iratus: Lord of the Dead",
@@ -323,7 +421,11 @@
             "Thu Jul 07 2022"
         ],
         "metaScore": "78",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {
+            "appid": 807120,
+            "name": "Iratus: Lord of the Dead"
+        }
     },
     "hood-outlaws-legends": {
         "name": "Hood: Outlaws & Legends",
@@ -335,10 +437,14 @@
             "Thu Jul 07 2022"
         ],
         "metaScore": "62",
-        "userScore": "3.4"
+        "userScore": "3.4",
+        "steam": {
+            "appid": 927350,
+            "name": "Hood: Outlaws & Legends"
+        }
     },
     "geneforge-1---mutagen": {
-        "name": "Geneforge 1 – Mutagen",
+        "name": "Geneforge 1 - Mutagen",
         "cleanName": "geneforge-1---mutagen",
         "startDates": [
             "Thu Jun 30 2022"
@@ -347,7 +453,11 @@
             "Thu Jul 07 2022"
         ],
         "metaScore": "N/A",
-        "userScore": "N/A"
+        "userScore": "N/A",
+        "steam": {
+            "appid": 1424710,
+            "name": "Geneforge 1 - Mutagen"
+        }
     },
     "car-mechanic-simulator-2018": {
         "name": "Car Mechanic Simulator 2018",
@@ -359,10 +469,14 @@
             "Thu Jun 30 2022"
         ],
         "metaScore": "N/A",
-        "userScore": "6.5"
+        "userScore": "6.5",
+        "steam": {
+            "appid": 645630,
+            "name": "Car Mechanic Simulator 2018"
+        }
     },
     "a-game-of-thrones-the-board-game-digital-edition": {
-        "name": "A Game of Thrones: The Board Game Digital Edition",
+        "name": "A Game of Thrones: The Board Game",
         "cleanName": "a-game-of-thrones-the-board-game-digital-edition",
         "startDates": [
             "Thu Jun 23 2022"
@@ -371,7 +485,11 @@
             "Thu Jun 30 2022"
         ],
         "metaScore": "N/A",
-        "userScore": "N/A"
+        "userScore": "N/A",
+        "steam": {
+            "appid": 1075190,
+            "name": "A Game of Thrones: The Board Game"
+        }
     },
     "supraland": {
         "name": "Supraland",
@@ -383,7 +501,11 @@
             "Thu Jun 23 2022"
         ],
         "metaScore": "85",
-        "userScore": "8.6"
+        "userScore": "8.6",
+        "steam": {
+            "appid": 813630,
+            "name": "Supraland"
+        }
     },
     "maneater": {
         "name": "Maneater",
@@ -395,7 +517,11 @@
             "Thu Jun 16 2022"
         ],
         "metaScore": "70",
-        "userScore": "6.4"
+        "userScore": "6.4",
+        "steam": {
+            "appid": 629820,
+            "name": "Maneater"
+        }
     },
     "wolfenstein-the-new-order": {
         "name": "Wolfenstein: The New Order",
@@ -409,10 +535,14 @@
             "Thu Jun 09 2022"
         ],
         "metaScore": "81",
-        "userScore": "8.2"
+        "userScore": "8.2",
+        "steam": {
+            "appid": 201810,
+            "name": "Wolfenstein: The New Order"
+        }
     },
     "bioshock": {
-        "name": "Bioshock",
+        "name": "BioShock",
         "cleanName": "bioshock",
         "startDates": [
             "Thu May 26 2022"
@@ -421,10 +551,14 @@
             "Thu Jun 02 2022"
         ],
         "metaScore": "96",
-        "userScore": "8.6"
+        "userScore": "8.6",
+        "steam": {
+            "appid": 7700,
+            "name": "BioShock"
+        }
     },
     "bioshock-2": {
-        "name": "Bioshock 2",
+        "name": "BioShock 2",
         "cleanName": "bioshock-2",
         "startDates": [
             "Thu May 26 2022"
@@ -433,10 +567,14 @@
             "Thu Jun 02 2022"
         ],
         "metaScore": "88",
-        "userScore": "8.1"
+        "userScore": "8.1",
+        "steam": {
+            "appid": 8850,
+            "name": "BioShock 2"
+        }
     },
     "bioshock-infinite": {
-        "name": "Bioshock Infinite",
+        "name": "BioShock Infinite",
         "cleanName": "bioshock-infinite",
         "startDates": [
             "Thu May 26 2022"
@@ -445,19 +583,11 @@
             "Thu Jun 02 2022"
         ],
         "metaScore": "94",
-        "userScore": "8.6"
-    },
-    "bioshock-the-collection": {
-        "name": "Bioshock: The Collection",
-        "cleanName": "bioshock-the-collection",
-        "startDates": [
-            "Thu May 26 2022"
-        ],
-        "endDates": [
-            "Thu Jun 02 2022"
-        ],
-        "metaScore": "80",
-        "userScore": "7.7"
+        "userScore": "8.6",
+        "steam": {
+            "appid": 8870,
+            "name": "BioShock Infinite"
+        }
     },
     "borderlands-3": {
         "name": "Borderlands 3",
@@ -469,10 +599,14 @@
             "Thu May 26 2022"
         ],
         "metaScore": "81",
-        "userScore": "5.4"
+        "userScore": "5.4",
+        "steam": {
+            "appid": 397540,
+            "name": "Borderlands 3"
+        }
     },
     "redout-2016": {
-        "name": "Redout",
+        "name": "Redout: Enhanced Edition",
         "cleanName": "redout-2016",
         "startDates": [
             "Thu May 12 2022"
@@ -481,7 +615,11 @@
             "Thu May 19 2022"
         ],
         "metaScore": "81",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 517710,
+            "name": "Redout: Enhanced Edition"
+        }
     },
     "prey": {
         "name": "Prey",
@@ -493,19 +631,11 @@
             "Sun Dec 26 2021"
         ],
         "metaScore": "82",
-        "userScore": "8.2"
-    },
-    "jotun": {
-        "name": "Jotun",
-        "cleanName": "jotun",
-        "startDates": [
-            "Thu May 12 2022"
-        ],
-        "endDates": [
-            "Thu May 19 2022"
-        ],
-        "metaScore": "79",
-        "userScore": "7.0"
+        "userScore": "8.2",
+        "steam": {
+            "appid": 3970,
+            "name": "Prey"
+        }
     },
     "terraforming-mars": {
         "name": "Terraforming Mars",
@@ -517,7 +647,11 @@
             "Thu May 12 2022"
         ],
         "metaScore": "N/A",
-        "userScore": "5.6"
+        "userScore": "5.6",
+        "steam": {
+            "appid": 800270,
+            "name": "Terraforming Mars"
+        }
     },
     "paradigm": {
         "name": "Paradigm",
@@ -529,7 +663,11 @@
             "Thu May 05 2022"
         ],
         "metaScore": "85",
-        "userScore": "7.7"
+        "userScore": "7.7",
+        "steam": {
+            "appid": 600370,
+            "name": "Paradigm"
+        }
     },
     "just-die-already": {
         "name": "Just Die Already",
@@ -541,10 +679,14 @@
             "Thu May 05 2022"
         ],
         "metaScore": "63",
-        "userScore": "5.8"
+        "userScore": "5.8",
+        "steam": {
+            "appid": 979070,
+            "name": "Just Die Already"
+        }
     },
     "amnesia-rebirth": {
-        "name": "Amnesia Rebirth",
+        "name": "Amnesia: Rebirth",
         "cleanName": "amnesia-rebirth",
         "startDates": [
             "Thu Apr 21 2022"
@@ -553,7 +695,11 @@
             "Thu Apr 28 2022"
         ],
         "metaScore": "80",
-        "userScore": "6.3"
+        "userScore": "6.3",
+        "steam": {
+            "appid": 999220,
+            "name": "Amnesia: Rebirth"
+        }
     },
     "riverbond": {
         "name": "Riverbond",
@@ -565,7 +711,11 @@
             "Thu Apr 28 2022"
         ],
         "metaScore": "60",
-        "userScore": "6.2"
+        "userScore": "6.2",
+        "steam": {
+            "appid": 459370,
+            "name": "Riverbond"
+        }
     },
     "xcom-2": {
         "name": "XCOM 2",
@@ -577,7 +727,11 @@
             "Thu Apr 21 2022"
         ],
         "metaScore": "88",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 268500,
+            "name": "XCOM 2"
+        }
     },
     "insurmountable": {
         "name": "Insurmountable",
@@ -589,7 +743,11 @@
             "Thu Apr 21 2022"
         ],
         "metaScore": "74",
-        "userScore": "5.9"
+        "userScore": "5.9",
+        "steam": {
+            "appid": 1385100,
+            "name": "Insurmountable"
+        }
     },
     "rogue-legacy": {
         "name": "Rogue Legacy",
@@ -601,7 +759,11 @@
             "Thu Apr 14 2022"
         ],
         "metaScore": "85",
-        "userScore": "7.9"
+        "userScore": "7.9",
+        "steam": {
+            "appid": 241600,
+            "name": "Rogue Legacy"
+        }
     },
     "the-vanishing-of-ethan-carter": {
         "name": "The Vanishing of Ethan Carter",
@@ -613,10 +775,14 @@
             "Mon Dec 20 2021"
         ],
         "metaScore": "82",
-        "userScore": "7.9"
+        "userScore": "7.9",
+        "steam": {
+            "appid": 258520,
+            "name": "The Vanishing of Ethan Carter"
+        }
     },
     "total-war-warhammer": {
-        "name": "Total War: Warhammer",
+        "name": "Total War: WARHAMMER",
         "cleanName": "total-war-warhammer",
         "startDates": [
             "Thu Mar 31 2022"
@@ -625,10 +791,14 @@
             "Thu Apr 07 2022"
         ],
         "metaScore": "86",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {
+            "appid": 364360,
+            "name": "Total War: WARHAMMER"
+        }
     },
     "city-of-brass": {
-        "name": "City of Brass",
+        "name": "City Of Brass",
         "cleanName": "city-of-brass",
         "startDates": [
             "Thu Mar 31 2022",
@@ -638,10 +808,14 @@
             "Thu Apr 07 2022"
         ],
         "metaScore": "69",
-        "userScore": "4.0"
+        "userScore": "4.0",
+        "steam": {
+            "appid": 301840,
+            "name": "City Of Brass"
+        }
     },
     "demons-tilt": {
-        "name": "Demon's Tilt",
+        "name": "DEMON'S TILT",
         "cleanName": "demons-tilt",
         "startDates": [
             "Thu Mar 24 2022"
@@ -650,7 +824,11 @@
             "Thu Mar 31 2022"
         ],
         "metaScore": "N/A",
-        "userScore": "N/A"
+        "userScore": "N/A",
+        "steam": {
+            "appid": 422510,
+            "name": "DEMON'S TILT"
+        }
     },
     "in-sound-mind": {
         "name": "In Sound Mind",
@@ -662,7 +840,11 @@
             "Thu Mar 24 2022"
         ],
         "metaScore": "75",
-        "userScore": "8.2"
+        "userScore": "8.2",
+        "steam": {
+            "appid": 1119980,
+            "name": "In Sound Mind"
+        }
     },
     "cities-skylines": {
         "name": "Cities: Skylines",
@@ -674,7 +856,11 @@
             "Fri Dec 18 2020"
         ],
         "metaScore": "85",
-        "userScore": "8.8"
+        "userScore": "8.8",
+        "steam": {
+            "appid": 255710,
+            "name": "Cities: Skylines"
+        }
     },
     "black-widow-recharged": {
         "name": "Black Widow: Recharged",
@@ -686,7 +872,11 @@
             "Thu Mar 10 2022"
         ],
         "metaScore": "N/A",
-        "userScore": "N/A"
+        "userScore": "N/A",
+        "steam": {
+            "appid": 1714180,
+            "name": "Black Widow: Recharged"
+        }
     },
     "centipede-recharged": {
         "name": "Centipede: Recharged",
@@ -698,7 +888,11 @@
             "Thu Mar 10 2022"
         ],
         "metaScore": "N/A",
-        "userScore": "N/A"
+        "userScore": "N/A",
+        "steam": {
+            "appid": 1630960,
+            "name": "Centipede: Recharged"
+        }
     },
     "dauntless": {
         "name": "Dauntless",
@@ -710,7 +904,8 @@
             "Thu Mar 10 2022"
         ],
         "metaScore": "78",
-        "userScore": "5.3"
+        "userScore": "5.3",
+        "steam": {}
     },
     "cris-tales": {
         "name": "Cris Tales",
@@ -722,10 +917,14 @@
             "Thu Mar 03 2022"
         ],
         "metaScore": "74",
-        "userScore": "7.9"
+        "userScore": "7.9",
+        "steam": {
+            "appid": 1079830,
+            "name": "Cris Tales"
+        }
     },
     "brothers-a-tale-of-two-sons": {
-        "name": "Brothers: A Tale of Two Sons",
+        "name": "Brothers - A Tale of Two Sons",
         "cleanName": "brothers-a-tale-of-two-sons",
         "startDates": [
             "Thu Feb 17 2022"
@@ -734,7 +933,11 @@
             "Thu Feb 24 2022"
         ],
         "metaScore": "90",
-        "userScore": "8.5"
+        "userScore": "8.5",
+        "steam": {
+            "appid": 225080,
+            "name": "Brothers - A Tale of Two Sons"
+        }
     },
     "windbound": {
         "name": "Windbound",
@@ -746,7 +949,11 @@
             "Thu Feb 17 2022"
         ],
         "metaScore": "60",
-        "userScore": "5.5"
+        "userScore": "5.5",
+        "steam": {
+            "appid": 1162130,
+            "name": "Windbound"
+        }
     },
     "yooka-laylee-and-the-impossible-lair": {
         "name": "Yooka-Laylee and the Impossible Lair",
@@ -759,10 +966,14 @@
             "Thu Feb 10 2022"
         ],
         "metaScore": "81",
-        "userScore": "6.3"
+        "userScore": "6.3",
+        "steam": {
+            "appid": 846870,
+            "name": "Yooka-Laylee and the Impossible Lair"
+        }
     },
     "daemon-x-machina": {
-        "name": "Daemon X Machina",
+        "name": "DAEMON X MACHINA",
         "cleanName": "daemon-x-machina",
         "startDates": [
             "Thu Jan 27 2022"
@@ -771,7 +982,11 @@
             "Thu Feb 03 2022"
         ],
         "metaScore": "72",
-        "userScore": "6.9"
+        "userScore": "6.9",
+        "steam": {
+            "appid": 1167450,
+            "name": "DAEMON X MACHINA"
+        }
     },
     "relicta": {
         "name": "Relicta",
@@ -783,7 +998,11 @@
             "Thu Jan 27 2022"
         ],
         "metaScore": "74",
-        "userScore": "5.8"
+        "userScore": "5.8",
+        "steam": {
+            "appid": 941570,
+            "name": "Relicta"
+        }
     },
     "galactic-civilizations-iii": {
         "name": "Galactic Civilizations III",
@@ -797,7 +1016,11 @@
             "Thu Jan 28 2021"
         ],
         "metaScore": "81",
-        "userScore": "7.0"
+        "userScore": "7.0",
+        "steam": {
+            "appid": 226860,
+            "name": "Galactic Civilizations III"
+        }
     },
     "gods-will-fall": {
         "name": "Gods Will Fall",
@@ -809,7 +1032,11 @@
             "Thu Jan 13 2022"
         ],
         "metaScore": "70",
-        "userScore": "4.4"
+        "userScore": "4.4",
+        "steam": {
+            "appid": 1243690,
+            "name": "Gods Will Fall"
+        }
     },
     "tomb-raider": {
         "name": "Tomb Raider",
@@ -821,7 +1048,11 @@
             "Thu Jan 06 2022"
         ],
         "metaScore": "86",
-        "userScore": "8.4"
+        "userScore": "8.4",
+        "steam": {
+            "appid": 203160,
+            "name": "Tomb Raider"
+        }
     },
     "shadow-of-the-tomb-raider": {
         "name": "Shadow of the Tomb Raider",
@@ -835,7 +1066,11 @@
             "Thu Jan 06 2022"
         ],
         "metaScore": "77",
-        "userScore": "7.0"
+        "userScore": "7.0",
+        "steam": {
+            "appid": 750920,
+            "name": "Shadow of the Tomb Raider"
+        }
     },
     "rise-of-the-tomb-raider": {
         "name": "Rise of the Tomb Raider",
@@ -847,7 +1082,11 @@
             "Thu Jan 06 2022"
         ],
         "metaScore": "86",
-        "userScore": "7.9"
+        "userScore": "7.9",
+        "steam": {
+            "appid": 391220,
+            "name": "Rise of the Tomb Raider"
+        }
     },
     "salt-and-sanctuary": {
         "name": "Salt and Sanctuary",
@@ -859,7 +1098,11 @@
             "Thu Dec 30 2021"
         ],
         "metaScore": "84",
-        "userScore": "7.6"
+        "userScore": "7.6",
+        "steam": {
+            "appid": 283640,
+            "name": "Salt and Sanctuary"
+        }
     },
     "moving-out": {
         "name": "Moving Out",
@@ -871,7 +1114,11 @@
             "Wed Dec 29 2021"
         ],
         "metaScore": "79",
-        "userScore": "7.2"
+        "userScore": "7.2",
+        "steam": {
+            "appid": 996770,
+            "name": "Moving Out"
+        }
     },
     "mages-of-mystralia": {
         "name": "Mages of Mystralia",
@@ -883,10 +1130,14 @@
             "Tue Dec 28 2021"
         ],
         "metaScore": "74",
-        "userScore": "7.5"
+        "userScore": "7.5",
+        "steam": {
+            "appid": 529660,
+            "name": "Mages of Mystralia"
+        }
     },
     "control": {
-        "name": "Control",
+        "name": "Control Ultimate Edition",
         "cleanName": "control",
         "startDates": [
             "Thu Jun 10 2021"
@@ -895,7 +1146,11 @@
             "Thu Jun 17 2021"
         ],
         "metaScore": "85",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {
+            "appid": 870780,
+            "name": "Control Ultimate Edition"
+        }
     },
     "pathfinder-kingmaker": {
         "name": "Pathfinder: Kingmaker",
@@ -907,7 +1162,11 @@
             "Sat Dec 25 2021"
         ],
         "metaScore": "73",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {
+            "appid": 640820,
+            "name": "Pathfinder: Kingmaker"
+        }
     },
     "vampyr": {
         "name": "Vampyr",
@@ -919,7 +1178,11 @@
             "Fri Dec 24 2021"
         ],
         "metaScore": "72",
-        "userScore": "7.0"
+        "userScore": "7.0",
+        "steam": {
+            "appid": 427290,
+            "name": "Vampyr"
+        }
     },
     "mutant-year-zero-road-to-eden": {
         "name": "Mutant Year Zero: Road to Eden",
@@ -933,10 +1196,14 @@
             "Thu Aug 22 2019"
         ],
         "metaScore": "78",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 760060,
+            "name": "Mutant Year Zero: Road to Eden"
+        }
     },
     "second-extinction": {
-        "name": "Second Extinction",
+        "name": "Second Extinction™",
         "cleanName": "second-extinction",
         "startDates": [
             "Tue Dec 21 2021"
@@ -945,7 +1212,11 @@
             "Wed Dec 22 2021"
         ],
         "metaScore": "N/A",
-        "userScore": "N/A"
+        "userScore": "N/A",
+        "steam": {
+            "appid": 1024380,
+            "name": "Second Extinction™"
+        }
     },
     "loop-hero": {
         "name": "Loop Hero",
@@ -957,7 +1228,11 @@
             "Tue Dec 21 2021"
         ],
         "metaScore": "82",
-        "userScore": "7.9"
+        "userScore": "7.9",
+        "steam": {
+            "appid": 1282730,
+            "name": "Loop Hero"
+        }
     },
     "remnant-from-the-ashes": {
         "name": "Remnant: From the Ashes",
@@ -970,7 +1245,11 @@
             "Sun Dec 19 2021"
         ],
         "metaScore": "78",
-        "userScore": "6.7"
+        "userScore": "6.7",
+        "steam": {
+            "appid": 617290,
+            "name": "Remnant: From the Ashes"
+        }
     },
     "neon-abyss": {
         "name": "Neon Abyss",
@@ -982,7 +1261,11 @@
             "Sat Dec 18 2021"
         ],
         "metaScore": "74",
-        "userScore": "6.3"
+        "userScore": "6.3",
+        "steam": {
+            "appid": 788100,
+            "name": "Neon Abyss"
+        }
     },
     "shenmue-iii": {
         "name": "Shenmue III",
@@ -994,7 +1277,11 @@
             "Fri Dec 17 2021"
         ],
         "metaScore": "69",
-        "userScore": "6.1"
+        "userScore": "6.1",
+        "steam": {
+            "appid": 878670,
+            "name": "Shenmue III"
+        }
     },
     "godfall": {
         "name": "Godfall",
@@ -1006,7 +1293,11 @@
             "Thu Dec 16 2021"
         ],
         "metaScore": "59",
-        "userScore": "3.8"
+        "userScore": "3.8",
+        "steam": {
+            "appid": 928960,
+            "name": "Godfall"
+        }
     },
     "prison-architect": {
         "name": "Prison Architect",
@@ -1018,10 +1309,14 @@
             "Thu Dec 16 2021"
         ],
         "metaScore": "83",
-        "userScore": "6"
+        "userScore": "6",
+        "steam": {
+            "appid": 233450,
+            "name": "Prison Architect"
+        }
     },
     "while-true-learn": {
-        "name": "While True: Learn()",
+        "name": "while True: learn()",
         "cleanName": "while-true-learn",
         "startDates": [
             "Thu Dec 02 2021"
@@ -1030,7 +1325,11 @@
             "Thu Dec 09 2021"
         ],
         "metaScore": "73",
-        "userScore": "6.3"
+        "userScore": "6.3",
+        "steam": {
+            "appid": 619150,
+            "name": "while True: learn()"
+        }
     },
     "dead-by-daylight": {
         "name": "Dead by Daylight",
@@ -1042,10 +1341,14 @@
             "Thu Dec 09 2021"
         ],
         "metaScore": "71",
-        "userScore": "5.7"
+        "userScore": "5.7",
+        "steam": {
+            "appid": 381210,
+            "name": "Dead by Daylight"
+        }
     },
     "thehunter-call-of-the-wild": {
-        "name": "theHunter: Call of the Wild",
+        "name": "theHunter: Call of the Wild™",
         "cleanName": "thehunter-call-of-the-wild",
         "startDates": [
             "Thu Nov 25 2021"
@@ -1054,7 +1357,11 @@
             "Thu Dec 02 2021"
         ],
         "metaScore": "64",
-        "userScore": "6.7"
+        "userScore": "6.7",
+        "steam": {
+            "appid": 518790,
+            "name": "theHunter: Call of the Wild™"
+        }
     },
     "antstream-arcade": {
         "name": "Antstream Arcade",
@@ -1066,10 +1373,14 @@
             "Thu Dec 02 2021"
         ],
         "metaScore": "N/A",
-        "userScore": "N/A"
+        "userScore": "N/A",
+        "steam": {
+            "appid": 1564030,
+            "name": "Antstream Arcade"
+        }
     },
     "never-alone": {
-        "name": "Never Alone",
+        "name": "Never Alone (Kisima Ingitchuna)",
         "cleanName": "never-alone",
         "startDates": [
             "Thu Nov 18 2021"
@@ -1078,10 +1389,14 @@
             "Thu Nov 25 2021"
         ],
         "metaScore": "72",
-        "userScore": "6.2"
+        "userScore": "6.2",
+        "steam": {
+            "appid": 295790,
+            "name": "Never Alone (Kisima Ingitchuna)"
+        }
     },
     "guild-of-dungeoneering": {
-        "name": "Guild of Dungeoneering",
+        "name": "Guild of Dungeoneering Ultimate Edition",
         "cleanName": "guild-of-dungeoneering",
         "startDates": [
             "Thu Nov 18 2021"
@@ -1090,7 +1405,11 @@
             "Thu Nov 25 2021"
         ],
         "metaScore": "72",
-        "userScore": "5.0"
+        "userScore": "5.0",
+        "steam": {
+            "appid": 317820,
+            "name": "Guild of Dungeoneering Ultimate Edition"
+        }
     },
     "kid-a-mnesia-exhibition": {
         "name": "Kid A Mnesia Exhibition",
@@ -1102,10 +1421,11 @@
             "Thu Nov 25 2021"
         ],
         "metaScore": "N/A",
-        "userScore": "8.5"
+        "userScore": "8.5",
+        "steam": {}
     },
     "borderlands-2-tiny-tinas-assault-on-dragon-keep": {
-        "name": "Borderlands 2: Tiny Tina's Assault On Dragon Keep",
+        "name": "Borderlands 2: Tiny Tina's Assault on Dragon Keep",
         "cleanName": "borderlands-2-tiny-tinas-assault-on-dragon-keep",
         "startDates": [
             "Thu Nov 11 2021"
@@ -1114,7 +1434,11 @@
             "Thu Nov 18 2021"
         ],
         "metaScore": "87",
-        "userScore": "8.5"
+        "userScore": "8.5",
+        "steam": {
+            "appid": 218550,
+            "name": "Borderlands 2: Tiny Tina's Assault on Dragon Keep"
+        }
     },
     "rogue-company": {
         "name": "Rogue Company",
@@ -1126,7 +1450,11 @@
             "Thu Nov 18 2021"
         ],
         "metaScore": "75",
-        "userScore": "4.9"
+        "userScore": "4.9",
+        "steam": {
+            "appid": 872200,
+            "name": "Rogue Company"
+        }
     },
     "aven-colony": {
         "name": "Aven Colony",
@@ -1138,7 +1466,11 @@
             "Thu Nov 11 2021"
         ],
         "metaScore": "65",
-        "userScore": "8.0"
+        "userScore": "8.0",
+        "steam": {
+            "appid": 484900,
+            "name": "Aven Colony"
+        }
     },
     "darq": {
         "name": "DARQ",
@@ -1150,7 +1482,11 @@
             "Thu Nov 04 2021"
         ],
         "metaScore": "70",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 433550,
+            "name": "DARQ"
+        }
     },
     "among-the-sleep": {
         "name": "Among the Sleep",
@@ -1162,7 +1498,11 @@
             "Thu Oct 28 2021"
         ],
         "metaScore": "66",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {
+            "appid": 250620,
+            "name": "Among the Sleep"
+        }
     },
     "stubbs-the-zombie-in-rebel-without-a-pulse": {
         "name": "Stubbs the Zombie in Rebel Without a Pulse",
@@ -1174,7 +1514,11 @@
             "Thu Oct 21 2021"
         ],
         "metaScore": "72",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 7800,
+            "name": "Stubbs the Zombie in Rebel Without a Pulse"
+        }
     },
     "pc-building-simulator": {
         "name": "PC Building Simulator",
@@ -1186,7 +1530,11 @@
             "Thu Oct 14 2021"
         ],
         "metaScore": "N/A",
-        "userScore": "7.0"
+        "userScore": "7.0",
+        "steam": {
+            "appid": 621060,
+            "name": "PC Building Simulator"
+        }
     },
     "europa-universalis-iv": {
         "name": "Europa Universalis IV",
@@ -1198,7 +1546,11 @@
             "Thu Oct 07 2021"
         ],
         "metaScore": "87",
-        "userScore": "8.7"
+        "userScore": "8.7",
+        "steam": {
+            "appid": 236850,
+            "name": "Europa Universalis IV"
+        }
     },
     "the-escapists": {
         "name": "The Escapists",
@@ -1211,7 +1563,11 @@
             "Thu Sep 30 2021"
         ],
         "metaScore": "71",
-        "userScore": "6.9"
+        "userScore": "6.9",
+        "steam": {
+            "appid": 298630,
+            "name": "The Escapists"
+        }
     },
     "speed-brawl": {
         "name": "Speed Brawl",
@@ -1223,7 +1579,11 @@
             "Thu Sep 23 2021"
         ],
         "metaScore": "N/A",
-        "userScore": "N/A"
+        "userScore": "N/A",
+        "steam": {
+            "appid": 468670,
+            "name": "Speed Brawl"
+        }
     },
     "tharsis": {
         "name": "Tharsis",
@@ -1235,7 +1595,11 @@
             "Thu Sep 23 2021"
         ],
         "metaScore": "61",
-        "userScore": "4.8"
+        "userScore": "4.8",
+        "steam": {
+            "appid": 323060,
+            "name": "Tharsis"
+        }
     },
     "nioh-complete-edition": {
         "name": "Nioh: Complete Edition",
@@ -1247,7 +1611,11 @@
             "Thu Sep 16 2021"
         ],
         "metaScore": "84",
-        "userScore": "7.1"
+        "userScore": "7.1",
+        "steam": {
+            "appid": 485510,
+            "name": "Nioh: Complete Edition"
+        }
     },
     "sheltered": {
         "name": "Sheltered",
@@ -1259,7 +1627,11 @@
             "Thu Sep 16 2021"
         ],
         "metaScore": "62",
-        "userScore": "5.1"
+        "userScore": "5.1",
+        "steam": {
+            "appid": 356040,
+            "name": "Sheltered"
+        }
     },
     "yokus-island-express": {
         "name": "Yoku's Island Express",
@@ -1271,7 +1643,11 @@
             "Thu Sep 09 2021"
         ],
         "metaScore": "84",
-        "userScore": "7.9"
+        "userScore": "7.9",
+        "steam": {
+            "appid": 334940,
+            "name": "Yoku's Island Express"
+        }
     },
     "automachef": {
         "name": "Automachef",
@@ -1283,7 +1659,11 @@
             "Thu Sep 02 2021"
         ],
         "metaScore": "71",
-        "userScore": "5.1"
+        "userScore": "5.1",
+        "steam": {
+            "appid": 984800,
+            "name": "Automachef"
+        }
     },
     "void-bastards": {
         "name": "Void Bastards",
@@ -1295,7 +1675,11 @@
             "Thu Aug 26 2021"
         ],
         "metaScore": "81",
-        "userScore": "7.5"
+        "userScore": "7.5",
+        "steam": {
+            "appid": 857980,
+            "name": "Void Bastards"
+        }
     },
     "yooka-laylee": {
         "name": "Yooka-Laylee",
@@ -1307,7 +1691,11 @@
             "Thu Aug 26 2021"
         ],
         "metaScore": "73",
-        "userScore": "6.5"
+        "userScore": "6.5",
+        "steam": {
+            "appid": 360830,
+            "name": "Yooka-Laylee"
+        }
     },
     "rebel-galaxy": {
         "name": "Rebel Galaxy",
@@ -1320,7 +1708,11 @@
             "Thu Aug 19 2021"
         ],
         "metaScore": "75",
-        "userScore": "7.5"
+        "userScore": "7.5",
+        "steam": {
+            "appid": 290300,
+            "name": "Rebel Galaxy"
+        }
     },
     "minit": {
         "name": "Minit",
@@ -1333,7 +1725,11 @@
             "Thu Aug 12 2021"
         ],
         "metaScore": "79",
-        "userScore": "6.6"
+        "userScore": "6.6",
+        "steam": {
+            "appid": 609490,
+            "name": "Minit"
+        }
     },
     "a-plague-tale-innocence": {
         "name": "A Plague Tale: Innocence",
@@ -1345,10 +1741,14 @@
             "Thu Aug 12 2021"
         ],
         "metaScore": "81",
-        "userScore": "8.5"
+        "userScore": "8.5",
+        "steam": {
+            "appid": 752590,
+            "name": "A Plague Tale: Innocence"
+        }
     },
     "mothergunship": {
-        "name": "Mothergunship",
+        "name": "MOTHERGUNSHIP",
         "cleanName": "mothergunship",
         "startDates": [
             "Thu Jul 29 2021"
@@ -1357,10 +1757,14 @@
             "Thu Aug 05 2021"
         ],
         "metaScore": "72",
-        "userScore": "6.8"
+        "userScore": "6.8",
+        "steam": {
+            "appid": 574090,
+            "name": "MOTHERGUNSHIP"
+        }
     },
     "train-sim-world": {
-        "name": "Train Sim World",
+        "name": "Train Sim World® 2",
         "cleanName": "train-sim-world",
         "startDates": [
             "Thu Jul 29 2021"
@@ -1369,7 +1773,11 @@
             "Thu Aug 05 2021"
         ],
         "metaScore": "N/A",
-        "userScore": "6.6"
+        "userScore": "6.6",
+        "steam": {
+            "appid": 1282590,
+            "name": "Train Sim World® 2"
+        }
     },
     "defense-grid-the-awakening": {
         "name": "Defense Grid: The Awakening",
@@ -1381,7 +1789,11 @@
             "Mon Dec 21 2020"
         ],
         "metaScore": "81",
-        "userScore": "8.6"
+        "userScore": "8.6",
+        "steam": {
+            "appid": 18500,
+            "name": "Defense Grid: The Awakening"
+        }
     },
     "verdun": {
         "name": "Verdun",
@@ -1393,7 +1805,11 @@
             "Thu Jul 29 2021"
         ],
         "metaScore": "70",
-        "userScore": "7.7"
+        "userScore": "7.7",
+        "steam": {
+            "appid": 242860,
+            "name": "Verdun"
+        }
     },
     "obduction": {
         "name": "Obduction",
@@ -1405,7 +1821,11 @@
             "Thu Jul 22 2021"
         ],
         "metaScore": "76",
-        "userScore": "7.6"
+        "userScore": "7.6",
+        "steam": {
+            "appid": 306760,
+            "name": "Obduction"
+        }
     },
     "offworld-trading-company": {
         "name": "Offworld Trading Company",
@@ -1418,7 +1838,11 @@
             "Thu Jul 22 2021"
         ],
         "metaScore": "78",
-        "userScore": "7.6"
+        "userScore": "7.6",
+        "steam": {
+            "appid": 271240,
+            "name": "Offworld Trading Company"
+        }
     },
     "bridge-constructor-the-walking-dead": {
         "name": "Bridge Constructor: The Walking Dead",
@@ -1430,7 +1854,11 @@
             "Thu Jul 15 2021"
         ],
         "metaScore": "72",
-        "userScore": "4.3"
+        "userScore": "4.3",
+        "steam": {
+            "appid": 1336120,
+            "name": "Bridge Constructor: The Walking Dead"
+        }
     },
     "ironcast": {
         "name": "Ironcast",
@@ -1442,7 +1870,11 @@
             "Thu Jul 15 2021"
         ],
         "metaScore": "75",
-        "userScore": "7.2"
+        "userScore": "7.2",
+        "steam": {
+            "appid": 327670,
+            "name": "Ironcast"
+        }
     },
     "the-spectrum-retreat": {
         "name": "The Spectrum Retreat",
@@ -1454,7 +1886,11 @@
             "Thu Jul 08 2021"
         ],
         "metaScore": "68",
-        "userScore": "6.1"
+        "userScore": "6.1",
+        "steam": {
+            "appid": 763250,
+            "name": "The Spectrum Retreat"
+        }
     },
     "horizon-chase-turbo": {
         "name": "Horizon Chase Turbo",
@@ -1468,7 +1904,11 @@
             "Thu Jul 01 2021"
         ],
         "metaScore": "76",
-        "userScore": "7.6"
+        "userScore": "7.6",
+        "steam": {
+            "appid": 389140,
+            "name": "Horizon Chase Turbo"
+        }
     },
     "sonic-mania": {
         "name": "Sonic Mania",
@@ -1480,7 +1920,11 @@
             "Thu Jul 01 2021"
         ],
         "metaScore": "84",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 584400,
+            "name": "Sonic Mania"
+        }
     },
     "hell-is-other-demons": {
         "name": "Hell is Other Demons",
@@ -1492,7 +1936,11 @@
             "Thu Jun 24 2021"
         ],
         "metaScore": "85",
-        "userScore": "8.2"
+        "userScore": "8.2",
+        "steam": {
+            "appid": 595790,
+            "name": "Hell is Other Demons"
+        }
     },
     "frostpunk": {
         "name": "Frostpunk",
@@ -1504,7 +1952,11 @@
             "Thu Jun 10 2021"
         ],
         "metaScore": "84",
-        "userScore": "8.4"
+        "userScore": "8.4",
+        "steam": {
+            "appid": 323190,
+            "name": "Frostpunk"
+        }
     },
     "among-us": {
         "name": "Among Us",
@@ -1516,7 +1968,11 @@
             "Thu Jun 03 2021"
         ],
         "metaScore": "85",
-        "userScore": "6.8"
+        "userScore": "6.8",
+        "steam": {
+            "appid": 945360,
+            "name": "Among Us"
+        }
     },
     "nba-2k21": {
         "name": "NBA 2K21",
@@ -1528,7 +1984,11 @@
             "Thu May 27 2021"
         ],
         "metaScore": "67",
-        "userScore": "1.2"
+        "userScore": "1.2",
+        "steam": {
+            "appid": 1225330,
+            "name": "NBA 2K21"
+        }
     },
     "the-lions-song": {
         "name": "The Lion's Song",
@@ -1540,7 +2000,11 @@
             "Thu May 20 2021"
         ],
         "metaScore": "77",
-        "userScore": "7.5"
+        "userScore": "7.5",
+        "steam": {
+            "appid": 437160,
+            "name": "The Lion's Song"
+        }
     },
     "pine": {
         "name": "Pine",
@@ -1552,7 +2016,11 @@
             "Thu May 13 2021"
         ],
         "metaScore": "48",
-        "userScore": "6.8"
+        "userScore": "6.8",
+        "steam": {
+            "appid": 1042780,
+            "name": "Pine"
+        }
     },
     "hand-of-fate-2": {
         "name": "Hand of Fate 2",
@@ -1564,7 +2032,11 @@
             "Thu Apr 29 2021"
         ],
         "metaScore": "80",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {
+            "appid": 456670,
+            "name": "Hand of Fate 2"
+        }
     },
     "deponia-the-complete-journey": {
         "name": "Deponia: The Complete Journey",
@@ -1576,7 +2048,11 @@
             "Thu Apr 22 2021"
         ],
         "metaScore": "74",
-        "userScore": "7.5"
+        "userScore": "7.5",
+        "steam": {
+            "appid": 292910,
+            "name": "Deponia: The Complete Journey"
+        }
     },
     "3-out-of-10-season-two": {
         "name": "3 Out Of 10: Season Two",
@@ -1588,7 +2064,8 @@
             "Thu Apr 15 2021"
         ],
         "metaScore": "79",
-        "userScore": "8.4"
+        "userScore": "8.4",
+        "steam": {}
     },
     "tales-of-the-neon-sea": {
         "name": "Tales of the Neon Sea",
@@ -1600,7 +2077,11 @@
             "Thu Apr 08 2021"
         ],
         "metaScore": "62",
-        "userScore": "7.5"
+        "userScore": "7.5",
+        "steam": {
+            "appid": 828740,
+            "name": "Tales of the Neon Sea"
+        }
     },
     "creature-in-the-well": {
         "name": "Creature in the Well",
@@ -1612,7 +2093,11 @@
             "Thu Apr 01 2021"
         ],
         "metaScore": "82",
-        "userScore": "5.4"
+        "userScore": "5.4",
+        "steam": {
+            "appid": 852300,
+            "name": "Creature in the Well"
+        }
     },
     "the-fall": {
         "name": "The Fall",
@@ -1624,7 +2109,11 @@
             "Thu Mar 25 2021"
         ],
         "metaScore": "76",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {
+            "appid": 290770,
+            "name": "The Fall"
+        }
     },
     "surviving-mars": {
         "name": "Surviving Mars",
@@ -1638,7 +2127,11 @@
             "Thu Oct 17 2019"
         ],
         "metaScore": "76",
-        "userScore": "7.1"
+        "userScore": "7.1",
+        "steam": {
+            "appid": 464920,
+            "name": "Surviving Mars"
+        }
     },
     "wargame-red-dragon": {
         "name": "Wargame: Red Dragon",
@@ -1650,7 +2143,11 @@
             "Thu Mar 11 2021"
         ],
         "metaScore": "78",
-        "userScore": "7.9"
+        "userScore": "7.9",
+        "steam": {
+            "appid": 251060,
+            "name": "Wargame: Red Dragon"
+        }
     },
     "sunless-sea": {
         "name": "Sunless Sea",
@@ -1662,10 +2159,14 @@
             "Thu Mar 04 2021"
         ],
         "metaScore": "81",
-        "userScore": "7.5"
+        "userScore": "7.5",
+        "steam": {
+            "appid": 304650,
+            "name": "Sunless Sea"
+        }
     },
     "rage-2": {
-        "name": "Rage 2",
+        "name": "RAGE 2",
         "cleanName": "rage-2",
         "startDates": [
             "Thu Feb 18 2021"
@@ -1674,7 +2175,11 @@
             "Thu Feb 25 2021"
         ],
         "metaScore": "73",
-        "userScore": "5.5"
+        "userScore": "5.5",
+        "steam": {
+            "appid": 548570,
+            "name": "RAGE 2"
+        }
     },
     "absolute-drift": {
         "name": "Absolute Drift",
@@ -1686,7 +2191,11 @@
             "Thu Feb 25 2021"
         ],
         "metaScore": "66",
-        "userScore": "5.8"
+        "userScore": "5.8",
+        "steam": {
+            "appid": 320140,
+            "name": "Absolute Drift"
+        }
     },
     "halcyon-6-lightspeed-edition": {
         "name": "Halcyon 6: Lightspeed Edition",
@@ -1698,10 +2207,14 @@
             "Thu Feb 11 2021"
         ],
         "metaScore": "73",
-        "userScore": "7.0"
+        "userScore": "7.0",
+        "steam": {
+            "appid": 651660,
+            "name": "Halcyon 6: Lightspeed Edition"
+        }
     },
     "for-the-king": {
-        "name": "For the King",
+        "name": "For The King",
         "cleanName": "for-the-king",
         "startDates": [
             "Thu Feb 04 2021",
@@ -1711,7 +2224,11 @@
             "Thu Feb 11 2021"
         ],
         "metaScore": "79",
-        "userScore": "7.1"
+        "userScore": "7.1",
+        "steam": {
+            "appid": 527230,
+            "name": "For The King"
+        }
     },
     "metro-last-light-redux": {
         "name": "Metro: Last Light Redux",
@@ -1723,7 +2240,11 @@
             "Thu Feb 11 2021"
         ],
         "metaScore": "76",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 287390,
+            "name": "Metro: Last Light Redux"
+        }
     },
     "dandara": {
         "name": "Dandara",
@@ -1735,10 +2256,14 @@
             "Thu Feb 04 2021"
         ],
         "metaScore": "70",
-        "userScore": "7.9"
+        "userScore": "7.9",
+        "steam": {
+            "appid": 612390,
+            "name": "Dandara: Trials of Fear Edition"
+        }
     },
     "star-wars-battlefront-ii": {
-        "name": "Star Wars Battlefront II",
+        "name": "STAR WARS™ Battlefront™ II",
         "cleanName": "star-wars-battlefront-ii",
         "startDates": [
             "Thu Jan 14 2021"
@@ -1747,7 +2272,11 @@
             "Thu Jan 21 2021"
         ],
         "metaScore": "78",
-        "userScore": "8.6"
+        "userScore": "8.6",
+        "steam": {
+            "appid": 1237950,
+            "name": "STAR WARS™ Battlefront™ II"
+        }
     },
     "crying-suns": {
         "name": "Crying Suns",
@@ -1759,7 +2288,11 @@
             "Thu Jan 14 2021"
         ],
         "metaScore": "75",
-        "userScore": "7.6"
+        "userScore": "7.6",
+        "steam": {
+            "appid": 873940,
+            "name": "Crying Suns"
+        }
     },
     "jurassic-world-evolution": {
         "name": "Jurassic World Evolution",
@@ -1771,7 +2304,11 @@
             "Thu Jan 07 2021"
         ],
         "metaScore": "69",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 648350,
+            "name": "Jurassic World Evolution"
+        }
     },
     "torchlight-ii": {
         "name": "Torchlight II",
@@ -1785,7 +2322,11 @@
             "Thu Jul 23 2020"
         ],
         "metaScore": "88",
-        "userScore": "8.5"
+        "userScore": "8.5",
+        "steam": {
+            "appid": 200710,
+            "name": "Torchlight II"
+        }
     },
     "solitairica": {
         "name": "Solitairica",
@@ -1797,7 +2338,11 @@
             "Wed Dec 30 2020"
         ],
         "metaScore": "82",
-        "userScore": "6.6"
+        "userScore": "6.6",
+        "steam": {
+            "appid": 463980,
+            "name": "Solitairica"
+        }
     },
     "stranded-deep": {
         "name": "Stranded Deep",
@@ -1809,7 +2354,11 @@
             "Tue Dec 29 2020"
         ],
         "metaScore": "65",
-        "userScore": "7.0"
+        "userScore": "7.0",
+        "steam": {
+            "appid": 313120,
+            "name": "Stranded Deep"
+        }
     },
     "night-in-the-woods": {
         "name": "Night in the Woods",
@@ -1821,10 +2370,14 @@
             "Mon Dec 28 2020"
         ],
         "metaScore": "88",
-        "userScore": "7.7"
+        "userScore": "7.7",
+        "steam": {
+            "appid": 481510,
+            "name": "Night in the Woods"
+        }
     },
     "my-time-at-portia": {
-        "name": "My Time at Portia",
+        "name": "My Time At Portia",
         "cleanName": "my-time-at-portia",
         "startDates": [
             "Sat Dec 26 2020"
@@ -1833,10 +2386,14 @@
             "Sun Dec 27 2020"
         ],
         "metaScore": "73",
-        "userScore": "6.9"
+        "userScore": "6.9",
+        "steam": {
+            "appid": 666140,
+            "name": "My Time At Portia"
+        }
     },
     "darkest-dungeon": {
-        "name": "Darkest Dungeon",
+        "name": "Darkest Dungeon®",
         "cleanName": "darkest-dungeon",
         "startDates": [
             "Fri Dec 25 2020"
@@ -1845,10 +2402,14 @@
             "Sat Dec 26 2020"
         ],
         "metaScore": "84",
-        "userScore": "7.9"
+        "userScore": "7.9",
+        "steam": {
+            "appid": 262060,
+            "name": "Darkest Dungeon®"
+        }
     },
     "inside": {
-        "name": "Inside",
+        "name": "INSIDE",
         "cleanName": "inside",
         "startDates": [
             "Thu Dec 24 2020",
@@ -1859,7 +2420,11 @@
             "Thu Sep 05 2019"
         ],
         "metaScore": "87",
-        "userScore": "8.6"
+        "userScore": "8.6",
+        "steam": {
+            "appid": 304430,
+            "name": "INSIDE"
+        }
     },
     "tropico-5": {
         "name": "Tropico 5",
@@ -1871,10 +2436,14 @@
             "Thu Dec 24 2020"
         ],
         "metaScore": "75",
-        "userScore": "6.9"
+        "userScore": "6.9",
+        "steam": {
+            "appid": 245620,
+            "name": "Tropico 5"
+        }
     },
     "metro-2033": {
-        "name": "Metro: 2033",
+        "name": "Metro 2033",
         "cleanName": "metro-2033",
         "startDates": [
             "Tue Dec 22 2020"
@@ -1883,7 +2452,11 @@
             "Wed Dec 23 2020"
         ],
         "metaScore": "81",
-        "userScore": "8.1"
+        "userScore": "8.1",
+        "steam": {
+            "appid": 43129,
+            "name": "Metro 2033"
+        }
     },
     "alien-isolation": {
         "name": "Alien: Isolation",
@@ -1895,7 +2468,11 @@
             "Tue Dec 22 2020"
         ],
         "metaScore": "81",
-        "userScore": "8.5"
+        "userScore": "8.5",
+        "steam": {
+            "appid": 214490,
+            "name": "Alien: Isolation"
+        }
     },
     "the-long-dark": {
         "name": "The Long Dark",
@@ -1907,10 +2484,14 @@
             "Sun Dec 20 2020"
         ],
         "metaScore": "77",
-        "userScore": "6.7"
+        "userScore": "6.7",
+        "steam": {
+            "appid": 305620,
+            "name": "The Long Dark"
+        }
     },
     "oddworld-abes-oddysee---new-n-tasty": {
-        "name": "Oddworld: New 'n' Tasty!",
+        "name": "Oddworld: New 'n' Tasty",
         "cleanName": "oddworld-abes-oddysee---new-n-tasty",
         "startDates": [
             "Fri Dec 18 2020"
@@ -1919,7 +2500,11 @@
             "Sat Dec 19 2020"
         ],
         "metaScore": "86",
-        "userScore": "7.6"
+        "userScore": "7.6",
+        "steam": {
+            "appid": 314660,
+            "name": "Oddworld: New 'n' Tasty"
+        }
     },
     "pillars-of-eternity": {
         "name": "Pillars of Eternity",
@@ -1931,7 +2516,11 @@
             "Thu Dec 17 2020"
         ],
         "metaScore": "89",
-        "userScore": "8.3"
+        "userScore": "8.3",
+        "steam": {
+            "appid": 291650,
+            "name": "Pillars of Eternity"
+        }
     },
     "tyranny": {
         "name": "Tyranny",
@@ -1943,10 +2532,14 @@
             "Thu Dec 17 2020"
         ],
         "metaScore": "80",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 362960,
+            "name": "Tyranny"
+        }
     },
     "cave-story-plus": {
-        "name": "Cave Story Plus",
+        "name": "Cave Story+",
         "cleanName": "cave-story-plus",
         "startDates": [
             "Thu Dec 03 2020"
@@ -1955,7 +2548,11 @@
             "Thu Dec 10 2020"
         ],
         "metaScore": "83",
-        "userScore": "8.3"
+        "userScore": "8.3",
+        "steam": {
+            "appid": 200900,
+            "name": "Cave Story+"
+        }
     },
     "spintires-mudrunner": {
         "name": "MudRunner",
@@ -1967,7 +2564,11 @@
             "Thu Dec 03 2020"
         ],
         "metaScore": "77",
-        "userScore": "6.7"
+        "userScore": "6.7",
+        "steam": {
+            "appid": 675010,
+            "name": "MudRunner"
+        }
     },
     "elite-dangerous": {
         "name": "Elite Dangerous",
@@ -1979,7 +2580,11 @@
             "Thu Nov 26 2020"
         ],
         "metaScore": "80",
-        "userScore": "6.7"
+        "userScore": "6.7",
+        "steam": {
+            "appid": 359320,
+            "name": "Elite Dangerous"
+        }
     },
     "the-world-next-door": {
         "name": "The World Next Door",
@@ -1991,7 +2596,11 @@
             "Thu Nov 26 2020"
         ],
         "metaScore": "N/A",
-        "userScore": "6.6"
+        "userScore": "6.6",
+        "steam": {
+            "appid": 755470,
+            "name": "The World Next Door"
+        }
     },
     "the-textorcist-the-story-of-ray-bibbia": {
         "name": "The Textorcist: The Story of Ray Bibbia",
@@ -2003,7 +2612,11 @@
             "Thu Nov 19 2020"
         ],
         "metaScore": "78",
-        "userScore": "6.5"
+        "userScore": "6.5",
+        "steam": {
+            "appid": 940680,
+            "name": "The Textorcist: The Story of Ray Bibbia"
+        }
     },
     "dungeons-3": {
         "name": "Dungeons 3",
@@ -2015,7 +2628,11 @@
             "Thu Nov 12 2020"
         ],
         "metaScore": "75",
-        "userScore": "7.6"
+        "userScore": "7.6",
+        "steam": {
+            "appid": 493900,
+            "name": "Dungeons 3"
+        }
     },
     "ghostbusters-the-video-game-remastered": {
         "name": "Ghostbusters: The Video Game Remastered",
@@ -2027,7 +2644,11 @@
             "Thu Nov 05 2020"
         ],
         "metaScore": "67",
-        "userScore": "4.1"
+        "userScore": "4.1",
+        "steam": {
+            "appid": 1449280,
+            "name": "Ghostbusters: The Video Game Remastered"
+        }
     },
     "blair-witch": {
         "name": "Blair Witch",
@@ -2039,7 +2660,11 @@
             "Thu Nov 05 2020"
         ],
         "metaScore": "69",
-        "userScore": "6.3"
+        "userScore": "6.3",
+        "steam": {
+            "appid": 1092660,
+            "name": "Blair Witch"
+        }
     },
     "layers-of-fear-2": {
         "name": "Layers of Fear 2",
@@ -2051,7 +2676,11 @@
             "Thu Oct 29 2020"
         ],
         "metaScore": "70",
-        "userScore": "6.2"
+        "userScore": "6.2",
+        "steam": {
+            "appid": 1029890,
+            "name": "Layers of Fear 2"
+        }
     },
     "costume-quest-2": {
         "name": "Costume Quest 2",
@@ -2065,7 +2694,11 @@
             "Thu Oct 29 2020"
         ],
         "metaScore": "68",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 275180,
+            "name": "Costume Quest 2"
+        }
     },
     "amnesia-a-machine-for-pigs": {
         "name": "Amnesia: A Machine for Pigs",
@@ -2077,7 +2710,11 @@
             "Thu Oct 22 2020"
         ],
         "metaScore": "72",
-        "userScore": "5.9"
+        "userScore": "5.9",
+        "steam": {
+            "appid": 239200,
+            "name": "Amnesia: A Machine for Pigs"
+        }
     },
     "kingdom-new-lands": {
         "name": "Kingdom: New Lands",
@@ -2090,10 +2727,14 @@
             "Thu Oct 22 2020"
         ],
         "metaScore": "74",
-        "userScore": "7.7"
+        "userScore": "7.7",
+        "steam": {
+            "appid": 496300,
+            "name": "Kingdom: New Lands"
+        }
     },
     "abzu": {
-        "name": "Abzu",
+        "name": "ABZÛ",
         "cleanName": "abzu",
         "startDates": [
             "Thu Oct 08 2020",
@@ -2103,7 +2744,11 @@
             "Thu Oct 15 2020"
         ],
         "metaScore": "83",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 384190,
+            "name": "ABZÛ"
+        }
     },
     "pikuniku": {
         "name": "Pikuniku",
@@ -2115,7 +2760,11 @@
             "Thu Oct 08 2020"
         ],
         "metaScore": "74",
-        "userScore": "7.2"
+        "userScore": "7.2",
+        "steam": {
+            "appid": 572890,
+            "name": "Pikuniku"
+        }
     },
     "rollercoaster-tycoon-3": {
         "name": "Rollercoaster Tycoon 3",
@@ -2127,7 +2776,11 @@
             "Thu Oct 01 2020"
         ],
         "metaScore": "81",
-        "userScore": "5.4"
+        "userScore": "5.4",
+        "steam": {
+            "appid": 1368820,
+            "name": "RollerCoaster Tycoon® 3: Complete Edition"
+        }
     },
     "football-manager-2022": {
         "name": "Football Manager 2022",
@@ -2139,7 +2792,11 @@
             "Thu Sep 24 2020"
         ],
         "metaScore": "85",
-        "userScore": "7.1"
+        "userScore": "7.1",
+        "steam": {
+            "appid": 1569040,
+            "name": "Football Manager 2022"
+        }
     },
     "stick-it-to-the-man!": {
         "name": "Stick It To The Man!",
@@ -2151,7 +2808,11 @@
             "Thu Sep 24 2020"
         ],
         "metaScore": "79",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 251830,
+            "name": "Stick It To The Man!"
+        }
     },
     "railway-empire": {
         "name": "Railway Empire",
@@ -2163,7 +2824,11 @@
             "Thu Sep 17 2020"
         ],
         "metaScore": "74",
-        "userScore": "6.8"
+        "userScore": "6.8",
+        "steam": {
+            "appid": 503940,
+            "name": "Railway Empire"
+        }
     },
     "where-the-water-tastes-like-wine": {
         "name": "Where the Water Tastes Like Wine",
@@ -2175,10 +2840,14 @@
             "Thu Sep 17 2020"
         ],
         "metaScore": "74",
-        "userScore": "5.2"
+        "userScore": "5.2",
+        "steam": {
+            "appid": 447120,
+            "name": "Where the Water Tastes Like Wine"
+        }
     },
     "into-the-breach": {
-        "name": "Into The Breach",
+        "name": "Into the Breach",
         "cleanName": "into-the-breach",
         "startDates": [
             "Thu Sep 03 2020",
@@ -2188,10 +2857,14 @@
             "Fri Dec 20 2019"
         ],
         "metaScore": "90",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 590380,
+            "name": "Into the Breach"
+        }
     },
     "hitman": {
-        "name": "Hitman",
+        "name": "HITMAN™",
         "cleanName": "hitman",
         "startDates": [
             "Thu Aug 27 2020"
@@ -2200,7 +2873,11 @@
             "Thu Sep 03 2020"
         ],
         "metaScore": "83",
-        "userScore": "7.5"
+        "userScore": "7.5",
+        "steam": {
+            "appid": 236870,
+            "name": "HITMAN™"
+        }
     },
     "shadowrun-returns": {
         "name": "Shadowrun Returns",
@@ -2212,7 +2889,11 @@
             "Thu Sep 03 2020"
         ],
         "metaScore": "76",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {
+            "appid": 234650,
+            "name": "Shadowrun Returns"
+        }
     },
     "shadowrun-hong-kong": {
         "name": "Shadowrun: Hong Kong",
@@ -2224,7 +2905,11 @@
             "Thu Sep 03 2020"
         ],
         "metaScore": "81",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 346940,
+            "name": "Shadowrun: Hong Kong - Extended Edition"
+        }
     },
     "shadowrun-dragonfall": {
         "name": "Shadowrun: Dragonfall",
@@ -2236,10 +2921,14 @@
             "Thu Sep 03 2020"
         ],
         "metaScore": "81",
-        "userScore": "8.3"
+        "userScore": "8.3",
+        "steam": {
+            "appid": 272030,
+            "name": "Shadowrun: Dragonfall"
+        }
     },
     "enter-the-gungeon": {
-        "name": "Enter The Gungeon",
+        "name": "Enter the Gungeon",
         "cleanName": "enter-the-gungeon",
         "startDates": [
             "Thu Jun 13 2019"
@@ -2248,7 +2937,11 @@
             "Thu Jun 20 2019"
         ],
         "metaScore": "84",
-        "userScore": "8.1"
+        "userScore": "8.1",
+        "steam": {
+            "appid": 311690,
+            "name": "Enter the Gungeon"
+        }
     },
     "gods-trigger": {
         "name": "God's Trigger",
@@ -2260,7 +2953,11 @@
             "Thu Aug 27 2020"
         ],
         "metaScore": "75",
-        "userScore": "8.0"
+        "userScore": "8.0",
+        "steam": {
+            "appid": 488730,
+            "name": "God's Trigger"
+        }
     },
     "the-alto-collection": {
         "name": "The Alto Collection",
@@ -2272,7 +2969,8 @@
             "Thu Aug 20 2020"
         ],
         "metaScore": "75",
-        "userScore": "7.6"
+        "userScore": "7.6",
+        "steam": {}
     },
     "wilmots-warehouse": {
         "name": "Wilmot's Warehouse",
@@ -2284,7 +2982,11 @@
             "Thu Aug 13 2020"
         ],
         "metaScore": "85",
-        "userScore": "8.0"
+        "userScore": "8.0",
+        "steam": {
+            "appid": 839870,
+            "name": "Wilmot's Warehouse"
+        }
     },
     "3-out-of-10-season-one": {
         "name": "3 Out Of 10, EP 1: Welcome To Shovelworks",
@@ -2296,10 +2998,11 @@
             "Thu Aug 13 2020"
         ],
         "metaScore": "85",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {}
     },
     "superbrothers-sword-sworcery-ep": {
-        "name": "Superbrothers: Sword Sworcery Ep",
+        "name": "Superbrothers: Sword & Sworcery EP",
         "cleanName": "superbrothers-sword-sworcery-ep",
         "startDates": [
             "Thu Jul 30 2020"
@@ -2308,7 +3011,11 @@
             "Thu Aug 06 2020"
         ],
         "metaScore": "83",
-        "userScore": "6.4"
+        "userScore": "6.4",
+        "steam": {
+            "appid": 204060,
+            "name": "Superbrothers: Sword & Sworcery EP"
+        }
     },
     "barony": {
         "name": "Barony",
@@ -2320,7 +3027,11 @@
             "Thu Aug 06 2020"
         ],
         "metaScore": "N/A",
-        "userScore": "6.7"
+        "userScore": "6.7",
+        "steam": {
+            "appid": 371970,
+            "name": "Barony"
+        }
     },
     "20xx": {
         "name": "20XX",
@@ -2332,7 +3043,11 @@
             "Thu Aug 06 2020"
         ],
         "metaScore": "77",
-        "userScore": "6.3"
+        "userScore": "6.3",
+        "steam": {
+            "appid": 322110,
+            "name": "20XX"
+        }
     },
     "tacoma": {
         "name": "Tacoma",
@@ -2344,7 +3059,11 @@
             "Thu Jul 30 2020"
         ],
         "metaScore": "76",
-        "userScore": "6.4"
+        "userScore": "6.4",
+        "steam": {
+            "appid": 343860,
+            "name": "Tacoma"
+        }
     },
     "next-up-hero": {
         "name": "Next Up Hero",
@@ -2356,7 +3075,11 @@
             "Thu Jul 30 2020"
         ],
         "metaScore": "N/A",
-        "userScore": "5.7"
+        "userScore": "5.7",
+        "steam": {
+            "appid": 667810,
+            "name": "Next Up Hero"
+        }
     },
     "lifeless-planet": {
         "name": "Lifeless Planet",
@@ -2368,7 +3091,11 @@
             "Thu Jul 16 2020"
         ],
         "metaScore": "59",
-        "userScore": "6.4"
+        "userScore": "6.4",
+        "steam": {
+            "appid": 261530,
+            "name": "Lifeless Planet"
+        }
     },
     "the-escapists-2": {
         "name": "The Escapists 2",
@@ -2380,7 +3107,11 @@
             "Thu Jul 16 2020"
         ],
         "metaScore": "75",
-        "userScore": "7.6"
+        "userScore": "7.6",
+        "steam": {
+            "appid": 641990,
+            "name": "The Escapists 2"
+        }
     },
     "conan-exiles": {
         "name": "Conan Exiles",
@@ -2392,7 +3123,11 @@
             "Thu Jul 09 2020"
         ],
         "metaScore": "68",
-        "userScore": "6.5"
+        "userScore": "6.5",
+        "steam": {
+            "appid": 440900,
+            "name": "Conan Exiles"
+        }
     },
     "hue": {
         "name": "Hue",
@@ -2404,7 +3139,11 @@
             "Thu Jul 09 2020"
         ],
         "metaScore": "79",
-        "userScore": "7.5"
+        "userScore": "7.5",
+        "steam": {
+            "appid": 383270,
+            "name": "Hue"
+        }
     },
     "stranger-things-3-the-game": {
         "name": "Stranger Things 3: The Game",
@@ -2416,10 +3155,14 @@
             "Thu Jul 02 2020"
         ],
         "metaScore": "62",
-        "userScore": "4.9"
+        "userScore": "4.9",
+        "steam": {
+            "appid": 1097800,
+            "name": "Stranger Things 3: The Game"
+        }
     },
     "aer-memories-of-old": {
-        "name": "AER: Memories of Old",
+        "name": "AER Memories of Old",
         "cleanName": "aer-memories-of-old",
         "startDates": [
             "Thu Jun 25 2020"
@@ -2428,7 +3171,11 @@
             "Thu Jul 02 2020"
         ],
         "metaScore": "69",
-        "userScore": "6.5"
+        "userScore": "6.5",
+        "steam": {
+            "appid": 331870,
+            "name": "AER Memories of Old"
+        }
     },
     "pathway": {
         "name": "Pathway",
@@ -2440,10 +3187,14 @@
             "Thu Jun 25 2020"
         ],
         "metaScore": "68",
-        "userScore": "6.7"
+        "userScore": "6.7",
+        "steam": {
+            "appid": 546430,
+            "name": "Pathway"
+        }
     },
     "samurai-shodown": {
-        "name": "Samurai Shodown",
+        "name": "SAMURAI SHODOWN",
         "cleanName": "samurai-shodown",
         "startDates": [
             "Thu Jun 11 2020"
@@ -2452,7 +3203,11 @@
             "Thu Jun 18 2020"
         ],
         "metaScore": "76",
-        "userScore": "5.6"
+        "userScore": "5.6",
+        "steam": {
+            "appid": 1342260,
+            "name": "SAMURAI SHODOWN"
+        }
     },
     "overcooked!-2": {
         "name": "Overcooked! 2",
@@ -2464,7 +3219,11 @@
             "Thu Jun 11 2020"
         ],
         "metaScore": "81",
-        "userScore": "7.7"
+        "userScore": "7.7",
+        "steam": {
+            "appid": 728880,
+            "name": "Overcooked! 2"
+        }
     },
     "borderlands-the-handsome-collection": {
         "name": "Borderlands: The Handsome Collection",
@@ -2476,7 +3235,8 @@
             "Thu Jun 04 2020"
         ],
         "metaScore": "82",
-        "userScore": "8.2"
+        "userScore": "8.2",
+        "steam": {}
     },
     "sid-meiers-civilization-vi": {
         "name": "Sid Meier's Civilization VI",
@@ -2488,7 +3248,11 @@
             "Thu May 28 2020"
         ],
         "metaScore": "88",
-        "userScore": "7.0"
+        "userScore": "7.0",
+        "steam": {
+            "appid": 289070,
+            "name": "Sid Meier's Civilization VI"
+        }
     },
     "grand-theft-auto-v": {
         "name": "Grand Theft Auto V",
@@ -2500,10 +3264,14 @@
             "Thu May 21 2020"
         ],
         "metaScore": "96",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 271590,
+            "name": "Grand Theft Auto V"
+        }
     },
     "death-coming": {
-        "name": "Death Coming",
+        "name": "DeathComing",
         "cleanName": "death-coming",
         "startDates": [
             "Thu May 07 2020"
@@ -2512,7 +3280,11 @@
             "Thu May 14 2020"
         ],
         "metaScore": "70",
-        "userScore": "5.0"
+        "userScore": "5.0",
+        "steam": {
+            "appid": 705120,
+            "name": "DeathComing"
+        }
     },
     "amnesia-the-dark-descent": {
         "name": "Amnesia: The Dark Descent",
@@ -2524,7 +3296,11 @@
             "Thu May 07 2020"
         ],
         "metaScore": "85",
-        "userScore": "8.6"
+        "userScore": "8.6",
+        "steam": {
+            "appid": 57300,
+            "name": "Amnesia: The Dark Descent"
+        }
     },
     "crashlands": {
         "name": "Crashlands",
@@ -2536,7 +3312,11 @@
             "Thu May 07 2020"
         ],
         "metaScore": "78",
-        "userScore": "7.5"
+        "userScore": "7.5",
+        "steam": {
+            "appid": 391730,
+            "name": "Crashlands"
+        }
     },
     "just-cause-4": {
         "name": "Just Cause 4",
@@ -2548,7 +3328,11 @@
             "Thu Apr 23 2020"
         ],
         "metaScore": "68",
-        "userScore": "4.7"
+        "userScore": "4.7",
+        "steam": {
+            "appid": 517630,
+            "name": "Just Cause 4"
+        }
     },
     "wheels-of-aurelia": {
         "name": "Wheels of Aurelia",
@@ -2560,10 +3344,14 @@
             "Thu Apr 23 2020"
         ],
         "metaScore": "63",
-        "userScore": "4.5"
+        "userScore": "4.5",
+        "steam": {
+            "appid": 508740,
+            "name": "Wheels of Aurelia"
+        }
     },
     "sherlock-holmes-crimes-punishments": {
-        "name": "Sherlock Holmes: Crimes & Punishments",
+        "name": "Sherlock Holmes: Crimes and Punishments",
         "cleanName": "sherlock-holmes-crimes-punishments",
         "startDates": [
             "Thu Apr 09 2020"
@@ -2572,7 +3360,11 @@
             "Thu Apr 16 2020"
         ],
         "metaScore": "77",
-        "userScore": "7.7"
+        "userScore": "7.7",
+        "steam": {
+            "appid": 241260,
+            "name": "Sherlock Holmes: Crimes and Punishments"
+        }
     },
     "close-to-the-sun": {
         "name": "Close to the Sun",
@@ -2584,7 +3376,11 @@
             "Thu Apr 16 2020"
         ],
         "metaScore": "66",
-        "userScore": "5.1"
+        "userScore": "5.1",
+        "steam": {
+            "appid": 968870,
+            "name": "Close to the Sun"
+        }
     },
     "gone-home": {
         "name": "Gone Home",
@@ -2596,7 +3392,11 @@
             "Thu Apr 09 2020"
         ],
         "metaScore": "86",
-        "userScore": "5.5"
+        "userScore": "5.5",
+        "steam": {
+            "appid": 232430,
+            "name": "Gone Home"
+        }
     },
     "hob": {
         "name": "Hob",
@@ -2608,7 +3408,11 @@
             "Thu Apr 09 2020"
         ],
         "metaScore": "76",
-        "userScore": "7.5"
+        "userScore": "7.5",
+        "steam": {
+            "appid": 404680,
+            "name": "Hob"
+        }
     },
     "figment": {
         "name": "Figment",
@@ -2620,10 +3424,14 @@
             "Thu Apr 02 2020"
         ],
         "metaScore": "77",
-        "userScore": "7.1"
+        "userScore": "7.1",
+        "steam": {
+            "appid": 493540,
+            "name": "Figment"
+        }
     },
     "tormentor-x-punisher": {
-        "name": "Tormentor x Punisher",
+        "name": "Tormentor❌Punisher",
         "cleanName": "tormentor-x-punisher",
         "startDates": [
             "Thu Mar 26 2020"
@@ -2632,7 +3440,11 @@
             "Thu Apr 02 2020"
         ],
         "metaScore": "N/A",
-        "userScore": "6.3"
+        "userScore": "6.3",
+        "steam": {
+            "appid": 500670,
+            "name": "Tormentor❌Punisher"
+        }
     },
     "drawful-2": {
         "name": "Drawful 2",
@@ -2644,7 +3456,11 @@
             "Thu Apr 02 2020"
         ],
         "metaScore": "72",
-        "userScore": "5.6"
+        "userScore": "5.6",
+        "steam": {
+            "appid": 442070,
+            "name": "Drawful 2"
+        }
     },
     "world-war-z": {
         "name": "World War Z",
@@ -2656,7 +3472,8 @@
             "Thu Apr 02 2020"
         ],
         "metaScore": "70",
-        "userScore": "5.9"
+        "userScore": "5.9",
+        "steam": {}
     },
     "the-stanley-parable": {
         "name": "The Stanley Parable",
@@ -2668,10 +3485,14 @@
             "Thu Mar 26 2020"
         ],
         "metaScore": "88",
-        "userScore": "8.1"
+        "userScore": "8.1",
+        "steam": {
+            "appid": 221910,
+            "name": "The Stanley Parable"
+        }
     },
     "watch-dogs": {
-        "name": "Watch Dogs",
+        "name": "Watch_Dogs",
         "cleanName": "watch-dogs",
         "startDates": [
             "Thu Mar 19 2020"
@@ -2680,7 +3501,11 @@
             "Thu Mar 26 2020"
         ],
         "metaScore": "77",
-        "userScore": "6.1"
+        "userScore": "6.1",
+        "steam": {
+            "appid": 243470,
+            "name": "Watch_Dogs"
+        }
     },
     "anodyne-2-return-to-dust": {
         "name": "Anodyne 2: Return to Dust",
@@ -2692,7 +3517,11 @@
             "Thu Mar 19 2020"
         ],
         "metaScore": "75",
-        "userScore": "8.0"
+        "userScore": "8.0",
+        "steam": {
+            "appid": 877810,
+            "name": "Anodyne 2: Return to Dust"
+        }
     },
     "a-short-hike": {
         "name": "A Short Hike",
@@ -2704,7 +3533,11 @@
             "Thu Mar 19 2020"
         ],
         "metaScore": "82",
-        "userScore": "8.5"
+        "userScore": "8.5",
+        "steam": {
+            "appid": 1055540,
+            "name": "A Short Hike"
+        }
     },
     "mutazione": {
         "name": "Mutazione",
@@ -2716,7 +3549,11 @@
             "Thu Mar 19 2020"
         ],
         "metaScore": "80",
-        "userScore": "7.5"
+        "userScore": "7.5",
+        "steam": {
+            "appid": 1080750,
+            "name": "Mutazione"
+        }
     },
     "gonner": {
         "name": "GoNNER",
@@ -2728,7 +3565,11 @@
             "Thu Mar 12 2020"
         ],
         "metaScore": "81",
-        "userScore": "6.6"
+        "userScore": "6.6",
+        "steam": {
+            "appid": 437570,
+            "name": "GoNNER"
+        }
     },
     "innerspace": {
         "name": "InnerSpace",
@@ -2740,7 +3581,11 @@
             "Thu Mar 05 2020"
         ],
         "metaScore": "65",
-        "userScore": "5.6"
+        "userScore": "5.6",
+        "steam": {
+            "appid": 347000,
+            "name": "InnerSpace"
+        }
     },
     "faeria": {
         "name": "Faeria",
@@ -2752,7 +3597,11 @@
             "Thu Feb 27 2020"
         ],
         "metaScore": "81",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 397060,
+            "name": "Faeria"
+        }
     },
     "aztez": {
         "name": "Aztez",
@@ -2764,10 +3613,14 @@
             "Thu Feb 20 2020"
         ],
         "metaScore": "81",
-        "userScore": "5.4"
+        "userScore": "5.4",
+        "steam": {
+            "appid": 244750,
+            "name": "Aztez"
+        }
     },
     "kingdom-come-deliverance": {
-        "name": "Kingdom Come:   Deliverance",
+        "name": "Kingdom Come: Deliverance",
         "cleanName": "kingdom-come-deliverance",
         "startDates": [
             "Thu Feb 13 2020"
@@ -2776,10 +3629,14 @@
             "Thu Feb 20 2020"
         ],
         "metaScore": "76",
-        "userScore": "8.0"
+        "userScore": "8.0",
+        "steam": {
+            "appid": 379430,
+            "name": "Kingdom Come: Deliverance"
+        }
     },
     "carcassonne": {
-        "name": "Carcassonne",
+        "name": "Carcassonne: The Official Board Game",
         "cleanName": "carcassonne",
         "startDates": [
             "Thu Feb 06 2020"
@@ -2788,7 +3645,11 @@
             "Thu Feb 13 2020"
         ],
         "metaScore": "69",
-        "userScore": "6.0"
+        "userScore": "6.0",
+        "steam": {
+            "appid": 598810,
+            "name": "Carcassonne: The Official Board Game"
+        }
     },
     "ticket-to-ride": {
         "name": "Ticket to Ride",
@@ -2800,7 +3661,11 @@
             "Thu Feb 13 2020"
         ],
         "metaScore": "70",
-        "userScore": "7.2"
+        "userScore": "7.2",
+        "steam": {
+            "appid": 108200,
+            "name": "Ticket to Ride"
+        }
     },
     "farming-simulator-19": {
         "name": "Farming Simulator 19",
@@ -2812,10 +3677,14 @@
             "Thu Feb 06 2020"
         ],
         "metaScore": "73",
-        "userScore": "6.5"
+        "userScore": "6.5",
+        "steam": {
+            "appid": 787860,
+            "name": "Farming Simulator 19"
+        }
     },
     "the-bridge-2013": {
-        "name": "The Bridge 2013",
+        "name": "The Bridge",
         "cleanName": "the-bridge-2013",
         "startDates": [
             "Thu Jan 23 2020"
@@ -2824,7 +3693,11 @@
             "Thu Jan 30 2020"
         ],
         "metaScore": "74",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {
+            "appid": 204240,
+            "name": "The Bridge"
+        }
     },
     "horace": {
         "name": "Horace",
@@ -2836,10 +3709,14 @@
             "Thu Jan 23 2020"
         ],
         "metaScore": "81",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 629090,
+            "name": "Horace"
+        }
     },
     "sundered": {
-        "name": "Sundered",
+        "name": "Sundered: Eldritch Edition",
         "cleanName": "sundered",
         "startDates": [
             "Thu Jan 09 2020"
@@ -2848,7 +3725,11 @@
             "Thu Jan 16 2020"
         ],
         "metaScore": "74",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {
+            "appid": 535480,
+            "name": "Sundered: Eldritch Edition"
+        }
     },
     "steep": {
         "name": "Steep",
@@ -2860,7 +3741,11 @@
             "Thu Jan 09 2020"
         ],
         "metaScore": "72",
-        "userScore": "6.8"
+        "userScore": "6.8",
+        "steam": {
+            "appid": 460920,
+            "name": "Steep"
+        }
     },
     "darksiders": {
         "name": "Darksiders",
@@ -2872,7 +3757,11 @@
             "Thu Jan 09 2020"
         ],
         "metaScore": "83",
-        "userScore": "7.7"
+        "userScore": "7.7",
+        "steam": {
+            "appid": 50640,
+            "name": "Darksiders"
+        }
     },
     "darksiders-ii": {
         "name": "Darksiders II",
@@ -2884,7 +3773,11 @@
             "Thu Jan 09 2020"
         ],
         "metaScore": "81",
-        "userScore": "8.0"
+        "userScore": "8.0",
+        "steam": {
+            "appid": 50650,
+            "name": "Darksiders II"
+        }
     },
     "hello-neighbor": {
         "name": "Hello Neighbor",
@@ -2896,7 +3789,11 @@
             "Tue Dec 31 2019"
         ],
         "metaScore": "38",
-        "userScore": "4.9"
+        "userScore": "4.9",
+        "steam": {
+            "appid": 521890,
+            "name": "Hello Neighbor"
+        }
     },
     "the-talos-principle": {
         "name": "The Talos Principle",
@@ -2908,7 +3805,11 @@
             "Mon Dec 30 2019"
         ],
         "metaScore": "85",
-        "userScore": "8.6"
+        "userScore": "8.6",
+        "steam": {
+            "appid": 257510,
+            "name": "The Talos Principle"
+        }
     },
     "shadow-tactics-blades-of-the-shogun": {
         "name": "Shadow Tactics: Blades of the Shogun",
@@ -2922,7 +3823,11 @@
             "Thu Nov 17 2022"
         ],
         "metaScore": "85",
-        "userScore": "8.5"
+        "userScore": "8.5",
+        "steam": {
+            "appid": 418240,
+            "name": "Shadow Tactics: Blades of the Shogun"
+        }
     },
     "hyper-light-drifter": {
         "name": "Hyper Light Drifter",
@@ -2936,7 +3841,11 @@
             "Thu Aug 22 2019"
         ],
         "metaScore": "84",
-        "userScore": "8.2"
+        "userScore": "8.2",
+        "steam": {
+            "appid": 257850,
+            "name": "Hyper Light Drifter"
+        }
     },
     "ftl-faster-than-light": {
         "name": "FTL: Faster Than Light",
@@ -2948,7 +3857,11 @@
             "Fri Dec 27 2019"
         ],
         "metaScore": "84",
-        "userScore": "8.3"
+        "userScore": "8.3",
+        "steam": {
+            "appid": 212680,
+            "name": "FTL: Faster Than Light"
+        }
     },
     "totally-accurate-battle-simulator": {
         "name": "Totally Accurate Battle Simulator",
@@ -2960,7 +3873,11 @@
             "Thu Dec 26 2019"
         ],
         "metaScore": "N/A",
-        "userScore": "7.7"
+        "userScore": "7.7",
+        "steam": {
+            "appid": 508440,
+            "name": "Totally Accurate Battle Simulator"
+        }
     },
     "celeste": {
         "name": "Celeste",
@@ -2974,10 +3891,14 @@
             "Thu Sep 05 2019"
         ],
         "metaScore": "88",
-        "userScore": "8.4"
+        "userScore": "8.4",
+        "steam": {
+            "appid": 504230,
+            "name": "Celeste"
+        }
     },
     "ape-out": {
-        "name": "Ape Out",
+        "name": "APE OUT",
         "cleanName": "ape-out",
         "startDates": [
             "Mon Dec 23 2019"
@@ -2986,7 +3907,11 @@
             "Tue Dec 24 2019"
         ],
         "metaScore": "83",
-        "userScore": "6.8"
+        "userScore": "6.8",
+        "steam": {
+            "appid": 447150,
+            "name": "APE OUT"
+        }
     },
     "little-inferno": {
         "name": "Little Inferno",
@@ -2998,10 +3923,14 @@
             "Mon Dec 23 2019"
         ],
         "metaScore": "68",
-        "userScore": "7.5"
+        "userScore": "7.5",
+        "steam": {
+            "appid": 221260,
+            "name": "Little Inferno"
+        }
     },
     "superhot": {
-        "name": "Superhot",
+        "name": "SUPERHOT",
         "cleanName": "superhot",
         "startDates": [
             "Sat Dec 21 2019"
@@ -3010,7 +3939,11 @@
             "Sun Dec 22 2019"
         ],
         "metaScore": "82",
-        "userScore": "7.6"
+        "userScore": "7.6",
+        "steam": {
+            "appid": 322500,
+            "name": "SUPERHOT"
+        }
     },
     "towerfall-ascension": {
         "name": "TowerFall Ascension",
@@ -3022,7 +3955,11 @@
             "Sat Dec 21 2019"
         ],
         "metaScore": "87",
-        "userScore": "6.9"
+        "userScore": "6.9",
+        "steam": {
+            "appid": 251470,
+            "name": "TowerFall Ascension"
+        }
     },
     "the-wolf-among-us": {
         "name": "The Wolf Among Us",
@@ -3034,19 +3971,29 @@
             "Thu Dec 19 2019"
         ],
         "metaScore": "80",
-        "userScore": "8.8"
+        "userScore": "8.8",
+        "steam": {
+            "appid": 250320,
+            "name": "The Wolf Among Us"
+        }
     },
     "jotun-valhalla-edition": {
         "name": "Jotun: Valhalla Edition",
         "cleanName": "jotun-valhalla-edition",
         "startDates": [
+            "Thu May 12 2022",
             "Fri Dec 06 2019"
         ],
         "endDates": [
+            "Thu May 19 2022",
             "Thu Dec 12 2019"
         ],
         "metaScore": "79",
-        "userScore": "6.9"
+        "userScore": "6.9",
+        "steam": {
+            "appid": 323580,
+            "name": "Jotun: Valhalla Edition"
+        }
     },
     "rayman-legends": {
         "name": "Rayman Legends",
@@ -3058,7 +4005,11 @@
             "Fri Dec 06 2019"
         ],
         "metaScore": "89",
-        "userScore": "8.5"
+        "userScore": "8.5",
+        "steam": {
+            "appid": 242550,
+            "name": "Rayman Legends"
+        }
     },
     "bad-north": {
         "name": "Bad North",
@@ -3070,7 +4021,11 @@
             "Fri Nov 29 2019"
         ],
         "metaScore": "74",
-        "userScore": "7.0"
+        "userScore": "7.0",
+        "steam": {
+            "appid": 688420,
+            "name": "Bad North"
+        }
     },
     "the-messenger": {
         "name": "The Messenger",
@@ -3082,7 +4037,11 @@
             "Thu Nov 21 2019"
         ],
         "metaScore": "83",
-        "userScore": "7.9"
+        "userScore": "7.9",
+        "steam": {
+            "appid": 764790,
+            "name": "The Messenger"
+        }
     },
     "nuclear-throne": {
         "name": "Nuclear Throne",
@@ -3094,10 +4053,14 @@
             "Thu Nov 14 2019"
         ],
         "metaScore": "89",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 242680,
+            "name": "Nuclear Throne"
+        }
     },
     "ruiner": {
-        "name": "Ruiner",
+        "name": "RUINER",
         "cleanName": "ruiner",
         "startDates": [
             "Thu Nov 07 2019"
@@ -3106,7 +4069,11 @@
             "Thu Nov 14 2019"
         ],
         "metaScore": "75",
-        "userScore": "7.6"
+        "userScore": "7.6",
+        "steam": {
+            "appid": 464060,
+            "name": "RUINER"
+        }
     },
     "soma": {
         "name": "SOMA",
@@ -3118,7 +4085,11 @@
             "Thu Nov 07 2019"
         ],
         "metaScore": "84",
-        "userScore": "8.5"
+        "userScore": "8.5",
+        "steam": {
+            "appid": 282140,
+            "name": "SOMA"
+        }
     },
     "costume-quest": {
         "name": "Costume Quest",
@@ -3130,7 +4101,11 @@
             "Thu Nov 07 2019"
         ],
         "metaScore": "69",
-        "userScore": "7.6"
+        "userScore": "7.6",
+        "steam": {
+            "appid": 115100,
+            "name": "Costume Quest"
+        }
     },
     "layers-of-fear": {
         "name": "Layers of Fear",
@@ -3142,10 +4117,14 @@
             "Thu Oct 31 2019"
         ],
         "metaScore": "72",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 391720,
+            "name": "Layers of Fear"
+        }
     },
     "qube-2": {
-        "name": "QUBE 2",
+        "name": "Q.U.B.E. 2",
         "cleanName": "qube-2",
         "startDates": [
             "Thu Oct 24 2019"
@@ -3154,7 +4133,11 @@
             "Thu Oct 31 2019"
         ],
         "metaScore": "76",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 359100,
+            "name": "Q.U.B.E. 2"
+        }
     },
     "alan-wakes-american-nightmare": {
         "name": "Alan Wake's American Nightmare",
@@ -3166,7 +4149,11 @@
             "Thu Oct 24 2019"
         ],
         "metaScore": "73",
-        "userScore": "6.6"
+        "userScore": "6.6",
+        "steam": {
+            "appid": 202750,
+            "name": "Alan Wake's American Nightmare"
+        }
     },
     "observer": {
         "name": "Observer",
@@ -3178,7 +4165,11 @@
             "Thu Oct 24 2019"
         ],
         "metaScore": "78",
-        "userScore": "7.6"
+        "userScore": "7.6",
+        "steam": {
+            "appid": 514900,
+            "name": "Observer"
+        }
     },
     "everything": {
         "name": "Everything",
@@ -3190,10 +4181,14 @@
             "Thu Oct 03 2019"
         ],
         "metaScore": "78",
-        "userScore": "5.6"
+        "userScore": "5.6",
+        "steam": {
+            "appid": 582270,
+            "name": "Everything"
+        }
     },
     "metro-2033-redux": {
-        "name": "Metro 2033: Redux",
+        "name": "Metro 2033 Redux",
         "cleanName": "metro-2033-redux",
         "startDates": [
             "Thu Sep 26 2019"
@@ -3202,10 +4197,14 @@
             "Thu Oct 03 2019"
         ],
         "metaScore": "90",
-        "userScore": "8.1"
+        "userScore": "8.1",
+        "steam": {
+            "appid": 286690,
+            "name": "Metro 2033 Redux"
+        }
     },
     "lego-batman-2-dc-super-heroes": {
-        "name": "Lego Batman 2: DC Super Heroes",
+        "name": "LEGO® Batman™ 2: DC Super Heroes",
         "cleanName": "lego-batman-2-dc-super-heroes",
         "startDates": [
             "Thu Sep 19 2019"
@@ -3214,10 +4213,14 @@
             "Thu Sep 26 2019"
         ],
         "metaScore": "81",
-        "userScore": "7.2"
+        "userScore": "7.2",
+        "steam": {
+            "appid": 213330,
+            "name": "LEGO® Batman™ 2: DC Super Heroes"
+        }
     },
     "lego-batman-the-videogame": {
-        "name": "Lego Batman: The Videogame",
+        "name": "LEGO® Batman™: The Videogame",
         "cleanName": "lego-batman-the-videogame",
         "startDates": [
             "Thu Sep 19 2019"
@@ -3226,10 +4229,14 @@
             "Thu Sep 26 2019"
         ],
         "metaScore": "80",
-        "userScore": "7.0"
+        "userScore": "7.0",
+        "steam": {
+            "appid": 21000,
+            "name": "LEGO® Batman™: The Videogame"
+        }
     },
     "lego-batman-3-beyond-gotham": {
-        "name": "Lego Batman 3: Beyond Gotham",
+        "name": "LEGO® Batman™ 3: Beyond Gotham",
         "cleanName": "lego-batman-3-beyond-gotham",
         "startDates": [
             "Thu Sep 19 2019"
@@ -3238,7 +4245,11 @@
             "Thu Sep 26 2019"
         ],
         "metaScore": "73",
-        "userScore": "6.7"
+        "userScore": "6.7",
+        "steam": {
+            "appid": 313690,
+            "name": "LEGO® Batman™ 3: Beyond Gotham"
+        }
     },
     "batman-arkham-asylum": {
         "name": "Batman: Arkham Asylum",
@@ -3250,10 +4261,14 @@
             "Thu Sep 26 2019"
         ],
         "metaScore": "91",
-        "userScore": "8.6"
+        "userScore": "8.6",
+        "steam": {
+            "appid": 35019,
+            "name": "Batman: Arkham Asylum"
+        }
     },
     "batman-arkham-city": {
-        "name": "Batman: Arkham City",
+        "name": "Batman: Arkham City™",
         "cleanName": "batman-arkham-city",
         "startDates": [
             "Thu Sep 19 2019"
@@ -3262,10 +4277,14 @@
             "Thu Sep 26 2019"
         ],
         "metaScore": "91",
-        "userScore": "8.7"
+        "userScore": "8.7",
+        "steam": {
+            "appid": 57419,
+            "name": "Batman: Arkham City™"
+        }
     },
     "batman-arkham-knight": {
-        "name": "Batman: Arkham Knight",
+        "name": "Batman™: Arkham Knight",
         "cleanName": "batman-arkham-knight",
         "startDates": [
             "Thu Sep 19 2019"
@@ -3274,7 +4293,11 @@
             "Thu Sep 26 2019"
         ],
         "metaScore": "70",
-        "userScore": "4.0"
+        "userScore": "4.0",
+        "steam": {
+            "appid": 208650,
+            "name": "Batman™: Arkham Knight"
+        }
     },
     "conarium": {
         "name": "Conarium",
@@ -3286,10 +4309,14 @@
             "Thu Sep 19 2019"
         ],
         "metaScore": "71",
-        "userScore": "6.3"
+        "userScore": "6.3",
+        "steam": {
+            "appid": 313780,
+            "name": "Conarium"
+        }
     },
     "the-end-is-nigh": {
-        "name": "The End is Nigh",
+        "name": "The End Is Nigh",
         "cleanName": "the-end-is-nigh",
         "startDates": [
             "Thu Sep 05 2019"
@@ -3298,10 +4325,14 @@
             "Thu Sep 12 2019"
         ],
         "metaScore": "84",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {
+            "appid": 583470,
+            "name": "The End Is Nigh"
+        }
     },
     "fez": {
-        "name": "Fez",
+        "name": "FEZ",
         "cleanName": "fez",
         "startDates": [
             "Thu Aug 22 2019"
@@ -3310,7 +4341,11 @@
             "Thu Aug 29 2019"
         ],
         "metaScore": "91",
-        "userScore": "6.7"
+        "userScore": "6.7",
+        "steam": {
+            "appid": 224760,
+            "name": "FEZ"
+        }
     },
     "gnog": {
         "name": "GNOG",
@@ -3322,7 +4357,11 @@
             "Thu Aug 15 2019"
         ],
         "metaScore": "77",
-        "userScore": "6.4"
+        "userScore": "6.4",
+        "steam": {
+            "appid": 290510,
+            "name": "GNOG"
+        }
     },
     "for-honor": {
         "name": "For Honor",
@@ -3334,7 +4373,11 @@
             "Fri Aug 09 2019"
         ],
         "metaScore": "76",
-        "userScore": "5.2"
+        "userScore": "5.2",
+        "steam": {
+            "appid": 304390,
+            "name": "For Honor"
+        }
     },
     "alan-wake": {
         "name": "Alan Wake",
@@ -3346,7 +4389,11 @@
             "Fri Aug 09 2019"
         ],
         "metaScore": "83",
-        "userScore": "8.0"
+        "userScore": "8.0",
+        "steam": {
+            "appid": 108710,
+            "name": "Alan Wake"
+        }
     },
     "moonlighter": {
         "name": "Moonlighter",
@@ -3358,7 +4405,11 @@
             "Fri Aug 02 2019"
         ],
         "metaScore": "74",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 606150,
+            "name": "Moonlighter"
+        }
     },
     "this-war-of-mine": {
         "name": "This War of Mine",
@@ -3370,7 +4421,11 @@
             "Fri Aug 02 2019"
         ],
         "metaScore": "83",
-        "userScore": "8.3"
+        "userScore": "8.3",
+        "steam": {
+            "appid": 282070,
+            "name": "This War of Mine"
+        }
     },
     "limbo": {
         "name": "LIMBO",
@@ -3382,7 +4437,11 @@
             "Thu Jul 25 2019"
         ],
         "metaScore": "88",
-        "userScore": "8.1"
+        "userScore": "8.1",
+        "steam": {
+            "appid": 48000,
+            "name": "LIMBO"
+        }
     },
     "torchlight": {
         "name": "Torchlight",
@@ -3394,7 +4453,11 @@
             "Thu Jul 18 2019"
         ],
         "metaScore": "83",
-        "userScore": "7.9"
+        "userScore": "7.9",
+        "steam": {
+            "appid": 41509,
+            "name": "Torchlight"
+        }
     },
     "overcooked": {
         "name": "Overcooked",
@@ -3406,7 +4469,11 @@
             "Thu Jul 11 2019"
         ],
         "metaScore": "81",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 448510,
+            "name": "Overcooked"
+        }
     },
     "last-day-of-june": {
         "name": "Last Day of June",
@@ -3418,7 +4485,11 @@
             "Thu Jul 04 2019"
         ],
         "metaScore": "75",
-        "userScore": "7.2"
+        "userScore": "7.2",
+        "steam": {
+            "appid": 635320,
+            "name": "Last Day of June"
+        }
     },
     "rime": {
         "name": "RiME",
@@ -3430,7 +4501,11 @@
             "Thu May 30 2019"
         ],
         "metaScore": "78",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 493200,
+            "name": "RiME"
+        }
     },
     "stories-untold": {
         "name": "Stories Untold",
@@ -3442,7 +4517,11 @@
             "Thu May 30 2019"
         ],
         "metaScore": "81",
-        "userScore": "7.0"
+        "userScore": "7.0",
+        "steam": {
+            "appid": 558420,
+            "name": "Stories Untold"
+        }
     },
     "world-of-goo": {
         "name": "World of Goo",
@@ -3454,7 +4533,11 @@
             "Thu May 16 2019"
         ],
         "metaScore": "90",
-        "userScore": "8.4"
+        "userScore": "8.4",
+        "steam": {
+            "appid": 22000,
+            "name": "World of Goo"
+        }
     },
     "transistor": {
         "name": "Transistor",
@@ -3466,7 +4549,11 @@
             "Thu May 02 2019"
         ],
         "metaScore": "83",
-        "userScore": "8.4"
+        "userScore": "8.4",
+        "steam": {
+            "appid": 237930,
+            "name": "Transistor"
+        }
     },
     "the-witness": {
         "name": "The Witness",
@@ -3478,7 +4565,11 @@
             "Thu Apr 18 2019"
         ],
         "metaScore": "87",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 210970,
+            "name": "The Witness"
+        }
     },
     "oxenfree": {
         "name": "Oxenfree",
@@ -3490,7 +4581,11 @@
             "Thu Apr 04 2019"
         ],
         "metaScore": "80",
-        "userScore": "7.7"
+        "userScore": "7.7",
+        "steam": {
+            "appid": 388880,
+            "name": "Oxenfree"
+        }
     },
     "slime-rancher": {
         "name": "Slime Rancher",
@@ -3502,7 +4597,11 @@
             "Thu Mar 21 2019"
         ],
         "metaScore": "81",
-        "userScore": "8.1"
+        "userScore": "8.1",
+        "steam": {
+            "appid": 433340,
+            "name": "Slime Rancher"
+        }
     },
     "thimbleweed-park": {
         "name": "Thimbleweed Park",
@@ -3514,7 +4613,11 @@
             "Thu Mar 07 2019"
         ],
         "metaScore": "84",
-        "userScore": "8.1"
+        "userScore": "8.1",
+        "steam": {
+            "appid": 569860,
+            "name": "Thimbleweed Park"
+        }
     },
     "axiom-verge": {
         "name": "Axiom Verge",
@@ -3526,7 +4629,11 @@
             "Fri Feb 22 2019"
         ],
         "metaScore": "80",
-        "userScore": "7.7"
+        "userScore": "7.7",
+        "steam": {
+            "appid": 332200,
+            "name": "Axiom Verge"
+        }
     },
     "the-jackbox-party-pack": {
         "name": "The Jackbox Party Pack",
@@ -3538,7 +4645,11 @@
             "Thu Feb 07 2019"
         ],
         "metaScore": "76",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 331670,
+            "name": "The Jackbox Party Pack"
+        }
     },
     "what-remains-of-edith-finch": {
         "name": "What Remains of Edith Finch",
@@ -3550,7 +4661,11 @@
             "Thu Jan 24 2019"
         ],
         "metaScore": "89",
-        "userScore": "8.4"
+        "userScore": "8.4",
+        "steam": {
+            "appid": 501300,
+            "name": "What Remains of Edith Finch"
+        }
     },
     "super-meat-boy": {
         "name": "Super Meat Boy",
@@ -3562,7 +4677,11 @@
             "Thu Jan 10 2019"
         ],
         "metaScore": "87",
-        "userScore": "8.2"
+        "userScore": "8.2",
+        "steam": {
+            "appid": 40809,
+            "name": "Super Meat Boy"
+        }
     },
     "subnautica": {
         "name": "Subnautica",
@@ -3574,7 +4693,11 @@
             "Thu Dec 27 2018"
         ],
         "metaScore": "87",
-        "userScore": "8.6"
+        "userScore": "8.6",
+        "steam": {
+            "appid": 264710,
+            "name": "Subnautica"
+        }
     },
     "fort-triumph": {
         "name": "Fort Triumph",
@@ -3586,10 +4709,14 @@
             "Thu Dec 08 2022"
         ],
         "metaScore": "74",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 612570,
+            "name": "Fort Triumph"
+        }
     },
     "rpg-in-a-box": {
-        "name": "RPG In A Box",
+        "name": "RPG in a Box",
         "cleanName": "rpg-in-a-box",
         "startDates": [
             "Thu Dec 01 2022"
@@ -3598,7 +4725,11 @@
             "Thu Dec 08 2022"
         ],
         "metaScore": "N/A",
-        "userScore": "N/A"
+        "userScore": "N/A",
+        "steam": {
+            "appid": 498310,
+            "name": "RPG in a Box"
+        }
     },
     "wildcat-gun-machine": {
         "name": "Wildcat Gun Machine",
@@ -3610,7 +4741,11 @@
             "Thu Dec 15 2022"
         ],
         "metaScore": "63",
-        "userScore": "N/A"
+        "userScore": "N/A",
+        "steam": {
+            "appid": 1288610,
+            "name": "Wildcat Gun Machine"
+        }
     },
     "saints-row-iv": {
         "name": "Saints Row IV",
@@ -3622,7 +4757,11 @@
             "Thu Dec 15 2022"
         ],
         "metaScore": "86",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {
+            "appid": 206420,
+            "name": "Saints Row IV"
+        }
     },
     "bloons-td-6": {
         "name": "Bloons TD 6",
