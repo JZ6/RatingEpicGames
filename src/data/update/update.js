@@ -34,9 +34,7 @@ async function getGameReview(gameName) {
   const html = await fetch(url)
     .then((response) => response.text())
     //   .then((x) => console.warn("15", x))
-    .catch((error) => {
-      console.log("request failed", error);
-    });
+    .catch((error) => console.log("request failed", error));
 
   const $ = cheerio.load(html);
 
