@@ -2055,9 +2055,11 @@
         "name": "Costume Quest 2",
         "cleanName": "costume-quest-2",
         "startDates": [
+            "Sat Dec 17 2022",
             "Thu Oct 22 2020"
         ],
         "endDates": [
+            "Sun Dec 18 2022",
             "Thu Oct 29 2020"
         ],
         "metaScore": "68",
