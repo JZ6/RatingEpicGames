@@ -94,6 +94,6 @@ function addGame(name, dateString = new Date(), period = 7) {
 }
 
 // addGame('Saints Row IV', 'Thu Dec 08 2022')
-addGame('Horizon Chase Turbo', new Date(), 1)
+addGame('Costume Quest 2', new Date(), 1)
 // update();
 
