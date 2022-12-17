@@ -34,32 +34,39 @@ function addSteamAppIDs(gameList = importedGamesList) {
 async function getSteamReviews(gameList = importedGamesList) {
 
     const resultList = { ...gameList }
-    for (const gameData of Object.values(resultList).slice(1, 13)) {
+    for (const gameData of Object.values(resultList).slice(1, 4)) {
 
         const { steam } = gameData
-        if (steam && 'appid' in steam && !('steamReviewScore' in steam)) {
+        getSteamReviewScore(steam)
 
-            const gameReviews = await fetch(`https://store.steampowered.com/appreviews/${steam.appid}?json=1&language=all`)
-                .then(response => response.json())
-                .catch(error => console.log("request failed", error))
+        console.warn('42', steam)
 
-            const {
-                num_reviews,
-                review_score,
-                review_score_desc,
-                total_positive,
-                total_negative,
-                total_reviews
-            } = gameReviews.query_summary
-
-            steam.steamReviewScore = total_positive / total_reviews
-            console.log('Added: ', steam)
-        }
 
     }
 
-    writeGameList(resultList)
+    // writeGameList(resultList)
     // https://store.steampowered.com/appreviews/72850?json=1&language=all&purchase_type=all
+}
+
+async function getSteamReviewScore(steam) {
+    if (steam && 'appid' in steam && !('steamReviewScore' in steam)) {
+
+        const gameReviews = await fetch(`https://store.steampowered.com/appreviews/${steam.appid}?json=1&language=all`)
+            .then(response => response.json())
+            .catch(error => console.log("request failed", error))
+
+        const {
+            num_reviews,
+            review_score,
+            review_score_desc,
+            total_positive,
+            total_negative,
+            total_reviews
+        } = gameReviews.query_summary
+
+        steam.steamReviewScore = total_positive / total_reviews * 10;
+        console.log('Added: ', steam)
+    }
 }
 
 
