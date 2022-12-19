@@ -3645,5 +3645,17 @@
         ],
         "metaScore": "76",
         "userScore": "7.2"
+    },
+    "thems-fightin-herds": {
+        "name": "Them's Fightin' Herds",
+        "cleanName": "thems-fightin-herds",
+        "startDates": [
+            "Mon Dec 19 2022"
+        ],
+        "endDates": [
+            "Tue Dec 20 2022"
+        ],
+        "metaScore": "N/A",
+        "userScore": "8.6"
     }
 }
