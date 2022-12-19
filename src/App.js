@@ -42,11 +42,25 @@ function App() {
       flex: 1,
     },
     {
-      field: "multipliedScore",
-      headerName: "Multiplied Score",
+      field: "steamScore",
+      headerName: "Steam Score",
       type: "string",
-      minWidth: 120,
-      flex: 2,
+      minWidth: 100,
+      flex: 1,
+      renderCell: (params) => {
+        // console.warn('25', params)
+        return <a href={params.row.steamScore.href}>{params.row.steamScore.score}</a>
+      },
+
+      valueGetter: (params) => params.row.steamScore.score
+
+    },
+    {
+      field: "averageScore",
+      headerName: "Avg Score",
+      type: "string",
+      minWidth: 90,
+      flex: 1,
     },
     {
       field: "date",
