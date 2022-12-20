@@ -94,6 +94,6 @@ function addGame(name, dateString = new Date(), period = 7) {
 }
 
 // addGame('Saints Row IV', 'Thu Dec 08 2022')
-addGame("Them's Fightin' Herds", new Date(), 1)
+addGame("Wolfenstein: The New Order", new Date(), 1)
 update();
 
