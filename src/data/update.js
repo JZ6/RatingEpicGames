@@ -69,6 +69,16 @@ function addGame(name, dateString = new Date(), period = 7) {
   }
 }
 
+// addGame{
+// create obj
+// get metascore
+// get steam appid
+// get steam reviews
+// Calculate average score
+
+
+// }
+
 // addGame('Saints Row IV', 'Thu Dec 08 2022')
 addGame("Encased", new Date(), 1)
 
