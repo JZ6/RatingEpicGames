@@ -2181,8 +2181,8 @@
         "name": "Into The Breach",
         "cleanName": "into-the-breach",
         "startDates": [
-            "Thu Dec 19 2019",
-            "Thu Sep 03 2020"
+            "Thu Sep 03 2020",
+            "Thu Dec 19 2019"
         ],
         "endDates": [
             "Fri Dec 20 2019"
@@ -3659,5 +3659,17 @@
         ],
         "metaScore": "N/A",
         "userScore": "8.6"
+    },
+    "lego-builders-journey": {
+        "name": "Lego Builder's Journey",
+        "cleanName": "lego-builders-journey",
+        "startDates": [
+            "Wed Dec 21 2022"
+        ],
+        "endDates": [
+            "Thu Dec 22 2022"
+        ],
+        "metaScore": "79",
+        "userScore": "6.9"
     }
 }
