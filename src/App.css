@@ -32,7 +32,42 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.Donation-button {
+  width: 3vw;
+  min-width: 36px;
+  position: fixed;
+  bottom: 6px;
+  left: 6px;
+}
+
+.Donation-coffee-pic {
+  /* width: 3vw;
+  min-width: 36px; */
+  width: 100%;
+  /* position: relative; */
+  /* bottom: 6px;
+  left: 6px; */
+}
+
+.Donation-hover-text {
+  /* background-color: whitesmoke; */
+  background-color: rgba(255, 255, 255, .95);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  font-size: calc(0.9em);
+  border-radius: 12px;
+  /* width: 6em; */
+  /* position: fixed; */
+  /* bottom: 6px;
+  left: calc(36px + 1.5vw); */
 }
