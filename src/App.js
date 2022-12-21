@@ -1,4 +1,5 @@
 import "./App.css";
+import logo from "./coffeeDonation.png";
 
 import freeGames from "./data/freeGamesList.json";
 
@@ -77,6 +78,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">Rating Epic Games</header>{" "}
+
       <div
         style={{
           display: "flex",
@@ -106,6 +108,11 @@ function App() {
             }}
           />
         </div>
+      </div>
+      <div className="Donation-button">
+        <a href="https://www.paypal.com/donate/?business=U976MSQAHRS62&no_recurring=0&item_name=Developing+%22Rating+Epic+Games%22+for+you%21&currency_code=CAD">
+          <img src={logo} className='Donation-coffee-pic' alt="<a href='https://pngtree.com/so/coffee'>coffee png from pngtree.com/</a>"></img>
+        </a>
       </div>
     </div>
   );

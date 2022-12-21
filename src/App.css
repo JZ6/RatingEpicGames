@@ -32,7 +32,24 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.Donation-button {
+  /* width: 3vw;
+  min-width: 36px; */
+  position: fixed;
+  bottom: 6px;
+  left: 6px;
+}
+
+.Donation-coffee-pic {
+  width: 3vw;
+  min-width: 36px;
+  position: fixed;
+  bottom: 6px;
+  left: 6px;
 }
