@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/RatingEpicGames/static/css/main.06f697e9.css",
-    "main.js": "/RatingEpicGames/static/js/main.e1b33cca.js",
+    "main.js": "/RatingEpicGames/static/js/main.2e76f09d.js",
     "static/js/787.a344bca2.chunk.js": "/RatingEpicGames/static/js/787.a344bca2.chunk.js",
     "static/media/coffeeDonation.png": "/RatingEpicGames/static/media/coffeeDonation.93eb9d39fd7551ace073.png",
     "index.html": "/RatingEpicGames/index.html",
     "main.06f697e9.css.map": "/RatingEpicGames/static/css/main.06f697e9.css.map",
-    "main.e1b33cca.js.map": "/RatingEpicGames/static/js/main.e1b33cca.js.map",
+    "main.2e76f09d.js.map": "/RatingEpicGames/static/js/main.2e76f09d.js.map",
     "787.a344bca2.chunk.js.map": "/RatingEpicGames/static/js/787.a344bca2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.06f697e9.css",
-    "static/js/main.e1b33cca.js"
+    "static/js/main.2e76f09d.js"
   ]
 }
