@@ -3671,5 +3671,41 @@
         ],
         "metaScore": "79",
         "userScore": "6.9"
+    },
+    "fallout": {
+        "name": "Fallout",
+        "cleanName": "fallout",
+        "startDates": [
+            "Thu Dec 22 2022"
+        ],
+        "endDates": [
+            "Fri Dec 23 2022"
+        ],
+        "metaScore": "89",
+        "userScore": "8.8"
+    },
+    "fallout-2": {
+        "name": "Fallout 2",
+        "cleanName": "fallout-2",
+        "startDates": [
+            "Thu Dec 22 2022"
+        ],
+        "endDates": [
+            "Fri Dec 23 2022"
+        ],
+        "metaScore": "86",
+        "userScore": "9.1"
+    },
+    "fallout-tactics-brotherhood-of-steel": {
+        "name": "Fallout Tactics: Brotherhood of Steel",
+        "cleanName": "fallout-tactics-brotherhood-of-steel",
+        "startDates": [
+            "Thu Dec 22 2022"
+        ],
+        "endDates": [
+            "Fri Dec 23 2022"
+        ],
+        "metaScore": "82",
+        "userScore": "7.7"
     }
 }
