@@ -43,7 +43,7 @@ function App() {
     },
     {
       field: "steamScore",
-      headerName: "Steam Score",
+      headerName: "Steam Reviews",
       type: "string",
       minWidth: 100,
       flex: 1,

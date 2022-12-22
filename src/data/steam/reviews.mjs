@@ -96,7 +96,7 @@ async function getSteamReviewScore(steam) {
 
         // Object.assign(steam, steamReviewsData);
 
-        console.log('Added: ', steam.name)
+        console.log('Added: ', steam.name, steamReviewScore)
     }
     return steam
 }
@@ -105,5 +105,5 @@ async function getSteamReviewScore(steam) {
 // download(JSON.stringify(gamekey), 'gamekey', 'json')
 
 // console.warn('25', gamekey)
-
+addAllSteamAppIDs()
 getSteamReviews()
