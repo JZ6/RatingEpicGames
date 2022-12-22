@@ -75,7 +75,7 @@ function App() {
 
   // console.warn("17", freeGames);
 
-  const [showDonationHover, setShowDonationHover] = useState(true);
+  const [showDonationHover, setShowDonationHover] = useState(false);
 
   return (
     <div className="App">

@@ -90,10 +90,10 @@ function addGame(name, dateString = new Date(), period = 7) {
 
     writeGameList(gameList);
   }
-
 }
 
 // addGame('Saints Row IV', 'Thu Dec 08 2022')
-addGame("Lego Builder's Journey", new Date(), 1)
-update();
+addGame("Fallout Tactics: Brotherhood of Steel", new Date(), 1)
 
+
+update();
