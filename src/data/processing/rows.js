@@ -16,13 +16,24 @@ export function createRows(freeGames) {
                 new Date(startDate).toISOString().split('T')[0].replaceAll('-', '/')
             ).join(", ")
 
-            const steamScore = {
+            const steamData = {
+                total_positive: '',
+                total_reviews: '',
                 score: '',
                 href: `https://store.steampowered.com/app/${steam.appid}`
             }
 
             if (steam.reviews && steam.reviews.steamReviewScore) {
-                steamScore.score = steam.reviews.steamReviewScore.toFixed(1)
+                const {
+                    total_positive,
+                    total_negative,
+                    total_reviews,
+                    steamReviewScore
+                } = steam.reviews
+
+                steamData.score = steamReviewScore.toFixed(1)
+                steamData.total_positive = total_positive
+                steamData.total_reviews = total_reviews
             }
 
 
@@ -37,8 +48,8 @@ export function createRows(freeGames) {
                     scores.push(parseFloat(userScore))
                     // scores.push(parseFloat(userScore))
 
-                    if (steamScore && steamScore.score !== "") {
-                        scores.push(parseFloat(steamScore.score))
+                    if (steamData && steamData.score !== "") {
+                        scores.push(parseFloat(steamData.score))
                     }
                 }
             }
@@ -61,7 +72,7 @@ export function createRows(freeGames) {
                 averageScore: isNaN(averageScore)
                     ? ""
                     : averageScore.toFixed(1),
-                steamScore,
+                steamData,
                 date,
             };
         }

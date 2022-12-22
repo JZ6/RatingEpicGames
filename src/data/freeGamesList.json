@@ -6607,7 +6607,17 @@
             "Thu Dec 22 2022"
         ],
         "metaScore": "79",
-        "userScore": "6.9"
+        "userScore": "6.9",
+        "steam": {
+            "appid": 1544360,
+            "name": "LEGO® Builder's Journey",
+            "reviews": {
+                "total_positive": 2063,
+                "total_negative": 418,
+                "total_reviews": 2481,
+                "steamReviewScore": 8.315195485691254
+            }
+        }
     },
     "fallout": {
         "name": "Fallout",
@@ -6619,7 +6629,17 @@
             "Fri Dec 23 2022"
         ],
         "metaScore": "89",
-        "userScore": "8.8"
+        "userScore": "8.8",
+        "steam": {
+            "appid": 38400,
+            "name": "Fallout",
+            "reviews": {
+                "total_positive": 9341,
+                "total_negative": 519,
+                "total_reviews": 9860,
+                "steamReviewScore": 9.473630831643002
+            }
+        }
     },
     "fallout-2": {
         "name": "Fallout 2",
@@ -6631,7 +6651,17 @@
             "Fri Dec 23 2022"
         ],
         "metaScore": "86",
-        "userScore": "9.1"
+        "userScore": "9.1",
+        "steam": {
+            "appid": 38410,
+            "name": "Fallout 2",
+            "reviews": {
+                "total_positive": 8560,
+                "total_negative": 522,
+                "total_reviews": 9082,
+                "steamReviewScore": 9.425236731997357
+            }
+        }
     },
     "fallout-tactics-brotherhood-of-steel": {
         "name": "Fallout Tactics: Brotherhood of Steel",
@@ -6643,7 +6673,17 @@
             "Fri Dec 23 2022"
         ],
         "metaScore": "82",
-        "userScore": "7.7"
+        "userScore": "7.7",
+        "steam": {
+            "appid": 38420,
+            "name": "Fallout Tactics: Brotherhood of Steel",
+            "reviews": {
+                "total_positive": 1319,
+                "total_negative": 321,
+                "total_reviews": 1640,
+                "steamReviewScore": 8.042682926829269
+            }
+        }
     },
     "encased-a-sci-fi-post-apocalyptic-rpg": {
         "name": "Encased",

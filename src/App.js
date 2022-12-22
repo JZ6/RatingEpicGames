@@ -9,6 +9,7 @@ import {
 
 import React, { useState, useEffect } from "react";
 import { DataGrid, GridToolbar } from "@mui/x-data-grid";
+import Tooltip from '@mui/material/Tooltip';
 
 function App() {
   const columns = [
@@ -42,17 +43,25 @@ function App() {
       flex: 1,
     },
     {
-      field: "steamScore",
+      field: "steamData",
       headerName: "Steam Reviews",
       type: "string",
-      minWidth: 100,
+      minWidth: 120,
       flex: 1,
       renderCell: (params) => {
         // console.warn('25', params)
-        return <a href={params.row.steamScore.href}>{params.row.steamScore.score}</a>
+        const toolTipText = `${params.row.steamData.total_positive} Positive / ${params.row.steamData.total_reviews} Total`
+
+        return (
+          <Tooltip title={toolTipText}>
+            <a href={params.row.steamData.href}>
+              {params.row.steamData.score}
+            </a>
+          </Tooltip>
+        )
       },
 
-      valueGetter: (params) => params.row.steamScore.score
+      valueGetter: (params) => params.row.steamData.score
 
     },
     {
