@@ -84,7 +84,7 @@ async function getSteamReviewScore(steam) {
             total_negative,
             total_reviews
         } = gameReviews.query_summary
-        // console.log('Added: ', gameReviews)
+        // console.log('Added: ', gameReviews.query_summary)
 
         const steamReviewsData = {
             total_positive,
@@ -96,7 +96,7 @@ async function getSteamReviewScore(steam) {
 
         // Object.assign(steam, steamReviewsData);
 
-        console.log('Added: ', steam.name, steamReviewScore)
+        console.log('Added: ', steam.name, steamReviewsData.steamReviewScore)
     }
     return steam
 }

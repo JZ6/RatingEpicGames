@@ -6695,6 +6695,16 @@
             "Sat Dec 24 2022"
         ],
         "metaScore": "73",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 921800,
+            "name": "Encased",
+            "reviews": {
+                "total_positive": 2531,
+                "total_negative": 656,
+                "total_reviews": 3187,
+                "steamReviewScore": 7.9416379039849385
+            }
+        }
     }
 }
