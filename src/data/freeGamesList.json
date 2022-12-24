@@ -9,7 +9,17 @@
             "Thu Dec 01 2022"
         ],
         "metaScore": "79",
-        "userScore": "5.8"
+        "userScore": "5.8",
+        "steam": {
+            "appid": 1222730,
+            "name": "STAR WARS™: Squadrons",
+            "reviews": {
+                "total_positive": 14635,
+                "total_negative": 5927,
+                "total_reviews": 20562,
+                "steamReviewScore": 7.11749829783095
+            }
+        }
     },
     "evil-dead-the-game": {
         "name": "Evil Dead: The Game",
@@ -21,7 +31,8 @@
             "Thu Nov 24 2022"
         ],
         "metaScore": "76",
-        "userScore": "5.2"
+        "userScore": "5.2",
+        "steam": {}
     },
     "dark-deity": {
         "name": "Dark Deity",
@@ -33,7 +44,17 @@
             "Thu Nov 24 2022"
         ],
         "metaScore": "80",
-        "userScore": "5.5"
+        "userScore": "5.5",
+        "steam": {
+            "appid": 1374840,
+            "name": "Dark Deity",
+            "reviews": {
+                "total_positive": 1319,
+                "total_negative": 465,
+                "total_reviews": 1784,
+                "steamReviewScore": 7.393497757847534
+            }
+        }
     },
     "rumbleverse": {
         "name": "Rumbleverse",
@@ -45,7 +66,8 @@
             "Thu Aug 25 2022"
         ],
         "metaScore": "N/A",
-        "userScore": "4.1"
+        "userScore": "4.1",
+        "steam": {}
     },
     "alba-a-wildlife-adventure": {
         "name": "Alba: A Wildlife Adventure",
@@ -57,7 +79,17 @@
             "Thu Nov 17 2022"
         ],
         "metaScore": "79",
-        "userScore": "8.1"
+        "userScore": "8.1",
+        "steam": {
+            "appid": 1337010,
+            "name": "Alba: A Wildlife Adventure",
+            "reviews": {
+                "total_positive": 3040,
+                "total_negative": 64,
+                "total_reviews": 3104,
+                "steamReviewScore": 9.79381443298969
+            }
+        }
     },
     "rising-storm-2-vietnam": {
         "name": "Rising Storm 2: Vietnam",
@@ -69,7 +101,17 @@
             "Thu Oct 15 2020"
         ],
         "metaScore": "81",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {
+            "appid": 418460,
+            "name": "Rising Storm 2: Vietnam",
+            "reviews": {
+                "total_positive": 31284,
+                "total_negative": 4439,
+                "total_reviews": 35723,
+                "steamReviewScore": 8.757383198499566
+            }
+        }
     },
     "filament": {
         "name": "Filament",
@@ -81,7 +123,17 @@
             "Thu Nov 10 2022"
         ],
         "metaScore": "82",
-        "userScore": "6.1"
+        "userScore": "6.1",
+        "steam": {
+            "appid": 1137350,
+            "name": "Filament",
+            "reviews": {
+                "total_positive": 398,
+                "total_negative": 45,
+                "total_reviews": 443,
+                "steamReviewScore": 8.984198645598195
+            }
+        }
     },
     "slain-back-from-hell": {
         "name": "Slain: Back from Hell",
@@ -93,7 +145,17 @@
             "Thu Oct 13 2022"
         ],
         "metaScore": "74",
-        "userScore": "7.9"
+        "userScore": "7.9",
+        "steam": {
+            "appid": 369070,
+            "name": "Slain: Back from Hell",
+            "reviews": {
+                "total_positive": 1048,
+                "total_negative": 417,
+                "total_reviews": 1465,
+                "steamReviewScore": 7.15358361774744
+            }
+        }
     },
     "rising-hell": {
         "name": "Rising Hell",
@@ -105,7 +167,17 @@
             "Thu Oct 13 2022"
         ],
         "metaScore": "N/A",
-        "userScore": "N/A"
+        "userScore": "N/A",
+        "steam": {
+            "appid": 657000,
+            "name": "Rising Hell",
+            "reviews": {
+                "total_positive": 169,
+                "total_negative": 16,
+                "total_reviews": 185,
+                "steamReviewScore": 9.135135135135135
+            }
+        }
     },
     "the-drone-racing-league-simulator": {
         "name": "The Drone Racing League Simulator",
@@ -117,7 +189,17 @@
             "Thu Oct 06 2022"
         ],
         "metaScore": "N/A",
-        "userScore": "N/A"
+        "userScore": "N/A",
+        "steam": {
+            "appid": 641780,
+            "name": "The Drone Racing League Simulator",
+            "reviews": {
+                "total_positive": 2310,
+                "total_negative": 405,
+                "total_reviews": 2715,
+                "steamReviewScore": 8.50828729281768
+            }
+        }
     },
     "runbow": {
         "name": "Runbow",
@@ -129,7 +211,17 @@
             "Thu Oct 06 2022"
         ],
         "metaScore": "75",
-        "userScore": "7.7"
+        "userScore": "7.7",
+        "steam": {
+            "appid": 464650,
+            "name": "Runbow",
+            "reviews": {
+                "total_positive": 74,
+                "total_negative": 14,
+                "total_reviews": 88,
+                "steamReviewScore": 8.40909090909091
+            }
+        }
     },
     "ark-survival-evolved": {
         "name": "ARK: Survival Evolved",
@@ -142,7 +234,17 @@
             "Thu Sep 29 2022"
         ],
         "metaScore": "70",
-        "userScore": "6.5"
+        "userScore": "6.5",
+        "steam": {
+            "appid": 346110,
+            "name": "ARK: Survival Evolved",
+            "reviews": {
+                "total_positive": 378541,
+                "total_negative": 75729,
+                "total_reviews": 454270,
+                "steamReviewScore": 8.332951768771876
+            }
+        }
     },
     "gloomhaven": {
         "name": "Gloomhaven",
@@ -154,7 +256,17 @@
             "Thu Sep 29 2022"
         ],
         "metaScore": "82",
-        "userScore": "7.0"
+        "userScore": "7.0",
+        "steam": {
+            "appid": 780290,
+            "name": "Gloomhaven",
+            "reviews": {
+                "total_positive": 8714,
+                "total_negative": 1316,
+                "total_reviews": 10030,
+                "steamReviewScore": 8.687936191425722
+            }
+        }
     },
     "ring-of-pain": {
         "name": "Ring of Pain",
@@ -166,10 +278,20 @@
             "Thu Sep 08 2022"
         ],
         "metaScore": "74",
-        "userScore": "7.2"
+        "userScore": "7.2",
+        "steam": {
+            "appid": 998740,
+            "name": "Ring of Pain",
+            "reviews": {
+                "total_positive": 2242,
+                "total_negative": 199,
+                "total_reviews": 2441,
+                "steamReviewScore": 9.184760344121262
+            }
+        }
     },
     "knockout-city": {
-        "name": "Knockout City",
+        "name": "Knockout City™",
         "cleanName": "knockout-city",
         "startDates": [
             "Thu Sep 01 2022"
@@ -178,7 +300,17 @@
             "Thu Sep 08 2022"
         ],
         "metaScore": "80",
-        "userScore": "6.6"
+        "userScore": "6.6",
+        "steam": {
+            "appid": 1301210,
+            "name": "Knockout City™",
+            "reviews": {
+                "total_positive": 4371,
+                "total_negative": 557,
+                "total_reviews": 4928,
+                "steamReviewScore": 8.869724025974026
+            }
+        }
     },
     "submerged-hidden-depths": {
         "name": "Submerged: Hidden Depths",
@@ -190,10 +322,20 @@
             "Thu Sep 08 2022"
         ],
         "metaScore": "66",
-        "userScore": "4.7"
+        "userScore": "4.7",
+        "steam": {
+            "appid": 1614270,
+            "name": "Submerged: Hidden Depths",
+            "reviews": {
+                "total_positive": 136,
+                "total_negative": 9,
+                "total_reviews": 145,
+                "steamReviewScore": 9.379310344827585
+            }
+        }
     },
     "doom-64": {
-        "name": "Doom 64",
+        "name": "DOOM 64",
         "cleanName": "doom-64",
         "startDates": [
             "Thu Aug 18 2022"
@@ -202,7 +344,17 @@
             "Thu Aug 25 2022"
         ],
         "metaScore": "75",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 1148590,
+            "name": "DOOM 64",
+            "reviews": {
+                "total_positive": 4853,
+                "total_negative": 297,
+                "total_reviews": 5150,
+                "steamReviewScore": 9.423300970873786
+            }
+        }
     },
     "cook-serve-delicious!-3!": {
         "name": "Cook, Serve, Delicious! 3?!",
@@ -214,7 +366,17 @@
             "Thu Aug 18 2022"
         ],
         "metaScore": "79",
-        "userScore": "8.6"
+        "userScore": "8.6",
+        "steam": {
+            "appid": 1000030,
+            "name": "Cook, Serve, Delicious! 3?!",
+            "reviews": {
+                "total_positive": 1307,
+                "total_negative": 62,
+                "total_reviews": 1369,
+                "steamReviewScore": 9.547114682249818
+            }
+        }
     },
     "unrailed!": {
         "name": "Unrailed!",
@@ -226,7 +388,17 @@
             "Thu Aug 11 2022"
         ],
         "metaScore": "77",
-        "userScore": "7.9"
+        "userScore": "7.9",
+        "steam": {
+            "appid": 1016920,
+            "name": "Unrailed!",
+            "reviews": {
+                "total_positive": 9429,
+                "total_negative": 601,
+                "total_reviews": 10030,
+                "steamReviewScore": 9.400797607178465
+            }
+        }
     },
     "lawn-mowing-simulator": {
         "name": "Lawn Mowing Simulator",
@@ -238,7 +410,17 @@
             "Thu Aug 04 2022"
         ],
         "metaScore": "69",
-        "userScore": "4.9"
+        "userScore": "4.9",
+        "steam": {
+            "appid": 1480560,
+            "name": "Lawn Mowing Simulator",
+            "reviews": {
+                "total_positive": 1002,
+                "total_negative": 297,
+                "total_reviews": 1299,
+                "steamReviewScore": 7.713625866050808
+            }
+        }
     },
     "shop-titans": {
         "name": "Shop Titans",
@@ -250,7 +432,17 @@
             "Thu Jul 28 2022"
         ],
         "metaScore": "42",
-        "userScore": "3.9"
+        "userScore": "3.9",
+        "steam": {
+            "appid": 1258080,
+            "name": "Shop Titans",
+            "reviews": {
+                "total_positive": 10250,
+                "total_negative": 2832,
+                "total_reviews": 13082,
+                "steamReviewScore": 7.835193395505274
+            }
+        }
     },
     "tannenberg": {
         "name": "Tannenberg",
@@ -262,7 +454,17 @@
             "Thu Jul 28 2022"
         ],
         "metaScore": "69",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 633460,
+            "name": "Tannenberg",
+            "reviews": {
+                "total_positive": 5789,
+                "total_negative": 869,
+                "total_reviews": 6658,
+                "steamReviewScore": 8.694803244217482
+            }
+        }
     },
     "idle-champions-of-the-forgotten-realms": {
         "name": "Idle Champions of the Forgotten Realms",
@@ -274,7 +476,17 @@
             "Thu May 06 2021"
         ],
         "metaScore": "N/A",
-        "userScore": "5.1"
+        "userScore": "5.1",
+        "steam": {
+            "appid": 627690,
+            "name": "Idle Champions of the Forgotten Realms",
+            "reviews": {
+                "total_positive": 24,
+                "total_negative": 4,
+                "total_reviews": 28,
+                "steamReviewScore": 8.571428571428571
+            }
+        }
     },
     "wonder-boy-the-dragons-trap": {
         "name": "Wonder Boy: The Dragon's Trap",
@@ -286,7 +498,17 @@
             "Thu Jul 21 2022"
         ],
         "metaScore": "79",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 543260,
+            "name": "Wonder Boy: The Dragon's Trap",
+            "reviews": {
+                "total_positive": 1408,
+                "total_negative": 189,
+                "total_reviews": 1597,
+                "steamReviewScore": 8.816530995616782
+            }
+        }
     },
     "killing-floor-2": {
         "name": "Killing Floor 2",
@@ -299,7 +521,17 @@
             "Thu Jul 14 2022"
         ],
         "metaScore": "75",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 232090,
+            "name": "Killing Floor 2",
+            "reviews": {
+                "total_positive": 65169,
+                "total_negative": 7985,
+                "total_reviews": 73154,
+                "steamReviewScore": 8.908467069469886
+            }
+        }
     },
     "ancient-enemy": {
         "name": "Ancient Enemy",
@@ -311,7 +543,17 @@
             "Thu Jul 14 2022"
         ],
         "metaScore": "73",
-        "userScore": "N/A"
+        "userScore": "N/A",
+        "steam": {
+            "appid": 993790,
+            "name": "Ancient Enemy",
+            "reviews": {
+                "total_positive": 302,
+                "total_negative": 27,
+                "total_reviews": 329,
+                "steamReviewScore": 9.179331306990882
+            }
+        }
     },
     "iratus-lord-of-the-dead": {
         "name": "Iratus: Lord of the Dead",
@@ -323,7 +565,17 @@
             "Thu Jul 07 2022"
         ],
         "metaScore": "78",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {
+            "appid": 807120,
+            "name": "Iratus: Lord of the Dead",
+            "reviews": {
+                "total_positive": 4775,
+                "total_negative": 804,
+                "total_reviews": 5579,
+                "steamReviewScore": 8.558881519985661
+            }
+        }
     },
     "hood-outlaws-legends": {
         "name": "Hood: Outlaws & Legends",
@@ -335,10 +587,20 @@
             "Thu Jul 07 2022"
         ],
         "metaScore": "62",
-        "userScore": "3.4"
+        "userScore": "3.4",
+        "steam": {
+            "appid": 927350,
+            "name": "Hood: Outlaws & Legends",
+            "reviews": {
+                "total_positive": 2758,
+                "total_negative": 2469,
+                "total_reviews": 5227,
+                "steamReviewScore": 5.276449206045532
+            }
+        }
     },
     "geneforge-1---mutagen": {
-        "name": "Geneforge 1 – Mutagen",
+        "name": "Geneforge 1 - Mutagen",
         "cleanName": "geneforge-1---mutagen",
         "startDates": [
             "Thu Jun 30 2022"
@@ -347,7 +609,17 @@
             "Thu Jul 07 2022"
         ],
         "metaScore": "N/A",
-        "userScore": "N/A"
+        "userScore": "N/A",
+        "steam": {
+            "appid": 1424710,
+            "name": "Geneforge 1 - Mutagen",
+            "reviews": {
+                "total_positive": 224,
+                "total_negative": 15,
+                "total_reviews": 239,
+                "steamReviewScore": 9.372384937238493
+            }
+        }
     },
     "car-mechanic-simulator-2018": {
         "name": "Car Mechanic Simulator 2018",
@@ -359,10 +631,20 @@
             "Thu Jun 30 2022"
         ],
         "metaScore": "N/A",
-        "userScore": "6.5"
+        "userScore": "6.5",
+        "steam": {
+            "appid": 645630,
+            "name": "Car Mechanic Simulator 2018",
+            "reviews": {
+                "total_positive": 36673,
+                "total_negative": 3751,
+                "total_reviews": 40424,
+                "steamReviewScore": 9.072085889570552
+            }
+        }
     },
     "a-game-of-thrones-the-board-game-digital-edition": {
-        "name": "A Game of Thrones: The Board Game Digital Edition",
+        "name": "A Game of Thrones: The Board Game",
         "cleanName": "a-game-of-thrones-the-board-game-digital-edition",
         "startDates": [
             "Thu Jun 23 2022"
@@ -371,7 +653,17 @@
             "Thu Jun 30 2022"
         ],
         "metaScore": "N/A",
-        "userScore": "N/A"
+        "userScore": "N/A",
+        "steam": {
+            "appid": 1075190,
+            "name": "A Game of Thrones: The Board Game",
+            "reviews": {
+                "total_positive": 989,
+                "total_negative": 365,
+                "total_reviews": 1354,
+                "steamReviewScore": 7.304283604135894
+            }
+        }
     },
     "supraland": {
         "name": "Supraland",
@@ -383,7 +675,17 @@
             "Thu Jun 23 2022"
         ],
         "metaScore": "85",
-        "userScore": "8.6"
+        "userScore": "8.6",
+        "steam": {
+            "appid": 813630,
+            "name": "Supraland",
+            "reviews": {
+                "total_positive": 7651,
+                "total_negative": 293,
+                "total_reviews": 7944,
+                "steamReviewScore": 9.631168177240685
+            }
+        }
     },
     "maneater": {
         "name": "Maneater",
@@ -395,7 +697,17 @@
             "Thu Jun 16 2022"
         ],
         "metaScore": "70",
-        "userScore": "6.4"
+        "userScore": "6.4",
+        "steam": {
+            "appid": 629820,
+            "name": "Maneater",
+            "reviews": {
+                "total_positive": 6926,
+                "total_negative": 737,
+                "total_reviews": 7663,
+                "steamReviewScore": 9.038235677932924
+            }
+        }
     },
     "wolfenstein-the-new-order": {
         "name": "Wolfenstein: The New Order",
@@ -409,10 +721,20 @@
             "Thu Jun 09 2022"
         ],
         "metaScore": "81",
-        "userScore": "8.2"
+        "userScore": "8.2",
+        "steam": {
+            "appid": 201810,
+            "name": "Wolfenstein: The New Order",
+            "reviews": {
+                "total_positive": 31351,
+                "total_negative": 3311,
+                "total_reviews": 34662,
+                "steamReviewScore": 9.044775258207835
+            }
+        }
     },
     "bioshock": {
-        "name": "Bioshock",
+        "name": "BioShock",
         "cleanName": "bioshock",
         "startDates": [
             "Thu May 26 2022"
@@ -421,10 +743,20 @@
             "Thu Jun 02 2022"
         ],
         "metaScore": "96",
-        "userScore": "8.6"
+        "userScore": "8.6",
+        "steam": {
+            "appid": 7670,
+            "name": "BioShock",
+            "reviews": {
+                "total_positive": 20614,
+                "total_negative": 1286,
+                "total_reviews": 21900,
+                "steamReviewScore": 9.412785388127853
+            }
+        }
     },
     "bioshock-2": {
-        "name": "Bioshock 2",
+        "name": "BioShock 2",
         "cleanName": "bioshock-2",
         "startDates": [
             "Thu May 26 2022"
@@ -433,10 +765,20 @@
             "Thu Jun 02 2022"
         ],
         "metaScore": "88",
-        "userScore": "8.1"
+        "userScore": "8.1",
+        "steam": {
+            "appid": 8850,
+            "name": "BioShock 2",
+            "reviews": {
+                "total_positive": 8688,
+                "total_negative": 1083,
+                "total_reviews": 9771,
+                "steamReviewScore": 8.891618053423397
+            }
+        }
     },
     "bioshock-infinite": {
-        "name": "Bioshock Infinite",
+        "name": "BioShock Infinite",
         "cleanName": "bioshock-infinite",
         "startDates": [
             "Thu May 26 2022"
@@ -445,19 +787,17 @@
             "Thu Jun 02 2022"
         ],
         "metaScore": "94",
-        "userScore": "8.6"
-    },
-    "bioshock-the-collection": {
-        "name": "Bioshock: The Collection",
-        "cleanName": "bioshock-the-collection",
-        "startDates": [
-            "Thu May 26 2022"
-        ],
-        "endDates": [
-            "Thu Jun 02 2022"
-        ],
-        "metaScore": "80",
-        "userScore": "7.7"
+        "userScore": "8.6",
+        "steam": {
+            "appid": 8870,
+            "name": "BioShock Infinite",
+            "reviews": {
+                "total_positive": 90076,
+                "total_negative": 5771,
+                "total_reviews": 95847,
+                "steamReviewScore": 9.397894561123458
+            }
+        }
     },
     "borderlands-3": {
         "name": "Borderlands 3",
@@ -469,10 +809,20 @@
             "Thu May 26 2022"
         ],
         "metaScore": "81",
-        "userScore": "5.4"
+        "userScore": "5.4",
+        "steam": {
+            "appid": 397540,
+            "name": "Borderlands 3",
+            "reviews": {
+                "total_positive": 71090,
+                "total_negative": 12871,
+                "total_reviews": 83961,
+                "steamReviewScore": 8.467026357475495
+            }
+        }
     },
     "redout-2016": {
-        "name": "Redout",
+        "name": "Redout: Enhanced Edition",
         "cleanName": "redout-2016",
         "startDates": [
             "Thu May 12 2022"
@@ -481,7 +831,17 @@
             "Thu May 19 2022"
         ],
         "metaScore": "81",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 517710,
+            "name": "Redout: Enhanced Edition",
+            "reviews": {
+                "total_positive": 2714,
+                "total_negative": 486,
+                "total_reviews": 3200,
+                "steamReviewScore": 8.48125
+            }
+        }
     },
     "prey": {
         "name": "Prey",
@@ -493,19 +853,17 @@
             "Sun Dec 26 2021"
         ],
         "metaScore": "82",
-        "userScore": "8.2"
-    },
-    "jotun": {
-        "name": "Jotun",
-        "cleanName": "jotun",
-        "startDates": [
-            "Thu May 12 2022"
-        ],
-        "endDates": [
-            "Thu May 19 2022"
-        ],
-        "metaScore": "79",
-        "userScore": "7.0"
+        "userScore": "8.2",
+        "steam": {
+            "appid": 480490,
+            "name": "Prey",
+            "reviews": {
+                "total_positive": 24597,
+                "total_negative": 2672,
+                "total_reviews": 27269,
+                "steamReviewScore": 9.020132751476035
+            }
+        }
     },
     "terraforming-mars": {
         "name": "Terraforming Mars",
@@ -517,7 +875,17 @@
             "Thu May 12 2022"
         ],
         "metaScore": "N/A",
-        "userScore": "5.6"
+        "userScore": "5.6",
+        "steam": {
+            "appid": 800270,
+            "name": "Terraforming Mars",
+            "reviews": {
+                "total_positive": 2661,
+                "total_negative": 912,
+                "total_reviews": 3573,
+                "steamReviewScore": 7.44752308984047
+            }
+        }
     },
     "paradigm": {
         "name": "Paradigm",
@@ -529,7 +897,17 @@
             "Thu May 05 2022"
         ],
         "metaScore": "85",
-        "userScore": "7.7"
+        "userScore": "7.7",
+        "steam": {
+            "appid": 600370,
+            "name": "Paradigm",
+            "reviews": {
+                "total_positive": 810,
+                "total_negative": 32,
+                "total_reviews": 842,
+                "steamReviewScore": 9.619952494061758
+            }
+        }
     },
     "just-die-already": {
         "name": "Just Die Already",
@@ -541,10 +919,20 @@
             "Thu May 05 2022"
         ],
         "metaScore": "63",
-        "userScore": "5.8"
+        "userScore": "5.8",
+        "steam": {
+            "appid": 979070,
+            "name": "Just Die Already",
+            "reviews": {
+                "total_positive": 1115,
+                "total_negative": 217,
+                "total_reviews": 1332,
+                "steamReviewScore": 8.37087087087087
+            }
+        }
     },
     "amnesia-rebirth": {
-        "name": "Amnesia Rebirth",
+        "name": "Amnesia: Rebirth",
         "cleanName": "amnesia-rebirth",
         "startDates": [
             "Thu Apr 21 2022"
@@ -553,7 +941,17 @@
             "Thu Apr 28 2022"
         ],
         "metaScore": "80",
-        "userScore": "6.3"
+        "userScore": "6.3",
+        "steam": {
+            "appid": 999220,
+            "name": "Amnesia: Rebirth",
+            "reviews": {
+                "total_positive": 4528,
+                "total_negative": 1331,
+                "total_reviews": 5859,
+                "steamReviewScore": 7.728281276668374
+            }
+        }
     },
     "riverbond": {
         "name": "Riverbond",
@@ -565,7 +963,17 @@
             "Thu Apr 28 2022"
         ],
         "metaScore": "60",
-        "userScore": "6.2"
+        "userScore": "6.2",
+        "steam": {
+            "appid": 459370,
+            "name": "Riverbond",
+            "reviews": {
+                "total_positive": 62,
+                "total_negative": 17,
+                "total_reviews": 79,
+                "steamReviewScore": 7.848101265822784
+            }
+        }
     },
     "xcom-2": {
         "name": "XCOM 2",
@@ -577,7 +985,17 @@
             "Thu Apr 21 2022"
         ],
         "metaScore": "88",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 268500,
+            "name": "XCOM 2",
+            "reviews": {
+                "total_positive": 50654,
+                "total_negative": 9441,
+                "total_reviews": 60095,
+                "steamReviewScore": 8.428987436558783
+            }
+        }
     },
     "insurmountable": {
         "name": "Insurmountable",
@@ -589,7 +1007,17 @@
             "Thu Apr 21 2022"
         ],
         "metaScore": "74",
-        "userScore": "5.9"
+        "userScore": "5.9",
+        "steam": {
+            "appid": 1385100,
+            "name": "Insurmountable",
+            "reviews": {
+                "total_positive": 400,
+                "total_negative": 78,
+                "total_reviews": 478,
+                "steamReviewScore": 8.368200836820083
+            }
+        }
     },
     "rogue-legacy": {
         "name": "Rogue Legacy",
@@ -601,7 +1029,17 @@
             "Thu Apr 14 2022"
         ],
         "metaScore": "85",
-        "userScore": "7.9"
+        "userScore": "7.9",
+        "steam": {
+            "appid": 241600,
+            "name": "Rogue Legacy",
+            "reviews": {
+                "total_positive": 13963,
+                "total_negative": 1071,
+                "total_reviews": 15034,
+                "steamReviewScore": 9.28761473992284
+            }
+        }
     },
     "the-vanishing-of-ethan-carter": {
         "name": "The Vanishing of Ethan Carter",
@@ -613,10 +1051,20 @@
             "Mon Dec 20 2021"
         ],
         "metaScore": "82",
-        "userScore": "7.9"
+        "userScore": "7.9",
+        "steam": {
+            "appid": 258520,
+            "name": "The Vanishing of Ethan Carter",
+            "reviews": {
+                "total_positive": 5688,
+                "total_negative": 782,
+                "total_reviews": 6470,
+                "steamReviewScore": 8.791344667697063
+            }
+        }
     },
     "total-war-warhammer": {
-        "name": "Total War: Warhammer",
+        "name": "Total War: WARHAMMER",
         "cleanName": "total-war-warhammer",
         "startDates": [
             "Thu Mar 31 2022"
@@ -625,10 +1073,20 @@
             "Thu Apr 07 2022"
         ],
         "metaScore": "86",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {
+            "appid": 364360,
+            "name": "Total War: WARHAMMER",
+            "reviews": {
+                "total_positive": 23705,
+                "total_negative": 6302,
+                "total_reviews": 30007,
+                "steamReviewScore": 7.899823374545939
+            }
+        }
     },
     "city-of-brass": {
-        "name": "City of Brass",
+        "name": "City Of Brass",
         "cleanName": "city-of-brass",
         "startDates": [
             "Thu Mar 31 2022",
@@ -638,10 +1096,20 @@
             "Thu Apr 07 2022"
         ],
         "metaScore": "69",
-        "userScore": "4.0"
+        "userScore": "4.0",
+        "steam": {
+            "appid": 301840,
+            "name": "City Of Brass",
+            "reviews": {
+                "total_positive": 512,
+                "total_negative": 134,
+                "total_reviews": 646,
+                "steamReviewScore": 7.9256965944272455
+            }
+        }
     },
     "demons-tilt": {
-        "name": "Demon's Tilt",
+        "name": "DEMON'S TILT",
         "cleanName": "demons-tilt",
         "startDates": [
             "Thu Mar 24 2022"
@@ -650,7 +1118,17 @@
             "Thu Mar 31 2022"
         ],
         "metaScore": "N/A",
-        "userScore": "N/A"
+        "userScore": "N/A",
+        "steam": {
+            "appid": 422510,
+            "name": "DEMON'S TILT",
+            "reviews": {
+                "total_positive": 597,
+                "total_negative": 37,
+                "total_reviews": 634,
+                "steamReviewScore": 9.41640378548896
+            }
+        }
     },
     "in-sound-mind": {
         "name": "In Sound Mind",
@@ -662,7 +1140,17 @@
             "Thu Mar 24 2022"
         ],
         "metaScore": "75",
-        "userScore": "8.2"
+        "userScore": "8.2",
+        "steam": {
+            "appid": 1119980,
+            "name": "In Sound Mind",
+            "reviews": {
+                "total_positive": 1501,
+                "total_negative": 79,
+                "total_reviews": 1580,
+                "steamReviewScore": 9.5
+            }
+        }
     },
     "cities-skylines": {
         "name": "Cities: Skylines",
@@ -674,7 +1162,17 @@
             "Fri Dec 18 2020"
         ],
         "metaScore": "85",
-        "userScore": "8.8"
+        "userScore": "8.8",
+        "steam": {
+            "appid": 255710,
+            "name": "Cities: Skylines",
+            "reviews": {
+                "total_positive": 148337,
+                "total_negative": 10680,
+                "total_reviews": 159017,
+                "steamReviewScore": 9.32837369589415
+            }
+        }
     },
     "black-widow-recharged": {
         "name": "Black Widow: Recharged",
@@ -686,7 +1184,17 @@
             "Thu Mar 10 2022"
         ],
         "metaScore": "N/A",
-        "userScore": "N/A"
+        "userScore": "N/A",
+        "steam": {
+            "appid": 1714180,
+            "name": "Black Widow: Recharged",
+            "reviews": {
+                "total_positive": 16,
+                "total_negative": 1,
+                "total_reviews": 17,
+                "steamReviewScore": 9.411764705882353
+            }
+        }
     },
     "centipede-recharged": {
         "name": "Centipede: Recharged",
@@ -698,7 +1206,17 @@
             "Thu Mar 10 2022"
         ],
         "metaScore": "N/A",
-        "userScore": "N/A"
+        "userScore": "N/A",
+        "steam": {
+            "appid": 1630960,
+            "name": "Centipede: Recharged",
+            "reviews": {
+                "total_positive": 44,
+                "total_negative": 9,
+                "total_reviews": 53,
+                "steamReviewScore": 8.30188679245283
+            }
+        }
     },
     "dauntless": {
         "name": "Dauntless",
@@ -710,7 +1228,8 @@
             "Thu Mar 10 2022"
         ],
         "metaScore": "78",
-        "userScore": "5.3"
+        "userScore": "5.3",
+        "steam": {}
     },
     "cris-tales": {
         "name": "Cris Tales",
@@ -722,10 +1241,20 @@
             "Thu Mar 03 2022"
         ],
         "metaScore": "74",
-        "userScore": "7.9"
+        "userScore": "7.9",
+        "steam": {
+            "appid": 1079830,
+            "name": "Cris Tales",
+            "reviews": {
+                "total_positive": 166,
+                "total_negative": 83,
+                "total_reviews": 249,
+                "steamReviewScore": 6.666666666666666
+            }
+        }
     },
     "brothers-a-tale-of-two-sons": {
-        "name": "Brothers: A Tale of Two Sons",
+        "name": "Brothers - A Tale of Two Sons",
         "cleanName": "brothers-a-tale-of-two-sons",
         "startDates": [
             "Thu Feb 17 2022"
@@ -734,7 +1263,17 @@
             "Thu Feb 24 2022"
         ],
         "metaScore": "90",
-        "userScore": "8.5"
+        "userScore": "8.5",
+        "steam": {
+            "appid": 225080,
+            "name": "Brothers - A Tale of Two Sons",
+            "reviews": {
+                "total_positive": 30756,
+                "total_negative": 1765,
+                "total_reviews": 32521,
+                "steamReviewScore": 9.457273761569446
+            }
+        }
     },
     "windbound": {
         "name": "Windbound",
@@ -746,7 +1285,17 @@
             "Thu Feb 17 2022"
         ],
         "metaScore": "60",
-        "userScore": "5.5"
+        "userScore": "5.5",
+        "steam": {
+            "appid": 1162130,
+            "name": "Windbound",
+            "reviews": {
+                "total_positive": 432,
+                "total_negative": 312,
+                "total_reviews": 744,
+                "steamReviewScore": 5.806451612903226
+            }
+        }
     },
     "yooka-laylee-and-the-impossible-lair": {
         "name": "Yooka-Laylee and the Impossible Lair",
@@ -759,10 +1308,20 @@
             "Thu Feb 10 2022"
         ],
         "metaScore": "81",
-        "userScore": "6.3"
+        "userScore": "6.3",
+        "steam": {
+            "appid": 846870,
+            "name": "Yooka-Laylee and the Impossible Lair",
+            "reviews": {
+                "total_positive": 469,
+                "total_negative": 56,
+                "total_reviews": 525,
+                "steamReviewScore": 8.933333333333334
+            }
+        }
     },
     "daemon-x-machina": {
-        "name": "Daemon X Machina",
+        "name": "DAEMON X MACHINA",
         "cleanName": "daemon-x-machina",
         "startDates": [
             "Thu Jan 27 2022"
@@ -771,7 +1330,17 @@
             "Thu Feb 03 2022"
         ],
         "metaScore": "72",
-        "userScore": "6.9"
+        "userScore": "6.9",
+        "steam": {
+            "appid": 1167450,
+            "name": "DAEMON X MACHINA",
+            "reviews": {
+                "total_positive": 4640,
+                "total_negative": 585,
+                "total_reviews": 5225,
+                "steamReviewScore": 8.880382775119617
+            }
+        }
     },
     "relicta": {
         "name": "Relicta",
@@ -783,7 +1352,17 @@
             "Thu Jan 27 2022"
         ],
         "metaScore": "74",
-        "userScore": "5.8"
+        "userScore": "5.8",
+        "steam": {
+            "appid": 941570,
+            "name": "Relicta",
+            "reviews": {
+                "total_positive": 127,
+                "total_negative": 35,
+                "total_reviews": 162,
+                "steamReviewScore": 7.839506172839506
+            }
+        }
     },
     "galactic-civilizations-iii": {
         "name": "Galactic Civilizations III",
@@ -797,7 +1376,17 @@
             "Thu Jan 28 2021"
         ],
         "metaScore": "81",
-        "userScore": "7.0"
+        "userScore": "7.0",
+        "steam": {
+            "appid": 226860,
+            "name": "Galactic Civilizations III",
+            "reviews": {
+                "total_positive": 6154,
+                "total_negative": 1851,
+                "total_reviews": 8005,
+                "steamReviewScore": 7.687695190505934
+            }
+        }
     },
     "gods-will-fall": {
         "name": "Gods Will Fall",
@@ -809,7 +1398,17 @@
             "Thu Jan 13 2022"
         ],
         "metaScore": "70",
-        "userScore": "4.4"
+        "userScore": "4.4",
+        "steam": {
+            "appid": 1243690,
+            "name": "Gods Will Fall",
+            "reviews": {
+                "total_positive": 20,
+                "total_negative": 19,
+                "total_reviews": 39,
+                "steamReviewScore": 5.128205128205128
+            }
+        }
     },
     "tomb-raider": {
         "name": "Tomb Raider",
@@ -821,7 +1420,17 @@
             "Thu Jan 06 2022"
         ],
         "metaScore": "86",
-        "userScore": "8.4"
+        "userScore": "8.4",
+        "steam": {
+            "appid": 203160,
+            "name": "Tomb Raider",
+            "reviews": {
+                "total_positive": 127180,
+                "total_negative": 5230,
+                "total_reviews": 132410,
+                "steamReviewScore": 9.605014726984367
+            }
+        }
     },
     "shadow-of-the-tomb-raider": {
         "name": "Shadow of the Tomb Raider",
@@ -835,7 +1444,17 @@
             "Thu Jan 06 2022"
         ],
         "metaScore": "77",
-        "userScore": "7.0"
+        "userScore": "7.0",
+        "steam": {
+            "appid": 750920,
+            "name": "Shadow of the Tomb Raider",
+            "reviews": {
+                "total_positive": 41952,
+                "total_negative": 7135,
+                "total_reviews": 49087,
+                "steamReviewScore": 8.546458329089168
+            }
+        }
     },
     "rise-of-the-tomb-raider": {
         "name": "Rise of the Tomb Raider",
@@ -847,7 +1466,17 @@
             "Thu Jan 06 2022"
         ],
         "metaScore": "86",
-        "userScore": "7.9"
+        "userScore": "7.9",
+        "steam": {
+            "appid": 391220,
+            "name": "Rise of the Tomb Raider",
+            "reviews": {
+                "total_positive": 86231,
+                "total_negative": 5517,
+                "total_reviews": 91748,
+                "steamReviewScore": 9.398678990277716
+            }
+        }
     },
     "salt-and-sanctuary": {
         "name": "Salt and Sanctuary",
@@ -859,7 +1488,17 @@
             "Thu Dec 30 2021"
         ],
         "metaScore": "84",
-        "userScore": "7.6"
+        "userScore": "7.6",
+        "steam": {
+            "appid": 283640,
+            "name": "Salt and Sanctuary",
+            "reviews": {
+                "total_positive": 14190,
+                "total_negative": 1584,
+                "total_reviews": 15774,
+                "steamReviewScore": 8.99581589958159
+            }
+        }
     },
     "moving-out": {
         "name": "Moving Out",
@@ -871,7 +1510,17 @@
             "Wed Dec 29 2021"
         ],
         "metaScore": "79",
-        "userScore": "7.2"
+        "userScore": "7.2",
+        "steam": {
+            "appid": 996770,
+            "name": "Moving Out",
+            "reviews": {
+                "total_positive": 890,
+                "total_negative": 211,
+                "total_reviews": 1101,
+                "steamReviewScore": 8.083560399636694
+            }
+        }
     },
     "mages-of-mystralia": {
         "name": "Mages of Mystralia",
@@ -883,10 +1532,20 @@
             "Tue Dec 28 2021"
         ],
         "metaScore": "74",
-        "userScore": "7.5"
+        "userScore": "7.5",
+        "steam": {
+            "appid": 529660,
+            "name": "Mages of Mystralia",
+            "reviews": {
+                "total_positive": 637,
+                "total_negative": 108,
+                "total_reviews": 745,
+                "steamReviewScore": 8.5503355704698
+            }
+        }
     },
     "control": {
-        "name": "Control",
+        "name": "Control Ultimate Edition",
         "cleanName": "control",
         "startDates": [
             "Thu Jun 10 2021"
@@ -895,7 +1554,17 @@
             "Thu Jun 17 2021"
         ],
         "metaScore": "85",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {
+            "appid": 870780,
+            "name": "Control Ultimate Edition",
+            "reviews": {
+                "total_positive": 23040,
+                "total_negative": 2768,
+                "total_reviews": 25808,
+                "steamReviewScore": 8.927464352138871
+            }
+        }
     },
     "pathfinder-kingmaker": {
         "name": "Pathfinder: Kingmaker",
@@ -907,7 +1576,17 @@
             "Sat Dec 25 2021"
         ],
         "metaScore": "73",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {
+            "appid": 640820,
+            "name": "Pathfinder: Kingmaker",
+            "reviews": {
+                "total_positive": 17848,
+                "total_negative": 4935,
+                "total_reviews": 22783,
+                "steamReviewScore": 7.833911249615941
+            }
+        }
     },
     "vampyr": {
         "name": "Vampyr",
@@ -919,7 +1598,17 @@
             "Fri Dec 24 2021"
         ],
         "metaScore": "72",
-        "userScore": "7.0"
+        "userScore": "7.0",
+        "steam": {
+            "appid": 427290,
+            "name": "Vampyr",
+            "reviews": {
+                "total_positive": 10372,
+                "total_negative": 3191,
+                "total_reviews": 13563,
+                "steamReviewScore": 7.6472756764727565
+            }
+        }
     },
     "mutant-year-zero-road-to-eden": {
         "name": "Mutant Year Zero: Road to Eden",
@@ -933,10 +1622,20 @@
             "Thu Aug 22 2019"
         ],
         "metaScore": "78",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 760060,
+            "name": "Mutant Year Zero: Road to Eden",
+            "reviews": {
+                "total_positive": 10391,
+                "total_negative": 1100,
+                "total_reviews": 11491,
+                "steamReviewScore": 9.042729092333131
+            }
+        }
     },
     "second-extinction": {
-        "name": "Second Extinction",
+        "name": "Second Extinction™",
         "cleanName": "second-extinction",
         "startDates": [
             "Tue Dec 21 2021"
@@ -945,7 +1644,17 @@
             "Wed Dec 22 2021"
         ],
         "metaScore": "N/A",
-        "userScore": "N/A"
+        "userScore": "N/A",
+        "steam": {
+            "appid": 1024380,
+            "name": "Second Extinction™",
+            "reviews": {
+                "total_positive": 3063,
+                "total_negative": 1103,
+                "total_reviews": 4166,
+                "steamReviewScore": 7.352376380220836
+            }
+        }
     },
     "loop-hero": {
         "name": "Loop Hero",
@@ -957,7 +1666,17 @@
             "Tue Dec 21 2021"
         ],
         "metaScore": "82",
-        "userScore": "7.9"
+        "userScore": "7.9",
+        "steam": {
+            "appid": 1282730,
+            "name": "Loop Hero",
+            "reviews": {
+                "total_positive": 26171,
+                "total_negative": 1806,
+                "total_reviews": 27977,
+                "steamReviewScore": 9.35446974300318
+            }
+        }
     },
     "remnant-from-the-ashes": {
         "name": "Remnant: From the Ashes",
@@ -970,7 +1689,17 @@
             "Sun Dec 19 2021"
         ],
         "metaScore": "78",
-        "userScore": "6.7"
+        "userScore": "6.7",
+        "steam": {
+            "appid": 617290,
+            "name": "Remnant: From the Ashes",
+            "reviews": {
+                "total_positive": 30927,
+                "total_negative": 5390,
+                "total_reviews": 36317,
+                "steamReviewScore": 8.515846573230167
+            }
+        }
     },
     "neon-abyss": {
         "name": "Neon Abyss",
@@ -982,7 +1711,17 @@
             "Sat Dec 18 2021"
         ],
         "metaScore": "74",
-        "userScore": "6.3"
+        "userScore": "6.3",
+        "steam": {
+            "appid": 788100,
+            "name": "Neon Abyss",
+            "reviews": {
+                "total_positive": 14557,
+                "total_negative": 1763,
+                "total_reviews": 16320,
+                "steamReviewScore": 8.919730392156863
+            }
+        }
     },
     "shenmue-iii": {
         "name": "Shenmue III",
@@ -994,7 +1733,17 @@
             "Fri Dec 17 2021"
         ],
         "metaScore": "69",
-        "userScore": "6.1"
+        "userScore": "6.1",
+        "steam": {
+            "appid": 878670,
+            "name": "Shenmue III",
+            "reviews": {
+                "total_positive": 499,
+                "total_negative": 131,
+                "total_reviews": 630,
+                "steamReviewScore": 7.92063492063492
+            }
+        }
     },
     "godfall": {
         "name": "Godfall",
@@ -1006,7 +1755,17 @@
             "Thu Dec 16 2021"
         ],
         "metaScore": "59",
-        "userScore": "3.8"
+        "userScore": "3.8",
+        "steam": {
+            "appid": 928960,
+            "name": "Godfall",
+            "reviews": {
+                "total_positive": 643,
+                "total_negative": 366,
+                "total_reviews": 1009,
+                "steamReviewScore": 6.372646184340932
+            }
+        }
     },
     "prison-architect": {
         "name": "Prison Architect",
@@ -1018,10 +1777,20 @@
             "Thu Dec 16 2021"
         ],
         "metaScore": "83",
-        "userScore": "6"
+        "userScore": "6",
+        "steam": {
+            "appid": 233450,
+            "name": "Prison Architect",
+            "reviews": {
+                "total_positive": 46970,
+                "total_negative": 4706,
+                "total_reviews": 51676,
+                "steamReviewScore": 9.089325799210465
+            }
+        }
     },
     "while-true-learn": {
-        "name": "While True: Learn()",
+        "name": "while True: learn()",
         "cleanName": "while-true-learn",
         "startDates": [
             "Thu Dec 02 2021"
@@ -1030,7 +1799,17 @@
             "Thu Dec 09 2021"
         ],
         "metaScore": "73",
-        "userScore": "6.3"
+        "userScore": "6.3",
+        "steam": {
+            "appid": 619150,
+            "name": "while True: learn()",
+            "reviews": {
+                "total_positive": 5130,
+                "total_negative": 457,
+                "total_reviews": 5587,
+                "steamReviewScore": 9.182029711831037
+            }
+        }
     },
     "dead-by-daylight": {
         "name": "Dead by Daylight",
@@ -1042,10 +1821,20 @@
             "Thu Dec 09 2021"
         ],
         "metaScore": "71",
-        "userScore": "5.7"
+        "userScore": "5.7",
+        "steam": {
+            "appid": 381210,
+            "name": "Dead by Daylight",
+            "reviews": {
+                "total_positive": 372881,
+                "total_negative": 82193,
+                "total_reviews": 455074,
+                "steamReviewScore": 8.193854186352109
+            }
+        }
     },
     "thehunter-call-of-the-wild": {
-        "name": "theHunter: Call of the Wild",
+        "name": "theHunter: Call of the Wild™",
         "cleanName": "thehunter-call-of-the-wild",
         "startDates": [
             "Thu Nov 25 2021"
@@ -1054,7 +1843,17 @@
             "Thu Dec 02 2021"
         ],
         "metaScore": "64",
-        "userScore": "6.7"
+        "userScore": "6.7",
+        "steam": {
+            "appid": 518790,
+            "name": "theHunter: Call of the Wild™",
+            "reviews": {
+                "total_positive": 89454,
+                "total_negative": 12265,
+                "total_reviews": 101719,
+                "steamReviewScore": 8.794227233850116
+            }
+        }
     },
     "antstream-arcade": {
         "name": "Antstream Arcade",
@@ -1066,10 +1865,20 @@
             "Thu Dec 02 2021"
         ],
         "metaScore": "N/A",
-        "userScore": "N/A"
+        "userScore": "N/A",
+        "steam": {
+            "appid": 1564030,
+            "name": "Antstream Arcade",
+            "reviews": {
+                "total_positive": 0,
+                "total_negative": 0,
+                "total_reviews": 0,
+                "steamReviewScore": null
+            }
+        }
     },
     "never-alone": {
-        "name": "Never Alone",
+        "name": "Never Alone (Kisima Ingitchuna)",
         "cleanName": "never-alone",
         "startDates": [
             "Thu Nov 18 2021"
@@ -1078,10 +1887,20 @@
             "Thu Nov 25 2021"
         ],
         "metaScore": "72",
-        "userScore": "6.2"
+        "userScore": "6.2",
+        "steam": {
+            "appid": 295790,
+            "name": "Never Alone (Kisima Ingitchuna)",
+            "reviews": {
+                "total_positive": 4277,
+                "total_negative": 957,
+                "total_reviews": 5234,
+                "steamReviewScore": 8.171570500573175
+            }
+        }
     },
     "guild-of-dungeoneering": {
-        "name": "Guild of Dungeoneering",
+        "name": "Guild of Dungeoneering Ultimate Edition",
         "cleanName": "guild-of-dungeoneering",
         "startDates": [
             "Thu Nov 18 2021"
@@ -1090,7 +1909,17 @@
             "Thu Nov 25 2021"
         ],
         "metaScore": "72",
-        "userScore": "5.0"
+        "userScore": "5.0",
+        "steam": {
+            "appid": 317820,
+            "name": "Guild of Dungeoneering Ultimate Edition",
+            "reviews": {
+                "total_positive": 1220,
+                "total_negative": 371,
+                "total_reviews": 1591,
+                "steamReviewScore": 7.668133249528598
+            }
+        }
     },
     "kid-a-mnesia-exhibition": {
         "name": "Kid A Mnesia Exhibition",
@@ -1102,10 +1931,11 @@
             "Thu Nov 25 2021"
         ],
         "metaScore": "N/A",
-        "userScore": "8.5"
+        "userScore": "8.5",
+        "steam": {}
     },
     "borderlands-2-tiny-tinas-assault-on-dragon-keep": {
-        "name": "Borderlands 2: Tiny Tina's Assault On Dragon Keep",
+        "name": "Borderlands 2: Tiny Tina's Assault on Dragon Keep",
         "cleanName": "borderlands-2-tiny-tinas-assault-on-dragon-keep",
         "startDates": [
             "Thu Nov 11 2021"
@@ -1114,7 +1944,17 @@
             "Thu Nov 18 2021"
         ],
         "metaScore": "87",
-        "userScore": "8.5"
+        "userScore": "8.5",
+        "steam": {
+            "appid": 218550,
+            "name": "Borderlands 2: Tiny Tina's Assault on Dragon Keep",
+            "reviews": {
+                "total_positive": 1255,
+                "total_negative": 92,
+                "total_reviews": 1347,
+                "steamReviewScore": 9.317000742390498
+            }
+        }
     },
     "rogue-company": {
         "name": "Rogue Company",
@@ -1126,7 +1966,17 @@
             "Thu Nov 18 2021"
         ],
         "metaScore": "75",
-        "userScore": "4.9"
+        "userScore": "4.9",
+        "steam": {
+            "appid": 872200,
+            "name": "Rogue Company",
+            "reviews": {
+                "total_positive": 39,
+                "total_negative": 10,
+                "total_reviews": 49,
+                "steamReviewScore": 7.959183673469388
+            }
+        }
     },
     "aven-colony": {
         "name": "Aven Colony",
@@ -1138,7 +1988,17 @@
             "Thu Nov 11 2021"
         ],
         "metaScore": "65",
-        "userScore": "8.0"
+        "userScore": "8.0",
+        "steam": {
+            "appid": 484900,
+            "name": "Aven Colony",
+            "reviews": {
+                "total_positive": 1183,
+                "total_negative": 400,
+                "total_reviews": 1583,
+                "steamReviewScore": 7.473152242577385
+            }
+        }
     },
     "darq": {
         "name": "DARQ",
@@ -1150,7 +2010,17 @@
             "Thu Nov 04 2021"
         ],
         "metaScore": "70",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 433550,
+            "name": "DARQ",
+            "reviews": {
+                "total_positive": 2884,
+                "total_negative": 184,
+                "total_reviews": 3068,
+                "steamReviewScore": 9.40026075619296
+            }
+        }
     },
     "among-the-sleep": {
         "name": "Among the Sleep",
@@ -1162,7 +2032,17 @@
             "Thu Oct 28 2021"
         ],
         "metaScore": "66",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {
+            "appid": 250620,
+            "name": "Among the Sleep",
+            "reviews": {
+                "total_positive": 4109,
+                "total_negative": 547,
+                "total_reviews": 4656,
+                "steamReviewScore": 8.825171821305842
+            }
+        }
     },
     "stubbs-the-zombie-in-rebel-without-a-pulse": {
         "name": "Stubbs the Zombie in Rebel Without a Pulse",
@@ -1174,7 +2054,17 @@
             "Thu Oct 21 2021"
         ],
         "metaScore": "72",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 7800,
+            "name": "Stubbs the Zombie in Rebel Without a Pulse",
+            "reviews": {
+                "total_positive": 968,
+                "total_negative": 93,
+                "total_reviews": 1061,
+                "steamReviewScore": 9.123468426013195
+            }
+        }
     },
     "pc-building-simulator": {
         "name": "PC Building Simulator",
@@ -1186,7 +2076,17 @@
             "Thu Oct 14 2021"
         ],
         "metaScore": "N/A",
-        "userScore": "7.0"
+        "userScore": "7.0",
+        "steam": {
+            "appid": 621060,
+            "name": "PC Building Simulator",
+            "reviews": {
+                "total_positive": 34675,
+                "total_negative": 2103,
+                "total_reviews": 36778,
+                "steamReviewScore": 9.428190766218936
+            }
+        }
     },
     "europa-universalis-iv": {
         "name": "Europa Universalis IV",
@@ -1198,7 +2098,17 @@
             "Thu Oct 07 2021"
         ],
         "metaScore": "87",
-        "userScore": "8.7"
+        "userScore": "8.7",
+        "steam": {
+            "appid": 236850,
+            "name": "Europa Universalis IV",
+            "reviews": {
+                "total_positive": 66586,
+                "total_negative": 10247,
+                "total_reviews": 76833,
+                "steamReviewScore": 8.666328270404644
+            }
+        }
     },
     "the-escapists": {
         "name": "The Escapists",
@@ -1211,7 +2121,17 @@
             "Thu Sep 30 2021"
         ],
         "metaScore": "71",
-        "userScore": "6.9"
+        "userScore": "6.9",
+        "steam": {
+            "appid": 298630,
+            "name": "The Escapists",
+            "reviews": {
+                "total_positive": 12292,
+                "total_negative": 1315,
+                "total_reviews": 13607,
+                "steamReviewScore": 9.033585654442566
+            }
+        }
     },
     "speed-brawl": {
         "name": "Speed Brawl",
@@ -1223,7 +2143,17 @@
             "Thu Sep 23 2021"
         ],
         "metaScore": "N/A",
-        "userScore": "N/A"
+        "userScore": "N/A",
+        "steam": {
+            "appid": 468670,
+            "name": "Speed Brawl",
+            "reviews": {
+                "total_positive": 52,
+                "total_negative": 13,
+                "total_reviews": 65,
+                "steamReviewScore": 8
+            }
+        }
     },
     "tharsis": {
         "name": "Tharsis",
@@ -1235,7 +2165,17 @@
             "Thu Sep 23 2021"
         ],
         "metaScore": "61",
-        "userScore": "4.8"
+        "userScore": "4.8",
+        "steam": {
+            "appid": 323060,
+            "name": "Tharsis",
+            "reviews": {
+                "total_positive": 968,
+                "total_negative": 377,
+                "total_reviews": 1345,
+                "steamReviewScore": 7.197026022304833
+            }
+        }
     },
     "nioh-complete-edition": {
         "name": "Nioh: Complete Edition",
@@ -1247,7 +2187,17 @@
             "Thu Sep 16 2021"
         ],
         "metaScore": "84",
-        "userScore": "7.1"
+        "userScore": "7.1",
+        "steam": {
+            "appid": 485510,
+            "name": "Nioh: Complete Edition",
+            "reviews": {
+                "total_positive": 18254,
+                "total_negative": 4759,
+                "total_reviews": 23013,
+                "steamReviewScore": 7.932038413070873
+            }
+        }
     },
     "sheltered": {
         "name": "Sheltered",
@@ -1259,7 +2209,17 @@
             "Thu Sep 16 2021"
         ],
         "metaScore": "62",
-        "userScore": "5.1"
+        "userScore": "5.1",
+        "steam": {
+            "appid": 356040,
+            "name": "Sheltered",
+            "reviews": {
+                "total_positive": 3943,
+                "total_negative": 903,
+                "total_reviews": 4846,
+                "steamReviewScore": 8.136607511349567
+            }
+        }
     },
     "yokus-island-express": {
         "name": "Yoku's Island Express",
@@ -1271,7 +2231,17 @@
             "Thu Sep 09 2021"
         ],
         "metaScore": "84",
-        "userScore": "7.9"
+        "userScore": "7.9",
+        "steam": {
+            "appid": 334940,
+            "name": "Yoku's Island Express",
+            "reviews": {
+                "total_positive": 2171,
+                "total_negative": 68,
+                "total_reviews": 2239,
+                "steamReviewScore": 9.696292987941046
+            }
+        }
     },
     "automachef": {
         "name": "Automachef",
@@ -1283,7 +2253,17 @@
             "Thu Sep 02 2021"
         ],
         "metaScore": "71",
-        "userScore": "5.1"
+        "userScore": "5.1",
+        "steam": {
+            "appid": 984800,
+            "name": "Automachef",
+            "reviews": {
+                "total_positive": 301,
+                "total_negative": 98,
+                "total_reviews": 399,
+                "steamReviewScore": 7.543859649122807
+            }
+        }
     },
     "void-bastards": {
         "name": "Void Bastards",
@@ -1295,7 +2275,17 @@
             "Thu Aug 26 2021"
         ],
         "metaScore": "81",
-        "userScore": "7.5"
+        "userScore": "7.5",
+        "steam": {
+            "appid": 857980,
+            "name": "Void Bastards",
+            "reviews": {
+                "total_positive": 2922,
+                "total_negative": 424,
+                "total_reviews": 3346,
+                "steamReviewScore": 8.732815301852959
+            }
+        }
     },
     "yooka-laylee": {
         "name": "Yooka-Laylee",
@@ -1307,7 +2297,17 @@
             "Thu Aug 26 2021"
         ],
         "metaScore": "73",
-        "userScore": "6.5"
+        "userScore": "6.5",
+        "steam": {
+            "appid": 360830,
+            "name": "Yooka-Laylee",
+            "reviews": {
+                "total_positive": 1885,
+                "total_negative": 493,
+                "total_reviews": 2378,
+                "steamReviewScore": 7.926829268292684
+            }
+        }
     },
     "rebel-galaxy": {
         "name": "Rebel Galaxy",
@@ -1320,7 +2320,17 @@
             "Thu Aug 19 2021"
         ],
         "metaScore": "75",
-        "userScore": "7.5"
+        "userScore": "7.5",
+        "steam": {
+            "appid": 290300,
+            "name": "Rebel Galaxy",
+            "reviews": {
+                "total_positive": 5612,
+                "total_negative": 976,
+                "total_reviews": 6588,
+                "steamReviewScore": 8.518518518518519
+            }
+        }
     },
     "minit": {
         "name": "Minit",
@@ -1333,7 +2343,17 @@
             "Thu Aug 12 2021"
         ],
         "metaScore": "79",
-        "userScore": "6.6"
+        "userScore": "6.6",
+        "steam": {
+            "appid": 609490,
+            "name": "Minit",
+            "reviews": {
+                "total_positive": 1145,
+                "total_negative": 94,
+                "total_reviews": 1239,
+                "steamReviewScore": 9.24132364810331
+            }
+        }
     },
     "a-plague-tale-innocence": {
         "name": "A Plague Tale: Innocence",
@@ -1345,10 +2365,20 @@
             "Thu Aug 12 2021"
         ],
         "metaScore": "81",
-        "userScore": "8.5"
+        "userScore": "8.5",
+        "steam": {
+            "appid": 752590,
+            "name": "A Plague Tale: Innocence",
+            "reviews": {
+                "total_positive": 39706,
+                "total_negative": 2732,
+                "total_reviews": 42438,
+                "steamReviewScore": 9.356237334464396
+            }
+        }
     },
     "mothergunship": {
-        "name": "Mothergunship",
+        "name": "MOTHERGUNSHIP",
         "cleanName": "mothergunship",
         "startDates": [
             "Thu Jul 29 2021"
@@ -1357,10 +2387,20 @@
             "Thu Aug 05 2021"
         ],
         "metaScore": "72",
-        "userScore": "6.8"
+        "userScore": "6.8",
+        "steam": {
+            "appid": 574090,
+            "name": "MOTHERGUNSHIP",
+            "reviews": {
+                "total_positive": 772,
+                "total_negative": 198,
+                "total_reviews": 970,
+                "steamReviewScore": 7.958762886597937
+            }
+        }
     },
     "train-sim-world": {
-        "name": "Train Sim World",
+        "name": "Train Sim World® 2",
         "cleanName": "train-sim-world",
         "startDates": [
             "Thu Jul 29 2021"
@@ -1369,7 +2409,17 @@
             "Thu Aug 05 2021"
         ],
         "metaScore": "N/A",
-        "userScore": "6.6"
+        "userScore": "6.6",
+        "steam": {
+            "appid": 1282590,
+            "name": "Train Sim World® 2",
+            "reviews": {
+                "total_positive": 5295,
+                "total_negative": 1149,
+                "total_reviews": 6444,
+                "steamReviewScore": 8.216945996275605
+            }
+        }
     },
     "defense-grid-the-awakening": {
         "name": "Defense Grid: The Awakening",
@@ -1381,7 +2431,17 @@
             "Mon Dec 21 2020"
         ],
         "metaScore": "81",
-        "userScore": "8.6"
+        "userScore": "8.6",
+        "steam": {
+            "appid": 18500,
+            "name": "Defense Grid: The Awakening",
+            "reviews": {
+                "total_positive": 3719,
+                "total_negative": 122,
+                "total_reviews": 3841,
+                "steamReviewScore": 9.68237438167144
+            }
+        }
     },
     "verdun": {
         "name": "Verdun",
@@ -1393,7 +2453,17 @@
             "Thu Jul 29 2021"
         ],
         "metaScore": "70",
-        "userScore": "7.7"
+        "userScore": "7.7",
+        "steam": {
+            "appid": 242860,
+            "name": "Verdun",
+            "reviews": {
+                "total_positive": 24103,
+                "total_negative": 3448,
+                "total_reviews": 27551,
+                "steamReviewScore": 8.748502776668724
+            }
+        }
     },
     "obduction": {
         "name": "Obduction",
@@ -1405,7 +2475,17 @@
             "Thu Jul 22 2021"
         ],
         "metaScore": "76",
-        "userScore": "7.6"
+        "userScore": "7.6",
+        "steam": {
+            "appid": 306760,
+            "name": "Obduction",
+            "reviews": {
+                "total_positive": 2052,
+                "total_negative": 576,
+                "total_reviews": 2628,
+                "steamReviewScore": 7.808219178082192
+            }
+        }
     },
     "offworld-trading-company": {
         "name": "Offworld Trading Company",
@@ -1418,7 +2498,17 @@
             "Thu Jul 22 2021"
         ],
         "metaScore": "78",
-        "userScore": "7.6"
+        "userScore": "7.6",
+        "steam": {
+            "appid": 271240,
+            "name": "Offworld Trading Company",
+            "reviews": {
+                "total_positive": 2539,
+                "total_negative": 767,
+                "total_reviews": 3306,
+                "steamReviewScore": 7.679975801572898
+            }
+        }
     },
     "bridge-constructor-the-walking-dead": {
         "name": "Bridge Constructor: The Walking Dead",
@@ -1430,7 +2520,17 @@
             "Thu Jul 15 2021"
         ],
         "metaScore": "72",
-        "userScore": "4.3"
+        "userScore": "4.3",
+        "steam": {
+            "appid": 1336120,
+            "name": "Bridge Constructor: The Walking Dead",
+            "reviews": {
+                "total_positive": 77,
+                "total_negative": 19,
+                "total_reviews": 96,
+                "steamReviewScore": 8.020833333333334
+            }
+        }
     },
     "ironcast": {
         "name": "Ironcast",
@@ -1442,7 +2542,17 @@
             "Thu Jul 15 2021"
         ],
         "metaScore": "75",
-        "userScore": "7.2"
+        "userScore": "7.2",
+        "steam": {
+            "appid": 327670,
+            "name": "Ironcast",
+            "reviews": {
+                "total_positive": 545,
+                "total_negative": 183,
+                "total_reviews": 728,
+                "steamReviewScore": 7.486263736263736
+            }
+        }
     },
     "the-spectrum-retreat": {
         "name": "The Spectrum Retreat",
@@ -1454,7 +2564,17 @@
             "Thu Jul 08 2021"
         ],
         "metaScore": "68",
-        "userScore": "6.1"
+        "userScore": "6.1",
+        "steam": {
+            "appid": 763250,
+            "name": "The Spectrum Retreat",
+            "reviews": {
+                "total_positive": 132,
+                "total_negative": 45,
+                "total_reviews": 177,
+                "steamReviewScore": 7.4576271186440675
+            }
+        }
     },
     "horizon-chase-turbo": {
         "name": "Horizon Chase Turbo",
@@ -1468,7 +2588,17 @@
             "Thu Jul 01 2021"
         ],
         "metaScore": "76",
-        "userScore": "7.6"
+        "userScore": "7.6",
+        "steam": {
+            "appid": 389140,
+            "name": "Horizon Chase Turbo",
+            "reviews": {
+                "total_positive": 3041,
+                "total_negative": 140,
+                "total_reviews": 3181,
+                "steamReviewScore": 9.559886828041495
+            }
+        }
     },
     "sonic-mania": {
         "name": "Sonic Mania",
@@ -1480,7 +2610,17 @@
             "Thu Jul 01 2021"
         ],
         "metaScore": "84",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 584400,
+            "name": "Sonic Mania",
+            "reviews": {
+                "total_positive": 16998,
+                "total_negative": 1134,
+                "total_reviews": 18132,
+                "steamReviewScore": 9.374586366644607
+            }
+        }
     },
     "hell-is-other-demons": {
         "name": "Hell is Other Demons",
@@ -1492,7 +2632,17 @@
             "Thu Jun 24 2021"
         ],
         "metaScore": "85",
-        "userScore": "8.2"
+        "userScore": "8.2",
+        "steam": {
+            "appid": 595790,
+            "name": "Hell is Other Demons",
+            "reviews": {
+                "total_positive": 241,
+                "total_negative": 17,
+                "total_reviews": 258,
+                "steamReviewScore": 9.34108527131783
+            }
+        }
     },
     "frostpunk": {
         "name": "Frostpunk",
@@ -1504,7 +2654,17 @@
             "Thu Jun 10 2021"
         ],
         "metaScore": "84",
-        "userScore": "8.4"
+        "userScore": "8.4",
+        "steam": {
+            "appid": 323190,
+            "name": "Frostpunk",
+            "reviews": {
+                "total_positive": 64832,
+                "total_negative": 5877,
+                "total_reviews": 70709,
+                "steamReviewScore": 9.168846964318545
+            }
+        }
     },
     "among-us": {
         "name": "Among Us",
@@ -1516,7 +2676,17 @@
             "Thu Jun 03 2021"
         ],
         "metaScore": "85",
-        "userScore": "6.8"
+        "userScore": "6.8",
+        "steam": {
+            "appid": 945360,
+            "name": "Among Us",
+            "reviews": {
+                "total_positive": 524299,
+                "total_negative": 44678,
+                "total_reviews": 568977,
+                "steamReviewScore": 9.214766150477084
+            }
+        }
     },
     "nba-2k21": {
         "name": "NBA 2K21",
@@ -1528,7 +2698,17 @@
             "Thu May 27 2021"
         ],
         "metaScore": "67",
-        "userScore": "1.2"
+        "userScore": "1.2",
+        "steam": {
+            "appid": 1225330,
+            "name": "NBA 2K21",
+            "reviews": {
+                "total_positive": 12066,
+                "total_negative": 16167,
+                "total_reviews": 28233,
+                "steamReviewScore": 4.2737222399319945
+            }
+        }
     },
     "the-lions-song": {
         "name": "The Lion's Song",
@@ -1540,7 +2720,17 @@
             "Thu May 20 2021"
         ],
         "metaScore": "77",
-        "userScore": "7.5"
+        "userScore": "7.5",
+        "steam": {
+            "appid": 437160,
+            "name": "The Lion's Song",
+            "reviews": {
+                "total_positive": 325,
+                "total_negative": 15,
+                "total_reviews": 340,
+                "steamReviewScore": 9.558823529411764
+            }
+        }
     },
     "pine": {
         "name": "Pine",
@@ -1552,7 +2742,17 @@
             "Thu May 13 2021"
         ],
         "metaScore": "48",
-        "userScore": "6.8"
+        "userScore": "6.8",
+        "steam": {
+            "appid": 1042780,
+            "name": "Pine",
+            "reviews": {
+                "total_positive": 1006,
+                "total_negative": 357,
+                "total_reviews": 1363,
+                "steamReviewScore": 7.380777696258254
+            }
+        }
     },
     "hand-of-fate-2": {
         "name": "Hand of Fate 2",
@@ -1564,7 +2764,17 @@
             "Thu Apr 29 2021"
         ],
         "metaScore": "80",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {
+            "appid": 456670,
+            "name": "Hand of Fate 2",
+            "reviews": {
+                "total_positive": 4021,
+                "total_negative": 697,
+                "total_reviews": 4718,
+                "steamReviewScore": 8.522679101314116
+            }
+        }
     },
     "deponia-the-complete-journey": {
         "name": "Deponia: The Complete Journey",
@@ -1576,7 +2786,17 @@
             "Thu Apr 22 2021"
         ],
         "metaScore": "74",
-        "userScore": "7.5"
+        "userScore": "7.5",
+        "steam": {
+            "appid": 292910,
+            "name": "Deponia: The Complete Journey",
+            "reviews": {
+                "total_positive": 2621,
+                "total_negative": 354,
+                "total_reviews": 2975,
+                "steamReviewScore": 8.810084033613446
+            }
+        }
     },
     "3-out-of-10-season-two": {
         "name": "3 Out Of 10: Season Two",
@@ -1588,7 +2808,8 @@
             "Thu Apr 15 2021"
         ],
         "metaScore": "79",
-        "userScore": "8.4"
+        "userScore": "8.4",
+        "steam": {}
     },
     "tales-of-the-neon-sea": {
         "name": "Tales of the Neon Sea",
@@ -1600,7 +2821,17 @@
             "Thu Apr 08 2021"
         ],
         "metaScore": "62",
-        "userScore": "7.5"
+        "userScore": "7.5",
+        "steam": {
+            "appid": 828740,
+            "name": "Tales of the Neon Sea",
+            "reviews": {
+                "total_positive": 1704,
+                "total_negative": 262,
+                "total_reviews": 1966,
+                "steamReviewScore": 8.66734486266531
+            }
+        }
     },
     "creature-in-the-well": {
         "name": "Creature in the Well",
@@ -1612,7 +2843,17 @@
             "Thu Apr 01 2021"
         ],
         "metaScore": "82",
-        "userScore": "5.4"
+        "userScore": "5.4",
+        "steam": {
+            "appid": 852300,
+            "name": "Creature in the Well",
+            "reviews": {
+                "total_positive": 186,
+                "total_negative": 60,
+                "total_reviews": 246,
+                "steamReviewScore": 7.560975609756097
+            }
+        }
     },
     "the-fall": {
         "name": "The Fall",
@@ -1624,7 +2865,17 @@
             "Thu Mar 25 2021"
         ],
         "metaScore": "76",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {
+            "appid": 290770,
+            "name": "The Fall",
+            "reviews": {
+                "total_positive": 2345,
+                "total_negative": 319,
+                "total_reviews": 2664,
+                "steamReviewScore": 8.802552552552553
+            }
+        }
     },
     "surviving-mars": {
         "name": "Surviving Mars",
@@ -1638,7 +2889,17 @@
             "Thu Oct 17 2019"
         ],
         "metaScore": "76",
-        "userScore": "7.1"
+        "userScore": "7.1",
+        "steam": {
+            "appid": 464920,
+            "name": "Surviving Mars",
+            "reviews": {
+                "total_positive": 11766,
+                "total_negative": 2073,
+                "total_reviews": 13839,
+                "steamReviewScore": 8.5020593973553
+            }
+        }
     },
     "wargame-red-dragon": {
         "name": "Wargame: Red Dragon",
@@ -1650,7 +2911,17 @@
             "Thu Mar 11 2021"
         ],
         "metaScore": "78",
-        "userScore": "7.9"
+        "userScore": "7.9",
+        "steam": {
+            "appid": 251060,
+            "name": "Wargame: Red Dragon",
+            "reviews": {
+                "total_positive": 11661,
+                "total_negative": 1460,
+                "total_reviews": 13121,
+                "steamReviewScore": 8.887279932931941
+            }
+        }
     },
     "sunless-sea": {
         "name": "Sunless Sea",
@@ -1662,10 +2933,20 @@
             "Thu Mar 04 2021"
         ],
         "metaScore": "81",
-        "userScore": "7.5"
+        "userScore": "7.5",
+        "steam": {
+            "appid": 304650,
+            "name": "Sunless Sea",
+            "reviews": {
+                "total_positive": 5691,
+                "total_negative": 1067,
+                "total_reviews": 6758,
+                "steamReviewScore": 8.421130511985794
+            }
+        }
     },
     "rage-2": {
-        "name": "Rage 2",
+        "name": "RAGE 2",
         "cleanName": "rage-2",
         "startDates": [
             "Thu Feb 18 2021"
@@ -1674,7 +2955,17 @@
             "Thu Feb 25 2021"
         ],
         "metaScore": "73",
-        "userScore": "5.5"
+        "userScore": "5.5",
+        "steam": {
+            "appid": 548570,
+            "name": "RAGE 2",
+            "reviews": {
+                "total_positive": 7954,
+                "total_negative": 4721,
+                "total_reviews": 12675,
+                "steamReviewScore": 6.27534516765286
+            }
+        }
     },
     "absolute-drift": {
         "name": "Absolute Drift",
@@ -1686,7 +2977,17 @@
             "Thu Feb 25 2021"
         ],
         "metaScore": "66",
-        "userScore": "5.8"
+        "userScore": "5.8",
+        "steam": {
+            "appid": 320140,
+            "name": "Absolute Drift",
+            "reviews": {
+                "total_positive": 1707,
+                "total_negative": 179,
+                "total_reviews": 1886,
+                "steamReviewScore": 9.050901378579002
+            }
+        }
     },
     "halcyon-6-lightspeed-edition": {
         "name": "Halcyon 6: Lightspeed Edition",
@@ -1698,10 +2999,20 @@
             "Thu Feb 11 2021"
         ],
         "metaScore": "73",
-        "userScore": "7.0"
+        "userScore": "7.0",
+        "steam": {
+            "appid": 651660,
+            "name": "Halcyon 6: Lightspeed Edition",
+            "reviews": {
+                "total_positive": 416,
+                "total_negative": 95,
+                "total_reviews": 511,
+                "steamReviewScore": 8.140900195694716
+            }
+        }
     },
     "for-the-king": {
-        "name": "For the King",
+        "name": "For The King",
         "cleanName": "for-the-king",
         "startDates": [
             "Thu Feb 04 2021",
@@ -1711,7 +3022,17 @@
             "Thu Feb 11 2021"
         ],
         "metaScore": "79",
-        "userScore": "7.1"
+        "userScore": "7.1",
+        "steam": {
+            "appid": 527230,
+            "name": "For The King",
+            "reviews": {
+                "total_positive": 18819,
+                "total_negative": 2499,
+                "total_reviews": 21318,
+                "steamReviewScore": 8.82775119617225
+            }
+        }
     },
     "metro-last-light-redux": {
         "name": "Metro: Last Light Redux",
@@ -1723,7 +3044,17 @@
             "Thu Feb 11 2021"
         ],
         "metaScore": "76",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 287390,
+            "name": "Metro: Last Light Redux",
+            "reviews": {
+                "total_positive": 41868,
+                "total_negative": 5099,
+                "total_reviews": 46967,
+                "steamReviewScore": 8.91434411395235
+            }
+        }
     },
     "dandara": {
         "name": "Dandara",
@@ -1735,10 +3066,20 @@
             "Thu Feb 04 2021"
         ],
         "metaScore": "70",
-        "userScore": "7.9"
+        "userScore": "7.9",
+        "steam": {
+            "appid": 612390,
+            "name": "Dandara: Trials of Fear Edition",
+            "reviews": {
+                "total_positive": 475,
+                "total_negative": 76,
+                "total_reviews": 551,
+                "steamReviewScore": 8.620689655172413
+            }
+        }
     },
     "star-wars-battlefront-ii": {
-        "name": "Star Wars Battlefront II",
+        "name": "STAR WARS™ Battlefront™ II",
         "cleanName": "star-wars-battlefront-ii",
         "startDates": [
             "Thu Jan 14 2021"
@@ -1747,7 +3088,17 @@
             "Thu Jan 21 2021"
         ],
         "metaScore": "78",
-        "userScore": "8.6"
+        "userScore": "8.6",
+        "steam": {
+            "appid": 1237950,
+            "name": "STAR WARS™ Battlefront™ II",
+            "reviews": {
+                "total_positive": 31481,
+                "total_negative": 4577,
+                "total_reviews": 36058,
+                "steamReviewScore": 8.730656165067392
+            }
+        }
     },
     "crying-suns": {
         "name": "Crying Suns",
@@ -1759,7 +3110,17 @@
             "Thu Jan 14 2021"
         ],
         "metaScore": "75",
-        "userScore": "7.6"
+        "userScore": "7.6",
+        "steam": {
+            "appid": 873940,
+            "name": "Crying Suns",
+            "reviews": {
+                "total_positive": 2123,
+                "total_negative": 339,
+                "total_reviews": 2462,
+                "steamReviewScore": 8.623070674248579
+            }
+        }
     },
     "jurassic-world-evolution": {
         "name": "Jurassic World Evolution",
@@ -1771,7 +3132,17 @@
             "Thu Jan 07 2021"
         ],
         "metaScore": "69",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 648350,
+            "name": "Jurassic World Evolution",
+            "reviews": {
+                "total_positive": 38118,
+                "total_negative": 6024,
+                "total_reviews": 44142,
+                "steamReviewScore": 8.635313307054506
+            }
+        }
     },
     "torchlight-ii": {
         "name": "Torchlight II",
@@ -1785,7 +3156,17 @@
             "Thu Jul 23 2020"
         ],
         "metaScore": "88",
-        "userScore": "8.5"
+        "userScore": "8.5",
+        "steam": {
+            "appid": 200710,
+            "name": "Torchlight II",
+            "reviews": {
+                "total_positive": 27892,
+                "total_negative": 2037,
+                "total_reviews": 29929,
+                "steamReviewScore": 9.319389221156737
+            }
+        }
     },
     "solitairica": {
         "name": "Solitairica",
@@ -1797,7 +3178,17 @@
             "Wed Dec 30 2020"
         ],
         "metaScore": "82",
-        "userScore": "6.6"
+        "userScore": "6.6",
+        "steam": {
+            "appid": 463980,
+            "name": "Solitairica",
+            "reviews": {
+                "total_positive": 233,
+                "total_negative": 47,
+                "total_reviews": 280,
+                "steamReviewScore": 8.321428571428571
+            }
+        }
     },
     "stranded-deep": {
         "name": "Stranded Deep",
@@ -1809,7 +3200,17 @@
             "Tue Dec 29 2020"
         ],
         "metaScore": "65",
-        "userScore": "7.0"
+        "userScore": "7.0",
+        "steam": {
+            "appid": 313120,
+            "name": "Stranded Deep",
+            "reviews": {
+                "total_positive": 26912,
+                "total_negative": 8441,
+                "total_reviews": 35353,
+                "steamReviewScore": 7.61236670155291
+            }
+        }
     },
     "night-in-the-woods": {
         "name": "Night in the Woods",
@@ -1821,10 +3222,20 @@
             "Mon Dec 28 2020"
         ],
         "metaScore": "88",
-        "userScore": "7.7"
+        "userScore": "7.7",
+        "steam": {
+            "appid": 481510,
+            "name": "Night in the Woods",
+            "reviews": {
+                "total_positive": 11712,
+                "total_negative": 696,
+                "total_reviews": 12408,
+                "steamReviewScore": 9.43907156673114
+            }
+        }
     },
     "my-time-at-portia": {
-        "name": "My Time at Portia",
+        "name": "My Time At Portia",
         "cleanName": "my-time-at-portia",
         "startDates": [
             "Sat Dec 26 2020"
@@ -1833,10 +3244,20 @@
             "Sun Dec 27 2020"
         ],
         "metaScore": "73",
-        "userScore": "6.9"
+        "userScore": "6.9",
+        "steam": {
+            "appid": 666140,
+            "name": "My Time At Portia",
+            "reviews": {
+                "total_positive": 27976,
+                "total_negative": 2205,
+                "total_reviews": 30181,
+                "steamReviewScore": 9.269407905635996
+            }
+        }
     },
     "darkest-dungeon": {
-        "name": "Darkest Dungeon",
+        "name": "Darkest Dungeon®",
         "cleanName": "darkest-dungeon",
         "startDates": [
             "Fri Dec 25 2020"
@@ -1845,10 +3266,20 @@
             "Sat Dec 26 2020"
         ],
         "metaScore": "84",
-        "userScore": "7.9"
+        "userScore": "7.9",
+        "steam": {
+            "appid": 262060,
+            "name": "Darkest Dungeon®",
+            "reviews": {
+                "total_positive": 94403,
+                "total_negative": 9048,
+                "total_reviews": 103451,
+                "steamReviewScore": 9.125383031580169
+            }
+        }
     },
     "inside": {
-        "name": "Inside",
+        "name": "INSIDE",
         "cleanName": "inside",
         "startDates": [
             "Thu Dec 24 2020",
@@ -1859,7 +3290,17 @@
             "Thu Sep 05 2019"
         ],
         "metaScore": "87",
-        "userScore": "8.6"
+        "userScore": "8.6",
+        "steam": {
+            "appid": 304430,
+            "name": "INSIDE",
+            "reviews": {
+                "total_positive": 35600,
+                "total_negative": 1249,
+                "total_reviews": 36849,
+                "steamReviewScore": 9.661049146516866
+            }
+        }
     },
     "tropico-5": {
         "name": "Tropico 5",
@@ -1871,10 +3312,20 @@
             "Thu Dec 24 2020"
         ],
         "metaScore": "75",
-        "userScore": "6.9"
+        "userScore": "6.9",
+        "steam": {
+            "appid": 245620,
+            "name": "Tropico 5",
+            "reviews": {
+                "total_positive": 7244,
+                "total_negative": 1965,
+                "total_reviews": 9209,
+                "steamReviewScore": 7.866217830383321
+            }
+        }
     },
     "metro-2033": {
-        "name": "Metro: 2033",
+        "name": "Metro 2033 Redux",
         "cleanName": "metro-2033",
         "startDates": [
             "Tue Dec 22 2020"
@@ -1883,7 +3334,17 @@
             "Wed Dec 23 2020"
         ],
         "metaScore": "81",
-        "userScore": "8.1"
+        "userScore": "8.1",
+        "steam": {
+            "appid": 286690,
+            "name": "Metro 2033 Redux",
+            "reviews": {
+                "total_positive": 51577,
+                "total_negative": 6643,
+                "total_reviews": 58220,
+                "steamReviewScore": 8.858983167296461
+            }
+        }
     },
     "alien-isolation": {
         "name": "Alien: Isolation",
@@ -1895,7 +3356,17 @@
             "Tue Dec 22 2020"
         ],
         "metaScore": "81",
-        "userScore": "8.5"
+        "userScore": "8.5",
+        "steam": {
+            "appid": 214490,
+            "name": "Alien: Isolation",
+            "reviews": {
+                "total_positive": 33142,
+                "total_negative": 2672,
+                "total_reviews": 35814,
+                "steamReviewScore": 9.253923046853187
+            }
+        }
     },
     "the-long-dark": {
         "name": "The Long Dark",
@@ -1907,10 +3378,20 @@
             "Sun Dec 20 2020"
         ],
         "metaScore": "77",
-        "userScore": "6.7"
+        "userScore": "6.7",
+        "steam": {
+            "appid": 305620,
+            "name": "The Long Dark",
+            "reviews": {
+                "total_positive": 76039,
+                "total_negative": 6777,
+                "total_reviews": 82816,
+                "steamReviewScore": 9.181679868624421
+            }
+        }
     },
     "oddworld-abes-oddysee---new-n-tasty": {
-        "name": "Oddworld: New 'n' Tasty!",
+        "name": "Oddworld: New 'n' Tasty",
         "cleanName": "oddworld-abes-oddysee---new-n-tasty",
         "startDates": [
             "Fri Dec 18 2020"
@@ -1919,7 +3400,17 @@
             "Sat Dec 19 2020"
         ],
         "metaScore": "86",
-        "userScore": "7.6"
+        "userScore": "7.6",
+        "steam": {
+            "appid": 314660,
+            "name": "Oddworld: New 'n' Tasty",
+            "reviews": {
+                "total_positive": 2243,
+                "total_negative": 306,
+                "total_reviews": 2549,
+                "steamReviewScore": 8.7995292271479
+            }
+        }
     },
     "pillars-of-eternity": {
         "name": "Pillars of Eternity",
@@ -1931,7 +3422,17 @@
             "Thu Dec 17 2020"
         ],
         "metaScore": "89",
-        "userScore": "8.3"
+        "userScore": "8.3",
+        "steam": {
+            "appid": 291650,
+            "name": "Pillars of Eternity",
+            "reviews": {
+                "total_positive": 11863,
+                "total_negative": 1709,
+                "total_reviews": 13572,
+                "steamReviewScore": 8.740789861479517
+            }
+        }
     },
     "tyranny": {
         "name": "Tyranny",
@@ -1943,10 +3444,20 @@
             "Thu Dec 17 2020"
         ],
         "metaScore": "80",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 362960,
+            "name": "Tyranny",
+            "reviews": {
+                "total_positive": 7214,
+                "total_negative": 1081,
+                "total_reviews": 8295,
+                "steamReviewScore": 8.696805304400241
+            }
+        }
     },
     "cave-story-plus": {
-        "name": "Cave Story Plus",
+        "name": "Cave Story+",
         "cleanName": "cave-story-plus",
         "startDates": [
             "Thu Dec 03 2020"
@@ -1955,7 +3466,17 @@
             "Thu Dec 10 2020"
         ],
         "metaScore": "83",
-        "userScore": "8.3"
+        "userScore": "8.3",
+        "steam": {
+            "appid": 200900,
+            "name": "Cave Story+",
+            "reviews": {
+                "total_positive": 3790,
+                "total_negative": 292,
+                "total_reviews": 4082,
+                "steamReviewScore": 9.28466438020578
+            }
+        }
     },
     "spintires-mudrunner": {
         "name": "MudRunner",
@@ -1967,7 +3488,17 @@
             "Thu Dec 03 2020"
         ],
         "metaScore": "77",
-        "userScore": "6.7"
+        "userScore": "6.7",
+        "steam": {
+            "appid": 675010,
+            "name": "MudRunner",
+            "reviews": {
+                "total_positive": 19958,
+                "total_negative": 2259,
+                "total_reviews": 22217,
+                "steamReviewScore": 8.983211054597831
+            }
+        }
     },
     "elite-dangerous": {
         "name": "Elite Dangerous",
@@ -1979,7 +3510,17 @@
             "Thu Nov 26 2020"
         ],
         "metaScore": "80",
-        "userScore": "6.7"
+        "userScore": "6.7",
+        "steam": {
+            "appid": 359320,
+            "name": "Elite Dangerous",
+            "reviews": {
+                "total_positive": 50302,
+                "total_negative": 15088,
+                "total_reviews": 65390,
+                "steamReviewScore": 7.692613549472397
+            }
+        }
     },
     "the-world-next-door": {
         "name": "The World Next Door",
@@ -1991,7 +3532,17 @@
             "Thu Nov 26 2020"
         ],
         "metaScore": "N/A",
-        "userScore": "6.6"
+        "userScore": "6.6",
+        "steam": {
+            "appid": 755470,
+            "name": "The World Next Door",
+            "reviews": {
+                "total_positive": 148,
+                "total_negative": 32,
+                "total_reviews": 180,
+                "steamReviewScore": 8.222222222222221
+            }
+        }
     },
     "the-textorcist-the-story-of-ray-bibbia": {
         "name": "The Textorcist: The Story of Ray Bibbia",
@@ -2003,7 +3554,17 @@
             "Thu Nov 19 2020"
         ],
         "metaScore": "78",
-        "userScore": "6.5"
+        "userScore": "6.5",
+        "steam": {
+            "appid": 940680,
+            "name": "The Textorcist: The Story of Ray Bibbia",
+            "reviews": {
+                "total_positive": 665,
+                "total_negative": 112,
+                "total_reviews": 777,
+                "steamReviewScore": 8.558558558558559
+            }
+        }
     },
     "dungeons-3": {
         "name": "Dungeons 3",
@@ -2015,7 +3576,17 @@
             "Thu Nov 12 2020"
         ],
         "metaScore": "75",
-        "userScore": "7.6"
+        "userScore": "7.6",
+        "steam": {
+            "appid": 493900,
+            "name": "Dungeons 3",
+            "reviews": {
+                "total_positive": 10861,
+                "total_negative": 668,
+                "total_reviews": 11529,
+                "steamReviewScore": 9.420591551739093
+            }
+        }
     },
     "ghostbusters-the-video-game-remastered": {
         "name": "Ghostbusters: The Video Game Remastered",
@@ -2027,7 +3598,17 @@
             "Thu Nov 05 2020"
         ],
         "metaScore": "67",
-        "userScore": "4.1"
+        "userScore": "4.1",
+        "steam": {
+            "appid": 1449280,
+            "name": "Ghostbusters: The Video Game Remastered",
+            "reviews": {
+                "total_positive": 824,
+                "total_negative": 69,
+                "total_reviews": 893,
+                "steamReviewScore": 9.227323628219485
+            }
+        }
     },
     "blair-witch": {
         "name": "Blair Witch",
@@ -2039,7 +3620,17 @@
             "Thu Nov 05 2020"
         ],
         "metaScore": "69",
-        "userScore": "6.3"
+        "userScore": "6.3",
+        "steam": {
+            "appid": 1092660,
+            "name": "Blair Witch",
+            "reviews": {
+                "total_positive": 3388,
+                "total_negative": 993,
+                "total_reviews": 4381,
+                "steamReviewScore": 7.733394202236932
+            }
+        }
     },
     "layers-of-fear-2": {
         "name": "Layers of Fear 2",
@@ -2051,7 +3642,17 @@
             "Thu Oct 29 2020"
         ],
         "metaScore": "70",
-        "userScore": "6.2"
+        "userScore": "6.2",
+        "steam": {
+            "appid": 1029890,
+            "name": "Layers of Fear 2",
+            "reviews": {
+                "total_positive": 1281,
+                "total_negative": 500,
+                "total_reviews": 1781,
+                "steamReviewScore": 7.192588433464346
+            }
+        }
     },
     "costume-quest-2": {
         "name": "Costume Quest 2",
@@ -2065,7 +3666,17 @@
             "Thu Oct 29 2020"
         ],
         "metaScore": "68",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 275180,
+            "name": "Costume Quest 2",
+            "reviews": {
+                "total_positive": 532,
+                "total_negative": 75,
+                "total_reviews": 607,
+                "steamReviewScore": 8.764415156507413
+            }
+        }
     },
     "amnesia-a-machine-for-pigs": {
         "name": "Amnesia: A Machine for Pigs",
@@ -2077,7 +3688,17 @@
             "Thu Oct 22 2020"
         ],
         "metaScore": "72",
-        "userScore": "5.9"
+        "userScore": "5.9",
+        "steam": {
+            "appid": 239200,
+            "name": "Amnesia: A Machine for Pigs",
+            "reviews": {
+                "total_positive": 3861,
+                "total_negative": 1843,
+                "total_reviews": 5704,
+                "steamReviewScore": 6.768934081346424
+            }
+        }
     },
     "kingdom-new-lands": {
         "name": "Kingdom: New Lands",
@@ -2090,10 +3711,20 @@
             "Thu Oct 22 2020"
         ],
         "metaScore": "74",
-        "userScore": "7.7"
+        "userScore": "7.7",
+        "steam": {
+            "appid": 496300,
+            "name": "Kingdom: New Lands",
+            "reviews": {
+                "total_positive": 6785,
+                "total_negative": 937,
+                "total_reviews": 7722,
+                "steamReviewScore": 8.786583786583787
+            }
+        }
     },
     "abzu": {
-        "name": "Abzu",
+        "name": "ABZÛ",
         "cleanName": "abzu",
         "startDates": [
             "Thu Oct 08 2020",
@@ -2103,7 +3734,17 @@
             "Thu Oct 15 2020"
         ],
         "metaScore": "83",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 384190,
+            "name": "ABZÛ",
+            "reviews": {
+                "total_positive": 16776,
+                "total_negative": 1226,
+                "total_reviews": 18002,
+                "steamReviewScore": 9.31896455949339
+            }
+        }
     },
     "pikuniku": {
         "name": "Pikuniku",
@@ -2115,7 +3756,17 @@
             "Thu Oct 08 2020"
         ],
         "metaScore": "74",
-        "userScore": "7.2"
+        "userScore": "7.2",
+        "steam": {
+            "appid": 572890,
+            "name": "Pikuniku",
+            "reviews": {
+                "total_positive": 4780,
+                "total_negative": 191,
+                "total_reviews": 4971,
+                "steamReviewScore": 9.615771474552403
+            }
+        }
     },
     "rollercoaster-tycoon-3": {
         "name": "Rollercoaster Tycoon 3",
@@ -2127,7 +3778,17 @@
             "Thu Oct 01 2020"
         ],
         "metaScore": "81",
-        "userScore": "5.4"
+        "userScore": "5.4",
+        "steam": {
+            "appid": 1368820,
+            "name": "RollerCoaster Tycoon® 3: Complete Edition",
+            "reviews": {
+                "total_positive": 937,
+                "total_negative": 168,
+                "total_reviews": 1105,
+                "steamReviewScore": 8.479638009049774
+            }
+        }
     },
     "football-manager-2022": {
         "name": "Football Manager 2022",
@@ -2139,7 +3800,17 @@
             "Thu Sep 24 2020"
         ],
         "metaScore": "85",
-        "userScore": "7.1"
+        "userScore": "7.1",
+        "steam": {
+            "appid": 1569040,
+            "name": "Football Manager 2022",
+            "reviews": {
+                "total_positive": 11772,
+                "total_negative": 957,
+                "total_reviews": 12729,
+                "steamReviewScore": 9.248173462172991
+            }
+        }
     },
     "stick-it-to-the-man!": {
         "name": "Stick It To The Man!",
@@ -2151,7 +3822,17 @@
             "Thu Sep 24 2020"
         ],
         "metaScore": "79",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 251830,
+            "name": "Stick It To The Man!",
+            "reviews": {
+                "total_positive": 414,
+                "total_negative": 22,
+                "total_reviews": 436,
+                "steamReviewScore": 9.495412844036696
+            }
+        }
     },
     "railway-empire": {
         "name": "Railway Empire",
@@ -2163,7 +3844,17 @@
             "Thu Sep 17 2020"
         ],
         "metaScore": "74",
-        "userScore": "6.8"
+        "userScore": "6.8",
+        "steam": {
+            "appid": 503940,
+            "name": "Railway Empire",
+            "reviews": {
+                "total_positive": 5190,
+                "total_negative": 1113,
+                "total_reviews": 6303,
+                "steamReviewScore": 8.23417420276059
+            }
+        }
     },
     "where-the-water-tastes-like-wine": {
         "name": "Where the Water Tastes Like Wine",
@@ -2175,10 +3866,20 @@
             "Thu Sep 17 2020"
         ],
         "metaScore": "74",
-        "userScore": "5.2"
+        "userScore": "5.2",
+        "steam": {
+            "appid": 447120,
+            "name": "Where the Water Tastes Like Wine",
+            "reviews": {
+                "total_positive": 820,
+                "total_negative": 208,
+                "total_reviews": 1028,
+                "steamReviewScore": 7.976653696498055
+            }
+        }
     },
     "into-the-breach": {
-        "name": "Into The Breach",
+        "name": "Into the Breach",
         "cleanName": "into-the-breach",
         "startDates": [
             "Thu Sep 03 2020",
@@ -2188,10 +3889,20 @@
             "Fri Dec 20 2019"
         ],
         "metaScore": "90",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 590380,
+            "name": "Into the Breach",
+            "reviews": {
+                "total_positive": 13037,
+                "total_negative": 761,
+                "total_reviews": 13798,
+                "steamReviewScore": 9.448470792868532
+            }
+        }
     },
     "hitman": {
-        "name": "Hitman",
+        "name": "HITMAN™",
         "cleanName": "hitman",
         "startDates": [
             "Thu Aug 27 2020"
@@ -2200,7 +3911,17 @@
             "Thu Sep 03 2020"
         ],
         "metaScore": "83",
-        "userScore": "7.5"
+        "userScore": "7.5",
+        "steam": {
+            "appid": 236870,
+            "name": "HITMAN™",
+            "reviews": {
+                "total_positive": 19294,
+                "total_negative": 4266,
+                "total_reviews": 23560,
+                "steamReviewScore": 8.1893039049236
+            }
+        }
     },
     "shadowrun-returns": {
         "name": "Shadowrun Returns",
@@ -2212,7 +3933,17 @@
             "Thu Sep 03 2020"
         ],
         "metaScore": "76",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {
+            "appid": 234650,
+            "name": "Shadowrun Returns",
+            "reviews": {
+                "total_positive": 7748,
+                "total_negative": 993,
+                "total_reviews": 8741,
+                "steamReviewScore": 8.86397437364146
+            }
+        }
     },
     "shadowrun-hong-kong": {
         "name": "Shadowrun: Hong Kong",
@@ -2224,10 +3955,20 @@
             "Thu Sep 03 2020"
         ],
         "metaScore": "81",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 346940,
+            "name": "Shadowrun: Hong Kong - Extended Edition",
+            "reviews": {
+                "total_positive": 2673,
+                "total_negative": 422,
+                "total_reviews": 3095,
+                "steamReviewScore": 8.636510500807756
+            }
+        }
     },
     "shadowrun-dragonfall": {
-        "name": "Shadowrun: Dragonfall",
+        "name": "Shadowrun: Dragonfall - Director's Cut",
         "cleanName": "shadowrun-dragonfall",
         "startDates": [
             "Thu Aug 27 2020"
@@ -2235,11 +3976,21 @@
         "endDates": [
             "Thu Sep 03 2020"
         ],
-        "metaScore": "81",
-        "userScore": "8.3"
+        "metaScore": "87",
+        "userScore": "8.3",
+        "steam": {
+            "appid": 300550,
+            "name": "Shadowrun: Dragonfall - Director's Cut",
+            "reviews": {
+                "total_positive": 4199,
+                "total_negative": 501,
+                "total_reviews": 4700,
+                "steamReviewScore": 8.934042553191489
+            }
+        }
     },
     "enter-the-gungeon": {
-        "name": "Enter The Gungeon",
+        "name": "Enter the Gungeon",
         "cleanName": "enter-the-gungeon",
         "startDates": [
             "Thu Jun 13 2019"
@@ -2248,7 +3999,17 @@
             "Thu Jun 20 2019"
         ],
         "metaScore": "84",
-        "userScore": "8.1"
+        "userScore": "8.1",
+        "steam": {
+            "appid": 311690,
+            "name": "Enter the Gungeon",
+            "reviews": {
+                "total_positive": 60134,
+                "total_negative": 2463,
+                "total_reviews": 62597,
+                "steamReviewScore": 9.606530664408838
+            }
+        }
     },
     "gods-trigger": {
         "name": "God's Trigger",
@@ -2260,7 +4021,17 @@
             "Thu Aug 27 2020"
         ],
         "metaScore": "75",
-        "userScore": "8.0"
+        "userScore": "8.0",
+        "steam": {
+            "appid": 488730,
+            "name": "God's Trigger",
+            "reviews": {
+                "total_positive": 260,
+                "total_negative": 92,
+                "total_reviews": 352,
+                "steamReviewScore": 7.386363636363637
+            }
+        }
     },
     "the-alto-collection": {
         "name": "The Alto Collection",
@@ -2272,7 +4043,8 @@
             "Thu Aug 20 2020"
         ],
         "metaScore": "75",
-        "userScore": "7.6"
+        "userScore": "7.6",
+        "steam": {}
     },
     "wilmots-warehouse": {
         "name": "Wilmot's Warehouse",
@@ -2284,7 +4056,17 @@
             "Thu Aug 13 2020"
         ],
         "metaScore": "85",
-        "userScore": "8.0"
+        "userScore": "8.0",
+        "steam": {
+            "appid": 839870,
+            "name": "Wilmot's Warehouse",
+            "reviews": {
+                "total_positive": 309,
+                "total_negative": 11,
+                "total_reviews": 320,
+                "steamReviewScore": 9.65625
+            }
+        }
     },
     "3-out-of-10-season-one": {
         "name": "3 Out Of 10, EP 1: Welcome To Shovelworks",
@@ -2296,10 +4078,11 @@
             "Thu Aug 13 2020"
         ],
         "metaScore": "85",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {}
     },
     "superbrothers-sword-sworcery-ep": {
-        "name": "Superbrothers: Sword Sworcery Ep",
+        "name": "Superbrothers: Sword & Sworcery EP",
         "cleanName": "superbrothers-sword-sworcery-ep",
         "startDates": [
             "Thu Jul 30 2020"
@@ -2308,7 +4091,17 @@
             "Thu Aug 06 2020"
         ],
         "metaScore": "83",
-        "userScore": "6.4"
+        "userScore": "6.4",
+        "steam": {
+            "appid": 204060,
+            "name": "Superbrothers: Sword & Sworcery EP",
+            "reviews": {
+                "total_positive": 1021,
+                "total_negative": 275,
+                "total_reviews": 1296,
+                "steamReviewScore": 7.878086419753086
+            }
+        }
     },
     "barony": {
         "name": "Barony",
@@ -2320,7 +4113,17 @@
             "Thu Aug 06 2020"
         ],
         "metaScore": "N/A",
-        "userScore": "6.7"
+        "userScore": "6.7",
+        "steam": {
+            "appid": 371970,
+            "name": "Barony",
+            "reviews": {
+                "total_positive": 2502,
+                "total_negative": 210,
+                "total_reviews": 2712,
+                "steamReviewScore": 9.225663716814159
+            }
+        }
     },
     "20xx": {
         "name": "20XX",
@@ -2332,7 +4135,17 @@
             "Thu Aug 06 2020"
         ],
         "metaScore": "77",
-        "userScore": "6.3"
+        "userScore": "6.3",
+        "steam": {
+            "appid": 322110,
+            "name": "20XX",
+            "reviews": {
+                "total_positive": 3252,
+                "total_negative": 261,
+                "total_reviews": 3513,
+                "steamReviewScore": 9.257045260461144
+            }
+        }
     },
     "tacoma": {
         "name": "Tacoma",
@@ -2344,7 +4157,17 @@
             "Thu Jul 30 2020"
         ],
         "metaScore": "76",
-        "userScore": "6.4"
+        "userScore": "6.4",
+        "steam": {
+            "appid": 343860,
+            "name": "Tacoma",
+            "reviews": {
+                "total_positive": 2247,
+                "total_negative": 320,
+                "total_reviews": 2567,
+                "steamReviewScore": 8.753408648227502
+            }
+        }
     },
     "next-up-hero": {
         "name": "Next Up Hero",
@@ -2356,7 +4179,17 @@
             "Thu Jul 30 2020"
         ],
         "metaScore": "N/A",
-        "userScore": "5.7"
+        "userScore": "5.7",
+        "steam": {
+            "appid": 667810,
+            "name": "Next Up Hero",
+            "reviews": {
+                "total_positive": 40,
+                "total_negative": 27,
+                "total_reviews": 67,
+                "steamReviewScore": 5.970149253731343
+            }
+        }
     },
     "lifeless-planet": {
         "name": "Lifeless Planet",
@@ -2368,7 +4201,17 @@
             "Thu Jul 16 2020"
         ],
         "metaScore": "59",
-        "userScore": "6.4"
+        "userScore": "6.4",
+        "steam": {
+            "appid": 261530,
+            "name": "Lifeless Planet",
+            "reviews": {
+                "total_positive": 1807,
+                "total_negative": 513,
+                "total_reviews": 2320,
+                "steamReviewScore": 7.788793103448276
+            }
+        }
     },
     "the-escapists-2": {
         "name": "The Escapists 2",
@@ -2380,7 +4223,17 @@
             "Thu Jul 16 2020"
         ],
         "metaScore": "75",
-        "userScore": "7.6"
+        "userScore": "7.6",
+        "steam": {
+            "appid": 641990,
+            "name": "The Escapists 2",
+            "reviews": {
+                "total_positive": 18004,
+                "total_negative": 1862,
+                "total_reviews": 19866,
+                "steamReviewScore": 9.062720225510922
+            }
+        }
     },
     "conan-exiles": {
         "name": "Conan Exiles",
@@ -2392,7 +4245,17 @@
             "Thu Jul 09 2020"
         ],
         "metaScore": "68",
-        "userScore": "6.5"
+        "userScore": "6.5",
+        "steam": {
+            "appid": 440900,
+            "name": "Conan Exiles",
+            "reviews": {
+                "total_positive": 46106,
+                "total_negative": 12913,
+                "total_reviews": 59019,
+                "steamReviewScore": 7.8120605228824616
+            }
+        }
     },
     "hue": {
         "name": "Hue",
@@ -2404,7 +4267,17 @@
             "Thu Jul 09 2020"
         ],
         "metaScore": "79",
-        "userScore": "7.5"
+        "userScore": "7.5",
+        "steam": {
+            "appid": 383270,
+            "name": "Hue",
+            "reviews": {
+                "total_positive": 906,
+                "total_negative": 56,
+                "total_reviews": 962,
+                "steamReviewScore": 9.417879417879417
+            }
+        }
     },
     "stranger-things-3-the-game": {
         "name": "Stranger Things 3: The Game",
@@ -2416,10 +4289,20 @@
             "Thu Jul 02 2020"
         ],
         "metaScore": "62",
-        "userScore": "4.9"
+        "userScore": "4.9",
+        "steam": {
+            "appid": 1097800,
+            "name": "Stranger Things 3: The Game",
+            "reviews": {
+                "total_positive": 445,
+                "total_negative": 59,
+                "total_reviews": 504,
+                "steamReviewScore": 8.829365079365079
+            }
+        }
     },
     "aer-memories-of-old": {
-        "name": "AER: Memories of Old",
+        "name": "AER Memories of Old",
         "cleanName": "aer-memories-of-old",
         "startDates": [
             "Thu Jun 25 2020"
@@ -2428,7 +4311,17 @@
             "Thu Jul 02 2020"
         ],
         "metaScore": "69",
-        "userScore": "6.5"
+        "userScore": "6.5",
+        "steam": {
+            "appid": 331870,
+            "name": "AER Memories of Old",
+            "reviews": {
+                "total_positive": 3212,
+                "total_negative": 447,
+                "total_reviews": 3659,
+                "steamReviewScore": 8.778354741732713
+            }
+        }
     },
     "pathway": {
         "name": "Pathway",
@@ -2440,10 +4333,20 @@
             "Thu Jun 25 2020"
         ],
         "metaScore": "68",
-        "userScore": "6.7"
+        "userScore": "6.7",
+        "steam": {
+            "appid": 546430,
+            "name": "Pathway",
+            "reviews": {
+                "total_positive": 1266,
+                "total_negative": 413,
+                "total_reviews": 1679,
+                "steamReviewScore": 7.540202501488982
+            }
+        }
     },
     "samurai-shodown": {
-        "name": "Samurai Shodown",
+        "name": "SAMURAI SHODOWN",
         "cleanName": "samurai-shodown",
         "startDates": [
             "Thu Jun 11 2020"
@@ -2452,7 +4355,17 @@
             "Thu Jun 18 2020"
         ],
         "metaScore": "76",
-        "userScore": "5.6"
+        "userScore": "5.6",
+        "steam": {
+            "appid": 1342260,
+            "name": "SAMURAI SHODOWN",
+            "reviews": {
+                "total_positive": 408,
+                "total_negative": 135,
+                "total_reviews": 543,
+                "steamReviewScore": 7.513812154696132
+            }
+        }
     },
     "overcooked!-2": {
         "name": "Overcooked! 2",
@@ -2464,19 +4377,61 @@
             "Thu Jun 11 2020"
         ],
         "metaScore": "81",
-        "userScore": "7.7"
+        "userScore": "7.7",
+        "steam": {
+            "appid": 728880,
+            "name": "Overcooked! 2",
+            "reviews": {
+                "total_positive": 28848,
+                "total_negative": 2996,
+                "total_reviews": 31844,
+                "steamReviewScore": 9.059163421680694
+            }
+        }
     },
-    "borderlands-the-handsome-collection": {
-        "name": "Borderlands: The Handsome Collection",
-        "cleanName": "borderlands-the-handsome-collection",
+    "borderlands-the-pre-sequel": {
+        "name": "Borderlands: The Pre-Sequel",
+        "cleanName": "borderlands-the-pre-sequel",
         "startDates": [
             "Thu May 28 2020"
         ],
         "endDates": [
             "Thu Jun 04 2020"
         ],
-        "metaScore": "82",
-        "userScore": "8.2"
+        "metaScore": "75",
+        "userScore": "6.5",
+        "steam": {
+            "appid": 261640,
+            "name": "Borderlands: The Pre-Sequel",
+            "reviews": {
+                "total_positive": 21800,
+                "total_negative": 4351,
+                "total_reviews": 26151,
+                "steamReviewScore": 8.336201292493595
+            }
+        }
+    },
+    "borderlands-2": {
+        "name": "Borderlands 2",
+        "cleanName": "borderlands-2",
+        "startDates": [
+            "Thu May 28 2020"
+        ],
+        "endDates": [
+            "Thu Jun 04 2020"
+        ],
+        "metaScore": "89",
+        "userScore": "8.2",
+        "steam": {
+            "appid": 49520,
+            "name": "Borderlands 2",
+            "reviews": {
+                "total_positive": 169081,
+                "total_negative": 8781,
+                "total_reviews": 177862,
+                "steamReviewScore": 9.506302639124716
+            }
+        }
     },
     "sid-meiers-civilization-vi": {
         "name": "Sid Meier's Civilization VI",
@@ -2488,7 +4443,17 @@
             "Thu May 28 2020"
         ],
         "metaScore": "88",
-        "userScore": "7.0"
+        "userScore": "7.0",
+        "steam": {
+            "appid": 289070,
+            "name": "Sid Meier's Civilization VI",
+            "reviews": {
+                "total_positive": 147537,
+                "total_negative": 27179,
+                "total_reviews": 174716,
+                "steamReviewScore": 8.444389752512649
+            }
+        }
     },
     "grand-theft-auto-v": {
         "name": "Grand Theft Auto V",
@@ -2500,10 +4465,20 @@
             "Thu May 21 2020"
         ],
         "metaScore": "96",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 271590,
+            "name": "Grand Theft Auto V",
+            "reviews": {
+                "total_positive": 1135554,
+                "total_negative": 189097,
+                "total_reviews": 1324651,
+                "steamReviewScore": 8.57247682597152
+            }
+        }
     },
     "death-coming": {
-        "name": "Death Coming",
+        "name": "DeathComing",
         "cleanName": "death-coming",
         "startDates": [
             "Thu May 07 2020"
@@ -2512,7 +4487,17 @@
             "Thu May 14 2020"
         ],
         "metaScore": "70",
-        "userScore": "5.0"
+        "userScore": "5.0",
+        "steam": {
+            "appid": 705120,
+            "name": "DeathComing",
+            "reviews": {
+                "total_positive": 2662,
+                "total_negative": 286,
+                "total_reviews": 2948,
+                "steamReviewScore": 9.029850746268657
+            }
+        }
     },
     "amnesia-the-dark-descent": {
         "name": "Amnesia: The Dark Descent",
@@ -2524,7 +4509,17 @@
             "Thu May 07 2020"
         ],
         "metaScore": "85",
-        "userScore": "8.6"
+        "userScore": "8.6",
+        "steam": {
+            "appid": 57300,
+            "name": "Amnesia: The Dark Descent",
+            "reviews": {
+                "total_positive": 15568,
+                "total_negative": 695,
+                "total_reviews": 16263,
+                "steamReviewScore": 9.572649572649572
+            }
+        }
     },
     "crashlands": {
         "name": "Crashlands",
@@ -2536,7 +4531,17 @@
             "Thu May 07 2020"
         ],
         "metaScore": "78",
-        "userScore": "7.5"
+        "userScore": "7.5",
+        "steam": {
+            "appid": 391730,
+            "name": "Crashlands",
+            "reviews": {
+                "total_positive": 2650,
+                "total_negative": 318,
+                "total_reviews": 2968,
+                "steamReviewScore": 8.928571428571429
+            }
+        }
     },
     "just-cause-4": {
         "name": "Just Cause 4",
@@ -2548,7 +4553,17 @@
             "Thu Apr 23 2020"
         ],
         "metaScore": "68",
-        "userScore": "4.7"
+        "userScore": "4.7",
+        "steam": {
+            "appid": 517630,
+            "name": "Just Cause 4",
+            "reviews": {
+                "total_positive": 10460,
+                "total_negative": 6029,
+                "total_reviews": 16489,
+                "steamReviewScore": 6.343623021408211
+            }
+        }
     },
     "wheels-of-aurelia": {
         "name": "Wheels of Aurelia",
@@ -2560,10 +4575,20 @@
             "Thu Apr 23 2020"
         ],
         "metaScore": "63",
-        "userScore": "4.5"
+        "userScore": "4.5",
+        "steam": {
+            "appid": 508740,
+            "name": "Wheels of Aurelia",
+            "reviews": {
+                "total_positive": 57,
+                "total_negative": 55,
+                "total_reviews": 112,
+                "steamReviewScore": 5.0892857142857135
+            }
+        }
     },
     "sherlock-holmes-crimes-punishments": {
-        "name": "Sherlock Holmes: Crimes & Punishments",
+        "name": "Sherlock Holmes: Crimes and Punishments",
         "cleanName": "sherlock-holmes-crimes-punishments",
         "startDates": [
             "Thu Apr 09 2020"
@@ -2572,7 +4597,17 @@
             "Thu Apr 16 2020"
         ],
         "metaScore": "77",
-        "userScore": "7.7"
+        "userScore": "7.7",
+        "steam": {
+            "appid": 241260,
+            "name": "Sherlock Holmes: Crimes and Punishments",
+            "reviews": {
+                "total_positive": 4569,
+                "total_negative": 492,
+                "total_reviews": 5061,
+                "steamReviewScore": 9.02786010669828
+            }
+        }
     },
     "close-to-the-sun": {
         "name": "Close to the Sun",
@@ -2584,7 +4619,17 @@
             "Thu Apr 16 2020"
         ],
         "metaScore": "66",
-        "userScore": "5.1"
+        "userScore": "5.1",
+        "steam": {
+            "appid": 968870,
+            "name": "Close to the Sun",
+            "reviews": {
+                "total_positive": 340,
+                "total_negative": 110,
+                "total_reviews": 450,
+                "steamReviewScore": 7.555555555555555
+            }
+        }
     },
     "gone-home": {
         "name": "Gone Home",
@@ -2596,7 +4641,17 @@
             "Thu Apr 09 2020"
         ],
         "metaScore": "86",
-        "userScore": "5.5"
+        "userScore": "5.5",
+        "steam": {
+            "appid": 232430,
+            "name": "Gone Home",
+            "reviews": {
+                "total_positive": 9462,
+                "total_negative": 2831,
+                "total_reviews": 12293,
+                "steamReviewScore": 7.697063369397218
+            }
+        }
     },
     "hob": {
         "name": "Hob",
@@ -2608,7 +4663,17 @@
             "Thu Apr 09 2020"
         ],
         "metaScore": "76",
-        "userScore": "7.5"
+        "userScore": "7.5",
+        "steam": {
+            "appid": 404680,
+            "name": "Hob",
+            "reviews": {
+                "total_positive": 3375,
+                "total_negative": 411,
+                "total_reviews": 3786,
+                "steamReviewScore": 8.914421553090332
+            }
+        }
     },
     "figment": {
         "name": "Figment",
@@ -2620,10 +4685,20 @@
             "Thu Apr 02 2020"
         ],
         "metaScore": "77",
-        "userScore": "7.1"
+        "userScore": "7.1",
+        "steam": {
+            "appid": 493540,
+            "name": "Figment",
+            "reviews": {
+                "total_positive": 668,
+                "total_negative": 90,
+                "total_reviews": 758,
+                "steamReviewScore": 8.812664907651715
+            }
+        }
     },
     "tormentor-x-punisher": {
-        "name": "Tormentor x Punisher",
+        "name": "Tormentor❌Punisher",
         "cleanName": "tormentor-x-punisher",
         "startDates": [
             "Thu Mar 26 2020"
@@ -2632,7 +4707,17 @@
             "Thu Apr 02 2020"
         ],
         "metaScore": "N/A",
-        "userScore": "6.3"
+        "userScore": "6.3",
+        "steam": {
+            "appid": 500670,
+            "name": "Tormentor❌Punisher",
+            "reviews": {
+                "total_positive": 253,
+                "total_negative": 18,
+                "total_reviews": 271,
+                "steamReviewScore": 9.335793357933579
+            }
+        }
     },
     "drawful-2": {
         "name": "Drawful 2",
@@ -2644,7 +4729,17 @@
             "Thu Apr 02 2020"
         ],
         "metaScore": "72",
-        "userScore": "5.6"
+        "userScore": "5.6",
+        "steam": {
+            "appid": 442070,
+            "name": "Drawful 2",
+            "reviews": {
+                "total_positive": 621,
+                "total_negative": 62,
+                "total_reviews": 683,
+                "steamReviewScore": 9.092240117130308
+            }
+        }
     },
     "world-war-z": {
         "name": "World War Z",
@@ -2656,7 +4751,17 @@
             "Thu Apr 02 2020"
         ],
         "metaScore": "70",
-        "userScore": "5.9"
+        "userScore": "5.9",
+        "steam": {
+            "appid": 699130,
+            "name": "World War Z: Aftermath",
+            "reviews": {
+                "total_positive": 6561,
+                "total_negative": 1230,
+                "total_reviews": 7791,
+                "steamReviewScore": 8.421255294570658
+            }
+        }
     },
     "the-stanley-parable": {
         "name": "The Stanley Parable",
@@ -2668,10 +4773,20 @@
             "Thu Mar 26 2020"
         ],
         "metaScore": "88",
-        "userScore": "8.1"
+        "userScore": "8.1",
+        "steam": {
+            "appid": 221910,
+            "name": "The Stanley Parable",
+            "reviews": {
+                "total_positive": 34662,
+                "total_negative": 2837,
+                "total_reviews": 37499,
+                "steamReviewScore": 9.24344649190645
+            }
+        }
     },
     "watch-dogs": {
-        "name": "Watch Dogs",
+        "name": "Watch_Dogs",
         "cleanName": "watch-dogs",
         "startDates": [
             "Thu Mar 19 2020"
@@ -2680,7 +4795,17 @@
             "Thu Mar 26 2020"
         ],
         "metaScore": "77",
-        "userScore": "6.1"
+        "userScore": "6.1",
+        "steam": {
+            "appid": 243470,
+            "name": "Watch_Dogs",
+            "reviews": {
+                "total_positive": 22924,
+                "total_negative": 8178,
+                "total_reviews": 31102,
+                "steamReviewScore": 7.370587100508006
+            }
+        }
     },
     "anodyne-2-return-to-dust": {
         "name": "Anodyne 2: Return to Dust",
@@ -2692,7 +4817,17 @@
             "Thu Mar 19 2020"
         ],
         "metaScore": "75",
-        "userScore": "8.0"
+        "userScore": "8.0",
+        "steam": {
+            "appid": 877810,
+            "name": "Anodyne 2: Return to Dust",
+            "reviews": {
+                "total_positive": 430,
+                "total_negative": 28,
+                "total_reviews": 458,
+                "steamReviewScore": 9.388646288209607
+            }
+        }
     },
     "a-short-hike": {
         "name": "A Short Hike",
@@ -2704,7 +4839,17 @@
             "Thu Mar 19 2020"
         ],
         "metaScore": "82",
-        "userScore": "8.5"
+        "userScore": "8.5",
+        "steam": {
+            "appid": 1055540,
+            "name": "A Short Hike",
+            "reviews": {
+                "total_positive": 9946,
+                "total_negative": 76,
+                "total_reviews": 10022,
+                "steamReviewScore": 9.924166832967472
+            }
+        }
     },
     "mutazione": {
         "name": "Mutazione",
@@ -2716,7 +4861,17 @@
             "Thu Mar 19 2020"
         ],
         "metaScore": "80",
-        "userScore": "7.5"
+        "userScore": "7.5",
+        "steam": {
+            "appid": 1080750,
+            "name": "Mutazione",
+            "reviews": {
+                "total_positive": 621,
+                "total_negative": 20,
+                "total_reviews": 641,
+                "steamReviewScore": 9.68798751950078
+            }
+        }
     },
     "gonner": {
         "name": "GoNNER",
@@ -2728,7 +4883,17 @@
             "Thu Mar 12 2020"
         ],
         "metaScore": "81",
-        "userScore": "6.6"
+        "userScore": "6.6",
+        "steam": {
+            "appid": 437570,
+            "name": "GoNNER",
+            "reviews": {
+                "total_positive": 801,
+                "total_negative": 130,
+                "total_reviews": 931,
+                "steamReviewScore": 8.603651987110634
+            }
+        }
     },
     "innerspace": {
         "name": "InnerSpace",
@@ -2740,7 +4905,17 @@
             "Thu Mar 05 2020"
         ],
         "metaScore": "65",
-        "userScore": "5.6"
+        "userScore": "5.6",
+        "steam": {
+            "appid": 347000,
+            "name": "InnerSpace",
+            "reviews": {
+                "total_positive": 63,
+                "total_negative": 38,
+                "total_reviews": 101,
+                "steamReviewScore": 6.237623762376238
+            }
+        }
     },
     "faeria": {
         "name": "Faeria",
@@ -2752,7 +4927,17 @@
             "Thu Feb 27 2020"
         ],
         "metaScore": "81",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 397060,
+            "name": "Faeria",
+            "reviews": {
+                "total_positive": 1063,
+                "total_negative": 197,
+                "total_reviews": 1260,
+                "steamReviewScore": 8.436507936507937
+            }
+        }
     },
     "aztez": {
         "name": "Aztez",
@@ -2764,10 +4949,20 @@
             "Thu Feb 20 2020"
         ],
         "metaScore": "81",
-        "userScore": "5.4"
+        "userScore": "5.4",
+        "steam": {
+            "appid": 244750,
+            "name": "Aztez",
+            "reviews": {
+                "total_positive": 102,
+                "total_negative": 32,
+                "total_reviews": 134,
+                "steamReviewScore": 7.611940298507463
+            }
+        }
     },
     "kingdom-come-deliverance": {
-        "name": "Kingdom Come:   Deliverance",
+        "name": "Kingdom Come: Deliverance",
         "cleanName": "kingdom-come-deliverance",
         "startDates": [
             "Thu Feb 13 2020"
@@ -2776,10 +4971,20 @@
             "Thu Feb 20 2020"
         ],
         "metaScore": "76",
-        "userScore": "8.0"
+        "userScore": "8.0",
+        "steam": {
+            "appid": 379430,
+            "name": "Kingdom Come: Deliverance",
+            "reviews": {
+                "total_positive": 61589,
+                "total_negative": 13553,
+                "total_reviews": 75142,
+                "steamReviewScore": 8.19634824731841
+            }
+        }
     },
     "carcassonne": {
-        "name": "Carcassonne",
+        "name": "Carcassonne: The Official Board Game",
         "cleanName": "carcassonne",
         "startDates": [
             "Thu Feb 06 2020"
@@ -2788,7 +4993,17 @@
             "Thu Feb 13 2020"
         ],
         "metaScore": "69",
-        "userScore": "6.0"
+        "userScore": "6.0",
+        "steam": {
+            "appid": 598810,
+            "name": "Carcassonne: The Official Board Game",
+            "reviews": {
+                "total_positive": 1062,
+                "total_negative": 199,
+                "total_reviews": 1261,
+                "steamReviewScore": 8.421887390959556
+            }
+        }
     },
     "ticket-to-ride": {
         "name": "Ticket to Ride",
@@ -2800,7 +5015,17 @@
             "Thu Feb 13 2020"
         ],
         "metaScore": "70",
-        "userScore": "7.2"
+        "userScore": "7.2",
+        "steam": {
+            "appid": 108200,
+            "name": "Ticket to Ride",
+            "reviews": {
+                "total_positive": 2641,
+                "total_negative": 242,
+                "total_reviews": 2883,
+                "steamReviewScore": 9.160596600763093
+            }
+        }
     },
     "farming-simulator-19": {
         "name": "Farming Simulator 19",
@@ -2812,10 +5037,20 @@
             "Thu Feb 06 2020"
         ],
         "metaScore": "73",
-        "userScore": "6.5"
+        "userScore": "6.5",
+        "steam": {
+            "appid": 787860,
+            "name": "Farming Simulator 19",
+            "reviews": {
+                "total_positive": 52332,
+                "total_negative": 3263,
+                "total_reviews": 55595,
+                "steamReviewScore": 9.413076715531973
+            }
+        }
     },
     "the-bridge-2013": {
-        "name": "The Bridge 2013",
+        "name": "The Bridge",
         "cleanName": "the-bridge-2013",
         "startDates": [
             "Thu Jan 23 2020"
@@ -2824,7 +5059,17 @@
             "Thu Jan 30 2020"
         ],
         "metaScore": "74",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {
+            "appid": 204240,
+            "name": "The Bridge",
+            "reviews": {
+                "total_positive": 2764,
+                "total_negative": 359,
+                "total_reviews": 3123,
+                "steamReviewScore": 8.850464297150175
+            }
+        }
     },
     "horace": {
         "name": "Horace",
@@ -2836,10 +5081,20 @@
             "Thu Jan 23 2020"
         ],
         "metaScore": "81",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 629090,
+            "name": "Horace",
+            "reviews": {
+                "total_positive": 254,
+                "total_negative": 38,
+                "total_reviews": 292,
+                "steamReviewScore": 8.698630136986301
+            }
+        }
     },
     "sundered": {
-        "name": "Sundered",
+        "name": "Sundered: Eldritch Edition",
         "cleanName": "sundered",
         "startDates": [
             "Thu Jan 09 2020"
@@ -2848,7 +5103,17 @@
             "Thu Jan 16 2020"
         ],
         "metaScore": "74",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {
+            "appid": 535480,
+            "name": "Sundered: Eldritch Edition",
+            "reviews": {
+                "total_positive": 2782,
+                "total_negative": 582,
+                "total_reviews": 3364,
+                "steamReviewScore": 8.269916765755053
+            }
+        }
     },
     "steep": {
         "name": "Steep",
@@ -2860,10 +5125,20 @@
             "Thu Jan 09 2020"
         ],
         "metaScore": "72",
-        "userScore": "6.8"
+        "userScore": "6.8",
+        "steam": {
+            "appid": 460920,
+            "name": "Steep",
+            "reviews": {
+                "total_positive": 17483,
+                "total_negative": 3639,
+                "total_reviews": 21122,
+                "steamReviewScore": 8.277151784868856
+            }
+        }
     },
     "darksiders": {
-        "name": "Darksiders",
+        "name": "Darksiders Warmastered Edition",
         "cleanName": "darksiders",
         "startDates": [
             "Wed Jan 01 2020"
@@ -2872,7 +5147,17 @@
             "Thu Jan 09 2020"
         ],
         "metaScore": "83",
-        "userScore": "7.7"
+        "userScore": "7.7",
+        "steam": {
+            "appid": 462780,
+            "name": "Darksiders Warmastered Edition",
+            "reviews": {
+                "total_positive": 8119,
+                "total_negative": 1179,
+                "total_reviews": 9298,
+                "steamReviewScore": 8.731985373198537
+            }
+        }
     },
     "darksiders-ii": {
         "name": "Darksiders II",
@@ -2884,7 +5169,17 @@
             "Thu Jan 09 2020"
         ],
         "metaScore": "81",
-        "userScore": "8.0"
+        "userScore": "8.0",
+        "steam": {
+            "appid": 50650,
+            "name": "Darksiders II",
+            "reviews": {
+                "total_positive": 3254,
+                "total_negative": 374,
+                "total_reviews": 3628,
+                "steamReviewScore": 8.969128996692392
+            }
+        }
     },
     "hello-neighbor": {
         "name": "Hello Neighbor",
@@ -2896,7 +5191,17 @@
             "Tue Dec 31 2019"
         ],
         "metaScore": "38",
-        "userScore": "4.9"
+        "userScore": "4.9",
+        "steam": {
+            "appid": 521890,
+            "name": "Hello Neighbor",
+            "reviews": {
+                "total_positive": 6676,
+                "total_negative": 1248,
+                "total_reviews": 7924,
+                "steamReviewScore": 8.425037859666835
+            }
+        }
     },
     "the-talos-principle": {
         "name": "The Talos Principle",
@@ -2908,7 +5213,17 @@
             "Mon Dec 30 2019"
         ],
         "metaScore": "85",
-        "userScore": "8.6"
+        "userScore": "8.6",
+        "steam": {
+            "appid": 257510,
+            "name": "The Talos Principle",
+            "reviews": {
+                "total_positive": 21984,
+                "total_negative": 1042,
+                "total_reviews": 23026,
+                "steamReviewScore": 9.547468079562233
+            }
+        }
     },
     "shadow-tactics-blades-of-the-shogun": {
         "name": "Shadow Tactics: Blades of the Shogun",
@@ -2922,7 +5237,17 @@
             "Thu Nov 17 2022"
         ],
         "metaScore": "85",
-        "userScore": "8.5"
+        "userScore": "8.5",
+        "steam": {
+            "appid": 418240,
+            "name": "Shadow Tactics: Blades of the Shogun",
+            "reviews": {
+                "total_positive": 25286,
+                "total_negative": 994,
+                "total_reviews": 26280,
+                "steamReviewScore": 9.621765601217655
+            }
+        }
     },
     "hyper-light-drifter": {
         "name": "Hyper Light Drifter",
@@ -2936,7 +5261,17 @@
             "Thu Aug 22 2019"
         ],
         "metaScore": "84",
-        "userScore": "8.2"
+        "userScore": "8.2",
+        "steam": {
+            "appid": 257850,
+            "name": "Hyper Light Drifter",
+            "reviews": {
+                "total_positive": 11876,
+                "total_negative": 740,
+                "total_reviews": 12616,
+                "steamReviewScore": 9.413443246670894
+            }
+        }
     },
     "ftl-faster-than-light": {
         "name": "FTL: Faster Than Light",
@@ -2948,7 +5283,17 @@
             "Fri Dec 27 2019"
         ],
         "metaScore": "84",
-        "userScore": "8.3"
+        "userScore": "8.3",
+        "steam": {
+            "appid": 212680,
+            "name": "FTL: Faster Than Light",
+            "reviews": {
+                "total_positive": 49857,
+                "total_negative": 2307,
+                "total_reviews": 52164,
+                "steamReviewScore": 9.55774097078445
+            }
+        }
     },
     "totally-accurate-battle-simulator": {
         "name": "Totally Accurate Battle Simulator",
@@ -2960,7 +5305,17 @@
             "Thu Dec 26 2019"
         ],
         "metaScore": "N/A",
-        "userScore": "7.7"
+        "userScore": "7.7",
+        "steam": {
+            "appid": 508440,
+            "name": "Totally Accurate Battle Simulator",
+            "reviews": {
+                "total_positive": 90286,
+                "total_negative": 1825,
+                "total_reviews": 92111,
+                "steamReviewScore": 9.801869483557882
+            }
+        }
     },
     "celeste": {
         "name": "Celeste",
@@ -2974,10 +5329,20 @@
             "Thu Sep 05 2019"
         ],
         "metaScore": "88",
-        "userScore": "8.4"
+        "userScore": "8.4",
+        "steam": {
+            "appid": 504230,
+            "name": "Celeste",
+            "reviews": {
+                "total_positive": 56226,
+                "total_negative": 1254,
+                "total_reviews": 57480,
+                "steamReviewScore": 9.781837160751564
+            }
+        }
     },
     "ape-out": {
-        "name": "Ape Out",
+        "name": "APE OUT",
         "cleanName": "ape-out",
         "startDates": [
             "Mon Dec 23 2019"
@@ -2986,7 +5351,17 @@
             "Tue Dec 24 2019"
         ],
         "metaScore": "83",
-        "userScore": "6.8"
+        "userScore": "6.8",
+        "steam": {
+            "appid": 447150,
+            "name": "APE OUT",
+            "reviews": {
+                "total_positive": 2123,
+                "total_negative": 129,
+                "total_reviews": 2252,
+                "steamReviewScore": 9.427175843694494
+            }
+        }
     },
     "little-inferno": {
         "name": "Little Inferno",
@@ -2998,10 +5373,20 @@
             "Mon Dec 23 2019"
         ],
         "metaScore": "68",
-        "userScore": "7.5"
+        "userScore": "7.5",
+        "steam": {
+            "appid": 221260,
+            "name": "Little Inferno",
+            "reviews": {
+                "total_positive": 6157,
+                "total_negative": 264,
+                "total_reviews": 6421,
+                "steamReviewScore": 9.588849088926958
+            }
+        }
     },
     "superhot": {
-        "name": "Superhot",
+        "name": "SUPERHOT",
         "cleanName": "superhot",
         "startDates": [
             "Sat Dec 21 2019"
@@ -3010,7 +5395,17 @@
             "Sun Dec 22 2019"
         ],
         "metaScore": "82",
-        "userScore": "7.6"
+        "userScore": "7.6",
+        "steam": {
+            "appid": 322500,
+            "name": "SUPERHOT",
+            "reviews": {
+                "total_positive": 19312,
+                "total_negative": 1976,
+                "total_reviews": 21288,
+                "steamReviewScore": 9.071777527245397
+            }
+        }
     },
     "towerfall-ascension": {
         "name": "TowerFall Ascension",
@@ -3022,7 +5417,17 @@
             "Sat Dec 21 2019"
         ],
         "metaScore": "87",
-        "userScore": "6.9"
+        "userScore": "6.9",
+        "steam": {
+            "appid": 251470,
+            "name": "TowerFall Ascension",
+            "reviews": {
+                "total_positive": 2318,
+                "total_negative": 111,
+                "total_reviews": 2429,
+                "steamReviewScore": 9.54302181967888
+            }
+        }
     },
     "the-wolf-among-us": {
         "name": "The Wolf Among Us",
@@ -3034,19 +5439,41 @@
             "Thu Dec 19 2019"
         ],
         "metaScore": "80",
-        "userScore": "8.8"
+        "userScore": "8.8",
+        "steam": {
+            "appid": 250320,
+            "name": "The Wolf Among Us",
+            "reviews": {
+                "total_positive": 23121,
+                "total_negative": 556,
+                "total_reviews": 23677,
+                "steamReviewScore": 9.765172952654474
+            }
+        }
     },
     "jotun-valhalla-edition": {
         "name": "Jotun: Valhalla Edition",
         "cleanName": "jotun-valhalla-edition",
         "startDates": [
+            "Thu May 12 2022",
             "Fri Dec 06 2019"
         ],
         "endDates": [
+            "Thu May 19 2022",
             "Thu Dec 12 2019"
         ],
         "metaScore": "79",
-        "userScore": "6.9"
+        "userScore": "6.9",
+        "steam": {
+            "appid": 323580,
+            "name": "Jotun: Valhalla Edition",
+            "reviews": {
+                "total_positive": 1528,
+                "total_negative": 412,
+                "total_reviews": 1940,
+                "steamReviewScore": 7.876288659793814
+            }
+        }
     },
     "rayman-legends": {
         "name": "Rayman Legends",
@@ -3058,7 +5485,17 @@
             "Fri Dec 06 2019"
         ],
         "metaScore": "89",
-        "userScore": "8.5"
+        "userScore": "8.5",
+        "steam": {
+            "appid": 242550,
+            "name": "Rayman Legends",
+            "reviews": {
+                "total_positive": 5043,
+                "total_negative": 520,
+                "total_reviews": 5563,
+                "steamReviewScore": 9.0652525615675
+            }
+        }
     },
     "bad-north": {
         "name": "Bad North",
@@ -3070,7 +5507,17 @@
             "Fri Nov 29 2019"
         ],
         "metaScore": "74",
-        "userScore": "7.0"
+        "userScore": "7.0",
+        "steam": {
+            "appid": 688420,
+            "name": "Bad North",
+            "reviews": {
+                "total_positive": 5649,
+                "total_negative": 426,
+                "total_reviews": 6075,
+                "steamReviewScore": 9.298765432098765
+            }
+        }
     },
     "the-messenger": {
         "name": "The Messenger",
@@ -3082,7 +5529,17 @@
             "Thu Nov 21 2019"
         ],
         "metaScore": "83",
-        "userScore": "7.9"
+        "userScore": "7.9",
+        "steam": {
+            "appid": 764790,
+            "name": "The Messenger",
+            "reviews": {
+                "total_positive": 6133,
+                "total_negative": 365,
+                "total_reviews": 6498,
+                "steamReviewScore": 9.438288704216681
+            }
+        }
     },
     "nuclear-throne": {
         "name": "Nuclear Throne",
@@ -3094,10 +5551,20 @@
             "Thu Nov 14 2019"
         ],
         "metaScore": "89",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 242680,
+            "name": "Nuclear Throne",
+            "reviews": {
+                "total_positive": 11691,
+                "total_negative": 360,
+                "total_reviews": 12051,
+                "steamReviewScore": 9.701269604182226
+            }
+        }
     },
     "ruiner": {
-        "name": "Ruiner",
+        "name": "RUINER",
         "cleanName": "ruiner",
         "startDates": [
             "Thu Nov 07 2019"
@@ -3106,7 +5573,17 @@
             "Thu Nov 14 2019"
         ],
         "metaScore": "75",
-        "userScore": "7.6"
+        "userScore": "7.6",
+        "steam": {
+            "appid": 464060,
+            "name": "RUINER",
+            "reviews": {
+                "total_positive": 7640,
+                "total_negative": 818,
+                "total_reviews": 8458,
+                "steamReviewScore": 9.032868290375974
+            }
+        }
     },
     "soma": {
         "name": "SOMA",
@@ -3118,7 +5595,17 @@
             "Thu Nov 07 2019"
         ],
         "metaScore": "84",
-        "userScore": "8.5"
+        "userScore": "8.5",
+        "steam": {
+            "appid": 282140,
+            "name": "SOMA",
+            "reviews": {
+                "total_positive": 28194,
+                "total_negative": 1181,
+                "total_reviews": 29375,
+                "steamReviewScore": 9.597957446808511
+            }
+        }
     },
     "costume-quest": {
         "name": "Costume Quest",
@@ -3130,7 +5617,17 @@
             "Thu Nov 07 2019"
         ],
         "metaScore": "69",
-        "userScore": "7.6"
+        "userScore": "7.6",
+        "steam": {
+            "appid": 115100,
+            "name": "Costume Quest",
+            "reviews": {
+                "total_positive": 2068,
+                "total_negative": 114,
+                "total_reviews": 2182,
+                "steamReviewScore": 9.477543538038496
+            }
+        }
     },
     "layers-of-fear": {
         "name": "Layers of Fear",
@@ -3142,10 +5639,20 @@
             "Thu Oct 31 2019"
         ],
         "metaScore": "72",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 391720,
+            "name": "Layers of Fear",
+            "reviews": {
+                "total_positive": 10055,
+                "total_negative": 1034,
+                "total_reviews": 11089,
+                "steamReviewScore": 9.067544413382631
+            }
+        }
     },
     "qube-2": {
-        "name": "QUBE 2",
+        "name": "Q.U.B.E. 2",
         "cleanName": "qube-2",
         "startDates": [
             "Thu Oct 24 2019"
@@ -3154,7 +5661,17 @@
             "Thu Oct 31 2019"
         ],
         "metaScore": "76",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 359100,
+            "name": "Q.U.B.E. 2",
+            "reviews": {
+                "total_positive": 606,
+                "total_negative": 115,
+                "total_reviews": 721,
+                "steamReviewScore": 8.40499306518724
+            }
+        }
     },
     "alan-wakes-american-nightmare": {
         "name": "Alan Wake's American Nightmare",
@@ -3166,7 +5683,17 @@
             "Thu Oct 24 2019"
         ],
         "metaScore": "73",
-        "userScore": "6.6"
+        "userScore": "6.6",
+        "steam": {
+            "appid": 202750,
+            "name": "Alan Wake's American Nightmare",
+            "reviews": {
+                "total_positive": 3511,
+                "total_negative": 1507,
+                "total_reviews": 5018,
+                "steamReviewScore": 6.996811478676763
+            }
+        }
     },
     "observer": {
         "name": "Observer",
@@ -3178,7 +5705,17 @@
             "Thu Oct 24 2019"
         ],
         "metaScore": "78",
-        "userScore": "7.6"
+        "userScore": "7.6",
+        "steam": {
+            "appid": 514900,
+            "name": "Observer",
+            "reviews": {
+                "total_positive": 3151,
+                "total_negative": 779,
+                "total_reviews": 3930,
+                "steamReviewScore": 8.017811704834605
+            }
+        }
     },
     "everything": {
         "name": "Everything",
@@ -3190,10 +5727,20 @@
             "Thu Oct 03 2019"
         ],
         "metaScore": "78",
-        "userScore": "5.6"
+        "userScore": "5.6",
+        "steam": {
+            "appid": 582270,
+            "name": "Everything",
+            "reviews": {
+                "total_positive": 2319,
+                "total_negative": 446,
+                "total_reviews": 2765,
+                "steamReviewScore": 8.386980108499095
+            }
+        }
     },
     "metro-2033-redux": {
-        "name": "Metro 2033: Redux",
+        "name": "Metro 2033 Redux",
         "cleanName": "metro-2033-redux",
         "startDates": [
             "Thu Sep 26 2019"
@@ -3202,10 +5749,20 @@
             "Thu Oct 03 2019"
         ],
         "metaScore": "90",
-        "userScore": "8.1"
+        "userScore": "8.1",
+        "steam": {
+            "appid": 286690,
+            "name": "Metro 2033 Redux",
+            "reviews": {
+                "total_positive": 51576,
+                "total_negative": 6643,
+                "total_reviews": 58219,
+                "steamReviewScore": 8.858963568594444
+            }
+        }
     },
     "lego-batman-2-dc-super-heroes": {
-        "name": "Lego Batman 2: DC Super Heroes",
+        "name": "LEGO® Batman™ 2: DC Super Heroes",
         "cleanName": "lego-batman-2-dc-super-heroes",
         "startDates": [
             "Thu Sep 19 2019"
@@ -3214,10 +5771,20 @@
             "Thu Sep 26 2019"
         ],
         "metaScore": "81",
-        "userScore": "7.2"
+        "userScore": "7.2",
+        "steam": {
+            "appid": 213330,
+            "name": "LEGO® Batman™ 2: DC Super Heroes",
+            "reviews": {
+                "total_positive": 3403,
+                "total_negative": 222,
+                "total_reviews": 3625,
+                "steamReviewScore": 9.387586206896552
+            }
+        }
     },
     "lego-batman-the-videogame": {
-        "name": "Lego Batman: The Videogame",
+        "name": "LEGO® Batman™: The Videogame",
         "cleanName": "lego-batman-the-videogame",
         "startDates": [
             "Thu Sep 19 2019"
@@ -3226,10 +5793,20 @@
             "Thu Sep 26 2019"
         ],
         "metaScore": "80",
-        "userScore": "7.0"
+        "userScore": "7.0",
+        "steam": {
+            "appid": 21000,
+            "name": "LEGO® Batman™: The Videogame",
+            "reviews": {
+                "total_positive": 5272,
+                "total_negative": 654,
+                "total_reviews": 5926,
+                "steamReviewScore": 8.89638879514006
+            }
+        }
     },
     "lego-batman-3-beyond-gotham": {
-        "name": "Lego Batman 3: Beyond Gotham",
+        "name": "LEGO® Batman™ 3: Beyond Gotham",
         "cleanName": "lego-batman-3-beyond-gotham",
         "startDates": [
             "Thu Sep 19 2019"
@@ -3238,7 +5815,17 @@
             "Thu Sep 26 2019"
         ],
         "metaScore": "73",
-        "userScore": "6.7"
+        "userScore": "6.7",
+        "steam": {
+            "appid": 313690,
+            "name": "LEGO® Batman™ 3: Beyond Gotham",
+            "reviews": {
+                "total_positive": 3827,
+                "total_negative": 456,
+                "total_reviews": 4283,
+                "steamReviewScore": 8.935325706280645
+            }
+        }
     },
     "batman-arkham-asylum": {
         "name": "Batman: Arkham Asylum",
@@ -3250,10 +5837,20 @@
             "Thu Sep 26 2019"
         ],
         "metaScore": "91",
-        "userScore": "8.6"
+        "userScore": "8.6",
+        "steam": {
+            "appid": 35140,
+            "name": "Batman: Arkham Asylum Game of the Year Edition",
+            "reviews": {
+                "total_positive": 31070,
+                "total_negative": 1208,
+                "total_reviews": 32278,
+                "steamReviewScore": 9.625751285705434
+            }
+        }
     },
     "batman-arkham-city": {
-        "name": "Batman: Arkham City",
+        "name": "Batman: Arkham City™",
         "cleanName": "batman-arkham-city",
         "startDates": [
             "Thu Sep 19 2019"
@@ -3262,10 +5859,20 @@
             "Thu Sep 26 2019"
         ],
         "metaScore": "91",
-        "userScore": "8.7"
+        "userScore": "8.7",
+        "steam": {
+            "appid": 200260,
+            "name": "Batman: Arkham City - Game of the Year Edition",
+            "reviews": {
+                "total_positive": 33216,
+                "total_negative": 1543,
+                "total_reviews": 34759,
+                "steamReviewScore": 9.556086193503841
+            }
+        }
     },
     "batman-arkham-knight": {
-        "name": "Batman: Arkham Knight",
+        "name": "Batman™: Arkham Knight",
         "cleanName": "batman-arkham-knight",
         "startDates": [
             "Thu Sep 19 2019"
@@ -3274,7 +5881,17 @@
             "Thu Sep 26 2019"
         ],
         "metaScore": "70",
-        "userScore": "4.0"
+        "userScore": "4.0",
+        "steam": {
+            "appid": 208650,
+            "name": "Batman™: Arkham Knight",
+            "reviews": {
+                "total_positive": 53344,
+                "total_negative": 6332,
+                "total_reviews": 59676,
+                "steamReviewScore": 8.93893692606743
+            }
+        }
     },
     "conarium": {
         "name": "Conarium",
@@ -3286,10 +5903,20 @@
             "Thu Sep 19 2019"
         ],
         "metaScore": "71",
-        "userScore": "6.3"
+        "userScore": "6.3",
+        "steam": {
+            "appid": 313780,
+            "name": "Conarium",
+            "reviews": {
+                "total_positive": 1232,
+                "total_negative": 339,
+                "total_reviews": 1571,
+                "steamReviewScore": 7.84213876511776
+            }
+        }
     },
     "the-end-is-nigh": {
-        "name": "The End is Nigh",
+        "name": "The End Is Nigh",
         "cleanName": "the-end-is-nigh",
         "startDates": [
             "Thu Sep 05 2019"
@@ -3298,10 +5925,20 @@
             "Thu Sep 12 2019"
         ],
         "metaScore": "84",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {
+            "appid": 583470,
+            "name": "The End Is Nigh",
+            "reviews": {
+                "total_positive": 2301,
+                "total_negative": 155,
+                "total_reviews": 2456,
+                "steamReviewScore": 9.368892508143322
+            }
+        }
     },
     "fez": {
-        "name": "Fez",
+        "name": "FEZ",
         "cleanName": "fez",
         "startDates": [
             "Thu Aug 22 2019"
@@ -3310,7 +5947,17 @@
             "Thu Aug 29 2019"
         ],
         "metaScore": "91",
-        "userScore": "6.7"
+        "userScore": "6.7",
+        "steam": {
+            "appid": 224760,
+            "name": "FEZ",
+            "reviews": {
+                "total_positive": 8771,
+                "total_negative": 644,
+                "total_reviews": 9415,
+                "steamReviewScore": 9.315985130111525
+            }
+        }
     },
     "gnog": {
         "name": "GNOG",
@@ -3322,7 +5969,17 @@
             "Thu Aug 15 2019"
         ],
         "metaScore": "77",
-        "userScore": "6.4"
+        "userScore": "6.4",
+        "steam": {
+            "appid": 290510,
+            "name": "GNOG",
+            "reviews": {
+                "total_positive": 305,
+                "total_negative": 25,
+                "total_reviews": 330,
+                "steamReviewScore": 9.242424242424242
+            }
+        }
     },
     "for-honor": {
         "name": "For Honor",
@@ -3334,7 +5991,17 @@
             "Fri Aug 09 2019"
         ],
         "metaScore": "76",
-        "userScore": "5.2"
+        "userScore": "5.2",
+        "steam": {
+            "appid": 304390,
+            "name": "For Honor",
+            "reviews": {
+                "total_positive": 51064,
+                "total_negative": 23391,
+                "total_reviews": 74455,
+                "steamReviewScore": 6.858370828016923
+            }
+        }
     },
     "alan-wake": {
         "name": "Alan Wake",
@@ -3346,7 +6013,17 @@
             "Fri Aug 09 2019"
         ],
         "metaScore": "83",
-        "userScore": "8.0"
+        "userScore": "8.0",
+        "steam": {
+            "appid": 108710,
+            "name": "Alan Wake",
+            "reviews": {
+                "total_positive": 24564,
+                "total_negative": 2569,
+                "total_reviews": 27133,
+                "steamReviewScore": 9.053182471529134
+            }
+        }
     },
     "moonlighter": {
         "name": "Moonlighter",
@@ -3358,7 +6035,17 @@
             "Fri Aug 02 2019"
         ],
         "metaScore": "74",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 606150,
+            "name": "Moonlighter",
+            "reviews": {
+                "total_positive": 9037,
+                "total_negative": 1799,
+                "total_reviews": 10836,
+                "steamReviewScore": 8.339793281653748
+            }
+        }
     },
     "this-war-of-mine": {
         "name": "This War of Mine",
@@ -3370,7 +6057,17 @@
             "Fri Aug 02 2019"
         ],
         "metaScore": "83",
-        "userScore": "8.3"
+        "userScore": "8.3",
+        "steam": {
+            "appid": 282070,
+            "name": "This War of Mine",
+            "reviews": {
+                "total_positive": 59022,
+                "total_negative": 3262,
+                "total_reviews": 62284,
+                "steamReviewScore": 9.476269989082269
+            }
+        }
     },
     "limbo": {
         "name": "LIMBO",
@@ -3382,7 +6079,17 @@
             "Thu Jul 25 2019"
         ],
         "metaScore": "88",
-        "userScore": "8.1"
+        "userScore": "8.1",
+        "steam": {
+            "appid": 48000,
+            "name": "LIMBO",
+            "reviews": {
+                "total_positive": 21709,
+                "total_negative": 1574,
+                "total_reviews": 23283,
+                "steamReviewScore": 9.323970278744149
+            }
+        }
     },
     "torchlight": {
         "name": "Torchlight",
@@ -3394,7 +6101,17 @@
             "Thu Jul 18 2019"
         ],
         "metaScore": "83",
-        "userScore": "7.9"
+        "userScore": "7.9",
+        "steam": {
+            "appid": 41500,
+            "name": "Torchlight",
+            "reviews": {
+                "total_positive": 4069,
+                "total_negative": 378,
+                "total_reviews": 4447,
+                "steamReviewScore": 9.149988756465033
+            }
+        }
     },
     "overcooked": {
         "name": "Overcooked",
@@ -3406,7 +6123,17 @@
             "Thu Jul 11 2019"
         ],
         "metaScore": "81",
-        "userScore": "7.8"
+        "userScore": "7.8",
+        "steam": {
+            "appid": 448510,
+            "name": "Overcooked",
+            "reviews": {
+                "total_positive": 9466,
+                "total_negative": 929,
+                "total_reviews": 10395,
+                "steamReviewScore": 9.106301106301107
+            }
+        }
     },
     "last-day-of-june": {
         "name": "Last Day of June",
@@ -3418,7 +6145,17 @@
             "Thu Jul 04 2019"
         ],
         "metaScore": "75",
-        "userScore": "7.2"
+        "userScore": "7.2",
+        "steam": {
+            "appid": 635320,
+            "name": "Last Day of June",
+            "reviews": {
+                "total_positive": 2005,
+                "total_negative": 256,
+                "total_reviews": 2261,
+                "steamReviewScore": 8.867757629367537
+            }
+        }
     },
     "rime": {
         "name": "RiME",
@@ -3430,7 +6167,17 @@
             "Thu May 30 2019"
         ],
         "metaScore": "78",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 493200,
+            "name": "RiME",
+            "reviews": {
+                "total_positive": 2693,
+                "total_negative": 283,
+                "total_reviews": 2976,
+                "steamReviewScore": 9.049059139784946
+            }
+        }
     },
     "stories-untold": {
         "name": "Stories Untold",
@@ -3442,7 +6189,17 @@
             "Thu May 30 2019"
         ],
         "metaScore": "81",
-        "userScore": "7.0"
+        "userScore": "7.0",
+        "steam": {
+            "appid": 558420,
+            "name": "Stories Untold",
+            "reviews": {
+                "total_positive": 2991,
+                "total_negative": 448,
+                "total_reviews": 3439,
+                "steamReviewScore": 8.697295725501599
+            }
+        }
     },
     "world-of-goo": {
         "name": "World of Goo",
@@ -3454,7 +6211,17 @@
             "Thu May 16 2019"
         ],
         "metaScore": "90",
-        "userScore": "8.4"
+        "userScore": "8.4",
+        "steam": {
+            "appid": 22000,
+            "name": "World of Goo",
+            "reviews": {
+                "total_positive": 3461,
+                "total_negative": 200,
+                "total_reviews": 3661,
+                "steamReviewScore": 9.453701174542475
+            }
+        }
     },
     "transistor": {
         "name": "Transistor",
@@ -3466,7 +6233,17 @@
             "Thu May 02 2019"
         ],
         "metaScore": "83",
-        "userScore": "8.4"
+        "userScore": "8.4",
+        "steam": {
+            "appid": 237930,
+            "name": "Transistor",
+            "reviews": {
+                "total_positive": 24283,
+                "total_negative": 1507,
+                "total_reviews": 25790,
+                "steamReviewScore": 9.41566498642885
+            }
+        }
     },
     "the-witness": {
         "name": "The Witness",
@@ -3478,7 +6255,17 @@
             "Thu Apr 18 2019"
         ],
         "metaScore": "87",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 210970,
+            "name": "The Witness",
+            "reviews": {
+                "total_positive": 10017,
+                "total_negative": 1613,
+                "total_reviews": 11630,
+                "steamReviewScore": 8.613069647463456
+            }
+        }
     },
     "oxenfree": {
         "name": "Oxenfree",
@@ -3490,7 +6277,17 @@
             "Thu Apr 04 2019"
         ],
         "metaScore": "80",
-        "userScore": "7.7"
+        "userScore": "7.7",
+        "steam": {
+            "appid": 388880,
+            "name": "Oxenfree",
+            "reviews": {
+                "total_positive": 7435,
+                "total_negative": 603,
+                "total_reviews": 8038,
+                "steamReviewScore": 9.24981338641453
+            }
+        }
     },
     "slime-rancher": {
         "name": "Slime Rancher",
@@ -3502,7 +6299,17 @@
             "Thu Mar 21 2019"
         ],
         "metaScore": "81",
-        "userScore": "8.1"
+        "userScore": "8.1",
+        "steam": {
+            "appid": 433340,
+            "name": "Slime Rancher",
+            "reviews": {
+                "total_positive": 87590,
+                "total_negative": 1848,
+                "total_reviews": 89438,
+                "steamReviewScore": 9.793376417182852
+            }
+        }
     },
     "thimbleweed-park": {
         "name": "Thimbleweed Park",
@@ -3514,7 +6321,17 @@
             "Thu Mar 07 2019"
         ],
         "metaScore": "84",
-        "userScore": "8.1"
+        "userScore": "8.1",
+        "steam": {
+            "appid": 569860,
+            "name": "Thimbleweed Park",
+            "reviews": {
+                "total_positive": 2722,
+                "total_negative": 192,
+                "total_reviews": 2914,
+                "steamReviewScore": 9.341111873713109
+            }
+        }
     },
     "axiom-verge": {
         "name": "Axiom Verge",
@@ -3526,7 +6343,17 @@
             "Fri Feb 22 2019"
         ],
         "metaScore": "80",
-        "userScore": "7.7"
+        "userScore": "7.7",
+        "steam": {
+            "appid": 332200,
+            "name": "Axiom Verge",
+            "reviews": {
+                "total_positive": 4106,
+                "total_negative": 368,
+                "total_reviews": 4474,
+                "steamReviewScore": 9.177469825659365
+            }
+        }
     },
     "the-jackbox-party-pack": {
         "name": "The Jackbox Party Pack",
@@ -3538,7 +6365,17 @@
             "Thu Feb 07 2019"
         ],
         "metaScore": "76",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 331670,
+            "name": "The Jackbox Party Pack",
+            "reviews": {
+                "total_positive": 1141,
+                "total_negative": 103,
+                "total_reviews": 1244,
+                "steamReviewScore": 9.172025723472668
+            }
+        }
     },
     "what-remains-of-edith-finch": {
         "name": "What Remains of Edith Finch",
@@ -3550,7 +6387,17 @@
             "Thu Jan 24 2019"
         ],
         "metaScore": "89",
-        "userScore": "8.4"
+        "userScore": "8.4",
+        "steam": {
+            "appid": 501300,
+            "name": "What Remains of Edith Finch",
+            "reviews": {
+                "total_positive": 25565,
+                "total_negative": 1232,
+                "total_reviews": 26797,
+                "steamReviewScore": 9.540247042579393
+            }
+        }
     },
     "super-meat-boy": {
         "name": "Super Meat Boy",
@@ -3562,7 +6409,17 @@
             "Thu Jan 10 2019"
         ],
         "metaScore": "87",
-        "userScore": "8.2"
+        "userScore": "8.2",
+        "steam": {
+            "appid": 40800,
+            "name": "Super Meat Boy",
+            "reviews": {
+                "total_positive": 21225,
+                "total_negative": 1176,
+                "total_reviews": 22401,
+                "steamReviewScore": 9.47502343645373
+            }
+        }
     },
     "subnautica": {
         "name": "Subnautica",
@@ -3574,7 +6431,17 @@
             "Thu Dec 27 2018"
         ],
         "metaScore": "87",
-        "userScore": "8.6"
+        "userScore": "8.6",
+        "steam": {
+            "appid": 264710,
+            "name": "Subnautica",
+            "reviews": {
+                "total_positive": 183578,
+                "total_negative": 6655,
+                "total_reviews": 190233,
+                "steamReviewScore": 9.650165849248026
+            }
+        }
     },
     "fort-triumph": {
         "name": "Fort Triumph",
@@ -3586,10 +6453,20 @@
             "Thu Dec 08 2022"
         ],
         "metaScore": "74",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 612570,
+            "name": "Fort Triumph",
+            "reviews": {
+                "total_positive": 488,
+                "total_negative": 130,
+                "total_reviews": 618,
+                "steamReviewScore": 7.896440129449838
+            }
+        }
     },
     "rpg-in-a-box": {
-        "name": "RPG In A Box",
+        "name": "RPG in a Box",
         "cleanName": "rpg-in-a-box",
         "startDates": [
             "Thu Dec 01 2022"
@@ -3598,7 +6475,17 @@
             "Thu Dec 08 2022"
         ],
         "metaScore": "N/A",
-        "userScore": "N/A"
+        "userScore": "N/A",
+        "steam": {
+            "appid": 498310,
+            "name": "RPG in a Box",
+            "reviews": {
+                "total_positive": 115,
+                "total_negative": 9,
+                "total_reviews": 124,
+                "steamReviewScore": 9.274193548387096
+            }
+        }
     },
     "wildcat-gun-machine": {
         "name": "Wildcat Gun Machine",
@@ -3610,7 +6497,17 @@
             "Thu Dec 15 2022"
         ],
         "metaScore": "63",
-        "userScore": "N/A"
+        "userScore": "N/A",
+        "steam": {
+            "appid": 1288610,
+            "name": "Wildcat Gun Machine",
+            "reviews": {
+                "total_positive": 35,
+                "total_negative": 18,
+                "total_reviews": 53,
+                "steamReviewScore": 6.60377358490566
+            }
+        }
     },
     "saints-row-iv": {
         "name": "Saints Row IV",
@@ -3622,7 +6519,17 @@
             "Thu Dec 15 2022"
         ],
         "metaScore": "86",
-        "userScore": "7.4"
+        "userScore": "7.4",
+        "steam": {
+            "appid": 206420,
+            "name": "Saints Row IV",
+            "reviews": {
+                "total_positive": 49702,
+                "total_negative": 6081,
+                "total_reviews": 55783,
+                "steamReviewScore": 8.909882939246724
+            }
+        }
     },
     "bloons-td-6": {
         "name": "Bloons TD 6",
@@ -3634,7 +6541,17 @@
             "Thu Dec 22 2022"
         ],
         "metaScore": "N/A",
-        "userScore": "8.2"
+        "userScore": "8.2",
+        "steam": {
+            "appid": 960090,
+            "name": "Bloons TD 6",
+            "reviews": {
+                "total_positive": 193625,
+                "total_negative": 4941,
+                "total_reviews": 198566,
+                "steamReviewScore": 9.75116585921054
+            }
+        }
     },
     "sable": {
         "name": "Sable",
@@ -3646,7 +6563,17 @@
             "Mon Dec 19 2022"
         ],
         "metaScore": "76",
-        "userScore": "7.2"
+        "userScore": "7.2",
+        "steam": {
+            "appid": 757310,
+            "name": "Sable",
+            "reviews": {
+                "total_positive": 2411,
+                "total_negative": 368,
+                "total_reviews": 2779,
+                "steamReviewScore": 8.675782655631522
+            }
+        }
     },
     "thems-fightin-herds": {
         "name": "Them's Fightin' Herds",
@@ -3658,10 +6585,20 @@
             "Tue Dec 20 2022"
         ],
         "metaScore": "N/A",
-        "userScore": "8.6"
+        "userScore": "8.6",
+        "steam": {
+            "appid": 574980,
+            "name": "Them's Fightin' Herds",
+            "reviews": {
+                "total_positive": 2474,
+                "total_negative": 166,
+                "total_reviews": 2640,
+                "steamReviewScore": 9.371212121212121
+            }
+        }
     },
     "lego-builders-journey": {
-        "name": "Lego Builder's Journey",
+        "name": "LEGO® Builder's Journey",
         "cleanName": "lego-builders-journey",
         "startDates": [
             "Wed Dec 21 2022"
@@ -3670,7 +6607,17 @@
             "Thu Dec 22 2022"
         ],
         "metaScore": "79",
-        "userScore": "6.9"
+        "userScore": "6.9",
+        "steam": {
+            "appid": 1544360,
+            "name": "LEGO® Builder's Journey",
+            "reviews": {
+                "total_positive": 2063,
+                "total_negative": 418,
+                "total_reviews": 2481,
+                "steamReviewScore": 8.315195485691254
+            }
+        }
     },
     "fallout": {
         "name": "Fallout",
@@ -3682,7 +6629,17 @@
             "Fri Dec 23 2022"
         ],
         "metaScore": "89",
-        "userScore": "8.8"
+        "userScore": "8.8",
+        "steam": {
+            "appid": 38400,
+            "name": "Fallout",
+            "reviews": {
+                "total_positive": 9341,
+                "total_negative": 519,
+                "total_reviews": 9860,
+                "steamReviewScore": 9.473630831643002
+            }
+        }
     },
     "fallout-2": {
         "name": "Fallout 2",
@@ -3694,7 +6651,17 @@
             "Fri Dec 23 2022"
         ],
         "metaScore": "86",
-        "userScore": "9.1"
+        "userScore": "9.1",
+        "steam": {
+            "appid": 38410,
+            "name": "Fallout 2",
+            "reviews": {
+                "total_positive": 8560,
+                "total_negative": 522,
+                "total_reviews": 9082,
+                "steamReviewScore": 9.425236731997357
+            }
+        }
     },
     "fallout-tactics-brotherhood-of-steel": {
         "name": "Fallout Tactics: Brotherhood of Steel",
@@ -3706,7 +6673,17 @@
             "Fri Dec 23 2022"
         ],
         "metaScore": "82",
-        "userScore": "7.7"
+        "userScore": "7.7",
+        "steam": {
+            "appid": 38420,
+            "name": "Fallout Tactics: Brotherhood of Steel",
+            "reviews": {
+                "total_positive": 1319,
+                "total_negative": 321,
+                "total_reviews": 1640,
+                "steamReviewScore": 8.042682926829269
+            }
+        }
     },
     "encased-a-sci-fi-post-apocalyptic-rpg": {
         "name": "Encased",
@@ -3718,6 +6695,16 @@
             "Sat Dec 24 2022"
         ],
         "metaScore": "73",
-        "userScore": "7.3"
+        "userScore": "7.3",
+        "steam": {
+            "appid": 921800,
+            "name": "Encased",
+            "reviews": {
+                "total_positive": 2531,
+                "total_negative": 656,
+                "total_reviews": 3187,
+                "steamReviewScore": 7.9416379039849385
+            }
+        }
     }
 }
