@@ -9,6 +9,7 @@ import {
 
 import React, { useState, useEffect } from "react";
 import { DataGrid, GridToolbar } from "@mui/x-data-grid";
+import Tooltip from '@mui/material/Tooltip';
 
 function App() {
   const columns = [
@@ -42,11 +43,33 @@ function App() {
       flex: 1,
     },
     {
-      field: "multipliedScore",
-      headerName: "Multiplied Score",
+      field: "steamData",
+      headerName: "Steam Reviews",
       type: "string",
       minWidth: 120,
-      flex: 2,
+      flex: 1,
+      renderCell: (params) => {
+        // console.warn('25', params)
+        const toolTipText = `${params.row.steamData.total_positive} Positive / ${params.row.steamData.total_reviews} Total`
+
+        return (
+          <Tooltip title={toolTipText}>
+            <a href={params.row.steamData.href}>
+              {params.row.steamData.score}
+            </a>
+          </Tooltip>
+        )
+      },
+
+      valueGetter: (params) => params.row.steamData.score
+
+    },
+    {
+      field: "averageScore",
+      headerName: "Avg Score",
+      type: "string",
+      minWidth: 90,
+      flex: 1,
     },
     {
       field: "date",
@@ -63,12 +86,12 @@ function App() {
 
     if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
       return console.warn('DEV mode using local game list')
-
     }
 
     fetch('https://raw.githubusercontent.com/JZ6/RatingEpicGames/main/src/data/freeGamesList.json')
       .then(data => data.json())
       .then(json => setRows(createRows(json)))
+      .then(() => console.log('Fetched game list from Github 1.1.0'))
       .catch(console.error);
 
   }, [])
