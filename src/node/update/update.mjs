@@ -9,6 +9,10 @@ import {
     addSteamReviewScore
 } from './steam.mjs';
 
+import {
+    addMetacriticScores
+} from './metacritic.mjs';
+
 import importedGamesList from '../../data/freeGamesList.json' assert { type: "json" }
 
 function initGameObj(modifiedGameList, name) {
@@ -72,6 +76,8 @@ export async function addGame(name, giveAwayDate = new Date(), period = 7) {
             addSteamReviewScore(gameDataObj)
         )
     }
+
+    addMetacriticScores(gameDataObj)
 
 
     await Promise.all(fetchingPromises);

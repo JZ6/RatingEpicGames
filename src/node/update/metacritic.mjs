@@ -1,3 +1,3 @@
-export async function addSteamReviewScore(gameDataObj, overWrite = false) {
+export async function addMetacriticScores(gameDataObj, overWrite = false) {
     
 }

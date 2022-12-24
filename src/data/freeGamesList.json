@@ -7600,17 +7600,15 @@
             "urlName": "fallout-tactics-brotherhood-of-steel"
         }
     },
-    "encased-a-sci-fi-post-apocalyptic-rpg": {
+    "encased": {
         "name": "Encased",
-        "cleanName": "encased-a-sci-fi-post-apocalyptic-rpg",
+        "cleanName": "encased",
         "startDates": [
             "Fri Dec 23 2022"
         ],
         "endDates": [
             "Sat Dec 24 2022"
         ],
-        "metaScore": "73",
-        "userScore": "7.3",
         "steam": {
             "appid": 921800,
             "name": "Encased",
@@ -7620,6 +7618,11 @@
                 "total_reviews": 3187,
                 "steamReviewScore": 7.9416379039849385
             }
+        },
+        "metacritic": {
+            "metaScore": "73",
+            "userScore": "7.3",
+            "urlName": "encased-a-sci-fi-post-apocalyptic-rpg"
         }
     }
 }
