@@ -3707,5 +3707,17 @@
         ],
         "metaScore": "82",
         "userScore": "7.7"
+    },
+    "encased-a-sci-fi-post-apocalyptic-rpg": {
+        "name": "Encased",
+        "cleanName": "encased-a-sci-fi-post-apocalyptic-rpg",
+        "startDates": [
+            "Fri Dec 23 2022"
+        ],
+        "endDates": [
+            "Sat Dec 24 2022"
+        ],
+        "metaScore": "73",
+        "userScore": "7.3"
     }
 }
