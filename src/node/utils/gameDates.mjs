@@ -1,7 +1,7 @@
 import fs from "fs";
 import { cleanGameName, writeGameList } from "../../utils/index.js";
 
-import importedGamesList from "../freeGamesList.json" assert { type: "json" };
+import importedGamesList from "../../data/freeGamesList.json" assert { type: "json" };
 
 function readDateComma() {
   const data = fs.readFileSync("./src/comma.csv", {
@@ -72,7 +72,7 @@ const finalgamedict = { ...dateCommaDict };
 for (const [gameKey, gameValue] of Object.entries(dateSlashDict)) {
   if (gameKey in dateCommaDict) {
     // console.warn("82",gameKey);
-    finalgamedict[gameKey].startDates = [...finalgamedict[gameKey].startDates, ...gameValue.startDates];
+    finalgamedict[gameKey].epic.startDates = [...finalgamedict[gameKey].epic.startDates, ...gameValue.startDates];
 
   } else {
     finalgamedict[gameKey] = gameValue;
