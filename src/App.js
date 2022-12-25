@@ -22,7 +22,8 @@ function App() {
 
       renderCell: (params) => {
         // console.warn('25', params)
-        return <a href={params.row.name.href}>{params.row.name.name}</a>
+        const { href, name } = params.row.name
+        return <a href={href}>{name}</a>
       },
 
       valueGetter: (params) => params.row.name.name
@@ -34,6 +35,13 @@ function App() {
       type: "string",
       minWidth: 90,
       flex: 1,
+      renderCell: (params) => {
+        // console.warn('25', params)
+        const { metaScoreValue, href } = params.row.metaScore
+        return <a href={href}>{metaScoreValue}</a>
+      },
+
+      valueGetter: (params) => params.row.metaScore.metaScoreValue
     },
     {
       field: "userScore",
@@ -41,6 +49,13 @@ function App() {
       type: "string",
       minWidth: 90,
       flex: 1,
+      renderCell: (params) => {
+        // console.warn('25', params)
+        const { userScoreValue, href } = params.row.userScore
+        return <a href={href}>{userScoreValue}</a>
+      },
+
+      valueGetter: (params) => params.row.userScore.userScoreValue
     },
     {
       field: "steamData",
@@ -49,13 +64,20 @@ function App() {
       minWidth: 120,
       flex: 1,
       renderCell: (params) => {
-        // console.warn('25', params)
-        const toolTipText = `${params.row.steamData.total_positive} Positive / ${params.row.steamData.total_reviews} Total`
+
+        const {
+          total_positive,
+          total_reviews,
+          href,
+          score
+        } = params.row.steamData
+
+        const toolTipText = `${total_positive} Positive / ${total_reviews} Total`
 
         return (
           <Tooltip title={toolTipText}>
-            <a href={params.row.steamData.href}>
-              {params.row.steamData.score}
+            <a href={href}>
+              {score}
             </a>
           </Tooltip>
         )
