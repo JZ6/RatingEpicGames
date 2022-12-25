@@ -1,7 +1,7 @@
 import fs from "fs";
 import { cleanGameName, writeGameList } from "../../utils/index.js";
 
-import importedGamesList from "../freeGamesList.json" assert { type: "json" };
+import importedGamesList from "../../data/freeGamesList.json" assert { type: "json" };
 
 function readDateComma() {
   const data = fs.readFileSync("./src/comma.csv", {

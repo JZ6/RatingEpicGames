@@ -16,7 +16,13 @@ export function writeGameList(gameList, filePath = "./src/data/freeGamesList.jso
 function modifyGameList(modifiedGameList = { ...importedGamesList }) {
     for (const game of Object.values(modifiedGameList)) {
 
-        const { metaScore, userScore, cleanName, steam, startDates, endDates } = game
+        const { cleanName, steam, startDates, endDates, metacritic } = game
+
+        game.epic = {
+            storeName: cleanName,
+            startDates,
+            endDates
+        }
 
         // game.metacritic = {
         //     metaScore,
