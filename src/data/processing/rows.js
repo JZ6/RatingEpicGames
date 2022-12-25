@@ -20,28 +20,27 @@ export function createRows(freeGames) {
             steam
         } = gameData
 
-        const nameLink = createNameColumn(name, cleanName)
-        const date = createDateColumn(startDates)
+        const nameColumnValue = createNameColumn(name, storeURLName)
+        const dateColumnValue = createDateColumn(startDates)
+        const userScoreColumnValue = createUserScoreColumn(gameData.metacritic)
 
-        const steamData = {
-            total_positive: '',
-            total_reviews: '',
-            score: '',
-            href: `https://store.steampowered.com/app/${steam.appid}`
-        }
 
-        if (steam.reviews && steam.reviews.steamReviewScore) {
-            const {
-                total_positive,
-                total_negative,
-                total_reviews,
-                steamReviewScore
-            } = steam.reviews
+        const steamColumnValue = createSteamColumn(steam)
 
-            steamData.score = steamReviewScore.toFixed(1)
-            steamData.total_positive = total_positive
-            steamData.total_reviews = total_reviews
-        }
+
+
+        // if (steam.reviews && steam.reviews.steamReviewScore) {
+        //     const {
+        //         total_positive,
+        //         total_negative,
+        //         total_reviews,
+        //         steamReviewScore
+        //     } = steam.reviews
+
+        //     steamData.score = steamReviewScore.toFixed(1)
+        //     steamData.total_positive = total_positive
+        //     steamData.total_reviews = total_reviews
+        // }
 
 
         let scores = [];
@@ -55,8 +54,8 @@ export function createRows(freeGames) {
                 scores.push(parseFloat(userScore))
                 // scores.push(parseFloat(userScore))
 
-                if (steamData && steamData.score !== "") {
-                    scores.push(parseFloat(steamData.score))
+                if (steamColumnValue && steamColumnValue.score !== "") {
+                    scores.push(parseFloat(steamColumnValue.score))
                 }
             }
         }
@@ -73,24 +72,61 @@ export function createRows(freeGames) {
 
         return {
             id: name,
-            name: nameLink,
+            name: nameColumnValue,
             metaScore: displayMetaScore,
-            userScore: displayUserScore,
+            userScore: userScoreColumnValue,
             averageScore: isNaN(averageScore)
                 ? ""
                 : averageScore.toFixed(1),
-            steamData,
-            date,
+            steamData: steamColumnValue,
+            date: dateColumnValue,
         };
     }
     );
 }
 
-function createNameColumn(name, cleanName) {
+function createNameColumn(name, storeURLName) {
     return {
         name,
-        href: `https://store.epicgames.com/p/${cleanName}`
+        href: `https://store.epicgames.com/p/${storeURLName}`
     }
+}
+
+
+
+function createUserScoreColumn(metacritic) {
+    const {
+        userScore,
+        urlName
+    } = metacritic
+
+    return {
+        userScoreValue: userScore === "N/A" ? "" : round(userScore).toFixed(1),
+        href: `http://www.metacritic.com/game/pc/${urlName}`
+    }
+}
+
+function createSteamColumn(steam) {
+
+    let steamColumnData = {}
+
+    if (steam.reviews && steam.reviews.steamReviewScore) {
+        const {
+            appid,
+            reviews
+        } = steam
+
+        steamColumnData = {
+            ...steam.reviews,
+            href: `https://store.steampowered.com/app/${appid}`
+        }
+
+        steamColumnData.score = reviews.steamReviewScore.toFixed(1)
+
+    }
+
+    return steamColumnData
+
 }
 
 function createDateColumn(startDates) {
