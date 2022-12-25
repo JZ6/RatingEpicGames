@@ -35,6 +35,13 @@ function App() {
       type: "string",
       minWidth: 90,
       flex: 1,
+      renderCell: (params) => {
+        // console.warn('25', params)
+        const { metaScoreValue, href } = params.row.metaScore
+        return <a href={href}>{metaScoreValue}</a>
+      },
+
+      valueGetter: (params) => params.row.metaScore.metaScoreValue
     },
     {
       field: "userScore",
@@ -48,7 +55,7 @@ function App() {
         return <a href={href}>{userScoreValue}</a>
       },
 
-      valueGetter: (params) => params.row.name.name
+      valueGetter: (params) => params.row.userScore.userScoreValue
     },
     {
       field: "steamData",

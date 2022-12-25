@@ -65,7 +65,7 @@
             "urlName": "dark-deity"
         },
         "epic": {
-            "storeURLName": "dark-deity",
+            "storeURLName": "dark-deity-0b08d1",
             "startDates": [
                 "Thu Nov 17 2022"
             ],
@@ -112,7 +112,7 @@
             "urlName": "alba-a-wildlife-adventure"
         },
         "epic": {
-            "storeURLName": "alba-a-wildlife-adventure",
+            "storeURLName": "alba-a-wildlife-adventure-93736a",
             "startDates": [
                 "Thu Nov 10 2022"
             ],
@@ -168,7 +168,7 @@
             "urlName": "filament"
         },
         "epic": {
-            "storeURLName": "filament",
+            "storeURLName": "filament-332a92",
             "startDates": [
                 "Thu Nov 03 2022"
             ],
@@ -280,7 +280,7 @@
             "urlName": "runbow"
         },
         "epic": {
-            "storeURLName": "runbow",
+            "storeURLName": "runbow-fc9fa4",
             "startDates": [
                 "Thu Sep 29 2022"
             ],
@@ -308,7 +308,7 @@
             "urlName": "ark-survival-evolved"
         },
         "epic": {
-            "storeURLName": "ark-survival-evolved",
+            "storeURLName": "ark",
             "startDates": [
                 "Thu Sep 22 2022",
                 "Thu Jun 11 2020"
@@ -337,7 +337,7 @@
             "urlName": "gloomhaven"
         },
         "epic": {
-            "storeURLName": "gloomhaven",
+            "storeURLName": "gloomhaven-92f741",
             "startDates": [
                 "Thu Sep 22 2022"
             ],
@@ -477,7 +477,7 @@
             "urlName": "cook-serve-delicious!-3!"
         },
         "epic": {
-            "storeURLName": "cook-serve-delicious!-3!",
+            "storeURLName": "cook-serve-delicious-3-fb9aae",
             "startDates": [
                 "Thu Aug 11 2022"
             ],
@@ -505,7 +505,7 @@
             "urlName": "unrailed!"
         },
         "epic": {
-            "storeURLName": "unrailed!",
+            "storeURLName": "unrailed-e19729",
             "startDates": [
                 "Thu Aug 04 2022"
             ],
@@ -938,7 +938,7 @@
         }
     },
     "bioshock": {
-        "name": "BioShock",
+        "name": "BioShock Remastered",
         "cleanName": "bioshock",
         "steam": {
             "appid": 7670,
@@ -956,7 +956,7 @@
             "urlName": "bioshock"
         },
         "epic": {
-            "storeURLName": "bioshock",
+            "storeURLName": "bioshock-remastered",
             "startDates": [
                 "Thu May 26 2022"
             ],
@@ -966,7 +966,7 @@
         }
     },
     "bioshock-2": {
-        "name": "BioShock 2",
+        "name": "BioShock 2 Remastered",
         "cleanName": "bioshock-2",
         "steam": {
             "appid": 8850,
@@ -984,7 +984,7 @@
             "urlName": "bioshock-2"
         },
         "epic": {
-            "storeURLName": "bioshock-2",
+            "storeURLName": "bioshock-2-remastered",
             "startDates": [
                 "Thu May 26 2022"
             ],
@@ -1012,7 +1012,7 @@
             "urlName": "bioshock-infinite"
         },
         "epic": {
-            "storeURLName": "bioshock-infinite",
+            "storeURLName": "bioshock-infinite-complete-edition",
             "startDates": [
                 "Thu May 26 2022"
             ],
@@ -1152,7 +1152,7 @@
             "urlName": "paradigm"
         },
         "epic": {
-            "storeURLName": "paradigm",
+            "storeURLName": "paradigm-875c5c",
             "startDates": [
                 "Thu Apr 28 2022"
             ],
@@ -2468,34 +2468,6 @@
             ]
         }
     },
-    "borderlands-2-tiny-tinas-assault-on-dragon-keep": {
-        "name": "Borderlands 2: Tiny Tina's Assault on Dragon Keep",
-        "cleanName": "borderlands-2-tiny-tinas-assault-on-dragon-keep",
-        "steam": {
-            "appid": 218550,
-            "reviews": {
-                "total_positive": 1255,
-                "total_negative": 92,
-                "total_reviews": 1347,
-                "steamReviewScore": 9.317000742390498
-            },
-            "name": "Borderlands 2: Tiny Tina's Assault on Dragon Keep"
-        },
-        "metacritic": {
-            "metaScore": "87",
-            "userScore": "8.5",
-            "urlName": "borderlands-2-tiny-tinas-assault-on-dragon-keep"
-        },
-        "epic": {
-            "storeURLName": "borderlands-2-tiny-tinas-assault-on-dragon-keep",
-            "startDates": [
-                "Thu Nov 11 2021"
-            ],
-            "endDates": [
-                "Thu Nov 18 2021"
-            ]
-        }
-    },
     "rogue-company": {
         "name": "Rogue Company",
         "cleanName": "rogue-company",
@@ -2796,7 +2768,7 @@
             "urlName": "nioh-complete-edition"
         },
         "epic": {
-            "storeURLName": "nioh-complete-edition",
+            "storeURLName": "nioh-the-complete-edition",
             "startDates": [
                 "Thu Sep 09 2021"
             ],
@@ -3106,7 +3078,7 @@
             "urlName": "defense-grid-the-awakening"
         },
         "epic": {
-            "storeURLName": "defense-grid-the-awakening",
+            "storeURLName": "defense-grid",
             "startDates": [
                 "Sun Dec 20 2020"
             ],
@@ -3576,7 +3548,7 @@
             "urlName": "3-out-of-10-season-two"
         },
         "epic": {
-            "storeURLName": "3-out-of-10-season-two",
+            "storeURLName": "3-out-of-10-season-2",
             "startDates": [
                 "Thu Apr 08 2021"
             ],
@@ -3945,7 +3917,7 @@
             "urlName": "star-wars-battlefront-ii"
         },
         "epic": {
-            "storeURLName": "star-wars-battlefront-ii",
+            "storeURLName": "star-wars-battlefront-2",
             "startDates": [
                 "Thu Jan 14 2021"
             ],
@@ -4029,7 +4001,7 @@
             "urlName": "torchlight-ii"
         },
         "epic": {
-            "storeURLName": "torchlight-ii",
+            "storeURLName": "torchlight-2",
             "startDates": [
                 "Wed Dec 30 2020",
                 "Thu Jul 16 2020"
@@ -4341,7 +4313,7 @@
             "urlName": "oddworld-abes-oddysee---new-n-tasty"
         },
         "epic": {
-            "storeURLName": "oddworld-abes-oddysee---new-n-tasty",
+            "storeURLName": "oddworld-new-n-tasty",
             "startDates": [
                 "Fri Dec 18 2020"
             ],
@@ -5196,7 +5168,7 @@
             "urlName": "3-out-of-10-season-one"
         },
         "epic": {
-            "storeURLName": "3-out-of-10-season-one",
+            "storeURLName": "3-out-of-10-ep-1",
             "startDates": [
                 "Thu Aug 06 2020"
             ],
@@ -5224,7 +5196,7 @@
             "urlName": "superbrothers-sword-sworcery-ep"
         },
         "epic": {
-            "storeURLName": "superbrothers-sword-sworcery-ep",
+            "storeURLName": "superbrothers-sword-and-sworcery-ep",
             "startDates": [
                 "Thu Jul 30 2020"
             ],
@@ -5588,7 +5560,7 @@
             "urlName": "overcooked!-2"
         },
         "epic": {
-            "storeURLName": "overcooked!-2",
+            "storeURLName": "overcooked-2",
             "startDates": [
                 "Thu Jun 04 2020"
             ],
@@ -6596,7 +6568,7 @@
             "urlName": "darksiders-ii"
         },
         "epic": {
-            "storeURLName": "darksiders-ii",
+            "storeURLName": "darksiders2",
             "startDates": [
                 "Wed Jan 01 2020"
             ],
@@ -6662,7 +6634,7 @@
         }
     },
     "shadow-tactics-blades-of-the-shogun": {
-        "name": "Shadow Tactics: Blades of the Shogun",
+        "name": "Shadow Tactics",
         "cleanName": "shadow-tactics-blades-of-the-shogun",
         "steam": {
             "appid": 418240,
@@ -6680,14 +6652,14 @@
             "urlName": "shadow-tactics-blades-of-the-shogun"
         },
         "epic": {
-            "storeURLName": "shadow-tactics-blades-of-the-shogun",
+            "storeURLName": "shadow-tactics",
             "startDates": [
-                "Sat Dec 28 2019",
-                "Thu Nov 10 2022"
+                "Thu Nov 10 2022",
+                "Sat Dec 28 2019"
             ],
             "endDates": [
-                "Sun Dec 29 2019",
-                "Thu Nov 17 2022"
+                "Thu Nov 17 2022",
+                "Sun Dec 29 2019"
             ]
         }
     },
@@ -6740,7 +6712,7 @@
             "urlName": "ftl-faster-than-light"
         },
         "epic": {
-            "storeURLName": "ftl-faster-than-light",
+            "storeURLName": "faster-than-light",
             "startDates": [
                 "Thu Dec 26 2019"
             ],
@@ -8284,7 +8256,7 @@
             "urlName": "wildcat-gun-machine"
         },
         "epic": {
-            "storeURLName": "wildcat-gun-machine",
+            "storeURLName": "wildcat-gun-machine-c66c4e",
             "startDates": [
                 "Thu Dec 08 2022"
             ],
@@ -8294,7 +8266,7 @@
         }
     },
     "saints-row-iv": {
-        "name": "Saints Row IV",
+        "name": "Saints Row IV: Re-Elected",
         "cleanName": "saints-row-iv",
         "steam": {
             "appid": 206420,
@@ -8312,7 +8284,7 @@
             "urlName": "saints-row-iv"
         },
         "epic": {
-            "storeURLName": "saints-row-iv",
+            "storeURLName": "saints-row-iv-re-elected",
             "startDates": [
                 "Thu Dec 08 2022"
             ],
@@ -8340,7 +8312,7 @@
             "urlName": "bloons-td-6"
         },
         "epic": {
-            "storeURLName": "bloons-td-6",
+            "storeURLName": "bloons-td-6-bf95a0",
             "startDates": [
                 "Thu Dec 15 2022"
             ],
@@ -8543,6 +8515,34 @@
             "endDates": [
                 "Sat Dec 24 2022"
             ]
+        }
+    },
+    "death-stranding-directors-cut": {
+        "name": "DEATH STRANDING DIRECTOR'S CUT",
+        "cleanName": "death-stranding-directors-cut",
+        "epic": {
+            "startDates": [
+                "Sun Dec 25 2022"
+            ],
+            "endDates": [
+                "Mon Dec 26 2022"
+            ],
+            "storeURLName": "death-stranding-directors-cut"
+        },
+        "steam": {
+            "appid": 1850570,
+            "name": "DEATH STRANDING DIRECTOR'S CUT",
+            "reviews": {
+                "total_positive": 8644,
+                "total_negative": 596,
+                "total_reviews": 9240,
+                "steamReviewScore": 9.354978354978355
+            }
+        },
+        "metacritic": {
+            "urlName": "death-stranding-directors-cut",
+            "metaScore": "85",
+            "userScore": "7.9"
         }
     }
 }

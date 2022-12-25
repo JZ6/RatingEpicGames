@@ -8,11 +8,7 @@ export function createRows(freeGames) {
         const {
             name,
             cleanName,
-            metacritic: {
-                metaScore,
-                userScore,
-                urlName
-            },
+            metacritic,
             epic: {
                 storeURLName,
                 startDates
@@ -22,62 +18,20 @@ export function createRows(freeGames) {
 
         const nameColumnValue = createNameColumn(name, storeURLName)
         const dateColumnValue = createDateColumn(startDates)
-        const userScoreColumnValue = createUserScoreColumn(gameData.metacritic)
 
+        const metaScoreColumnValue = createMetaScoreColumn(metacritic)
+        const userScoreColumnValue = createUserScoreColumn(metacritic)
 
         const steamColumnValue = createSteamColumn(steam)
 
-
-
-        // if (steam.reviews && steam.reviews.steamReviewScore) {
-        //     const {
-        //         total_positive,
-        //         total_negative,
-        //         total_reviews,
-        //         steamReviewScore
-        //     } = steam.reviews
-
-        //     steamData.score = steamReviewScore.toFixed(1)
-        //     steamData.total_positive = total_positive
-        //     steamData.total_reviews = total_reviews
-        // }
-
-
-        let scores = [];
-        if (metaScore && metaScore !== "N/A") {
-            const weightedmetaScore = parseFloat(metaScore / 10)
-            scores.push(weightedmetaScore)
-            // scores.push(weightedmetaScore)
-            // scores.push(weightedmetaScore)
-
-            if (userScore && userScore !== "N/A") {
-                scores.push(parseFloat(userScore))
-                // scores.push(parseFloat(userScore))
-
-                if (steamColumnValue && steamColumnValue.score !== "") {
-                    scores.push(parseFloat(steamColumnValue.score))
-                }
-            }
-        }
-
-        const averageScore = scores.reduce((a, b) => a + b, 0) / scores.length;
-        // isNaN(multipliedScore)
-        // ? ""
-        // : Math.round(multipliedScore),
-
-        let displayMetaScore = metaScore === "N/A" ? "" : (metaScore / 10).toFixed(1)
-
-        let displayUserScore = userScore === "N/A" ? "" : round(userScore).toFixed(1)
-
+        const averageScoreColumnValue = createAverageScoreColumn(metacritic, steam)
 
         return {
             id: name,
             name: nameColumnValue,
-            metaScore: displayMetaScore,
+            metaScore: metaScoreColumnValue,
             userScore: userScoreColumnValue,
-            averageScore: isNaN(averageScore)
-                ? ""
-                : averageScore.toFixed(1),
+            averageScore: averageScoreColumnValue,
             steamData: steamColumnValue,
             date: dateColumnValue,
         };
@@ -92,7 +46,16 @@ function createNameColumn(name, storeURLName) {
     }
 }
 
-
+function createMetaScoreColumn(metacritic) {
+    const {
+        metaScore,
+        urlName
+    } = metacritic
+    return {
+        metaScoreValue: metaScore === "N/A" ? "" : (metaScore / 10).toFixed(1),
+        href: `http://www.metacritic.com/game/pc/${urlName}`
+    }
+}
 
 function createUserScoreColumn(metacritic) {
     const {
@@ -105,6 +68,7 @@ function createUserScoreColumn(metacritic) {
         href: `http://www.metacritic.com/game/pc/${urlName}`
     }
 }
+
 
 function createSteamColumn(steam) {
 
@@ -127,6 +91,48 @@ function createSteamColumn(steam) {
 
     return steamColumnData
 
+}
+
+function createAverageScoreColumn(metacritic, steam) {
+
+    const {
+        metaScore,
+        userScore
+    } = metacritic
+
+
+
+    let scores = [];
+    if (metaScore && metaScore !== "N/A") {
+        const weightedmetaScore = parseFloat(metaScore / 10)
+        scores.push(weightedmetaScore)
+        // scores.push(weightedmetaScore)
+        // scores.push(weightedmetaScore)
+    }
+
+    if (userScore && userScore !== "N/A") {
+        scores.push(parseFloat(userScore))
+        // scores.push(parseFloat(userScore))
+    }
+
+    if (scores.length) {
+        const {
+            reviews
+        } = steam
+
+        if (reviews && reviews.hasOwnProperty('steamReviewScore')) {
+            const { steamReviewScore } = reviews
+            scores.push(parseFloat(steamReviewScore))
+        }
+    }
+
+    const averageScore = scores.reduce((a, b) => a + b, 0) / scores.length;
+
+    if (isNaN(averageScore)) {
+        return ''
+    } else {
+        return averageScore.toFixed(1)
+    }
 }
 
 function createDateColumn(startDates) {
