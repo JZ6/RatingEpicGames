@@ -3,7 +3,7 @@ import importedGamesList from '../../data/freeGamesList.json' assert { type: "js
 
 async function update(params) {
     const modifiedGameList = { ...importedGamesList }
-    await addGame(modifiedGameList, 'Metro: Last Light Redux', new Date(), 1)
+    await addGame(modifiedGameList, 'Vampire Survivors', new Date(), 1)
     // await addGame(modifiedGameList, 'Counter-Sadsatrike: Global Offensive')
 }
 

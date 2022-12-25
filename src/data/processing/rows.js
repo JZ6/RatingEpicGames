@@ -13,7 +13,10 @@ export function createRows(freeGames) {
                 userScore,
                 urlName
             },
-            startDates,
+            epic: {
+                storeURLName,
+                startDates
+            },
             steam
         } = gameData
 

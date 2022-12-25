@@ -72,7 +72,7 @@ const finalgamedict = { ...dateCommaDict };
 for (const [gameKey, gameValue] of Object.entries(dateSlashDict)) {
   if (gameKey in dateCommaDict) {
     // console.warn("82",gameKey);
-    finalgamedict[gameKey].startDates = [...finalgamedict[gameKey].startDates, ...gameValue.startDates];
+    finalgamedict[gameKey].epic.startDates = [...finalgamedict[gameKey].epic.startDates, ...gameValue.startDates];
 
   } else {
     finalgamedict[gameKey] = gameValue;

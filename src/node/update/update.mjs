@@ -22,8 +22,11 @@ function initGameObj(modifiedGameList, name) {
         modifiedGameList[gameListKey] = {
             name,
             cleanName: gameListKey,
-            "startDates": [],
-            "endDates": []
+            epic: {
+                startDates: [],
+                endDates: [],
+                storeName: gameListKey
+            }
         }
     }
 
@@ -41,7 +44,7 @@ function addDatesToGameObj(gameDataObj, giveAwayDate, period) {
     const {
         startDates,
         endDates
-    } = gameDataObj
+    } = gameDataObj.epic
 
 
     if (!startDates.includes(startDateString)) {
@@ -70,23 +73,23 @@ export async function addGame(modifiedGameList = { ...importedGamesList }, name,
 
     const gameDataObj = await addBaseGameObj(modifiedGameList, name, giveAwayDate, period, false)
 
-    const addOperationPromises = [];
+    const fetchPromises = [];
 
     if (addSteamAppID(gameDataObj)) {
-        addOperationPromises.push(
+        fetchPromises.push(
             addSteamReviewScore(gameDataObj)
         )
     }
 
-    addOperationPromises.push(
+    fetchPromises.push(
         addMetacriticScore(gameDataObj)
     )
 
+    await Promise.all(fetchPromises)
+
     if (write) {
-        addOperationPromises.push(
-            writeGameList(modifiedGameList)
-        )
+        await writeGameList(modifiedGameList)
     }
 
-    return Promise.all(addOperationPromises)
+    return true
 }
