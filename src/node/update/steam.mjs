@@ -3,7 +3,7 @@ import fetch from "node-fetch";
 import steamGameAppIDs from "../../data/steamGameAppIDs.json" assert { type: "json" }
 
 export function addSteamAppID(gameDataObj, overWrite = false) {
-    
+
     if (!gameDataObj.hasOwnProperty('steam')) {
         gameDataObj['steam'] = {}
     }
@@ -16,7 +16,7 @@ export function addSteamAppID(gameDataObj, overWrite = false) {
             gameDataObj.steam = {
                 ...steamGameData
             }
-            console.log('Added: ', steamGameData)
+            console.log('Added Steam App ID: ', steamGameData)
             return true
         } else {
             console.warn(`No Steam Info For: ${name}`)
@@ -73,8 +73,8 @@ export async function addSteamReviewScore(gameDataObj, overWrite = false) {
         total_reviews,
         steamReviewScore
     }
-    console.log('Added Review Score For: ', name, steamReviewScore)
+    console.log('Added Steam Reviews For: ', name, steamReviewScore)
 
-    return true
+    return steam.reviews
 
 }

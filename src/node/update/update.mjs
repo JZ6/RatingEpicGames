@@ -1,7 +1,8 @@
 
 import {
     writeGameList,
-    cleanGameName
+    cleanGameName,
+    sleep
 } from '../utils/index.mjs'
 
 import {
@@ -10,7 +11,7 @@ import {
 } from './steam.mjs';
 
 import {
-    addMetacriticScores
+    addMetacriticScore
 } from './metacritic.mjs';
 
 import importedGamesList from '../../data/freeGamesList.json' assert { type: "json" }
@@ -65,20 +66,27 @@ async function addBaseGameObj(modifiedGameList, name, giveAwayDate, period, writ
 
 }
 
-export async function addGame(name, giveAwayDate = new Date(), period = 7) {
-    const modifiedGameList = { ...importedGamesList }
+export async function addGame(modifiedGameList = { ...importedGamesList }, name, giveAwayDate = new Date(), period = 7, write = true) {
 
     const gameDataObj = await addBaseGameObj(modifiedGameList, name, giveAwayDate, period, false)
 
-    const fetchingPromises = [];
+    const addOperationPromises = [];
+
     if (addSteamAppID(gameDataObj)) {
-        fetchingPromises.push(
+        addOperationPromises.push(
             addSteamReviewScore(gameDataObj)
         )
     }
 
-    addMetacriticScores(gameDataObj)
+    addOperationPromises.push(
+        addMetacriticScore(gameDataObj)
+    )
 
+    if (write) {
+        addOperationPromises.push(
+            writeGameList(modifiedGameList)
+        )
+    }
 
-    await Promise.all(fetchingPromises);
+    return Promise.all(addOperationPromises)
 }

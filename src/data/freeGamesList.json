@@ -3455,9 +3455,11 @@
         "name": "Metro: Last Light Redux",
         "cleanName": "metro-last-light-redux",
         "startDates": [
+            "Sat Dec 24 2022",
             "Thu Feb 04 2021"
         ],
         "endDates": [
+            "Sun Dec 25 2022",
             "Thu Feb 11 2021"
         ],
         "steam": {

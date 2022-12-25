@@ -7,6 +7,7 @@ export function createRows(freeGames) {
     return Object.entries(freeGames).map(([id, gameData]) => {
         const {
             name,
+            cleanName,
             metacritic: {
                 metaScore,
                 userScore,
@@ -16,14 +17,8 @@ export function createRows(freeGames) {
             steam
         } = gameData
 
-        const nameLink = {
-            name,
-            href: `http://www.metacritic.com/game/pc/${urlName}`
-        }
-
-        const date = startDates.map(startDate =>
-            new Date(startDate).toISOString().split('T')[0].replaceAll('-', '/')
-        ).join(", ")
+        const nameLink = createNameColumn(name, cleanName)
+        const date = createDateColumn(startDates)
 
         const steamData = {
             total_positive: '',
@@ -88,8 +83,19 @@ export function createRows(freeGames) {
     );
 }
 
-// function dateToYMDFormat(startDates) {
-//     return startDates.map(startDate =>
-//         new Date(startDate).toISOString().split('T')[0].replaceAll('-', '/')
-//     ).join(", ")
-// }
+function createNameColumn(name, cleanName) {
+    return {
+        name,
+        href: `https://store.epicgames.com/p/${cleanName}`
+    }
+}
+
+function createDateColumn(startDates) {
+    return startDates.map(startDate => new Date(startDate))
+        .map(date => dateToYMDFormat(date))
+        .join(", ")
+}
+
+function dateToYMDFormat(date) {
+    return date.toISOString().split('T')[0].replaceAll('-', '/')
+}
