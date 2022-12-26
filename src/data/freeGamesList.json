@@ -8544,5 +8544,33 @@
             "metaScore": "85",
             "userScore": "7.9"
         }
+    },
+    "f-i-s-t-forged-in-shadow-torch": {
+        "name": "F.I.S.T.: Forged In Shadow Torch",
+        "cleanName": "f-i-s-t-forged-in-shadow-torch",
+        "epic": {
+            "startDates": [
+                "Mon Dec 26 2022"
+            ],
+            "endDates": [
+                "Tue Dec 27 2022"
+            ],
+            "storeURLName": "fist-forged-in-shadow-torch"
+        },
+        "steam": {
+            "appid": 1330470,
+            "name": "F.I.S.T.: Forged In Shadow Torch",
+            "reviews": {
+                "total_positive": 4295,
+                "total_negative": 485,
+                "total_reviews": 4780,
+                "steamReviewScore": 8.985355648535565
+            }
+        },
+        "metacritic": {
+            "urlName": "fist-forged-in-shadow-torch",
+            "metaScore": "81",
+            "userScore": "7.1"
+        }
     }
 }
