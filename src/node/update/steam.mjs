@@ -10,6 +10,10 @@ export function addSteamAppID(gameDataObj, overWrite = false) {
 
     const { name, steam } = gameDataObj
 
+    if (steam.hasOwnProperty('name') && steam.hasOwnProperty('appid')) {
+        return true
+    }
+
     if (overWrite || !Object.keys(steam).length) {
         if (name in steamGameAppIDs) {
             const steamGameData = steamGameAppIDs[name]

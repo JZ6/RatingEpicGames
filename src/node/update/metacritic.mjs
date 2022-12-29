@@ -59,6 +59,7 @@ export async function addMetacriticScore(gameDataObj, overWrite = false) {
         metacritic.metaScore = metaScore
         addedFlag = true
     } else {
+        metacritic.metaScore = "N/A"
         console.warn('No meta score for:', urlName)
     }
 
@@ -66,6 +67,7 @@ export async function addMetacriticScore(gameDataObj, overWrite = false) {
         metacritic.userScore = userScore
         addedFlag = true
     } else {
+        metacritic.userScore = "N/A"
         console.warn('No user score for:', urlName)
     }
 

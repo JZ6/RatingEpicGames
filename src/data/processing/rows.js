@@ -51,8 +51,15 @@ function createMetaScoreColumn(metacritic) {
         metaScore,
         urlName
     } = metacritic
+
+    let metaScoreValue = ''
+
+    if (!isNaN(metaScore)) {
+        metaScoreValue = (metaScore / 10).toFixed(1)
+    }
+
     return {
-        metaScoreValue: metaScore === "N/A" ? "" : (metaScore / 10).toFixed(1),
+        metaScoreValue,
         href: `http://www.metacritic.com/game/pc/${urlName}`
     }
 }
@@ -63,12 +70,17 @@ function createUserScoreColumn(metacritic) {
         urlName
     } = metacritic
 
+    let userScoreValue = ''
+
+    if (!isNaN(userScore)) {
+        userScoreValue = round(userScore).toFixed(1)
+    }
+
     return {
-        userScoreValue: userScore === "N/A" ? "" : round(userScore).toFixed(1),
+        userScoreValue,
         href: `http://www.metacritic.com/game/pc/${urlName}`
     }
 }
-
 
 function createSteamColumn(steam) {
 
@@ -99,8 +111,6 @@ function createAverageScoreColumn(metacritic, steam) {
         metaScore,
         userScore
     } = metacritic
-
-
 
     let scores = [];
     if (metaScore && metaScore !== "N/A") {
