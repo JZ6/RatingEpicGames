@@ -8572,5 +8572,116 @@
             "metaScore": "81",
             "userScore": "7.1"
         }
+    },
+    "severed-steel": {
+        "name": "Severed Steel",
+        "cleanName": "severed-steel",
+        "epic": {
+            "startDates": [
+                "Tue Dec 27 2022"
+            ],
+            "endDates": [
+                "Wed Dec 28 2022"
+            ],
+            "storeURLName": "severed-steel"
+        },
+        "steam": {
+            "appid": 1227690,
+            "name": "Severed Steel",
+            "reviews": {
+                "total_positive": 1700,
+                "total_negative": 107,
+                "total_reviews": 1807,
+                "steamReviewScore": 9.407858328721638
+            }
+        },
+        "metacritic": {
+            "urlName": "severed-steel",
+            "metaScore": "73",
+            "userScore": "7.0"
+        }
+    },
+    "mortal-shell": {
+        "name": "Mortal Shell",
+        "cleanName": "mortal-shell",
+        "epic": {
+            "startDates": [
+                "Wed Dec 28 2022"
+            ],
+            "endDates": [
+                "Thu Dec 29 2022"
+            ],
+            "storeURLName": "mortal-shell"
+        },
+        "steam": {
+            "appid": 1110910,
+            "name": "Mortal Shell",
+            "reviews": {
+                "total_positive": 2745,
+                "total_negative": 977,
+                "total_reviews": 3722,
+                "steamReviewScore": 7.375067168189146
+            }
+        },
+        "metacritic": {
+            "urlName": "mortal-shell",
+            "metaScore": "76",
+            "userScore": "6.4"
+        }
+    },
+    "dishonored": {
+        "name": "Dishonored – Definitive Edition",
+        "cleanName": "dishonored",
+        "epic": {
+            "startDates": [
+                "Thu Dec 29 2022"
+            ],
+            "endDates": [
+                "Thu Jan 05 2023"
+            ],
+            "storeURLName": "dishonored-definitive-edition"
+        },
+        "steam": {
+            "appid": 205100,
+            "name": "Dishonored",
+            "reviews": {
+                "total_positive": 52287,
+                "total_negative": 1383,
+                "total_reviews": 53670,
+                "steamReviewScore": 9.74231414197876
+            }
+        },
+        "metacritic": {
+            "urlName": "dishonored",
+            "metaScore": "91",
+            "userScore": "8.5"
+        }
+    },
+    "eximius-seize-the-frontline": {
+        "name": "Eximius: Seize the Frontline",
+        "cleanName": "eximius-seize-the-frontline",
+        "epic": {
+            "startDates": [
+                "Thu Dec 29 2022"
+            ],
+            "endDates": [
+                "Thu Jan 05 2023"
+            ],
+            "storeURLName": "eximius-seize-the-frontline"
+        },
+        "steam": {
+            "appid": 505740,
+            "name": "Eximius: Seize the Frontline",
+            "reviews": {
+                "total_positive": 333,
+                "total_negative": 104,
+                "total_reviews": 437,
+                "steamReviewScore": 7.620137299771167
+            }
+        },
+        "metacritic": {
+            "urlName": "eximius-seize-the-frontline",
+            "metaScore": "53"
+        }
     }
 }
