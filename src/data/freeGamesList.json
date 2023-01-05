@@ -8722,7 +8722,7 @@
             "endDates": [
                 "Thu Jan 12 2023"
             ],
-            "storeURLName": "shadow-tactics-aikos-choice"
+            "storeURLName": "shadow-tactics-aikos-choice-5678c1"
         },
         "steam": {
             "appid": 1579380,
@@ -8738,6 +8738,34 @@
             "urlName": "shadow-tactics-blades-of-the-shogun---aikos-choice",
             "metaScore": "83",
             "userScore": "8.5"
+        }
+    },
+    "first-class-trouble": {
+        "name": "First Class Trouble",
+        "cleanName": "first-class-trouble",
+        "epic": {
+            "startDates": [
+                "Thu Jan 12 2023"
+            ],
+            "endDates": [
+                "Thu Jan 19 2023"
+            ],
+            "storeURLName": "first-class-trouble"
+        },
+        "steam": {
+            "appid": 953880,
+            "name": "First Class Trouble",
+            "reviews": {
+                "total_positive": 1784,
+                "total_negative": 467,
+                "total_reviews": 2251,
+                "steamReviewScore": 7.9253665037760985
+            }
+        },
+        "metacritic": {
+            "urlName": "first-class-trouble",
+            "metaScore": "N/A",
+            "userScore": "N/A"
         }
     }
 }
