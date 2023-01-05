@@ -8683,5 +8683,61 @@
             "urlName": "eximius-seize-the-frontline",
             "metaScore": "53"
         }
+    },
+    "kerbal-space-program": {
+        "name": "Kerbal Space Program",
+        "cleanName": "kerbal-space-program",
+        "epic": {
+            "startDates": [
+                "Thu Jan 05 2023"
+            ],
+            "endDates": [
+                "Thu Jan 12 2023"
+            ],
+            "storeURLName": "kerbal-space-program"
+        },
+        "steam": {
+            "appid": 220200,
+            "name": "Kerbal Space Program",
+            "reviews": {
+                "total_positive": 84926,
+                "total_negative": 4539,
+                "total_reviews": 89465,
+                "steamReviewScore": 9.492650757279383
+            }
+        },
+        "metacritic": {
+            "urlName": "kerbal-space-program",
+            "metaScore": "88",
+            "userScore": "8.3"
+        }
+    },
+    "shadow-tactics-aikos-choice": {
+        "name": "Shadow Tactics: Aiko's Choice",
+        "cleanName": "shadow-tactics-aikos-choice",
+        "epic": {
+            "startDates": [
+                "Thu Jan 05 2023"
+            ],
+            "endDates": [
+                "Thu Jan 12 2023"
+            ],
+            "storeURLName": "shadow-tactics-aikos-choice"
+        },
+        "steam": {
+            "appid": 1579380,
+            "name": "Shadow Tactics: Aiko's Choice",
+            "reviews": {
+                "total_positive": 2505,
+                "total_negative": 194,
+                "total_reviews": 2699,
+                "steamReviewScore": 9.28121526491293
+            }
+        },
+        "metacritic": {
+            "urlName": "shadow-tactics-blades-of-the-shogun---aikos-choice",
+            "metaScore": "83",
+            "userScore": "8.5"
+        }
     }
 }
