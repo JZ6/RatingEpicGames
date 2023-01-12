@@ -8767,5 +8767,89 @@
             "metaScore": "N/A",
             "userScore": "N/A"
         }
+    },
+    "divine-knockout": {
+        "name": "Divine Knockout",
+        "cleanName": "divine-knockout",
+        "epic": {
+            "startDates": [
+                "Thu Jan 12 2023"
+            ],
+            "endDates": [
+                "Thu Jan 19 2023"
+            ],
+            "storeURLName": "divine-knockout--standard"
+        },
+        "steam": {
+            "appid": 1294660,
+            "name": "Divine Knockout (DKO)",
+            "reviews": {
+                "total_positive": 261,
+                "total_negative": 73,
+                "total_reviews": 334,
+                "steamReviewScore": 7.81437125748503
+            }
+        },
+        "metacritic": {
+            "urlName": "divine-knockout",
+            "metaScore": "N/A",
+            "userScore": "N/A"
+        }
+    },
+    "gamedec-definitive-edition": {
+        "name": "Gamedec - Definitive Edition",
+        "cleanName": "gamedec-definitive-edition",
+        "epic": {
+            "startDates": [
+                "Thu Jan 12 2023"
+            ],
+            "endDates": [
+                "Thu Jan 19 2023"
+            ],
+            "storeURLName": "gamedec"
+        },
+        "steam": {
+            "appid": 917720,
+            "name": "Gamedec - Definitive Edition",
+            "reviews": {
+                "total_positive": 590,
+                "total_negative": 139,
+                "total_reviews": 729,
+                "steamReviewScore": 8.093278463648835
+            }
+        },
+        "metacritic": {
+            "urlName": "gamedec",
+            "metaScore": "72",
+            "userScore": "6.5"
+        }
+    },
+    "epistory-typing-chronicles": {
+        "name": "Epistory - Typing Chronicles",
+        "cleanName": "epistory-typing-chronicles",
+        "epic": {
+            "startDates": [
+                "Thu Jan 19 2023"
+            ],
+            "endDates": [
+                "Thu Jan 26 2023"
+            ],
+            "storeURLName": "epistory-typing-chronicles-445794"
+        },
+        "steam": {
+            "appid": 398850,
+            "name": "Epistory - Typing Chronicles",
+            "reviews": {
+                "total_positive": 3346,
+                "total_negative": 181,
+                "total_reviews": 3527,
+                "steamReviewScore": 9.486815990927134
+            }
+        },
+        "metacritic": {
+            "urlName": "epistory---typing-chronicles",
+            "metaScore": "74",
+            "userScore": "7.6"
+        }
     }
 }
