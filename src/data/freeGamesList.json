@@ -8851,5 +8851,33 @@
             "metaScore": "74",
             "userScore": "7.6"
         }
+    },
+    "adios": {
+        "name": "Adios",
+        "cleanName": "adios",
+        "epic": {
+            "startDates": [
+                "Thu Jan 26 2023"
+            ],
+            "endDates": [
+                "Thu Feb 02 2023"
+            ],
+            "storeURLName": "adios-b378b4"
+        },
+        "steam": {
+            "appid": 1271400,
+            "name": "Adios",
+            "reviews": {
+                "total_positive": 804,
+                "total_negative": 44,
+                "total_reviews": 848,
+                "steamReviewScore": 9.481132075471697
+            }
+        },
+        "metacritic": {
+            "urlName": "adios",
+            "metaScore": "78",
+            "userScore": "6.3"
+        }
     }
 }
