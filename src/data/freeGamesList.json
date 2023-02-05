@@ -8879,5 +8879,117 @@
             "metaScore": "78",
             "userScore": "6.3"
         }
+    },
+    "hell-is-others": {
+        "name": "Hell is Others",
+        "cleanName": "hell-is-others",
+        "epic": {
+            "startDates": [
+                "Thu Jan 26 2023"
+            ],
+            "endDates": [
+                "Thu Feb 02 2023"
+            ],
+            "storeURLName": "hell-is-others"
+        },
+        "steam": {
+            "appid": 964440,
+            "name": "Hell is Others",
+            "reviews": {
+                "total_positive": 562,
+                "total_negative": 235,
+                "total_reviews": 797,
+                "steamReviewScore": 7.0514429109159344
+            }
+        },
+        "metacritic": {
+            "urlName": "hell-is-others",
+            "metaScore": "78",
+            "userScore": "7.2"
+        }
+    },
+    "city-of-gangsters": {
+        "name": "City of Gangsters",
+        "cleanName": "city-of-gangsters",
+        "epic": {
+            "startDates": [
+                "Thu Feb 02 2023"
+            ],
+            "endDates": [
+                "Thu Feb 09 2023"
+            ],
+            "storeURLName": "city-of-gangsters"
+        },
+        "steam": {
+            "appid": 1386780,
+            "name": "City of Gangsters",
+            "reviews": {
+                "total_positive": 665,
+                "total_negative": 211,
+                "total_reviews": 876,
+                "steamReviewScore": 7.591324200913242
+            }
+        },
+        "metacritic": {
+            "urlName": "city-of-gangsters",
+            "metaScore": "67",
+            "userScore": "5.8"
+        }
+    },
+    "dishonored-death-of-the-outsider": {
+        "name": "Dishonored: Death of the Outsider",
+        "cleanName": "dishonored-death-of-the-outsider",
+        "epic": {
+            "startDates": [
+                "Thu Feb 02 2023"
+            ],
+            "endDates": [
+                "Thu Feb 09 2023"
+            ],
+            "storeURLName": "dishonored-death-of-the-outsider"
+        },
+        "steam": {
+            "appid": 614570,
+            "name": "Dishonored®: Death of the Outsider™",
+            "reviews": {
+                "total_positive": 6209,
+                "total_negative": 938,
+                "total_reviews": 7147,
+                "steamReviewScore": 8.687561214495593
+            }
+        },
+        "metacritic": {
+            "urlName": "dishonored-death-of-the-outsider",
+            "metaScore": "81",
+            "userScore": "7.8"
+        }
+    },
+    "recipe-for-disaster": {
+        "name": "Recipe for Disaster",
+        "cleanName": "recipe-for-disaster",
+        "epic": {
+            "startDates": [
+                "Thu Feb 09 2023"
+            ],
+            "endDates": [
+                "Thu Feb 16 2023"
+            ],
+            "storeURLName": "recipe-for-disaster"
+        },
+        "steam": {
+            "appid": 1492360,
+            "name": "Recipe for Disaster",
+            "reviews": {
+                "total_positive": 343,
+                "total_negative": 100,
+                "total_reviews": 443,
+                "steamReviewScore": 7.742663656884876
+            }
+        },
+        "metacritic": {
+            "urlName": "recipe-for-disaster",
+            "metaScore": "66",
+            "userScore": "N/A"
+        }
     }
 }
