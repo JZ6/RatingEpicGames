@@ -8980,16 +8980,175 @@
             "appid": 1492360,
             "name": "Recipe for Disaster",
             "reviews": {
-                "total_positive": 343,
-                "total_negative": 100,
-                "total_reviews": 443,
-                "steamReviewScore": 7.742663656884876
+                "total_positive": 347,
+                "total_negative": 109,
+                "total_reviews": 456,
+                "steamReviewScore": 7.609649122807017
             }
         },
         "metacritic": {
             "urlName": "recipe-for-disaster",
             "metaScore": "66",
             "userScore": "N/A"
+        }
+    },
+    "warpips": {
+        "name": "Warpips",
+        "cleanName": "warpips",
+        "epic": {
+            "startDates": [
+                "Thu Feb 16 2023"
+            ],
+            "endDates": [
+                "Thu Feb 23 2023"
+            ],
+            "storeURLName": "warpips"
+        },
+        "steam": {
+            "appid": 1291010,
+            "name": "Warpips",
+            "reviews": {
+                "total_positive": 2583,
+                "total_negative": 311,
+                "total_reviews": 2894,
+                "steamReviewScore": 8.925362819626814
+            }
+        },
+        "metacritic": {
+            "urlName": "warpips",
+            "metaScore": "N/A",
+            "userScore": "7.5"
+        }
+    },
+    "duskers": {
+        "name": "Duskers",
+        "cleanName": "duskers",
+        "epic": {
+            "startDates": [
+                "Thu Feb 23 2023"
+            ],
+            "endDates": [
+                "Thu Mar 02 2023"
+            ],
+            "storeURLName": "duskers"
+        },
+        "steam": {
+            "appid": 254320,
+            "name": "Duskers",
+            "reviews": {
+                "total_positive": 1702,
+                "total_negative": 191,
+                "total_reviews": 1893,
+                "steamReviewScore": 8.991019545694666
+            }
+        },
+        "metacritic": {
+            "urlName": "duskers",
+            "metaScore": "83",
+            "userScore": "6.6"
+        }
+    },
+    "rise-of-industry": {
+        "name": "Rise of Industry",
+        "cleanName": "rise-of-industry",
+        "epic": {
+            "startDates": [
+                "Thu Mar 02 2023"
+            ],
+            "endDates": [
+                "Thu Mar 09 2023"
+            ],
+            "storeURLName": "rise-of-industry"
+        },
+        "steam": {
+            "appid": 671440,
+            "name": "Rise of Industry",
+            "reviews": {
+                "total_positive": 2143,
+                "total_negative": 663,
+                "total_reviews": 2806,
+                "steamReviewScore": 7.637205987170349
+            }
+        },
+        "metacritic": {
+            "urlName": "rise-of-industry",
+            "metaScore": "62",
+            "userScore": "7.8"
+        }
+    },
+    "call-of-the-sea": {
+        "name": "Call of the Sea",
+        "cleanName": "call-of-the-sea",
+        "epic": {
+            "startDates": [
+                "Thu Mar 09 2023"
+            ],
+            "endDates": [
+                "Thu Mar 16 2023"
+            ],
+            "storeURLName": "call-of-the-sea"
+        },
+        "steam": {
+            "appid": 1042490,
+            "name": "Call of the Sea",
+            "reviews": {
+                "total_positive": 2191,
+                "total_negative": 249,
+                "total_reviews": 2440,
+                "steamReviewScore": 8.979508196721312
+            }
+        },
+        "metacritic": {
+            "urlName": "call-of-the-sea",
+            "metaScore": "78",
+            "userScore": "7.7"
+        }
+    },
+    "warhammer-40-000-gladius-relics-of-war": {
+        "name": "Warhammer 40,000: Gladius – Relics of War",
+        "cleanName": "warhammer-40-000-gladius-relics-of-war",
+        "epic": {
+            "startDates": [
+                "Thu Mar 16 2023"
+            ],
+            "endDates": [
+                "Thu Mar 23 2023"
+            ],
+            "storeURLName": "warhammer-40-000-gladius-relics-of-war"
+        },
+        "steam": {},
+        "metacritic": {
+            "urlName": "warhammer-40-000-gladius-relics-of-war",
+            "metaScore": "N/A",
+            "userScore": "N/A"
+        }
+    },
+    "chess-ultra": {
+        "name": "Chess Ultra",
+        "cleanName": "chess-ultra",
+        "epic": {
+            "startDates": [
+                "Thu Mar 23 2023"
+            ],
+            "endDates": [
+                "Thu Mar 30 2023"
+            ],
+            "storeURLName": "chess-ultra"
+        },
+        "steam": {
+            "appid": 518060,
+            "name": "Chess Ultra",
+            "reviews": {
+                "total_positive": 1030,
+                "total_negative": 311,
+                "total_reviews": 1341,
+                "steamReviewScore": 7.680835197613721
+            }
+        },
+        "metacritic": {
+            "urlName": "chess-ultra",
+            "metaScore": "N/A",
+            "userScore": "8.3"
         }
     }
 }
