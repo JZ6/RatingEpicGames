@@ -9104,25 +9104,6 @@
             "userScore": "7.7"
         }
     },
-    "warhammer-40-000-gladius-relics-of-war": {
-        "name": "Warhammer 40,000: Gladius – Relics of War",
-        "cleanName": "warhammer-40-000-gladius-relics-of-war",
-        "epic": {
-            "startDates": [
-                "Thu Mar 16 2023"
-            ],
-            "endDates": [
-                "Thu Mar 23 2023"
-            ],
-            "storeURLName": "warhammer-40-000-gladius-relics-of-war"
-        },
-        "steam": {},
-        "metacritic": {
-            "urlName": "warhammer-40-000-gladius-relics-of-war",
-            "metaScore": "N/A",
-            "userScore": "N/A"
-        }
-    },
     "chess-ultra": {
         "name": "Chess Ultra",
         "cleanName": "chess-ultra",
@@ -9149,6 +9130,34 @@
             "urlName": "chess-ultra",
             "metaScore": "N/A",
             "userScore": "8.3"
+        }
+    },
+    "warhammer-40-000-gladius-relics-of-war": {
+        "name": "Warhammer 40,000: Gladius - Relics of War",
+        "cleanName": "warhammer-40-000-gladius-relics-of-war",
+        "epic": {
+            "startDates": [
+                "Thu Mar 16 2023"
+            ],
+            "endDates": [
+                "Thu Mar 23 2023"
+            ],
+            "storeURLName": "warhammer-40-000-gladius-relics-of-war"
+        },
+        "steam": {
+            "appid": 489630,
+            "name": "Warhammer 40,000: Gladius - Relics of War",
+            "reviews": {
+                "total_positive": 4408,
+                "total_negative": 1010,
+                "total_reviews": 5418,
+                "steamReviewScore": 8.135843484680693
+            }
+        },
+        "metacritic": {
+            "urlName": "warhammer-40000-gladius---relics-of-war",
+            "metaScore": "71",
+            "userScore": "7.4"
         }
     }
 }
