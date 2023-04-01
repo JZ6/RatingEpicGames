@@ -9120,10 +9120,10 @@
             "appid": 518060,
             "name": "Chess Ultra",
             "reviews": {
-                "total_positive": 1030,
-                "total_negative": 311,
-                "total_reviews": 1341,
-                "steamReviewScore": 7.680835197613721
+                "total_positive": 1038,
+                "total_negative": 312,
+                "total_reviews": 1350,
+                "steamReviewScore": 7.688888888888888
             }
         },
         "metacritic": {
@@ -9158,6 +9158,62 @@
             "urlName": "warhammer-40000-gladius---relics-of-war",
             "metaScore": "71",
             "userScore": "7.4"
+        }
+    },
+    "the-silent-age": {
+        "name": "The Silent Age",
+        "cleanName": "the-silent-age",
+        "epic": {
+            "startDates": [
+                "Thu Mar 30 2023"
+            ],
+            "endDates": [
+                "Thu Apr 06 2023"
+            ],
+            "storeURLName": "the-silent-age"
+        },
+        "steam": {
+            "appid": 352520,
+            "name": "The Silent Age",
+            "reviews": {
+                "total_positive": 5205,
+                "total_negative": 378,
+                "total_reviews": 5583,
+                "steamReviewScore": 9.322944653412144
+            }
+        },
+        "metacritic": {
+            "urlName": "the-silent-age",
+            "metaScore": "N/A",
+            "userScore": "7.3"
+        }
+    },
+    "tunche": {
+        "name": "Tunche",
+        "cleanName": "tunche",
+        "epic": {
+            "startDates": [
+                "Thu Mar 30 2023"
+            ],
+            "endDates": [
+                "Thu Apr 06 2023"
+            ],
+            "storeURLName": "tunche"
+        },
+        "steam": {
+            "appid": 887450,
+            "name": "Tunche",
+            "reviews": {
+                "total_positive": 361,
+                "total_negative": 108,
+                "total_reviews": 469,
+                "steamReviewScore": 7.697228144989339
+            }
+        },
+        "metacritic": {
+            "urlName": "tunche",
+            "metaScore": "68",
+            "userScore": "6.4"
         }
     }
 }
