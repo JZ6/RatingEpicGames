@@ -2090,10 +2090,10 @@
         "steam": {
             "appid": 1024380,
             "reviews": {
-                "total_positive": 3063,
-                "total_negative": 1103,
-                "total_reviews": 4166,
-                "steamReviewScore": 7.352376380220836
+                "total_positive": 3116,
+                "total_negative": 1149,
+                "total_reviews": 4265,
+                "steamReviewScore": 7.305978898007034
             },
             "name": "Second Extinction™"
         },
@@ -2105,9 +2105,11 @@
         "epic": {
             "storeURLName": "second-extinction",
             "startDates": [
+                "Thu Apr 13 2023",
                 "Tue Dec 21 2021"
             ],
             "endDates": [
+                "Thu Apr 20 2023",
                 "Wed Dec 22 2021"
             ]
         }
@@ -9214,6 +9216,90 @@
             "urlName": "tunche",
             "metaScore": "68",
             "userScore": "6.4"
+        }
+    },
+    "dying-light": {
+        "name": "Dying Light",
+        "cleanName": "dying-light",
+        "epic": {
+            "startDates": [
+                "Thu Apr 06 2023"
+            ],
+            "endDates": [
+                "Thu Apr 13 2023"
+            ],
+            "storeURLName": "dying-light"
+        },
+        "steam": {
+            "appid": 239140,
+            "name": "Dying Light",
+            "reviews": {
+                "total_positive": 257691,
+                "total_negative": 12917,
+                "total_reviews": 270608,
+                "steamReviewScore": 9.522667474723585
+            }
+        },
+        "metacritic": {
+            "urlName": "dying-light",
+            "metaScore": "75",
+            "userScore": "8.1"
+        }
+    },
+    "shapez": {
+        "name": "shapez",
+        "cleanName": "shapez",
+        "epic": {
+            "startDates": [
+                "Thu Apr 06 2023"
+            ],
+            "endDates": [
+                "Thu Apr 13 2023"
+            ],
+            "storeURLName": "shapez"
+        },
+        "steam": {
+            "appid": 1318690,
+            "name": "shapez",
+            "reviews": {
+                "total_positive": 8262,
+                "total_negative": 244,
+                "total_reviews": 8506,
+                "steamReviewScore": 9.713143663296496
+            }
+        },
+        "metacritic": {
+            "urlName": "shapez",
+            "metaScore": "N/A",
+            "userScore": "7.7"
+        }
+    },
+    "mordhau": {
+        "name": "MORDHAU",
+        "cleanName": "mordhau",
+        "epic": {
+            "startDates": [
+                "Thu Apr 13 2023"
+            ],
+            "endDates": [
+                "Thu Apr 20 2023"
+            ],
+            "storeURLName": "mordhau"
+        },
+        "steam": {
+            "appid": 629760,
+            "name": "MORDHAU",
+            "reviews": {
+                "total_positive": 70501,
+                "total_negative": 16351,
+                "total_reviews": 86852,
+                "steamReviewScore": 8.117372081241653
+            }
+        },
+        "metacritic": {
+            "urlName": "mordhau",
+            "metaScore": "81",
+            "userScore": "7.7"
         }
     }
 }
