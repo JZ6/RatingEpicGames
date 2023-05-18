@@ -4,7 +4,7 @@ import importedGamesList from '../../data/freeGamesList.json' assert { type: "js
 async function update(params) {
     const modifiedGameList = { ...importedGamesList }
     // await addGame(modifiedGameList, `Shadow Tactics: Aiko's Choice`, new Date())
-    await addGame(modifiedGameList, `Second Extinction`, 'April 13, 2023')
+    await addGame(modifiedGameList, `The Sims™ 4`, 'May 11, 2023')
     // await addGame(modifiedGameList, 'Counter-Sadsatrike: Global Offensive')
 }
 

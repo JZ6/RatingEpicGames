@@ -2090,10 +2090,10 @@
         "steam": {
             "appid": 1024380,
             "reviews": {
-                "total_positive": 3116,
-                "total_negative": 1149,
-                "total_reviews": 4265,
-                "steamReviewScore": 7.305978898007034
+                "total_positive": 3125,
+                "total_negative": 1179,
+                "total_reviews": 4304,
+                "steamReviewScore": 7.260687732342007
             },
             "name": "Second Extinction™"
         },
@@ -2105,10 +2105,12 @@
         "epic": {
             "storeURLName": "second-extinction",
             "startDates": [
+                "Thu May 04 2023",
                 "Thu Apr 13 2023",
                 "Tue Dec 21 2021"
             ],
             "endDates": [
+                "Thu May 11 2023",
                 "Thu Apr 20 2023",
                 "Wed Dec 22 2021"
             ]
@@ -2401,10 +2403,10 @@
         "steam": {
             "appid": 295790,
             "reviews": {
-                "total_positive": 4277,
-                "total_negative": 957,
-                "total_reviews": 5234,
-                "steamReviewScore": 8.171570500573175
+                "total_positive": 4358,
+                "total_negative": 979,
+                "total_reviews": 5337,
+                "steamReviewScore": 8.16563612516395
             },
             "name": "Never Alone (Kisima Ingitchuna)"
         },
@@ -2416,9 +2418,11 @@
         "epic": {
             "storeURLName": "never-alone",
             "startDates": [
+                "Thu Apr 20 2023",
                 "Thu Nov 18 2021"
             ],
             "endDates": [
+                "Thu Apr 27 2023",
                 "Thu Nov 25 2021"
             ]
         }
@@ -9300,6 +9304,193 @@
             "urlName": "mordhau",
             "metaScore": "81",
             "userScore": "7.7"
+        }
+    },
+    "beyond-blue": {
+        "name": "Beyond Blue",
+        "cleanName": "beyond-blue",
+        "epic": {
+            "startDates": [
+                "Thu Apr 20 2023"
+            ],
+            "endDates": [
+                "Thu Apr 27 2023"
+            ],
+            "storeURLName": "beyond-blue"
+        },
+        "steam": {
+            "appid": 883360,
+            "name": "Beyond Blue",
+            "reviews": {
+                "total_positive": 711,
+                "total_negative": 102,
+                "total_reviews": 813,
+                "steamReviewScore": 8.745387453874539
+            }
+        },
+        "metacritic": {
+            "urlName": "beyond-blue",
+            "metaScore": "72",
+            "userScore": "7.2"
+        }
+    },
+    "breathedge": {
+        "name": "Breathedge",
+        "cleanName": "breathedge",
+        "epic": {
+            "startDates": [
+                "Thu Apr 27 2023"
+            ],
+            "endDates": [
+                "Thu May 04 2023"
+            ],
+            "storeURLName": "breathedge"
+        },
+        "steam": {
+            "appid": 738520,
+            "name": "Breathedge",
+            "reviews": {
+                "total_positive": 9957,
+                "total_negative": 1866,
+                "total_reviews": 11823,
+                "steamReviewScore": 8.421720375539204
+            }
+        },
+        "metacritic": {
+            "urlName": "breathedge",
+            "metaScore": "71",
+            "userScore": "7.4"
+        }
+    },
+    "poker-club": {
+        "name": "Poker Club",
+        "cleanName": "poker-club",
+        "epic": {
+            "startDates": [
+                "Thu Apr 27 2023"
+            ],
+            "endDates": [
+                "Thu May 04 2023"
+            ],
+            "storeURLName": "poker-club"
+        },
+        "steam": {
+            "appid": 1174460,
+            "name": "Poker Club",
+            "reviews": {
+                "total_positive": 181,
+                "total_negative": 138,
+                "total_reviews": 319,
+                "steamReviewScore": 5.67398119122257
+            }
+        },
+        "metacritic": {
+            "urlName": "poker-club",
+            "metaScore": "N/A",
+            "userScore": "5.5"
+        }
+    },
+    "against-all-odds": {
+        "name": "Against All Odds",
+        "cleanName": "against-all-odds",
+        "epic": {
+            "startDates": [
+                "Thu May 04 2023"
+            ],
+            "endDates": [
+                "Thu May 11 2023"
+            ],
+            "storeURLName": "against-all-odds"
+        },
+        "steam": {
+            "appid": 2016470,
+            "name": "Against All Odds",
+            "reviews": {
+                "total_positive": 3,
+                "total_negative": 0,
+                "total_reviews": 3,
+                "steamReviewScore": 10
+            }
+        },
+        "metacritic": {
+            "urlName": "against-all-odds",
+            "metaScore": "N/A",
+            "userScore": "N/A"
+        }
+    },
+    "kao-the-kangaroo": {
+        "name": "Kao the Kangaroo",
+        "cleanName": "kao-the-kangaroo",
+        "epic": {
+            "startDates": [
+                "Thu May 04 2023"
+            ],
+            "endDates": [
+                "Thu May 11 2023"
+            ],
+            "storeURLName": "kao-the-kangaroo"
+        },
+        "steam": {
+            "appid": 1370140,
+            "name": "Kao the Kangaroo",
+            "reviews": {
+                "total_positive": 349,
+                "total_negative": 86,
+                "total_reviews": 435,
+                "steamReviewScore": 8.022988505747126
+            }
+        },
+        "metacritic": {
+            "urlName": "kao-the-kangaroo",
+            "metaScore": "69",
+            "userScore": "7.3"
+        }
+    },
+    "death-stranding": {
+        "name": "Death Stranding",
+        "cleanName": "death-stranding",
+        "epic": {
+            "startDates": [
+                "Thu May 18 2023"
+            ],
+            "endDates": [
+                "Thu May 25 2023"
+            ],
+            "storeURLName": "death-stranding"
+        },
+        "steam": {},
+        "metacritic": {
+            "urlName": "death-stranding",
+            "metaScore": "86",
+            "userScore": "7.8"
+        }
+    },
+    "the-sims-4": {
+        "name": "The Sims™ 4",
+        "cleanName": "the-sims-4",
+        "epic": {
+            "startDates": [
+                "Thu May 11 2023"
+            ],
+            "endDates": [
+                "Thu May 18 2023"
+            ],
+            "storeURLName": "the-sims-4"
+        },
+        "steam": {
+            "appid": 1222670,
+            "name": "The Sims™ 4",
+            "reviews": {
+                "total_positive": 58982,
+                "total_negative": 8888,
+                "total_reviews": 67870,
+                "steamReviewScore": 8.690437601296598
+            }
+        },
+        "metacritic": {
+            "urlName": "the-sims-4",
+            "metaScore": "70",
+            "userScore": "4.2"
         }
     }
 }
