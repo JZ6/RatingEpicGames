@@ -1,5 +1,5 @@
 import { writeFile } from 'node:fs/promises';
-import importedGamesList from '../../data/freeGamesList.json' assert { type: "json" }
+import importedGamesList from '../../data/freeGamesList.json' with  { type: "json" }
 
 export function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
