@@ -1,6 +1,6 @@
 import fetch from "node-fetch";
 
-import steamGameAppIDs from "../../data/steamGameAppIDs.json" assert { type: "json" }
+import steamGameAppIDs from "../../data/steamGameAppIDs.json" with  { type: "json" }
 
 export function addSteamAppID(gameDataObj, overWrite = false) {
 

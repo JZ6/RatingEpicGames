@@ -18,7 +18,7 @@ import {
     addMetacriticScore
 } from './metacritic.mjs';
 
-import importedGamesList from '../../data/freeGamesList.json' assert { type: "json" }
+import importedGamesList from '../../data/freeGamesList.json' with { type: "json" };
 
 
 export async function addGame(modifiedGameList = { ...importedGamesList }, name, giveAwayDate = new Date(), period = 7, write = true) {

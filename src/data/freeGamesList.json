@@ -1976,10 +1976,10 @@
         "steam": {
             "appid": 870780,
             "reviews": {
-                "total_positive": 23040,
-                "total_negative": 2768,
-                "total_reviews": 25808,
-                "steamReviewScore": 8.927464352138871
+                "total_positive": 34695,
+                "total_negative": 4714,
+                "total_reviews": 39409,
+                "steamReviewScore": 8.803826537085438
             },
             "name": "Control Ultimate Edition"
         },
@@ -1991,9 +1991,11 @@
         "epic": {
             "storeURLName": "control",
             "startDates": [
+                "Wed Dec 25 2024",
                 "Thu Jun 10 2021"
             ],
             "endDates": [
+                "Wed Jan 01 2025",
                 "Thu Jun 17 2021"
             ]
         }
@@ -9491,6 +9493,279 @@
             "urlName": "the-sims-4",
             "metaScore": "70",
             "userScore": "4.2"
+        }
+    },
+    "fallout-new-vegas-ultimate-edition": {
+        "name": "Fallout: New Vegas - Ultimate Edition",
+        "cleanName": "fallout-new-vegas-ultimate-edition",
+        "epic": {
+            "startDates": [
+                "Thu May 25 2023"
+            ],
+            "endDates": [
+                "Thu Jun 01 2023"
+            ],
+            "storeURLName": "fallout-new-vegas-ultimate-edition"
+        },
+        "steam": {},
+        "metacritic": {
+            "urlName": "fallout-new-vegas-ultimate-edition",
+            "metaScore": "N/A",
+            "userScore": "N/A"
+        }
+    },
+    "midnight-ghost-hunt": {
+        "name": "Midnight Ghost Hunt",
+        "cleanName": "midnight-ghost-hunt",
+        "epic": {
+            "startDates": [
+                "Thu Jun 01 2023"
+            ],
+            "endDates": [
+                "Thu Jun 08 2023"
+            ],
+            "storeURLName": "midnight-ghost-hunt"
+        },
+        "steam": {
+            "appid": 915810,
+            "name": "Midnight Ghost Hunt",
+            "reviews": {
+                "total_positive": 4311,
+                "total_negative": 1038,
+                "total_reviews": 5349,
+                "steamReviewScore": 8.059450364554122
+            }
+        },
+        "metacritic": {
+            "urlName": "midnight-ghost-hunt",
+            "metaScore": "N/A",
+            "userScore": "N/A"
+        }
+    },
+    "payday-2": {
+        "name": "Payday 2",
+        "cleanName": "payday-2",
+        "epic": {
+            "startDates": [
+                "Thu Jun 08 2023"
+            ],
+            "endDates": [
+                "Thu Jun 15 2023"
+            ],
+            "storeURLName": "payday-2"
+        },
+        "steam": {},
+        "metacritic": {
+            "urlName": "payday-2",
+            "metaScore": "N/A",
+            "userScore": "N/A"
+        }
+    },
+    "guacamelee-": {
+        "name": "Guacamelee!",
+        "cleanName": "guacamelee-",
+        "epic": {
+            "startDates": [
+                "Thu Jun 15 2023"
+            ],
+            "endDates": [
+                "Thu Jun 22 2023"
+            ],
+            "storeURLName": "guacamelee-"
+        },
+        "steam": {},
+        "metacritic": {
+            "urlName": "guacamelee-",
+            "metaScore": "N/A",
+            "userScore": "N/A"
+        }
+    },
+    "guacamelee-2": {
+        "name": "Guacamelee! 2",
+        "cleanName": "guacamelee-2",
+        "epic": {
+            "startDates": [
+                "Thu Jun 15 2023"
+            ],
+            "endDates": [
+                "Thu Jun 22 2023"
+            ],
+            "storeURLName": "guacamelee-2"
+        },
+        "steam": {
+            "appid": 534550,
+            "name": "Guacamelee! 2",
+            "reviews": {
+                "total_positive": 2305,
+                "total_negative": 219,
+                "total_reviews": 2524,
+                "steamReviewScore": 9.132329635499207
+            }
+        },
+        "metacritic": {
+            "urlName": "guacamelee-2",
+            "metaScore": "N/A",
+            "userScore": "N/A"
+        }
+    },
+    "the-hunter-call-of-the-wild": {
+        "name": "The Hunter: Call of the Wild",
+        "cleanName": "the-hunter-call-of-the-wild",
+        "epic": {
+            "startDates": [
+                "Thu Jun 22 2023"
+            ],
+            "endDates": [
+                "Thu Jun 29 2023"
+            ],
+            "storeURLName": "the-hunter-call-of-the-wild"
+        },
+        "steam": {},
+        "metacritic": {
+            "urlName": "the-hunter-call-of-the-wild",
+            "metaScore": "N/A",
+            "userScore": "N/A"
+        }
+    },
+    "the-dungeon-of-naheulbeuk-the-amulet-of-chaos": {
+        "name": "The Dungeon of Naheulbeuk: The Amulet of Chaos",
+        "cleanName": "the-dungeon-of-naheulbeuk-the-amulet-of-chaos",
+        "epic": {
+            "startDates": [
+                "Thu Jun 29 2023"
+            ],
+            "endDates": [
+                "Thu Jul 06 2023"
+            ],
+            "storeURLName": "the-dungeon-of-naheulbeuk-the-amulet-of-chaos"
+        },
+        "steam": {},
+        "metacritic": {
+            "urlName": "the-dungeon-of-naheulbeuk-the-amulet-of-chaos",
+            "metaScore": "N/A",
+            "userScore": "N/A"
+        }
+    },
+    "grime": {
+        "name": "Grime",
+        "cleanName": "grime",
+        "epic": {
+            "startDates": [
+                "Thu Jul 06 2023"
+            ],
+            "endDates": [
+                "Thu Jul 13 2023"
+            ],
+            "storeURLName": "grime"
+        },
+        "steam": {},
+        "metacritic": {
+            "urlName": "grime",
+            "metaScore": "N/A",
+            "userScore": "N/A"
+        }
+    },
+    "train-valley-2": {
+        "name": "Train Valley 2",
+        "cleanName": "train-valley-2",
+        "epic": {
+            "startDates": [
+                "Thu Jul 13 2023"
+            ],
+            "endDates": [
+                "Thu Jul 20 2023"
+            ],
+            "storeURLName": "train-valley-2"
+        },
+        "steam": {
+            "appid": 602320,
+            "name": "Train Valley 2",
+            "reviews": {
+                "total_positive": 1919,
+                "total_negative": 184,
+                "total_reviews": 2103,
+                "steamReviewScore": 9.125059438896814
+            }
+        },
+        "metacritic": {
+            "urlName": "train-valley-2",
+            "metaScore": "N/A",
+            "userScore": "N/A"
+        }
+    },
+    "the-outer-worlds": {
+        "name": "The Outer Worlds",
+        "cleanName": "the-outer-worlds",
+        "epic": {
+            "startDates": [
+                "Mon Dec 25 2023"
+            ],
+            "endDates": [
+                "Mon Jan 01 2024"
+            ],
+            "storeURLName": "the-outer-worlds"
+        },
+        "steam": {
+            "appid": 578650,
+            "name": "The Outer Worlds",
+            "reviews": {
+                "total_positive": 18757,
+                "total_negative": 3747,
+                "total_reviews": 22504,
+                "steamReviewScore": 8.334962673302524
+            }
+        },
+        "metacritic": {
+            "urlName": "the-outer-worlds",
+            "metaScore": "N/A",
+            "userScore": "N/A"
+        }
+    },
+    "dredge": {
+        "name": "Dredge",
+        "cleanName": "dredge",
+        "epic": {
+            "startDates": [
+                "Tue Dec 24 2024"
+            ],
+            "endDates": [
+                "Tue Dec 31 2024"
+            ],
+            "storeURLName": "dredge"
+        },
+        "steam": {},
+        "metacritic": {
+            "urlName": "dredge",
+            "metaScore": "N/A",
+            "userScore": "N/A"
+        }
+    },
+    "chivalry-2": {
+        "name": "Chivalry 2",
+        "cleanName": "chivalry-2",
+        "epic": {
+            "startDates": [
+                "Thu May 30 2024"
+            ],
+            "endDates": [
+                "Thu Jun 06 2024"
+            ],
+            "storeURLName": "chivalry-2"
+        },
+        "steam": {
+            "appid": 1824220,
+            "name": "Chivalry 2",
+            "reviews": {
+                "total_positive": 30739,
+                "total_negative": 7146,
+                "total_reviews": 37885,
+                "steamReviewScore": 8.113765342483832
+            }
+        },
+        "metacritic": {
+            "urlName": "chivalry-2",
+            "metaScore": "N/A",
+            "userScore": "N/A"
         }
     }
 }
