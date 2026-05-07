@@ -1834,19 +1834,33 @@
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2596420/capsule_184x69.jpg?t=1745972134",
       "metacritic_score": 82,
       "metacritic_url": "https://www.metacritic.com/game/pc/arranger-a-role-puzzling-adventure?ftag=MCD-06-10aaa1f",
-      "updated_at": "2026-05-07"
+      "updated_at": "2026-05-07",
+      "steamdb_rating": 85.38,
+      "steam_url": "https://store.steampowered.com/app/2596420/",
+      "steamdb_url": "https://steamdb.info/app/2596420/"
     },
     "metacritic": {
-      "found": false
+      "found": true,
+      "score": 81,
+      "slug": "arranger-a-rolepuzzling-adventure-dbfde7",
+      "source": "josephmate",
+      "updated_at": "2026-05-07",
+      "url": "https://www.metacritic.com/game/arranger-a-role-puzzling-adventure/"
     },
     "epic": {
       "slug": "8883fa6958a24a00b6f33166e4552833",
       "free_dates": [
         {
           "start": "2026-05-07",
-          "end": "2026-05-14"
+          "end": ""
         }
       ],
+      "platforms": [
+        "pc"
+      ],
+      "epic_id": "4fb95c3f11754061b2b1a94e60d848bd",
+      "sandbox_id": "2df8b055a5674c8e9211fc51f8efd210",
+      "store_url": "https://store.epicgames.com/en-US/p/arranger-a-rolepuzzling-adventure-dbfde7",
       "updated_at": "2026-05-07"
     },
     "hltb": {
@@ -24039,6 +24053,47 @@
       "updated_at": "2026-05-07"
     }
   },
+  "Teacup": {
+    "steam": {
+      "found": true,
+      "appid": 1444300,
+      "steamdb_rating": 90.46,
+      "pct": 90,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1444300/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/1444300/",
+      "steamdb_url": "https://steamdb.info/app/1444300/",
+      "updated_at": "2026-05-07"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-05-07"
+    },
+    "epic": {
+      "slug": "teacup-android-b71c0e",
+      "free_dates": [
+        {
+          "start": "2026-05-07",
+          "end": ""
+        }
+      ],
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "store_url": "https://store.epicgames.com/en-US/p/teacup-android-b71c0e",
+      "updated_at": "2026-05-07"
+    },
+    "hltb": {
+      "found": true,
+      "hltb_id": 98657,
+      "main": 1.59,
+      "extra": 1.75,
+      "complete": 1.91,
+      "all_styles": 1.72,
+      "updated_at": "2026-05-07"
+    }
+  },
   "Terraforming Mars": {
     "steam": {
       "found": true,
@@ -27571,7 +27626,10 @@
         "Simulation"
       ],
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2407830/b5f73d55cbca5df86e2feb1a92636ce62bb1439e/capsule_184x69.jpg?t=1778170992",
-      "updated_at": "2026-05-07"
+      "updated_at": "2026-05-07",
+      "steamdb_rating": 84.95,
+      "steam_url": "https://store.steampowered.com/app/2407830/",
+      "steamdb_url": "https://steamdb.info/app/2407830/"
     },
     "metacritic": {
       "found": false
@@ -27581,9 +27639,15 @@
       "free_dates": [
         {
           "start": "2026-05-07",
-          "end": "2026-05-14"
+          "end": ""
         }
       ],
+      "platforms": [
+        "pc"
+      ],
+      "epic_id": "40980262fdb24c149094f3febfe84cb6",
+      "sandbox_id": "f14e8d865ad04b93a5df850ce7a59fe2",
+      "store_url": "https://store.epicgames.com/en-US/p/trash-goblin-cd5fd7",
       "updated_at": "2026-05-07"
     },
     "hltb": {
