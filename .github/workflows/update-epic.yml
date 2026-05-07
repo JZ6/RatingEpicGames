@@ -1,0 +1,59 @@
+name: Update Game Data
+
+on:
+  schedule:
+    - cron: "36 22 * * 4" # Every Thursday ~6:36 PM ET (10:36 PM UTC) — after Epic's weekly free game refresh
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Update game data
+        run: node scripts/update.js
+
+      - name: Validate JSON output
+        run: node -e "JSON.parse(require('fs').readFileSync('public/game_data.json', 'utf8'))"
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "date=$(date +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create Pull Request
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="update-epic-${{ steps.changes.outputs.date }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add public/game_data.json
+          git commit -m "Update Epic free games list"
+          git push -u origin "$BRANCH"
+
+          gh pr create \
+            --title "Update game data (${{ steps.changes.outputs.date }})" \
+            --body "Weekly automated update of game data.
+
+          - Epic free games: [josephmate/EpicFreeGamesList](https://github.com/josephmate/EpicFreeGamesList) + Epic Store API
+          - Steam, HLTB, Metacritic: new games auto-checked"

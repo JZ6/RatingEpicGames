@@ -1,0 +1,20 @@
+:root {
+  --accent: #0078f2; --accent-dim: #004a99;
+  --accent-row-hover: #001a33;
+  --accent-click-hover: rgba(0, 120, 242, 0.05);
+}
+
+/* Epic rating */
+.er-great { background: #003300; color: #44dd44; border: 1px solid #226622; }
+.er-good  { background: #001a33; color: #4ea8de; border: 1px solid #2a5a8a; }
+.er-mixed { background: #2a2000; color: #ccaa44; border: 1px solid #6a5a22; }
+.er-bad   { background: #2a0000; color: #dd4444; border: 1px solid #6a2222; }
+
+/* Epic date */
+.epic-date { font-size: 13px; color: var(--text-dim); white-space: nowrap; cursor: default; }
+.epic-count { margin-left: 4px; font-size: 11px; color: var(--blue); font-weight: 600; }
+
+/* Platform */
+.platform-cell { display: inline-flex; gap: 4px; flex-wrap: wrap; justify-content: center; }
+.plat-pc { background: #1a2a3a; color: #7db8d8; border: 1px solid #3a5a7a; }
+.plat-ios, .plat-android { background: #2a1a4a; color: #a78bfa; border: 1px solid #5a3a8a; }
