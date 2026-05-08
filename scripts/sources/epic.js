@@ -72,7 +72,11 @@ function buildEpicSection(entries, existingEpic, slug, now) {
   const seen = new Set();
   const freeDates = entries
     .filter((e) => e.freeDate)
-    .map((e) => ({ start: toISODate(e.freeDate), end: "" }))
+    .map((e) => {
+      const start = toISODate(e.freeDate);
+      const existing = existingEpic?.free_dates?.find((d) => d.start === start);
+      return { start, end: existing?.end || "" };
+    })
     .filter((d) => { if (seen.has(d.start)) return false; seen.add(d.start); return true; })
     .sort((a, b) => a.start.localeCompare(b.start));
 

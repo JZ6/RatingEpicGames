@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   update:
@@ -17,7 +16,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           cache: npm
 
       - run: npm ci
@@ -38,22 +37,11 @@ jobs:
             echo "date=$(date +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Create Pull Request
+      - name: Commit and push
         if: steps.changes.outputs.changed == 'true'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          BRANCH="update-epic-${{ steps.changes.outputs.date }}"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -b "$BRANCH"
           git add public/game_data.json
-          git commit -m "Update Epic free games list"
-          git push -u origin "$BRANCH"
-
-          gh pr create \
-            --title "Update game data (${{ steps.changes.outputs.date }})" \
-            --body "Weekly automated update of game data.
-
-          - Epic free games: [josephmate/EpicFreeGamesList](https://github.com/josephmate/EpicFreeGamesList) + Epic Store API
-          - Steam, HLTB, Metacritic: new games auto-checked"
+          git commit -m "Update game data (${{ steps.changes.outputs.date }})"
+          git push
