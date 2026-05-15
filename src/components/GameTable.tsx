@@ -1,26 +1,30 @@
-import { memo, useEffect, useRef, useMemo, useState } from "react";
+import { memo, useEffect, useLayoutEffect, useRef, useMemo, useState } from "react";
 import type { EpicGame, HltbInfo, SteamInfo, MetacriticInfo, EpicInfo, SortCol, SortDir, Filters } from "../types";
 import { SteamBadge, MetacriticBadge, UserScoreBadge, HltbBadge, EpicDateBadge, EpicRatingBadge, PlatformBadge, HideBadge, OwnedBadge } from "./Badge";
 
 export interface Column {
   key: SortCol;
   label: string;
+  fullLabel?: string;
   minWidth: string;
   tooltip: string;
   icon?: React.JSX.Element;
 }
 
+export const PINNED_FIRST = new Set<SortCol>(["name"]);
+export const PINNED_LAST = new Set<SortCol>(["owned", "hide"]);
+
 export const COLUMNS: Column[] = [
-  { key: "name",       label: "Game",           minWidth: "160px", tooltip: "Click to view on Epic Games Store" },
-  { key: "epicrating", label: "Epic Rating",     minWidth: "80px",  tooltip: "Epic Games Store user rating (out of 5)\nGreen = 4.5+\nBlue = 3.5–4.4\nYellow = 2.5–3.4\nRed = below 2.5" },
-  { key: "epicdate",   label: "Free Date",       minWidth: "100px", tooltip: "When this game was given away free on Epic\nHover to see all dates if offered multiple times" },
-  { key: "metacritic", label: "Meta Score",      minWidth: "80px",  tooltip: "Metacritic critic score\nGreen = 75+\nYellow = 50–74\nRed = below 50" },
-  { key: "owned",      label: "Owned",           minWidth: "60px",  tooltip: "Games you own\nImport your library via the header button" },
-  { key: "platform",   label: "Platform",        minWidth: "70px",  tooltip: "Platforms this game was given away on" },
-  { key: "hltb",       label: "Playtime",        minWidth: "70px",  tooltip: "Average playtime from HowLongToBeat\n(Main Story + Extras + Completionist)\nHover a value for full breakdown" },
-  { key: "steam",      label: "Steam Rating",   minWidth: "180px", tooltip: "Steam user review rating\nwith positive review percentage" },
-  { key: "userscore",  label: "User Score",      minWidth: "80px",  tooltip: "Metacritic user score\nGreen = 7.5+\nYellow = 5–7.4\nRed = below 5" },
-  { key: "hide",       label: "Visibility",      minWidth: "40px",  tooltip: "Toggle game visibility\nHidden games are saved in your browser", icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" /><circle cx="12" cy="12" r="3" /></svg> },
+  { key: "name",       label: "Game",         minWidth: "360px", tooltip: "Click to view on Epic Games Store" },
+  { key: "epicrating", label: "ER",           fullLabel: "Epic Rating", minWidth: "90px",  tooltip: "Epic Games Store user rating (out of 5)\nGreen = 4.5+\nBlue = 3.5–4.4\nYellow = 2.5–3.4\nRed = below 2.5" },
+  { key: "epicdate",   label: "Free Date",    minWidth: "150px", tooltip: "When this game was given away free on Epic\nHover to see all dates if offered multiple times" },
+  { key: "metacritic", label: "MC",           fullLabel: "Meta Score", minWidth: "90px",  tooltip: "Metacritic critic score\nGreen = 75+\nYellow = 50–74\nRed = below 50" },
+  { key: "owned",      label: "Own",          fullLabel: "Owned", minWidth: "90px",  tooltip: "Games you own\nImport your library via the header button" },
+  { key: "platform",   label: "Platform",     minWidth: "90px",  tooltip: "Platforms this game was given away on" },
+  { key: "hltb",       label: "Playtime",     minWidth: "125px", tooltip: "Average playtime from HowLongToBeat\n(Main Story + Extras + Completionist)\nHover a value for full breakdown" },
+  { key: "steam",      label: "Steam Rating", minWidth: "240px", tooltip: "Steam user review rating\nwith positive review percentage" },
+  { key: "userscore",  label: "US",           fullLabel: "User Score", minWidth: "90px",  tooltip: "Metacritic user score\nGreen = 7.5+\nYellow = 5–7.4\nRed = below 5" },
+  { key: "hide",       label: "Hide",         minWidth: "90px",  tooltip: "Toggle game visibility\nHidden games are saved in your browser" },
 ];
 
 const COLUMN_FILTERS: Partial<Record<SortCol, { value: string; label: string }[]>> = {
@@ -128,6 +132,28 @@ export function GameTable({ games, hltb, steam, metacritic, epic, images, sortCo
   }, [filterCounts.year]);
 
   const wrapRef = useRef<HTMLDivElement>(null);
+  const [containerWidth, setContainerWidth] = useState(0);
+
+  useLayoutEffect(() => {
+    const el = wrapRef.current;
+    if (!el) return;
+    setContainerWidth(el.clientWidth);
+    const ro = new ResizeObserver((entries) => {
+      const w = entries[0]?.contentRect.width ?? 0;
+      setContainerWidth(w);
+    });
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+
+  const colWidths = useMemo(() => {
+    const minWidths = cols.map((c) => parseInt(c.minWidth));
+    const totalMin = minWidths.reduce((s, w) => s + w, 0);
+    const extra = Math.max(0, containerWidth - totalMin);
+    const share = cols.length > 0 ? Math.floor(extra / cols.length) : 0;
+    return minWidths.map((w) => w + share);
+  }, [cols, containerWidth]);
+
   useEffect(() => {
     const el = wrapRef.current;
     if (!el || window.innerWidth > 800) return;
@@ -150,6 +176,9 @@ export function GameTable({ games, hltb, steam, metacritic, epic, images, sortCo
   return (
     <div className="table-wrap" ref={wrapRef}>
       <table>
+        <colgroup>
+          {colWidths.map((w, i) => <col key={cols[i].key} style={{ width: w }} />)}
+        </colgroup>
         <thead>
           <tr>
             {cols.map((col) => {
@@ -158,7 +187,6 @@ export function GameTable({ games, hltb, steam, metacritic, epic, images, sortCo
               return (
                 <th
                   key={col.key}
-                  style={{ minWidth: col.minWidth }}
                   className={sortCol === col.key ? "sorted" : ""}
                   aria-sort={sortCol === col.key ? (sortDir === 1 ? "ascending" : "descending") : "none"}
                 >

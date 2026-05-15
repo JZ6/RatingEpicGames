@@ -99,7 +99,7 @@ export function formatFreeDate(epic?: EpicInfo): string {
   const y = best.date.getFullYear();
   const m = best.date.toLocaleDateString("en-US", { month: "short" });
   const d = best.date.getDate();
-  return `${y} ${m} ${d}`;
+  return `${y} · ${m} ${d}`;
 }
 
 export function getFreeDateYear(epic?: EpicInfo): number | undefined {

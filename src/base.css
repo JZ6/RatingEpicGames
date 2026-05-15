@@ -67,8 +67,7 @@ select { cursor: pointer; }
 .table-wrap { flex: 1; overflow: auto; min-height: 0; }
 thead th:first-child, td:first-child { padding-left: 12px; }
 thead th:last-child, td:last-child { padding-right: 12px; }
-table { width: 100%; border-collapse: separate; border-spacing: 0; table-layout: auto; overflow: clip; }
-thead th, td { min-width: 0 !important; }
+table { width: 100%; border-collapse: separate; border-spacing: 0; table-layout: fixed; overflow: clip; }
 
 /* Sticky column headers */
 thead th {
@@ -126,6 +125,7 @@ td.clickable:hover { background: var(--accent-click-hover); }
 td.nc a { color: var(--text); text-decoration: none; transition: color 0.1s; display: flex; align-items: center; gap: 6px; }
 .game-thumb { width: 72px; height: 27px; object-fit: contain; border-radius: 3px; flex-shrink: 0; margin: -4px 0; }
 .game-thumb-ph { width: 72px; height: 27px; flex-shrink: 0; margin: -4px 0; display: inline-flex; align-items: center; justify-content: center; background: var(--bg3); border-radius: 3px; color: var(--text-dim); font-size: 12px; }
+.game-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 260px; }
 td.nc a:hover { color: var(--accent); }
 
 /* Badges */

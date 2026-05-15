@@ -154,6 +154,8 @@ export function buildSteamEntry(appid, reviews, details) {
 class SteamUpdater extends Updater {
   sourceKey = "steam";
   label = "Steam";
+  batchSize = 3;
+  batchDelay = 1500;
   helpText = `Usage:
   node scripts/sources/steam.js                          Update all unchecked games
   node scripts/sources/steam.js --limit <n>              Update n unchecked games
@@ -175,7 +177,8 @@ class SteamUpdater extends Updater {
 
     const result = await fetchGame(name, steamEntry);
     if (result) {
-      gameData[name].steam = buildSteamEntry(result.appid, result.reviews, result.details);
+      const existing = gameData[name].steam || {};
+      gameData[name].steam = { ...existing, ...buildSteamEntry(result.appid, result.reviews, result.details) };
       const rev = result.reviews;
       const revStr = rev ? `${rev.rating} (${rev.pct}%, ${rev.total.toLocaleString()} reviews)` : "no reviews yet";
       console.log(`  ${prefix}${name}: ${revStr} [appid=${result.appid}]`);
