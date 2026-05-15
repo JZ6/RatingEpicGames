@@ -153,8 +153,17 @@ export class Updater {
       await Promise.all(batch.map(async (name, j) => {
         if (!gameData[name]) gameData[name] = {};
         const prefix = names.length > 1 ? `[${i + j + 1}/${names.length}] ` : "";
+        const oldJson = JSON.stringify(gameData[name]?.[this.sourceKey] ?? null);
         try { if (await this.processOne(gameData, name, prefix)) added++; }
         catch (e) { console.log(`  ${prefix}${name}: error (${e.message})`); }
+        if (!this._forceTimestamp && oldJson !== "null") {
+          const entry = gameData[name]?.[this.sourceKey];
+          if (entry) {
+            const old = JSON.parse(oldJson);
+            const strip = (e) => { const { updated_at, ...rest } = e; return JSON.stringify(rest); };
+            if (strip(old) === strip(entry)) entry.updated_at = old.updated_at;
+          }
+        }
       }));
     }
     console.log(`  Added ${added} new ${this.label} entries`);
@@ -178,6 +187,7 @@ export class Updater {
    * @param {object} opts     - Parsed CLI options from parseArgs()
    */
   async run(gameData, { games = [], limit = 0, retry = false, refresh = 0, backfill = false } = {}) {
+    this._forceTimestamp = !!(games.length || retry || refresh || backfill);
     const gameNames = getGameNames();
     let names;
 
