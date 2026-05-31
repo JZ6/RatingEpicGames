@@ -1,24 +1,25 @@
-import type { SortCol } from "../types";
 import { ColumnToggle } from "./ColumnToggle";
 
 interface Props {
-  columns?: { key: SortCol; label: string }[];
-  visibleCols?: Set<SortCol>;
-  onToggleCol?: (key: SortCol) => void;
+  title: string;
+  subtitle: string;
+  columns?: { key: string; label: string; fullLabel?: string; tooltip?: string }[];
+  visibleCols?: Set<string>;
+  onToggleCol?: (key: string) => void;
   onClearFilters?: () => void;
   onImportLibrary?: () => void;
   ownedCount?: number;
 }
 
-export function Header({ columns, visibleCols, onToggleCol, onClearFilters, onImportLibrary, ownedCount }: Props) {
+export function Header({ title, subtitle, columns, visibleCols, onToggleCol, onClearFilters, onImportLibrary, ownedCount }: Props) {
   const showActions = columns && visibleCols && onToggleCol && onClearFilters;
 
   return (
     <div className="top-bar">
       <header>
         <div className="header-left">
-          <h1>Rating Epic Games</h1>
-          <span className="subtitle">Every free Epic game. Rated. Reviewed. All in one place.</span>
+          <h1>{title}</h1>
+          <span className="subtitle">{subtitle}</span>
         </div>
         {showActions && (
           <div className="header-actions">

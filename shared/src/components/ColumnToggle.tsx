@@ -1,10 +1,9 @@
 import { useState, useRef, useEffect } from "react";
-import type { SortCol } from "../types";
 
 interface Props {
-  columns: { key: SortCol; label: string; fullLabel?: string; tooltip?: string }[];
-  visible: Set<SortCol>;
-  onToggle: (key: SortCol) => void;
+  columns: { key: string; label: string; fullLabel?: string; tooltip?: string }[];
+  visible: Set<string>;
+  onToggle: (key: string) => void;
 }
 
 export function ColumnToggle({ columns, visible, onToggle }: Props) {

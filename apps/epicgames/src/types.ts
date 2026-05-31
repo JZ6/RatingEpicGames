@@ -1,21 +1,9 @@
+export type { SteamInfo, HltbInfo, MetacriticInfo, SteamRating } from "@shared/types";
+export { getHltbHours } from "@shared/types";
+
 export interface EpicGame {
   name: string;
   slug: string;
-}
-
-export interface SteamInfo {
-  rating?: SteamRating;
-  pct?: number;
-  total?: number;
-  appid?: number;
-  image?: string;
-  steam_url?: string;
-}
-
-export interface MetacriticInfo {
-  score?: number;
-  user_score?: number;
-  slug?: string;
 }
 
 export interface EpicInfo {
@@ -25,27 +13,6 @@ export interface EpicInfo {
   epic_rating?: number;
   store_url?: string;
 }
-
-export interface HltbInfo {
-  main?: number;
-  extra?: number;
-  complete?: number;
-  coop?: number;
-  pvp?: number;
-  speed?: number;
-  all_styles?: number;
-  hltb_id?: number;
-}
-
-export type SteamRating =
-  | "Overwhelmingly Positive"
-  | "Very Positive"
-  | "Positive"
-  | "Mostly Positive"
-  | "Mixed"
-  | "Mostly Negative"
-  | "Negative"
-  | "Very Negative";
 
 export interface Filters {
   search: string;
@@ -62,14 +29,6 @@ export interface Filters {
 
 export type SortCol = "name" | "steam" | "metacritic" | "userscore" | "hltb" | "epicdate" | "epicrating" | "platform" | "hide" | "owned";
 export type SortDir = 1 | -1;
-
-export function getHltbHours(info?: HltbInfo): number | undefined {
-  if (!info) return undefined;
-  const vals = [info.main, info.extra, info.complete, info.coop, info.pvp, info.all_styles]
-    .filter((v): v is number => v != null);
-  if (vals.length === 0) return undefined;
-  return vals.reduce((a, b) => a + b, 0) / vals.length;
-}
 
 function parseDate(s: string): Date {
   // ISO dates like "2018-12-12" are parsed as UTC — add T12:00 to avoid timezone shift

@@ -1,10 +1,10 @@
 import { useEffect, useState, useCallback } from "react";
 import { useGameData } from "./hooks/useGameData";
 import { useFilters } from "./hooks/useFilters";
-import { Header } from "./components/Header";
-import { StatsBar } from "./components/StatsBar";
+import { Header } from "@shared/components/Header";
+import { StatsBar } from "@shared/components/StatsBar";
 import { GameTable, COLUMNS } from "./components/GameTable";
-import { ImportModal } from "./components/ImportModal";
+import { ImportModal } from "@shared/components/ImportModal";
 import type { SortCol } from "./types";
 
 const LS_COLS = "epicdb-columns";
@@ -68,12 +68,13 @@ export default function App() {
     });
   }, []);
 
-  const toggleCol = useCallback((key: SortCol) => {
+  const toggleCol = useCallback((key: string) => {
     if (key === "name") return;
+    const k = key as SortCol;
     setVisibleCols((prev) => {
       const next = new Set(prev);
-      if (next.has(key)) next.delete(key);
-      else next.add(key);
+      if (next.has(k)) next.delete(k);
+      else next.add(k);
       return next;
     });
   }, []);
@@ -96,9 +97,9 @@ export default function App() {
   if (loading) {
     return (
       <>
-        <Header />
+        <Header title="Rating Epic Games" subtitle="Every free Epic game. Rated. Reviewed. All in one place." />
         <div className="loading"><span className="spinner" />Loading game data…</div>
-        <StatsBar filtered={[]} total={0} />
+        <StatsBar filteredCount={0} total={0} />
       </>
     );
   }
@@ -106,14 +107,14 @@ export default function App() {
   if (error) {
     return (
       <>
-        <Header />
+        <Header title="Rating Epic Games" subtitle="Every free Epic game. Rated. Reviewed. All in one place." />
         <div className="error-page">
           <h2>Failed to load game data</h2>
           <p>Make sure <code>game_data.json</code> is in the <code>public/</code> folder and accessible.</p>
           <p className="error-detail">{error}</p>
           <button type="button" className="btn-clear" onClick={retry}>Retry</button>
         </div>
-        <StatsBar filtered={[]} total={0} />
+        <StatsBar filteredCount={0} total={0} />
       </>
     );
   }
@@ -121,6 +122,8 @@ export default function App() {
   return (
     <>
       <Header
+        title="Rating Epic Games"
+        subtitle="Every free Epic game. Rated. Reviewed. All in one place."
         columns={COLUMNS}
         visibleCols={visibleCols}
         onToggleCol={toggleCol}
@@ -146,7 +149,7 @@ export default function App() {
         onToggleHide={toggleHide}
         ownedGames={ownedGames}
       />
-      <StatsBar filtered={filtered} total={games.length} />
+      <StatsBar filteredCount={filtered.length} total={games.length} />
       {showImport && (
         <ImportModal
           gameNames={games.map((g) => g.name)}

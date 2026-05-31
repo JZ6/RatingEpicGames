@@ -1,12 +1,11 @@
-import type { EpicGame } from "../types";
 import coffeePng from "../assets/coffeeDonation.png";
 
 interface Props {
-  filtered: EpicGame[];
+  filteredCount: number;
   total: number;
 }
 
-export function StatsBar({ filtered, total }: Props) {
+export function StatsBar({ filteredCount, total }: Props) {
   return (
     <div className="stats-bar">
       <a
@@ -19,7 +18,7 @@ export function StatsBar({ filtered, total }: Props) {
         <img src={coffeePng} alt="Buy me a coffee" />
       </a>
       <span>
-        Showing <span className="hl">{filtered.length}</span> of <span className="hl">{total}</span> games
+        Showing <span className="hl">{filteredCount}</span> of <span className="hl">{total}</span> games
       </span>
       <span className="copyright">&copy; {new Date().getFullYear()} JZ6</span>
     </div>

@@ -1,26 +1,29 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
-import { Header } from '../Header'
-import { StatsBar } from '../StatsBar'
-import { ColumnToggle } from '../ColumnToggle'
-import type { SortCol } from '../../types'
+import { Header } from '@shared/components/Header'
+import { StatsBar } from '@shared/components/StatsBar'
+import { ColumnToggle } from '@shared/components/ColumnToggle'
+
+const TITLE = 'Rating Epic Games'
+const SUBTITLE = 'Every free Epic game. Rated. Reviewed. All in one place.'
 
 describe('Header', () => {
   it('renders title', () => {
-    render(<Header />)
-    expect(screen.getByText('Rating Epic Games')).toBeInTheDocument()
+    render(<Header title={TITLE} subtitle={SUBTITLE} />)
+    expect(screen.getByText(TITLE)).toBeInTheDocument()
   })
 
   it('renders subtitle', () => {
-    render(<Header />)
+    render(<Header title={TITLE} subtitle={SUBTITLE} />)
     expect(screen.getByText(/Every free Epic game/)).toBeInTheDocument()
   })
 
   it('shows action buttons when all props provided', () => {
     render(
       <Header
-        columns={[{ key: 'name' as SortCol, label: 'Game' }]}
-        visibleCols={new Set(['name' as SortCol])}
+        title={TITLE} subtitle={SUBTITLE}
+        columns={[{ key: 'name', label: 'Game' }]}
+        visibleCols={new Set(['name'])}
         onToggleCol={() => {}}
         onClearFilters={() => {}}
       />
@@ -29,15 +32,16 @@ describe('Header', () => {
   })
 
   it('hides actions when props are missing', () => {
-    render(<Header />)
+    render(<Header title={TITLE} subtitle={SUBTITLE} />)
     expect(screen.queryByText('Clear Filters')).not.toBeInTheDocument()
   })
 
   it('shows Import Library button when onImportLibrary provided', () => {
     render(
       <Header
-        columns={[{ key: 'name' as SortCol, label: 'Game' }]}
-        visibleCols={new Set(['name' as SortCol])}
+        title={TITLE} subtitle={SUBTITLE}
+        columns={[{ key: 'name', label: 'Game' }]}
+        visibleCols={new Set(['name'])}
         onToggleCol={() => {}}
         onClearFilters={() => {}}
         onImportLibrary={() => {}}
@@ -49,8 +53,9 @@ describe('Header', () => {
   it('shows owned count badge', () => {
     render(
       <Header
-        columns={[{ key: 'name' as SortCol, label: 'Game' }]}
-        visibleCols={new Set(['name' as SortCol])}
+        title={TITLE} subtitle={SUBTITLE}
+        columns={[{ key: 'name', label: 'Game' }]}
+        visibleCols={new Set(['name'])}
         onToggleCol={() => {}}
         onClearFilters={() => {}}
         onImportLibrary={() => {}}
@@ -63,8 +68,9 @@ describe('Header', () => {
   it('does not show badge when ownedCount is 0', () => {
     render(
       <Header
-        columns={[{ key: 'name' as SortCol, label: 'Game' }]}
-        visibleCols={new Set(['name' as SortCol])}
+        title={TITLE} subtitle={SUBTITLE}
+        columns={[{ key: 'name', label: 'Game' }]}
+        visibleCols={new Set(['name'])}
         onToggleCol={() => {}}
         onClearFilters={() => {}}
         onImportLibrary={() => {}}
@@ -78,8 +84,9 @@ describe('Header', () => {
     const onImport = vi.fn()
     render(
       <Header
-        columns={[{ key: 'name' as SortCol, label: 'Game' }]}
-        visibleCols={new Set(['name' as SortCol])}
+        title={TITLE} subtitle={SUBTITLE}
+        columns={[{ key: 'name', label: 'Game' }]}
+        visibleCols={new Set(['name'])}
         onToggleCol={() => {}}
         onClearFilters={() => {}}
         onImportLibrary={onImport}
@@ -93,8 +100,9 @@ describe('Header', () => {
     const onClear = vi.fn()
     render(
       <Header
-        columns={[{ key: 'name' as SortCol, label: 'Game' }]}
-        visibleCols={new Set(['name' as SortCol])}
+        title={TITLE} subtitle={SUBTITLE}
+        columns={[{ key: 'name', label: 'Game' }]}
+        visibleCols={new Set(['name'])}
         onToggleCol={() => {}}
         onClearFilters={onClear}
       />
@@ -106,41 +114,37 @@ describe('Header', () => {
 
 describe('StatsBar', () => {
   it('shows filtered and total counts', () => {
-    const games = [
-      { name: 'A', slug: 'a' },
-      { name: 'B', slug: 'b' },
-    ]
-    render(<StatsBar filtered={games} total={10} />)
+    render(<StatsBar filteredCount={2} total={10} />)
     expect(screen.getByText('2')).toBeInTheDocument()
     expect(screen.getByText('10')).toBeInTheDocument()
     expect(screen.getByText(/Showing/)).toBeInTheDocument()
   })
 
   it('shows copyright year', () => {
-    render(<StatsBar filtered={[]} total={0} />)
+    render(<StatsBar filteredCount={0} total={0} />)
     expect(screen.getByText(new RegExp(String(new Date().getFullYear())))).toBeInTheDocument()
   })
 })
 
 describe('ColumnToggle', () => {
   const columns = [
-    { key: 'name' as SortCol, label: 'Game' },
-    { key: 'steam' as SortCol, label: 'Steam Rating' },
-    { key: 'hltb' as SortCol, label: 'Playtime' },
+    { key: 'name', label: 'Game' },
+    { key: 'steam', label: 'Steam Rating' },
+    { key: 'hltb', label: 'Playtime' },
   ]
 
   it('shows Columns button', () => {
-    render(<ColumnToggle columns={columns} visible={new Set(['name', 'steam', 'hltb'] as SortCol[])} onToggle={() => {}} />)
+    render(<ColumnToggle columns={columns} visible={new Set(['name', 'steam', 'hltb'])} onToggle={() => {}} />)
     expect(screen.getByText('Columns')).toBeInTheDocument()
   })
 
   it('shows hidden count badge', () => {
-    render(<ColumnToggle columns={columns} visible={new Set(['name'] as SortCol[])} onToggle={() => {}} />)
+    render(<ColumnToggle columns={columns} visible={new Set(['name'])} onToggle={() => {}} />)
     expect(screen.getByText('2 hidden')).toBeInTheDocument()
   })
 
   it('opens dropdown on click', () => {
-    render(<ColumnToggle columns={columns} visible={new Set(['name', 'steam'] as SortCol[])} onToggle={() => {}} />)
+    render(<ColumnToggle columns={columns} visible={new Set(['name', 'steam'])} onToggle={() => {}} />)
     fireEvent.click(screen.getByText('Columns'))
     expect(screen.getByText('Game')).toBeInTheDocument()
     expect(screen.getByText('Steam Rating')).toBeInTheDocument()
@@ -149,22 +153,22 @@ describe('ColumnToggle', () => {
 
   it('calls onToggle when checkbox clicked', () => {
     const onToggle = vi.fn()
-    render(<ColumnToggle columns={columns} visible={new Set(['name', 'steam'] as SortCol[])} onToggle={onToggle} />)
+    render(<ColumnToggle columns={columns} visible={new Set(['name', 'steam'])} onToggle={onToggle} />)
     fireEvent.click(screen.getByText('Columns'))
     const checkboxes = screen.getAllByRole('checkbox')
-    fireEvent.click(checkboxes[2]) // Playtime
+    fireEvent.click(checkboxes[2])
     expect(onToggle).toHaveBeenCalledWith('hltb')
   })
 
   it('disables name column checkbox', () => {
-    render(<ColumnToggle columns={columns} visible={new Set(['name', 'steam'] as SortCol[])} onToggle={() => {}} />)
+    render(<ColumnToggle columns={columns} visible={new Set(['name', 'steam'])} onToggle={() => {}} />)
     fireEvent.click(screen.getByText('Columns'))
     const checkboxes = screen.getAllByRole('checkbox')
-    expect(checkboxes[0]).toBeDisabled() // name is always disabled
+    expect(checkboxes[0]).toBeDisabled()
   })
 
   it('closes dropdown on Escape', () => {
-    render(<ColumnToggle columns={columns} visible={new Set(['name', 'steam'] as SortCol[])} onToggle={() => {}} />)
+    render(<ColumnToggle columns={columns} visible={new Set(['name', 'steam'])} onToggle={() => {}} />)
     fireEvent.click(screen.getByText('Columns'))
     expect(screen.getByText('Steam Rating')).toBeInTheDocument()
     fireEvent.keyDown(document, { key: 'Escape' })
@@ -172,7 +176,7 @@ describe('ColumnToggle', () => {
   })
 
   it('closes dropdown on outside click', () => {
-    render(<ColumnToggle columns={columns} visible={new Set(['name', 'steam'] as SortCol[])} onToggle={() => {}} />)
+    render(<ColumnToggle columns={columns} visible={new Set(['name', 'steam'])} onToggle={() => {}} />)
     fireEvent.click(screen.getByText('Columns'))
     expect(screen.getByText('Steam Rating')).toBeInTheDocument()
     fireEvent.mouseDown(document.body)
@@ -180,7 +184,7 @@ describe('ColumnToggle', () => {
   })
 
   it('toggles dropdown closed on second click', () => {
-    render(<ColumnToggle columns={columns} visible={new Set(['name', 'steam'] as SortCol[])} onToggle={() => {}} />)
+    render(<ColumnToggle columns={columns} visible={new Set(['name', 'steam'])} onToggle={() => {}} />)
     fireEvent.click(screen.getByText('Columns'))
     expect(screen.getByText('Steam Rating')).toBeInTheDocument()
     fireEvent.click(screen.getByText('Columns'))
@@ -188,7 +192,7 @@ describe('ColumnToggle', () => {
   })
 
   it('shows no hidden badge when all columns visible', () => {
-    render(<ColumnToggle columns={columns} visible={new Set(['name', 'steam', 'hltb'] as SortCol[])} onToggle={() => {}} />)
+    render(<ColumnToggle columns={columns} visible={new Set(['name', 'steam', 'hltb'])} onToggle={() => {}} />)
     expect(screen.queryByText(/hidden/)).not.toBeInTheDocument()
   })
 })

@@ -4,21 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev:epic": "vite --config apps/epicgames/vite.config.ts",
+    "dev:dlss": "vite --config apps/dlssdb/vite.config.ts",
+    "build:epic": "vite build --config apps/epicgames/vite.config.ts",
+    "build:dlss": "vite build --config apps/dlssdb/vite.config.ts",
     "lint": "eslint .",
-    "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "update": "node scripts/update.js",
-    "update:epic": "node scripts/sources/epic.js",
-    "update:steam": "node scripts/sources/steam.js",
-    "update:hltb": "node scripts/sources/hltb.js",
-    "update:metacritic": "node scripts/sources/metacritic.js",
-    "test:e2e": "npm run build && npx playwright test",
-    "test:e2e:ui": "npm run build && npx playwright test --ui",
-    "test:e2e:headed": "npm run build && npx playwright test --headed"
+    "update:epic": "node apps/epicgames/scripts/update.js",
+    "update:dlss": "node apps/dlssdb/scripts/update.js"
   },
   "dependencies": {
     "fuzzball": "^2.2.6",

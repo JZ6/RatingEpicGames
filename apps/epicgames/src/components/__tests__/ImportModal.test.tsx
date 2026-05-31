@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
-import { normalize, dice, matchGames, splitCSVLine, parseCSV, ImportModal } from '../ImportModal'
+import { normalize, dice, matchGames, splitCSVLine, parseCSV, ImportModal } from '@shared/components/ImportModal'
 
 // --- Unit tests for pure functions ---
 

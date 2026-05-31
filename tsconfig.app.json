@@ -20,7 +20,11 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    "paths": {
+      "@shared/*": ["./shared/src/*"]
+    }
   },
-  "include": ["src"]
+  "include": ["shared/src", "apps/epicgames/src", "apps/dlssdb/src"]
 }
