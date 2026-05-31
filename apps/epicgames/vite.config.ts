@@ -13,6 +13,6 @@ export default defineConfig({
     environment: 'happy-dom',
     globals: true,
     exclude: ['e2e/**', 'node_modules/**'],
-    setupFiles: ['./src/test/setup.ts'],
+    setupFiles: ['../../shared/src/test/setup.ts'],
   },
 })

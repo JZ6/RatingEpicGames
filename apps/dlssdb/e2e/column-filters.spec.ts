@@ -1,5 +1,5 @@
-import { test, expect } from './fixtures/app.fixture';
-import { sel } from './helpers/selectors';
+import { test, expect } from '../../shared/e2e/fixtures/app.fixture';
+import { sel } from '../../shared/e2e/helpers/selectors';
 
 test('Frame Gen 6X filter shows only 6X games', async ({ page }) => {
   await sel.columnFilter(page, 'Frame Gen').selectOption('6x');

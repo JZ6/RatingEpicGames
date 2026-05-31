@@ -1,4 +1,4 @@
-import { test, expect } from './fixtures/app.fixture';
+import { test, expect } from '../../shared/e2e/fixtures/app.fixture';
 
 test('Frame Gen dropdown shows counts', async ({ page }) => {
   const options = page.locator('th').filter({ hasText: 'Frame Gen' }).locator('.th-filter-select option');

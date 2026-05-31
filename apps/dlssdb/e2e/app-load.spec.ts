@@ -1,4 +1,4 @@
-import { test, expect } from './fixtures/app.fixture';
+import { test, expect } from '../../shared/e2e/fixtures/app.fixture';
 
 test('displays title and subtitle', async ({ page }) => {
   await expect(page.locator('header h1')).toHaveText('DLSSdb');

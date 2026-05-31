@@ -1,4 +1,4 @@
-import { test, expect } from './fixtures/app.fixture';
+import { test, expect } from '../../shared/e2e/fixtures/app.fixture';
 
 test('Steam Rating dropdown shows counts', async ({ page }) => {
   const options = page.locator('th').filter({ hasText: 'Steam Rating' }).locator('.th-filter-select option');

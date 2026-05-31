@@ -1,5 +1,5 @@
-import { test, expect } from './fixtures/app.fixture';
-import { sel } from './helpers/selectors';
+import { test, expect } from '../../shared/e2e/fixtures/app.fixture';
+import { sel } from '../../shared/e2e/helpers/selectors';
 
 test('Steam VP+ filter reduces results', async ({ page }) => {
   const before = await sel.rows(page).count();

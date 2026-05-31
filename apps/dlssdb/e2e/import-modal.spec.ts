@@ -1,4 +1,4 @@
-import { test, expect } from './fixtures/app.fixture';
+import { test, expect } from '../../shared/e2e/fixtures/app.fixture';
 
 test('import modal opens and closes', async ({ page }) => {
   await page.locator('.btn-import-lib').click();

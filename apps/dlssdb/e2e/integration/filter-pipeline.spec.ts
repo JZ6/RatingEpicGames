@@ -1,4 +1,4 @@
-import { test, expect } from '../fixtures/app.fixture';
+import { test, expect } from '../../../shared/e2e/fixtures/app.fixture';
 import { sel } from '../helpers/selectors';
 
 test('full filter + sort + hide pipeline', async ({ page }) => {

@@ -1,5 +1,5 @@
-import { test, expect } from './fixtures/app.fixture';
-import { sel } from './helpers/selectors';
+import { test, expect } from '../../shared/e2e/fixtures/app.fixture';
+import { sel } from '../../shared/e2e/helpers/selectors';
 
 test('filters games by search term', async ({ page }) => {
   await sel.searchInput(page).fill('Cyberpunk');

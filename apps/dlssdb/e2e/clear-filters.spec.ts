@@ -1,5 +1,5 @@
-import { test, expect } from './fixtures/app.fixture';
-import { sel } from './helpers/selectors';
+import { test, expect } from '../../shared/e2e/fixtures/app.fixture';
+import { sel } from '../../shared/e2e/helpers/selectors';
 
 test('Clear Filters resets search and dropdowns', async ({ page }) => {
   const initialCount = await sel.rows(page).count();
