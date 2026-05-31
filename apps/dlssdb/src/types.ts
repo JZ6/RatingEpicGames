@@ -1,4 +1,4 @@
-export type { SteamInfo, HltbInfo, SteamRating } from "@shared/types";
+export type { SteamInfo, HltbInfo, MetacriticInfo, SteamRating } from "@shared/types";
 export { getHltbHours } from "@shared/types";
 
 export interface DlssGame {
@@ -16,10 +16,6 @@ export interface DlssGame {
 
 export interface DlssData {
   data: DlssGame[];
-}
-
-export interface MetacriticInfo {
-  score: number;
 }
 
 export interface UpscalingInfo {

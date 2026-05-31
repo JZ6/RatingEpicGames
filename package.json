@@ -9,9 +9,9 @@
     "build:epic": "vite build --config apps/epicgames/vite.config.ts",
     "build:dlss": "vite build --config apps/dlssdb/vite.config.ts",
     "lint": "eslint .",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage",
+    "test": "vitest run --config apps/epicgames/vite.config.ts && vitest run --config apps/dlssdb/vite.config.ts",
+    "test:epic": "vitest run --config apps/epicgames/vite.config.ts",
+    "test:dlss": "vitest run --config apps/dlssdb/vite.config.ts",
     "update:epic": "node apps/epicgames/scripts/update.js",
     "update:dlss": "node apps/dlssdb/scripts/update.js"
   },
