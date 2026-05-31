@@ -309,3 +309,10 @@ th:last-child [data-tip]::after {
   td.nc a { flex-direction: column; align-items: center; gap: 2px; }
   .game-name { max-width: 100px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 10px; }
 }
+
+/* Release/free date recency colors */
+.rd { white-space: nowrap; }
+.rd-new { color: #44dd44; }
+.rd-recent { color: var(--text); }
+.rd-old { color: var(--text-dim); }
+.rd-upcoming { color: var(--blue); }

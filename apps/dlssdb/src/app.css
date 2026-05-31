@@ -34,9 +34,3 @@
 }
 .tag-more-below { bottom: auto; top: calc(100% + 6px); }
 
-/* Release date */
-.rd { white-space: nowrap; }
-.rd-new { color: #44dd44; }
-.rd-recent { color: var(--text); }
-.rd-old { color: var(--text-dim); }
-.rd-upcoming { color: var(--blue); }

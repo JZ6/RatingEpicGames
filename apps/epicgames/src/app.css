@@ -19,8 +19,3 @@
 .plat-pc { background: #1a2a3a; color: #7db8d8; border: 1px solid #3a5a7a; }
 .plat-ios, .plat-android { background: #2a1a4a; color: #a78bfa; border: 1px solid #5a3a8a; }
 
-/* Free date recency */
-.rd { white-space: nowrap; }
-.rd-new { color: #44dd44; }
-.rd-recent { color: var(--text); }
-.rd-old { color: var(--text-dim); }

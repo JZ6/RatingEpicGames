@@ -1,8 +1,8 @@
 import { useMemo } from "react";
-import type { DlssGame, HltbInfo, SteamInfo, MetacriticInfo, UpscalingInfo, Filters, SortCol, SortDir } from "../types";
+import type { DlssGame, HltbInfo, SteamInfo, MetacriticInfo, UpscalingInfo, Filters, SortCol } from "../types";
 import { getFrameGenLevel, getDlssVersionOrder, getHltbHours } from "../types";
-import { STEAM_ORDER } from "@shared/types";
 import { useFilterState, sortComparator } from "@shared/hooks/useFilterState";
+import { filterBySteam, filterByMetacritic, filterByHltb, filterByHide, filterByOwned, steamSortVal, metacriticSortVal, hltbSortVal, hideSortVal, ownedSortVal, countSteam, countMetacritic, countHltb, countHideOwned } from "@shared/filters";
 
 const FEATURE_ORDER: Record<string, number> = { "NV, T": 3, "NV, U": 2, "✓ (NV)": 2, Yes: 1, "": 0 };
 const RT_ORDER: Record<string, number> = { "Path Tracing": 3, "NV, T": 2, "NV, U": 2, "✓ (NV)": 2, Yes: 1, "": 0 };
@@ -37,6 +37,11 @@ export function useFilters(
 
     let result = games.filter((g) => {
       if (q && !g.name.toLowerCase().includes(q)) return false;
+      if (!filterBySteam(steam[g.name], filters.steam)) return false;
+      if (!filterByMetacritic(metacritic[g.name]?.score, filters.metacritic)) return false;
+      if (!filterByHltb(getHltbHours(hltb[g.name]), filters.hltb)) return false;
+      if (!filterByHide(hiddenGames.has(g.name), filters.hide)) return false;
+      if (!filterByOwned(ownedGames.has(g.name), filters.owned)) return false;
 
       // Frame Gen filter
       if (filters.framegen) {
@@ -71,17 +76,6 @@ export function useFilters(
         if (filters.upscaling === "none" && (u?.fsr_version || u?.xess_version)) return false;
       }
 
-      // Metacritic filter
-      if (filters.metacritic) {
-        const mc = metacritic[g.name]?.score;
-        if (filters.metacritic === "unk") { if (mc !== undefined) return false; }
-        else {
-          if (mc === undefined) return false;
-          if (filters.metacritic === "90+" && mc < 90) return false;
-          if (filters.metacritic === "75+" && mc < 75) return false;
-        }
-      }
-
       // Tags filter
       if (filters.tags) {
         const tq = filters.tags.toLowerCase();
@@ -114,40 +108,6 @@ export function useFilters(
         if (filters.release_date === "old" && age <= ONE_YEAR) return false;
       }
 
-      // Steam filter
-      if (filters.steam) {
-        const si = steam[g.name];
-        const sr = (si?.rating && STEAM_ORDER[si.rating]) ?? -1;
-        if (filters.steam === "op+" && sr < 7) return false;
-        if (filters.steam === "vp+" && sr < 6) return false;
-        if (filters.steam === "mp+" && sr < 4) return false;
-        if (filters.steam === "neg" && (sr < 0 || sr > 3)) return false;
-        if (filters.steam === "unk" && sr !== -1) return false;
-        if (filters.steam === "nos" && si) return false;
-      }
-
-      // HLTB filter
-      if (filters.hltb) {
-        const hours = getHltbHours(hltb[g.name]);
-        if (filters.hltb === "u10"  && (hours === undefined || hours >= 10))  return false;
-        if (filters.hltb === "u60"  && (hours === undefined || hours >= 60))  return false;
-        if (filters.hltb === "u100" && (hours === undefined || hours >= 100)) return false;
-        if (filters.hltb === "100+" && (hours === undefined || hours < 100))  return false;
-        if (filters.hltb === "unk"  && hours !== undefined) return false;
-      }
-
-      // Hide filter: "" (default) = exclude hidden, "hidden" = hidden only, "all" = show everything
-      const isHidden = hiddenGames.has(g.name);
-      if (filters.hide === "visible" && isHidden) return false;
-      if (filters.hide === "hidden" && !isHidden) return false;
-
-      // Owned filter
-      if (filters.owned) {
-        const isOwned = ownedGames.has(g.name);
-        if (filters.owned === "owned" && !isOwned) return false;
-        if (filters.owned === "not" && isOwned) return false;
-      }
-
       return true;
     });
 
@@ -158,37 +118,28 @@ export function useFilters(
     return result;
   }, [games, hltb, steam, metacritic, upscaling, hiddenGames, ownedGames, filters, sortCol, sortDir]);
 
-  // Precompute filter option counts from full game list
   const filterCounts = useMemo(() => {
     const c: Record<string, Record<string, number>> = {};
-    // Frame Gen
+    c.steam = countSteam(games, steam);
+    c.metacritic = countMetacritic(games, metacritic);
+    c.hltb = countHltb(games, hltb);
+    const { hide, owned } = countHideOwned(games, hiddenGames, ownedGames);
+    c.hide = hide;
+    c.owned = owned;
+
     const fg: Record<string, number> = { "6x": 0, "4x": 0, "2x": 0, any: 0, none: 0 };
-    // DLSS Version
     const dv: Record<string, number> = { "4.5+": 0, "4+": 0, "3+": 0 };
-    // Feature columns
     const sr: Record<string, number> = { "NV, T": 0, Yes: 0, any: 0, none: 0 };
     const rr: Record<string, number> = { any: 0, none: 0 };
     const dlaa: Record<string, number> = { any: 0, none: 0 };
     const rt: Record<string, number> = { "Path Tracing": 0, Yes: 0, "any": 0 };
-    // Upscaling
     const up: Record<string, number> = { fsr: 0, xess: 0, both: 0, any: 0, none: 0 };
-    // Steam
-    const st: Record<string, number> = { "op+": 0, "vp+": 0, "mp+": 0, neg: 0, unk: 0, nos: 0 };
-    // Metacritic
-    const mc: Record<string, number> = { "90+": 0, "75+": 0 };
-    // Release date
     const rd: Record<string, number> = { month: 0, quarter: 0, year: 0, old: 0, upcoming: 0 };
     const NOW = Date.now();
     const ONE_MONTH = 30 * 86400000;
     const THREE_MONTHS = 90 * 86400000;
     const ONE_YEAR = 365 * 86400000;
     const NON_DATE_RE = /^(to be announced|tba|coming soon|q[1-4]\s*\d{4})$/i;
-    // Hide
-    const hi: Record<string, number> = { hidden: 0, all: 0 };
-    // Owned
-    const ow: Record<string, number> = { owned: 0, not: 0 };
-    // HLTB
-    const hl: Record<string, number> = { u10: 0, u60: 0, u100: 0, "100+": 0, unk: 0 };
 
     for (const g of games) {
       const level = getFrameGenLevel(g);
@@ -224,55 +175,25 @@ export function useFilters(
       if (hasFsr || hasXess) up.any++;
       if (!hasFsr && !hasXess) up.none++;
 
-      const si = steam[g.name];
-      const sOrder = (si?.rating && STEAM_ORDER[si.rating]) ?? -1;
-      if (sOrder >= 7) st["op+"]++;
-      if (sOrder >= 6) st["vp+"]++;
-      if (sOrder >= 4) st["mp+"]++;
-      if (sOrder >= 0 && sOrder <= 3) st.neg++;
-      if (!steam[g.name]) st.nos++;
-      else if (sOrder === -1) st.unk++;
-
-      const mScore = metacritic[g.name]?.score;
-      if (mScore !== undefined) {
-        if (mScore >= 90) mc["90+"]++;
-        if (mScore >= 75) mc["75+"]++;
-      }
-
       const rdVal = steam[g.name]?.release_date;
       if (rdVal) {
         if (NON_DATE_RE.test(rdVal.trim())) { rd.upcoming++; }
         else {
-        const d = new Date(rdVal);
-        if (!isNaN(d.getTime())) {
-          const age = NOW - d.getTime();
-          if (age < 0) rd.upcoming++;
-          if (age >= 0 && age <= ONE_MONTH) rd.month++;
-          if (age >= 0 && age <= THREE_MONTHS) rd.quarter++;
-          if (age > 0 && age <= ONE_YEAR) rd.year++;
-          if (age > ONE_YEAR) rd.old++;
-        }
+          const d = new Date(rdVal);
+          if (!isNaN(d.getTime())) {
+            const age = NOW - d.getTime();
+            if (age < 0) rd.upcoming++;
+            if (age >= 0 && age <= ONE_MONTH) rd.month++;
+            if (age >= 0 && age <= THREE_MONTHS) rd.quarter++;
+            if (age > 0 && age <= ONE_YEAR) rd.year++;
+            if (age > ONE_YEAR) rd.old++;
+          }
         }
       }
-
-      const hours = getHltbHours(hltb[g.name]);
-      if (hours !== undefined) {
-        if (hours < 10) hl.u10++;
-        if (hours < 60) hl.u60++;
-        if (hours < 100) hl.u100++;
-        if (hours >= 100) hl["100+"]++;
-      } else { hl.unk++; }
-
-      if (hiddenGames.has(g.name)) hi.hidden++;
-      hi.all++;
-
-      if (ownedGames.has(g.name)) ow.owned++; else ow.not++;
     }
 
     c.framegen = fg; c.dlssver = dv; c.sr = sr; c.rr = rr; c.dlaa = dlaa;
-    c.rt = rt; c.upscaling = up; c.steam = st; c.metacritic = mc; c.release_date = rd; c.hltb = hl;
-    c.hide = hi;
-    c.owned = ow;
+    c.rt = rt; c.upscaling = up; c.release_date = rd;
     return c;
   }, [games, hltb, steam, metacritic, upscaling, hiddenGames, ownedGames]);
 
@@ -287,49 +208,31 @@ function getSortVal(
   ownedGames?: Set<string>,
 ): string | number | null {
   switch (col) {
-    case "name":
-      return g.name.toLowerCase();
-    case "dlssver":
-      return getDlssVersionOrder(g);
-    case "framegen":
-      return getFrameGenLevel(g) || null;
-    case "sr":
-      return FEATURE_ORDER[g["dlss super resolution"] || ""] || null;
-    case "rr":
-      return FEATURE_ORDER[g["dlss ray reconstruction"] || ""] || null;
-    case "dlaa":
-      return FEATURE_ORDER[g.dlaa || ""] || null;
-    case "rt":
-      return RT_ORDER[g["ray tracing"] || ""] || null;
+    case "name": return g.name.toLowerCase();
+    case "steam": return steamSortVal(steam[g.name]);
+    case "metacritic": return metacriticSortVal(metacritic[g.name]);
+    case "hltb": return hltbSortVal(hltb[g.name]);
+    case "hide": return hideSortVal(g.name, hiddenGames);
+    case "owned": return ownedSortVal(g.name, ownedGames);
+    case "dlssver": return getDlssVersionOrder(g);
+    case "framegen": return getFrameGenLevel(g) || null;
+    case "sr": return FEATURE_ORDER[g["dlss super resolution"] || ""] || null;
+    case "rr": return FEATURE_ORDER[g["dlss ray reconstruction"] || ""] || null;
+    case "dlaa": return FEATURE_ORDER[g.dlaa || ""] || null;
+    case "rt": return RT_ORDER[g["ray tracing"] || ""] || null;
     case "upscaling": {
       const u = upscaling[g.name];
       if (!u) return null;
       const v = (u.fsr_version ? 1 : 0) + (u.xess_version ? 1 : 0);
       return v || null;
     }
-    case "steam": {
-      const si = steam[g.name];
-      if (!si?.rating) return null;
-      const tier = STEAM_ORDER[si.rating] ?? 0;
-      return tier * 1000 + (si.pct ?? 0);
-    }
-    case "metacritic":
-      return metacritic[g.name]?.score ?? null;
-    case "hltb":
-      return getHltbHours(hltb[g.name]) ?? null;
-    case "hide":
-      return hiddenGames?.has(g.name) ? 1 : 0;
-    case "owned":
-      return ownedGames?.has(g.name) ? 1 : 0;
     case "release_date": {
       const rd = steam[g.name]?.release_date;
       if (!rd) return null;
       const d = new Date(rd);
       return isNaN(d.getTime()) ? null : d.getTime();
     }
-    case "tags":
-      return steam[g.name]?.tags?.[0] ?? null;
-    default:
-      return "";
+    case "tags": return steam[g.name]?.tags?.[0] ?? null;
+    default: return "";
   }
 }
