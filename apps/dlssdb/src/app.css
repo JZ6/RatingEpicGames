@@ -1,0 +1,42 @@
+:root {
+  --accent: #76b900; --accent-dim: #4a7300;
+  --accent-row-hover: #1a2200;
+  --accent-click-hover: rgba(118, 185, 0, 0.05);
+}
+
+/* Upscaling */
+.upscaling-badges { display: flex; gap: 4px; justify-content: center; }
+.bfsr  { background: #2a0800; color: #ed1c24; border: 1px solid #6a1a1a; }
+.bxess { background: #002244; color: var(--blue); border: 1px solid #2a5a8a; }
+
+/* Tags */
+.tags-cell { display: flex; flex-wrap: nowrap; gap: 2px; align-items: center; }
+.tag-badge {
+  font-size: 10px; padding: 1px 4px; border-radius: 3px; cursor: pointer; white-space: nowrap;
+  background: var(--bg3); color: var(--text-dim); border: 1px solid var(--border);
+  transition: all 0.15s; flex-shrink: 0;
+}
+.tag-badge:hover { border-color: var(--text-dim); color: var(--text); }
+.tag-match { background: #1a2a00; color: var(--accent); border-color: var(--accent-dim); }
+.tag-dim { opacity: 0.35; }
+.tag-more {
+  position: relative; font-size: 10px; color: var(--text-dim); padding: 1px 5px;
+  cursor: pointer; white-space: nowrap; flex-shrink: 0;
+  border-radius: 3px; border: 1px solid transparent; transition: all 0.15s;
+}
+.tag-more:hover { color: var(--text); border-color: var(--border); }
+.tag-more-open { color: var(--accent); border-color: var(--accent-dim); }
+.tag-more-list {
+  display: flex; position: absolute; bottom: calc(100% + 6px); right: 0;
+  background: var(--bg3); border: 1px solid var(--border); border-radius: 5px;
+  padding: 6px 8px; z-index: var(--z-tooltip); box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  flex-wrap: wrap; gap: 3px; width: max-content; max-width: 250px;
+}
+.tag-more-below { bottom: auto; top: calc(100% + 6px); }
+
+/* Release date */
+.rd { white-space: nowrap; }
+.rd-new { color: #44dd44; }
+.rd-recent { color: var(--text); }
+.rd-old { color: var(--text-dim); }
+.rd-upcoming { color: var(--blue); }
