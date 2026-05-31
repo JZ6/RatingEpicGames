@@ -1,18 +1,12 @@
-import { memo, useEffect, useLayoutEffect, useRef, useMemo, useState } from "react";
+import { memo, useMemo, useState, useEffect, useRef } from "react";
 import type { DlssGame, HltbInfo, SteamInfo, MetacriticInfo, UpscalingInfo, SortCol, SortDir, Filters } from "../types";
 import { FrameGenBadge, DlssVersionBadge, FeatureBadge, SteamBadge, MetacriticBadge, UpscalingBadge, ReleaseDateBadge, HltbBadge, HideBadge, OwnedBadge } from "./Badge";
-
-export interface Column {
-  key: SortCol;
-  label: string;
-  fullLabel?: string;
-  minWidth: string;
-  tooltip: string;
-  icon?: React.JSX.Element;
-}
-
-export const PINNED_FIRST = new Set<SortCol>(["name"]);
-export const PINNED_LAST = new Set<SortCol>(["owned", "hide"]);
+import { useContainerWidth } from "@shared/hooks/useContainerWidth";
+import { useScrollHint } from "@shared/hooks/useScrollHint";
+import { computeColWidths, SHARED_COLUMN_FILTERS } from "@shared/components/GameTableBase";
+import type { Column } from "@shared/components/GameTableBase";
+export type { Column };
+export { PINNED_FIRST, PINNED_LAST } from "@shared/components/GameTableBase";
 
 export const COLUMNS: Column[] = [
   { key: "name",          label: "Game",         minWidth: "360px", tooltip: "Click to view on Steam" },
@@ -33,6 +27,7 @@ export const COLUMNS: Column[] = [
 ];
 
 const COLUMN_FILTERS: Partial<Record<SortCol, { value: string; label: string }[]>> = {
+  ...SHARED_COLUMN_FILTERS,
   dlaa: [
     { value: "", label: "All" },
     { value: "any", label: "Any" },
@@ -72,14 +67,6 @@ const COLUMN_FILTERS: Partial<Record<SortCol, { value: string; label: string }[]
     { value: "both", label: "Both" },
     { value: "any", label: "Any" },
   ],
-  steam: [
-    { value: "", label: "All" },
-    { value: "op+", label: "Ov. Positive +" },
-    { value: "vp+", label: "Very Positive +" },
-    { value: "mp+", label: "M. Positive +" },
-    { value: "neg", label: "Negative" },
-    { value: "nos", label: "Not On Steam" },
-  ],
   metacritic: [
     { value: "", label: "All" },
     { value: "90+", label: "90+" },
@@ -92,23 +79,6 @@ const COLUMN_FILTERS: Partial<Record<SortCol, { value: string; label: string }[]
     { value: "year", label: "Last Year" },
     { value: "old", label: "Older" },
     { value: "upcoming", label: "Upcoming" },
-  ],
-  hltb: [
-    { value: "", label: "All" },
-    { value: "u10", label: "< 10 h" },
-    { value: "u60", label: "< 60 h" },
-    { value: "u100", label: "< 100 h" },
-    { value: "100+", label: "> 100 h" },
-  ],
-  owned: [
-    { value: "", label: "All" },
-    { value: "owned", label: "Owned" },
-    { value: "not", label: "Not Owned" },
-  ],
-  hide: [
-    { value: "", label: "All" },
-    { value: "visible", label: "Visible" },
-    { value: "hidden", label: "Hidden Only" },
   ],
 };
 
@@ -162,47 +132,9 @@ export function GameTable({ games, hltb, steam, metacritic, upscaling, images, s
     [visibleCols]
   );
 
-  const wrapRef = useRef<HTMLDivElement>(null);
-  const [containerWidth, setContainerWidth] = useState(0);
-
-  useLayoutEffect(() => {
-    const el = wrapRef.current;
-    if (!el) return;
-    setContainerWidth(el.clientWidth);
-    const ro = new ResizeObserver((entries) => {
-      const w = entries[0]?.contentRect.width ?? 0;
-      setContainerWidth(w);
-    });
-    ro.observe(el);
-    return () => ro.disconnect();
-  }, []);
-
-  const colWidths = useMemo(() => {
-    const minWidths = cols.map((c) => parseInt(c.minWidth));
-    const totalMin = minWidths.reduce((s, w) => s + w, 0);
-    const extra = Math.max(0, containerWidth - totalMin);
-    const share = cols.length > 0 ? Math.floor(extra / cols.length) : 0;
-    return minWidths.map((w) => w + share);
-  }, [cols, containerWidth]);
-
-  useEffect(() => {
-    const el = wrapRef.current;
-    if (!el || window.innerWidth > 800) return;
-    let frame: number;
-    const timer = setTimeout(() => {
-      const distance = 60;
-      const duration = 800;
-      const start = performance.now();
-      function animate(now: number) {
-        const t = Math.min((now - start) / duration, 1);
-        const ease = t < 0.5 ? 2 * t * t : 1 - (-2 * t + 2) ** 2 / 2;
-        el!.scrollLeft = ease < 0.5 ? ease * 2 * distance : (1 - (ease - 0.5) * 2) * distance;
-        if (t < 1) frame = requestAnimationFrame(animate);
-      }
-      frame = requestAnimationFrame(animate);
-    }, 600);
-    return () => { clearTimeout(timer); cancelAnimationFrame(frame); };
-  }, []);
+  const { ref: wrapRef, width: containerWidth } = useContainerWidth();
+  const colWidths = useMemo(() => computeColWidths(cols, containerWidth), [cols, containerWidth]);
+  useScrollHint(wrapRef);
 
   return (
     <div className="table-wrap" ref={wrapRef}>

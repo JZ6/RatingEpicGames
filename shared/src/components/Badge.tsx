@@ -98,3 +98,21 @@ export function OwnedBadge({ owned }: { owned: boolean }) {
   if (!owned) return <span className="empty">—</span>;
   return <span className="badge byes">Owned</span>;
 }
+
+export function EmptyCell() {
+  return <span className="empty">—</span>;
+}
+
+const THREE_MONTHS = 90 * 86400000;
+const ONE_YEAR = 365 * 86400000;
+
+export function getAgeCls(age: number): string {
+  if (age < 0) return "rd-upcoming";
+  if (age < THREE_MONTHS) return "rd-new";
+  if (age < ONE_YEAR) return "rd-recent";
+  return "rd-old";
+}
+
+export function formatDateLabel(d: Date): string {
+  return `${d.getFullYear()} · ${d.toLocaleDateString("en-US", { month: "short" })} ${d.getDate()}`;
+}

@@ -1,70 +1,13 @@
-import { useState, useMemo, useCallback, useEffect, startTransition } from "react";
+import { useMemo } from "react";
 import type { DlssGame, HltbInfo, SteamInfo, MetacriticInfo, UpscalingInfo, Filters, SortCol, SortDir } from "../types";
 import { getFrameGenLevel, getDlssVersionOrder, getHltbHours } from "../types";
+import { STEAM_ORDER } from "@shared/types";
+import { useFilterState, sortComparator } from "@shared/hooks/useFilterState";
 
 const FEATURE_ORDER: Record<string, number> = { "NV, T": 3, "NV, U": 2, "✓ (NV)": 2, Yes: 1, "": 0 };
 const RT_ORDER: Record<string, number> = { "Path Tracing": 3, "NV, T": 2, "NV, U": 2, "✓ (NV)": 2, Yes: 1, "": 0 };
-const STEAM_ORDER: Record<string, number> = {
-  "Overwhelmingly Positive": 7,
-  "Very Positive": 6,
-  Positive: 5,
-  "Mostly Positive": 4,
-  Mixed: 3,
-  "Mostly Negative": 2,
-  Negative: 1,
-  "Very Negative": 0,
-};
 
 const EMPTY_FILTERS: Filters = { search: "", framegen: "", dlssver: "", dlaa: "", sr: "", rr: "", rt: "", upscaling: "", steam: "", metacritic: "", release_date: "", tags: "", hltb: "", hide: "visible", owned: "" };
-const LS_FILTERS = "dlssdb-filters";
-const LS_SORT = "dlssdb-sort";
-
-function filtersFromHash(): Partial<Filters> {
-  try {
-    const hash = window.location.hash.slice(1);
-    if (!hash) return {};
-    const params = new URLSearchParams(hash);
-    const result: Partial<Filters> = {};
-    for (const [k, v] of params) {
-      if (k in EMPTY_FILTERS) (result as Record<string, string>)[k] = v;
-    }
-    return result;
-  } catch { return {}; }
-}
-
-function filtersToHash(filters: Filters): void {
-  const params = new URLSearchParams();
-  for (const [k, v] of Object.entries(filters)) {
-    if (v && v !== EMPTY_FILTERS[k as keyof Filters]) params.set(k, v);
-  }
-  const hash = params.toString();
-  const newUrl = hash ? `#${hash}` : window.location.pathname + window.location.search;
-  window.history.replaceState(null, "", newUrl);
-}
-
-function loadFilters(): Filters {
-  // URL hash takes priority over localStorage
-  const hashFilters = filtersFromHash();
-  if (Object.keys(hashFilters).length > 0) {
-    return { ...EMPTY_FILTERS, ...hashFilters };
-  }
-  try {
-    const saved = localStorage.getItem(LS_FILTERS);
-    if (saved) return { ...EMPTY_FILTERS, ...JSON.parse(saved) };
-  } catch { /* ignore */ }
-  return EMPTY_FILTERS;
-}
-
-function loadSort(): { col: SortCol; dir: SortDir } {
-  try {
-    const saved = localStorage.getItem(LS_SORT);
-    if (saved) {
-      const { col, dir } = JSON.parse(saved);
-      return { col, dir };
-    }
-  } catch { /* ignore */ }
-  return { col: "steam", dir: -1 };
-}
 
 function fmatch(val: string, filt: string): boolean {
   if (!filt) return true;
@@ -82,28 +25,12 @@ export function useFilters(
   hiddenGames: Set<string> = new Set(),
   ownedGames: Set<string> = new Set(),
 ) {
-  const [filters, setFilters] = useState<Filters>(loadFilters);
-  const [sort, setSort] = useState<{ col: SortCol; dir: SortDir }>(loadSort);
-
-  // Persist to localStorage + URL hash
-  useEffect(() => { localStorage.setItem(LS_FILTERS, JSON.stringify(filters)); filtersToHash(filters); }, [filters]);
-  useEffect(() => { localStorage.setItem(LS_SORT, JSON.stringify(sort)); }, [sort]);
-
-  const setFilter = useCallback((key: keyof Filters, value: string) => {
-    startTransition(() => setFilters((prev) => ({ ...prev, [key]: value })));
-  }, []);
-
-  const clearFilters = useCallback(() => startTransition(() => setFilters(EMPTY_FILTERS)), []);
-
-  const toggleSort = useCallback((col: SortCol) => {
-    setSort((prev) => prev.col === col
-      ? { col, dir: (prev.dir === 1 ? -1 : 1) as SortDir }
-      : { col, dir: 1 }
-    );
-  }, []);
-
-  const sortCol = sort.col;
-  const sortDir = sort.dir;
+  const { filters, setFilter, clearFilters, sortCol, sortDir, toggleSort } = useFilterState<Filters, SortCol>({
+    emptyFilters: EMPTY_FILTERS,
+    lsFiltersKey: "dlssdb-filters",
+    lsSortKey: "dlssdb-sort",
+    defaultSort: { col: "steam", dir: -1 },
+  });
 
   const filtered = useMemo(() => {
     const q = filters.search.toLowerCase();
@@ -224,16 +151,9 @@ export function useFilters(
       return true;
     });
 
-    result.sort((a, b) => {
-      const av = getSortVal(a, sortCol, hltb, steam, metacritic, upscaling, hiddenGames, ownedGames);
-      const bv = getSortVal(b, sortCol, hltb, steam, metacritic, upscaling, hiddenGames, ownedGames);
-      // null values always sort last regardless of direction
-      if (av === null && bv === null) return 0;
-      if (av === null) return 1;
-      if (bv === null) return -1;
-      if (typeof av === "number" && typeof bv === "number") return (av - bv) * sortDir;
-      return String(av).localeCompare(String(bv)) * sortDir;
-    });
+    result.sort((a, b) => sortComparator(a, b, sortDir,
+      (g) => getSortVal(g, sortCol, hltb, steam, metacritic, upscaling, hiddenGames, ownedGames),
+    ));
 
     return result;
   }, [games, hltb, steam, metacritic, upscaling, hiddenGames, ownedGames, filters, sortCol, sortDir]);

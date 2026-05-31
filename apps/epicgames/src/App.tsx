@@ -5,27 +5,13 @@ import { Header } from "@shared/components/Header";
 import { StatsBar } from "@shared/components/StatsBar";
 import { GameTable, COLUMNS } from "./components/GameTable";
 import { ImportModal } from "@shared/components/ImportModal";
+import { useKeyboardShortcuts } from "@shared/hooks/useKeyboardShortcuts";
+import { loadSetFromLS } from "@shared/types";
 import type { SortCol } from "./types";
 
 const LS_COLS = "epicdb-columns";
 const LS_HIDDEN = "epicdb-hidden";
 const LS_OWNED = "epicdb-owned";
-
-function loadHidden(): Set<string> {
-  try {
-    const saved = localStorage.getItem(LS_HIDDEN);
-    if (saved) return new Set(JSON.parse(saved));
-  } catch { /* ignore */ }
-  return new Set();
-}
-
-function loadOwned(): Set<string> {
-  try {
-    const saved = localStorage.getItem(LS_OWNED);
-    if (saved) return new Set(JSON.parse(saved));
-  } catch { /* ignore */ }
-  return new Set();
-}
 
 function getDefaultCols(): Set<SortCol> {
   try {
@@ -40,24 +26,16 @@ function getDefaultCols(): Set<SortCol> {
 
 export default function App() {
   const { games, hltb, steam, metacritic, epic, images, loading, error, retry } = useGameData();
-  const [hiddenGames, setHiddenGames] = useState<Set<string>>(loadHidden);
-  const [ownedGames, setOwnedGames] = useState<Set<string>>(loadOwned);
+  const [hiddenGames, setHiddenGames] = useState<Set<string>>(() => loadSetFromLS(LS_HIDDEN));
+  const [ownedGames, setOwnedGames] = useState<Set<string>>(() => loadSetFromLS(LS_OWNED));
   const [showImport, setShowImport] = useState(false);
   const { filtered, filters, filterCounts, setFilter, clearFilters, sortCol, sortDir, toggleSort } =
     useFilters(games, hltb, steam, metacritic, epic, hiddenGames, ownedGames);
   const [visibleCols, setVisibleCols] = useState<Set<SortCol>>(getDefaultCols);
 
-  useEffect(() => {
-    localStorage.setItem(LS_COLS, JSON.stringify([...visibleCols]));
-  }, [visibleCols]);
-
-  useEffect(() => {
-    localStorage.setItem(LS_HIDDEN, JSON.stringify([...hiddenGames]));
-  }, [hiddenGames]);
-
-  useEffect(() => {
-    localStorage.setItem(LS_OWNED, JSON.stringify([...ownedGames]));
-  }, [ownedGames]);
+  useEffect(() => { localStorage.setItem(LS_COLS, JSON.stringify([...visibleCols])); }, [visibleCols]);
+  useEffect(() => { localStorage.setItem(LS_HIDDEN, JSON.stringify([...hiddenGames])); }, [hiddenGames]);
+  useEffect(() => { localStorage.setItem(LS_OWNED, JSON.stringify([...ownedGames])); }, [ownedGames]);
 
   const toggleHide = useCallback((name: string) => {
     setHiddenGames((prev) => {
@@ -79,20 +57,7 @@ export default function App() {
     });
   }, []);
 
-  useEffect(() => {
-    const handler = (e: KeyboardEvent) => {
-      const tag = document.activeElement?.tagName;
-      if (e.key === "/" && tag !== "INPUT" && tag !== "SELECT" && tag !== "TEXTAREA") {
-        e.preventDefault();
-        document.querySelector<HTMLInputElement>(".th-filter-input")?.focus();
-      }
-      if (e.key === "Escape") {
-        (document.activeElement as HTMLElement)?.blur();
-      }
-    };
-    document.addEventListener("keydown", handler);
-    return () => document.removeEventListener("keydown", handler);
-  }, []);
+  useKeyboardShortcuts();
 
   if (loading) {
     return (

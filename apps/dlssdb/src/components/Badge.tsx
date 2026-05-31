@@ -1,4 +1,5 @@
 export { SteamBadge, MetacriticBadge, HltbBadge, HideBadge, OwnedBadge } from "@shared/components/Badge";
+import { getAgeCls, formatDateLabel } from "@shared/components/Badge";
 import type { DlssGame, UpscalingInfo } from "../types";
 import { getFrameGenLabel, getDlssVersion } from "../types";
 
@@ -68,11 +69,7 @@ export function ReleaseDateBadge({ date }: { date?: string }) {
   }
   const parsed = new Date(date);
   if (isNaN(parsed.getTime())) return <span className="empty">{date}</span>;
-  const now = Date.now();
-  const age = now - parsed.getTime();
-  const THREE_MONTHS = 90 * 86400000;
-  const ONE_YEAR = 365 * 86400000;
-  const cls = age < 0 ? "rd-upcoming" : age < THREE_MONTHS ? "rd-new" : age < ONE_YEAR ? "rd-recent" : "rd-old";
-  const fmt = `${parsed.getFullYear()} · ${parsed.toLocaleDateString("en-US", { month: "short" })} ${parsed.getDate()}`;
-  return <span className={`rd ${cls}`}>{fmt}</span>;
+  const age = Date.now() - parsed.getTime();
+  const cls = getAgeCls(age);
+  return <span className={`rd ${cls}`}>{formatDateLabel(parsed)}</span>;
 }

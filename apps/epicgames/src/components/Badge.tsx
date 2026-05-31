@@ -1,4 +1,5 @@
 export { SteamBadge, MetacriticBadge, HltbBadge, HideBadge, OwnedBadge } from "@shared/components/Badge";
+import { getAgeCls, formatDateLabel } from "@shared/components/Badge";
 import type { MetacriticInfo, EpicInfo } from "../types";
 import { formatFreeDate, getLatestFreeDate } from "../types";
 
@@ -15,13 +16,11 @@ export function EpicDateBadge({ info }: { info?: EpicInfo }) {
   const count = info.free_dates.length;
   const parseD = (s: string) => /^\d{4}-\d{2}-\d{2}$/.test(s) ? new Date(s + "T12:00:00") : new Date(s);
   const tip = count > 1
-    ? info.free_dates.map((d, i) => { const dt = parseD(d.start); return `#${i + 1}: ${dt.getFullYear()} · ${dt.toLocaleDateString("en-US", { month: "short" })} ${dt.getDate()}`; }).join("\n")
+    ? info.free_dates.map((d, i) => { const dt = parseD(d.start); return `#${i + 1}: ${formatDateLabel(dt)}`; }).join("\n")
     : undefined;
   const latest = getLatestFreeDate(info);
-  const THREE_MONTHS = 90 * 86400000;
-  const ONE_YEAR = 365 * 86400000;
   const age = latest ? Date.now() - latest.getTime() : Infinity;
-  const cls = age < THREE_MONTHS ? "rd-new" : age < ONE_YEAR ? "rd-recent" : "rd-old";
+  const cls = getAgeCls(age);
   return (
     <span className={`rd ${cls}`} data-tip={tip} tabIndex={tip ? 0 : undefined}>
       {label}
