@@ -2,19 +2,10 @@
 /**
  * Unified data updater for Rating Epic Games.
  *
- * Orchestrates all source updaters (Steam, HLTB, Metacritic) and runs
- * them in parallel since each source only mutates its own sub-key.
- *
  * Usage:
- *   node scripts/update.js --game "Cyberpunk 2077"              # all sources, one game
- *   node scripts/update.js --game "Cyberpunk" --sources steam,hltb  # specific sources
- *   node scripts/update.js                                       # all unchecked, all sources
- *   node scripts/update.js --sources steam,metacritic            # batch specific sources
- *   node scripts/update.js --retry                               # retry all failed
- *   node scripts/update.js --refresh 30                          # refresh stale entries
- *   node scripts/update.js --backfill                            # re-fetch entries missing fields
- *   node scripts/update.js --limit 10                            # limit per source (batch)
- *   node scripts/update.js --epic                                # update Epic free games list
+ *   node apps/epicgames/scripts/update.js --game "Cyberpunk 2077"
+ *   node apps/epicgames/scripts/update.js                          # all unchecked
+ *   node apps/epicgames/scripts/update.js --epic                   # update Epic free games list
  *
  * Sources: steam, hltb, metacritic (default: all)
  */
@@ -22,13 +13,19 @@
 import { fileURLToPath } from "url";
 import { execFileSync } from "child_process";
 import { resolve, dirname } from "path";
-import { GAME_DATA_FILE, loadJson, saveJson, parseArgs } from "./lib/util.js";
+import { loadJson, saveJson, parseArgs } from "../../../shared/scripts/lib/util.js";
+import { GAME_DATA_FILE } from "./config.js";
 
-import steam from "./sources/steam.js";
-import hltb from "./sources/hltb.js";
-import metacritic from "./sources/metacritic.js";
+import { SteamUpdater } from "../../../shared/scripts/sources/steam.js";
+import { HltbUpdater } from "../../../shared/scripts/sources/hltb.js";
+import { MetacriticUpdater } from "../../../shared/scripts/sources/metacritic.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
+
+const steam = new SteamUpdater();
+const hltb = new HltbUpdater();
+const metacritic = new MetacriticUpdater();
+[steam, hltb, metacritic].forEach((u) => { u.gameDataFile = GAME_DATA_FILE; });
 
 const SOURCES = { steam, hltb, metacritic };
 const ALL_KEYS = Object.keys(SOURCES);
@@ -52,16 +49,12 @@ if (isMain) {
 
   if (args.includes("--help") || args.includes("-h")) {
     console.log(`Usage:
-    node scripts/update.js --game "<name>"               Update all sources for one game
-    node scripts/update.js --game "<a>" --game "<b>"     Update multiple specific games
-    node scripts/update.js --game "<name>" --sources steam,hltb  Update specific sources for one game
-    node scripts/update.js                               Update all unchecked (all sources)
-    node scripts/update.js --sources steam,hltb          Update all unchecked (specific sources)
-    node scripts/update.js --retry                       Re-check all failed entries
-    node scripts/update.js --refresh <days>              Re-fetch stale entries
-    node scripts/update.js --backfill                    Re-fetch entries missing expected fields
-    node scripts/update.js --limit <n>                   Limit per source in batch mode
-    node scripts/update.js --epic                        Update Epic free games list (runs update-epic.js)
+    node apps/epicgames/scripts/update.js --game "<name>"       Update all sources for one game
+    node apps/epicgames/scripts/update.js                       Update all unchecked (all sources)
+    node apps/epicgames/scripts/update.js --retry               Re-check all failed entries
+    node apps/epicgames/scripts/update.js --refresh <days>      Re-fetch stale entries
+    node apps/epicgames/scripts/update.js --backfill            Re-fetch entries missing fields
+    node apps/epicgames/scripts/update.js --epic                Update Epic free games list
 
     Sources: ${ALL_KEYS.join(", ")} (default: ${DEFAULT_KEYS.join(", ")})`);
     process.exit(0);
@@ -71,7 +64,6 @@ if (isMain) {
   const keys = parseSources(opts.sourcesRaw);
 
   const run = async () => {
-    // Update Epic free games list if --epic flag or no specific flags
     if (args.includes("--epic") || (!opts.games?.length && !opts.sourcesRaw && !opts.retry && !opts.refresh && !opts.backfill)) {
       console.log("Running Epic free games updater...\n");
       execFileSync("node", [resolve(__dirname, "sources/epic.js")], { stdio: "inherit" });

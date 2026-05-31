@@ -15,8 +15,9 @@
  * Cargo API docs: https://www.pcgamingwiki.com/wiki/PCGamingWiki:API
  */
 
-import { Updater } from "../lib/base.js";
-import { TODAY, UA, sleep, romanVariations, nameVariations, checkRateLimit } from "../lib/util.js";
+import { Updater } from "../../../../shared/scripts/lib/base.js";
+import { TODAY, UA, sleep, romanVariations, nameVariations, checkRateLimit } from "../../../../shared/scripts/lib/util.js";
+import { GAME_DATA_FILE, getGameNames } from "../config.js";
 
 const PCGW_API = "https://www.pcgamingwiki.com/w/api.php";
 
@@ -304,5 +305,7 @@ class PcgwUpdater extends Updater {
 
 // Instantiate and wire up CLI — runCli() no-ops when this file is imported
 const pcgw = new PcgwUpdater();
+pcgw.gameDataFile = GAME_DATA_FILE;
+pcgw.getGameNames = () => getGameNames();
 pcgw.runCli(import.meta.url);
 export default pcgw;

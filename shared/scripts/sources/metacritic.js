@@ -165,7 +165,4 @@ class MetacriticUpdater extends Updater {
   }
 }
 
-// Instantiate and wire up CLI — runCli() no-ops when this file is imported
-const metacritic = new MetacriticUpdater();
-metacritic.runCli(import.meta.url);
-export default metacritic;
+export { MetacriticUpdater };

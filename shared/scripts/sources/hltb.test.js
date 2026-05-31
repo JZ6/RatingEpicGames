@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import { parseHltbTimes, buildHltbEntry } from "./hltb.js";
-import hltb from "./hltb.js";
+import { parseHltbTimes, buildHltbEntry, HltbUpdater } from "./hltb.js";
+const hltb = new HltbUpdater();
 
 describe("parseHltbTimes", () => {
   it("converts seconds to hours", () => {

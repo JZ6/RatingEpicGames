@@ -190,7 +190,4 @@ class SteamUpdater extends Updater {
   }
 }
 
-// Instantiate and wire up CLI — runCli() no-ops when this file is imported
-const steam = new SteamUpdater();
-steam.runCli(import.meta.url);
-export default steam;
+export { SteamUpdater };

@@ -3,7 +3,7 @@ import { parseUpscaling, buildPcgwEntry } from "./pcgw.js";
 import pcgw from "./pcgw.js";
 
 // Make sleep a no-op so rate-limit delays don't slow tests
-vi.mock("../lib/util.js", async (importOriginal) => {
+vi.mock("../../../../shared/scripts/lib/util.js", async (importOriginal) => {
   const mod = await importOriginal();
   return { ...mod, sleep: vi.fn().mockResolvedValue(undefined) };
 });

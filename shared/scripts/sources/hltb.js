@@ -240,7 +240,4 @@ class HltbUpdater extends Updater {
   }
 }
 
-// Instantiate and wire up CLI — runCli() no-ops when this file is imported
-const hltb = new HltbUpdater();
-hltb.runCli(import.meta.url);
-export default hltb;
+export { HltbUpdater };

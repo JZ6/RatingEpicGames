@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import { parseReviews, buildSteamEntry } from "./steam.js";
-import steam from "./steam.js";
+import { parseReviews, buildSteamEntry, SteamUpdater } from "./steam.js";
+const steam = new SteamUpdater();
 
 describe("parseReviews", () => {
   it("extracts rating, pct, and total from valid response", () => {

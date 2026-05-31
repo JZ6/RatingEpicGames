@@ -12,6 +12,7 @@
     "test": "vitest run --config apps/epicgames/vite.config.ts && vitest run --config apps/dlssdb/vite.config.ts",
     "test:epic": "vitest run --config apps/epicgames/vite.config.ts",
     "test:dlss": "vitest run --config apps/dlssdb/vite.config.ts",
+    "test:shared": "vitest run shared/scripts/",
     "update:epic": "node apps/epicgames/scripts/update.js",
     "update:dlss": "node apps/dlssdb/scripts/update.js"
   },

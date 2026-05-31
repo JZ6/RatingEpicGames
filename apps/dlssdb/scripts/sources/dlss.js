@@ -10,7 +10,8 @@
  */
 
 import { writeFileSync, renameSync } from "fs";
-import { DLSS_FILE, GAME_DATA_FILE, UA, loadJson, saveJson, syncGameList } from "../lib/util.js";
+import { UA, loadJson, saveJson } from "../../../../shared/scripts/lib/util.js";
+import { DLSS_FILE, GAME_DATA_FILE, syncGameList } from "../config.js";
 
 const DLSS_URL = "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/news/nvidia-rtx-games-engines-apps/dlss-rt-games-apps-overrides.json";
 

@@ -1,24 +1,12 @@
 /**
- * Shared utilities for DLSSdb update scripts.
+ * Shared utilities for game database update scripts.
  *
- * Provides file I/O, game name extraction from the DLSS JSON,
- * and fuzzy name matching for resolving user input to canonical game names.
+ * Path-agnostic helpers: file I/O, fuzzy name matching, CLI parsing.
+ * App-specific paths (ROOT, GAME_DATA_FILE) live in each app's config.js.
  */
 
 import { readFileSync, writeFileSync } from "fs";
-import { join, dirname } from "path";
-import { fileURLToPath } from "url";
 import * as fuzz from "fuzzball";
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
-export const ROOT = join(__dirname, "../..");
-export const PUBLIC = join(ROOT, "public");
-
-/** Source of truth for DLSS/RT game list — downloaded from NVIDIA. */
-export const DLSS_FILE = join(PUBLIC, "dlss-rt-games-apps-overrides.json");
-
-/** Unified data file — all sources (steam, hltb, metacritic, pcgw) keyed by game name. */
-export const GAME_DATA_FILE = join(PUBLIC, "game_data.json");
 
 /** Today's date in YYYY-MM-DD format, used as updated_at in all source entries. */
 export const TODAY = new Date().toISOString().slice(0, 10);
@@ -59,41 +47,12 @@ export function saveJson(path, data) {
 }
 
 // ---------------------------------------------------------------------------
-// Game names
-// ---------------------------------------------------------------------------
-
-/** Extract all game names from the DLSS JSON file (filters to type "Game" only). */
-export function getGameNames() {
-  const data = loadJson(DLSS_FILE);
-  return (data.data || [])
-    .filter((e) => e.type === "Game")
-    .map((e) => String(e.name));
-}
-
-/**
- * Sync gameData with a list of game names — adds empty entries for any new games.
- * Called after updating the DLSS list to ensure game_data.json has entries for all games.
- * Returns the number of new games added.
- */
-export function syncGameList(gameData, dlssNames) {
-  let added = 0;
-  for (const name of dlssNames) {
-    if (!gameData[name]) {
-      gameData[name] = {};
-      added++;
-    }
-  }
-  if (added) console.log(`  Added ${added} new game(s) from DLSS list`);
-  return added;
-}
-
-// ---------------------------------------------------------------------------
 // Name matching
 // ---------------------------------------------------------------------------
 
 /** Normalize curly/smart quotes to straight ASCII quotes for API searches. */
 export function normalizeQuotes(s) {
-  return s.replace(/[\u2018\u2019]/g, "'").replace(/[\u201C\u201D]/g, '"');
+  return s.replace(/[‘’]/g, "'").replace(/[“”]/g, '"');
 }
 
 /** Arabic→Roman numeral map for game name variations (2 → "II", etc.). */
@@ -125,20 +84,16 @@ const STRIP_SUFFIXES = [
  */
 export function nameVariations(name) {
   const variations = [name];
-  // Strip trailing parenthetical: "Game (2024)" → "Game"
   const stripped = name.replace(/\s*\(.*?\)\s*$/, "").trim();
   if (stripped !== name) variations.push(stripped);
-  // Before colon: "Game: Subtitle" → "Game"
   if (name.includes(":")) {
     const first = name.split(":")[0].trim();
     if (first.length > 3) variations.push(first);
   }
-  // Before dash: "Game - Subtitle" → "Game"
   if (name.includes(" - ")) {
     const first = name.split(" - ")[0].trim();
     if (first.length > 3) variations.push(first);
   }
-  // Strip edition suffixes: "Game Remastered" → "Game"
   for (const suffix of STRIP_SUFFIXES) {
     const cleaned = name.replace(suffix, "").trim().replace(/[:−-]+$/, "").trim();
     if (cleaned !== name && cleaned.length > 3) variations.push(cleaned);
@@ -149,8 +104,6 @@ export function nameVariations(name) {
 /**
  * Fuzzy similarity score between two strings (0–1).
  * Uses fuzzball's token_set_ratio which handles edition suffixes and word reordering.
- * Guards against substring false positives (e.g. "Tomb Raider" vs "Shadow of the Tomb Raider")
- * by falling back to ratio() when token_set_ratio gives a perfect score on dissimilar strings.
  */
 export function similarity(a, b) {
   if (!a || !b) return 0;
@@ -173,37 +126,22 @@ export function bestScore(inputName, gameName) {
 
 /**
  * Resolve user input to a canonical game name.
- *
- * Matching priority:
- *   1. Exact match (case-insensitive)
- *   2. Substring match
- *   3. Name variation match (strips suffixes, colons, etc.)
- *   4. Fuzzy match (similarity > 0.7)
- *
- * If multiple candidates match, prints them and exits.
- * If none match, returns the input as-is (new game).
  */
 export function resolveGameName(inputName, allNames) {
   const input = inputName.toLowerCase();
-
-  // 1. Exact match (case-insensitive)
   const exact = allNames.find((n) => n.toLowerCase() === input);
   if (exact) return exact;
 
-  // 2. Gather all candidates: substring, variation, and fuzzy matches
   const FUZZY_THRESHOLD = 0.7;
-
   const subMatches = new Set(allNames.filter((n) => n.toLowerCase().includes(input)));
   const varMatches = new Set(allNames.filter((n) =>
     nameVariations(n).some((v) => v.toLowerCase() === input)
   ));
   const fuzzyMatches = new Set(allNames.filter((n) => bestScore(inputName, n) >= FUZZY_THRESHOLD));
-
   const candidates = [...new Set([...subMatches, ...varMatches, ...fuzzyMatches])];
 
   if (candidates.length === 1) return candidates[0];
   if (candidates.length > 1) {
-    // Ambiguous — print ranked candidates and exit so user can pick
     const sorted = candidates
       .map((m) => ({ name: m, score: bestScore(inputName, m) }))
       .sort((a, b) => b.score - a.score);
@@ -212,8 +150,6 @@ export function resolveGameName(inputName, allNames) {
     console.log(`  Use the exact name from the list above.`);
     process.exit(1);
   }
-
-  // No match — treat as a new game name
   return inputName;
 }
 
@@ -223,18 +159,8 @@ export function resolveGameName(inputName, allNames) {
 
 /**
  * Parse common CLI flags shared by all update scripts.
- * Returns a structured object so callers don't duplicate parsing logic.
- *
- * Supported flags:
- *   --game "<name>"   (repeatable) Specific game(s) to update
- *   --limit <n>       Max games to process per source
- *   --retry           Re-check games previously not found
- *   --refresh <days>  Re-fetch entries older than <days> (default 30 when flag present)
- *   --backfill        Re-fetch entries missing expected fields
- *   --sources <list>  Comma-separated source names (only used by update.js)
  */
 export function parseArgs(args) {
-  // Collect all --game values (flag can appear multiple times)
   const games = [];
   for (let i = 0; i < args.length; i++) {
     if (args[i] === "--game" && i + 1 < args.length) games.push(args[++i]);

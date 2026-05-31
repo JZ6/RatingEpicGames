@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import { nameToSlug, slugFromUrl, slugVariations, buildMetacriticEntry } from "./metacritic.js";
-import metacritic from "./metacritic.js";
+import { nameToSlug, slugFromUrl, slugVariations, buildMetacriticEntry, MetacriticUpdater } from "./metacritic.js";
+const metacritic = new MetacriticUpdater();
 
 describe("nameToSlug", () => {
   it("converts to lowercase with dashes", () => {
