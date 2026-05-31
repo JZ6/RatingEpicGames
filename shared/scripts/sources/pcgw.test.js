@@ -1,9 +1,9 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import { parseUpscaling, buildPcgwEntry } from "./pcgw.js";
-import pcgw from "./pcgw.js";
+import { parseUpscaling, buildPcgwEntry, PcgwUpdater } from "./pcgw.js";
+const pcgw = new PcgwUpdater();
 
 // Make sleep a no-op so rate-limit delays don't slow tests
-vi.mock("../../../../shared/scripts/lib/util.js", async (importOriginal) => {
+vi.mock("../lib/util.js", async (importOriginal) => {
   const mod = await importOriginal();
   return { ...mod, sleep: vi.fn().mockResolvedValue(undefined) };
 });

@@ -17,12 +17,13 @@ import { GAME_DATA_FILE, getGameNames } from "./config.js";
 import { SteamUpdater } from "../../../shared/scripts/sources/steam.js";
 import { HltbUpdater } from "../../../shared/scripts/sources/hltb.js";
 import { MetacriticUpdater } from "../../../shared/scripts/sources/metacritic.js";
-import pcgw from "./sources/pcgw.js";
+import { PcgwUpdater } from "../../../shared/scripts/sources/pcgw.js";
 import { updateDlss } from "./sources/dlss.js";
 
 const steam = new SteamUpdater();
 const hltb = new HltbUpdater();
 const metacritic = new MetacriticUpdater();
+const pcgw = new PcgwUpdater();
 [steam, hltb, metacritic, pcgw].forEach((u) => {
   u.gameDataFile = GAME_DATA_FILE;
   u.getGameNames = () => getGameNames();
