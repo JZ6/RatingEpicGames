@@ -1,0 +1,59 @@
+name: Update DLSS Game Data
+
+on:
+  schedule:
+    - cron: "36 22 * * 3" # Every Wednesday ~6:36 PM ET (10:36 PM UTC)
+    - cron: "36 22 * * 5" # Every Friday ~6:36 PM ET (10:36 PM UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Update DLSS list and game data
+        run: node apps/dlssdb/scripts/update.js
+
+      - name: Validate JSON output
+        run: |
+          node -e "JSON.parse(require('fs').readFileSync('apps/dlssdb/public/game_data.json', 'utf8'))"
+          node -e "JSON.parse(require('fs').readFileSync('apps/dlssdb/public/dlss-rt-games-apps-overrides.json', 'utf8'))"
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "date=$(date +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add apps/dlssdb/public/dlss-rt-games-apps-overrides.json apps/dlssdb/public/game_data.json
+          git commit -m "Update DLSS game data (${{ steps.changes.outputs.date }})"
+          git push
+
+      - run: npm run build:dlss
+
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          deploy_key: ${{ secrets.DLSSDB_DEPLOY_KEY }}
+          external_repository: JZ6/DLSSdb
+          publish_branch: gh-pages
+          publish_dir: apps/dlssdb/dist
