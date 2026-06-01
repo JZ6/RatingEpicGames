@@ -111,4 +111,36 @@ describe("App integration", () => {
     const link = screen.getByRole("link", { name: /hours/i });
     expect(link).toHaveAttribute("href", "https://howlongtobeat.com/game/68973");
   });
+
+  it("shows error state when fetch fails", async () => {
+    vi.stubGlobal("fetch", vi.fn(() => Promise.resolve({ ok: false, status: 500 })));
+    render(<App />);
+    await waitFor(() => expect(screen.getByText("Failed to load game data")).toBeInTheDocument());
+  });
+
+  it("retry button triggers re-fetch and recovers", async () => {
+    let calls = 0;
+    vi.stubGlobal("fetch", vi.fn((url: string) => {
+      calls++;
+      if (calls <= 2) return Promise.resolve({ ok: false, status: 500 });
+      let body: any;
+      if (url.includes("dlss-rt-games-apps")) body = DLSS_LIST;
+      else body = GAME_DATA;
+      return Promise.resolve({ ok: true, json: () => Promise.resolve(body) });
+    }));
+    render(<App />);
+    await waitFor(() => expect(screen.getByText("Failed to load game data")).toBeInTheDocument());
+    fireEvent.click(screen.getByRole("button", { name: /retry/i }));
+    await waitFor(() => expect(screen.getByText("Cyberpunk 2077")).toBeInTheDocument());
+  });
+
+  it("clear filters resets an active search", async () => {
+    render(<App />);
+    await waitFor(() => expect(screen.getByText("Cyberpunk 2077")).toBeInTheDocument());
+    const input = screen.getByPlaceholderText(/Search/);
+    fireEvent.change(input, { target: { value: "elden" } });
+    await waitFor(() => expect(screen.queryByText("Cyberpunk 2077")).not.toBeInTheDocument());
+    fireEvent.click(screen.getByText("Clear Filters"));
+    await waitFor(() => expect(screen.getByText("Cyberpunk 2077")).toBeInTheDocument());
+  });
 });

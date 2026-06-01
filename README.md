@@ -43,3 +43,11 @@ Game data lives in `public/game_data.json`. Each entry contains:
 
 - Vite + React 19 + TypeScript
 - No external UI libraries
+
+can we refactor the code further to improve readability and extensiblity 
+
+what does the project structure look like now
+
+are there any code related to columns thats not in the column class
+
+how can we improve the blank space on the right side left by the vertical scroll bar

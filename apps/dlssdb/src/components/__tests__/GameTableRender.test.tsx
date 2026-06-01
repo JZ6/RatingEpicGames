@@ -171,4 +171,59 @@ describe("GameTable render", () => {
     const row = screen.getByText("Cyberpunk 2077").closest("tr");
     expect(row).toHaveClass("row-hidden");
   });
+
+  it("renders multiple games", () => {
+    renderTable({
+      games: [makeGame(), makeGame({ sno: 2, name: "Elden Ring" })],
+    });
+    expect(screen.getByText("Cyberpunk 2077")).toBeInTheDocument();
+    expect(screen.getByText("Elden Ring")).toBeInTheDocument();
+  });
+
+  it("hides columns not in visibleCols", () => {
+    renderTable({ visibleCols: new Set(["name", "steam"]) });
+    const labels = screen.getAllByRole("button").filter((el) => el.classList.contains("th-label"));
+    const headers = labels.map((el) => el.textContent?.replace("ⓘ", "").trim());
+    expect(headers.some((h) => h?.includes("Game"))).toBe(true);
+    expect(headers.some((h) => h?.includes("Steam"))).toBe(true);
+    expect(headers.some((h) => h?.includes("Playtime"))).toBe(false);
+  });
+
+  it("sorted column has aria-sort on its header", () => {
+    renderTable({ sortCol: "framegen", sortDir: -1 });
+    const labels = screen.getAllByRole("button").filter((el) => el.classList.contains("th-label"));
+    const th = labels.find((el) => el.textContent?.includes("FG") || el.textContent?.includes("Frame"))?.closest("th");
+    expect(th).toHaveAttribute("aria-sort", "descending");
+  });
+
+  it("shows filterCount in dropdown option text", () => {
+    renderTable({
+      visibleCols: new Set(["name", "framegen"]),
+      filterCounts: { framegen: { "6x": 3, "any": 5 } },
+    });
+    const select = screen.getByRole("combobox");
+    const options = Array.from(select.querySelectorAll("option"));
+    const sixX = options.find((o) => o.value === "6x");
+    expect(sixX?.textContent).toMatch(/\(3\)/);
+  });
+
+  it("calls onToggleHide when hide button clicked", () => {
+    const onToggleHide = vi.fn();
+    renderTable({
+      visibleCols: new Set(["name", "hide"]),
+      onToggleHide,
+    });
+    const hideBtn = screen.getByTitle(/Hide game/i);
+    fireEvent.click(hideBtn);
+    expect(onToggleHide).toHaveBeenCalledWith("Cyberpunk 2077");
+  });
+
+  it("owned game row renders Owned badge", () => {
+    renderTable({
+      visibleCols: new Set(["name", "owned"]),
+      ownedGames: new Set(["Cyberpunk 2077"]),
+    });
+    const badges = screen.getAllByText("Owned");
+    expect(badges.some((el) => el.classList.contains("byes"))).toBe(true);
+  });
 });

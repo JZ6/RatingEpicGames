@@ -116,4 +116,21 @@ describe('getDlssVersionOrder', () => {
     expect(v3).toBeGreaterThan(v2)
     expect(v2).toBeGreaterThan(v1)
   })
+
+  it('DLAA-only maps to same tier as SR (version 2)', () => {
+    const dlaaOrder = getDlssVersionOrder(makeGame({ dlaa: 'Yes' }))
+    const srOrder = getDlssVersionOrder(makeGame({ 'dlss super resolution': 'Yes' }))
+    expect(dlaaOrder).toBe(srOrder)
+  })
+})
+
+describe('getDlssVersion — additional cases', () => {
+  it('DLAA-only returns "2"', () => {
+    expect(getDlssVersion(makeGame({ dlaa: 'Yes' }))).toBe('2')
+  })
+
+  it('MFG takes priority over FG when both present', () => {
+    const game = makeGame({ 'dlss multi frame generation': 'NV, 4X', 'dlss frame generation': 'Yes' })
+    expect(getDlssVersion(game)).toBe('4')
+  })
 })

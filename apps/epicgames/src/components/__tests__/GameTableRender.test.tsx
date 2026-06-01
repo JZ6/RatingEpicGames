@@ -145,4 +145,59 @@ describe("GameTable render", () => {
     const row = screen.getByText("Celeste").closest("tr");
     expect(row).toHaveClass("row-hidden");
   });
+
+  it("renders multiple games", () => {
+    renderTable({
+      games: [makeGame("Celeste"), makeGame("Hades")],
+    });
+    expect(screen.getByText("Celeste")).toBeInTheDocument();
+    expect(screen.getByText("Hades")).toBeInTheDocument();
+  });
+
+  it("hides columns not in visibleCols", () => {
+    renderTable({ visibleCols: new Set(["name", "steam"]) });
+    const labels = screen.getAllByRole("button").filter((el) => el.classList.contains("th-label"));
+    const headers = labels.map((el) => el.textContent?.replace("ⓘ", "").trim());
+    expect(headers.some((h) => h?.includes("Game"))).toBe(true);
+    expect(headers.some((h) => h?.includes("Steam"))).toBe(true);
+    expect(headers.some((h) => h?.includes("Playtime"))).toBe(false);
+  });
+
+  it("sorted column has aria-sort on its header", () => {
+    renderTable({ sortCol: "steam", sortDir: 1 });
+    const labels = screen.getAllByRole("button").filter((el) => el.classList.contains("th-label"));
+    const th = labels.find((el) => el.textContent?.includes("Steam"))?.closest("th");
+    expect(th).toHaveAttribute("aria-sort", "ascending");
+  });
+
+  it("shows filterCount in year dropdown option text", () => {
+    renderTable({
+      visibleCols: new Set(["name", "epicdate"]),
+      filterCounts: { year: { "2024": 5, "2023": 3 } },
+    });
+    const select = screen.getByRole("combobox");
+    const options = Array.from(select.querySelectorAll("option"));
+    const y2024 = options.find((o) => o.value === "2024");
+    expect(y2024?.textContent).toMatch(/\(5\)/);
+  });
+
+  it("owned game row renders Owned badge", () => {
+    renderTable({
+      visibleCols: new Set(["name", "owned"]),
+      ownedGames: new Set(["Celeste"]),
+    });
+    const badges = screen.getAllByText("Owned");
+    expect(badges.some((el) => el.classList.contains("byes"))).toBe(true);
+  });
+
+  it("calls onToggleHide when hide button clicked", () => {
+    const onToggleHide = vi.fn();
+    renderTable({
+      visibleCols: new Set(["name", "hide"]),
+      onToggleHide,
+    });
+    const hideBtn = screen.getByTitle(/Hide game/i);
+    fireEvent.click(hideBtn);
+    expect(onToggleHide).toHaveBeenCalledWith("Celeste");
+  });
 });

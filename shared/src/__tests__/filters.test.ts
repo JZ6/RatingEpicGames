@@ -326,3 +326,75 @@ describe("countHideOwned", () => {
     expect(owned.not).toBe(2);
   });
 });
+
+// ──────────────────────── additional edge cases ────────────────────────
+
+describe("countSteam — unk bucket", () => {
+  it("counts games on Steam with no valid rating as unk", () => {
+    const games = [{ name: "A" }, { name: "B" }, { name: "C" }];
+    const steam: Record<string, any> = {
+      A: { appid: 12345 },
+      B: { appid: 67890, rating: "Positive", pct: 80 },
+    };
+    const c = countSteam(games, steam);
+    expect(c.unk).toBe(1);
+    expect(c.nos).toBe(1);
+    expect(c["mp+"]).toBe(1);
+  });
+});
+
+describe("countHltb — u100 bucket", () => {
+  it("counts games under 100 hours", () => {
+    const games = [{ name: "Short" }, { name: "Med" }, { name: "Long" }];
+    const hltb: Record<string, any> = {
+      Short: { main: 5 },
+      Med: { main: 50 },
+      Long: { main: 120 },
+    };
+    const c = countHltb(games, hltb);
+    expect(c.u100).toBe(2);
+    expect(c.u60).toBe(2);
+    expect(c["100+"]).toBe(1);
+  });
+});
+
+describe("filterByMetacritic — boundary values", () => {
+  it("score 74 fails 75+ filter", () => {
+    expect(filterByMetacritic(74, "75+")).toBe(false);
+  });
+
+  it("score 75 passes 75+ filter", () => {
+    expect(filterByMetacritic(75, "75+")).toBe(true);
+  });
+
+  it("score 50 fails 50- filter (boundary exclusive)", () => {
+    expect(filterByMetacritic(50, "50-")).toBe(false);
+  });
+
+  it("score 49 passes 50- filter", () => {
+    expect(filterByMetacritic(49, "50-")).toBe(true);
+  });
+
+  it("score 89 fails 90+ but passes 75+", () => {
+    expect(filterByMetacritic(89, "90+")).toBe(false);
+    expect(filterByMetacritic(89, "75+")).toBe(true);
+  });
+});
+
+describe("filterBySteam — neg filter edge cases", () => {
+  it("Mostly Negative passes neg filter", () => {
+    expect(filterBySteam({ rating: "Mostly Negative", pct: 30 }, "neg")).toBe(true);
+  });
+
+  it("Mixed passes neg filter", () => {
+    expect(filterBySteam({ rating: "Mixed", pct: 45 }, "neg")).toBe(true);
+  });
+
+  it("Mostly Positive fails neg filter", () => {
+    expect(filterBySteam({ rating: "Mostly Positive", pct: 65 }, "neg")).toBe(false);
+  });
+
+  it("no rating on Steam fails neg filter", () => {
+    expect(filterBySteam({ appid: 12345 }, "neg")).toBe(false);
+  });
+});

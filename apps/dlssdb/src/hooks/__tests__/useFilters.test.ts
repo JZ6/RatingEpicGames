@@ -599,4 +599,35 @@ describe('useFilters', () => {
       expect(result.current.filters.search).toBe('')
     })
   })
+
+  describe('multi-filter combinations', () => {
+    it('search + steam filter narrows results independently', () => {
+      const { result } = renderHook(() => useFilters(games, hltb, steam, metacritic, upscaling))
+      act(() => result.current.setFilter('search', 'cyber'))
+      expect(result.current.filtered).toHaveLength(1)
+      act(() => result.current.setFilter('steam', 'vp+'))
+      expect(result.current.filtered).toHaveLength(1)
+      act(() => result.current.setFilter('steam', 'op+'))
+      expect(result.current.filtered).toHaveLength(0)
+    })
+
+    it('search + metacritic combined narrows results', () => {
+      const { result } = renderHook(() => useFilters(games, hltb, steam, metacritic, upscaling))
+      act(() => result.current.setFilter('metacritic', '90+'))
+      const afterMeta = result.current.filtered.length
+      act(() => result.current.setFilter('search', 'elden'))
+      expect(result.current.filtered.length).toBeLessThanOrEqual(afterMeta)
+    })
+
+    it('hidden + owned filters work together', () => {
+      const { result } = renderHook(() =>
+        useFilters(games, hltb, steam, metacritic, upscaling, new Set(['Cyberpunk 2077']), new Set(['Elden Ring']))
+      )
+      act(() => result.current.setFilter('hide', 'visible'))
+      act(() => result.current.setFilter('owned', 'owned'))
+      const names = result.current.filtered.map((g: any) => g.name)
+      expect(names).not.toContain('Cyberpunk 2077')
+      expect(names).toContain('Elden Ring')
+    })
+  })
 })

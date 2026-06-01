@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { Column, NameColumn, SteamColumn, MetacriticColumn, HltbColumn, OwnedColumn, HideColumn, buildEmptyFilters, computeColWidths } from "../GameTableBase";
+import { Column, NameColumn, SteamColumn, MetacriticColumn, HltbColumn, OwnedColumn, HideColumn, buildEmptyFilters, computeColWidths, computePinnedSets } from "../GameTableBase";
 
 describe("Column constructor", () => {
   it("defaults filterType to 'select'", () => {
@@ -169,5 +169,134 @@ describe("buildEmptyFilters", () => {
   it("uses filterKey when present", () => {
     const col = new Column({ key: "epicdate", label: "Date", minWidth: "100px", tooltip: "", filterKey: "year" });
     expect(buildEmptyFilters([col])).toEqual({ year: "" });
+  });
+});
+
+// ──────────────────────── computePinnedSets ────────────────────────
+
+describe("computePinnedSets", () => {
+  it("returns empty sets for columns with no pinned value", () => {
+    const cols = [new Column({ key: "a", label: "A", minWidth: "90px", tooltip: "" })];
+    const { pinnedFirst, pinnedLast } = computePinnedSets(cols);
+    expect(pinnedFirst.size).toBe(0);
+    expect(pinnedLast.size).toBe(0);
+  });
+
+  it("puts pinned=first columns into pinnedFirst", () => {
+    const cols = [new NameColumn(), new SteamColumn(), new HideColumn()];
+    const { pinnedFirst, pinnedLast } = computePinnedSets(cols);
+    expect(pinnedFirst.has("name")).toBe(true);
+    expect(pinnedFirst.has("steam")).toBe(false);
+    expect(pinnedLast.has("hide")).toBe(true);
+  });
+
+  it("puts pinned=last columns into pinnedLast", () => {
+    const cols = [new OwnedColumn(), new HideColumn()];
+    const { pinnedFirst, pinnedLast } = computePinnedSets(cols);
+    expect(pinnedLast.has("owned")).toBe(true);
+    expect(pinnedLast.has("hide")).toBe(true);
+  });
+
+  it("handles empty array", () => {
+    const { pinnedFirst, pinnedLast } = computePinnedSets([]);
+    expect(pinnedFirst.size).toBe(0);
+    expect(pinnedLast.size).toBe(0);
+  });
+});
+
+// ──────────────────────── column subclass methods ────────────────────────
+
+describe("column subclass count()", () => {
+  const games = [{ name: "A" }, { name: "B" }, { name: "C" }];
+
+  it("SteamColumn.count delegates to countSteam", () => {
+    const col = new SteamColumn();
+    const steam = {
+      A: { rating: "Very Positive" as const, pct: 90 },
+      B: { rating: "Mixed" as const, pct: 50 },
+    };
+    const c = col.count(games, { steam });
+    expect(c["vp+"]).toBe(1);
+    expect(c.neg).toBe(1);
+    expect(c.nos).toBe(1);
+  });
+
+  it("MetacriticColumn.count delegates to countMetacritic", () => {
+    const col = new MetacriticColumn();
+    const metacritic = { A: { score: 92 }, B: { score: 40 } };
+    const c = col.count(games, { metacritic });
+    expect(c["90+"]).toBe(1);
+    expect(c["75+"]).toBe(1);
+    expect(c["50-"]).toBe(1);
+    expect(c.unk).toBe(1);
+  });
+
+  it("HltbColumn.count delegates to countHltb", () => {
+    const col = new HltbColumn();
+    const hltb = { A: { main: 5 }, B: { main: 120 } };
+    const c = col.count(games, { hltb });
+    expect(c.u10).toBe(1);
+    expect(c["100+"]).toBe(1);
+    expect(c.unk).toBe(1);
+  });
+
+  it("OwnedColumn.count delegates to countHideOwned", () => {
+    const col = new OwnedColumn();
+    const c = col.count(games, { ownedGames: new Set(["A"]) });
+    expect(c.owned).toBe(1);
+    expect(c.not).toBe(2);
+  });
+
+  it("HideColumn.count delegates to countHideOwned", () => {
+    const col = new HideColumn();
+    const c = col.count(games, { hiddenGames: new Set(["B"]) });
+    expect(c.hidden).toBe(1);
+    expect(c.all).toBe(3);
+  });
+});
+
+describe("column subclass filter()", () => {
+  it("SteamColumn.filter delegates to filterBySteam", () => {
+    const col = new SteamColumn();
+    expect(col.filter({ name: "A" }, "vp+", { steam: { A: { rating: "Very Positive" as const, pct: 90 } } })).toBe(true);
+    expect(col.filter({ name: "A" }, "vp+", { steam: { A: { rating: "Mixed" as const, pct: 50 } } })).toBe(false);
+  });
+
+  it("HideColumn.filter delegates to filterByHide", () => {
+    const col = new HideColumn();
+    expect(col.filter({ name: "A" }, "visible", { hiddenGames: new Set() })).toBe(true);
+    expect(col.filter({ name: "A" }, "visible", { hiddenGames: new Set(["A"]) })).toBe(false);
+  });
+
+  it("OwnedColumn.filter delegates to filterByOwned", () => {
+    const col = new OwnedColumn();
+    expect(col.filter({ name: "A" }, "owned", { ownedGames: new Set(["A"]) })).toBe(true);
+    expect(col.filter({ name: "A" }, "owned", { ownedGames: new Set() })).toBe(false);
+  });
+});
+
+describe("column subclass sortValue()", () => {
+  it("SteamColumn.sortValue uses tier*1000 + pct", () => {
+    const col = new SteamColumn();
+    const v = col.sortValue({ name: "A" }, { steam: { A: { rating: "Very Positive" as const, pct: 85 } } });
+    expect(v).toBe(6085);
+  });
+
+  it("MetacriticColumn.sortValue returns score", () => {
+    const col = new MetacriticColumn();
+    expect(col.sortValue({ name: "A" }, { metacritic: { A: { score: 92 } } })).toBe(92);
+    expect(col.sortValue({ name: "A" }, { metacritic: {} })).toBeNull();
+  });
+
+  it("HltbColumn.sortValue returns averaged hours", () => {
+    const col = new HltbColumn();
+    const v = col.sortValue({ name: "A" }, { hltb: { A: { main: 10, extra: 20 } } });
+    expect(v).toBe(15);
+  });
+
+  it("HideColumn.sortValue returns 0 or 1", () => {
+    const col = new HideColumn();
+    expect(col.sortValue({ name: "A" }, { hiddenGames: new Set(["A"]) })).toBe(1);
+    expect(col.sortValue({ name: "A" }, { hiddenGames: new Set() })).toBe(0);
   });
 });
