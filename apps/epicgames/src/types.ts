@@ -30,7 +30,7 @@ export interface Filters {
 export type SortCol = "name" | "steam" | "metacritic" | "userscore" | "hltb" | "epicdate" | "epicrating" | "platform" | "hide" | "owned";
 export type SortDir = 1 | -1;
 
-function parseDate(s: string): Date {
+export function parseDate(s: string): Date {
   // ISO dates like "2018-12-12" are parsed as UTC — add T12:00 to avoid timezone shift
   if (/^\d{4}-\d{2}-\d{2}$/.test(s)) return new Date(s + "T12:00:00");
   return new Date(s);

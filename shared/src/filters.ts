@@ -8,7 +8,7 @@ export function filterBySteam(si: SteamInfo | undefined, filter: string): boolea
   if (filter === "vp+" && sr < 6) return false;
   if (filter === "mp+" && sr < 4) return false;
   if (filter === "neg" && (sr < 0 || sr > 3)) return false;
-  if (filter === "unk" && sr !== -1) return false;
+  if (filter === "unk" && (!si || sr !== -1)) return false;
   if (filter === "nos" && si) return false;
   return true;
 }
@@ -86,13 +86,15 @@ export function countSteam<T extends NamedItem>(games: T[], steam: Record<string
 }
 
 export function countMetacritic<T extends NamedItem>(games: T[], metacritic: Record<string, MetacriticInfo>): Record<string, number> {
-  const c: Record<string, number> = { "90+": 0, "75+": 0, "50-": 0 };
+  const c: Record<string, number> = { "90+": 0, "75+": 0, "50-": 0, unk: 0 };
   for (const g of games) {
     const score = metacritic[g.name]?.score;
     if (score !== undefined) {
       if (score >= 90) c["90+"]++;
       if (score >= 75) c["75+"]++;
       if (score < 50) c["50-"]++;
+    } else {
+      c.unk++;
     }
   }
   return c;

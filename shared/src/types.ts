@@ -36,7 +36,7 @@ export type SteamRating =
   | "Negative"
   | "Very Negative";
 
-export const STEAM_ORDER: Record<string, number> = {
+export const STEAM_ORDER: Record<SteamRating, number> = {
   "Overwhelmingly Positive": 7,
   "Very Positive": 6,
   Positive: 5,
@@ -57,8 +57,9 @@ export function loadSetFromLS(key: string): Set<string> {
 
 export function getHltbHours(info?: HltbInfo): number | undefined {
   if (!info) return undefined;
-  const vals = [info.main, info.extra, info.complete, info.coop, info.pvp, info.all_styles]
+  const primary = [info.main, info.extra, info.complete, info.coop, info.pvp]
     .filter((v): v is number => v != null);
+  const vals = primary.length > 0 ? primary : info.all_styles != null ? [info.all_styles] : [];
   if (vals.length === 0) return undefined;
   return vals.reduce((a, b) => a + b, 0) / vals.length;
 }

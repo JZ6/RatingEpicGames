@@ -35,6 +35,7 @@ export const COLUMNS: ColumnDef[] = [
       { value: "90+", label: "90+" },
       { value: "75+", label: "75+" },
       { value: "50-", label: "Below 50" },
+      { value: "unk", label: "Unknown" },
     ],
   }),
   ownedColumn(),

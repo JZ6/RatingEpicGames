@@ -55,12 +55,12 @@ export function HltbBadge({ data }: { data?: HltbInfo }) {
   if (displayHours === undefined) return <span className="empty">—</span>;
 
   const tooltip = [
-    data?.main && `Main Story: ${fmt(data.main)}h`,
-    data?.extra && `Main + Extras: ${fmt(data.extra)}h`,
-    data?.complete && `Completionist: ${fmt(data.complete)}h`,
-    data?.coop && `Co-Op: ${fmt(data.coop)}h`,
-    data?.pvp && `PvP: ${fmt(data.pvp)}h`,
-    data?.all_styles && `All Styles: ${fmt(data.all_styles)}h`,
+    data?.main != null && `Main Story: ${fmt(data.main)}h`,
+    data?.extra != null && `Main + Extras: ${fmt(data.extra)}h`,
+    data?.complete != null && `Completionist: ${fmt(data.complete)}h`,
+    data?.coop != null && `Co-Op: ${fmt(data.coop)}h`,
+    data?.pvp != null && `PvP: ${fmt(data.pvp)}h`,
+    data?.all_styles != null && `All Styles: ${fmt(data.all_styles)}h`,
   ].filter(Boolean).join("\n");
 
   const inner = (

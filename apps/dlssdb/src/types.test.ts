@@ -67,6 +67,10 @@ describe("getDlssVersion", () => {
     expect(getDlssVersion(makeGame({ "dlss super resolution": "Yes" }))).toBe("2");
   });
 
+  it("returns 2 for DLAA-only (DLAA requires DLSS 2.0+)", () => {
+    expect(getDlssVersion(makeGame({ dlaa: "Yes" }))).toBe("2");
+  });
+
   it("returns 1 when no DLSS features", () => {
     expect(getDlssVersion(makeGame())).toBe("1");
   });

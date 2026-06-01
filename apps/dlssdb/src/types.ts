@@ -69,6 +69,7 @@ export function getDlssVersion(g: DlssGame): string {
   if (g["dlss ray reconstruction"]) return "3.5";
   if (g["dlss frame generation"]) return "3";
   if (g["dlss super resolution"]) return "2";
+  if (g.dlaa) return "2";
   return "1";
 }
 

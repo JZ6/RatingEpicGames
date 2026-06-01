@@ -1,7 +1,7 @@
 export { SteamBadge, MetacriticBadge, HltbBadge, HideBadge, OwnedBadge } from "@shared/components/Badge";
 import { getAgeCls, formatDateLabel } from "@shared/components/Badge";
 import type { MetacriticInfo, EpicInfo } from "../types";
-import { formatFreeDate, getLatestFreeDate } from "../types";
+import { formatFreeDate, getLatestFreeDate, parseDate } from "../types";
 
 export function UserScoreBadge({ info }: { info?: MetacriticInfo }) {
   if (!info || info.user_score === undefined) return <span className="empty">—</span>;
@@ -14,7 +14,7 @@ export function EpicDateBadge({ info }: { info?: EpicInfo }) {
   if (!info?.free_dates?.length) return <span className="empty">—</span>;
   const label = formatFreeDate(info);
   const count = info.free_dates.length;
-  const parseD = (s: string) => /^\d{4}-\d{2}-\d{2}$/.test(s) ? new Date(s + "T12:00:00") : new Date(s);
+  const parseD = parseDate;
   const tip = count > 1
     ? info.free_dates.map((d, i) => { const dt = parseD(d.start); return `#${i + 1}: ${formatDateLabel(dt)}`; }).join("\n")
     : undefined;
@@ -30,7 +30,7 @@ export function EpicDateBadge({ info }: { info?: EpicInfo }) {
 }
 
 export function EpicRatingBadge({ info }: { info?: EpicInfo }) {
-  if (!info?.epic_rating) return <span className="empty">—</span>;
+  if (!info || info.epic_rating == null) return <span className="empty">—</span>;
   const r = info.epic_rating;
   const cls = r >= 4.5 ? "er-great" : r >= 3.5 ? "er-good" : r >= 2.5 ? "er-mixed" : "er-bad";
   return <span className={`badge ${cls}`}>{r.toFixed(1)}</span>;

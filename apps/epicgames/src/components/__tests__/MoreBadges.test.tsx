@@ -74,6 +74,12 @@ describe("EpicRatingBadge", () => {
     render(<EpicRatingBadge info={{ slug: "x", free_dates: [], epic_rating: 2.1 }} />);
     expect(screen.getByText("2.1").classList.contains("er-bad")).toBe(true);
   });
+
+  it("shows 0.0 when epic_rating is 0", () => {
+    render(<EpicRatingBadge info={{ slug: "x", free_dates: [], epic_rating: 0 }} />);
+    expect(screen.getByText("0.0")).toBeInTheDocument();
+    expect(screen.getByText("0.0").classList.contains("er-bad")).toBe(true);
+  });
 });
 
 // ──────────────────────── EpicDateBadge ────────────────────────

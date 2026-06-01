@@ -46,9 +46,9 @@ describe("filterBySteam", () => {
     expect(filterBySteam(si("Very Positive"), "nos")).toBe(false);
   });
 
-  it("unk: passes games with no valid steam rating", () => {
+  it("unk: passes games on Steam with no valid rating", () => {
     expect(filterBySteam({ appid: 123 }, "unk")).toBe(true);      // on Steam but no rating
-    expect(filterBySteam(undefined, "unk")).toBe(true);            // not on Steam also passes (sr=-1)
+    expect(filterBySteam(undefined, "unk")).toBe(false);           // not on Steam — use "nos" instead
     expect(filterBySteam(si("Very Positive"), "unk")).toBe(false); // has rating, filtered out
   });
 });
@@ -277,6 +277,11 @@ describe("countMetacritic", () => {
 
   it("counts below 50 correctly", () => {
     expect(countMetacritic(games, mc)["50-"]).toBe(1);
+  });
+
+  it("counts unknown correctly", () => {
+    const withUnknown = [{ name: "A" }, { name: "B" }, { name: "C" }, { name: "D" }];
+    expect(countMetacritic(withUnknown, mc).unk).toBe(1); // D has no metacritic
   });
 });
 

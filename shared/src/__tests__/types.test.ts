@@ -24,9 +24,18 @@ describe("getHltbHours", () => {
     expect(hours).toBe(30);
   });
 
-  it("includes coop, pvp, all_styles in average when present", () => {
+  it("includes coop and pvp in average", () => {
     const hours = getHltbHours({ main: 10, coop: 20 });
     expect(hours).toBe(15);
+  });
+
+  it("excludes all_styles when primary fields exist", () => {
+    expect(getHltbHours({ main: 10, all_styles: 50 })).toBe(10);
+    expect(getHltbHours({ main: 10, extra: 20, all_styles: 100 })).toBe(15);
+  });
+
+  it("uses all_styles as fallback when no primary fields", () => {
+    expect(getHltbHours({ all_styles: 25 })).toBe(25);
   });
 
   it("ignores null/undefined fields in average", () => {

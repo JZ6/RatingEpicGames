@@ -16,12 +16,14 @@ const games: DlssGame[] = [
   makeGame('Elden Ring', { 'dlss frame generation': 'Yes', 'ray tracing': 'Yes', 'dlss super resolution': 'Yes' }),
   makeGame('Halo Infinite', { 'dlss super resolution': 'Yes' }),
   makeGame('Portal RTX', { 'dlss multi frame generation': 'NV, 4X', 'ray tracing': 'Path Tracing', 'dlss super resolution': 'NV, T' }),
+  makeGame('Indie Game', { 'dlss super resolution': 'Yes' }),
 ]
 
 const steam: Record<string, SteamInfo> = {
   'Cyberpunk 2077': { rating: 'Very Positive', pct: 89, total: 500000, appid: 1091500 },
   'Elden Ring': { rating: 'Mostly Positive', pct: 72, total: 300000, appid: 1245620 },
   'Halo Infinite': { rating: 'Mixed', pct: 55, total: 100000, appid: 1240440 },
+  'Portal RTX': { appid: 2135500 },
 }
 
 const hltb: Record<string, HltbInfo> = {
@@ -57,7 +59,7 @@ beforeEach(() => {
 describe('useFilters', () => {
   it('returns all games with no filters', () => {
     const { result } = renderHook(() => useFilters(games, hltb, steam, metacritic, upscaling))
-    expect(result.current.filtered).toHaveLength(4)
+    expect(result.current.filtered).toHaveLength(5)
   })
 
   describe('search filter', () => {
@@ -111,7 +113,7 @@ describe('useFilters', () => {
     it('filters Not On Steam', () => {
       const { result } = renderHook(() => useFilters(games, hltb, steam, metacritic, upscaling))
       act(() => result.current.setFilter('steam', 'nos'))
-      expect(result.current.filtered.map((g) => g.name)).toEqual(['Portal RTX'])
+      expect(result.current.filtered.map((g) => g.name)).toEqual(['Indie Game'])
     })
   })
 
@@ -161,7 +163,7 @@ describe('useFilters', () => {
     it('excludes hidden games by default', () => {
       const hidden = new Set(['Halo Infinite'])
       const { result } = renderHook(() => useFilters(games, hltb, steam, metacritic, upscaling, hidden))
-      expect(result.current.filtered).toHaveLength(3)
+      expect(result.current.filtered).toHaveLength(4)
       expect(result.current.filtered.find((g) => g.name === 'Halo Infinite')).toBeUndefined()
     })
 
@@ -177,7 +179,7 @@ describe('useFilters', () => {
       const hidden = new Set(['Halo Infinite'])
       const { result } = renderHook(() => useFilters(games, hltb, steam, metacritic, upscaling, hidden))
       act(() => result.current.setFilter('hide', ''))
-      expect(result.current.filtered).toHaveLength(4)
+      expect(result.current.filtered).toHaveLength(5)
     })
   })
 
@@ -185,7 +187,7 @@ describe('useFilters', () => {
     it('shows all games when owned filter is empty', () => {
       const owned = new Set(['Cyberpunk 2077', 'Elden Ring'])
       const { result } = renderHook(() => useFilters(games, hltb, steam, metacritic, upscaling, new Set(), owned))
-      expect(result.current.filtered).toHaveLength(4)
+      expect(result.current.filtered).toHaveLength(5)
     })
 
     it('filters to owned only', () => {
@@ -200,8 +202,8 @@ describe('useFilters', () => {
       const owned = new Set(['Cyberpunk 2077', 'Elden Ring'])
       const { result } = renderHook(() => useFilters(games, hltb, steam, metacritic, upscaling, new Set(), owned))
       act(() => result.current.setFilter('owned', 'not'))
-      expect(result.current.filtered).toHaveLength(2)
-      expect(result.current.filtered.map((g) => g.name).sort()).toEqual(['Halo Infinite', 'Portal RTX'])
+      expect(result.current.filtered).toHaveLength(3)
+      expect(result.current.filtered.map((g) => g.name).sort()).toEqual(['Halo Infinite', 'Indie Game', 'Portal RTX'])
     })
   })
 
@@ -229,19 +231,20 @@ describe('useFilters', () => {
       const { result } = renderHook(() => useFilters(games, hltb, steam, metacritic, upscaling))
       act(() => result.current.toggleSort('name'))
       expect(result.current.filtered[0].name).toBe('Cyberpunk 2077')
-      expect(result.current.filtered[3].name).toBe('Portal RTX')
+      expect(result.current.filtered[4].name).toBe('Portal RTX')
     })
 
     it('sorts null values last regardless of direction', () => {
       const { result } = renderHook(() => useFilters(games, hltb, steam, metacritic, upscaling))
       act(() => result.current.toggleSort('hltb'))
-      // Cyberpunk and Elden have HLTB, Halo and Portal don't
+      // Cyberpunk and Elden have HLTB, Halo / Portal / Indie don't
       const names = result.current.filtered.map((g) => g.name)
       expect(hltb[names[0]]).toBeDefined()
       expect(hltb[names[1]]).toBeDefined()
-      // Last two should be the ones without HLTB
+      // Last three should be the ones without HLTB
       expect(hltb[names[2]]).toBeUndefined()
       expect(hltb[names[3]]).toBeUndefined()
+      expect(hltb[names[4]]).toBeUndefined()
     })
 
     it('sorts owned bidirectionally (not null-last)', () => {
@@ -269,7 +272,7 @@ describe('useFilters', () => {
       const owned = new Set(['Cyberpunk 2077', 'Elden Ring'])
       const { result } = renderHook(() => useFilters(games, hltb, steam, metacritic, upscaling, new Set(), owned))
       expect(result.current.filterCounts.owned.owned).toBe(2)
-      expect(result.current.filterCounts.owned.not).toBe(2)
+      expect(result.current.filterCounts.owned.not).toBe(3)
     })
 
     it('computes upscaling counts', () => {
@@ -311,13 +314,13 @@ describe('useFilters', () => {
     it('filters any SR', () => {
       const { result } = renderHook(() => useFilters(games, hltb, steam, metacritic, upscaling))
       act(() => result.current.setFilter('sr', 'any'))
-      expect(result.current.filtered).toHaveLength(4) // All 4 games have SR
+      expect(result.current.filtered).toHaveLength(5) // All 5 games have SR
     })
 
     it('filters none SR', () => {
       const { result } = renderHook(() => useFilters(games, hltb, steam, metacritic, upscaling))
       act(() => result.current.setFilter('sr', 'none'))
-      expect(result.current.filtered).toHaveLength(0) // All 4 games have SR
+      expect(result.current.filtered).toHaveLength(0) // All 5 games have SR
     })
   })
 
@@ -353,7 +356,7 @@ describe('useFilters', () => {
     it('filters no upscaling', () => {
       const { result } = renderHook(() => useFilters(games, hltb, steam, metacritic, upscaling))
       act(() => result.current.setFilter('upscaling', 'none'))
-      expect(result.current.filtered).toHaveLength(2) // Halo + Portal
+      expect(result.current.filtered).toHaveLength(3) // Halo + Portal + Indie
     })
   })
 
@@ -374,7 +377,7 @@ describe('useFilters', () => {
     it('filters unknown steam rating (sr === -1)', () => {
       const { result } = renderHook(() => useFilters(games, hltb, steam, metacritic, upscaling))
       act(() => result.current.setFilter('steam', 'unk'))
-      // Portal RTX has no steam entry → sr = -1 → passes unk filter
+      // Portal RTX has steam entry but no rating → sr = -1 → passes unk filter
       expect(result.current.filtered).toHaveLength(1)
       expect(result.current.filtered[0].name).toBe('Portal RTX')
     })
@@ -408,7 +411,7 @@ describe('useFilters', () => {
     it('filters unknown playtime', () => {
       const { result } = renderHook(() => useFilters(games, hltb, steam, metacritic, upscaling))
       act(() => result.current.setFilter('hltb', 'unk'))
-      expect(result.current.filtered).toHaveLength(2) // Halo + Portal
+      expect(result.current.filtered).toHaveLength(3) // Halo + Portal + Indie
     })
   })
 
@@ -416,7 +419,7 @@ describe('useFilters', () => {
     it('filters unknown metacritic', () => {
       const { result } = renderHook(() => useFilters(games, hltb, steam, metacritic, upscaling))
       act(() => result.current.setFilter('metacritic', 'unk'))
-      expect(result.current.filtered).toHaveLength(1) // Halo has no metacritic
+      expect(result.current.filtered).toHaveLength(2) // Halo + Indie have no metacritic
     })
   })
 
@@ -432,28 +435,32 @@ describe('useFilters', () => {
       const { result } = renderHook(() => useFilters(games, hltb, steam, metacritic, upscaling))
       act(() => result.current.toggleSort('metacritic'))
       const names = result.current.filtered.map((g) => g.name)
-      expect(names[3]).toBe('Halo Infinite') // No metacritic → last
+      expect(metacritic[names[3]]).toBeUndefined()
+      expect(metacritic[names[4]]).toBeUndefined()
     })
 
     it('sorts by upscaling with nulls last', () => {
       const { result } = renderHook(() => useFilters(games, hltb, steam, metacritic, upscaling))
       act(() => result.current.toggleSort('upscaling'))
       const names = result.current.filtered.map((g) => g.name)
-      expect(upscaling[names[3]]).toBeUndefined() // No upscaling → last
+      expect(upscaling[names[3]]).toBeUndefined()
+      expect(upscaling[names[4]]).toBeUndefined()
     })
 
     it('sorts by framegen with nulls last', () => {
       const { result } = renderHook(() => useFilters(games, hltb, steam, metacritic, upscaling))
       act(() => result.current.toggleSort('framegen'))
-      const last = result.current.filtered[3].name
-      expect(last).toBe('Halo Infinite') // No frame gen
+      const names = result.current.filtered.map((g) => g.name)
+      expect(names.slice(3)).toContain('Halo Infinite')
+      expect(names.slice(3)).toContain('Indie Game')
     })
 
     it('sorts by rt with nulls last', () => {
       const { result } = renderHook(() => useFilters(games, hltb, steam, metacritic, upscaling))
       act(() => result.current.toggleSort('rt'))
-      const last = result.current.filtered[3].name
-      expect(last).toBe('Halo Infinite') // No RT
+      const names = result.current.filtered.map((g) => g.name)
+      expect(names.slice(3)).toContain('Halo Infinite')
+      expect(names.slice(3)).toContain('Indie Game')
     })
   })
 
@@ -477,9 +484,9 @@ describe('useFilters', () => {
       const { result } = renderHook(() => useFilters(games, hltb, steam, metacritic, upscaling))
       act(() => result.current.toggleSort('sr'))
       // FEATURE_ORDER: NV,T=3, Yes=1 — ascending: Yes first, NV,T last (among non-null)
-      // All 4 games have SR so no nulls
+      // All 5 games have SR so no nulls
       const names = result.current.filtered.map((g) => g.name)
-      expect(names.length).toBe(4)
+      expect(names.length).toBe(5)
     })
 
     it('sorts by rr with nulls last', () => {
@@ -512,19 +519,19 @@ describe('useFilters', () => {
     it('computes steam counts', () => {
       const { result } = renderHook(() => useFilters(games, hltb, steam, metacritic, upscaling))
       expect(result.current.filterCounts.steam['vp+']).toBeGreaterThan(0)
-      expect(result.current.filterCounts.steam['nos']).toBe(1) // Portal has no steam
+      expect(result.current.filterCounts.steam['nos']).toBe(1) // Indie Game has no steam
     })
 
     it('computes hltb counts', () => {
       const { result } = renderHook(() => useFilters(games, hltb, steam, metacritic, upscaling))
-      expect(result.current.filterCounts.hltb.unk).toBe(2) // Halo + Portal
+      expect(result.current.filterCounts.hltb.unk).toBe(3) // Halo + Portal + Indie
     })
 
     it('computes hide counts', () => {
       const hidden = new Set(['Cyberpunk 2077'])
       const { result } = renderHook(() => useFilters(games, hltb, steam, metacritic, upscaling, hidden))
       expect(result.current.filterCounts.hide.hidden).toBe(1)
-      expect(result.current.filterCounts.hide.all).toBe(4)
+      expect(result.current.filterCounts.hide.all).toBe(5)
     })
 
     it('computes metacritic counts', () => {
@@ -544,7 +551,7 @@ describe('useFilters', () => {
       const { result } = renderHook(() => useFilters(games, hltb, steam, metacritic, upscaling))
       expect(result.current.filterCounts.dlaa.any).toBe(1) // Only Cyberpunk
       expect(result.current.filterCounts.sr['NV, T']).toBe(2) // Cyberpunk + Portal
-      expect(result.current.filterCounts.sr.Yes).toBe(2) // Elden + Halo
+      expect(result.current.filterCounts.sr.Yes).toBe(3) // Elden + Halo + Indie
     })
   })
 
@@ -588,7 +595,7 @@ describe('useFilters', () => {
       act(() => result.current.setFilter('search', 'cyber'))
       expect(result.current.filtered).toHaveLength(1)
       act(() => result.current.clearFilters())
-      expect(result.current.filtered).toHaveLength(4)
+      expect(result.current.filtered).toHaveLength(5)
       expect(result.current.filters.search).toBe('')
     })
   })

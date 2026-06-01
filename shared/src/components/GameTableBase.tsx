@@ -35,7 +35,7 @@ const STEAM_FILTERS: FilterOption[] = [
   { value: "op+", label: "Ov. Positive +" },
   { value: "vp+", label: "Very Positive +" },
   { value: "mp+", label: "M. Positive +" },
-  { value: "neg", label: "Negative" },
+  { value: "neg", label: "Mixed or Worse" },
   { value: "nos", label: "Not On Steam" },
 ];
 
@@ -105,6 +105,8 @@ export function metacriticColumn(overrides?: Partial<ColumnDef>): ColumnDef {
       { value: "", label: "All" },
       { value: "90+", label: "90+" },
       { value: "75+", label: "75+" },
+      { value: "50-", label: "Below 50" },
+      { value: "unk", label: "Unknown" },
     ],
     ...overrides,
   });
