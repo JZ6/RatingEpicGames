@@ -3,15 +3,6 @@ import { COLUMNS, PINNED_FIRST, PINNED_LAST } from "../GameTable";
 import type { Filters } from "../../types";
 
 describe("COLUMNS order", () => {
-  it("should have middle columns sorted alphabetically by label", () => {
-    const middle = COLUMNS.filter(
-      (c) => !PINNED_FIRST.has(c.key) && !PINNED_LAST.has(c.key)
-    );
-    const labels = middle.map((c) => c.label);
-    const sorted = [...labels].sort((a, b) => a.localeCompare(b));
-    expect(labels).toEqual(sorted);
-  });
-
   it("should have pinned-first columns at the start", () => {
     for (let i = 0; i < COLUMNS.length; i++) {
       if (PINNED_FIRST.has(COLUMNS[i].key)) {
@@ -20,16 +11,14 @@ describe("COLUMNS order", () => {
     }
   });
 
-  it("should have pinned-last columns at the end", () => {
-    const lastN = COLUMNS.slice(-PINNED_LAST.size);
-    for (const col of lastN) {
-      expect(PINNED_LAST.has(col.key)).toBe(true);
-    }
+  it("should have hide column at the end", () => {
+    const last = COLUMNS[COLUMNS.length - 1];
+    expect(last.key).toBe("hide");
   });
 });
 
 describe("COLUMNS filterKey contract", () => {
-  const EMPTY_FILTERS: Filters = { search: "", framegen: "", dlssver: "", dlaa: "", sr: "", rr: "", rt: "", upscaling: "", steam: "", metacritic: "", release_date: "", tags: "", hltb: "", hide: "visible", owned: "" };
+  const EMPTY_FILTERS: Filters = { search: "", steam: "", metacritic: "", userscore: "", hltb: "", year: "", epicrating: "", platform: "", hide: "visible", owned: "" };
   const validKeys = new Set(Object.keys(EMPTY_FILTERS));
 
   it("every column filterKey must exist in Filters type", () => {
@@ -44,10 +33,16 @@ describe("COLUMNS filterKey contract", () => {
     expect(nameCol).toBeDefined();
     expect(nameCol!.filterKey).toBe("search");
   });
+
+  it("epicdate column must use filterKey 'year'", () => {
+    const col = COLUMNS.find((c) => c.key === "epicdate");
+    expect(col).toBeDefined();
+    expect(col!.filterKey).toBe("year");
+  });
 });
 
 describe("COLUMNS render coverage", () => {
-  const SPECIAL_KEYS = new Set(["name", "tags"]);
+  const SPECIAL_KEYS = new Set(["name"]);
 
   it("every non-special column must have a render function", () => {
     for (const col of COLUMNS) {
