@@ -43,4 +43,3 @@ Game data lives in `public/game_data.json`. Each entry contains:
 
 - Vite + React 19 + TypeScript
 - No external UI libraries
-

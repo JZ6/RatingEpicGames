@@ -63,11 +63,16 @@ export function HltbBadge({ data }: { data?: HltbInfo }) {
     data?.all_styles && `All Styles: ${fmt(data.all_styles)}h`,
   ].filter(Boolean).join("\n");
 
-  return (
+  const inner = (
     <span className="hltb-cell" data-tip={tooltip} tabIndex={0}>
       <span className="hltb-main" style={{ color: hltbColor(displayHours) }}>{fmt(displayHours)} hours</span>
     </span>
   );
+
+  if (data?.hltb_id) {
+    return <a href={`https://howlongtobeat.com/game/${data.hltb_id}`} target="_blank" rel="noopener noreferrer">{inner}</a>;
+  }
+  return inner;
 }
 
 export function HideBadge({ hidden, onToggle }: { hidden: boolean; onToggle: () => void }) {

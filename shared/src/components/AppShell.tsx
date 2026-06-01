@@ -14,7 +14,7 @@ interface AppShellProps {
   games: { name: string }[];
   filteredCount: number;
   visibleCols: Set<string>;
-  onToggleCol: (key: string) => void;
+  toggleCol: (key: string) => void;
   onClearFilters: () => void;
   ownedGames: Set<string>;
   setOwnedGames: (s: Set<string>) => void;
@@ -28,7 +28,7 @@ export function AppShell({
   title, subtitle, errorHint,
   columns, loading, error, retry,
   games, filteredCount,
-  visibleCols, onToggleCol, onClearFilters,
+  visibleCols, toggleCol, onClearFilters,
   ownedGames, setOwnedGames, setVisibleCols,
   showImport, setShowImport,
   children,
@@ -65,7 +65,7 @@ export function AppShell({
         subtitle={subtitle}
         columns={columns}
         visibleCols={visibleCols}
-        onToggleCol={onToggleCol}
+        onToggleCol={toggleCol}
         onClearFilters={onClearFilters}
         onImportLibrary={() => setShowImport(true)}
         ownedCount={ownedGames.size}

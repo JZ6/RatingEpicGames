@@ -4,3 +4,4 @@ export { Header } from "./components/Header";
 export { StatsBar } from "./components/StatsBar";
 export { ColumnToggle } from "./components/ColumnToggle";
 export { ImportModal } from "./components/ImportModal";
+export { defineColumn, nameColumn, steamColumn, metacriticColumn, hltbColumn, ownedColumn, hideColumn } from "./components/GameTableBase";

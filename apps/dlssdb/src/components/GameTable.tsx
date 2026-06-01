@@ -1,111 +1,109 @@
 import { memo, useMemo, useState, useEffect, useRef } from "react";
 import type { DlssGame, HltbInfo, SteamInfo, MetacriticInfo, UpscalingInfo, SortCol, SortDir, Filters } from "../types";
-import { FrameGenBadge, DlssVersionBadge, FeatureBadge, SteamBadge, MetacriticBadge, UpscalingBadge, ReleaseDateBadge, HltbBadge, HideBadge, OwnedBadge } from "./Badge";
+import { FrameGenBadge, DlssVersionBadge, FeatureBadge, UpscalingBadge, ReleaseDateBadge } from "./Badge";
 import { useContainerWidth } from "@shared/hooks/useContainerWidth";
 import { useScrollHint } from "@shared/hooks/useScrollHint";
-import { computeColWidths, SHARED_COLUMN_FILTERS } from "@shared/components/GameTableBase";
-import type { Column } from "@shared/components/GameTableBase";
-export type { Column };
+import { computeColWidths, defineColumn, nameColumn, steamColumn, metacriticColumn, hltbColumn, ownedColumn, hideColumn } from "@shared/components/GameTableBase";
+import type { ColumnDef } from "@shared/components/GameTableBase";
+export type { ColumnDef as Column };
 export { PINNED_FIRST, PINNED_LAST } from "@shared/components/GameTableBase";
 
-export const COLUMNS: Column[] = [
-  { key: "name",          label: "Game",         minWidth: "360px", tooltip: "Click to view on Steam" },
-  { key: "dlaa",          label: "DLAA",         minWidth: "90px",  tooltip: "Deep Learning Anti-Aliasing\nAI anti-aliasing at native resolution" },
-  { key: "dlssver",       label: "DLSS",         minWidth: "90px",  tooltip: "DLSS Version\n4.5 = Multi Frame Gen 6X\n4 = Multi Frame Gen 4X\n3.5 = Ray Reconstruction\n3 = Frame Generation\n2 = Super Resolution" },
-  { key: "framegen",      label: "FG",           fullLabel: "Frame Gen", minWidth: "90px",  tooltip: "DLSS Frame Generation\n6X = DLSS 4.5 (RTX 50)\n4X = DLSS 4 (RTX 40/50)\n2X = DLSS 3 (RTX 40/50)" },
-  { key: "upscaling",     label: "FSR/XeSS",     minWidth: "120px", tooltip: "Non-DLSS upscaling support\nFSR = AMD FidelityFX\nXeSS = Intel" },
-  { key: "metacritic",    label: "MC",           fullLabel: "Metacritic", minWidth: "90px",  tooltip: "Metacritic critic score\nGreen = 75+\nYellow = 50–74\nRed = below 50" },
-  { key: "hltb",          label: "Playtime",     minWidth: "125px", tooltip: "Average playtime from HowLongToBeat\n(Main Story + Extras + Completionist)\nHover a value for full breakdown" },
-  { key: "release_date",  label: "Release Day",  minWidth: "150px", tooltip: "Steam release date" },
-  { key: "rr",            label: "RR",           fullLabel: "Ray Recon", minWidth: "90px",  tooltip: "DLSS Ray Reconstruction\nAI-enhanced ray tracing denoiser\nfor cleaner reflections and lighting" },
-  { key: "rt",            label: "RT",           fullLabel: "Ray Tracing", minWidth: "125px", tooltip: "Ray Tracing support\nPath Tracing = full path tracing\nYes = partial (reflections, shadows, GI)" },
-  { key: "sr",            label: "SR",           fullLabel: "Super Res", minWidth: "90px",  tooltip: "DLSS Super Resolution\nAI upscaling from lower resolution\nNV-T = Transformer model (best)" },
-  { key: "steam",         label: "Steam Rating", minWidth: "240px", tooltip: "Steam user review rating\nwith positive review percentage" },
-  { key: "tags",          label: "Tags",         minWidth: "180px", tooltip: "Steam community tags\nSearch to filter by tag" },
-  { key: "owned",         label: "Own",          fullLabel: "Owned", minWidth: "90px",  tooltip: "Games you own\nImport your library via the header button" },
-  { key: "hide",          label: "Hide",         minWidth: "90px",  tooltip: "Toggle game visibility\nHidden games are saved in your browser" },
+type RowData = { steam?: SteamInfo; hltb?: HltbInfo; metacritic?: MetacriticInfo; upscaling?: UpscalingInfo };
+
+export const COLUMNS: ColumnDef[] = [
+  nameColumn({ tooltip: "Click to view on Steam" }),
+  defineColumn({
+    key: "dlaa", label: "DLAA", minWidth: "90px", mobileWidth: "70px",
+    tooltip: "Deep Learning Anti-Aliasing\nAI anti-aliasing at native resolution",
+    render: (g: DlssGame) => <FeatureBadge value={g.dlaa || ""} />,
+    filters: [{ value: "", label: "All" }, { value: "any", label: "Any" }],
+  }),
+  defineColumn({
+    key: "dlssver", label: "DLSS", minWidth: "90px", mobileWidth: "70px",
+    tooltip: "DLSS Version\n4.5 = Multi Frame Gen 6X\n4 = Multi Frame Gen 4X\n3.5 = Ray Reconstruction\n3 = Frame Generation\n2 = Super Resolution",
+    render: (g: DlssGame) => <DlssVersionBadge game={g} />,
+    filters: [
+      { value: "", label: "All" },
+      { value: "4.5+", label: "4.5+" },
+      { value: "4+", label: "4+" },
+      { value: "3+", label: "3+" },
+    ],
+  }),
+  defineColumn({
+    key: "framegen", label: "FG", fullLabel: "Frame Gen", minWidth: "90px", mobileWidth: "70px",
+    tooltip: "DLSS Frame Generation\n6X = DLSS 4.5 (RTX 50)\n4X = DLSS 4 (RTX 40/50)\n2X = DLSS 3 (RTX 40/50)",
+    render: (g: DlssGame) => <FrameGenBadge game={g} />,
+    filters: [
+      { value: "", label: "All" },
+      { value: "6x", label: "6X" },
+      { value: "4x", label: "4X" },
+      { value: "2x", label: "2X" },
+      { value: "any", label: "Any" },
+    ],
+  }),
+  defineColumn({
+    key: "upscaling", label: "FSR/XeSS", minWidth: "120px", mobileWidth: "90px",
+    tooltip: "Non-DLSS upscaling support\nFSR = AMD FidelityFX\nXeSS = Intel",
+    render: (_: DlssGame, d: RowData) => <UpscalingBadge info={d.upscaling} />,
+    filters: [
+      { value: "", label: "All" },
+      { value: "fsr", label: "FSR" },
+      { value: "xess", label: "XeSS" },
+      { value: "both", label: "Both" },
+      { value: "any", label: "Any" },
+    ],
+  }),
+  metacriticColumn(),
+  hltbColumn(),
+  defineColumn({
+    key: "release_date", label: "Release Day", minWidth: "150px", mobileWidth: "100px",
+    tooltip: "Steam release date",
+    render: (_: DlssGame, d: RowData) => <ReleaseDateBadge date={d.steam?.release_date} />,
+    filters: [
+      { value: "", label: "All" },
+      { value: "month", label: "Last Month" },
+      { value: "quarter", label: "Last 3 Months" },
+      { value: "year", label: "Last Year" },
+      { value: "old", label: "Older" },
+      { value: "upcoming", label: "Upcoming" },
+    ],
+  }),
+  defineColumn({
+    key: "rr", label: "RR", fullLabel: "Ray Recon", minWidth: "90px", mobileWidth: "70px",
+    tooltip: "DLSS Ray Reconstruction\nAI-enhanced ray tracing denoiser\nfor cleaner reflections and lighting",
+    render: (g: DlssGame) => <FeatureBadge value={g["dlss ray reconstruction"] || ""} />,
+    filters: [{ value: "", label: "All" }, { value: "any", label: "Any" }],
+  }),
+  defineColumn({
+    key: "rt", label: "RT", fullLabel: "Ray Tracing", minWidth: "125px", mobileWidth: "80px",
+    tooltip: "Ray Tracing support\nPath Tracing = full path tracing\nYes = partial (reflections, shadows, GI)",
+    render: (g: DlssGame) => <FeatureBadge value={g["ray tracing"] || ""} />,
+    filters: [
+      { value: "", label: "All" },
+      { value: "Path Tracing", label: "Path Tracing" },
+      { value: "Yes", label: "Yes" },
+      { value: "any", label: "Any RT" },
+    ],
+  }),
+  defineColumn({
+    key: "sr", label: "SR", fullLabel: "Super Res", minWidth: "90px", mobileWidth: "70px",
+    tooltip: "DLSS Super Resolution\nAI upscaling from lower resolution\nNV-T = Transformer model (best)",
+    render: (g: DlssGame) => <FeatureBadge value={g["dlss super resolution"] || ""} />,
+    filters: [
+      { value: "", label: "All" },
+      { value: "NV, T", label: "Transformer" },
+      { value: "Yes", label: "Yes" },
+    ],
+  }),
+  steamColumn(),
+  defineColumn({
+    key: "tags", label: "Tags", minWidth: "180px", mobileWidth: "120px",
+    tooltip: "Steam community tags\nSearch to filter by tag",
+    filterType: "input",
+  }),
+  ownedColumn(),
+  hideColumn(),
 ];
-
-const COLUMN_FILTERS: Partial<Record<SortCol, { value: string; label: string }[]>> = {
-  ...SHARED_COLUMN_FILTERS,
-  dlaa: [
-    { value: "", label: "All" },
-    { value: "any", label: "Any" },
-  ],
-  dlssver: [
-    { value: "", label: "All" },
-    { value: "4.5+", label: "4.5+" },
-    { value: "4+", label: "4+" },
-    { value: "3+", label: "3+" },
-  ],
-  framegen: [
-    { value: "", label: "All" },
-    { value: "6x", label: "6X" },
-    { value: "4x", label: "4X" },
-    { value: "2x", label: "2X" },
-    { value: "any", label: "Any" },
-  ],
-  sr: [
-    { value: "", label: "All" },
-    { value: "NV, T", label: "Transformer" },
-    { value: "Yes", label: "Yes" },
-  ],
-  rr: [
-    { value: "", label: "All" },
-    { value: "any", label: "Any" },
-  ],
-  rt: [
-    { value: "", label: "All" },
-    { value: "Path Tracing", label: "Path Tracing" },
-    { value: "Yes", label: "Yes" },
-    { value: "any", label: "Any RT" },
-  ],
-  upscaling: [
-    { value: "", label: "All" },
-    { value: "fsr", label: "FSR" },
-    { value: "xess", label: "XeSS" },
-    { value: "both", label: "Both" },
-    { value: "any", label: "Any" },
-  ],
-  metacritic: [
-    { value: "", label: "All" },
-    { value: "90+", label: "90+" },
-    { value: "75+", label: "75+" },
-  ],
-  release_date: [
-    { value: "", label: "All" },
-    { value: "month", label: "Last Month" },
-    { value: "quarter", label: "Last 3 Months" },
-    { value: "year", label: "Last Year" },
-    { value: "old", label: "Older" },
-    { value: "upcoming", label: "Upcoming" },
-  ],
-};
-
-// Extra data passed to each row for rendering
-interface RowData {
-  steam?: SteamInfo;
-  hltb?: HltbInfo;
-  metacritic?: MetacriticInfo;
-  upscaling?: UpscalingInfo;
-}
-
-type CellRenderer = (game: DlssGame, data: RowData) => React.JSX.Element;
-
-const CELL_RENDERERS: Record<string, CellRenderer> = {
-  dlssver:    (g) => <DlssVersionBadge game={g} />,
-  framegen:   (g) => <FrameGenBadge game={g} />,
-  sr:         (g) => <FeatureBadge value={g["dlss super resolution"] || ""} />,
-  rr:         (g) => <FeatureBadge value={g["dlss ray reconstruction"] || ""} />,
-  dlaa:       (g) => <FeatureBadge value={g.dlaa || ""} />,
-  rt:         (g) => <FeatureBadge value={g["ray tracing"] || ""} />,
-  // tags rendered inline in GameRow (needs filter context)
-  release_date: (_g, d) => <ReleaseDateBadge date={d.steam?.release_date} />,
-  upscaling:  (_g, d) => <UpscalingBadge info={d.upscaling} />,
-  steam:      (_g, d) => <SteamBadge info={d.steam} />,
-  metacritic: (_g, d) => <MetacriticBadge info={d.metacritic} />,
-  hltb:       (_g, d) => <HltbBadge data={d.hltb} />,
-};
 
 interface Props {
   games: DlssGame[];
@@ -144,56 +142,40 @@ export function GameTable({ games, hltb, steam, metacritic, upscaling, images, s
         </colgroup>
         <thead>
           <tr>
-            {cols.map((col) => {
-              const filterKey = col.key as keyof Filters;
-              const filterOpts = COLUMN_FILTERS[col.key];
+            {cols.map((col, colIdx) => {
+              const filterKey = (col.filterKey || col.key) as keyof Filters;
               return (
                 <th
                   key={col.key}
                   className={sortCol === col.key ? "sorted" : ""}
                   aria-sort={sortCol === col.key ? (sortDir === 1 ? "ascending" : "descending") : "none"}
                 >
-                  <div className="th-label" role="button" tabIndex={0} onClick={() => onSort(col.key)} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onSort(col.key); } }}>
+                  <div className="th-label" role="button" tabIndex={0} onClick={() => onSort(col.key as SortCol)} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onSort(col.key as SortCol); } }}>
                     <span className="si">
                       <span className={`si-up ${sortCol === col.key && sortDir === 1 ? "si-on" : "si-off"}`} />
                       <span className={`si-down ${sortCol === col.key && sortDir === -1 ? "si-on" : "si-off"}`} />
                     </span>
-                    {col.icon || col.label}
-                    <span
-                      className="th-info"
-                      data-tip={col.tooltip}
-                      tabIndex={0}
-                      onClick={(e) => e.stopPropagation()}
-                    >ⓘ</span>
+                    {col.icon || (col.fullLabel && colWidths[colIdx] >= col.fullLabel.length * 11 + 60 ? col.fullLabel : col.label)}
+                    <span className="th-info" data-tip={col.tooltip} tabIndex={0} onClick={(e) => e.stopPropagation()}>ⓘ</span>
                   </div>
-                  {col.key === "name" ? (
+                  {col.filterType === "input" ? (
                     <input
                       className="th-filter-input"
                       type="text"
-                      aria-label="Search games"
-                      placeholder={window.innerWidth <= 800 ? "Search..." : "Search games (/) "}
-                      value={filters.search}
-                      onChange={(e) => onFilter("search", e.target.value)}
+                      aria-label={col.key === "name" ? "Search games" : `Filter ${col.label}`}
+                      placeholder={col.key === "name" ? (window.innerWidth <= 800 ? "Search..." : "Search games (/) ") : `Filter ${col.label.toLowerCase()}...`}
+                      value={filters[filterKey] ?? ""}
+                      onChange={(e) => onFilter(filterKey, e.target.value)}
                       onClick={(e) => e.stopPropagation()}
                     />
-                  ) : col.key === "tags" ? (
-                    <input
-                      className="th-filter-input"
-                      type="text"
-                      aria-label="Search tags"
-                      placeholder="Filter tags..."
-                      value={filters.tags}
-                      onChange={(e) => onFilter("tags", e.target.value)}
-                      onClick={(e) => e.stopPropagation()}
-                    />
-                  ) : filterOpts ? (
+                  ) : col.filters && col.filters.length > 0 ? (
                     <select
                       className="th-filter-select"
-                      value={filters[filterKey]}
+                      value={filters[filterKey] ?? ""}
                       onChange={(e) => onFilter(filterKey, e.target.value)}
                       onClick={(e) => e.stopPropagation()}
                     >
-                      {filterOpts.map((o) => {
+                      {col.filters.map((o) => {
                         const count = o.value ? filterCounts[col.key]?.[o.value] : undefined;
                         return <option key={o.value} value={o.value}>{o.label}{count !== undefined ? ` (${count})` : ""}</option>;
                       })}
@@ -237,7 +219,7 @@ const GameRow = memo(function GameRow({ game, steam, hltb, metacritic, upscaling
   metacritic?: MetacriticInfo;
   upscaling?: UpscalingInfo;
   image?: string;
-  cols: Column[];
+  cols: ColumnDef[];
   tagColWidth: number;
   hidden: boolean;
   onToggleHide: (name: string) => void;
@@ -265,20 +247,6 @@ const GameRow = memo(function GameRow({ game, steam, hltb, metacritic, upscaling
   return (
     <tr className={hidden ? "row-hidden" : ""}>
       {cols.map((col) => {
-        if (col.key === "owned") {
-          return (
-            <td key="owned">
-              <OwnedBadge owned={owned} />
-            </td>
-          );
-        }
-        if (col.key === "hide") {
-          return (
-            <td key="hide">
-              <HideBadge hidden={hidden} onToggle={() => onToggleHide(game.name)} />
-            </td>
-          );
-        }
         if (col.key === "name") {
           return (
             <td key="name" className="nc">
@@ -318,13 +286,9 @@ const GameRow = memo(function GameRow({ game, steam, hltb, metacritic, upscaling
               overflow.push(t);
             }
           }
-          if (overflow.length === 0) {
-            // all fit — no +N button needed
-          } else if (shown.length === 0) {
+          if (overflow.length > 0 && shown.length === 0) {
             shown.push(overflow.shift()!);
           }
-          const visible = shown;
-          const rest = overflow;
           const badge = (tag: string) => {
             const matched = tq && tag.toLowerCase().includes(tq);
             const dimmed = tq && !matched;
@@ -339,23 +303,21 @@ const GameRow = memo(function GameRow({ game, steam, hltb, metacritic, upscaling
           return (
             <td key="tags">
               <div className="tags-cell">
-                {visible.map(badge)}
-                {rest.length > 0 && (
+                {shown.map(badge)}
+                {overflow.length > 0 && (
                   <span className={`tag-more${tagOpen ? " tag-more-open" : ""}`} ref={tagMoreRef} onClick={() => { if (!tagOpen && tagMoreRef.current) setTagBelow(tagMoreRef.current.getBoundingClientRect().top < 200); setTagOpen(!tagOpen); }}>
-                    +{rest.length}
-                    {tagOpen && <span className={`tag-more-list${tagBelow ? " tag-more-below" : ""}`}>{rest.map(badge)}</span>}
+                    +{overflow.length}
+                    {tagOpen && <span className={`tag-more-list${tagBelow ? " tag-more-below" : ""}`}>{overflow.map(badge)}</span>}
                   </span>
                 )}
               </div>
             </td>
           );
         }
-        const renderer = CELL_RENDERERS[col.key];
-        return (
-          <td key={col.key}>
-            {renderer ? renderer(game, data) : <span className="empty">—</span>}
-          </td>
-        );
+        if (col.render) {
+          return <td key={col.key}>{col.render(game, { ...data, owned, hidden, onToggleHide: () => onToggleHide(game.name) })}</td>;
+        }
+        return <td key={col.key}><span className="empty">—</span></td>;
       })}
     </tr>
   );
