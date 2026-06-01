@@ -1,108 +1,348 @@
 import { memo, useMemo, useState, useEffect, useRef } from "react";
 import type { DlssGame, HltbInfo, SteamInfo, MetacriticInfo, UpscalingInfo, SortCol, SortDir, Filters } from "../types";
+import { getFrameGenLevel, getDlssVersionOrder } from "../types";
 import { FrameGenBadge, DlssVersionBadge, FeatureBadge, UpscalingBadge, ReleaseDateBadge } from "./Badge";
 import { useContainerWidth } from "@shared/hooks/useContainerWidth";
 import { useScrollHint } from "@shared/hooks/useScrollHint";
-import { computeColWidths, defineColumn, nameColumn, steamColumn, metacriticColumn, hltbColumn, ownedColumn, hideColumn } from "@shared/components/GameTableBase";
-import type { ColumnDef } from "@shared/components/GameTableBase";
-export type { ColumnDef as Column };
+import { computeColWidths, NameColumn, SteamColumn, MetacriticColumn, HltbColumn, OwnedColumn, HideColumn } from "@shared/components/GameTableBase";
+import { Column } from "@shared/components/Column";
+import type { FilterDeps, ColumnConfig } from "@shared/components/Column";
 export { PINNED_FIRST, PINNED_LAST } from "@shared/components/GameTableBase";
+export type { Column as ColumnDef };
 
 type RowData = { steam?: SteamInfo; hltb?: HltbInfo; metacritic?: MetacriticInfo; upscaling?: UpscalingInfo };
 
-export const COLUMNS: ColumnDef[] = [
-  nameColumn({ tooltip: "Click to view on Steam" }),
-  defineColumn({
-    key: "dlaa", label: "DLAA", minWidth: "90px", mobileWidth: "70px",
-    tooltip: "Deep Learning Anti-Aliasing\nAI anti-aliasing at native resolution",
-    render: (g: DlssGame) => <FeatureBadge value={g.dlaa || ""} />,
-    filters: [{ value: "", label: "All" }, { value: "any", label: "Any" }],
-  }),
-  defineColumn({
-    key: "dlssver", label: "DLSS", minWidth: "90px", mobileWidth: "70px",
-    tooltip: "DLSS Version\n4.5 = Multi Frame Gen 6X\n4 = Multi Frame Gen 4X\n3.5 = Ray Reconstruction\n3 = Frame Generation\n2 = Super Resolution",
-    render: (g: DlssGame) => <DlssVersionBadge game={g} />,
-    filters: [
-      { value: "", label: "All" },
-      { value: "4.5+", label: "4.5+" },
-      { value: "4+", label: "4+" },
-      { value: "3+", label: "3+" },
-    ],
-  }),
-  defineColumn({
-    key: "framegen", label: "FG", fullLabel: "Frame Gen", minWidth: "90px", mobileWidth: "70px",
-    tooltip: "DLSS Frame Generation\n6X = DLSS 4.5 (RTX 50)\n4X = DLSS 4 (RTX 40/50)\n2X = DLSS 3 (RTX 40/50)",
-    render: (g: DlssGame) => <FrameGenBadge game={g} />,
-    filters: [
-      { value: "", label: "All" },
-      { value: "6x", label: "6X" },
-      { value: "4x", label: "4X" },
-      { value: "2x", label: "2X" },
-      { value: "any", label: "Any" },
-    ],
-  }),
-  defineColumn({
-    key: "upscaling", label: "FSR/XeSS", minWidth: "120px", mobileWidth: "90px",
-    tooltip: "Non-DLSS upscaling support\nFSR = AMD FidelityFX\nXeSS = Intel",
-    render: (_: DlssGame, d: RowData) => <UpscalingBadge info={d.upscaling} />,
-    filters: [
-      { value: "", label: "All" },
-      { value: "fsr", label: "FSR" },
-      { value: "xess", label: "XeSS" },
-      { value: "both", label: "Both" },
-      { value: "any", label: "Any" },
-    ],
-  }),
-  metacriticColumn(),
-  hltbColumn(),
-  defineColumn({
-    key: "release_date", label: "Release Day", minWidth: "150px", mobileWidth: "100px",
-    tooltip: "Steam release date",
-    render: (_: DlssGame, d: RowData) => <ReleaseDateBadge date={d.steam?.release_date} />,
-    filters: [
-      { value: "", label: "All" },
-      { value: "month", label: "Last Month" },
-      { value: "quarter", label: "Last 3 Months" },
-      { value: "year", label: "Last Year" },
-      { value: "old", label: "Older" },
-      { value: "upcoming", label: "Upcoming" },
-    ],
-  }),
-  defineColumn({
-    key: "rr", label: "RR", fullLabel: "Ray Recon", minWidth: "90px", mobileWidth: "70px",
-    tooltip: "DLSS Ray Reconstruction\nAI-enhanced ray tracing denoiser\nfor cleaner reflections and lighting",
-    render: (g: DlssGame) => <FeatureBadge value={g["dlss ray reconstruction"] || ""} />,
-    filters: [{ value: "", label: "All" }, { value: "any", label: "Any" }],
-  }),
-  defineColumn({
-    key: "rt", label: "RT", fullLabel: "Ray Tracing", minWidth: "125px", mobileWidth: "80px",
-    tooltip: "Ray Tracing support\nPath Tracing = full path tracing\nYes = partial (reflections, shadows, GI)",
-    render: (g: DlssGame) => <FeatureBadge value={g["ray tracing"] || ""} />,
-    filters: [
-      { value: "", label: "All" },
-      { value: "Path Tracing", label: "Path Tracing" },
-      { value: "Yes", label: "Yes" },
-      { value: "any", label: "Any RT" },
-    ],
-  }),
-  defineColumn({
-    key: "sr", label: "SR", fullLabel: "Super Res", minWidth: "90px", mobileWidth: "70px",
-    tooltip: "DLSS Super Resolution\nAI upscaling from lower resolution\nNV-T = Transformer model (best)",
-    render: (g: DlssGame) => <FeatureBadge value={g["dlss super resolution"] || ""} />,
-    filters: [
-      { value: "", label: "All" },
-      { value: "NV, T", label: "Transformer" },
-      { value: "Yes", label: "Yes" },
-    ],
-  }),
-  steamColumn(),
-  defineColumn({
-    key: "tags", label: "Tags", minWidth: "180px", mobileWidth: "120px",
-    tooltip: "Steam community tags\nSearch to filter by tag",
-    filterType: "input",
-  }),
-  ownedColumn(),
-  hideColumn(),
+// ──────────────────────── DLSSdb-specific helpers ────────────────────────
+
+const FEATURE_ORDER: Record<string, number> = { "NV, T": 3, "NV, U": 2, "✓ (NV)": 2, Yes: 1, "": 0 };
+const RT_ORDER: Record<string, number> = { "Path Tracing": 3, "NV, T": 2, "NV, U": 2, "✓ (NV)": 2, Yes: 1, "": 0 };
+const NON_DATE_RE = /^(to be announced|tba|coming soon|q[1-4]\s*\d{4})$/i;
+const ONE_MONTH = 30 * 86400000;
+const THREE_MONTHS = 90 * 86400000;
+const ONE_YEAR = 365 * 86400000;
+
+function fmatch(val: string, filt: string): boolean {
+  if (!filt) return true;
+  if (filt === "any") return !!val;
+  if (filt === "none") return !val;
+  return val === filt;
+}
+
+// ──────────────────────── DLSSdb column classes ────────────────────────
+
+class FrameGenColumn extends Column {
+  constructor() {
+    super({
+      key: "framegen", label: "FG", fullLabel: "Frame Gen", minWidth: "90px", mobileWidth: "70px",
+      tooltip: "DLSS Frame Generation\n6X = DLSS 4.5 (RTX 50)\n4X = DLSS 4 (RTX 40/50)\n2X = DLSS 3 (RTX 40/50)",
+      filters: [
+        { value: "", label: "All" },
+        { value: "6x", label: "6X" },
+        { value: "4x", label: "4X" },
+        { value: "2x", label: "2X" },
+        { value: "any", label: "Any" },
+      ],
+    });
+  }
+  render(g: DlssGame) { return <FrameGenBadge game={g} />; }
+  filter(g: DlssGame, value: string): boolean {
+    if (!value) return true;
+    const level = getFrameGenLevel(g);
+    if (value === "6x" && level !== 3) return false;
+    if (value === "4x" && level !== 2) return false;
+    if (value === "2x" && level !== 1) return false;
+    if (value === "any" && level === 0) return false;
+    if (value === "none" && level !== 0) return false;
+    return true;
+  }
+  sortValue(g: DlssGame): number | null {
+    const level = getFrameGenLevel(g);
+    return level > 0 ? level : null;
+  }
+  count(games: DlssGame[]): Record<string, number> {
+    const c: Record<string, number> = { "6x": 0, "4x": 0, "2x": 0, any: 0, none: 0 };
+    for (const g of games) {
+      const level = getFrameGenLevel(g);
+      if (level === 3) c["6x"]++;
+      if (level === 2) c["4x"]++;
+      if (level === 1) c["2x"]++;
+      if (level > 0) c.any++;
+      if (level === 0) c.none++;
+    }
+    return c;
+  }
+}
+
+class DlssVersionColumn extends Column {
+  constructor() {
+    super({
+      key: "dlssver", label: "DLSS", minWidth: "90px", mobileWidth: "70px",
+      tooltip: "DLSS Version\n4.5 = Multi Frame Gen 6X\n4 = Multi Frame Gen 4X\n3.5 = Ray Reconstruction\n3 = Frame Generation\n2 = Super Resolution",
+      filters: [
+        { value: "", label: "All" },
+        { value: "4.5+", label: "4.5+" },
+        { value: "4+", label: "4+" },
+        { value: "3+", label: "3+" },
+      ],
+    });
+  }
+  render(g: DlssGame) { return <DlssVersionBadge game={g} />; }
+  filter(g: DlssGame, value: string): boolean {
+    if (!value) return true;
+    const ver = getDlssVersionOrder(g);
+    if (value === "4.5+" && ver < 5) return false;
+    if (value === "4+" && ver < 4) return false;
+    if (value === "3+" && ver < 2) return false;
+    return true;
+  }
+  sortValue(g: DlssGame): number { return getDlssVersionOrder(g); }
+  count(games: DlssGame[]): Record<string, number> {
+    const c: Record<string, number> = { "4.5+": 0, "4+": 0, "3+": 0 };
+    for (const g of games) {
+      const ver = getDlssVersionOrder(g);
+      if (ver >= 5) c["4.5+"]++;
+      if (ver >= 4) c["4+"]++;
+      if (ver >= 2) c["3+"]++;
+    }
+    return c;
+  }
+}
+
+class UpscalingColumn extends Column {
+  constructor() {
+    super({
+      key: "upscaling", label: "FSR/XeSS", minWidth: "120px", mobileWidth: "90px",
+      tooltip: "Non-DLSS upscaling support\nFSR = AMD FidelityFX\nXeSS = Intel",
+      filters: [
+        { value: "", label: "All" },
+        { value: "fsr", label: "FSR" },
+        { value: "xess", label: "XeSS" },
+        { value: "both", label: "Both" },
+        { value: "any", label: "Any" },
+      ],
+    });
+  }
+  render(_: DlssGame, d: RowData) { return <UpscalingBadge info={d.upscaling} />; }
+  filter(g: DlssGame, value: string, { upscaling }: FilterDeps): boolean {
+    if (!value) return true;
+    const u = (upscaling as Record<string, UpscalingInfo> | undefined)?.[g.name];
+    if (value === "fsr" && !u?.fsr_version) return false;
+    if (value === "xess" && !u?.xess_version) return false;
+    if (value === "both" && (!u?.fsr_version || !u?.xess_version)) return false;
+    if (value === "any" && (!u?.fsr_version && !u?.xess_version)) return false;
+    if (value === "none" && (u?.fsr_version || u?.xess_version)) return false;
+    return true;
+  }
+  sortValue(g: DlssGame, { upscaling }: FilterDeps): number | null {
+    const u = (upscaling as Record<string, UpscalingInfo> | undefined)?.[g.name];
+    if (!u) return null;
+    const v = (u.fsr_version ? 1 : 0) + (u.xess_version ? 1 : 0);
+    return v || null;
+  }
+  count(games: DlssGame[], { upscaling }: FilterDeps): Record<string, number> {
+    const c: Record<string, number> = { fsr: 0, xess: 0, both: 0, any: 0, none: 0 };
+    const up = (upscaling as Record<string, UpscalingInfo> | undefined) ?? {};
+    for (const g of games) {
+      const u = up[g.name];
+      const hasFsr = !!u?.fsr_version, hasXess = !!u?.xess_version;
+      if (hasFsr) c.fsr++;
+      if (hasXess) c.xess++;
+      if (hasFsr && hasXess) c.both++;
+      if (hasFsr || hasXess) c.any++;
+      if (!hasFsr && !hasXess) c.none++;
+    }
+    return c;
+  }
+}
+
+class ReleaseDateColumn extends Column {
+  constructor() {
+    super({
+      key: "release_date", label: "Release Day", minWidth: "150px", mobileWidth: "100px",
+      tooltip: "Steam release date",
+      filters: [
+        { value: "", label: "All" },
+        { value: "month", label: "Last Month" },
+        { value: "quarter", label: "Last 3 Months" },
+        { value: "year", label: "Last Year" },
+        { value: "old", label: "Older" },
+        { value: "upcoming", label: "Upcoming" },
+      ],
+    });
+  }
+  render(_: DlssGame, d: RowData) { return <ReleaseDateBadge date={d.steam?.release_date} />; }
+  filter(g: DlssGame, value: string, { steam }: FilterDeps): boolean {
+    if (!value) return true;
+    const rd = (steam as Record<string, SteamInfo> | undefined)?.[g.name]?.release_date;
+    if (value === "upcoming") {
+      if (!rd) return false;
+      if (NON_DATE_RE.test(rd.trim())) return true;
+      const d = new Date(rd);
+      return !isNaN(d.getTime()) && d.getTime() > Date.now();
+    }
+    if (!rd) return false;
+    const d = new Date(rd);
+    if (isNaN(d.getTime())) return false;
+    const age = Date.now() - d.getTime();
+    if (value === "month" && age > ONE_MONTH) return false;
+    if (value === "quarter" && age > THREE_MONTHS) return false;
+    if (value === "year" && (age > ONE_YEAR || age <= 0)) return false;
+    if (value === "old" && age <= ONE_YEAR) return false;
+    return true;
+  }
+  sortValue(g: DlssGame, { steam }: FilterDeps): number | null {
+    const rd = (steam as Record<string, SteamInfo> | undefined)?.[g.name]?.release_date;
+    if (!rd) return null;
+    const d = new Date(rd);
+    return isNaN(d.getTime()) ? null : d.getTime();
+  }
+  count(games: DlssGame[], { steam }: FilterDeps): Record<string, number> {
+    const c: Record<string, number> = { month: 0, quarter: 0, year: 0, old: 0, upcoming: 0 };
+    const st = (steam as Record<string, SteamInfo> | undefined) ?? {};
+    const NOW = Date.now();
+    for (const g of games) {
+      const rd = st[g.name]?.release_date;
+      if (!rd) continue;
+      if (NON_DATE_RE.test(rd.trim())) { c.upcoming++; continue; }
+      const d = new Date(rd);
+      if (isNaN(d.getTime())) continue;
+      const age = NOW - d.getTime();
+      if (age < 0) { c.upcoming++; continue; }
+      if (age <= ONE_MONTH) c.month++;
+      if (age <= THREE_MONTHS) c.quarter++;
+      if (age > 0 && age <= ONE_YEAR) c.year++;
+      if (age > ONE_YEAR) c.old++;
+    }
+    return c;
+  }
+}
+
+class RrColumn extends Column {
+  constructor() {
+    super({
+      key: "rr", label: "RR", fullLabel: "Ray Recon", minWidth: "90px", mobileWidth: "70px",
+      tooltip: "DLSS Ray Reconstruction\nAI-enhanced ray tracing denoiser\nfor cleaner reflections and lighting",
+      filters: [{ value: "", label: "All" }, { value: "any", label: "Any" }],
+    });
+  }
+  render(g: DlssGame) { return <FeatureBadge value={g["dlss ray reconstruction"] || ""} />; }
+  filter(g: DlssGame, value: string): boolean { return fmatch(g["dlss ray reconstruction"] || "", value); }
+  sortValue(g: DlssGame): number | null { return FEATURE_ORDER[g["dlss ray reconstruction"] || ""] || null; }
+  count(games: DlssGame[]): Record<string, number> {
+    const c: Record<string, number> = { any: 0, none: 0 };
+    for (const g of games) { if (g["dlss ray reconstruction"]) c.any++; else c.none++; }
+    return c;
+  }
+}
+
+class RtColumn extends Column {
+  constructor() {
+    super({
+      key: "rt", label: "RT", fullLabel: "Ray Tracing", minWidth: "125px", mobileWidth: "80px",
+      tooltip: "Ray Tracing support\nPath Tracing = full path tracing\nYes = partial (reflections, shadows, GI)",
+      filters: [
+        { value: "", label: "All" },
+        { value: "Path Tracing", label: "Path Tracing" },
+        { value: "Yes", label: "Yes" },
+        { value: "any", label: "Any RT" },
+      ],
+    });
+  }
+  render(g: DlssGame) { return <FeatureBadge value={g["ray tracing"] || ""} />; }
+  filter(g: DlssGame, value: string): boolean { return fmatch(g["ray tracing"] || "", value); }
+  sortValue(g: DlssGame): number | null { return RT_ORDER[g["ray tracing"] || ""] || null; }
+  count(games: DlssGame[]): Record<string, number> {
+    const c: Record<string, number> = { "Path Tracing": 0, Yes: 0, any: 0 };
+    for (const g of games) {
+      const v = g["ray tracing"] || "";
+      if (v === "Path Tracing") c["Path Tracing"]++;
+      if (v === "Yes") c.Yes++;
+      if (v) c.any++;
+    }
+    return c;
+  }
+}
+
+class SrColumn extends Column {
+  constructor() {
+    super({
+      key: "sr", label: "SR", fullLabel: "Super Res", minWidth: "90px", mobileWidth: "70px",
+      tooltip: "DLSS Super Resolution\nAI upscaling from lower resolution\nNV-T = Transformer model (best)",
+      filters: [
+        { value: "", label: "All" },
+        { value: "NV, T", label: "Transformer" },
+        { value: "Yes", label: "Yes" },
+      ],
+    });
+  }
+  render(g: DlssGame) { return <FeatureBadge value={g["dlss super resolution"] || ""} />; }
+  filter(g: DlssGame, value: string): boolean { return fmatch(g["dlss super resolution"] || "", value); }
+  sortValue(g: DlssGame): number | null { return FEATURE_ORDER[g["dlss super resolution"] || ""] || null; }
+  count(games: DlssGame[]): Record<string, number> {
+    const c: Record<string, number> = { "NV, T": 0, Yes: 0, any: 0, none: 0 };
+    for (const g of games) {
+      const v = g["dlss super resolution"] || "";
+      if (v === "NV, T") c["NV, T"]++;
+      if (v === "Yes") c.Yes++;
+      if (v) c.any++; else c.none++;
+    }
+    return c;
+  }
+}
+
+class DlaaColumn extends Column {
+  constructor() {
+    super({
+      key: "dlaa", label: "DLAA", minWidth: "90px", mobileWidth: "70px",
+      tooltip: "Deep Learning Anti-Aliasing\nAI anti-aliasing at native resolution",
+      filters: [{ value: "", label: "All" }, { value: "any", label: "Any" }],
+    });
+  }
+  render(g: DlssGame) { return <FeatureBadge value={g.dlaa || ""} />; }
+  filter(g: DlssGame, value: string): boolean { return fmatch(g.dlaa || "", value); }
+  sortValue(g: DlssGame): number | null { return FEATURE_ORDER[g.dlaa || ""] || null; }
+  count(games: DlssGame[]): Record<string, number> {
+    const c: Record<string, number> = { any: 0, none: 0 };
+    for (const g of games) { if (g.dlaa) c.any++; else c.none++; }
+    return c;
+  }
+}
+
+class TagsColumn extends Column {
+  constructor() {
+    super({
+      key: "tags", label: "Tags", minWidth: "180px", mobileWidth: "120px",
+      tooltip: "Steam community tags\nSearch to filter by tag",
+      filterType: "input",
+    });
+  }
+  filter(g: DlssGame, value: string, { steam }: FilterDeps): boolean {
+    if (!value) return true;
+    const tq = value.toLowerCase();
+    const tags = (steam as Record<string, SteamInfo> | undefined)?.[g.name]?.tags;
+    return !!tags?.some((t) => t.toLowerCase().includes(tq));
+  }
+  sortValue(g: DlssGame, { steam }: FilterDeps): string | null {
+    return (steam as Record<string, SteamInfo> | undefined)?.[g.name]?.tags?.[0] ?? null;
+  }
+}
+
+export const COLUMNS: Column[] = [
+  new NameColumn({ tooltip: "Click to view on Steam" }),
+  new DlaaColumn(),
+  new DlssVersionColumn(),
+  new FrameGenColumn(),
+  new UpscalingColumn(),
+  new MetacriticColumn(),
+  new HltbColumn(),
+  new ReleaseDateColumn(),
+  new RrColumn(),
+  new RtColumn(),
+  new SrColumn(),
+  new SteamColumn(),
+  new TagsColumn(),
+  new OwnedColumn(),
+  new HideColumn(),
 ];
 
 interface Props {
@@ -144,6 +384,8 @@ export function GameTable({ games, hltb, steam, metacritic, upscaling, images, s
           <tr>
             {cols.map((col, colIdx) => {
               const filterKey = (col.filterKey || col.key) as keyof Filters;
+              const countKey = col.filterKey ?? col.key;
+              const filterOpts = col.resolveFilters(filterCounts[countKey] ?? {});
               return (
                 <th
                   key={col.key}
@@ -155,7 +397,7 @@ export function GameTable({ games, hltb, steam, metacritic, upscaling, images, s
                       <span className={`si-up ${sortCol === col.key && sortDir === 1 ? "si-on" : "si-off"}`} />
                       <span className={`si-down ${sortCol === col.key && sortDir === -1 ? "si-on" : "si-off"}`} />
                     </span>
-                    {col.icon || (col.fullLabel && colWidths[colIdx] >= col.fullLabel.length * 11 + 60 ? col.fullLabel : col.label)}
+                    {col.fullLabel && colWidths[colIdx] >= col.fullLabel.length * 11 + 60 ? col.fullLabel : col.label}
                     <span className="th-info" data-tip={col.tooltip} tabIndex={0} onClick={(e) => e.stopPropagation()}>ⓘ</span>
                   </div>
                   {col.filterType === "input" ? (
@@ -168,15 +410,15 @@ export function GameTable({ games, hltb, steam, metacritic, upscaling, images, s
                       onChange={(e) => onFilter(filterKey, e.target.value)}
                       onClick={(e) => e.stopPropagation()}
                     />
-                  ) : col.filters && col.filters.length > 0 ? (
+                  ) : filterOpts.length > 0 ? (
                     <select
                       className="th-filter-select"
                       value={filters[filterKey] ?? ""}
                       onChange={(e) => onFilter(filterKey, e.target.value)}
                       onClick={(e) => e.stopPropagation()}
                     >
-                      {col.filters.map((o) => {
-                        const count = o.value ? filterCounts[col.key]?.[o.value] : undefined;
+                      {filterOpts.map((o) => {
+                        const count = o.value ? filterCounts[countKey]?.[o.value] : undefined;
                         return <option key={o.value} value={o.value}>{o.label}{count !== undefined ? ` (${count})` : ""}</option>;
                       })}
                     </select>
@@ -197,7 +439,7 @@ export function GameTable({ games, hltb, steam, metacritic, upscaling, images, s
               upscaling={upscaling[g.name]}
               image={images[g.name]}
               cols={cols}
-              tagColWidth={colWidths[cols.findIndex((c) => c.key === "tags")] ?? 180}
+              colWidths={colWidths}
               hidden={hiddenGames.has(g.name)}
               onToggleHide={onToggleHide}
               owned={ownedGames.has(g.name)}
@@ -212,15 +454,15 @@ export function GameTable({ games, hltb, steam, metacritic, upscaling, images, s
   );
 }
 
-const GameRow = memo(function GameRow({ game, steam, hltb, metacritic, upscaling, image, cols, tagColWidth, hidden, onToggleHide, owned, tagFilter, onTagClick }: {
+const GameRow = memo(function GameRow({ game, steam, hltb, metacritic, upscaling, image, cols, colWidths, hidden, onToggleHide, owned, tagFilter, onTagClick }: {
   game: DlssGame;
   steam?: SteamInfo;
   hltb?: HltbInfo;
   metacritic?: MetacriticInfo;
   upscaling?: UpscalingInfo;
   image?: string;
-  cols: ColumnDef[];
-  tagColWidth: number;
+  cols: Column[];
+  colWidths: number[];
   hidden: boolean;
   onToggleHide: (name: string) => void;
   owned: boolean;
@@ -246,7 +488,7 @@ const GameRow = memo(function GameRow({ game, steam, hltb, metacritic, upscaling
     : `https://store.steampowered.com/search/?term=${encodeURIComponent(game.name)}`;
   return (
     <tr className={hidden ? "row-hidden" : ""}>
-      {cols.map((col) => {
+      {cols.map((col, colIdx) => {
         if (col.key === "name") {
           return (
             <td key="name" className="nc">
@@ -270,6 +512,7 @@ const GameRow = memo(function GameRow({ game, steam, hltb, metacritic, upscaling
                 return am - bm;
               })
             : tags;
+          const tagColWidth = colWidths[colIdx] ?? 180;
           const available = tagColWidth - 28;
           const estW = (t: string) => t.length * 5.2 + 11;
           const btnW = 26;
@@ -279,16 +522,9 @@ const GameRow = memo(function GameRow({ game, steam, hltb, metacritic, upscaling
           let used = 0;
           for (const t of ordered) {
             const w = estW(t) + 2;
-            if (used + w <= limit) {
-              shown.push(t);
-              used += w;
-            } else {
-              overflow.push(t);
-            }
+            if (used + w <= limit) { shown.push(t); used += w; } else { overflow.push(t); }
           }
-          if (overflow.length > 0 && shown.length === 0) {
-            shown.push(overflow.shift()!);
-          }
+          if (overflow.length > 0 && shown.length === 0) shown.push(overflow.shift()!);
           const badge = (tag: string) => {
             const matched = tq && tag.toLowerCase().includes(tq);
             const dimmed = tq && !matched;
@@ -314,10 +550,11 @@ const GameRow = memo(function GameRow({ game, steam, hltb, metacritic, upscaling
             </td>
           );
         }
-        if (col.render) {
-          return <td key={col.key}>{col.render(game, { ...data, owned, hidden, onToggleHide: () => onToggleHide(game.name) })}</td>;
-        }
-        return <td key={col.key}><span className="empty">—</span></td>;
+        return (
+          <td key={col.key}>
+            {col.render(game, { ...data, owned, hidden, onToggleHide: () => onToggleHide(game.name) })}
+          </td>
+        );
       })}
     </tr>
   );

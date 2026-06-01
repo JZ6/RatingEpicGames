@@ -4,4 +4,5 @@ export { Header } from "./components/Header";
 export { StatsBar } from "./components/StatsBar";
 export { ColumnToggle } from "./components/ColumnToggle";
 export { ImportModal } from "./components/ImportModal";
-export { defineColumn, nameColumn, steamColumn, metacriticColumn, hltbColumn, ownedColumn, hideColumn } from "./components/GameTableBase";
+export { Column, NameColumn, SteamColumn, MetacriticColumn, HltbColumn, OwnedColumn, HideColumn, buildEmptyFilters, computeColWidths, STEAM_FILTERS, HLTB_FILTERS, PINNED_FIRST, PINNED_LAST } from "./components/GameTableBase";
+export type { FilterOption, FilterDeps, ColumnConfig, ColumnDef } from "./components/GameTableBase";

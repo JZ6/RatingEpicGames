@@ -1,9 +1,9 @@
 import { describe, it, expect, vi } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { AppShell } from "../AppShell";
-import { defineColumn, nameColumn, steamColumn, hideColumn } from "../GameTableBase";
+import { NameColumn, SteamColumn, HideColumn } from "../GameTableBase";
 
-const COLUMNS = [nameColumn(), steamColumn(), hideColumn()];
+const COLUMNS = [new NameColumn(), new SteamColumn(), new HideColumn()];
 
 function renderShell(overrides: Record<string, any> = {}) {
   const defaults = {

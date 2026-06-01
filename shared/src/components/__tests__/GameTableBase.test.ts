@@ -1,32 +1,57 @@
 import { describe, it, expect } from "vitest";
-import { defineColumn, computeColWidths, nameColumn, steamColumn, metacriticColumn, hltbColumn, ownedColumn, hideColumn } from "../GameTableBase";
-import type { ColumnDef } from "../GameTableBase";
+import { Column, NameColumn, SteamColumn, MetacriticColumn, HltbColumn, OwnedColumn, HideColumn, buildEmptyFilters, computeColWidths } from "../GameTableBase";
 
-describe("defineColumn", () => {
+describe("Column constructor", () => {
   it("defaults filterType to 'select'", () => {
-    const col = defineColumn({ key: "test", label: "Test", minWidth: "90px", tooltip: "tip" });
+    const col = new Column({ key: "test", label: "Test", minWidth: "90px", tooltip: "tip" });
     expect(col.filterType).toBe("select");
   });
 
   it("defaults mobileWidth to minWidth", () => {
-    const col = defineColumn({ key: "test", label: "Test", minWidth: "120px", tooltip: "tip" });
+    const col = new Column({ key: "test", label: "Test", minWidth: "120px", tooltip: "tip" });
     expect(col.mobileWidth).toBe("120px");
   });
 
   it("allows overriding filterType", () => {
-    const col = defineColumn({ key: "test", label: "Test", minWidth: "90px", tooltip: "tip", filterType: "input" });
+    const col = new Column({ key: "test", label: "Test", minWidth: "90px", tooltip: "tip", filterType: "input" });
     expect(col.filterType).toBe("input");
   });
 
   it("allows overriding mobileWidth", () => {
-    const col = defineColumn({ key: "test", label: "Test", minWidth: "200px", mobileWidth: "100px", tooltip: "tip" });
+    const col = new Column({ key: "test", label: "Test", minWidth: "200px", mobileWidth: "100px", tooltip: "tip" });
     expect(col.mobileWidth).toBe("100px");
+  });
+
+  it("defaults defaultFilter to empty string", () => {
+    const col = new Column({ key: "test", label: "Test", minWidth: "90px", tooltip: "tip" });
+    expect(col.defaultFilter).toBe("");
+  });
+
+  it("base filter() returns true", () => {
+    const col = new Column({ key: "test", label: "Test", minWidth: "90px", tooltip: "tip" });
+    expect(col.filter({}, "any", {})).toBe(true);
+  });
+
+  it("base sortValue() returns null", () => {
+    const col = new Column({ key: "test", label: "Test", minWidth: "90px", tooltip: "tip" });
+    expect(col.sortValue({}, {})).toBeNull();
+  });
+
+  it("base count() returns empty object", () => {
+    const col = new Column({ key: "test", label: "Test", minWidth: "90px", tooltip: "tip" });
+    expect(col.count([], {})).toEqual({});
+  });
+
+  it("resolveFilters returns filters by default", () => {
+    const filters = [{ value: "", label: "All" }];
+    const col = new Column({ key: "test", label: "Test", minWidth: "90px", tooltip: "tip", filters });
+    expect(col.resolveFilters({})).toBe(filters);
   });
 });
 
 describe("computeColWidths", () => {
-  const makeCols = (...specs: [string, string][]): ColumnDef[] =>
-    specs.map(([minWidth, mobileWidth], i) => defineColumn({
+  const makeCols = (...specs: [string, string][]) =>
+    specs.map(([minWidth, mobileWidth], i) => new Column({
       key: `col${i}`, label: `Col ${i}`, minWidth, mobileWidth, tooltip: "",
     }));
 
@@ -59,7 +84,6 @@ describe("computeColWidths", () => {
   });
 
   it("does not add negative space when mobile widths overflow container", () => {
-    // col0: min=300, mobile=200; col1: min=300, mobile=150 → total mobile=350 > 100
     const cols = makeCols(["300px", "200px"], ["300px", "150px"]);
     const widths = computeColWidths(cols, 100);
     expect(widths[0]).toBe(200);
@@ -67,53 +91,83 @@ describe("computeColWidths", () => {
   });
 });
 
-describe("column factories", () => {
-  it("nameColumn has filterKey 'search' and filterType 'input'", () => {
-    const col = nameColumn();
+describe("column subclasses", () => {
+  it("NameColumn has filterKey 'search' and filterType 'input'", () => {
+    const col = new NameColumn();
     expect(col.filterKey).toBe("search");
     expect(col.filterType).toBe("input");
   });
 
-  it("nameColumn has mobileWidth smaller than minWidth", () => {
-    const col = nameColumn();
-    expect(parseInt(col.mobileWidth!)).toBeLessThan(parseInt(col.minWidth));
+  it("NameColumn has mobileWidth smaller than minWidth", () => {
+    const col = new NameColumn();
+    expect(parseInt(col.mobileWidth)).toBeLessThan(parseInt(col.minWidth));
   });
 
-  it("steamColumn has render and filters", () => {
-    const col = steamColumn();
+  it("NameColumn filter matches by name substring", () => {
+    const col = new NameColumn();
+    expect(col.filter({ name: "Cyberpunk 2077" }, "cyber", {})).toBe(true);
+    expect(col.filter({ name: "Cyberpunk 2077" }, "halo", {})).toBe(false);
+    expect(col.filter({ name: "Cyberpunk 2077" }, "", {})).toBe(true);
+  });
+
+  it("NameColumn sortValue returns lowercase name", () => {
+    const col = new NameColumn();
+    expect(col.sortValue({ name: "Cyberpunk 2077" }, {})).toBe("cyberpunk 2077");
+  });
+
+  it("SteamColumn has render and filters", () => {
+    const col = new SteamColumn();
     expect(col.render).toBeDefined();
     expect(col.filters).toBeDefined();
-    expect(col.filters!.length).toBeGreaterThan(0);
+    expect(col.filters.length).toBeGreaterThan(0);
   });
 
-  it("metacriticColumn has render and filters", () => {
-    const col = metacriticColumn();
-    expect(col.render).toBeDefined();
-    expect(col.filters).toBeDefined();
-  });
-
-  it("hltbColumn has render and filters", () => {
-    const col = hltbColumn();
-    expect(col.render).toBeDefined();
-    expect(col.filters).toBeDefined();
-  });
-
-  it("ownedColumn has render and filters", () => {
-    const col = ownedColumn();
-    expect(col.render).toBeDefined();
-    expect(col.filters).toBeDefined();
-  });
-
-  it("hideColumn has render and filters", () => {
-    const col = hideColumn();
+  it("MetacriticColumn has render and filters", () => {
+    const col = new MetacriticColumn();
     expect(col.render).toBeDefined();
     expect(col.filters).toBeDefined();
   });
 
-  it("factory overrides take precedence", () => {
-    const col = steamColumn({ minWidth: "300px", tooltip: "custom" });
+  it("HltbColumn has render and filters", () => {
+    const col = new HltbColumn();
+    expect(col.render).toBeDefined();
+    expect(col.filters).toBeDefined();
+  });
+
+  it("OwnedColumn has render and filters", () => {
+    const col = new OwnedColumn();
+    expect(col.render).toBeDefined();
+    expect(col.filters).toBeDefined();
+  });
+
+  it("HideColumn has render and filters", () => {
+    const col = new HideColumn();
+    expect(col.render).toBeDefined();
+    expect(col.filters).toBeDefined();
+  });
+
+  it("HideColumn defaults to 'visible' filter", () => {
+    const col = new HideColumn();
+    expect(col.defaultFilter).toBe("visible");
+  });
+
+  it("constructor overrides take precedence", () => {
+    const col = new SteamColumn({ minWidth: "300px", tooltip: "custom" });
     expect(col.minWidth).toBe("300px");
     expect(col.tooltip).toBe("custom");
     expect(col.render).toBeDefined();
+  });
+});
+
+describe("buildEmptyFilters", () => {
+  it("builds filters from column defaults", () => {
+    const cols = [new NameColumn(), new SteamColumn(), new HideColumn()];
+    const filters = buildEmptyFilters(cols);
+    expect(filters).toEqual({ search: "", steam: "", hide: "visible" });
+  });
+
+  it("uses filterKey when present", () => {
+    const col = new Column({ key: "epicdate", label: "Date", minWidth: "100px", tooltip: "", filterKey: "year" });
+    expect(buildEmptyFilters([col])).toEqual({ year: "" });
   });
 });
