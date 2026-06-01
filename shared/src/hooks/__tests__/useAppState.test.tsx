@@ -13,6 +13,7 @@ const CONFIG = {
   lsPrefix: "test",
   defaultCols: { 800: ["name", "steam"] as const, 1200: ["name", "steam", "hltb"] as const },
   defaultFallback: ["name", "steam", "hltb", "hide"] as const,
+  requiredKeys: new Set(["name"] as const),
 };
 
 describe("useAppState", () => {

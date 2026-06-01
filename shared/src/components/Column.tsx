@@ -32,6 +32,11 @@ export type ColumnConfig = {
   filterKey?: string;
   filters?: FilterOption[];
   defaultFilter?: string;
+  pinned?: "first" | "last";
+  required?: boolean;
+  placeholder?: string;
+  mobilePlaceholder?: string;
+  ariaLabel?: string;
 };
 
 export class Column {
@@ -45,6 +50,11 @@ export class Column {
   filterKey?: string;
   filters: FilterOption[];
   defaultFilter: string;
+  pinned?: "first" | "last";
+  required: boolean;
+  placeholder?: string;
+  mobilePlaceholder?: string;
+  ariaLabel?: string;
 
   constructor(config: ColumnConfig) {
     this.key = config.key;
@@ -57,6 +67,11 @@ export class Column {
     this.filterKey = config.filterKey;
     this.filters = config.filters ?? [];
     this.defaultFilter = config.defaultFilter ?? "";
+    this.pinned = config.pinned;
+    this.required = config.required ?? false;
+    this.placeholder = config.placeholder;
+    this.mobilePlaceholder = config.mobilePlaceholder;
+    this.ariaLabel = config.ariaLabel;
   }
 
   render(_game: any, _data: any): React.JSX.Element {
@@ -135,6 +150,11 @@ export class NameColumn extends Column {
       tooltip: "Click to view on store",
       filterType: "input",
       filterKey: "search",
+      pinned: "first",
+      required: true,
+      placeholder: "Search games (/) ",
+      mobilePlaceholder: "Search...",
+      ariaLabel: "Search games",
       ...overrides,
     });
   }
@@ -249,6 +269,7 @@ export class OwnedColumn extends Column {
       mobileWidth: "60px",
       tooltip: "Games you own\nImport your library via the header button",
       filters: OWNED_FILTERS,
+      pinned: "last",
       ...overrides,
     });
   }
@@ -280,6 +301,7 @@ export class HideColumn extends Column {
       tooltip: "Toggle game visibility\nHidden games are saved in your browser",
       filters: HIDE_FILTERS,
       defaultFilter: "visible",
+      pinned: "last",
       ...overrides,
     });
   }

@@ -6,8 +6,12 @@ import type { Column } from "./Column";
 /** @deprecated Use Column instead */
 export type ColumnDef = Column;
 
-export const PINNED_FIRST = new Set(["name"]);
-export const PINNED_LAST = new Set(["owned", "hide"]);
+export function computePinnedSets(columns: Column[]): { pinnedFirst: Set<string>; pinnedLast: Set<string> } {
+  return {
+    pinnedFirst: new Set(columns.filter((c) => c.pinned === "first").map((c) => c.key)),
+    pinnedLast: new Set(columns.filter((c) => c.pinned === "last").map((c) => c.key)),
+  };
+}
 
 export function computeColWidths(cols: Column[], containerWidth: number): number[] {
   const isMobile = containerWidth > 0 && containerWidth <= 800;

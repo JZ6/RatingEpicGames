@@ -6,6 +6,7 @@ interface AppStateConfig<S extends string> {
   lsPrefix: string;
   defaultCols: Record<number, S[]>;
   defaultFallback: S[];
+  requiredKeys?: Set<S>;
 }
 
 function getDefaultCols<S extends string>(lsKey: string, breakpoints: Record<number, S[]>, fallback: S[]): Set<S> {
@@ -22,7 +23,7 @@ function getDefaultCols<S extends string>(lsKey: string, breakpoints: Record<num
 }
 
 export function useAppState<S extends string>(config: AppStateConfig<S>) {
-  const { lsPrefix, defaultCols, defaultFallback } = config;
+  const { lsPrefix, defaultCols, defaultFallback, requiredKeys } = config;
   const lsCols = `${lsPrefix}-columns`;
   const lsHidden = `${lsPrefix}-hidden`;
   const lsOwned = `${lsPrefix}-owned`;
@@ -46,7 +47,7 @@ export function useAppState<S extends string>(config: AppStateConfig<S>) {
   }, []);
 
   const toggleCol = useCallback((key: string) => {
-    if (key === "name") return;
+    if (requiredKeys?.has(key as S)) return;
     const k = key as S;
     setVisibleCols((prev) => {
       const next = new Set(prev);

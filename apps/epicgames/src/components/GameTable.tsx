@@ -4,10 +4,9 @@ import { getLatestFreeDate } from "../types";
 import { UserScoreBadge, EpicDateBadge, EpicRatingBadge, PlatformBadge } from "./Badge";
 import { useContainerWidth } from "@shared/hooks/useContainerWidth";
 import { useScrollHint } from "@shared/hooks/useScrollHint";
-import { computeColWidths, NameColumn, SteamColumn, MetacriticColumn, HltbColumn, OwnedColumn, HideColumn } from "@shared/components/GameTableBase";
+import { computeColWidths, computePinnedSets, NameColumn, SteamColumn, MetacriticColumn, HltbColumn, OwnedColumn, HideColumn } from "@shared/components/GameTableBase";
 import { Column } from "@shared/components/Column";
 import type { FilterDeps, FilterOption } from "@shared/components/Column";
-export { PINNED_FIRST, PINNED_LAST } from "@shared/components/GameTableBase";
 export type { Column as ColumnDef };
 
 type RowData = { steam?: SteamInfo; hltb?: HltbInfo; metacritic?: MetacriticInfo; epic?: EpicInfo };
@@ -191,6 +190,9 @@ export const COLUMNS: Column[] = [
   new HideColumn(),
 ];
 
+const { pinnedFirst: PINNED_FIRST, pinnedLast: PINNED_LAST } = computePinnedSets(COLUMNS);
+export { PINNED_FIRST, PINNED_LAST };
+
 interface Props {
   games: EpicGame[];
   hltb: Record<string, HltbInfo>;
@@ -250,8 +252,8 @@ export function GameTable({ games, hltb, steam, metacritic, epic, images, sortCo
                     <input
                       className="th-filter-input"
                       type="text"
-                      aria-label={col.key === "name" ? "Search games" : `Filter ${col.label}`}
-                      placeholder={col.key === "name" ? (window.innerWidth <= 800 ? "Search..." : "Search games (/) ") : `Filter ${col.label.toLowerCase()}...`}
+                      aria-label={col.ariaLabel ?? `Filter ${col.label}`}
+                      placeholder={window.innerWidth <= 800 ? (col.mobilePlaceholder ?? col.placeholder ?? `Filter ${col.label.toLowerCase()}...`) : (col.placeholder ?? `Filter ${col.label.toLowerCase()}...`)}
                       value={filters[filterKey] ?? ""}
                       onChange={(e) => onFilter(filterKey, e.target.value)}
                       onClick={(e) => e.stopPropagation()}

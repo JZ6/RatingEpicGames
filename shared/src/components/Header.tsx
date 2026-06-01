@@ -3,7 +3,7 @@ import { ColumnToggle } from "./ColumnToggle";
 interface Props {
   title: string;
   subtitle: string;
-  columns?: { key: string; label: string; fullLabel?: string; tooltip?: string }[];
+  columns?: { key: string; label: string; fullLabel?: string; tooltip?: string; required?: boolean }[];
   visibleCols?: Set<string>;
   onToggleCol?: (key: string) => void;
   onClearFilters?: () => void;

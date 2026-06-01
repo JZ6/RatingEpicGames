@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 
 interface Props {
-  columns: { key: string; label: string; fullLabel?: string; tooltip?: string }[];
+  columns: { key: string; label: string; fullLabel?: string; tooltip?: string; required?: boolean }[];
   visible: Set<string>;
   onToggle: (key: string) => void;
 }
@@ -41,7 +41,7 @@ export function ColumnToggle({ columns, visible, onToggle }: Props) {
                 type="checkbox"
                 checked={visible.has(col.key)}
                 onChange={() => onToggle(col.key)}
-                disabled={col.key === "name"}
+                disabled={!!col.required}
               />
               {col.fullLabel || col.label}
             </label>

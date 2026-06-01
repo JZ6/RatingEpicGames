@@ -128,7 +128,7 @@ describe('StatsBar', () => {
 
 describe('ColumnToggle', () => {
   const columns = [
-    { key: 'name', label: 'Game' },
+    { key: 'name', label: 'Game', required: true },
     { key: 'steam', label: 'Steam Rating' },
     { key: 'hltb', label: 'Playtime' },
   ]

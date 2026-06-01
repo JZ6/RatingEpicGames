@@ -11,6 +11,7 @@ export default function App() {
     lsPrefix: "epicdb",
     defaultCols: { 800: ["name", "steam", "hide"], 1200: ["name", "steam", "epicdate", "hide"] },
     defaultFallback: ["name", "steam", "hltb", "epicdate", "hide"],
+    requiredKeys: new Set(COLUMNS.filter((c) => c.required).map((c) => c.key as SortCol)),
   });
   const { filtered, filters, filterCounts, setFilter, clearFilters, sortCol, sortDir, toggleSort } =
     useFilters(games, hltb, steam, metacritic, epic, state.hiddenGames, state.ownedGames);

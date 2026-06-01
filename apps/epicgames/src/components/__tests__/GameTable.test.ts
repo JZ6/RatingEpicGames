@@ -1,19 +1,25 @@
 import { describe, it, expect } from "vitest";
-import { COLUMNS, PINNED_FIRST, PINNED_LAST } from "../GameTable";
+import { COLUMNS } from "../GameTable";
 import type { Filters } from "../../types";
+
+const pinnedFirst = COLUMNS.filter((c) => c.pinned === "first");
+const pinnedLast = COLUMNS.filter((c) => c.pinned === "last");
 
 describe("COLUMNS order", () => {
   it("should have pinned-first columns at the start", () => {
-    for (let i = 0; i < COLUMNS.length; i++) {
-      if (PINNED_FIRST.has(COLUMNS[i].key)) {
-        expect(i).toBeLessThan(PINNED_FIRST.size);
-      }
+    for (let i = 0; i < pinnedFirst.length; i++) {
+      expect(COLUMNS[i].pinned).toBe("first");
     }
   });
 
   it("should have hide column at the end", () => {
     const last = COLUMNS[COLUMNS.length - 1];
     expect(last.key).toBe("hide");
+  });
+
+  it("hide is the last column (always pinned last)", () => {
+    expect(COLUMNS[COLUMNS.length - 1].key).toBe("hide");
+    expect(COLUMNS[COLUMNS.length - 1].pinned).toBe("last");
   });
 });
 
@@ -38,6 +44,29 @@ describe("COLUMNS filterKey contract", () => {
     const col = COLUMNS.find((c) => c.key === "epicdate");
     expect(col).toBeDefined();
     expect(col!.filterKey).toBe("year");
+  });
+});
+
+describe("COLUMNS required and pinned", () => {
+  it("name column is required", () => {
+    const col = COLUMNS.find((c) => c.key === "name");
+    expect(col!.required).toBe(true);
+  });
+
+  it("name column is pinned first", () => {
+    const col = COLUMNS.find((c) => c.key === "name");
+    expect(col!.pinned).toBe("first");
+  });
+
+  it("hide column is pinned last", () => {
+    const col = COLUMNS.find((c) => c.key === "hide");
+    expect(col!.pinned).toBe("last");
+  });
+
+  it("name column has placeholder and ariaLabel", () => {
+    const col = COLUMNS.find((c) => c.key === "name");
+    expect(col!.placeholder).toBeDefined();
+    expect(col!.ariaLabel).toBeDefined();
   });
 });
 
