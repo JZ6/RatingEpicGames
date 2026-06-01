@@ -11,7 +11,7 @@ export default function App() {
     lsPrefix: "dlssdb",
     defaultCols: { 800: ["name", "framegen", "steam", "hide"], 1200: ["name", "dlssver", "framegen", "steam", "hltb", "hide"] },
     defaultFallback: ["name", "dlssver", "framegen", "rt", "steam", "metacritic", "hltb", "hide"],
-    requiredKeys: new Set(COLUMNS.filter((c) => c.required).map((c) => c.key as SortCol)),
+    requiredKeys: new Set(COLUMNS.filter((c) => c.required).map((c) => c.key)),
   });
   const { filtered, filters, filterCounts, setFilter, clearFilters, sortCol, sortDir, toggleSort } =
     useFilters(games, hltb, steam, metacritic, upscaling, state.hiddenGames, state.ownedGames);

@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { COLUMNS } from "../GameTable";
-import type { Filters } from "../../types";
+import { buildEmptyFilters } from "@shared/components/Column";
 
 const pinnedFirst = COLUMNS.filter((c) => c.pinned === "first");
 const pinnedLast = COLUMNS.filter((c) => c.pinned === "last");
@@ -24,7 +24,7 @@ describe("COLUMNS order", () => {
 });
 
 describe("COLUMNS filterKey contract", () => {
-  const EMPTY_FILTERS: Filters = { search: "", steam: "", metacritic: "", userscore: "", hltb: "", year: "", epicrating: "", platform: "", hide: "visible", owned: "" };
+  const EMPTY_FILTERS = buildEmptyFilters(COLUMNS);
   const validKeys = new Set(Object.keys(EMPTY_FILTERS));
 
   it("every column filterKey must exist in Filters type", () => {

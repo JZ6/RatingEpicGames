@@ -5,7 +5,7 @@ import { buildEmptyFilters } from "@shared/components/Column";
 import type { FilterDeps } from "@shared/components/Column";
 import { COLUMNS } from "../components/GameTable";
 
-const EMPTY_FILTERS = buildEmptyFilters(COLUMNS) as Filters;
+const EMPTY_FILTERS = buildEmptyFilters(COLUMNS);
 
 export function useFilters(
   games: EpicGame[],
@@ -29,9 +29,8 @@ export function useFilters(
   );
 
   const filtered = useMemo(() => {
-    const f = filters as Record<string, string>;
     return games
-      .filter((g) => COLUMNS.every((col) => col.filter(g, f[col.filterKey ?? col.key] ?? "", deps)))
+      .filter((g) => COLUMNS.every((col) => col.filter(g, filters[col.filterKey ?? col.key] ?? "", deps)))
       .sort((a, b) => {
         const col = COLUMNS.find((c) => c.key === sortCol);
         return sortComparator(a, b, sortDir, (g) => col?.sortValue(g, deps) ?? null);

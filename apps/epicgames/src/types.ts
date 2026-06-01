@@ -14,20 +14,9 @@ export interface EpicInfo {
   store_url?: string;
 }
 
-export interface Filters {
-  search: string;
-  steam: string;
-  metacritic: string;
-  userscore: string;
-  hltb: string;
-  year: string;
-  epicrating: string;
-  platform: string;
-  hide: string;
-  owned: string;
-}
+export type Filters = Record<string, string>;
 
-export type SortCol = "name" | "steam" | "metacritic" | "userscore" | "hltb" | "epicdate" | "epicrating" | "platform" | "hide" | "owned";
+export type SortCol = string;
 export type SortDir = 1 | -1;
 
 export function parseDate(s: string): Date {

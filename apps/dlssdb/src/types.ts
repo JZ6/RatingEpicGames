@@ -23,25 +23,9 @@ export interface UpscalingInfo {
   xess_version?: string;
 }
 
-export interface Filters {
-  search: string;
-  framegen: string;
-  dlssver: string;
-  dlaa: string;
-  sr: string;
-  rr: string;
-  rt: string;
-  upscaling: string;
-  steam: string;
-  metacritic: string;
-  release_date: string;
-  tags: string;
-  hltb: string;
-  hide: string;
-  owned: string;
-}
+export type Filters = Record<string, string>;
 
-export type SortCol = "name" | "framegen" | "dlssver" | "sr" | "rr" | "dlaa" | "rt" | "steam" | "metacritic" | "upscaling" | "hltb" | "hide" | "owned" | "release_date" | "tags";
+export type SortCol = string;
 export type SortDir = 1 | -1;
 
 /** Returns the effective frame gen multiplier: 3 = 6X, 2 = 4X, 1 = 2X, 0 = none */

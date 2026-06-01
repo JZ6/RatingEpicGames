@@ -385,7 +385,7 @@ export function GameTable({ games, hltb, steam, metacritic, upscaling, images, s
         <thead>
           <tr>
             {cols.map((col, colIdx) => {
-              const filterKey = (col.filterKey || col.key) as keyof Filters;
+              const filterKey = col.filterKey ?? col.key;
               const countKey = col.filterKey ?? col.key;
               const filterOpts = col.resolveFilters(filterCounts[countKey] ?? {});
               return (
@@ -394,7 +394,7 @@ export function GameTable({ games, hltb, steam, metacritic, upscaling, images, s
                   className={sortCol === col.key ? "sorted" : ""}
                   aria-sort={sortCol === col.key ? (sortDir === 1 ? "ascending" : "descending") : "none"}
                 >
-                  <div className="th-label" role="button" tabIndex={0} onClick={() => onSort(col.key as SortCol)} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onSort(col.key as SortCol); } }}>
+                  <div className="th-label" role="button" tabIndex={0} onClick={() => onSort(col.key)} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onSort(col.key); } }}>
                     <span className="si">
                       <span className={`si-up ${sortCol === col.key && sortDir === 1 ? "si-on" : "si-off"}`} />
                       <span className={`si-down ${sortCol === col.key && sortDir === -1 ? "si-on" : "si-off"}`} />
