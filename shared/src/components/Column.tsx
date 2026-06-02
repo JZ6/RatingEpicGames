@@ -37,6 +37,7 @@ export type ColumnConfig = {
   placeholder?: string;
   mobilePlaceholder?: string;
   ariaLabel?: string;
+  showByDefault?: "mobile" | "tablet" | "desktop";
 };
 
 export class Column {
@@ -55,6 +56,7 @@ export class Column {
   placeholder?: string;
   mobilePlaceholder?: string;
   ariaLabel?: string;
+  showByDefault?: "mobile" | "tablet" | "desktop";
 
   constructor(config: ColumnConfig) {
     this.key = config.key;
@@ -72,6 +74,7 @@ export class Column {
     this.placeholder = config.placeholder;
     this.mobilePlaceholder = config.mobilePlaceholder;
     this.ariaLabel = config.ariaLabel;
+    this.showByDefault = config.showByDefault;
   }
 
   render(_game: any, _data: any): React.JSX.Element {
@@ -97,6 +100,21 @@ export class Column {
 
 export function buildEmptyFilters(columns: Column[]): Record<string, string> {
   return Object.fromEntries(columns.map((c) => [c.filterKey ?? c.key, c.defaultFilter]));
+}
+
+export function buildDefaultVisibility(columns: Column[], breakpoints: number[] = [800, 1200]): {
+  defaultCols: Record<number, string[]>;
+  defaultFallback: string[];
+} {
+  const levels: Array<"mobile" | "tablet" | "desktop"> = ["mobile", "tablet", "desktop"];
+  const keys = (minLevel: "mobile" | "tablet" | "desktop") =>
+    columns
+      .filter((c) => c.showByDefault !== undefined && levels.indexOf(c.showByDefault) <= levels.indexOf(minLevel))
+      .map((c) => c.key);
+  const defaultCols = Object.fromEntries(
+    breakpoints.map((bp, i) => [bp, keys(levels[i] ?? "mobile")]),
+  );
+  return { defaultCols, defaultFallback: keys("desktop") };
 }
 
 // ──────────────────────── Filter option arrays ────────────────────────
@@ -152,6 +170,7 @@ export class NameColumn extends Column {
       filterKey: "search",
       pinned: "first",
       required: true,
+      showByDefault: "mobile",
       placeholder: "Search games (/) ",
       mobilePlaceholder: "Search...",
       ariaLabel: "Search games",
@@ -302,6 +321,7 @@ export class HideColumn extends Column {
       filters: HIDE_FILTERS,
       defaultFilter: "visible",
       pinned: "last",
+      showByDefault: "mobile",
       ...overrides,
     });
   }

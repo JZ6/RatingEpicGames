@@ -3,14 +3,14 @@ import { useFilters } from "./hooks/useFilters";
 import { GameTable, COLUMNS } from "./components/GameTable";
 import { AppShell } from "@shared/components/AppShell";
 import { useAppState } from "@shared/hooks/useAppState";
+import { buildDefaultVisibility } from "@shared/components/Column";
 import type { SortCol } from "./types";
 
 export default function App() {
   const { games, hltb, steam, metacritic, upscaling, images, loading, error, retry } = useGameData();
   const state = useAppState<SortCol>({
     lsPrefix: "dlssdb",
-    defaultCols: { 800: ["name", "framegen", "steam", "hide"], 1200: ["name", "dlssver", "framegen", "steam", "hltb", "hide"] },
-    defaultFallback: ["name", "dlssver", "framegen", "rt", "steam", "metacritic", "hltb", "hide"],
+    ...buildDefaultVisibility(COLUMNS),
     requiredKeys: new Set(COLUMNS.filter((c) => c.required).map((c) => c.key)),
   });
   const { filtered, filters, filterCounts, setFilter, clearFilters, sortCol, sortDir, toggleSort } =

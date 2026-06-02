@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { Column, NameColumn, SteamColumn, MetacriticColumn, HltbColumn, OwnedColumn, HideColumn, buildEmptyFilters, computeColWidths, computePinnedSets } from "../Column";
+import { Column, NameColumn, SteamColumn, MetacriticColumn, HltbColumn, OwnedColumn, HideColumn, buildEmptyFilters, buildDefaultVisibility, computeColWidths, computePinnedSets } from "../Column";
 
 describe("Column constructor", () => {
   it("defaults filterType to 'select'", () => {
@@ -169,6 +169,68 @@ describe("buildEmptyFilters", () => {
   it("uses filterKey when present", () => {
     const col = new Column({ key: "epicdate", label: "Date", minWidth: "100px", tooltip: "", filterKey: "year" });
     expect(buildEmptyFilters([col])).toEqual({ year: "" });
+  });
+});
+
+describe("buildDefaultVisibility", () => {
+  const makeCols = () => [
+    new Column({ key: "name", label: "Game", minWidth: "90px", tooltip: "", showByDefault: "mobile" }),
+    new Column({ key: "dlssver", label: "DLSS", minWidth: "90px", tooltip: "", showByDefault: "tablet" }),
+    new Column({ key: "metacritic", label: "MC", minWidth: "90px", tooltip: "", showByDefault: "desktop" }),
+    new Column({ key: "tags", label: "Tags", minWidth: "90px", tooltip: "" }),
+    new Column({ key: "hide", label: "Hide", minWidth: "90px", tooltip: "", showByDefault: "mobile" }),
+  ];
+
+  it("mobile breakpoint only includes mobile columns", () => {
+    const { defaultCols } = buildDefaultVisibility(makeCols());
+    expect(defaultCols[800]).toEqual(["name", "hide"]);
+  });
+
+  it("tablet breakpoint includes mobile and tablet columns", () => {
+    const { defaultCols } = buildDefaultVisibility(makeCols());
+    expect(defaultCols[1200]).toEqual(["name", "dlssver", "hide"]);
+  });
+
+  it("defaultFallback includes all levels (mobile + tablet + desktop)", () => {
+    const { defaultFallback } = buildDefaultVisibility(makeCols());
+    expect(defaultFallback).toEqual(["name", "dlssver", "metacritic", "hide"]);
+  });
+
+  it("columns without showByDefault never appear", () => {
+    const { defaultCols, defaultFallback } = buildDefaultVisibility(makeCols());
+    expect(defaultCols[800]).not.toContain("tags");
+    expect(defaultCols[1200]).not.toContain("tags");
+    expect(defaultFallback).not.toContain("tags");
+  });
+
+  it("preserves COLUMNS array order in all outputs", () => {
+    const { defaultFallback } = buildDefaultVisibility(makeCols());
+    expect(defaultFallback.indexOf("name")).toBeLessThan(defaultFallback.indexOf("dlssver"));
+    expect(defaultFallback.indexOf("dlssver")).toBeLessThan(defaultFallback.indexOf("metacritic"));
+  });
+
+  it("NameColumn and HideColumn are mobile by default", () => {
+    const cols = [new NameColumn(), new HideColumn()];
+    const { defaultCols } = buildDefaultVisibility(cols);
+    expect(defaultCols[800]).toContain("name");
+    expect(defaultCols[800]).toContain("hide");
+  });
+
+  it("accepts custom breakpoints", () => {
+    const cols = [
+      new Column({ key: "a", label: "A", minWidth: "90px", tooltip: "", showByDefault: "mobile" }),
+      new Column({ key: "b", label: "B", minWidth: "90px", tooltip: "", showByDefault: "tablet" }),
+    ];
+    const { defaultCols } = buildDefaultVisibility(cols, [600, 900]);
+    expect(defaultCols[600]).toEqual(["a"]);
+    expect(defaultCols[900]).toEqual(["a", "b"]);
+  });
+
+  it("empty columns list returns empty outputs", () => {
+    const { defaultCols, defaultFallback } = buildDefaultVisibility([]);
+    expect(defaultCols[800]).toEqual([]);
+    expect(defaultCols[1200]).toEqual([]);
+    expect(defaultFallback).toEqual([]);
   });
 });
 

@@ -173,7 +173,7 @@ class PlatformColumn extends Column {
 export const COLUMNS: Column[] = [
   new NameColumn({ tooltip: "Click to view on Epic Games Store" }),
   new EpicRatingColumn(),
-  new EpicDateColumn(),
+  new EpicDateColumn({ showByDefault: "tablet" }),
   new MetacriticColumn({
     filters: [
       { value: "", label: "All" },
@@ -185,8 +185,8 @@ export const COLUMNS: Column[] = [
   }),
   new OwnedColumn(),
   new PlatformColumn(),
-  new HltbColumn(),
-  new SteamColumn(),
+  new HltbColumn({ showByDefault: "desktop" }),
+  new SteamColumn({ showByDefault: "mobile" }),
   new UserScoreColumn(),
   new HideColumn(),
 ];

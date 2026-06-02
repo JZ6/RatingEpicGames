@@ -5,7 +5,7 @@ export { StatsBar } from "./components/StatsBar";
 export { ColumnToggle } from "./components/ColumnToggle";
 export { ImportModal } from "./components/ImportModal";
 export { TableHeader } from "./components/TableHeader";
-export { Column, NameColumn, SteamColumn, MetacriticColumn, HltbColumn, OwnedColumn, HideColumn, buildEmptyFilters, computeColWidths, computePinnedSets, STEAM_FILTERS, HLTB_FILTERS } from "./components/Column";
+export { Column, NameColumn, SteamColumn, MetacriticColumn, HltbColumn, OwnedColumn, HideColumn, buildEmptyFilters, buildDefaultVisibility, computeColWidths, computePinnedSets, STEAM_FILTERS, HLTB_FILTERS } from "./components/Column";
 export type { FilterOption, FilterDeps, ColumnConfig } from "./components/Column";
 export { useColumnFilters } from "./hooks/useColumnFilters";
 export type { SortDir } from "./hooks/useFilterState";
