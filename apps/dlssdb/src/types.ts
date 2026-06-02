@@ -26,7 +26,7 @@ export interface UpscalingInfo {
 export type Filters = Record<string, string>;
 
 export type SortCol = string;
-export type SortDir = 1 | -1;
+export type { SortDir } from "@shared/hooks/useFilterState";
 
 /** Returns the effective frame gen multiplier: 3 = 6X, 2 = 4X, 1 = 2X, 0 = none */
 export function getFrameGenLevel(g: DlssGame): number {

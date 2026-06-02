@@ -17,7 +17,7 @@ export interface EpicInfo {
 export type Filters = Record<string, string>;
 
 export type SortCol = string;
-export type SortDir = 1 | -1;
+export type { SortDir } from "@shared/hooks/useFilterState";
 
 export function parseDate(s: string): Date {
   // ISO dates like "2018-12-12" are parsed as UTC — add T12:00 to avoid timezone shift

@@ -1,13 +1,14 @@
 import { memo, useMemo, useState } from "react";
-import type { EpicGame, HltbInfo, SteamInfo, MetacriticInfo, EpicInfo, SortCol, SortDir, Filters } from "../types";
+import type { EpicGame, HltbInfo, SteamInfo, MetacriticInfo, EpicInfo, SortCol, Filters } from "../types";
+import type { SortDir } from "@shared/hooks/useFilterState";
 import { getLatestFreeDate } from "../types";
 import { UserScoreBadge, EpicDateBadge, EpicRatingBadge, PlatformBadge } from "./Badge";
 import { useContainerWidth } from "@shared/hooks/useContainerWidth";
 import { useScrollHint } from "@shared/hooks/useScrollHint";
-import { computeColWidths, computePinnedSets, NameColumn, SteamColumn, MetacriticColumn, HltbColumn, OwnedColumn, HideColumn } from "@shared/components/GameTableBase";
+import { TableHeader } from "@shared/components/TableHeader";
+import { computeColWidths, computePinnedSets, NameColumn, SteamColumn, MetacriticColumn, HltbColumn, OwnedColumn, HideColumn } from "@shared/components/Column";
 import { Column } from "@shared/components/Column";
 import type { FilterDeps, FilterOption } from "@shared/components/Column";
-export type { Column as ColumnDef };
 
 type RowData = { steam?: SteamInfo; hltb?: HltbInfo; metacritic?: MetacriticInfo; epic?: EpicInfo };
 
@@ -228,54 +229,10 @@ export function GameTable({ games, hltb, steam, metacritic, epic, images, sortCo
         <colgroup>
           {colWidths.map((w, i) => <col key={cols[i].key} style={{ width: w }} />)}
         </colgroup>
-        <thead>
-          <tr>
-            {cols.map((col, colIdx) => {
-              const filterKey = col.filterKey ?? col.key;
-              const countKey = col.filterKey ?? col.key;
-              const filterOpts = col.resolveFilters(filterCounts[countKey] ?? {});
-              return (
-                <th
-                  key={col.key}
-                  className={sortCol === col.key ? "sorted" : ""}
-                  aria-sort={sortCol === col.key ? (sortDir === 1 ? "ascending" : "descending") : "none"}
-                >
-                  <div className="th-label" role="button" tabIndex={0} onClick={() => onSort(col.key)} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onSort(col.key); } }}>
-                    <span className="si">
-                      <span className={`si-up ${sortCol === col.key && sortDir === 1 ? "si-on" : "si-off"}`} />
-                      <span className={`si-down ${sortCol === col.key && sortDir === -1 ? "si-on" : "si-off"}`} />
-                    </span>
-                    {col.fullLabel && colWidths[colIdx] >= col.fullLabel.length * 11 + 60 ? col.fullLabel : col.label}
-                    <span className="th-info" data-tip={col.tooltip} tabIndex={0} onClick={(e) => e.stopPropagation()}>ⓘ</span>
-                  </div>
-                  {col.filterType === "input" ? (
-                    <input
-                      className="th-filter-input"
-                      type="text"
-                      aria-label={col.ariaLabel ?? `Filter ${col.label}`}
-                      placeholder={window.innerWidth <= 800 ? (col.mobilePlaceholder ?? col.placeholder ?? `Filter ${col.label.toLowerCase()}...`) : (col.placeholder ?? `Filter ${col.label.toLowerCase()}...`)}
-                      value={filters[filterKey] ?? ""}
-                      onChange={(e) => onFilter(filterKey, e.target.value)}
-                      onClick={(e) => e.stopPropagation()}
-                    />
-                  ) : filterOpts.length > 0 ? (
-                    <select
-                      className="th-filter-select"
-                      value={filters[filterKey] ?? ""}
-                      onChange={(e) => onFilter(filterKey, e.target.value)}
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      {filterOpts.map((o) => {
-                        const count = o.value ? filterCounts[countKey]?.[o.value] : undefined;
-                        return <option key={o.value} value={o.value}>{o.label}{count !== undefined ? ` (${count})` : ""}</option>;
-                      })}
-                    </select>
-                  ) : null}
-                </th>
-              );
-            })}
-          </tr>
-        </thead>
+        <TableHeader
+          cols={cols} colWidths={colWidths} filters={filters} filterCounts={filterCounts}
+          onFilter={onFilter} sortCol={sortCol} sortDir={sortDir} onSort={onSort}
+        />
         <tbody>
           {games.map((g) => (
             <GameRow

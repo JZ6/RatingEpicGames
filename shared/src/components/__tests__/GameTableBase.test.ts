@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { Column, NameColumn, SteamColumn, MetacriticColumn, HltbColumn, OwnedColumn, HideColumn, buildEmptyFilters, computeColWidths, computePinnedSets } from "../GameTableBase";
+import { Column, NameColumn, SteamColumn, MetacriticColumn, HltbColumn, OwnedColumn, HideColumn, buildEmptyFilters, computeColWidths, computePinnedSets } from "../Column";
 
 describe("Column constructor", () => {
   it("defaults filterType to 'select'", () => {

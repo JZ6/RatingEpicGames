@@ -1,7 +1,7 @@
 import { describe, it, expect, vi } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { AppShell } from "../AppShell";
-import { NameColumn, SteamColumn, HideColumn } from "../GameTableBase";
+import { NameColumn, SteamColumn, HideColumn } from "../Column";
 
 const COLUMNS = [new NameColumn(), new SteamColumn(), new HideColumn()];
 

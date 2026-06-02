@@ -1,7 +1,7 @@
 import { Header } from "./Header";
 import { StatsBar } from "./StatsBar";
 import { ImportModal } from "./ImportModal";
-import type { Column } from "./GameTableBase";
+import type { Column } from "./Column";
 
 interface AppShellProps {
   title: string;
