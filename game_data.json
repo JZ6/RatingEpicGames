@@ -4775,52 +4775,6 @@
       "updated_at": "2026-05-07"
     }
   },
-  "City of Gangsters": {
-    "steam": {
-      "found": true,
-      "appid": 1386780,
-      "steamdb_rating": 70.76,
-      "pct": 76,
-      "rating": "Mostly Positive",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1386780/capsule_184x69.jpg",
-      "steam_url": "https://store.steampowered.com/app/1386780/",
-      "steamdb_url": "https://steamdb.info/app/1386780/",
-      "updated_at": "2026-06-03",
-      "total": 876
-    },
-    "metacritic": {
-      "found": true,
-      "score": 66,
-      "slug": "city-of-brass/home",
-      "source": "josephmate",
-      "updated_at": "2026-05-07",
-      "url": "https://www.metacritic.com/game/city-of-gangsters/"
-    },
-    "epic": {
-      "slug": "city-of-brass/home",
-      "free_dates": [
-        {
-          "start": "2023-02-02",
-          "end": ""
-        }
-      ],
-      "platforms": [
-        "pc"
-      ],
-      "epic_id": "05400f27305f495aa671a629e0f70bf0",
-      "epic_rating": 4.33,
-      "sandbox_id": "e33138cc2b964d38a42a812b83b6507e",
-      "store_url": "https://store.epicgames.com/en-US/p/city-of-gangsters-6c2974",
-      "updated_at": "2026-06-03"
-    },
-    "hltb": {
-      "found": true,
-      "hltb_id": 96518,
-      "main": 35.63,
-      "all_styles": 35.63,
-      "updated_at": "2026-05-07"
-    }
-  },
   "Clone Drone in the Danger Zone": {
     "steam": {
       "found": true,
