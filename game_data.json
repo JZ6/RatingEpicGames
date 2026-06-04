@@ -979,20 +979,26 @@
       "appid": 214490,
       "rating": "Very Positive",
       "pct": 93,
-      "total": 35814,
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/214490/capsule_184x69.jpg",
-      "updated_at": "2026-06-03",
+      "total": 65343,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/214490/capsule_184x69.jpg?t=1763647113",
+      "updated_at": "2026-06-04",
       "steamdb_rating": 91.61,
       "steam_url": "https://store.steampowered.com/app/214490/",
-      "steamdb_url": "https://steamdb.info/app/214490/"
+      "steamdb_url": "https://steamdb.info/app/214490/",
+      "release_date": "6 Oct, 2014",
+      "genres": [
+        "Action"
+      ],
+      "metacritic_score": 81,
+      "metacritic_url": "https://www.metacritic.com/game/pc/alien-isolation?ftag=MCD-06-10aaa1f"
     },
     "metacritic": {
       "found": true,
-      "score": 79,
       "slug": "alien-isolation",
-      "source": "josephmate",
-      "updated_at": "2026-05-07",
-      "url": "https://www.metacritic.com/game/alien-isolation/"
+      "score": 81,
+      "source": "steam",
+      "appid": 214490,
+      "updated_at": "2026-06-04"
     },
     "epic": {
       "slug": "alien-isolation",
@@ -1020,10 +1026,11 @@
       "hltb_id": 16638,
       "main": 18.29,
       "extra": 22.54,
-      "complete": 34.11,
+      "complete": 34.08,
       "coop": 13.1,
+      "speed": 7.5,
       "all_styles": 20.8,
-      "updated_at": "2026-05-07"
+      "updated_at": "2026-06-04"
     }
   },
   "Amnesia Rebirth": {
