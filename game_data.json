@@ -6347,28 +6347,29 @@
     "steam": {
       "found": true,
       "appid": 1850570,
-      "pct": 94,
+      "pct": 92,
       "rating": "Very Positive",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1190460/ba26a28dbc2065a42bd9688e5320c41184e85bb3/capsule_184x69.jpg?t=1766014863",
-      "updated_at": "2026-06-03",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1850570/f98586104479ed55cdb3de18c42b0dc6120691fe/capsule_184x69.jpg?t=1773400635",
+      "updated_at": "2026-06-04",
       "steamdb_rating": 90.91,
       "steam_url": "https://store.steampowered.com/app/1850570/",
       "steamdb_url": "https://steamdb.info/app/1850570/",
-      "total": 9240,
+      "total": 64698,
       "genres": [
         "Action",
         "Adventure"
       ],
-      "release_date": "19 Mar, 2026"
+      "release_date": "30 Mar, 2022",
+      "metacritic_score": 85,
+      "metacritic_url": "https://www.metacritic.com/game/pc/death-stranding-directors-cut?ftag=MCD-06-10aaa1f"
     },
     "metacritic": {
       "found": true,
-      "score": 82,
-      "slug": "death-stranding",
-      "source": "josephmate",
-      "updated_at": "2026-05-07",
-      "url": "https://www.metacritic.com/game/death-stranding/",
-      "user_score": 7.9
+      "slug": "death-stranding-directors-cut",
+      "score": 85,
+      "source": "steam",
+      "appid": 1850570,
+      "updated_at": "2026-06-04"
     },
     "epic": {
       "slug": "death-stranding",
@@ -6394,10 +6395,12 @@
     "hltb": {
       "found": true,
       "hltb_id": 38061,
-      "main": 40.5,
-      "extra": 60.03,
-      "complete": 112.8,
-      "updated_at": "2026-05-01"
+      "main": 40.51,
+      "extra": 60.07,
+      "complete": 112.94,
+      "coop": 63.57,
+      "all_styles": 57.74,
+      "updated_at": "2026-06-04"
     }
   },
   "Death's Gambit - Afterlife": {
