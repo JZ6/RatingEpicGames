@@ -998,7 +998,8 @@
       "score": 81,
       "source": "steam",
       "appid": 214490,
-      "updated_at": "2026-06-04"
+      "updated_at": "2026-06-04",
+      "url": "https://www.metacritic.com/game/alien-isolation/"
     },
     "epic": {
       "slug": "alien-isolation",
@@ -5459,6 +5460,52 @@
       "updated_at": "2026-05-07"
     }
   },
+  "Cultist Simulator": {
+    "steam": {
+      "found": true,
+      "appid": 718670,
+      "steamdb_rating": 78.2,
+      "pct": 78,
+      "rating": "Mostly Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/718670/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/718670/",
+      "steamdb_url": "https://steamdb.info/app/718670/",
+      "updated_at": "2026-06-05"
+    },
+    "metacritic": {
+      "found": true,
+      "score": 71,
+      "slug": "",
+      "source": "josephmate",
+      "updated_at": "2026-06-05",
+      "url": "https://www.metacritic.com/game/cultist-simulator/"
+    },
+    "epic": {
+      "slug": "",
+      "free_dates": [
+        {
+          "start": "2025-06-26",
+          "end": ""
+        }
+      ],
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "epic_rating": 4.49,
+      "store_url": "https://store.epicgames.com/en-US/p/cultist-simulator-android-8c5386",
+      "updated_at": "2026-06-05"
+    },
+    "hltb": {
+      "found": true,
+      "hltb_id": 53548,
+      "main": 19.37,
+      "extra": 40.2,
+      "complete": 109.73,
+      "all_styles": 31.49,
+      "updated_at": "2026-06-05"
+    }
+  },
   "Cursed to Golf": {
     "steam": {
       "found": true,
@@ -6330,7 +6377,8 @@
       "score": 85,
       "source": "steam",
       "appid": 1850570,
-      "updated_at": "2026-06-04"
+      "updated_at": "2026-06-04",
+      "url": "https://www.metacritic.com/game/death-stranding/"
     },
     "epic": {
       "slug": "death-stranding",
@@ -20283,6 +20331,51 @@
       "updated_at": "2026-05-07"
     }
   },
+  "Rogue Waters": {
+    "steam": {
+      "found": true,
+      "appid": 1691190,
+      "steamdb_rating": 72.98,
+      "pct": 73,
+      "rating": "Mostly Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1691190/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/1691190/",
+      "steamdb_url": "https://steamdb.info/app/1691190/",
+      "updated_at": "2026-06-05"
+    },
+    "metacritic": {
+      "found": true,
+      "score": 83,
+      "slug": "rogue-waters-9764d6",
+      "source": "josephmate",
+      "updated_at": "2026-06-05",
+      "url": "https://www.metacritic.com/game/rogue-waters/"
+    },
+    "epic": {
+      "slug": "rogue-waters-9764d6",
+      "free_dates": [
+        {
+          "start": "2026-06-04",
+          "end": ""
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "epic_id": "a6a2d59fa54946dbbf16f14730c2e5f0",
+      "sandbox_id": "d5241c76f178492ea1540fce45616757",
+      "store_url": "https://store.epicgames.com/en-US/p/rogue-waters-9764d6",
+      "updated_at": "2026-06-05"
+    },
+    "hltb": {
+      "found": true,
+      "hltb_id": 155716,
+      "main": 12.84,
+      "extra": 24,
+      "all_styles": 14.95,
+      "updated_at": "2026-06-05"
+    }
+  },
   "RollerCoaster Tycoon 3: Complete Edition": {
     "steam": {
       "found": true,
@@ -22352,6 +22445,52 @@
       "complete": 11.09,
       "all_styles": 10.13,
       "updated_at": "2026-05-07"
+    }
+  },
+  "Songs of Conquest": {
+    "steam": {
+      "found": true,
+      "appid": 867210,
+      "steamdb_rating": 83.63,
+      "pct": 84,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/867210/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/867210/",
+      "steamdb_url": "https://steamdb.info/app/867210/",
+      "updated_at": "2026-06-05"
+    },
+    "metacritic": {
+      "found": true,
+      "score": 78,
+      "slug": "songs-of-conquest",
+      "source": "josephmate",
+      "updated_at": "2026-06-05",
+      "url": "https://www.metacritic.com/game/songs-of-conquest/"
+    },
+    "epic": {
+      "slug": "songs-of-conquest",
+      "free_dates": [
+        {
+          "start": "2026-06-04",
+          "end": ""
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "epic_id": "62b6d302e2bd41039449b1f2f9608748",
+      "sandbox_id": "d5241c76f178492ea1540fce45616757",
+      "store_url": "https://store.epicgames.com/en-US/p/songs-of-conquest",
+      "updated_at": "2026-06-05"
+    },
+    "hltb": {
+      "found": true,
+      "hltb_id": 68272,
+      "main": 30.49,
+      "extra": 53.87,
+      "complete": 97.95,
+      "all_styles": 42.73,
+      "updated_at": "2026-06-05"
     }
   },
   "Songs of Silence": {
@@ -25829,6 +25968,38 @@
       "updated_at": "2026-05-07"
     }
   },
+  "The Ouroboros King": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-06-05"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-06-05"
+    },
+    "epic": {
+      "slug": "the-ouroboros-king",
+      "free_dates": [
+        {
+          "start": "2026-06-11",
+          "end": "2026-06-18"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-06-05"
+    },
+    "hltb": {
+      "found": true,
+      "hltb_id": 128280,
+      "main": 3.06,
+      "extra": 3.08,
+      "complete": 4,
+      "all_styles": 3.27,
+      "updated_at": "2026-06-05"
+    }
+  },
   "The Outer Worlds: Spacer's Choice Edition": {
     "steam": {
       "found": true,
@@ -28853,6 +29024,33 @@
       "updated_at": "2026-05-07"
     }
   },
+  "Warhammer 40K Speed Freeks": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-06-05"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-06-05"
+    },
+    "epic": {
+      "slug": "b28e038bd68b4e80840e7fb8b747de54",
+      "free_dates": [
+        {
+          "start": "2026-06-11",
+          "end": "2026-06-18"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-06-05"
+    },
+    "hltb": {
+      "found": false,
+      "updated_at": "2026-06-05"
+    }
+  },
   "Warpips": {
     "steam": {
       "found": true,
@@ -30026,6 +30224,51 @@
       "coop": 19.55,
       "all_styles": 16.8,
       "updated_at": "2026-05-07"
+    }
+  },
+  "Wytchwood": {
+    "steam": {
+      "found": true,
+      "appid": 729000,
+      "steamdb_rating": 89.35,
+      "pct": 89,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/729000/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/729000/",
+      "steamdb_url": "https://steamdb.info/app/729000/",
+      "updated_at": "2026-06-05"
+    },
+    "metacritic": {
+      "found": true,
+      "score": 78,
+      "slug": "wytchwood-android-cad0ea",
+      "source": "josephmate",
+      "updated_at": "2026-06-05",
+      "url": "https://www.metacritic.com/game/wytchwood/"
+    },
+    "epic": {
+      "slug": "wytchwood-android-cad0ea",
+      "free_dates": [
+        {
+          "start": "2026-06-04",
+          "end": ""
+        }
+      ],
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "store_url": "https://store.epicgames.com/en-US/p/wytchwood-android-cad0ea",
+      "updated_at": "2026-06-05"
+    },
+    "hltb": {
+      "found": true,
+      "hltb_id": 97920,
+      "main": 11.17,
+      "extra": 11.36,
+      "complete": 11.89,
+      "all_styles": 11.34,
+      "updated_at": "2026-06-05"
     }
   },
   "XCOM 2": {
