@@ -19478,52 +19478,6 @@
       "updated_at": "2026-05-07"
     }
   },
-  "Redout 2": {
-    "steam": {
-      "found": true,
-      "appid": 1799930,
-      "rating": "Mostly Positive",
-      "pct": 79,
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1799930/capsule_184x69.jpg",
-      "updated_at": "2026-06-03",
-      "steamdb_rating": 79.16,
-      "steam_url": "https://store.steampowered.com/app/1799930/",
-      "steamdb_url": "https://steamdb.info/app/1799930/"
-    },
-    "metacritic": {
-      "found": true,
-      "score": 78,
-      "slug": "redout-2",
-      "source": "josephmate",
-      "updated_at": "2026-05-07",
-      "url": "https://www.metacritic.com/game/redout-2/"
-    },
-    "epic": {
-      "slug": "redout-2",
-      "free_dates": [
-        {
-          "start": "2024-06-13",
-          "end": ""
-        }
-      ],
-      "platforms": [
-        "pc"
-      ],
-      "epic_id": "b77095c5a9224fbe8a7222db84675873",
-      "epic_rating": 4.55,
-      "sandbox_id": "05ae696a3c5f49af91a7433547460c21",
-      "store_url": "https://store.epicgames.com/en-US/p/redout-2",
-      "updated_at": "2026-06-03"
-    },
-    "hltb": {
-      "found": true,
-      "hltb_id": 105621,
-      "main": 32.58,
-      "extra": 49.77,
-      "all_styles": 46.81,
-      "updated_at": "2026-05-07"
-    }
-  },
   "Redout: Enhanced Edition": {
     "steam": {
       "found": true,
