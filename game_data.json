@@ -4734,12 +4734,23 @@
   },
   "Citizen Sleeper": {
     "steam": {
-      "found": false,
-      "updated_at": "2026-06-12"
+      "found": true,
+      "updated_at": "2026-06-19",
+      "appid": 1578650,
+      "steamdb_rating": 89.83,
+      "pct": 90,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1578650/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/1578650/",
+      "steamdb_url": "https://steamdb.info/app/1578650/"
     },
     "metacritic": {
-      "found": false,
-      "updated_at": "2026-06-12"
+      "found": true,
+      "updated_at": "2026-06-19",
+      "score": 82,
+      "slug": "citizen-sleeper-944858",
+      "source": "josephmate",
+      "url": "https://www.metacritic.com/game/citizen-sleeper/"
     },
     "epic": {
       "slug": "da528841e0eb43d8b93fd243c6767b0c",
@@ -4752,7 +4763,11 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-06-12"
+      "epic_id": "ea365d314ecf4224a5f58d2d7430e7aa",
+      "epic_rating": 4.73,
+      "sandbox_id": "e4ef0c8c500a41eaa57c53d32410595d",
+      "store_url": "https://store.epicgames.com/en-US/p/citizen-sleeper-944858",
+      "updated_at": "2026-06-19"
     },
     "hltb": {
       "found": true,
@@ -5043,6 +5058,43 @@
       "complete": 5.58,
       "all_styles": 4.55,
       "updated_at": "2026-05-07"
+    }
+  },
+  "Construction Simulator 3": {
+    "steam": {
+      "found": true,
+      "appid": 1370120,
+      "steamdb_rating": 53.59,
+      "pct": 54,
+      "rating": "Mixed",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1370120/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/1370120/",
+      "steamdb_url": "https://steamdb.info/app/1370120/",
+      "updated_at": "2026-06-19"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-06-19"
+    },
+    "epic": {
+      "slug": "construction-simulator-3-android-761575",
+      "free_dates": [
+        {
+          "start": "2026-06-18",
+          "end": ""
+        }
+      ],
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "store_url": "https://store.epicgames.com/en-US/p/construction-simulator-3-android-761575",
+      "updated_at": "2026-06-19"
+    },
+    "hltb": {
+      "found": true,
+      "hltb_id": 116616,
+      "updated_at": "2026-06-19"
     }
   },
   "Control": {
@@ -20316,12 +20368,23 @@
   },
   "ROBOBEAT": {
     "steam": {
-      "found": false,
-      "updated_at": "2026-06-12"
+      "found": true,
+      "updated_at": "2026-06-19",
+      "appid": 1456760,
+      "steamdb_rating": 89.85,
+      "pct": 90,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1456760/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/1456760/",
+      "steamdb_url": "https://steamdb.info/app/1456760/"
     },
     "metacritic": {
-      "found": false,
-      "updated_at": "2026-06-12"
+      "found": true,
+      "updated_at": "2026-06-19",
+      "score": 83,
+      "slug": "robobeat-5f084b",
+      "source": "josephmate",
+      "url": "https://www.metacritic.com/game/robobeat/"
     },
     "epic": {
       "slug": "4ee365fd76704f37ae3dc13676f1ac61",
@@ -20334,7 +20397,10 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-06-12"
+      "epic_id": "aee7ec395d054078a48d867849e2a550",
+      "sandbox_id": "9704b88f02244a60b9b0ab81e0e31389",
+      "store_url": "https://store.epicgames.com/en-US/p/robobeat-5f084b",
+      "updated_at": "2026-06-19"
     },
     "hltb": {
       "found": true,
@@ -20477,6 +20543,38 @@
       "extra": 24,
       "all_styles": 14.95,
       "updated_at": "2026-06-05"
+    }
+  },
+  "RollerCoaster Tycoon 3 Complete Edition": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-06-19"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-06-19"
+    },
+    "epic": {
+      "slug": "rollercoaster-tycoon-3-complete-edition/home",
+      "free_dates": [
+        {
+          "start": "2026-06-25",
+          "end": "2026-07-02"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-06-19"
+    },
+    "hltb": {
+      "found": true,
+      "hltb_id": 83478,
+      "main": 20.47,
+      "extra": 57.49,
+      "complete": 190.02,
+      "all_styles": 55.2,
+      "updated_at": "2026-06-19"
     }
   },
   "RollerCoaster Tycoon 3: Complete Edition": {
@@ -28992,6 +29090,38 @@
       "complete": 28.32,
       "all_styles": 11.58,
       "updated_at": "2026-05-07"
+    }
+  },
+  "Voidwrought": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-06-19"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-06-19"
+    },
+    "epic": {
+      "slug": "8d0e69e541454ac7818117af13960b30",
+      "free_dates": [
+        {
+          "start": "2026-06-25",
+          "end": "2026-07-02"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-06-19"
+    },
+    "hltb": {
+      "found": true,
+      "hltb_id": 147406,
+      "main": 7.81,
+      "extra": 14.65,
+      "complete": 17.5,
+      "all_styles": 14.57,
+      "updated_at": "2026-06-19"
     }
   },
   "Wargame: Red Dragon": {
