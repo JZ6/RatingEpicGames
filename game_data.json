@@ -13153,6 +13153,38 @@
       "updated_at": "2026-05-07"
     }
   },
+  "I Have No Mouth, and I Must Scream": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-06-25"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-06-25"
+    },
+    "epic": {
+      "slug": "0937dc8ff7874fb8897a678d8a27c9ac",
+      "free_dates": [
+        {
+          "start": "2026-07-02",
+          "end": "2026-07-09"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-06-25"
+    },
+    "hltb": {
+      "found": true,
+      "hltb_id": 4575,
+      "main": 6.03,
+      "extra": 7.75,
+      "complete": 7.86,
+      "all_styles": 6.7,
+      "updated_at": "2026-06-25"
+    }
+  },
   "Idle Champions of the Forgotten Realms": {
     "steam": {
       "found": true,
@@ -20228,6 +20260,39 @@
       "updated_at": "2026-05-07"
     }
   },
+  "River City Girls 2": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-06-25"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-06-25"
+    },
+    "epic": {
+      "slug": "f6229ed5b32d4e098b930103b6470b49",
+      "free_dates": [
+        {
+          "start": "2026-07-02",
+          "end": "2026-07-09"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-06-25"
+    },
+    "hltb": {
+      "found": true,
+      "hltb_id": 94082,
+      "main": 12.38,
+      "extra": 15.85,
+      "complete": 24.23,
+      "coop": 13.6,
+      "all_styles": 15.43,
+      "updated_at": "2026-06-25"
+    }
+  },
   "Riverbond": {
     "steam": {
       "found": true,
@@ -20547,12 +20612,23 @@
   },
   "RollerCoaster Tycoon 3 Complete Edition": {
     "steam": {
-      "found": false,
-      "updated_at": "2026-06-19"
+      "found": true,
+      "updated_at": "2026-06-25",
+      "appid": 1368820,
+      "steamdb_rating": 83.99,
+      "pct": 84,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1368820/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/1368820/",
+      "steamdb_url": "https://steamdb.info/app/1368820/"
     },
     "metacritic": {
-      "found": false,
-      "updated_at": "2026-06-19"
+      "found": true,
+      "updated_at": "2026-06-25",
+      "score": 72,
+      "slug": "rollercoaster-tycoon-3-complete-edition/home",
+      "source": "josephmate",
+      "url": "https://www.metacritic.com/game/rollercoaster-tycoon-3-complete-edition/"
     },
     "epic": {
       "slug": "rollercoaster-tycoon-3-complete-edition/home",
@@ -20565,7 +20641,11 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-06-19"
+      "epic_id": "4ec50a302f1449b3bf706a199c333ab8",
+      "epic_rating": 4.64,
+      "sandbox_id": "f01b3e0178d448f0b93911e292d8e614",
+      "store_url": "https://store.epicgames.com/en-US/p/rollercoaster-tycoon-3-complete-edition",
+      "updated_at": "2026-06-25"
     },
     "hltb": {
       "found": true,
@@ -24657,6 +24737,45 @@
       "complete": 1.91,
       "all_styles": 1.72,
       "updated_at": "2026-05-07"
+    }
+  },
+  "Teenage Mutant Ninja Turtles - Shredder's Revenge": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-06-25"
+    },
+    "metacritic": {
+      "found": true,
+      "score": 85,
+      "slug": "teenage-mutant-ninja-turtles-shredders-revenge-android-8937ca",
+      "source": "josephmate",
+      "updated_at": "2026-06-25",
+      "url": "https://www.metacritic.com/game/teenage-mutant-ninja-turtles-shredders-revenge/"
+    },
+    "epic": {
+      "slug": "teenage-mutant-ninja-turtles-shredders-revenge-android-8937ca",
+      "free_dates": [
+        {
+          "start": "2026-06-25",
+          "end": ""
+        }
+      ],
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "store_url": "https://store.epicgames.com/en-US/p/teenage-mutant-ninja-turtles-shredders-revenge-android-8937ca",
+      "updated_at": "2026-06-25"
+    },
+    "hltb": {
+      "found": true,
+      "hltb_id": 135954,
+      "main": 0.93,
+      "extra": 1.41,
+      "complete": 2.13,
+      "coop": 0.98,
+      "all_styles": 1.1,
+      "updated_at": "2026-06-25"
     }
   },
   "Terraforming Mars": {
@@ -29094,12 +29213,23 @@
   },
   "Voidwrought": {
     "steam": {
-      "found": false,
-      "updated_at": "2026-06-19"
+      "found": true,
+      "updated_at": "2026-06-25",
+      "appid": 2014550,
+      "steamdb_rating": 73.88,
+      "pct": 74,
+      "rating": "Mostly Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2014550/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/2014550/",
+      "steamdb_url": "https://steamdb.info/app/2014550/"
     },
     "metacritic": {
-      "found": false,
-      "updated_at": "2026-06-19"
+      "found": true,
+      "updated_at": "2026-06-25",
+      "score": 76,
+      "slug": "voidwrought-ce8f4b",
+      "source": "josephmate",
+      "url": "https://www.metacritic.com/game/voidwrought/"
     },
     "epic": {
       "slug": "8d0e69e541454ac7818117af13960b30",
@@ -29112,7 +29242,10 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-06-19"
+      "epic_id": "bbccf66ad70e492d812e031e17f93b9d",
+      "sandbox_id": "1c6e13038e00432ba0a3c11bb85d1d5f",
+      "store_url": "https://store.epicgames.com/en-US/p/voidwrought-ce8f4b",
+      "updated_at": "2026-06-25"
     },
     "hltb": {
       "found": true,
