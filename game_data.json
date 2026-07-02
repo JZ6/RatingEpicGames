@@ -13155,12 +13155,23 @@
   },
   "I Have No Mouth, and I Must Scream": {
     "steam": {
-      "found": false,
-      "updated_at": "2026-06-25"
+      "found": true,
+      "updated_at": "2026-07-02",
+      "appid": 245390,
+      "steamdb_rating": 85.68,
+      "pct": 86,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/245390/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/245390/",
+      "steamdb_url": "https://steamdb.info/app/245390/"
     },
     "metacritic": {
-      "found": false,
-      "updated_at": "2026-06-25"
+      "found": true,
+      "updated_at": "2026-07-02",
+      "score": 73,
+      "slug": "i-have-no-mouth-and-i-must-scream-95c5c2",
+      "source": "josephmate",
+      "url": "https://www.metacritic.com/game/i-have-no-mouth-and-i-must-scream/"
     },
     "epic": {
       "slug": "0937dc8ff7874fb8897a678d8a27c9ac",
@@ -13173,7 +13184,10 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-06-25"
+      "epic_id": "4ef54d5829b04656902dfa1f29b3b732",
+      "sandbox_id": "2e13c6ccfb3147ec8c67985160c48296",
+      "store_url": "https://store.epicgames.com/en-US/p/i-have-no-mouth-and-i-must-scream-95c5c2",
+      "updated_at": "2026-07-02"
     },
     "hltb": {
       "found": true,
@@ -17664,6 +17678,38 @@
       "updated_at": "2026-05-28"
     }
   },
+  "Nova Lands": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-07-02"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-07-02"
+    },
+    "epic": {
+      "slug": "acb83bd813054e599598de9e76f6d95d",
+      "free_dates": [
+        {
+          "start": "2026-07-09",
+          "end": "2026-07-16"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-07-02"
+    },
+    "hltb": {
+      "found": true,
+      "hltb_id": 118771,
+      "main": 19.24,
+      "extra": 26.36,
+      "complete": 27.95,
+      "all_styles": 25.56,
+      "updated_at": "2026-07-02"
+    }
+  },
   "Nuclear Throne": {
     "steam": {
       "found": true,
@@ -20262,12 +20308,23 @@
   },
   "River City Girls 2": {
     "steam": {
-      "found": false,
-      "updated_at": "2026-06-25"
+      "found": true,
+      "updated_at": "2026-07-02",
+      "appid": 1920480,
+      "steamdb_rating": 81.85,
+      "pct": 82,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1920480/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/1920480/",
+      "steamdb_url": "https://steamdb.info/app/1920480/"
     },
     "metacritic": {
-      "found": false,
-      "updated_at": "2026-06-25"
+      "found": true,
+      "updated_at": "2026-07-02",
+      "score": 78,
+      "slug": "river-city-girls-2-77af3a",
+      "source": "josephmate",
+      "url": "https://www.metacritic.com/game/river-city-girls-2/"
     },
     "epic": {
       "slug": "f6229ed5b32d4e098b930103b6470b49",
@@ -20280,7 +20337,11 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-06-25"
+      "epic_id": "9bf3d3188d1e498095bc23c0955538d9",
+      "epic_rating": 4.81,
+      "sandbox_id": "973ce75835994a35ab386d56ed2dffa3",
+      "store_url": "https://store.epicgames.com/en-US/p/river-city-girls-2-77af3a",
+      "updated_at": "2026-07-02"
     },
     "hltb": {
       "found": true,
@@ -22872,6 +22933,47 @@
       "updated_at": "2026-05-07"
     }
   },
+  "Sophia the Traveler": {
+    "steam": {
+      "found": true,
+      "appid": 1602540,
+      "steamdb_rating": 72.74,
+      "pct": 73,
+      "rating": "Mostly Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1602540/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/1602540/",
+      "steamdb_url": "https://steamdb.info/app/1602540/",
+      "updated_at": "2026-07-02"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-07-02"
+    },
+    "epic": {
+      "slug": "sophia-the-traveler-android-d6e23d",
+      "free_dates": [
+        {
+          "start": "2026-07-02",
+          "end": ""
+        }
+      ],
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "store_url": "https://store.epicgames.com/en-US/p/sophia-the-traveler-android-d6e23d",
+      "updated_at": "2026-07-02"
+    },
+    "hltb": {
+      "found": true,
+      "hltb_id": 141859,
+      "main": 2.69,
+      "extra": 3.35,
+      "complete": 3.39,
+      "all_styles": 3.3,
+      "updated_at": "2026-07-02"
+    }
+  },
   "Sorry We're Closed": {
     "steam": {
       "found": true,
@@ -24696,6 +24798,34 @@
       "pvp": 4.35,
       "all_styles": 8.43,
       "updated_at": "2026-05-07"
+    }
+  },
+  "Tattoo Tycoon": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-07-02"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-07-02"
+    },
+    "epic": {
+      "slug": "tattoo-tycoon",
+      "free_dates": [
+        {
+          "start": "2026-07-09",
+          "end": "2026-07-16"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-07-02"
+    },
+    "hltb": {
+      "found": true,
+      "hltb_id": 154760,
+      "updated_at": "2026-07-02"
     }
   },
   "Teacup": {
