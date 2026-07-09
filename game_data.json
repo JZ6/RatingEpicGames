@@ -8386,6 +8386,38 @@
       "updated_at": "2026-05-07"
     }
   },
+  "Echo Generation: Midnight Edition": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-07-09"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-07-09"
+    },
+    "epic": {
+      "slug": "cbf3f5857ec241bab03dbb7eb03efad8",
+      "free_dates": [
+        {
+          "start": "2026-07-16",
+          "end": "2026-07-23"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-07-09"
+    },
+    "hltb": {
+      "found": true,
+      "hltb_id": 81126,
+      "main": 7.87,
+      "extra": 9.22,
+      "complete": 10.11,
+      "all_styles": 9.28,
+      "updated_at": "2026-07-09"
+    }
+  },
   "Electrician Simulator": {
     "steam": {
       "found": true,
@@ -15833,6 +15865,38 @@
       "updated_at": "2026-05-07"
     }
   },
+  "Luto": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-07-09"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-07-09"
+    },
+    "epic": {
+      "slug": "67459b70a96e40ca96d5676d8a4fd8c5",
+      "free_dates": [
+        {
+          "start": "2026-07-16",
+          "end": "2026-07-23"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-07-09"
+    },
+    "hltb": {
+      "found": true,
+      "hltb_id": 96004,
+      "main": 4.65,
+      "extra": 5.49,
+      "complete": 7.6,
+      "all_styles": 5.15,
+      "updated_at": "2026-07-09"
+    }
+  },
   "Machinarium": {
     "steam": {
       "found": true,
@@ -17680,12 +17744,23 @@
   },
   "Nova Lands": {
     "steam": {
-      "found": false,
-      "updated_at": "2026-07-02"
+      "found": true,
+      "updated_at": "2026-07-09",
+      "appid": 1501610,
+      "steamdb_rating": 85.85,
+      "pct": 86,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1501610/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/1501610/",
+      "steamdb_url": "https://steamdb.info/app/1501610/"
     },
     "metacritic": {
-      "found": false,
-      "updated_at": "2026-07-02"
+      "found": true,
+      "updated_at": "2026-07-09",
+      "score": 79,
+      "slug": "nova-lands-4d1788",
+      "source": "josephmate",
+      "url": "https://www.metacritic.com/game/nova-lands/"
     },
     "epic": {
       "slug": "acb83bd813054e599598de9e76f6d95d",
@@ -17698,7 +17773,11 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-07-02"
+      "epic_id": "e5da2c017d4d4afab9f4c56525b66100",
+      "epic_rating": 4.76,
+      "sandbox_id": "740ba4a6fbed4062a9c43d52c5996b0b",
+      "store_url": "https://store.epicgames.com/en-US/p/nova-lands-4d1788",
+      "updated_at": "2026-07-09"
     },
     "hltb": {
       "found": true,
@@ -19143,6 +19222,47 @@
       "coop": 23.63,
       "all_styles": 27.02,
       "updated_at": "2026-05-07"
+    }
+  },
+  "Princess Farmer": {
+    "steam": {
+      "found": true,
+      "appid": 1320490,
+      "steamdb_rating": 86.6,
+      "pct": 87,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1320490/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/1320490/",
+      "steamdb_url": "https://steamdb.info/app/1320490/",
+      "updated_at": "2026-07-09"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-07-09"
+    },
+    "epic": {
+      "slug": "princess-farmer-android-09215e",
+      "free_dates": [
+        {
+          "start": "2026-07-09",
+          "end": ""
+        }
+      ],
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "store_url": "https://store.epicgames.com/en-US/p/princess-farmer-android-09215e",
+      "updated_at": "2026-07-09"
+    },
+    "hltb": {
+      "found": true,
+      "hltb_id": 84031,
+      "main": 5.03,
+      "extra": 6.28,
+      "complete": 17.1,
+      "all_styles": 7.39,
+      "updated_at": "2026-07-09"
     }
   },
   "Prison Architect": {
@@ -24802,8 +24922,15 @@
   },
   "Tattoo Tycoon": {
     "steam": {
-      "found": false,
-      "updated_at": "2026-07-02"
+      "found": true,
+      "updated_at": "2026-07-09",
+      "appid": 2375260,
+      "steamdb_rating": 61.86,
+      "pct": 62,
+      "rating": "Mixed",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2375260/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/2375260/",
+      "steamdb_url": "https://steamdb.info/app/2375260/"
     },
     "metacritic": {
       "found": false,
@@ -24820,7 +24947,11 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-07-02"
+      "epic_id": "f247e0af293645bda266fa9957d82d62",
+      "epic_rating": 4.07,
+      "sandbox_id": "b0a2eaef9e8e4fca9d8f9d4aa26fed4d",
+      "store_url": "https://store.epicgames.com/en-US/p/tattoo-tycoon-b4352c",
+      "updated_at": "2026-07-09"
     },
     "hltb": {
       "found": true,
