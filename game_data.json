@@ -8388,8 +8388,15 @@
   },
   "Echo Generation: Midnight Edition": {
     "steam": {
-      "found": false,
-      "updated_at": "2026-07-09"
+      "found": true,
+      "updated_at": "2026-07-16",
+      "appid": 1072300,
+      "steamdb_rating": 83.88,
+      "pct": 84,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1072300/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/1072300/",
+      "steamdb_url": "https://steamdb.info/app/1072300/"
     },
     "metacritic": {
       "found": false,
@@ -8406,7 +8413,10 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-07-09"
+      "epic_id": "371545146a944478ad5a87f9b581ac29",
+      "sandbox_id": "2c198b4055e64df698944727dbb561ea",
+      "store_url": "https://store.epicgames.com/en-US/p/echo-generation-midnight-edition-069026",
+      "updated_at": "2026-07-16"
     },
     "hltb": {
       "found": true,
@@ -10513,6 +10523,38 @@
       "pvp": 2,
       "all_styles": 23.95,
       "updated_at": "2026-05-07"
+    }
+  },
+  "Foretales": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-07-16"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-07-16"
+    },
+    "epic": {
+      "slug": "a6dcabac79154e218bd3c7d4a8cad8a7",
+      "free_dates": [
+        {
+          "start": "2026-07-23",
+          "end": "2026-07-30"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-07-16"
+    },
+    "hltb": {
+      "found": true,
+      "hltb_id": 113315,
+      "main": 14.87,
+      "extra": 20.56,
+      "complete": 31.79,
+      "all_styles": 18.42,
+      "updated_at": "2026-07-16"
     }
   },
   "Fort Triumph": {
@@ -15867,12 +15909,23 @@
   },
   "Luto": {
     "steam": {
-      "found": false,
-      "updated_at": "2026-07-09"
+      "found": true,
+      "updated_at": "2026-07-16",
+      "appid": 1729740,
+      "steamdb_rating": 81.04,
+      "pct": 81,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1729740/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/1729740/",
+      "steamdb_url": "https://steamdb.info/app/1729740/"
     },
     "metacritic": {
-      "found": false,
-      "updated_at": "2026-07-09"
+      "found": true,
+      "updated_at": "2026-07-16",
+      "score": 79,
+      "slug": "luto-0a4ab3",
+      "source": "josephmate",
+      "url": "https://www.metacritic.com/game/luto/"
     },
     "epic": {
       "slug": "67459b70a96e40ca96d5676d8a4fd8c5",
@@ -15885,7 +15938,11 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-07-09"
+      "epic_id": "c27f2bb0dd9b4c4ca4973e653ab8a5be",
+      "epic_rating": 4.41,
+      "sandbox_id": "9f3ffc77b7264d63859bfd9bc935c9f8",
+      "store_url": "https://store.epicgames.com/en-US/p/luto-0a4ab3",
+      "updated_at": "2026-07-16"
     },
     "hltb": {
       "found": true,
@@ -26571,15 +26628,21 @@
         {
           "start": "2026-06-11",
           "end": "2026-06-18"
+        },
+        {
+          "start": "2026-07-16",
+          "end": ""
         }
       ],
       "platforms": [
+        "android",
+        "ios",
         "pc"
       ],
       "epic_id": "7f0ab2828f9743d0abc6612a11222fdf",
       "sandbox_id": "b002ccbe10f946f082a63bf85fa30558",
       "store_url": "https://store.epicgames.com/en-US/p/the-ouroboros-king-e1d547",
-      "updated_at": "2026-06-12"
+      "updated_at": "2026-07-16"
     },
     "hltb": {
       "found": true,
