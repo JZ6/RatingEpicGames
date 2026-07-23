@@ -10527,12 +10527,23 @@
   },
   "Foretales": {
     "steam": {
-      "found": false,
-      "updated_at": "2026-07-16"
+      "found": true,
+      "updated_at": "2026-07-23",
+      "appid": 1170080,
+      "steamdb_rating": 80.79,
+      "pct": 81,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1170080/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/1170080/",
+      "steamdb_url": "https://steamdb.info/app/1170080/"
     },
     "metacritic": {
-      "found": false,
-      "updated_at": "2026-07-16"
+      "found": true,
+      "updated_at": "2026-07-23",
+      "score": 74,
+      "slug": "foretales-d6c5bd",
+      "source": "josephmate",
+      "url": "https://www.metacritic.com/game/foretales/"
     },
     "epic": {
       "slug": "a6dcabac79154e218bd3c7d4a8cad8a7",
@@ -10543,9 +10554,15 @@
         }
       ],
       "platforms": [
+        "android",
+        "ios",
         "pc"
       ],
-      "updated_at": "2026-07-16"
+      "epic_id": "223c59e227e74e079a1bbe5a234b896f",
+      "epic_rating": 4.64,
+      "sandbox_id": "c5730ad3d7004a65a472a7699b88008a",
+      "store_url": "https://store.epicgames.com/en-US/p/foretales-d6c5bd",
+      "updated_at": "2026-07-23"
     },
     "hltb": {
       "found": true,
@@ -18277,6 +18294,38 @@
       "updated_at": "2026-05-07"
     }
   },
+  "OTXO": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-07-23"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-07-23"
+    },
+    "epic": {
+      "slug": "63e3482da69d4332bd73ce23706e78eb",
+      "free_dates": [
+        {
+          "start": "2026-07-30",
+          "end": "2026-08-06"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-07-23"
+    },
+    "hltb": {
+      "found": true,
+      "hltb_id": 127211,
+      "main": 10.04,
+      "extra": 15.4,
+      "complete": 27.88,
+      "all_styles": 14.02,
+      "updated_at": "2026-07-23"
+    }
+  },
   "Out of Line": {
     "steam": {
       "found": true,
@@ -22868,6 +22917,38 @@
       "complete": 27.04,
       "all_styles": 15.27,
       "updated_at": "2026-05-07"
+    }
+  },
+  "Sol Cesto": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-07-23"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-07-23"
+    },
+    "epic": {
+      "slug": "sol-cesto",
+      "free_dates": [
+        {
+          "start": "2026-07-30",
+          "end": "2026-08-06"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-07-23"
+    },
+    "hltb": {
+      "found": true,
+      "hltb_id": 156420,
+      "main": 9.08,
+      "extra": 13.19,
+      "complete": 23.45,
+      "all_styles": 15.07,
+      "updated_at": "2026-07-23"
     }
   },
   "Solitairica": {
