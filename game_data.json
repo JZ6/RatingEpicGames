@@ -2543,6 +2543,38 @@
       "updated_at": "2026-05-07"
     }
   },
+  "Beacon Pines": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-07-30"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-07-30"
+    },
+    "epic": {
+      "slug": "9e9a438c651a49799c3ddd94a0c3f4c0",
+      "free_dates": [
+        {
+          "start": "2026-08-06",
+          "end": "2026-08-13"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-07-30"
+    },
+    "hltb": {
+      "found": true,
+      "hltb_id": 94111,
+      "main": 5.59,
+      "extra": 6.23,
+      "complete": 6.69,
+      "all_styles": 6.3,
+      "updated_at": "2026-07-30"
+    }
+  },
   "Bear and Breakfast": {
     "steam": {
       "found": true,
@@ -17299,16 +17331,22 @@
         {
           "start": "2020-03-12",
           "end": ""
+        },
+        {
+          "start": "2026-07-30",
+          "end": ""
         }
       ],
       "platforms": [
+        "android",
+        "ios",
         "pc"
       ],
       "epic_id": "e33a567a8ce04ed5abc23d5e46a98087",
       "epic_rating": 4.57,
       "sandbox_id": "5645a537b6a44f6f82d122729f3253ed",
       "store_url": "https://store.epicgames.com/en-US/p/mutazione",
-      "updated_at": "2026-06-03"
+      "updated_at": "2026-07-30"
     },
     "hltb": {
       "found": true,
@@ -18296,12 +18334,23 @@
   },
   "OTXO": {
     "steam": {
-      "found": false,
-      "updated_at": "2026-07-23"
+      "found": true,
+      "updated_at": "2026-07-30",
+      "appid": 1608640,
+      "steamdb_rating": 89.42,
+      "pct": 89,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1608640/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/1608640/",
+      "steamdb_url": "https://steamdb.info/app/1608640/"
     },
     "metacritic": {
-      "found": false,
-      "updated_at": "2026-07-23"
+      "found": true,
+      "updated_at": "2026-07-30",
+      "score": 81,
+      "slug": "otxo-396b8b",
+      "source": "josephmate",
+      "url": "https://www.metacritic.com/game/otxo/"
     },
     "epic": {
       "slug": "63e3482da69d4332bd73ce23706e78eb",
@@ -18314,7 +18363,10 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-07-23"
+      "epic_id": "fb86769d4908427986ca9f7d94b581c2",
+      "sandbox_id": "dfe95c9009f548b0b167b3d65cc91979",
+      "store_url": "https://store.epicgames.com/en-US/p/otxo-396b8b",
+      "updated_at": "2026-07-30"
     },
     "hltb": {
       "found": true,
@@ -22921,8 +22973,15 @@
   },
   "Sol Cesto": {
     "steam": {
-      "found": false,
-      "updated_at": "2026-07-23"
+      "found": true,
+      "updated_at": "2026-07-30",
+      "appid": 2738490,
+      "steamdb_rating": 87.95,
+      "pct": 88,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2738490/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/2738490/",
+      "steamdb_url": "https://steamdb.info/app/2738490/"
     },
     "metacritic": {
       "found": false,
@@ -22939,7 +22998,10 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-07-23"
+      "epic_id": "c71375f1ac9444fcae1ca584a53ba6f0",
+      "sandbox_id": "ce5d3cf74f36450cb7136952dc5b520f",
+      "store_url": "https://store.epicgames.com/en-US/p/sol-cesto-e9b803",
+      "updated_at": "2026-07-30"
     },
     "hltb": {
       "found": true,
@@ -30012,6 +30074,10 @@
         {
           "start": "2025-12-26",
           "end": ""
+        },
+        {
+          "start": "2026-08-06",
+          "end": "2026-08-13"
         }
       ],
       "platforms": [
@@ -30021,7 +30087,7 @@
       "epic_rating": 4.02,
       "sandbox_id": "d5241c76f178492ea1540fce45616757",
       "store_url": "https://store.epicgames.com/en-US/p/we-were-here-together-6a6d66",
-      "updated_at": "2026-06-03"
+      "updated_at": "2026-07-30"
     },
     "hltb": {
       "found": true,
