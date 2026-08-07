@@ -362,6 +362,47 @@
       "updated_at": "2026-05-07"
     }
   },
+  "A Guidebook Of Babel": {
+    "steam": {
+      "found": true,
+      "appid": 1467920,
+      "steamdb_rating": 86.29,
+      "pct": 86,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1467920/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/1467920/",
+      "steamdb_url": "https://steamdb.info/app/1467920/",
+      "updated_at": "2026-08-07"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-08-07"
+    },
+    "epic": {
+      "slug": "a-guidebook-of-babel-android-381952",
+      "free_dates": [
+        {
+          "start": "2026-08-07",
+          "end": ""
+        }
+      ],
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "store_url": "https://store.epicgames.com/en-US/p/a-guidebook-of-babel-android-381952",
+      "updated_at": "2026-08-07"
+    },
+    "hltb": {
+      "found": true,
+      "hltb_id": 107720,
+      "main": 8.8,
+      "extra": 9.46,
+      "complete": 10.38,
+      "all_styles": 9.64,
+      "updated_at": "2026-08-07"
+    }
+  },
   "A Plague Tale: Innocence": {
     "steam": {
       "found": true,
@@ -2545,12 +2586,23 @@
   },
   "Beacon Pines": {
     "steam": {
-      "found": false,
-      "updated_at": "2026-07-30"
+      "found": true,
+      "updated_at": "2026-08-07",
+      "appid": 1269640,
+      "steamdb_rating": 93.84,
+      "pct": 94,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1269640/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/1269640/",
+      "steamdb_url": "https://steamdb.info/app/1269640/"
     },
     "metacritic": {
-      "found": false,
-      "updated_at": "2026-07-30"
+      "found": true,
+      "updated_at": "2026-08-07",
+      "score": 84,
+      "slug": "beacon-pines-629fc3",
+      "source": "josephmate",
+      "url": "https://www.metacritic.com/game/beacon-pines/"
     },
     "epic": {
       "slug": "9e9a438c651a49799c3ddd94a0c3f4c0",
@@ -2563,7 +2615,10 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-07-30"
+      "epic_id": "871cc4ff18444059890a4d28653a62d5",
+      "sandbox_id": "1c83ea77e736438f9852b31aeb4f7a20",
+      "store_url": "https://store.epicgames.com/en-US/p/beacon-pines-629fc3",
+      "updated_at": "2026-08-07"
     },
     "hltb": {
       "found": true,
@@ -4110,6 +4165,38 @@
       "complete": 89.8,
       "all_styles": 60.55,
       "updated_at": "2026-05-07"
+    }
+  },
+  "Caravan SandWitch": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-08-07"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-08-07"
+    },
+    "epic": {
+      "slug": "70e9a8a90305449a88a38b708399e605",
+      "free_dates": [
+        {
+          "start": "2026-08-13",
+          "end": "2026-08-20"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-08-07"
+    },
+    "hltb": {
+      "found": true,
+      "hltb_id": 151283,
+      "main": 6.74,
+      "extra": 9.08,
+      "complete": 10.21,
+      "all_styles": 9.19,
+      "updated_at": "2026-08-07"
     }
   },
   "Carcassonne": {
