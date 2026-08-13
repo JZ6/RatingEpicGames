@@ -2771,6 +2771,47 @@
       "updated_at": "2026-05-07"
     }
   },
+  "Beholder: Conductor": {
+    "steam": {
+      "found": true,
+      "appid": 2825530,
+      "steamdb_rating": 88.21,
+      "pct": 88,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2825530/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/2825530/",
+      "steamdb_url": "https://steamdb.info/app/2825530/",
+      "updated_at": "2026-08-13"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-08-13"
+    },
+    "epic": {
+      "slug": "beholder-conductor-android-fb38c4",
+      "free_dates": [
+        {
+          "start": "2026-08-13",
+          "end": ""
+        }
+      ],
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "store_url": "https://store.epicgames.com/en-US/p/beholder-conductor-android-fb38c4",
+      "updated_at": "2026-08-13"
+    },
+    "hltb": {
+      "found": true,
+      "hltb_id": 145870,
+      "main": 4.81,
+      "extra": 6.9,
+      "complete": 12.21,
+      "all_styles": 6.28,
+      "updated_at": "2026-08-13"
+    }
+  },
   "Bendy and the Ink Machine": {
     "steam": {
       "found": true,
@@ -4169,12 +4210,23 @@
   },
   "Caravan SandWitch": {
     "steam": {
-      "found": false,
-      "updated_at": "2026-08-07"
+      "found": true,
+      "updated_at": "2026-08-13",
+      "appid": 1582650,
+      "steamdb_rating": 83.12,
+      "pct": 83,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1582650/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/1582650/",
+      "steamdb_url": "https://steamdb.info/app/1582650/"
     },
     "metacritic": {
-      "found": false,
-      "updated_at": "2026-08-07"
+      "found": true,
+      "updated_at": "2026-08-13",
+      "score": 73,
+      "slug": "caravan-sandwitch-05ff58",
+      "source": "josephmate",
+      "url": "https://www.metacritic.com/game/caravan-sandwitch/"
     },
     "epic": {
       "slug": "70e9a8a90305449a88a38b708399e605",
@@ -4187,7 +4239,11 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-08-07"
+      "epic_id": "0e44600a079e419abbb291ccf5af9ee7",
+      "epic_rating": 4.45,
+      "sandbox_id": "45b137b2ecd14e01a54b52e575f1632d",
+      "store_url": "https://store.epicgames.com/en-US/p/caravan-sandwitch-05ff58",
+      "updated_at": "2026-08-13"
     },
     "hltb": {
       "found": true,
@@ -4247,6 +4303,33 @@
       "pvp": 5,
       "all_styles": 5.59,
       "updated_at": "2026-05-07"
+    }
+  },
+  "Cardpocalypse Standard Edition": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-08-13"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-08-13"
+    },
+    "epic": {
+      "slug": "cardpocalypse/home",
+      "free_dates": [
+        {
+          "start": "2026-08-20",
+          "end": "2026-08-27"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-08-13"
+    },
+    "hltb": {
+      "found": false,
+      "updated_at": "2026-08-13"
     }
   },
   "Cassette Beasts": {
@@ -8785,6 +8868,33 @@
       "coop": 47.33,
       "all_styles": 69.6,
       "updated_at": "2026-05-07"
+    }
+  },
+  "Epic Mage Bundle": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-08-13"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-08-13"
+    },
+    "epic": {
+      "slug": "epic-mage-bundle",
+      "free_dates": [
+        {
+          "start": "2026-08-20",
+          "end": "2026-08-27"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-08-13"
+    },
+    "hltb": {
+      "found": false,
+      "updated_at": "2026-08-13"
     }
   },
   "Epistory: Typing Chronicles": {
