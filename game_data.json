@@ -3755,6 +3755,10 @@
         {
           "start": "2023-04-27",
           "end": ""
+        },
+        {
+          "start": "2026-08-27",
+          "end": "2026-09-03"
         }
       ],
       "platforms": [
@@ -3764,7 +3768,7 @@
       "epic_rating": 4.43,
       "sandbox_id": "08ae29e4f70a4b62aa055e383381aa82",
       "store_url": "https://store.epicgames.com/en-US/p/breathedge",
-      "updated_at": "2026-06-03"
+      "updated_at": "2026-08-20"
     },
     "hltb": {
       "found": true,
@@ -4234,16 +4238,22 @@
         {
           "start": "2026-08-13",
           "end": "2026-08-20"
+        },
+        {
+          "start": "2026-08-20",
+          "end": ""
         }
       ],
       "platforms": [
+        "android",
+        "ios",
         "pc"
       ],
       "epic_id": "0e44600a079e419abbb291ccf5af9ee7",
       "epic_rating": 4.45,
       "sandbox_id": "45b137b2ecd14e01a54b52e575f1632d",
       "store_url": "https://store.epicgames.com/en-US/p/caravan-sandwitch-05ff58",
-      "updated_at": "2026-08-13"
+      "updated_at": "2026-08-20"
     },
     "hltb": {
       "found": true,
@@ -4325,7 +4335,10 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-08-13"
+      "epic_id": "b467b7d3570e44c0b84e59475f4a5636",
+      "sandbox_id": "2bfd5ca43ef443739ada168e017e1b78",
+      "store_url": "https://store.epicgames.com/en-US/p/cardpocalypse",
+      "updated_at": "2026-08-20"
     },
     "hltb": {
       "found": false,
@@ -8890,7 +8903,11 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-08-13"
+      "epic_id": "a802acab90af4a07952a07a9fa677f2f",
+      "epic_rating": 4.34,
+      "sandbox_id": "72520902fc594621b6daa5a6217b4ee7",
+      "store_url": "https://store.epicgames.com/en-US/p/albion-online-7eb24d",
+      "updated_at": "2026-08-20"
     },
     "hltb": {
       "found": false,
@@ -20731,6 +20748,37 @@
       "pvp": 58.24,
       "all_styles": 7.57,
       "updated_at": "2026-05-07"
+    }
+  },
+  "Rival Stars Horse Racing : Desktop Edition": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-08-20"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-08-20"
+    },
+    "epic": {
+      "slug": "c27af3c6ec3a47afb720e580138de63e",
+      "free_dates": [
+        {
+          "start": "2026-08-27",
+          "end": "2026-09-03"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-08-20"
+    },
+    "hltb": {
+      "found": true,
+      "hltb_id": 80453,
+      "extra": 33.18,
+      "complete": 106.5,
+      "all_styles": 48.49,
+      "updated_at": "2026-08-20"
     }
   },
   "River City Girls": {
