@@ -1075,6 +1075,29 @@
       "updated_at": "2026-06-04"
     }
   },
+  "Alone With You": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-08-28"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-08-28"
+    },
+    "epic": {
+      "slug": "68a0e4e0a68d42ffba405593a89c55ba",
+      "free_dates": [
+        {
+          "start": "2026-09-03",
+          "end": "2026-09-10"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-08-28"
+    }
+  },
   "Amnesia Rebirth": {
     "steam": {
       "found": true,
@@ -8048,15 +8071,21 @@
         {
           "start": "2026-05-21",
           "end": ""
+        },
+        {
+          "start": "2026-08-28",
+          "end": ""
         }
       ],
       "platforms": [
+        "android",
+        "ios",
         "pc"
       ],
       "epic_id": "cd37ebd7ce804df9b51b84578e631b8a",
       "sandbox_id": "d5241c76f178492ea1540fce45616757",
       "store_url": "https://store.epicgames.com/en-US/p/down-in-bermuda",
-      "updated_at": "2026-06-03"
+      "updated_at": "2026-08-28"
     },
     "hltb": {
       "found": true,
@@ -20770,7 +20799,10 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-08-20"
+      "epic_id": "8f1fcf01e32e4fd4b2ae0a9737992760",
+      "sandbox_id": "f570d80aa4fe463ca53c4410d1c75e1e",
+      "store_url": "https://store.epicgames.com/en-US/p/rival-stars-horse-racing-dd09de",
+      "updated_at": "2026-08-28"
     },
     "hltb": {
       "found": true,
