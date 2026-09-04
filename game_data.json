@@ -1077,8 +1077,15 @@
   },
   "Alone With You": {
     "steam": {
-      "found": false,
-      "updated_at": "2026-08-28"
+      "found": true,
+      "updated_at": "2026-09-04",
+      "appid": 564940,
+      "steamdb_rating": 72.63,
+      "pct": 73,
+      "rating": "Mostly Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/564940/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/564940/",
+      "steamdb_url": "https://steamdb.info/app/564940/"
     },
     "metacritic": {
       "found": false,
@@ -1095,7 +1102,10 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-08-28"
+      "epic_id": "b8cc76ce7d6645f0a282b843a072cc78",
+      "sandbox_id": "cb87ac984c3c4c19b0a4e3e89048f187",
+      "store_url": "https://store.epicgames.com/en-US/p/alone-with-you-028a15",
+      "updated_at": "2026-09-04"
     }
   },
   "Amnesia Rebirth": {
@@ -2044,6 +2054,29 @@
       "coop": 38,
       "all_styles": 33.97,
       "updated_at": "2026-05-07"
+    }
+  },
+  "Astral Ascent": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-09-04"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-09-04"
+    },
+    "epic": {
+      "slug": "d72ccf025e574bb4a725e3079ea34081",
+      "free_dates": [
+        {
+          "start": "2026-09-10",
+          "end": "2026-09-17"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-09-04"
     }
   },
   "Astrea Six Sided Oracles": {
@@ -9191,6 +9224,42 @@
       "updated_at": "2026-05-07"
     }
   },
+  "Evan's Remains": {
+    "steam": {
+      "found": true,
+      "appid": 1110050,
+      "steamdb_rating": 83.85,
+      "pct": 84,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1110050/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/1110050/",
+      "steamdb_url": "https://steamdb.info/app/1110050/",
+      "updated_at": "2026-09-04"
+    },
+    "metacritic": {
+      "found": true,
+      "score": 75,
+      "slug": "evans-remains-android-ddf101",
+      "source": "josephmate",
+      "updated_at": "2026-09-04",
+      "url": "https://www.metacritic.com/game/evans-remains/"
+    },
+    "epic": {
+      "slug": "evans-remains-android-ddf101",
+      "free_dates": [
+        {
+          "start": "2026-09-03",
+          "end": ""
+        }
+      ],
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "store_url": "https://store.epicgames.com/en-US/p/evans-remains-android-ddf101",
+      "updated_at": "2026-09-04"
+    }
+  },
   "Everything": {
     "steam": {
       "found": true,
@@ -16154,6 +16223,29 @@
       "complete": 7.25,
       "all_styles": 1.1,
       "updated_at": "2026-05-07"
+    }
+  },
+  "Luftrausers": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-09-04"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-09-04"
+    },
+    "epic": {
+      "slug": "luftrausers",
+      "free_dates": [
+        {
+          "start": "2026-09-10",
+          "end": "2026-09-17"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-09-04"
     }
   },
   "LumbearJack": {
