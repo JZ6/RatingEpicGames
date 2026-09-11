@@ -1078,9 +1078,9 @@
   "Alone With You": {
     "steam": {
       "found": true,
-      "updated_at": "2026-09-04",
+      "updated_at": "2026-09-11",
       "appid": 564940,
-      "steamdb_rating": 72.63,
+      "steamdb_rating": 72.79,
       "pct": 73,
       "rating": "Mostly Positive",
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/564940/capsule_184x69.jpg",
@@ -1097,15 +1097,19 @@
         {
           "start": "2026-09-03",
           "end": "2026-09-10"
+        },
+        {
+          "start": "2026-09-10",
+          "end": ""
         }
       ],
       "platforms": [
+        "android",
+        "ios",
         "pc"
       ],
-      "epic_id": "b8cc76ce7d6645f0a282b843a072cc78",
-      "sandbox_id": "cb87ac984c3c4c19b0a4e3e89048f187",
-      "store_url": "https://store.epicgames.com/en-US/p/alone-with-you-028a15",
-      "updated_at": "2026-09-04"
+      "store_url": "https://store.epicgames.com/en-US/p/alone-with-you-android-52b29b",
+      "updated_at": "2026-09-11"
     }
   },
   "Amnesia Rebirth": {
@@ -2058,12 +2062,23 @@
   },
   "Astral Ascent": {
     "steam": {
-      "found": false,
-      "updated_at": "2026-09-04"
+      "found": true,
+      "updated_at": "2026-09-11",
+      "appid": 1280930,
+      "steamdb_rating": 91.7,
+      "pct": 92,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1280930/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/1280930/",
+      "steamdb_url": "https://steamdb.info/app/1280930/"
     },
     "metacritic": {
-      "found": false,
-      "updated_at": "2026-09-04"
+      "found": true,
+      "updated_at": "2026-09-11",
+      "score": 86,
+      "slug": "astral-ascent-b33bc2",
+      "source": "josephmate",
+      "url": "https://www.metacritic.com/game/astral-ascent/"
     },
     "epic": {
       "slug": "d72ccf025e574bb4a725e3079ea34081",
@@ -2076,7 +2091,10 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-09-04"
+      "epic_id": "e9bb092228f544c582e2c9395fae96f3",
+      "sandbox_id": "0cb5817d554740e8bedf9ceea32522bd",
+      "store_url": "https://store.epicgames.com/en-US/p/astral-ascent-b33bc2",
+      "updated_at": "2026-09-11"
     }
   },
   "Astrea Six Sided Oracles": {
@@ -16227,12 +16245,23 @@
   },
   "Luftrausers": {
     "steam": {
-      "found": false,
-      "updated_at": "2026-09-04"
+      "found": true,
+      "updated_at": "2026-09-11",
+      "appid": 233150,
+      "steamdb_rating": 87.36,
+      "pct": 87,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/233150/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/233150/",
+      "steamdb_url": "https://steamdb.info/app/233150/"
     },
     "metacritic": {
-      "found": false,
-      "updated_at": "2026-09-04"
+      "found": true,
+      "updated_at": "2026-09-11",
+      "score": 80,
+      "slug": "luftrausers-51e5e9",
+      "source": "josephmate",
+      "url": "https://www.metacritic.com/game/luftrausers/"
     },
     "epic": {
       "slug": "luftrausers",
@@ -16245,7 +16274,10 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-09-04"
+      "epic_id": "c76046dddcdb43619c33ce0395941033",
+      "sandbox_id": "639daf403b554ee9b02eee5eedafc302",
+      "store_url": "https://store.epicgames.com/en-US/p/luftrausers-51e5e9",
+      "updated_at": "2026-09-11"
     }
   },
   "LumbearJack": {
@@ -16964,6 +16996,29 @@
       "pvp": 90.73,
       "all_styles": 1.43,
       "updated_at": "2026-05-07"
+    }
+  },
+  "Mindcop": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-09-11"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-09-11"
+    },
+    "epic": {
+      "slug": "1513de80f23f42e584540be749826057",
+      "free_dates": [
+        {
+          "start": "2026-09-17",
+          "end": "2026-09-24"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-09-11"
     }
   },
   "Minit": {
@@ -22783,6 +22838,29 @@
       "complete": 15.46,
       "all_styles": 14.21,
       "updated_at": "2026-05-07"
+    }
+  },
+  "Shogun Showdown": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-09-11"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-09-11"
+    },
+    "epic": {
+      "slug": "shogun-showdown",
+      "free_dates": [
+        {
+          "start": "2026-09-17",
+          "end": "2026-09-24"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-09-11"
     }
   },
   "Shop Titans - Exclusive Giveaway Package": {
