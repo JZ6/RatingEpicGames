@@ -2123,6 +2123,10 @@
         {
           "start": "2024-12-20",
           "end": ""
+        },
+        {
+          "start": "2026-09-24",
+          "end": "2026-10-01"
         }
       ],
       "platforms": [
@@ -2132,7 +2136,7 @@
       "epic_rating": 4.66,
       "sandbox_id": "a940fa38f001486a9884640924119576",
       "store_url": "https://store.epicgames.com/en-US/p/astrea-six-sided-oracles-33c949",
-      "updated_at": "2026-06-03"
+      "updated_at": "2026-09-18"
     },
     "hltb": {
       "found": true,
@@ -16712,6 +16716,29 @@
       "updated_at": "2026-05-01"
     }
   },
+  "Mechabellum": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-09-18"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-09-18"
+    },
+    "epic": {
+      "slug": "6a87570c28144b9cb50eb0ba46a7e19e",
+      "free_dates": [
+        {
+          "start": "2026-09-24",
+          "end": "2026-10-01"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-09-18"
+    }
+  },
   "Melvor Idle": {
     "steam": {
       "found": true,
@@ -17000,12 +17027,23 @@
   },
   "Mindcop": {
     "steam": {
-      "found": false,
-      "updated_at": "2026-09-11"
+      "found": true,
+      "updated_at": "2026-09-18",
+      "appid": 1517180,
+      "steamdb_rating": 86.92,
+      "pct": 87,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1517180/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/1517180/",
+      "steamdb_url": "https://steamdb.info/app/1517180/"
     },
     "metacritic": {
-      "found": false,
-      "updated_at": "2026-09-11"
+      "found": true,
+      "updated_at": "2026-09-18",
+      "score": 87,
+      "slug": "mindcop-78e6c1",
+      "source": "josephmate",
+      "url": "https://www.metacritic.com/game/mindcop/"
     },
     "epic": {
       "slug": "1513de80f23f42e584540be749826057",
@@ -17016,9 +17054,14 @@
         }
       ],
       "platforms": [
+        "android",
+        "ios",
         "pc"
       ],
-      "updated_at": "2026-09-11"
+      "epic_id": "8a20c6c8d5b5417e800c687e9d72013e",
+      "sandbox_id": "f20a4eda0f2d486ea73cab8af1224e31",
+      "store_url": "https://store.epicgames.com/en-US/p/mindcop-78e6c1",
+      "updated_at": "2026-09-18"
     }
   },
   "Minit": {
@@ -22842,12 +22885,23 @@
   },
   "Shogun Showdown": {
     "steam": {
-      "found": false,
-      "updated_at": "2026-09-11"
+      "found": true,
+      "updated_at": "2026-09-18",
+      "appid": 2084000,
+      "steamdb_rating": 92.05,
+      "pct": 92,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2084000/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/2084000/",
+      "steamdb_url": "https://steamdb.info/app/2084000/"
     },
     "metacritic": {
-      "found": false,
-      "updated_at": "2026-09-11"
+      "found": true,
+      "updated_at": "2026-09-18",
+      "score": 88,
+      "slug": "shogun-showdown-61832d",
+      "source": "josephmate",
+      "url": "https://www.metacritic.com/game/shogun-showdown/"
     },
     "epic": {
       "slug": "shogun-showdown",
@@ -22860,7 +22914,10 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-09-11"
+      "epic_id": "b9ff3f98367a45cdac289dff6683a2bc",
+      "sandbox_id": "59ff4d481277487d8c073166ba7612d3",
+      "store_url": "https://store.epicgames.com/en-US/p/shogun-showdown-61832d",
+      "updated_at": "2026-09-18"
     }
   },
   "Shop Titans - Exclusive Giveaway Package": {
