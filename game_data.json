@@ -4057,6 +4057,29 @@
       "updated_at": "2026-05-07"
     }
   },
+  "BURIED STARS": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-09-25"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-09-25"
+    },
+    "epic": {
+      "slug": "buried-stars",
+      "free_dates": [
+        {
+          "start": "2026-10-01",
+          "end": "2026-10-08"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-09-25"
+    }
+  },
   "Bus Simulator 21 Next Stop": {
     "steam": {
       "found": true,
@@ -4391,6 +4414,38 @@
       "pvp": 5,
       "all_styles": 5.59,
       "updated_at": "2026-05-07"
+    }
+  },
+  "Cardpocalypse": {
+    "steam": {
+      "found": true,
+      "appid": 904400,
+      "steamdb_rating": 79.51,
+      "pct": 80,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/904400/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/904400/",
+      "steamdb_url": "https://steamdb.info/app/904400/",
+      "updated_at": "2026-09-25"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-09-25"
+    },
+    "epic": {
+      "slug": "cardpocalypse-android-3f99a7",
+      "free_dates": [
+        {
+          "start": "2026-09-24",
+          "end": ""
+        }
+      ],
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "store_url": "https://store.epicgames.com/en-US/p/cardpocalypse-android-3f99a7",
+      "updated_at": "2026-09-25"
     }
   },
   "Cardpocalypse Standard Edition": {
@@ -16718,8 +16773,15 @@
   },
   "Mechabellum": {
     "steam": {
-      "found": false,
-      "updated_at": "2026-09-18"
+      "found": true,
+      "updated_at": "2026-09-25",
+      "appid": 669330,
+      "steamdb_rating": 81.98,
+      "pct": 82,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/669330/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/669330/",
+      "steamdb_url": "https://steamdb.info/app/669330/"
     },
     "metacritic": {
       "found": false,
@@ -16736,7 +16798,10 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-09-18"
+      "epic_id": "6d99eae44d724baf84d6261a7a0f05d2",
+      "sandbox_id": "36074aa6badf45698cced1a44e837fa2",
+      "store_url": "https://store.epicgames.com/en-US/p/mechabellum-88a843",
+      "updated_at": "2026-09-25"
     }
   },
   "Melvor Idle": {
@@ -25477,6 +25542,29 @@
       "complete": 34.09,
       "all_styles": 24.2,
       "updated_at": "2026-05-07"
+    }
+  },
+  "System Shock 2: 25th Anniversary Remaster": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-09-25"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-09-25"
+    },
+    "epic": {
+      "slug": "system-shock-2-25th-anniversary-remaster",
+      "free_dates": [
+        {
+          "start": "2026-10-01",
+          "end": "2026-10-08"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-09-25"
     }
   },
   "Tacoma": {
