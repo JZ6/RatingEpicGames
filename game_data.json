@@ -3858,6 +3858,38 @@
       "updated_at": "2026-05-07"
     }
   },
+  "Bridge Constructor Studio": {
+    "steam": {
+      "found": true,
+      "appid": 3473610,
+      "steamdb_rating": 77.34,
+      "pct": 77,
+      "rating": "Mostly Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3473610/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/3473610/",
+      "steamdb_url": "https://steamdb.info/app/3473610/",
+      "updated_at": "2026-10-02"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-10-02"
+    },
+    "epic": {
+      "slug": "bridge-constructor-studio-android-c42687",
+      "free_dates": [
+        {
+          "start": "2026-10-01",
+          "end": ""
+        }
+      ],
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "store_url": "https://store.epicgames.com/en-US/p/bridge-constructor-studio-android-c42687",
+      "updated_at": "2026-10-02"
+    }
+  },
   "Bridge Constructor: The Walking Dead": {
     "steam": {
       "found": true,
@@ -4059,12 +4091,23 @@
   },
   "BURIED STARS": {
     "steam": {
-      "found": false,
-      "updated_at": "2026-09-25"
+      "found": true,
+      "updated_at": "2026-10-02",
+      "appid": 1025960,
+      "steamdb_rating": 80.3,
+      "pct": 80,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1025960/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/1025960/",
+      "steamdb_url": "https://steamdb.info/app/1025960/"
     },
     "metacritic": {
-      "found": false,
-      "updated_at": "2026-09-25"
+      "found": true,
+      "updated_at": "2026-10-02",
+      "score": 83,
+      "slug": "buried-stars-d7c88c",
+      "source": "josephmate",
+      "url": "https://www.metacritic.com/game/buried-stars/"
     },
     "epic": {
       "slug": "buried-stars",
@@ -4077,7 +4120,10 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-09-25"
+      "epic_id": "af4c34934afe4db0870b8a1d82dceb94",
+      "sandbox_id": "9bd512d68e3143909842932ac45a4182",
+      "store_url": "https://store.epicgames.com/en-US/p/buried-stars-d7c88c",
+      "updated_at": "2026-10-02"
     }
   },
   "Bus Simulator 21 Next Stop": {
@@ -18923,6 +18969,29 @@
       "updated_at": "2026-05-07"
     }
   },
+  "Out of Sight": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-10-02"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-10-02"
+    },
+    "epic": {
+      "slug": "f350878fcb5242d6851cfe2fa1316e76",
+      "free_dates": [
+        {
+          "start": "2026-10-08",
+          "end": "2026-10-15"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-10-02"
+    }
+  },
   "Out There - Omega Edition": {
     "steam": {
       "found": true,
@@ -25546,12 +25615,23 @@
   },
   "System Shock 2: 25th Anniversary Remaster": {
     "steam": {
-      "found": false,
-      "updated_at": "2026-09-25"
+      "found": true,
+      "updated_at": "2026-10-02",
+      "appid": 866570,
+      "steamdb_rating": 83.99,
+      "pct": 84,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/866570/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/866570/",
+      "steamdb_url": "https://steamdb.info/app/866570/"
     },
     "metacritic": {
-      "found": false,
-      "updated_at": "2026-09-25"
+      "found": true,
+      "updated_at": "2026-10-02",
+      "score": 84,
+      "slug": "system-shock-2-25th-anniversary-remaster-cb94d9",
+      "source": "josephmate",
+      "url": "https://www.metacritic.com/game/system-shock-2-25th-anniversary-remaster/"
     },
     "epic": {
       "slug": "system-shock-2-25th-anniversary-remaster",
@@ -25564,7 +25644,11 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-09-25"
+      "epic_id": "7ae00c3e89174012b175cc73b4737723",
+      "epic_rating": 4.8,
+      "sandbox_id": "a90f2381d7aa48c09b4080515a9541cd",
+      "store_url": "https://store.epicgames.com/en-US/p/system-shock-2-25th-anniversary-remaster-cb94d9",
+      "updated_at": "2026-10-02"
     }
   },
   "Tacoma": {
@@ -25877,6 +25961,29 @@
       "complete": 33.45,
       "all_styles": 4.27,
       "updated_at": "2026-05-07"
+    }
+  },
+  "TerraScape": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-10-02"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-10-02"
+    },
+    "epic": {
+      "slug": "f229ed53ddba40788e0ab62978e9eaf9",
+      "free_dates": [
+        {
+          "start": "2026-10-08",
+          "end": "2026-10-15"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-10-02"
     }
   },
   "TerraTech": {
