@@ -785,6 +785,46 @@
       "updated_at": "2026-05-07"
     }
   },
+  "Agent A: A puzzle in disguise": {
+    "steam": {
+      "found": true,
+      "appid": 801480,
+      "steamdb_rating": 92.01,
+      "pct": 92,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/801480/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/801480/",
+      "steamdb_url": "https://steamdb.info/app/801480/",
+      "updated_at": "2026-10-09"
+    },
+    "metacritic": {
+      "found": true,
+      "score": 79,
+      "slug": "agent-a-a-puzzle-in-disguise-android-897342",
+      "source": "josephmate",
+      "updated_at": "2026-10-09",
+      "url": "https://www.metacritic.com/game/agent-a-a-puzzle-in-disguise/"
+    },
+    "epic": {
+      "slug": "agent-a-a-puzzle-in-disguise-android-897342",
+      "free_dates": [
+        {
+          "start": "2026-10-09",
+          "end": ""
+        },
+        {
+          "start": "2026-10-15",
+          "end": "2026-10-22"
+        }
+      ],
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "store_url": "https://store.epicgames.com/en-US/p/agent-a-a-puzzle-in-disguise-android-897342",
+      "updated_at": "2026-10-09"
+    }
+  },
   "Alan Wake": {
     "steam": {
       "found": true,
@@ -2428,6 +2468,29 @@
       "complete": 57.89,
       "all_styles": 38.98,
       "updated_at": "2026-05-07"
+    }
+  },
+  "Bad Cheese": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-10-09"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-10-09"
+    },
+    "epic": {
+      "slug": "ae5d8fc5541f42eea105f64121dba382",
+      "free_dates": [
+        {
+          "start": "2026-10-15",
+          "end": "2026-10-22"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-10-09"
     }
   },
   "Bad North: Jotunn Edition": {
@@ -18971,12 +19034,23 @@
   },
   "Out of Sight": {
     "steam": {
-      "found": false,
-      "updated_at": "2026-10-02"
+      "found": true,
+      "updated_at": "2026-10-09",
+      "appid": 2526310,
+      "steamdb_rating": 89.26,
+      "pct": 89,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2526310/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/2526310/",
+      "steamdb_url": "https://steamdb.info/app/2526310/"
     },
     "metacritic": {
-      "found": false,
-      "updated_at": "2026-10-02"
+      "found": true,
+      "updated_at": "2026-10-09",
+      "score": 80,
+      "slug": "out-of-sight-b96ca8",
+      "source": "josephmate",
+      "url": "https://www.metacritic.com/game/out-of-sight/"
     },
     "epic": {
       "slug": "f350878fcb5242d6851cfe2fa1316e76",
@@ -18989,7 +19063,10 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-10-02"
+      "epic_id": "cb733f3432db46bca94965b422c33ede",
+      "sandbox_id": "436099305a2249a8bbe4d9113fc41d53",
+      "store_url": "https://store.epicgames.com/en-US/p/out-of-sight-b96ca8",
+      "updated_at": "2026-10-09"
     }
   },
   "Out There - Omega Edition": {
@@ -25965,8 +26042,15 @@
   },
   "TerraScape": {
     "steam": {
-      "found": false,
-      "updated_at": "2026-10-02"
+      "found": true,
+      "updated_at": "2026-10-09",
+      "appid": 2290000,
+      "steamdb_rating": 84.85,
+      "pct": 85,
+      "rating": "Very Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2290000/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/2290000/",
+      "steamdb_url": "https://steamdb.info/app/2290000/"
     },
     "metacritic": {
       "found": false,
@@ -25983,7 +26067,10 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-10-02"
+      "epic_id": "af6b823b8698465f9aedc3bddf2e8686",
+      "sandbox_id": "bfb80547289b477193ce3b14d83cd292",
+      "store_url": "https://store.epicgames.com/en-US/p/terrascape-2b12b1",
+      "updated_at": "2026-10-09"
     }
   },
   "TerraTech": {
@@ -26204,16 +26291,22 @@
         {
           "start": "2024-04-18",
           "end": ""
+        },
+        {
+          "start": "2026-10-09",
+          "end": ""
         }
       ],
       "platforms": [
+        "android",
+        "ios",
         "pc"
       ],
       "epic_id": "678a066ee1ae4ef4872eccea24833726",
       "epic_rating": 4.39,
       "sandbox_id": "a1f2a672b08f45d28bb6b65eef6ffe41",
       "store_url": "https://store.epicgames.com/en-US/p/the-big-con",
-      "updated_at": "2026-06-03"
+      "updated_at": "2026-10-09"
     },
     "hltb": {
       "found": true,
