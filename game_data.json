@@ -13211,9 +13211,14 @@
         }
       ],
       "platforms": [
+        "android",
+        "ios",
         "pc"
       ],
-      "updated_at": "2026-10-16"
+      "epic_id": "06190191cede42afb633fe89ef08c27e",
+      "sandbox_id": "c7e46cce751b40b6937e878abd0fc531",
+      "store_url": "https://store.epicgames.com/en-US/p/home-19212a",
+      "updated_at": "2026-10-23"
     }
   },
   "Homeworld Remastered Collection": {
@@ -23453,12 +23458,23 @@
   },
   "Sker Ritual": {
     "steam": {
-      "found": false,
-      "updated_at": "2026-10-16"
+      "found": true,
+      "updated_at": "2026-10-23",
+      "appid": 1492070,
+      "steamdb_rating": 79.08,
+      "pct": 79,
+      "rating": "Mostly Positive",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1492070/capsule_184x69.jpg",
+      "steam_url": "https://store.steampowered.com/app/1492070/",
+      "steamdb_url": "https://steamdb.info/app/1492070/"
     },
     "metacritic": {
-      "found": false,
-      "updated_at": "2026-10-16"
+      "found": true,
+      "updated_at": "2026-10-23",
+      "score": 55,
+      "slug": "sker-ritual-aac702",
+      "source": "josephmate",
+      "url": "https://www.metacritic.com/game/sker-ritual/"
     },
     "epic": {
       "slug": "8dbc8d70481d4c0b8412d3aec76a35a1",
@@ -23471,7 +23487,10 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-10-16"
+      "epic_id": "6aab3ddef4f84fbc9dd81c60f9d8549c",
+      "sandbox_id": "156c17659ff0468bb533eba104a1f19f",
+      "store_url": "https://store.epicgames.com/en-US/p/sker-ritual-aac702",
+      "updated_at": "2026-10-23"
     }
   },
   "Skul: The Hero Slayer": {
@@ -24098,6 +24117,10 @@
         {
           "start": "2025-12-21",
           "end": ""
+        },
+        {
+          "start": "2026-10-29",
+          "end": "2026-11-05"
         }
       ],
       "platforms": [
@@ -24107,7 +24130,7 @@
       "epic_rating": 4.5,
       "sandbox_id": "d5241c76f178492ea1540fce45616757",
       "store_url": "https://store.epicgames.com/en-US/p/sorry-were-closed-724c86",
-      "updated_at": "2026-06-03"
+      "updated_at": "2026-10-23"
     },
     "hltb": {
       "found": true,
