@@ -10874,6 +10874,29 @@
       "updated_at": "2026-05-07"
     }
   },
+  "Flotsam": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-10-30"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-10-30"
+    },
+    "epic": {
+      "slug": "7ca01ab906ad4eff92d4ed1efa5fbfcb",
+      "free_dates": [
+        {
+          "start": "2026-11-05",
+          "end": "2026-11-12"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-10-30"
+    }
+  },
   "Football Manager 2020": {
     "steam": {
       "found": true,
@@ -11314,6 +11337,31 @@
       "complete": 54.94,
       "all_styles": 32.74,
       "updated_at": "2026-05-07"
+    }
+  },
+  "Galaxy Kart": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-10-30"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-10-30"
+    },
+    "epic": {
+      "slug": "galaxy-kart-android-135821",
+      "free_dates": [
+        {
+          "start": "2026-10-29",
+          "end": ""
+        }
+      ],
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "store_url": "https://store.epicgames.com/en-US/p/galaxy-kart-android-135821",
+      "updated_at": "2026-10-30"
     }
   },
   "Gamedec: Definitive Edition": {
@@ -13907,6 +13955,10 @@
         {
           "start": "2026-03-05",
           "end": ""
+        },
+        {
+          "start": "2026-11-05",
+          "end": "2026-11-12"
         }
       ],
       "platforms": [
@@ -13916,7 +13968,7 @@
       "epic_rating": 4.02,
       "sandbox_id": "7e508f543b05465abe3a935960eb70ac",
       "store_url": "https://store.epicgames.com/en-US/p/idle-champions-of-the-forgotten-realms",
-      "updated_at": "2026-06-03"
+      "updated_at": "2026-10-30"
     },
     "hltb": {
       "found": true,
