@@ -4954,6 +4954,35 @@
       "updated_at": "2026-05-07"
     }
   },
+  "Chants of Sennaar": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-11-06"
+    },
+    "metacritic": {
+      "found": true,
+      "score": 86,
+      "slug": "chants-of-sennaar-android-681b80",
+      "source": "josephmate",
+      "updated_at": "2026-11-06",
+      "url": "https://www.metacritic.com/game/chants-of-sennaar/"
+    },
+    "epic": {
+      "slug": "chants-of-sennaar-android-681b80",
+      "free_dates": [
+        {
+          "start": "2026-11-06",
+          "end": ""
+        }
+      ],
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "store_url": "https://store.epicgames.com/en-US/p/chants-of-sennaar-android-681b80",
+      "updated_at": "2026-11-06"
+    }
+  },
   "Chess Ultra": {
     "steam": {
       "found": true,
@@ -10894,7 +10923,10 @@
       "platforms": [
         "pc"
       ],
-      "updated_at": "2026-10-30"
+      "epic_id": "3be0a0d8479946d78f60d90c9442a0b4",
+      "sandbox_id": "27e33143fc9e4de8bbf76782292933d4",
+      "store_url": "https://store.epicgames.com/en-US/p/flotsam-266287",
+      "updated_at": "2026-11-06"
     }
   },
   "Football Manager 2020": {
@@ -15532,6 +15564,29 @@
       "coop": 10,
       "all_styles": 22.2,
       "updated_at": "2026-05-07"
+    }
+  },
+  "Knightica": {
+    "steam": {
+      "found": false,
+      "updated_at": "2026-11-06"
+    },
+    "metacritic": {
+      "found": false,
+      "updated_at": "2026-11-06"
+    },
+    "epic": {
+      "slug": "72b46f5d95624fd5b7e7d81b7dcaead1",
+      "free_dates": [
+        {
+          "start": "2026-11-12",
+          "end": "2026-11-19"
+        }
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "updated_at": "2026-11-06"
     }
   },
   "Knockout City - Armazillo DLC Pack": {
